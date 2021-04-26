@@ -26,15 +26,32 @@
         ></service-mini>
       </div>
     </section>
-    <!--TODO: Add case studies of this area-->
+
+    <h3>Case Studies</h3>
+    <section class="casestudies-grid">
+      <h4 v-if="area.casestudies === 0">There are no cs</h4>
+      <div
+        v-for="(casestudy, casestudyIndex) of area.casestudies"
+        :key="'casestudy-' + casestudyIndex"
+        class="casestudy"
+      >
+        <case-study-mini
+          :title="casestudy.title"
+          :description="casestudy.subTitle"
+          :image="casestudy.banner"
+        ></case-study-mini>
+      </div>
+    </section>
     <!--TODO: Add team of this area-->
   </section>
 </template>
 <script>
 import ServiceMini from '~/components/service/ServiceMini.vue'
+import CaseStudyMini from '~/components/casestudy/CaseStudyMini.vue'
 export default {
   components: {
     ServiceMini,
+    CaseStudyMini,
   },
   async asyncData({ $axios, route }) {
     const { id } = route.params
@@ -56,6 +73,16 @@ export default {
 <style scoped>
 h4 {
   margin: 30px 0;
+}
+.casestudies-grid {
+  display: grid;
+  grid-template-columns: repeat(3, calc(100% / 3));
+  grid-gap: 10px;
+  margin-top: 40px;
+}
+.casestudy {
+  cursor: pointer;
+  margin-bottom: 20px;
 }
 .service-grid {
   display: grid;

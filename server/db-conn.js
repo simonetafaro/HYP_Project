@@ -1,8 +1,7 @@
 const { Sequelize, DataTypes } = require('sequelize')
 
 // Development
-const db = new Sequelize('', {
-})
+const db = new Sequelize('mysql://root:acquati97@localhost:3306/HYPERMEDIA', {})
 // Production
 // const pg = require('pg')
 // pg.defaults.ssl = true
@@ -254,11 +253,12 @@ async function insertRealData() {
   await Security.addCasestudy(cs3.id)
   
   await IoT.addCasestudy(cs2.id)
+  await IoT.addCasestudy(iotC1.id)
 
-  await ManagedSecurity.addCasestudy(cs1.id);
-  await ManagedSecurity.addCasestudy(cs3.id);
-  await SmartCities.addCasestudy(cs2.id);
-  await SmartRetail.addCasestudy(iotC1.id);
+  await ManagedSecurity.addCasestudy(cs1.id)
+  await ManagedSecurity.addCasestudy(cs3.id)
+  await SmartCities.addCasestudy(cs2.id)
+  await SmartRetail.addCasestudy(iotC1.id)
   
 
 }
