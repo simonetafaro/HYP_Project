@@ -1,7 +1,7 @@
 const { Sequelize, DataTypes } = require('sequelize')
 
 // Development
-const db = new Sequelize('mysql://root:acquati97@localhost:3306/HYPERMEDIA', {
+const db = new Sequelize('', {
 })
 // Production
 // const pg = require('pg')
@@ -62,6 +62,10 @@ function defineDBStructure(){
     {
       title: DataTypes.STRING,
       subTitle: DataTypes.TEXT,
+      banner: {
+        type: DataTypes.STRING,
+        allowNull: true,
+      },
       descriptiveText: DataTypes.STRING,
       challengeTitle: DataTypes.STRING,
       challengeDescription: DataTypes.TEXT,
@@ -166,8 +170,8 @@ async function insertRealData() {
     banner: "https://www.orion.on.ca/wp-content/uploads/2019/05/cybersecurity-banner.jpg"
   })
   const IoT = await Area.create({
-    title: 'IoT Area',
-    subTitle: 'IoT area, non so cosa scrivere'
+    title: 'Internet Of Things',
+    subTitle: 'Acting as the bridge between the physical and the digital world, IoT offers a huge opportunity for companies.'
   })
   const CloudComputing = await Area.create({
     title: 'CloudComputing Area',
@@ -208,20 +212,34 @@ async function insertRealData() {
     title: 'Automotive title',
     subTitle: 'Automotive subtitle'
   })
+  const SmartRetail = await Service.create({
+    title: 'Smart Retail',
+    subTitle: 'Adaptive retail is the new imperative for retailers. With global disruption, external pressures and responsibilities, retailers need to be able to adapt. Adapting means evolving, and evolution is how to stay resilient.',
+    description: 'The increasing number of connected devices will lead to the emergence of a so-called connected ecosystem as a new paradigm of the interaction among manufacturers, sellers, and consumers, offering totally new opportunities and challenges to all the parties involved.',
+    banner: 'https://www.zerynth.com/wp-content/uploads/2020/02/smart-retail.jpg'
+  })
   //**END OF IOT SERVICES */
 
 
   const cs1 = await CaseStudy.create({
     title: 'cs1 title',
     subTitle: 'cs1 subtitle',
+    banner: 'https://www.creativemotions.it/wp-content/uploads/2020/06/Il-segreto-per-scrivere-un-case-study-che-converte.png'
   })
   const cs2 = await CaseStudy.create({
     title: 'cs2 title',
     subTitle: 'cs2 subtitle',
+    banner: 'https://www.creativemotions.it/wp-content/uploads/2020/06/Il-segreto-per-scrivere-un-case-study-che-converte.png'
   })
   const cs3 = await CaseStudy.create({
     title: 'cs3 title',
     subTitle: 'cs3 subtitle',
+    banner: 'https://www.creativemotions.it/wp-content/uploads/2020/06/Il-segreto-per-scrivere-un-case-study-che-converte.png'
+  })
+  const iotC1 = await CaseStudy.create({
+    title: 'Retail Sensor Platform',
+    subTitle: 'Businesses can leverage the real-time data coming from IoT sensors to know when a product is about to go out-of-stock, or what their customers have bought that day.',
+    banner: 'https://www.comarch.com/files-com/file_545/c1.png'
   })
   
 
@@ -230,6 +248,7 @@ async function insertRealData() {
   await IoT.addService(SmartCities.id)
   await IoT.addService(SmartLighting.id)
   await IoT.addService(Automotive.id)
+  await IoT.addService(SmartRetail.id)
   
   await Security.addCasestudy(cs1.id)
   await Security.addCasestudy(cs3.id)
@@ -238,6 +257,8 @@ async function insertRealData() {
   await ManagedSecurity.addCasestudy(cs1.id);
   await ManagedSecurity.addCasestudy(cs3.id);
   await SmartCities.addCasestudy(cs2.id);
+  await SmartRetail.addCasestudy(iotC1.id);
+  
 
 }
 
