@@ -11,11 +11,11 @@
         class="service"
         @click="goToService(`/service/${service.id}`)"
       >
-        <area-mini
+        <service-mini
           :title="service.title"
           :summary="service.subTitle"
           :image="service.banner"
-        ></area-mini>
+        ></service-mini>
       </div>
     </section>
   </main>
@@ -23,10 +23,10 @@
 
 <script>
 // import axios from 'axios'
-import AreaMini from '~/components/area/AreaMini.vue'
+import ServiceMini from '~/components/service/ServiceMini.vue'
 export default {
   components: {
-    AreaMini,
+    ServiceMini,
   },
   async asyncData({ $axios }) {
     const { data } = await $axios.get(`${process.env.BASE_URL}/api/services`)

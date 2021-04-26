@@ -252,6 +252,7 @@ async function insertRealData() {
   
   await Security.addCasestudy(cs1.id)
   await Security.addCasestudy(cs3.id)
+  
   await IoT.addCasestudy(cs2.id)
 
   await ManagedSecurity.addCasestudy(cs1.id);

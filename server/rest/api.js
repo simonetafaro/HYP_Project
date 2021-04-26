@@ -50,7 +50,17 @@ async function init() {
         model: CaseStudy
         }
     })
+    //console.log(service)
     return res.json(service)
+  })
+
+  app.get('/relatedServices/:id', async (req, res) => {
+    const { id } = req.params
+    const relatedService = await Service.findAll({
+      where: { areaID: id }
+    })
+    console.log(relatedService)
+    return res.json(relatedService)
   })
 
   app.get('/areas', async (req, res) => {
