@@ -59,18 +59,13 @@ h4 {
 }
 .service-grid {
   display: grid;
-  grid-template-columns: repeat(3, calc(100% / 2));
+  grid-template-columns: repeat(3, calc(100% / 3));
   grid-gap: 10px;
   margin-top: 40px;
 }
-.services {
-  margin-top: 60px;
-  text-align: left;
-}
 .service {
-  padding: 20px;
-  margin: 10px;
   cursor: pointer;
+  margin-bottom: 20px;
 }
 img {
   max-width: 600px;
