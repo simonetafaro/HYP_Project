@@ -7,30 +7,33 @@
     </header>
     <article>
       <p>
-        {{ service.title }}
+        {{ service.description }}
       </p>
     </article>
-    <section class="casestudies">
-      <h3>Case Study</h3>
+    <h3>All Case Studies</h3>
+    <section class="casestudies-grid">
       <h4 v-if="service.casestudies === 0">There are no cs</h4>
       <div
         v-for="(casestudy, casestudyIndex) of service.casestudies"
         :key="'casestudy-' + casestudyIndex"
         class="casestudy"
       >
-        <div class="content">
-          {{ casestudy.title }}
-        </div>
-        <div class="content">
-          {{ casestudy.subTitle }}
-        </div>
+        <case-study-mini
+          :title="casestudy.title"
+          :description="casestudy.subTitle"
+          :image="casestudy.banner"
+        ></case-study-mini>
       </div>
     </section>
     <!--TODO: Add team member of this area-->
   </section>
 </template>
 <script>
+import CaseStudyMini from '~/components/casestudy/CaseStudyMini.vue'
 export default {
+  components: {
+    CaseStudyMini,
+  },
   async asyncData({ $axios, route }) {
     const { id } = route.params
     const { data } = await $axios.get(
@@ -48,15 +51,15 @@ export default {
 h4 {
   margin: 30px 0;
 }
-.casestudies {
-  margin-top: 60px;
-  text-align: left;
+.casestudies-grid {
+  display: grid;
+  grid-template-columns: repeat(3, calc(100% / 3));
+  grid-gap: 10px;
+  margin-top: 40px;
 }
 .casestudy {
-  padding: 20px;
-  background: #f7f7f7;
-  border: 1px solid darkgray;
-  margin: 10px;
+  cursor: pointer;
+  margin-bottom: 20px;
 }
 img {
   max-width: 600px;
@@ -64,5 +67,11 @@ img {
 p {
   text-align: left;
   margin-top: 40px;
+}
+@media screen and (max-width: 600px) {
+  .casestudies-grid {
+    display: block;
+    margin: 40px 20px;
+  }
 }
 </style>
