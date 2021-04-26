@@ -3,15 +3,15 @@
     <header>
       <h1>{{ area.title }}</h1>
       <h4>{{ area.subTitle }}</h4>
-      <img :src="area.image" :alt="area.title" />
+      <img :src="area.banner" :alt="area.title" />
     </header>
     <article>
       <p>
-        {{ area.title }}
+        {{ area.description }}
       </p>
     </article>
-    <section class="services">
-      <h3>Services</h3>
+    <h3>Services</h3>
+    <section class="service-grid">
       <h4 v-if="area.services.length === 0">There are no services</h4>
       <div
         v-for="(service, serviceIndex) of area.services"
@@ -19,12 +19,11 @@
         class="service"
         @click="goToService(`/service/${service.id}`)"
       >
-        <div class="content">
-          {{ service.title }}
-        </div>
-        <div class="content">
-          {{ service.subTitle }}
-        </div>
+        <service-mini
+          :title="service.title"
+          :summary="service.subTitle"
+          :image="service.banner"
+        ></service-mini>
       </div>
     </section>
     <!--TODO: Add case studies of this area-->
@@ -32,7 +31,11 @@
   </section>
 </template>
 <script>
+import ServiceMini from '~/components/service/ServiceMini.vue'
 export default {
+  components: {
+    ServiceMini,
+  },
   async asyncData({ $axios, route }) {
     const { id } = route.params
     // console.log('this url', process.env.BASE_URL)
@@ -54,14 +57,18 @@ export default {
 h4 {
   margin: 30px 0;
 }
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(3, calc(100% / 2));
+  grid-gap: 10px;
+  margin-top: 40px;
+}
 .services {
   margin-top: 60px;
   text-align: left;
 }
 .service {
   padding: 20px;
-  background: #f7f7f7;
-  border: 1px solid darkgray;
   margin: 10px;
   cursor: pointer;
 }
