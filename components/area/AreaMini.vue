@@ -24,6 +24,7 @@ export default {
   border: 1px solid grey;
   border-radius: 4px;
 }
+
 h3 {
   margin-bottom: 10px;
 }

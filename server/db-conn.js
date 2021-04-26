@@ -1,7 +1,7 @@
 const { Sequelize, DataTypes } = require('sequelize')
 
 // Development
-const db = new Sequelize('mysql://xxx:xxxxxx@address:port/xxxx', {
+const db = new Sequelize('mysql://root:acquati97@localhost:3306/HYPERMEDIA', {
 })
 // Production
 // const pg = require('pg')
@@ -120,6 +120,7 @@ function defineDBStructure(){
         type: DataTypes.STRING,
         allowNull: true,
       },
+      description:DataTypes.TEXT,
       servicesTitle: DataTypes.STRING,
       servicesDescription:DataTypes.TEXT,
       //nome e descrizione dei servizi li prendiamo dalla tabella Area
@@ -160,7 +161,9 @@ async function insertRealData() {
   //**INSERT AREAS */
   const Security = await Area.create({
     title: 'Security Area',
-    subTitle: 'Security area, non so cosa scrivere',
+    subTitle: 'Wherever your business goes, whoever it works with, you need cybersecurity that covers it all.',
+    description: 'Anytime. Anywhere. We create cybersecurity tailored to your specific business needs. We defend against cyberattacks with proactive, focused,  industry-relevant threat intelligence to give you the confidence that  comes from knowing your business is secure.',
+    banner: "https://www.orion.on.ca/wp-content/uploads/2019/05/cybersecurity-banner.jpg"
   })
   const IoT = await Area.create({
     title: 'IoT Area',
@@ -182,12 +185,13 @@ async function insertRealData() {
 
   //**SECURITY SERVICES */
   const ModernFraudProtection = await Service.create({
-    title: 'ModernFraudProtection title',
-    subTitle: 'ModernFraudProtection subtitle'
+    title: 'Modern fraud protection software',
+    subTitle: 'offers a variety of services from information security consulting to assessing, testing and improving the protection of applications and networks for companies operating in healthcare, manufacturing, banking, retail, telecommunications, and other industries.',
+    banner: 'https://www.comarch.com/files-com/file_545/c1.png'
   })
   const ManagedSecurity = await Service.create({
-    title: 'ManagedSecurity title',
-    subTitle: 'ManagedSecurity subtitle'
+    title: 'Managed security',
+    subTitle: 'Helping clients rapidly scale security and compliance operations through innovative technology, as-a-Service capabilities and cybersecurity  services.'
   })
   //**END OF SECURITY SERVICES */
 
