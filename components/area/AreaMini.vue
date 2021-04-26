@@ -26,6 +26,7 @@ export default {
 }
 
 h3 {
+  height: 60px;
   margin-bottom: 10px;
 }
 p {
