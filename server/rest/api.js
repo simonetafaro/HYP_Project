@@ -1,5 +1,6 @@
 import express from 'express'
 import initializeDatabase from '../db-conn'
+import { Op } from 'sequelize'
 const app = express()
 
 // We need this one if we send data inside the body as JSON
@@ -23,22 +24,6 @@ async function init() {
       ],
       
     })
-
-    // const services = await Service.findAll({
-    //   where: { areaID: id },
-    //   include: { 
-    //     model: CaseStudy
-    //     }
-    // })
-
-    // const caseStudy = [];
-    // services.forEach(service => {
-    //   service.casestudies.forEach(casestudy => {
-    //     caseStudy.push(casestudy)
-    //   })
-    // });
-
-    // area.listOfCaseStudies = caseStudy
     return res.json(area)
   })
 
@@ -50,16 +35,19 @@ async function init() {
         model: CaseStudy
         }
     })
-    //console.log(service)
     return res.json(service)
   })
 
-  app.get('/relatedServices/:id', async (req, res) => {
-    const { id } = req.params
+  app.get('/relatedServices/:areaID/:serviceID', async (req, res) => {
+    const { areaID, serviceID } = req.params
     const relatedService = await Service.findAll({
-      where: { areaID: id }
+      where: { 
+        areaID: areaID,
+        id: {
+          [Op.ne]: serviceID
+        }
+      }
     })
-    console.log(relatedService)
     return res.json(relatedService)
   })
 

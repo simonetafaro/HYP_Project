@@ -9,7 +9,7 @@
         v-for="(service, serviceIndex) of services"
         :key="'service-' + serviceIndex"
         class="service"
-        @click="goToService(`/service/${service.id}`)"
+        @click="goTo(`/service/${service.id}`)"
       >
         <service-mini
           :title="service.title"
@@ -24,6 +24,7 @@
 <script>
 // import axios from 'axios'
 import ServiceMini from '~/components/service/ServiceMini.vue'
+import GoToMixins from '~/mixins/goTo-mixins.js'
 export default {
   components: {
     ServiceMini,
@@ -35,22 +36,7 @@ export default {
       services,
     }
   },
-  data() {
-    return {
-      adUrl: '',
-    }
-  },
-  mounted() {
-    // setTimeout(async () => {
-    //   const { data } = await axios.get('/api/ad')
-    //   this.adUrl = data.url
-    // }, 1000)
-  },
-  methods: {
-    goToService(path) {
-      this.$router.push({ path })
-    },
-  },
+  mixins: [GoToMixins],
 }
 </script>
 

@@ -9,7 +9,7 @@
         v-for="(area, areaIndex) of areas"
         :key="'area-' + areaIndex"
         class="area"
-        @click="goToArea(`/area/${area.id}`)"
+        @click="goTo(`/area/${area.id}`)"
       >
         <area-mini
           :title="area.title"
@@ -24,6 +24,7 @@
 <script>
 // import axios from 'axios'
 import AreaMini from '~/components/area/AreaMini.vue'
+import GoToMixins from '~/mixins/goTo-mixins.js'
 export default {
   components: {
     AreaMini,
@@ -35,22 +36,7 @@ export default {
       areas,
     }
   },
-  data() {
-    return {
-      adUrl: '',
-    }
-  },
-  mounted() {
-    // setTimeout(async () => {
-    //   const { data } = await axios.get('/api/ad')
-    //   this.adUrl = data.url
-    // }, 1000)
-  },
-  methods: {
-    goToArea(path) {
-      this.$router.push({ path })
-    },
-  },
+  mixins: [GoToMixins],
 }
 </script>
 

@@ -17,7 +17,7 @@
         v-for="(service, serviceIndex) of area.services"
         :key="'service-' + serviceIndex"
         class="service"
-        @click="goToService(`/service/${service.id}`)"
+        @click="goTo(`/service/${service.id}`)"
       >
         <service-mini
           :title="service.title"
@@ -48,6 +48,7 @@
 <script>
 import ServiceMini from '~/components/service/ServiceMini.vue'
 import CaseStudyMini from '~/components/casestudy/CaseStudyMini.vue'
+import GoToMixins from '~/mixins/goTo-mixins.js'
 export default {
   components: {
     ServiceMini,
@@ -62,11 +63,7 @@ export default {
       area,
     }
   },
-  methods: {
-    goToService(path) {
-      this.$router.push({ path })
-    },
-  },
+  mixins: [GoToMixins],
 }
 </script>
 
