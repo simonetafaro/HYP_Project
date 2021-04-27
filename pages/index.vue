@@ -3,7 +3,10 @@
     <header>
       <h1>This is a WebSite</h1>
       <h4>And it's made with Nuxt.</h4>
-      <img src="~/static/owen.png" alt="Bot ADS" />
+      <img
+        src="https://pbs.twimg.com/profile_images/1090208956440633345/Okg4uYbh_400x400.jpg"
+        alt="Website image"
+      />
     </header>
     <section>
       <h2>Our mission</h2>

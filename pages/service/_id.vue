@@ -7,8 +7,9 @@
       <p>
         {{ service.description }}
       </p>
+      <br />
     </header>
-    <h3>All Case Studies</h3>
+    <h3 v-if="service.casestudies != 0">All Case Studies</h3>
     <section class="casestudies-grid">
       <h4 v-if="service.casestudies === 0">There are no cs</h4>
       <div
@@ -25,11 +26,12 @@
     </section>
     <h3>Related Services</h3>
     <section class="service-grid">
-      <h4 v-if="relatedServices === 0">There are no related Services</h4>
+      <h4 v-if="relServices === 0">There are no related Services</h4>
       <div
-        v-for="(service, serviceIndex) of relatedServices"
+        v-for="(service, serviceIndex) of relServices"
         :key="'service-' + serviceIndex"
         class="service"
+        @click="goTo(`/service/${service.id}`)"
       >
         <service-mini
           :title="service.title"
@@ -44,7 +46,7 @@
 <script>
 import CaseStudyMini from '~/components/casestudy/CaseStudyMini.vue'
 import ServiceMini from '~/components/service/ServiceMini.vue'
-
+import GoToMixins from '~/mixins/goTo-mixins.js'
 export default {
   components: {
     CaseStudyMini,
@@ -55,16 +57,17 @@ export default {
     const { data } = await $axios.get(
       `${process.env.BASE_URL}/api/service/${id}`
     )
-    const relServices = await $axios.get(
-      `${process.env.BASE_URL}/api/relatedServices/${data.areaID}`
-    )
     const service = data
-    const relatedServices = relServices.data
+    let relServices = await $axios.get(
+      `${process.env.BASE_URL}/api/relatedServices/${data.areaID}/${id}`
+    )
+    relServices = relServices.data
     return {
       service,
-      relatedServices,
+      relServices,
     }
   },
+  mixins: [GoToMixins],
 }
 </script>
 

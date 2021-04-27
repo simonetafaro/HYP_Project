@@ -27,7 +27,7 @@
 export default {
   head() {
     return {
-      title: 'A WebSite - About',
+      title: 'Company Name - About',
     }
   },
 }
