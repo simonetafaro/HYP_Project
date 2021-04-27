@@ -74,15 +74,6 @@ async function init() {
     })
     return res.json(services)
   })
-
-
-  // This one is just an example
-  app.get('/ad', (req, res) => {
-    return res.json({
-      url:
-        'https://wordstream-files-prod.s3.amazonaws.com/s3fs-public/styles/simple_image/public/images/media/images/google-display-ads-example-2-final.png?oV7qevVB2XtFyF_O64TG6L27AFM3M2oL&itok=TBfuuTM_',
-    })
-  })
 }
 
 init()

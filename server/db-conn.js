@@ -1,7 +1,7 @@
 const { Sequelize, DataTypes } = require('sequelize')
 
 // Development
-const db = new Sequelize('mysql://root:acquati97@localhost:3306/HYPERMEDIA', {})
+const db = new Sequelize('', {})
 // Production
 // const pg = require('pg')
 // pg.defaults.ssl = true
@@ -170,7 +170,9 @@ async function insertRealData() {
   })
   const IoT = await Area.create({
     title: 'Internet Of Things',
-    subTitle: 'Acting as the bridge between the physical and the digital world, IoT offers a huge opportunity for companies.'
+    subTitle: 'Acting as the bridge between the physical and the digital world, IoT offers a huge opportunity for companies.',
+    description: 'We help clients effectively capitalize on IoT technology and solutions, linking technology, vendors and customers through a holistic business model. IoT describes the connection of devices to the internet using embedded software and sensors to communicate, collect and exchange data with one another. IoT combines connectivity with sensors, devices and people, enabling a form of free-flowing conversation between man and machine, software and hardware. With IoT, the world is wide open, offering a virtually endless array of opportunities and connections at home, at work or at play.',
+    banner: 'https://it.insight.com/content/dam/insight-web/it_IT/learn/articoli/azure-iot-banner.jpg'
   })
   const CloudComputing = await Area.create({
     title: 'CloudComputing Area',
@@ -200,16 +202,22 @@ async function insertRealData() {
 
   //**IOT SERVICES */
   const SmartCities = await Service.create({
-    title: 'SmartCities title',
-    subTitle: 'SmartCities subtitle'
+    title: 'Smart Cities',
+    subTitle: 'A smart city system gathers and analyzes data from sensors and smart devices to enable efficient management of urban processes (e.g., transportation, lighting). With 9-year experience in IoT, ??CompanyName?? designs and implements end-to-end IoT solutions to bring smart city vision to reality.',
+    description: 'Municipalities of all sizes around the world are adopting smart city concepts based on Internet of Things (IoT) systems to optimize the efficient management of community assets, resources, operations and services. Smart cities foster service-oriented, sustainable local governance equipped to improve transportation systems, build energy-efficient infrastructure, decrease environmental pressures, maintain effective disaster response, and provide state-of-the-art security in public spaces. We work to serve each community with the appropriate smart city services and solutions according to its individual needs and unique vision.',
+    banner: 'https://kritikalsolutions.com/wp-content/uploads/2019/10/smart-cities-banner.jpg'
   })
   const SmartLighting = await Service.create({
-    title: 'SmartLighting title',
-    subTitle: 'SmartLighting subtitle'
+    title: 'Smart-lighting',
+    subTitle: 'Flexible and scalable smart IoT lighting solution for cities as well as municipal and enterprise buildings. It can be easily integrated with existing infrastructure or extended by 3rd party systems and it always remains a platform for further extensions.',
+    description: 'Illumination systems are an essential part of urban infrastructure. They contribute to the sense of security in public areas and highlight the architectural beauty of cities around the world. Today we can go one step further by embracing a combination of modern IoT solutions and illumination systems. This combination creates smart city technology and  is used as innovative smart street lighting system.',
+    banner: 'https://statetechmagazine.com/sites/statetechmagazine.com/files/styles/cdw_hero/public/articles/StateTech/201710/ST_Smart_Street_Lights_GettyImages-173553089.jpg?itok=rktclHwy'
   })
   const Automotive = await Service.create({
-    title: 'Automotive title',
-    subTitle: 'Automotive subtitle'
+    title: 'Automotive',
+    subTitle: '??COMPANY NAME?? IoT Connected Vehicle Insights is connected car software that integrates real-time data about drivers, vehicles and the environment to optimize the in-car experience. The dedicated cloud service streams data from vehicle sensors and uses analytics and AI to understand driver behavior. It links with other information systems in the cloud, such as weather and traffic, to add context and situational awareness.',
+    description: 'Cars have become one of the fastest-growing mobile device category, with every vehicle turning into a node in a much larger network and ecosystems. The ongoing (re)evolution in terms of connectivity, electric, autonomous and mobility trends is full of great opportunities to achieve new revenue streams and improve quality of life in the near future. Yet, as with all new opportunities, challenges, disruptions and risks arise.',
+    banner: 'https://www.consorziosicurezza.com/wp-content/uploads/2018/10/smart-car-resized.jpg'
   })
   const SmartRetail = await Service.create({
     title: 'Smart Retail',
@@ -225,10 +233,10 @@ async function insertRealData() {
     subTitle: 'cs1 subtitle',
     banner: 'https://www.creativemotions.it/wp-content/uploads/2020/06/Il-segreto-per-scrivere-un-case-study-che-converte.png'
   })
-  const cs2 = await CaseStudy.create({
-    title: 'cs2 title',
-    subTitle: 'cs2 subtitle',
-    banner: 'https://www.creativemotions.it/wp-content/uploads/2020/06/Il-segreto-per-scrivere-un-case-study-che-converte.png'
+  const iotC2 = await CaseStudy.create({
+    title: '7-Eleven - Reliable and user-friendly IT system',
+    subTitle: 'A highly sophisticated IT/store solution that supports the global business model and store management activities of 7-Eleven.',
+    banner: 'https://www.viewsonic.com/library/wp-content/uploads/2019/08/LB0040-hero-compressed.png'
   })
   const cs3 = await CaseStudy.create({
     title: 'cs3 title',
@@ -238,7 +246,7 @@ async function insertRealData() {
   const iotC1 = await CaseStudy.create({
     title: 'Retail Sensor Platform',
     subTitle: 'Businesses can leverage the real-time data coming from IoT sensors to know when a product is about to go out-of-stock, or what their customers have bought that day.',
-    banner: 'https://www.comarch.com/files-com/file_545/c1.png'
+    banner: 'https://www.intel.com/content/dam/www/public/us/en/images/iot/16x9/rss-rfid-power-of-data-16x9.jpg.rendition.intel.web.576.324.jpg'
   })
   
 
@@ -252,12 +260,12 @@ async function insertRealData() {
   await Security.addCasestudy(cs1.id)
   await Security.addCasestudy(cs3.id)
   
-  await IoT.addCasestudy(cs2.id)
+  await IoT.addCasestudy(iotC2.id)
   await IoT.addCasestudy(iotC1.id)
 
   await ManagedSecurity.addCasestudy(cs1.id)
   await ManagedSecurity.addCasestudy(cs3.id)
-  await SmartCities.addCasestudy(cs2.id)
+  await SmartRetail.addCasestudy(iotC2.id)
   await SmartRetail.addCasestudy(iotC1.id)
   
 
