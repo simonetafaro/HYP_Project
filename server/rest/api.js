@@ -51,6 +51,17 @@ async function init() {
     return res.json(relatedService)
   })
 
+  app.get('/casestudiesbyarea/:areaID', async (req, res) => {
+    const { areaID } = req.params
+    const casestudies = await CaseStudy.findAll({
+      where: { 
+        areaID: areaID,
+      }
+    })
+    return res.json(casestudies)
+  })
+  
+
   app.get('/areas', async (req, res) => {
     const areas = await Area.findAll({
     })
@@ -61,6 +72,12 @@ async function init() {
     const services = await Service.findAll({
     })
     return res.json(services)
+  })
+
+  app.get('/casestudies', async (req, res) => {
+    const casestudies = await CaseStudy.findAll({
+    })
+    return res.json(casestudies)
   })
 }
 

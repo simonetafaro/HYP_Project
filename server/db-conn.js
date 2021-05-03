@@ -1,7 +1,7 @@
 const { Sequelize, DataTypes } = require('sequelize')
 
 // Development
-const db = new Sequelize('', {})
+const db = new Sequelize( '', {})
 // Production
 // const pg = require('pg')
 // pg.defaults.ssl = true

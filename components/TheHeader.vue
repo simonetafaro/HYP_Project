@@ -35,6 +35,10 @@ export default {
           path: '/service',
         },
         {
+          name: 'Case Studies',
+          path: '/casestudy',
+        },
+        {
           name: 'About',
           path: '/about',
         },
