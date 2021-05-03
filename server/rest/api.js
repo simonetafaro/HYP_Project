@@ -85,7 +85,11 @@ async function init() {
   
 
   app.get('/areas', async (req, res) => {
-    const areas = await Area.findAll({})
+    const areas = await Area.findAll({
+      order: [
+        ['title', 'ASC'],
+      ],
+    })
     return res.json(areas)
   })
 
