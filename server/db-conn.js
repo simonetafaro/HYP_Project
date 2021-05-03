@@ -384,7 +384,8 @@ async function insertRealData() {
       'Industrial manufacturers are using IoT across the business: 60% on projects within their facilities, 57% with supply chain and other partners, 42% with end consumers and 58% with their business customers. Their top focus areas are logistics, supply chain and employee and customer operations.',
     description:
       'Industrial manufacturing firms are addressing these concerns by improving the tech infrastructure, deploying better data management methods and addressing workforce culture and change management. They also are taking steps to mitigate IoT’s challenges. For example, 60% are addressing AI bias, ethics and responsibility, 58% are working with partners to better manage ecosystems and 44% are developing more robust policies to address the impact of AI and IoT on data privacy.',
-    banner: '',
+    banner:
+      'https://www.sensrtrx.com/wp-content/uploads/2019/06/IoT-Manufacturing-Future.png',
     evocativePhoto: '',
     serviceTitle: 'Making operations self-sufficient',
     serviceDescription:
@@ -745,7 +746,8 @@ async function insertRealData() {
   const iotC3 = await CaseStudy.create({
     title: 'Transforming Retail Pain into Smart Gain',
     subTitle: '',
-    banner: '',
+    banner:
+      'https://simplecore.intel.com/insight-tech/wp-content/uploads/sites/45/2020/05/retail-data-computer-vision-0.jpg',
     descriptiveText: '',
     challengeTitle: '',
     challengeDescription: '',
@@ -764,7 +766,8 @@ async function insertRealData() {
     title: 'Building a connected car ecosystem',
     subTitle:
       '??COMPANY NAME??, with its Automotive division, constantly develops solutions for innovation trends such as e-mobility and ACES (for cars intended to be autonomous, connected, electric and shared)',
-    banner: '',
+    banner:
+      'https://images.acvmagazine.com/file/BIT-Magazine-Images/feature_cover_06.jpg',
     descriptiveText:
       'In a time of e-mobility, we recognize the necessity of expanding the ecosystem to include third-party providers such as Alexa Auto. That is why the deployment of ŠKODA Connect Alexa Skill is the perfect example of building a connected car ecosystem.  Our work in these fields includes software development and external testing services.',
     challengeTitle: 'Voice assistants for cars',
@@ -785,7 +788,8 @@ async function insertRealData() {
   const iotC5 = await CaseStudy.create({
     title: 'Abnox AG - 4.0 Industry',
     subTitle: '',
-    banner: '',
+    banner:
+      'https://www.decision.com/wp-content/uploads/2020/12/Smart-Factory-1-1024x444.png',
     descriptiveText: '',
     challengeTitle: 'Transition to Industry 4.0',
     challengeDescription:
@@ -806,7 +810,8 @@ async function insertRealData() {
     title: 'Boston Children’s Hospital and smarter healthcare',
     subTitle:
       'Healthcare is one of the richest areas of opportunity for the Internet of Things. ',
-    banner: '',
+    banner:
+      'https://peerbits-wpengine.netdna-ssl.com/wp-content/uploads/2018/07/benefits-of-iot-health-applications-of-iot.jpg',
     descriptiveText:
       'Shwetak Patel, a MacArthur Fellow and a Professor of Computer Science and Engineering at the University Washington who specializes in developing Internet of Things technologies says, “the next wave of the Internet of Things is going to have a huge impact in healthcare. For example, health sensing in the home is critical for managing chronic diseases.” One of the diseases Patel is targeting with the Internet of Things is chronic obstructive pulmonary disease, or COPD.',
     challengeTitle: 'Give access to everybody',
@@ -828,7 +833,8 @@ async function insertRealData() {
     title: 'Innovation to the streets of Jamshedpur',
     subTitle:
       'Optimise infrastructure services in Jamshedpur. Specific areas that involved safety and additional manual effort due to scale, took priority',
-    banner: '',
+    banner:
+      'https://hub.beesmart.city/hubfs/04-insights/07-blog-posts-solutions/toplist-smart-lighting-solutions/top-smart-lighting-solutions-for-smart-cities.jpeg',
     descriptiveText:
       'With more than 16000 street lights installed across the city, the monitoring and maintenance of these street lights were both tedious and repetitive. Jamshedpur’s civil twilight starts at 6:30 PM and enters through the night at 8:00 PM to end at 5:30 AM.',
     challengeTitle: 'Energy conservation',
@@ -851,7 +857,7 @@ async function insertRealData() {
     title: 'Internet of Medical Things',
     subTitle:
       'Ensure that the right people are assigned to the right places to efficiently deliver quality care while improving staff morale and patient satisfaction.',
-    banner: '',
+    banner: 'https://img.lovepik.com/photo/50056/0961.jpg_wh860.jpg',
     descriptiveText:
       'IoT in health care can dramatically optimize workflow and staffing. Even a basic IoT solution can collect and bring together such data as staff location and expertise, patient acuity and location, and availability and location of critical diagnostic and therapeutic equipment. Once modeled, this data can help staffing managers improve workflows and make better staffing and scheduling decisions.',
     challengeTitle: 'Customized therapies and interaztions',

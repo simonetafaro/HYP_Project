@@ -1,7 +1,7 @@
 <template>
   <header class="header">
     <div class="header-content">
-      <div class="title"><h3>Company Name</h3></div>
+      <div class="title"><h3 @click="goTo(`/`)">Company Name</h3></div>
       <nav class="right">
         <div
           v-for="(item, itemIndex) of menuOptions"
@@ -18,6 +18,8 @@
 </template>
 
 <script>
+import GoToMixins from '~/mixins/goTo-mixins.js'
+
 export default {
   data() {
     return {
@@ -37,10 +39,10 @@ export default {
         {
           name: 'Case Studies',
           path: '/casestudy',
-         },
+        },
         {
-         name: 'Team',
-         path: '/team',
+          name: 'Team',
+          path: '/team',
         },
         {
           name: 'About',
@@ -49,6 +51,7 @@ export default {
       ],
     }
   },
+  mixins: [GoToMixins],
 }
 </script>
 
@@ -82,5 +85,6 @@ export default {
 .title {
   font-size: 1.3rem;
   margin-bottom: 5px;
+  cursor: pointer;
 }
 </style>
