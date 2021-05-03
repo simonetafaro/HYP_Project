@@ -1,31 +1,15 @@
 <template>
   <section class="container">
     <header>
-      <h1>{{ service.title }}</h1>
-      <h4>{{ service.subTitle }}</h4>
-      <img :src="service.banner" :alt="service.title" />
+      <h1>{{ casestudy.title }}</h1>
+      <h4>{{ casestudy.subTitle }}</h4>
+      <img :src="casestudy.banner" :alt="casestudy.title" />
       <p>
-        {{ service.description }}
+        {{ casestudy.description }}
       </p>
       <br />
     </header>
-    <h3 v-if="service.casestudies != 0">All Case Studies</h3>
-    <section class="casestudies-grid">
-      <h4 v-if="service.casestudies === 0">There are no cs</h4>
-      <div
-        v-for="(casestudy, casestudyIndex) of service.casestudies"
-        :key="'casestudy-' + casestudyIndex"
-        class="casestudy"
-        @click="goTo(`/casestudy/${casestudy.id}`)"
-      >
-        <case-study-mini
-          :title="casestudy.title"
-          :description="casestudy.subTitle"
-          :image="casestudy.banner"
-        ></case-study-mini>
-      </div>
-    </section>
-    <h3>Related Services</h3>
+    <h3>Services related to this project</h3>
     <section class="service-grid">
       <h4 v-if="relServices === 0">There are no related Services</h4>
       <div
@@ -45,26 +29,25 @@
   </section>
 </template>
 <script>
-import CaseStudyMini from '~/components/casestudy/CaseStudyMini.vue'
-import ServiceMini from '~/components/service/ServiceMini.vue'
 import GoToMixins from '~/mixins/goTo-mixins.js'
+import ServiceMini from '~/components/service/ServiceMini.vue'
 export default {
   components: {
-    CaseStudyMini,
     ServiceMini,
   },
   async asyncData({ $axios, route }) {
     const { id } = route.params
     const { data } = await $axios.get(
-      `${process.env.BASE_URL}/api/service/${id}`
+      `${process.env.BASE_URL}/api/casestudy/${id}`
     )
-    const service = data
+    const casestudy = data
     let relServices = await $axios.get(
-      `${process.env.BASE_URL}/api/relatedServices/${data.areaID}/${id}`
+      `${process.env.BASE_URL}/api/casestudyservices/${id}`
     )
     relServices = relServices.data
+
     return {
-      service,
+      casestudy,
       relServices,
     }
   },
@@ -75,12 +58,6 @@ export default {
 <style scoped>
 h4 {
   margin: 30px 0;
-}
-.casestudies-grid {
-  display: grid;
-  grid-template-columns: repeat(3, calc(100% / 3));
-  grid-gap: 10px;
-  margin-top: 40px;
 }
 .casestudy {
   cursor: pointer;
