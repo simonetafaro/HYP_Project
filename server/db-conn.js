@@ -1,7 +1,7 @@
 const { Sequelize, DataTypes } = require('sequelize')
 
 // Development
-const db = new Sequelize( '', {})
+const db = new Sequelize('mysql://root:acquati97@localhost:3306/HYPERMEDIA', {})
 // Production
 // const pg = require('pg')
 // pg.defaults.ssl = true
@@ -890,15 +890,15 @@ async function insertRealData() {
   //** ------------------------------------------------------------ TEAM MEMBER --------------------------------------------------------------- */
   const person1 = await TeamMember.create({
     memberNameAndOccupation: 'Gianpiero Gasperini - Lead security',
-    personalQuote: 'Meglio un uovo oggi che una gallina domani',
+    personalQuote: 'Lorem ipsum dolor sit amet',
     personalDescription:
       ' Jane Goodall had long been an idol of mine before I had the opportunity to meet her personally. I have been a member of one of her international Jane-Goodall-Institutes (JGI) for a couple of years now. I have read some of her books and like her idea of teaching children all over the world about environmental conservation and wild animal care so much that I hope to do it personally one day, too. As the greatest and most popular scientist of chimpanzees in the world and today also an active member of the UN Security Council and close friend of Kofi Anan, she is very busy and always travelling, so the chance to see her is quite rare. ',
-    workField: 'Lavora di tanto in tanto ',
+    workField: 'Security Department',
     teamsTitle: '',
-    personName: 'Gianpiero Gasperini',
+    personName: 'Gian Piero Gasperini',
     personJob: '',
     personPhoto:
-      'https://upload.wikimedia.org/wikipedia/commons/f/f5/Poster-sized_portrait_of_Barack_Obama.jpg',
+      'https://image.freepik.com/free-photo/funny-man-looking-camera_23-2147799042.jpg',
     teamImage: '',
     areaID: '1',
     serviceID: '1',
@@ -906,16 +906,16 @@ async function insertRealData() {
 
   const person2 = await TeamMember.create({
     memberNameAndOccupation: 'Luke Cobezzo - Lead security',
-    personalQuote: 'Tanto va la gatta al lardo che ci lascia lo zampino',
+    personalQuote: 'Lorem ipsum dolor sit amet',
     personalDescription:
       'Mary is as beautiful as a Hollywood star. Her thick, wavy, long black hair gracefully falls down to her shoulders and encircles her diamond-shaped face. A golden suntan usually brings out her smooth, clear complexion and high cheek bones. Her slightly arched chestnut brown eyebrows highlight her emotions by moving up and down as she reacts to her world around her. Her large deep blue eyes, remind me of a lake on a stormy day. Her curved nose gives her a little girl look that makes me want to smile when she talks. And her mouth is a small mouth outlined by puffy lips that she often accentuates with glossy pink lipstick. When she smiles, which is often, her well formed and even, white teeth brighten up her whole face. I guess you can tell that I am head over heals in love with Mary.',
 
-    workField: 'Lavora di tanto in tanto ',
+    workField: 'Security Department',
     teamsTitle: '',
     personName: 'Luke Cobezzo',
     personJob: '',
     personPhoto:
-      'https://upload.wikimedia.org/wikipedia/commons/a/a2/Donald_Trump_official_portrait_%28cropped_2%29.jpg',
+      'https://img.freepik.com/free-photo/portrait-white-man-isolated_53876-40306.jpg?size=626&ext=jpg',
     teamImage: '',
     areaID: '1',
     serviceID: '1',
