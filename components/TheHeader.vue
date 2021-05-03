@@ -37,6 +37,10 @@ export default {
         {
           name: 'Case Studies',
           path: '/casestudy',
+         },
+        {
+         name: 'Team',
+         path: '/team',
         },
         {
           name: 'About',
