@@ -99,6 +99,7 @@ async function init() {
     const casestudies = await CaseStudy.findAll({
     })
     return res.json(casestudies)
+  })
 
   app.get('/teammembers', async (req, res) => {
     const teammember = await TeamMember.findAll({
