@@ -136,6 +136,8 @@ function defineDBStructure() {
 
   const ServiceCaseStudy = db.define('servicecasestudy')
 
+  const PersonCaseStudy = db.define('personcasestudy')
+
   Area.hasMany(Service, { foreignKey: 'areaID' })
   Area.hasMany(CaseStudy, { foreignKey: 'areaID' })
   Area.hasMany(TeamMember, { foreignKey: 'areaID' })
@@ -144,6 +146,9 @@ function defineDBStructure() {
   Service.hasMany(TeamMember, { foreignKey: 'serviceID' })
 
   CaseStudy.belongsToMany(Service, { through: ServiceCaseStudy })
+  CaseStudy.belongsToMany(TeamMember, { through: PersonCaseStudy })
+
+  TeamMember.belongsToMany(CaseStudy, { through: PersonCaseStudy })
 
   db._tables = {
     Area,
@@ -151,6 +156,7 @@ function defineDBStructure() {
     CaseStudy,
     TeamMember,
     ServiceCaseStudy,
+    PersonCaseStudy,
   }
 }
 
@@ -928,6 +934,10 @@ async function insertRealData() {
     areaID: '1',
     serviceID: '1',
   })
+
+  iotC1.addTeammember(person1)
+  iotC1.addTeammember(person2)
+  iotC2.addTeammember(person1)
 }
 
 /**

@@ -51,7 +51,7 @@ export default {
     const person = data
 
     let relCasestudies = await $axios.get(
-      `${process.env.BASE_URL}/api/casestudiesbyteammember/${data.teamsTitle}`
+      `${process.env.BASE_URL}/api/casestudiesbyteammember/${id}`
     )
     relCasestudies = relCasestudies.data
     return {
