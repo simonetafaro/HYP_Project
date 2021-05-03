@@ -1,7 +1,7 @@
 const { Sequelize, DataTypes } = require('sequelize')
 
 // Development
-const db = new Sequelize('mysql://root:4LUPPOLI!@localhost:3306/dbtest', {})
+const db = new Sequelize('mysql://root:4LUPPOLI@localhost:3306/dbtest', {})
 
 // Production
 // const pg = require('pg')
