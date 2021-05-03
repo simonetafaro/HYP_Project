@@ -10,18 +10,34 @@
         {{ person.personalDescription }}
       </p>
     </article>
-
-    <!--TODO: Add team of this area-->
+    <h3>Related Case Studies</h3>
+    <section class="casestudies-grid">
+      <h4 v-if="relCasestudies === 0">There are no related Case Studies</h4>
+      <div
+        v-for="(casestudy, casestudyIndex) of relCasestudies"
+        :key="'casestudy-' + casestudyIndex"
+        class="casestudy"
+        @click="goTo(`/casestudy/${casestudy.id}`)"
+      >
+        <case-study-mini
+          :title="casestudy.title"
+          :description="casestudy.subTitle"
+          :image="casestudy.banner"
+        ></case-study-mini>
+      </div>
+    </section>
   </section>
 </template>
 <script>
 import MemberMini from '~/components/team/MemberMini.vue'
 import GoToMixins from '~/mixins/goTo-mixins.js'
+import CaseStudyMini from '~/components/casestudy/CaseStudyMini.vue'
 
 export default {
   components: {
     // eslint-disable-next-line vue/no-unused-components
     MemberMini,
+    CaseStudyMini,
   },
 
   mixins: [GoToMixins],
@@ -33,8 +49,14 @@ export default {
       `${process.env.BASE_URL}/api/teammembers/${id}`
     )
     const person = data
+
+    let relCasestudies = await $axios.get(
+      `${process.env.BASE_URL}/api/casestudiesbyteammember/${id}`
+    )
+    relCasestudies = relCasestudies.data
     return {
       person,
+      relCasestudies,
     }
   },
 }
@@ -42,6 +64,10 @@ export default {
 
 <style scoped>
 h4 {
+  margin: 30px 0;
+}
+
+h3 {
   margin: 30px 0;
 }
 .casestudies-grid {
