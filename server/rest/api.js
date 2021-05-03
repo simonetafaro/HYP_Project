@@ -111,11 +111,14 @@ async function init() {
     return res.json(person)
   })
 
-  app.get('/casestudiesbyteammember/:teamsTitle', async (req, res) => {
-    const { teamsTitle } = req.params
+  app.get('/casestudiesbyteammember/:id', async (req, res) => {
+    const { id } = req.params
     const casestudies = await CaseStudy.findAll({
-      where: {
-        teamsTitle,
+      include: {
+        model: TeamMember,
+        where: {
+          id,
+        },
       },
     })
     return res.json(casestudies)
