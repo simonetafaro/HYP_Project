@@ -53,6 +53,9 @@ export default {
     CaseStudyMini,
     ServiceMini,
   },
+
+  mixins: [GoToMixins],
+
   async asyncData({ $axios, route }) {
     const { id } = route.params
     const { data } = await $axios.get(
@@ -68,7 +71,6 @@ export default {
       relServices,
     }
   },
-  mixins: [GoToMixins],
 }
 </script>
 

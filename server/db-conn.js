@@ -85,9 +85,6 @@ function defineDBStructure() {
       personalQuote: DataTypes.STRING,
       personalDescription: DataTypes.TEXT,
       workField: DataTypes.STRING,
-      caseStudyDescription: DataTypes.TEXT,
-      caseStudyHeading: DataTypes.STRING,
-      serviceDescription: DataTypes.TEXT,
       teamsTitle: DataTypes.STRING,
       personName: DataTypes.STRING,
       personJob: DataTypes.TEXT,
@@ -891,6 +888,38 @@ async function insertRealData() {
   //**END OF IOT CASE STUDIES */
 
   //** ------------------------------------------------------------ TEAM MEMBER --------------------------------------------------------------- */
+  const person1 = await TeamMember.create({
+    memberNameAndOccupation: 'Gianpiero Gasperini - Lead security',
+    personalQuote: 'Meglio un uovo oggi che una gallina domani',
+    personalDescription:
+      ' Jane Goodall had long been an idol of mine before I had the opportunity to meet her personally. I have been a member of one of her international Jane-Goodall-Institutes (JGI) for a couple of years now. I have read some of her books and like her idea of teaching children all over the world about environmental conservation and wild animal care so much that I hope to do it personally one day, too. As the greatest and most popular scientist of chimpanzees in the world and today also an active member of the UN Security Council and close friend of Kofi Anan, she is very busy and always travelling, so the chance to see her is quite rare. ',
+    workField: 'Lavora di tanto in tanto ',
+    teamsTitle: '',
+    personName: 'Gianpiero Gasperini',
+    personJob: '',
+    personPhoto:
+      'https://upload.wikimedia.org/wikipedia/commons/f/f5/Poster-sized_portrait_of_Barack_Obama.jpg',
+    teamImage: '',
+    areaID: '1',
+    serviceID: '1',
+  })
+
+  const person2 = await TeamMember.create({
+    memberNameAndOccupation: 'Luke Cobezzo - Lead security',
+    personalQuote: 'Tanto va la gatta al lardo che ci lascia lo zampino',
+    personalDescription:
+      'Mary is as beautiful as a Hollywood star. Her thick, wavy, long black hair gracefully falls down to her shoulders and encircles her diamond-shaped face. A golden suntan usually brings out her smooth, clear complexion and high cheek bones. Her slightly arched chestnut brown eyebrows highlight her emotions by moving up and down as she reacts to her world around her. Her large deep blue eyes, remind me of a lake on a stormy day. Her curved nose gives her a little girl look that makes me want to smile when she talks. And her mouth is a small mouth outlined by puffy lips that she often accentuates with glossy pink lipstick. When she smiles, which is often, her well formed and even, white teeth brighten up her whole face. I guess you can tell that I am head over heals in love with Mary.',
+
+    workField: 'Lavora di tanto in tanto ',
+    teamsTitle: '',
+    personName: 'Luke Cobezzo',
+    personJob: '',
+    personPhoto:
+      'https://upload.wikimedia.org/wikipedia/commons/a/a2/Donald_Trump_official_portrait_%28cropped_2%29.jpg',
+    teamImage: '',
+    areaID: '1',
+    serviceID: '1',
+  })
 }
 
 /**

@@ -82,6 +82,20 @@ async function init() {
     const services = await Service.findAll({})
     return res.json(services)
   })
+
+  app.get('/teammembers', async (req, res) => {
+    const teammember = await TeamMember.findAll({
+    })
+    return res.json(teammember)
+  })
+
+  app.get('/teammembers/:id', async (req, res) => {
+    const { id } = req.params
+    const person = await TeamMember.findOne({
+      where: { id }
+    })
+    return res.json(person)
+  })
 }
 
 init()
