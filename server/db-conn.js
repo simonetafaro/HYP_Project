@@ -165,7 +165,14 @@ async function insertRealData() {
     title: 'Security Area',
     subTitle: 'Wherever your business goes, whoever it works with, you need cybersecurity that covers it all.',
     description: 'Anytime. Anywhere. We create cybersecurity tailored to your specific business needs. We defend against cyberattacks with proactive, focused,  industry-relevant threat intelligence to give you the confidence that  comes from knowing your business is secure.',
-    banner: "https://www.orion.on.ca/wp-content/uploads/2019/05/cybersecurity-banner.jpg"
+    banner: "https://www.orion.on.ca/wp-content/uploads/2019/05/cybersecurity-banner.jpg",
+    evocativeImage: '',
+    servicesTitle: 'Discover our services ',
+    servicesDescription: '',
+    caseStudyTitle: 'Read about our case studies',
+    caseStudyDescription: 'TODO',
+    teamTitle: 'Meet our team',
+    teamDescription: 'TODO',
   })
   const IoT = await Area.create({
     title: 'Internet Of Things',
@@ -195,11 +202,29 @@ async function insertRealData() {
   })
   const CustomerExperience = await Area.create({
     title: 'CustomerExperience Area',
-    subTitle: 'CustomerExperience area, non so cosa scrivere'
+    subTitle: 'CustomerExperience area, non so cosa scrivere',
+    description: '',
+    banner: '',
+    evocativeImage: '',
+    servicesTitle: 'Discover our services ',
+    servicesDescription: '',
+    caseStudyTitle: 'Read about our case studies',
+    caseStudyDescription: 'TODO',
+    teamTitle: 'Meet our team',
+    teamDescription: 'TODO',
   })
   const BigDataAnalysis = await Area.create({
     title: 'BigDataAnalysis Area',
-    subTitle: 'BigDataAnalysis area, non so cosa scrivere'
+    subTitle: 'BigDataAnalysis area, non so cosa scrivere',
+    description: 'The science of analyzing raw data in order to make conclusions about that information, revealing reveal trends and metrics. Through our specialist your company will be more efficient in taking decisions. This process of analysis allows to operate a predictive analysis, that is, it allows to know in advance what will happen: this becomes possible because if we have a model and we have enough historical data we can determine what will happen in the near future with bases or statistical foundations.',
+    banner: '',
+    evocativeImage: '',
+    servicesTitle: 'Discover our services ',
+    servicesDescription: 'AI is only as smart as the insights that fuel it. We can help you unlock powerful analytics insights by tapping into data you did not even know you had.',
+    caseStudyTitle: 'Read about our case studies',
+    caseStudyDescription: 'TODO',
+    teamTitle: 'Meet our team',
+    teamDescription: 'TODO',
   })
   //**END OF AREAS */
 
@@ -351,11 +376,11 @@ async function insertRealData() {
 
 
   //**BIG DATA ANALYSIS SERVICES */
-   const ServiceName2 = await Service.create({
-    title: 'BIG DATA ANALYSIS ServiceName',
-    subTitle: '',
-    description: '',
-    banner: '',
+   const OptimizeDigitalMarketing = await Service.create({
+    title: 'Optimize digital marketing',
+    subTitle: 'Give users what they are searching just when they land on your page in order to maximize sales.',
+    description: 'In order to grow your enterprise, you need to do more than keep your existing customers happy — you need to find new business. Big data can help you find new audiences and determine which groups are more likely to buy.    ',
+    banner: 'https://www.google.com/search?q=optimize+digital+marketing&rlz=1C1CHBF_itIT893IT893&prmd=invm&sxsrf=ALeKk03r9CTv2t4A2HwOxI6GGrNi_LbmGQ:1620027964424&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjLteG6gq3wAhWNs6QKHdvECikQ_AUoAXoECAEQAQ&biw=1366&bih=635',
     evocativePhoto: '',
     serviceTitle: '',
     serviceDescription: '',
@@ -370,7 +395,112 @@ async function insertRealData() {
     caseStudyTitle: '',
     realtedServiceTitle: '',
   })
-  await BigDataAnalysis.addService(ServiceName2.id)
+  await BigDataAnalysis.addService(OptimizeDigitalMarketing.id)
+
+  const PredictiveAnalyticsInHealthcare = await Service.create({
+    title: 'Predictive analytics in healthcare',
+    subTitle: 'As the health care industry begins to use new technologies such as predictive analytics, government health agencies, doctors, and primary health providers must be aware of risks and agree on standards.',
+    description: 'Health care has a long track record of evidence-based clinical practice and ethical standards in research. However, the extension of this into new technologies such as the use of predictive analytics, the algorithms behind them, and the point where a machine process should be replaced by a human mental process is not clearly regulated or controlled by industry standards. Government health agencies, doctors, and primary health givers need to be aware of the risks emerging and agree on levels of assurance as society continues to move into a new era of decision-making supplemented, and at times replaced, by evidence from digital technologies. More specifically, this paper will look at the various ethical issues and moral hazards that need to be navigated following the adoption and use of predictive analytics in the health care sector with an emphasis on accountable algorithms.',
+    banner: 'https://www.google.com/imgres?imgurl=https%3A%2F%2Fimages.techhive.com%2Fimages%2Farticle%2F2015%2F07%2Fhealth-analytics-ts-100599204-large.jpg&imgrefurl=https%3A%2F%2Fwww.cio.com%2Farticle%2F2954656%2Fhow-predictive-analytics-will-revolutionize-healthcare.html&tbnid=tCMrx7x8NJUWDM&vet=12ahUKEwiv3dKlg63wAhWDgM4BHVl3DrAQMygCegUIARCKAQ..i&docid=lT05Zs_CkEXy3M&w=1200&h=759&q=predictive%20analytics%20in%20healthcare&ved=2ahUKEwiv3dKlg63wAhWDgM4BHVl3DrAQMygCegUIARCKAQ',
+    evocativePhoto: '',
+    serviceTitle: '',
+    serviceDescription: '',
+    partnerTitle: '',
+    partnerDescription: '',
+    p1Name: '',
+    p1Logo: '',
+    p2Name: '',
+    p2Logo: '',
+    p3Name: '',
+    p3Logo: '',
+    caseStudyTitle: '',
+    realtedServiceTitle: '',
+  })
+  await BigDataAnalysis.addService(PredictiveAnalyticsInHealthcare.id)
+
+  const PredictionScenarioAnalysis = await Service.create({
+    title: 'Prediction & Scenario Analysis',
+    subTitle: 'From rear-view analysis to forward-looking projection.',
+    description: 'We analyze datasets through classification, clustering, and pattern recognition techniques to move from a historical static description of the past to a forward-looking actionable projection in the future. We implement this solution in predictive maintenance, incident analysis, early-warning, customer satisfaction, churn prediction, production planning, risk assessment, attribution modeling and more.',
+    banner: 'https://www.google.com/imgres?imgurl=https%3A%2F%2Fimage.shutterstock.com%2Fimage-photo%2Fpredictive-analytics-big-data-analysis-260nw-1348992500.jpg&imgrefurl=https%3A%2F%2Fwww.shutterstock.com%2Fsearch%2Fprediction&tbnid=XSKoMYDNZ2oTtM&vet=12ahUKEwiR5Nzng63wAhUG4hoKHQZpAPgQMygHegQIARB6..i&docid=VIgo-Jqjk390rM&w=603&h=280&q=Prediction&ved=2ahUKEwiR5Nzng63wAhUG4hoKHQZpAPgQMygHegQIARB6',
+    evocativePhoto: '',
+    serviceTitle: '',
+    serviceDescription: '',
+    partnerTitle: '',
+    partnerDescription: '',
+    p1Name: '',
+    p1Logo: '',
+    p2Name: '',
+    p2Logo: '',
+    p3Name: '',
+    p3Logo: '',
+    caseStudyTitle: '',
+    realtedServiceTitle: '',
+  })
+  await BigDataAnalysis.addService(PredictionScenarioAnalysis.id)
+
+  const BigDataAutomation = await Service.create({
+    title: 'Big Data Automation',
+    subTitle: 'Automation enables you to manage big data and innovate at the pace of business.',
+    description: 'Big data automation is growing as a need for almost every organization, with the IoT driving the stream velocity of data. While users require fast availability of data for analysis, the true value of data can only be extracted and managed via intelligent and advanced data automation.',
+    banner: 'https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.completeconnection.ca%2Fwp-content%2Fuploads%2F2021%2F01%2FAutomation-and-Big-Data.jpg&imgrefurl=https%3A%2F%2Fwww.completeconnection.ca%2F8-ways-automation-and-big-data-are-changing-the-game%2F&tbnid=75bt9_omHw7mSM&vet=12ahUKEwi2gLKVhK3wAhXa4YUKHd2bAy8QMygEegUIARCbAQ..i&docid=Wc7KmPQ_2eG_iM&w=800&h=450&q=BigDataAutomation&ved=2ahUKEwi2gLKVhK3wAhXa4YUKHd2bAy8QMygEegUIARCbAQ',
+    evocativePhoto: '',
+    serviceTitle: '',
+    serviceDescription: '',
+    partnerTitle: '',
+    partnerDescription: '',
+    p1Name: '',
+    p1Logo: '',
+    p2Name: '',
+    p2Logo: '',
+    p3Name: '',
+    p3Logo: '',
+    caseStudyTitle: '',
+    realtedServiceTitle: '',
+  })
+  await BigDataAnalysis.addService(BigDataAutomation.id)
+
+  const BIDWHConsulting = await Service.create({
+    title: 'BI and DWH consulting',
+    subTitle: 'We analyze your particular business needs and give recommendations on designing, developing, implementing or upgrading your analytics solution.',
+    description: 'We provide analytics consulting services for our customers to benefit from integrated solutions that rely on the optimal technology stack, allowing companies to save their costs, improve performance and grow their business.',
+    banner: 'https://www.google.com/imgres?imgurl=http%3A%2F%2Fwww.consorata.lu%2Fwp-content%2Fuploads%2F2017%2F05%2FConsultant-1-1024x683-820x400.jpg&imgrefurl=http%3A%2F%2Fwww.consorata.lu%2Fservices%2Fconsulting-services%2F&tbnid=jWNOPFiiZjz8wM&vet=12ahUKEwiN-_ydha3wAhUEexoKHSPGAWgQMygBegUIARCWAQ..i&docid=9mhXnl3yL9XS0M&w=820&h=400&q=consulting%20service&ved=2ahUKEwiN-_ydha3wAhUEexoKHSPGAWgQMygBegUIARCWAQ',
+    evocativePhoto: '',
+    serviceTitle: '',
+    serviceDescription: '',
+    partnerTitle: '',
+    partnerDescription: '',
+    p1Name: '',
+    p1Logo: '',
+    p2Name: '',
+    p2Logo: '',
+    p3Name: '',
+    p3Logo: '',
+    caseStudyTitle: '',
+    realtedServiceTitle: '',
+  })
+  await BigDataAnalysis.addService(BIDWHConsulting.id)
+
+  const PricingOptimization = await Service.create({
+    title: 'Pricing optimization',
+    subTitle: 'Pricing is the top profit lever, yet remains underdeveloped in most companies. We can help you build dynamic pricing capabilities that help you set and get the right price, every time, and capitalize on in-year revenue opportunities. ',
+    description: 'Pricing can boost profits far more than increasing sales or cutting costs. And the results of a smarter pricing strategy can fall to the bottom line very quickly.  Yet at least half of all companies leave money on the table because they don\'t charge the right price or make sure customers actually pay it.   ',
+    banner: 'https://www.google.com/imgres?imgurl=http%3A%2F%2Fwww.ayudigital.com%2Fwp-content%2Fuploads%2F2019%2F09%2FPrice_Optimization.png&imgrefurl=http%3A%2F%2Fwww.ayudigital.com%2Fprice-optimization%2F&tbnid=7PNYEwR9m_YqaM&vet=12ahUKEwirr6zchK3wAhUS4BoKHaWkAS4QMyhCegQIARBJ..i&docid=3y4R-EF0FhaYtM&w=400&h=156&q=pricing%20optimization&ved=2ahUKEwirr6zchK3wAhUS4BoKHaWkAS4QMyhCegQIARBJ',
+    evocativePhoto: '',
+    serviceTitle: '',
+    serviceDescription: '',
+    partnerTitle: '',
+    partnerDescription: '',
+    p1Name: '',
+    p1Logo: '',
+    p2Name: '',
+    p2Logo: '',
+    p3Name: '',
+    p3Logo: '',
+    caseStudyTitle: '',
+    realtedServiceTitle: '',
+  })
+  await BigDataAnalysis.addService(PricingOptimization.id)
   //**END OF BIG DATA ANALYSIS SERVICES */
 
 
