@@ -35,6 +35,10 @@ export default {
           path: '/service',
         },
         {
+          name: 'Team',
+          path: '/team',
+        },
+        {
           name: 'About',
           path: '/about',
         },
