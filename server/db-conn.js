@@ -92,6 +92,10 @@ function defineDBStructure() {
         type: DataTypes.STRING,
         allowNull: true,
       },
+      caseStudyImage: {
+        type: DataTypes.STRING,
+        allowNull: true,
+      },
       teamImage: {
         type: DataTypes.STRING,
         allowNull: true,
@@ -130,18 +134,23 @@ function defineDBStructure() {
     }
   )
 
+  const ServiceCaseStudy = db.define('servicecasestudy')
+
   Area.hasMany(Service, { foreignKey: 'areaID' })
   Area.hasMany(CaseStudy, { foreignKey: 'areaID' })
   Area.hasMany(TeamMember, { foreignKey: 'areaID' })
 
-  Service.hasMany(CaseStudy, { foreignKey: 'serviceID' })
+  Service.belongsToMany(CaseStudy, { through: ServiceCaseStudy })
   Service.hasMany(TeamMember, { foreignKey: 'serviceID' })
+
+  CaseStudy.belongsToMany(Service, { through: ServiceCaseStudy })
 
   db._tables = {
     Area,
     Service,
     CaseStudy,
     TeamMember,
+    ServiceCaseStudy,
   }
 }
 
