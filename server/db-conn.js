@@ -216,7 +216,7 @@ async function insertRealData() {
   })
   const CustomerExperience = await Area.create({
     title: 'CustomerExperience Area',
-    subTitle: 'CustomerExperience area, non so cosa scrivere',
+    subTitle: 'CustomerExperience area, hello world',
     description: '',
     banner: '',
     evocativeImage: '',
