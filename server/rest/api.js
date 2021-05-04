@@ -127,6 +127,14 @@ async function init() {
     })
     return res.json(casestudies)
   })
+
+  app.get('/teammembersbyarea/:areaID', async (req, res) => {
+    const { areaID } = req.params
+    const person = await TeamMember.findAll({
+      where: { areaID: areaID },
+    })
+    return res.json(person)
+  })
 }
 
 init()
