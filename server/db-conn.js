@@ -935,6 +935,10 @@ async function insertRealData() {
     serviceID: '1',
   })
 
+  IoT.addTeammember(person1)
+  Security.addTeammember(person2)
+  
+
   iotC1.addTeammember(person1)
   iotC1.addTeammember(person2)
   iotC2.addTeammember(person1)

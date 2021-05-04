@@ -42,25 +42,47 @@
         ></case-study-mini>
       </div>
     </section>
-    <!--TODO: Add team of this area-->
+
+    <h3>Team Members</h3>
+    <section class="member-grid">
+      <div
+        v-for="(person, personIndex) of people"
+        :key="'person-' + personIndex"
+        class="person"
+        @click="goTo(`/team/${person.id}`)"
+      >
+        <member-mini
+          :title="person.memberNameAndOccupation"
+          :summary="person.personalQuote"
+          :image="person.personPhoto"
+        ></member-mini>
+      </div>
+    </section>
   </section>
 </template>
 <script>
 import ServiceMini from '~/components/service/ServiceMini.vue'
 import CaseStudyMini from '~/components/casestudy/CaseStudyMini.vue'
+import MemberMini from '~/components/team/MemberMini.vue'
 import GoToMixins from '~/mixins/goTo-mixins.js'
 export default {
   components: {
     ServiceMini,
     CaseStudyMini,
+    MemberMini,
   },
   async asyncData({ $axios, route }) {
     const { id } = route.params
     // console.log('this url', process.env.BASE_URL)
     const { data } = await $axios.get(`${process.env.BASE_URL}/api/area/${id}`)
     const area = data
+    const teammembers = await $axios.get(
+      `${process.env.BASE_URL}/api/teammembersbyarea/${id}`
+    )
+    const people = teammembers.data
     return {
       area,
+      people,
     }
   },
   mixins: [GoToMixins],
@@ -97,5 +119,15 @@ img {
 p {
   text-align: left;
   margin-top: 40px;
+}
+.member-grid {
+  display: grid;
+  grid-template-columns: repeat(3, calc(100% / 3));
+  grid-gap: 10px;
+  margin-top: 40px;
+}
+.person {
+  cursor: pointer;
+  margin-bottom: 20px;
 }
 </style>
