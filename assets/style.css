@@ -9,8 +9,34 @@
 body {
   font-family: 'Barlow';
 }
+
+
+/* learn more button */
 .more_button {
   background: #424272;
   box-shadow: 0px 4px 6px rgba(66, 66, 114, 0.16);
   border-radius: 35px;
+  font-family: Barlow;
+  color: white;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px 32px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border: none;
 }
+
+.more_button:hover {
+  background: #4D41C9;
+  box-shadow: 0px 4px 6px rgba(66, 66, 114, 0.16);
+}
+
+.more_button:active {
+  background: #4D41C9;
+  box-shadow: inset 0px 4px 6px rgba(66, 66, 114, 0.16);
+}
+

@@ -1,18 +1,29 @@
 :root {
-  /**PALETTE**/
+  /**GENERAL PALETTE**/
   --cc-purple: #9a43e3;
   --cc-blue: #58cfef;
   --cc-red: #ff4266;
   --cc-yellow: #ffbd31;
   --cc-orange: #ff6533;
 
-  --cc-lightPurple: #e6c8ff;
-  --cc-lightBlue: #c7f3ff;
-  --cc-lightRed: #ffc6d1;
-  --cc-lightYellow: #ffedc7;
-  --cc-lightOrange: #ffd5c8;
+  /**AREAS PALETTE**/
+  --cc-purple: #9a43e3;
+  --cc-blue: #58cfef;
+  --cc-red: #ff4266;
+  --cc-yellow: #ffbd31;
+  --cc-orange: #ff6533;
 
   --cc-base1: #424272;
+  --cc-base2: #63639f;
+  --cc-base3: #cdc9ff;
+  --cc-base4: #e6e3ff;
+  --cc-base5: #f3f2ff;
+  --cc-base6: #fbfbff;
+
+  /**GREY TEXT**/
+  --c-grey1: #464a52;
+  --c-grey2: #909297;
+
   /**TEXT SIZE*/
 
   /**FONT FAMILY*/
