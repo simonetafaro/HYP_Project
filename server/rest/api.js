@@ -76,16 +76,19 @@ async function init() {
   app.get('/casestudiesbyarea/:areaID', async (req, res) => {
     const { areaID } = req.params
     const casestudies = await CaseStudy.findAll({
-      where: { 
+      where: {
         areaID: areaID,
-      }
+      },
     })
     return res.json(casestudies)
   })
-  
 
   app.get('/areas', async (req, res) => {
-    const areas = await Area.findAll({})
+    const areas = await Area.findAll({
+      order: [
+        ['title', 'ASC'],
+      ],
+    })
     return res.json(areas)
   })
 
@@ -94,23 +97,41 @@ async function init() {
     return res.json(services)
   })
 
-
   app.get('/casestudies', async (req, res) => {
-    const casestudies = await CaseStudy.findAll({
-    })
+    const casestudies = await CaseStudy.findAll({})
     return res.json(casestudies)
   })
 
   app.get('/teammembers', async (req, res) => {
-    const teammember = await TeamMember.findAll({
-    })
+    const teammember = await TeamMember.findAll({})
     return res.json(teammember)
   })
 
   app.get('/teammembers/:id', async (req, res) => {
     const { id } = req.params
     const person = await TeamMember.findOne({
-      where: { id }
+      where: { id },
+    })
+    return res.json(person)
+  })
+
+  app.get('/casestudiesbyteammember/:id', async (req, res) => {
+    const { id } = req.params
+    const casestudies = await CaseStudy.findAll({
+      include: {
+        model: TeamMember,
+        where: {
+          id,
+        },
+      },
+    })
+    return res.json(casestudies)
+  })
+
+  app.get('/teammembersbyarea/:areaID', async (req, res) => {
+    const { areaID } = req.params
+    const person = await TeamMember.findAll({
+      where: { areaID: areaID },
     })
     return res.json(person)
   })
