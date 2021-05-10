@@ -1,0 +1,11 @@
+:root {
+    background: #FBFBFF;
+  };
+/* || General styles */
+
+/* prova stile bottone learn more */
+.more_button {
+    background: #424272;
+box-shadow: 0px 4px 6px rgba(66, 66, 114, 0.16);
+border-radius: 35px;
+};
