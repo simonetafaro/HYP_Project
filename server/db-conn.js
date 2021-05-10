@@ -189,8 +189,7 @@ async function insertRealData() {
       'Acting as the bridge between the physical and the digital world, IoT offers a huge opportunity for companies.',
     description:
       'We help clients effectively capitalize on IoT technology and solutions, linking technology, vendors and customers through a holistic business model. IoT describes the connection of devices to the internet using embedded software and sensors to communicate, collect and exchange data with one another. IoT combines connectivity with sensors, devices and people, enabling a form of free-flowing conversation between man and machine, software and hardware. With IoT, the world is wide open, offering a virtually endless array of opportunities and connections at home, at work or at play.',
-    banner:
-      'https://it.insight.com/content/dam/insight-web/it_IT/learn/articoli/azure-iot-banner.jpg',
+    banner: 'https://i.ibb.co/pZ83v4z/iot-main.png',
     evocativeImage: '',
     servicesTitle: 'Discover our IoT services ',
     servicesDescription:
@@ -215,26 +214,34 @@ async function insertRealData() {
     teamTitle: 'Meet our team',
     teamDescription: 'TODO',
   })
+  // isi
   const CustomerExperience = await Area.create({
     title: 'CustomerExperience Area',
-    subTitle: 'CustomerExperience area, non so cosa scrivere',
-    description: '',
+    subTitle:
+      'Understanding what customer experience is and why it’s no longer enough. We are reinventing business through this.',
+    description:
+      'The way we interact with brands and companies has changed. We typically associate the customer experience with a traditional and interaction directly found inside a store with a specific aesthetic. he world has changed, and so has the business model: digitalisation had an huge impact on our existence, leading companies to shape a whole new entrepreneurial perspective. But it’s not just because of this. Many customer behaviour patterns have evolved and the company must be able to understand their needs and needs, possibly anticipating and surprising them.',
     banner: '',
     evocativeImage: '',
-    servicesTitle: 'Discover our services ',
-    servicesDescription: '',
-    caseStudyTitle: 'Read about our case studies',
-    caseStudyDescription: 'TODO',
+    servicesTitle: 'Explore our tailor-made services about Customer Experience',
+    servicesDescription:
+      'Hear how businesses have transformed how they work: Great experiences are no longer only a business accessory, they are of vital importance.',
+    caseStudyTitle: 'Experience our clients’ success',
+    caseStudyDescription:
+      'Reimagining business through experience. The following case studies demonstrate how our company is an expert in the business of creating comprehensive experiences from start to finish.',
     teamTitle: 'Meet our team',
-    teamDescription: 'TODO',
+    teamDescription:
+      'Ideate, innovate, change the world, repeat. Meet our team of talented people using design thinking to create experiences that win awards and make headlines.',
   })
   const BigDataAnalysis = await Area.create({
     title: 'BigDataAnalysis Area',
-    subTitle: 'BigDataAnalysis area, non so cosa scrivere',
+    subTitle:
+      'Analyze data from your database with a data driven approach to take important decisions inside your company.',
     description:
       'The science of analyzing raw data in order to make conclusions about that information, revealing reveal trends and metrics. Through our specialist your company will be more efficient in taking decisions. This process of analysis allows to operate a predictive analysis, that is, it allows to know in advance what will happen: this becomes possible because if we have a model and we have enough historical data we can determine what will happen in the near future with bases or statistical foundations.',
     banner: '',
-    evocativeImage: '',
+    evocativeImage:
+      'https://storage.googleapis.com/saepict-saepictwagtail-prod/images/big-data-analysis-2020.original.png',
     servicesTitle: 'Discover our services ',
     servicesDescription:
       'AI is only as smart as the insights that fuel it. We can help you unlock powerful analytics insights by tapping into data you did not even know you had.',
@@ -719,26 +726,184 @@ async function insertRealData() {
   //**END OF CLOUD COMPUTING SERVICES */
 
   //**CUSTOMER EXPERIENCE SERVICES */
-  const ServiceName1 = await Service.create({
-    title: 'CUSTOMER EXPERIENCE service name',
-    subTitle: '',
-    description: '',
+
+  //1
+  const Immersive = await Service.create({
+    title: 'Immersive Technologies',
+    subTitle:
+      'Learn how immersive technology can increase revenue and streamline the event planning process.',
+    description:
+      'The Immersive and Innovative Experiences practice helps clients transform experiences for this world of unlimited possibility. We blend cutting-edge immersive technology with human creativity and strong ethical governance. We break down barriers between brands and their customers.',
+    banner: '',
+    evocativePhoto: '',
+    serviceTitle: 'Immersive Technologies solutions',
+    serviceDescription:
+      'We help brands tell stories and craft experiences in innovative and immersive ways, opening up new kinds of interaction, new ways to work and learn, and new revenue streams. It’s an emerging space for all to play in. Let us help you take a lead in next-generation experience.',
+    //detailTitle1: 'Spatial storytelling',
+    //detailDescription1: 'Designing 360o story worlds, including non-linear narrative and character development.',
+    //detailTitle2: 'Experiential marketing',
+    //detailDescription2: 'Creating interactive brand engagement through immersive content, shared experiences and location-based activations.',
+    //detailTitle3: 'Immersive Commerce',
+    //detailDescription3: 'Bringing products to life in 3D through digital twin models, augmenting the commerce experience with virtual ways to shop and buy.',
+    //detailTitle4: 'Immersive Learning and Training',
+    //detailDescription4: 'Building new ways to process information, master skills and improve performance through virtually simulated environments and situations.',
+    partnerTitle: 'Alliances and partners',
+    partnerDescription:
+      'At ?company name?, together with our Partners, we are re-imagining the business Deliver with unforgettable customer experiences',
+    p1Name: 'Adobe',
+    p1Logo: '',
+    p2Name: '',
+    p2Logo: '',
+    p3Name: '',
+    p3Logo: '',
+    caseStudyTitle: 'Read about our case studies',
+    realtedServiceTitle: 'You might be interested also to these services.',
+  })
+  await CustomerExperience.addService(Immersive.id)
+
+  //2
+  const UserInterfaces = await Service.create({
+    title: 'User Interfaces',
+    subTitle:
+      'Leading creative, business analysis, and advanced technology in user research',
+    description:
+      'Design a new way to communicate. How to create brand new costumer’s experiences with the latest trend of user interfaces. An interface is the link between the corporate and the user, it must respond to customers’ new, often unmet and frequently changing needs and enable them to achieve their desired outcomes.',
     banner: '',
     evocativePhoto: '',
     serviceTitle: '',
     serviceDescription: '',
-    partnerTitle: '',
-    partnerDescription: '',
+    partnerTitle: 'Alliances and partners',
+    partnerDescription:
+      'At ?company name?, together with our Partners, we are re-imagining the business Deliver with unforgettable customer experiences',
+    p1Name: 'Adobe',
+    p1Logo: '',
+    p2Name: '',
+    p2Logo: '',
+    p3Name: '',
+    p3Logo: '',
+    caseStudyTitle: 'Read about our case studies',
+    realtedServiceTitle: 'You might be interested also to these services.',
+  })
+  await CustomerExperience.addService(UserInterfaces.id)
+
+  //3
+  const DigitalCustomer = await Service.create({
+    title: 'Customer Experience Engine',
+    subTitle:
+      'Your customers are always connected. Shouldn’t their experiences be too? The Customer Experience Engine turns touchpoints into a story: unify the moments. Own the experience.',
+    description: '',
+    banner: '',
+    evocativePhoto: '',
+    serviceTitle: 'Customer Experience Engine solutions',
+    serviceDescription:
+      'Our experience-led approach helps ensure that organizations have the right experience architecture to allow customers to create their own journey on their own terms. We view technology as the enabler of the customer experience, not the driver.',
+    partnerTitle: 'Alliances and partners',
+    partnerDescription:
+      'At ?company name?, together with our Partners, we are re-imagining the business Deliver with unforgettable customer experiences',
+    //detailTitle1: 'Single view of the customer',
+    //detailDescription1: 'Lines of business and stakeholder groups have the visibility into how the business is interacting with customers to drive connected experiences.',
+    //detailTitle2: 'Seamless plug and play with the latest tech',
+    //detailDescription2: 'CXE solves the technology impediment to allow organizations to focus on delivering unforgettable and impactful experiences.',
+    //detailTitle3: 'Omnichannel power across platforms',
+    //detailDescription3: 'CXE unifies your applications across marketing, commerce, sales and service, turning touchpoints into a story.',
     p1Name: '',
     p1Logo: '',
     p2Name: '',
     p2Logo: '',
     p3Name: '',
     p3Logo: '',
-    caseStudyTitle: '',
-    realtedServiceTitle: '',
+    caseStudyTitle: 'Read about our case studies',
+    realtedServiceTitle: 'You might be interested also to these services.',
   })
-  await CustomerExperience.addService(ServiceName1.id)
+  await CustomerExperience.addService(DigitalCustomer.id)
+
+  //4
+  const Campaign = await Service.create({
+    title: 'Campaign Management',
+    subTitle: '...',
+    description: '',
+    banner: '',
+    evocativePhoto: '',
+    serviceTitle: '',
+    serviceDescription: '',
+    partnerTitle: 'Alliances and partners',
+    partnerDescription:
+      'At ?company name?, together with our Partners, we are re-imagining the business Deliver with unforgettable customer experiences',
+    p1Name: '',
+    p1Logo: '',
+    p2Name: '',
+    p2Logo: '',
+    p3Name: '',
+    p3Logo: '',
+    caseStudyTitle: 'Read about our case studies',
+    realtedServiceTitle: 'You might be interested also to these services.',
+  })
+  await CustomerExperience.addService(Campaign.id)
+
+  //5
+  const AICustomer = await Service.create({
+    title: 'Customer Service AI',
+    subTitle:
+      'Make every customer feel like the only customer: Change the customer experience with conversational AI.',
+    description:
+      'Solutions.AI for Customer Engagement is built for putting AI at the frontline of every interaction streamlines service, better equips agents, and enhances the overall experience with personalized, precise, and empathetic care. It helps brands quickly and responsibly use data to understand and predict customer needs and arm agents behind the screen with the right message and offers. And it improves the original product and service by analyzing and incorporating insights from customer interactions through a constant feedback loop.',
+    banner: '',
+    evocativePhoto: '',
+    serviceTitle: 'Customer Service AI solutions',
+    serviceDescription:
+      'With our range of pre-built AI modules and ecosystem of technology partners, we are able to quickly scale hyper-personalized experiences to help clients anticipate and address their customers needs.',
+    //detailTitle1: 'Patented conversational AI platform',
+    //detailDescription1: 'Rapidly design and execute automated conversations, compatible with any existing technology partner.',
+    //detailTitle2: 'Intent discovery and analytics',
+    //detailDescription2: 'Apply a data-driven approach to identify and prioritize customer intents for automation.',
+    //detailTitle3: 'Customer and journey analytics',
+    //detailDescription3: 'Responsibly establish a strong foundation of customer and journey data to generate insights around specific business inefficiencies that unlock value.',
+    partnerTitle: 'Alliances and partners',
+    partnerDescription:
+      'At ?company name?, together with our Partners, we are re-imagining the business Deliver with unforgettable customer experiences',
+    p1Name: '',
+    p1Logo: '',
+    p2Name: '',
+    p2Logo: '',
+    p3Name: '',
+    p3Logo: '',
+    caseStudyTitle: 'Read about our case studies',
+    realtedServiceTitle: 'You might be interested also to these services.',
+  })
+  await CustomerExperience.addService(AICustomer.id)
+
+  //6
+  const CreativeMarketingServices = await Service.create({
+    title: 'Creative Marketing Services',
+    subTitle:
+      'Build your brand and drive demand through high-impact, creative customer experiences. Discover the transformative power of a story.',
+    description:
+      'We take a holistic approach that combines creative, content, data and technological expertise to translate brand vision and business goals into customer engagement strategies and business results. With our help, you wll delight your customers with relevant, elegant, and intuitive experiences. Our insights into audiences and markets help us create effective brand strategies that drive real engagement for every customer across every channel.',
+    banner: '',
+    evocativePhoto: '',
+    serviceTitle: 'Creative Marketing Services solutions',
+    serviceDescription:
+      'What does it mean to build a brand? We take it from the ground up—from strategy and content to activation.',
+    //detailTitle1: 'Intent discovery and analytics',
+    //detailDescription1: 'We deliver strategy for new client brands and develop creative assets and identities.',
+    //detailTitle2: 'Content strategy and activation';
+    //detailDescription2: 'We develop creative content across channels to drive consumer experiences.',
+    //detailTitle3: 'Omnichannel strategy and activation';
+    //detailDescription3: 'We activate and optimize programs that deliver high engagement and return on investment.',
+    partnerTitle: 'Alliances and partners',
+    partnerDescription:
+      'At ?company name?, together with our Partners, we are re-imagining the business Deliver with unforgettable customer experiences',
+    p1Name: '',
+    p1Logo: '',
+    p2Name: '',
+    p2Logo: '',
+    p3Name: '',
+    p3Logo: '',
+    caseStudyTitle: 'Read about our case studies',
+    realtedServiceTitle: 'You might be interested also to these services.',
+  })
+  await CustomerExperience.addService(CreativeMarketingServices.id)
+
   //**END OF CUSTOMER EXPERIENCE  SERVICES */
 
   //** ------------------------------------------------------------ CASE STUDIES --------------------------------------------------------------- */
@@ -779,7 +944,114 @@ async function insertRealData() {
   //**END OF SECURITY CASE STUDIES */
 
   //**BIG DATA ANALYSIS CASE STUDIES */
-  const casestudy1 = await CaseStudy.create({
+  const bdaC1 = await CaseStudy.create({
+    title: 'BI IMPLEMENTATION FOR 200 HEALTHCARE CENTERS',
+    subTitle:
+      'The Customer is an American company that offers software to help 200 healthcare centers and retirement homes to process data related to patients and medication as well as build various types of reports.',
+    banner:
+      'https://www.scnsoft.com/boss/images/02d65838-eb3a-4d54-b7aa-b6b7aa0c1d47bi_healthcare.png',
+    descriptiveText:
+      'The Customer commissioned ScienceSoft to rewrite the software – a Java application used by the healthcare centers for management and reporting of data on medication inventory, clinical services, patient data, marketing activities and others. Within the project, the Customer also wanted the tool to allow its users to enable quality population health analytics with prompt reports.',
+    challengeTitle: 'BI IMPLEMENTATION',
+    challengeDescription:
+      'The Customer commissioned ScienceSoft to rewrite the software – a Java application used by the healthcare centers for management and reporting of data on medication inventory, clinical services, patient data, marketing activities and others. Within the project, the Customer also wanted the tool to allow its users to enable quality population health analytics with prompt reports.',
+    solutionTitle: 'Implented system',
+    solutionDescription:
+      '"To ensure scalability and short query response time, ScienceSoft’s BI implementation team built an analytical Microsoft SQL Server data warehouse which would use a Transact-SQL script to load data from the relational database. The latter was consolidated from 200 databases during the application development process and totaled 12GB."',
+    teamsTitle: 'Team a caso',
+    personName: '',
+    personJob: '',
+    serviceTitle: '',
+    serviceHeading: '',
+  })
+  await BigDataAnalysis.addCasestudy(bdaC1.id)
+
+  const bdaC2 = await CaseStudy.create({
+    title: 'Price optimization for e-commerce',
+    subTitle:
+      'This will be a glimpse of what you can achieve by sharing your sales data with us. We could perform an opportunity summary report in line with this use case, and uncover your own opportunities regarding price optimization. So, fasten your seatbelt and get ready for the take-off.',
+    banner:
+      'https://tryolabs.com/blog/images/blog/social/2018-09-24-price-optimization-machine-learning.d59ca712.jpg',
+    descriptiveText:
+      'We have discussed how a data-driven price optimization is no longer an option for retailers, but a question of how and when to do it. With a world that’s moving towards changing prices more and more dynamically, static pricing strategies can’t keep up, and data-driven approaches have arrived to stay. In this post, we’ll be focusing on how to perform data-driven price optimization, using a case study to showcase what can be done using sales data to predict demand and optimize prices.',
+    challengeTitle: 'Analyzing an E-Commerce Sales Data',
+    challengeDescription:
+      '"Having our data ready, we proceed to train the demand forecasting models. Our goal is to be able to build the demand curve for each item. The models will learn the relation between the demand and several factors such as the price, holidays/events, and macroeconomics. During this phase, the collaboration with the business team is particularly important. Business insights help to validate the selected features and ensures that we are not missing any important aspect that can be potentially used to forecast the demand."',
+    solutionTitle: 'Price optimized',
+    solutionDescription:
+      '"Combining their available dataset and other publicly available information, such as holidays/events data and macroeconomic series, we have been able to estimate demand curves for a subset of the items which would allow them to take optimal pricing decisions. The remaining items should undergo an exploration phase where new prices would be tried in order to be able to estimate their demand curves accurately. The exploration strategy is generally decided jointly with the client. For this example, given the data available and our past experience, we would suggest performing weekly price changes during the exploration phase. Furthermore, we have shown that there is plenty of room for inventory management improvement since there seems to be an important amount of revenue lost due to understock."',
+    teamsTitle: 'Team a caso',
+    personName: '',
+    personJob: '',
+    serviceTitle: '',
+    serviceHeading: '',
+  })
+  await BigDataAnalysis.addCasestudy(bdaC2.id)
+
+  const bdaC3 = await CaseStudy.create({
+    title: 'Integrated BDA Platform',
+    subTitle: 'Big Data automation platform enables new sides of powerful data',
+    banner:
+      'https://www.xenonstack.com/images/blog/need-of-modern-big-data-integration-platform.png',
+    descriptiveText:
+      'The essential feature of big data automation (BDA) is the realization that doing a lot more with a lot less is the new reality for IT organizations, and that smart IT organizations, in response to that reality, will seek to spend their scarce human talent  building value that their internal customers within the organization perceive to be valuable: new, enabling, differentiating. Today, that ingenuity is trapped, because IT teams are spending most or all of their time performing routine internally focused tasks, many of them invisible to internal business constituents, and most of them either susceptible to automation or acceleration.',
+    challengeTitle: 'Replacing Artistry with Automation',
+    challengeDescription:
+      'As big data technologies become an increasingly important part of our enterprise decision support environments — whether as staging areas, data engineering environments, sandboxes for data scientists and advanced analytics projects, or as a data management platform co-equal with our enterprise data warehouses — we should avoid making the same mistakes we made, with enterprise data warehousing, and instead build big data automation into our environment from the outset. That big data automation infrastructure cannot, we think, come from the open source community or the Hadoop distribution vendors. Those companies have no real experience with, or understanding of, the existing enterprise data warehousing environment, or commercial decision-making in general.',
+    solutionTitle: 'Developed platformfor BDA',
+    solutionDescription:
+      'We embrace  the very behaviors that got commercial IT organizations into such difficulties in enterprise data warehousing, by encouraging the broad-based, large-scale use of hand-coding techniques, in proprietary languages, using complex, poorly integrated tool chains, with little or no support for operations and management of production big data infrastructure, and no understanding of the essential role that rich, well-managed metadata plays into the effective operation, and modification, of production-grade analytics environments.',
+    teamsTitle: 'Team a caso',
+    personName: '',
+    personJob: '',
+    serviceTitle: '',
+    serviceHeading: '',
+  })
+  await BigDataAnalysis.addCasestudy(bdaC3.id)
+
+  const bdaC4 = await CaseStudy.create({
+    title: 'Predictive analytics in healthcare ',
+    subTitle: 'Our prediction can help you in everyday life',
+    banner:
+      'https://www.clicdata.com/wp-content/uploads/2018/08/predictive-analytics-healthcare.jpg',
+    descriptiveText:
+      'Predictive analytics can provide alerts to everyone from clinician and financial experts to administrative staff to inform them when events they are concerned with are likely to happen. As a result, they can make more informed, more timely, and usually better choices at times when small nuance can have big consequences.',
+    challengeTitle: 'Moving to the future in healthcare industry',
+    challengeDescription:
+      'Much of medicine is about anticipating and reducing risk based on current and historical patient data. How likely is this cancer patient to suffer complications if we perform surgery? What is the chance that this pneumonia patient will be readmitted to the intensive care unit (ICU) within 48 hours if she is discharged? Clinicians have always had to make decisions without absolute certainty – but with the advance of predictive analytics in healthcare, these decisions promise to be better informed than ever.  Predictive analytics aims to alert clinicians and caregivers of the likelihood of events and outcomes before they occur, helping them to prevent as much as cure health issues. Driven by the rise of Artificial Intelligence (AI) and the Internet of Things (IoT), we now have algorithms that can be fed with historical as well as real-time data to make meaningful predictions.',
+    solutionTitle: 'Prediction has been useful to help people',
+    solutionDescription:
+      'Predictive analytics can combine data from multiple sources – including hospital-based electronic medical records, fall detection pendants, and historical use of medical alert services – to identify seniors who are at risk of emergency transport in the next 30 days. This allows healthcare providers to reach out to a senior person even before a fall or other medical complication occurs, preventing unnecessary hospital readmissions and reducing costs of transportation, acute care, and rehabilitation. In a similar vein, one medical home network in the US reported using machine learning to identify individuals with a heightened risk of developing severe complications from COVID-19. Rather than calling all 122,000 of their members to check in on their well-being, the home network took a more targeted, data-driven approach to focus their initial outreach on the 4.4 percent at-risk patients. By educating this group on when and where they should seek medical care, providers sought to proactively help at-risk patients while managing strain on healthcare organizations"',
+    teamsTitle: 'Team a caso',
+    personName: '',
+    personJob: '',
+    serviceTitle: '',
+    serviceHeading: '',
+  })
+  await BigDataAnalysis.addCasestudy(bdaC4.id)
+
+  const bdaC5 = await CaseStudy.create({
+    title: 'Optimise digital marketing',
+    subTitle: 'Finding the right digital marketing agency isn’t easy.',
+    banner:
+      'https://deoriunde.com/wp-content/uploads/2019/11/Digital-marketing.jpg',
+    descriptiveText:
+      'The challenge for us was helping Intuit build visibility and become known for services outside of the main ones for which they are known. Plus there was some concern around their highly-specialized competitors like GoDaddy.',
+    challengeTitle: 'A good understanding of your customer’s behavior.',
+    challengeDescription:
+      'At its core, marketing is all about communicating with your customers in their own language on the platforms where they hang out. Before you can do that, you need to understand your audience. Not just surface level stuff like “they need help with SEO,” but a deeper understanding.',
+    solutionTitle: 'Improved understanding of customer behaviour',
+    solutionDescription:
+      'When you’re starting a business, it’s all about hustling. You’re just trying to generate revenue however you can. But as you grow, you must develop more documentation and processes around your workflows. For example, you might need to have documentation for how to run a PR, social media, or paid advertising campaign.',
+    teamsTitle: 'Team a caso',
+    personName: '',
+    personJob: '',
+    serviceTitle: '',
+    serviceHeading: '',
+  })
+  await BigDataAnalysis.addCasestudy(bdaC5.id)
+
+  const bdaC6 = await CaseStudy.create({
     title: 'BIG DATA ANALYSIS case study',
     subTitle: '',
     banner: '',
@@ -794,7 +1066,7 @@ async function insertRealData() {
     serviceTitle: '',
     serviceHeading: '',
   })
-  await BigDataAnalysis.addCasestudy(casestudy1.id)
+  await BigDataAnalysis.addCasestudy(bdaC6.id)
   //**END OF BIG DATA ANALYSIS CASE STUDIES */
 
   //**CLOUD COMPUTING CASE STUDIES */
@@ -817,22 +1089,106 @@ async function insertRealData() {
   //**END OF CLOUD COMPUTING CASE STUDIES */
 
   //**CUSTOMER EXPERIENCE CASE STUDIES */
-  const casestudy3 = await CaseStudy.create({
-    title: 'CUSTOMER EXPERIENCE CASE STUDIES',
-    subTitle: '',
+  //1
+  const ceC1 = await CaseStudy.create({
+    title: 'Reimagining guest experiences on the high seas',
+    subTitle:
+      'Carnival Corporation connects high-touch technology and the human touch to create hyper-relevant experiences for thousands of guests at a time.',
     banner: '',
-    descriptiveText: '',
-    challengeTitle: '',
-    challengeDescription: '',
-    solutionTitle: '',
-    solutionDescription: '',
-    teamsTitle: 'Team a caso',
-    personName: '',
-    personJob: '',
-    serviceTitle: '',
-    serviceHeading: '',
+    descriptiveText:
+      'Carnival Corp.’s CEO Arnold Donald has dubbed today “the golden age of cruising.” With growth in guest numbers, fleet sizes, ticket prices and a sea of new competitors, the description certainly fits. However, as dynamic as the industry is, the cruise travel category remains under penetrated. The company’s leadership knew to expand the market for cruise vacations, the cruise model itself had to change. The focus needed to go beyond building and marketing new ships to leveraging the company’s scale to create a new and sustainable competitive advantage. With the world’s largest fleet spanning nine distinct brands, Carnival Corp. envisioned a new model that elevated guest experience enablement above the physical ship platform. ',
+    challengeTitle:
+      'Our challenge - Deliver personalized, cost-effective experiences to keep passengers coming back to sea on their ships.',
+    challengeDescription:
+      'It’s no wonder that Carnival Corporation’s CEO Arnold Donald calls today “the golden age of cruising.” Forbes predicts that 27 million people will take a cruise this year, with $65 billion in ships on order over the next decade.',
+    solutionTitle:
+      'The solution we provided - Connecting every guest to personalized experiences',
+    solutionDescription:
+      'Each guest receives a free Medallion. The light, quarter-sized disc enables frictionless payment, keyless stateroom access, accelerated embarkation and much more.',
+    teamsTitle: 'Meet our team',
+    personName: 'Sean Hyland',
+    personJob: 'Digital Technical Architect',
+    serviceTitle: 'Immersive technologies',
+    serviceHeading:
+      'From novelty to utility. Excelling in digital commerce requires engaging product and service expertise that give confidence to consumer buying.',
   })
-  await CustomerExperience.addCasestudy(casestudy3.id)
+  await CustomerExperience.addCasestudy(ceC1.id)
+
+  //2
+  const ceC2 = await CaseStudy.create({
+    title:
+      'illycaffè - Finding the perfect blend for the digital customer experience',
+    subTitle:
+      'illycaffè, the premium Italian coffee brand, offers a unique taste and aroma that’s recognized by coffee lovers around the world, the company sells its products and services to consumers and trade customers in 140 different countries.',
+    banner: '',
+    descriptiveText:
+      'Our data-driven, comprehensive and consistent social media strategy is optimizing the creative effort, ensuring premium content with that unique “illycaffè” blend reaches the right audience at the right time on the right channel. Social media activities have increased engagement and reach by 15 percent.',
+    challengeTitle: 'Our challenge - Business approach reimagination',
+    challengeDescription:
+      'Looking to capitalize on its success at home and expand its growth internationally, illycaffè decided to embark on a radical reimagination of its digital customer experience. Combining the power of digital with a customer-centric mindset, illycaffè wanted to offer truly memorable personalized experiences on both B2B and B2C channels. The ultimate goal? To delight and engage its customers, bringing them ever closer to the brand—and fueling new growth for the illycaffè business.',
+    solutionTitle:
+      'The solution we provided - A whole brand new client approach',
+    solutionDescription:
+      'Leveraging knowledge from across Interactive design and beyond—in strategy, technology, digital experiences and more—we’re helping illycaffè every step of the way as it drives its transformation forward. Beginning with a digital transformation roadmap, we’re setting the business on a path to transform customer experience in everything from the website to the contact center, putting a customer-centric mindset at the core',
+    teamsTitle: 'Meet our team',
+    personName: 'Hari Murakami',
+    personJob: 'Lead – Immersive Experiences, Interactive',
+    serviceTitle: 'Immersive technologies',
+    serviceHeading:
+      'From novelty to utility. Excelling in digital commerce requires engaging product and service expertise that give confidence to consumer buying.',
+  })
+  await CustomerExperience.addCasestudy(ceC2.id)
+
+  //3
+  const ceC3 = await CaseStudy.create({
+    title: 'Subway - A data-driven recipe for delighting customers',
+    subTitle:
+      'Reinventing experiences: Subway CDO on personalization. Delivering meaningful insights that are helping them delight customers every day.',
+    banner: '',
+    descriptiveText:
+      'For today’s fast-food consumers, mobile and online ordering are must-haves. But delivering them effectively can be a tall order even for hugely successful brands. As part of a broader digital transformation, we helped Subway® restaurants make sure all their customer touchpoints were hitting the mark by creating a new data-driven experience optimization operating model.',
+    challengeTitle:
+      'Our challenge - How to make sure every touchpoint hits the mark?',
+    challengeDescription:
+      'In the hyper-competitive quick service restaurant industry, getting customer experience right matters more than ever. So, as part of a complete transformation of their digital services, Subway wanted to make sure every digital touchpoint was as effective as it could possibly be. And that called for something new: a commitment to continuous consumer experimentation and a data-driven culture of daily user testing whether online, on their mobile app, or in store.',
+    solutionTitle:
+      'The solution we provided - Building up a new operating model, layer by layer',
+    solutionDescription:
+      '"Using our deep experience of both organizational design and personalization, we helped Subway devise a completely new recipe for success – an operating model that would continuously optimize customer experiences through a dedication to scientific experimentation Leveraging the technologies of Adobe Analytics and Target, the new model enables Subway to run vast numbers of user experience tests across digital channels – everything from changing the color of a single button to revising homepage promotional messaging – and see the results instantly. That’s providing statistically meaningful insights into how design changes affect customer behavior – and company revenue.',
+    teamsTitle: 'Meet our team',
+    personName: 'Sean Green',
+    personJob: 'Lead – Interactive Technology',
+    serviceTitle: 'Immersive technologies',
+    serviceHeading:
+      'From novelty to utility. Excelling in digital commerce requires engaging product and service expertise that give confidence to consumer buying.',
+  })
+  await CustomerExperience.addCasestudy(ceC3.id)
+
+  //4
+  const ceC4 = await CaseStudy.create({
+    title: 'Dutch Flowers - Bouquet of innovation, personalization and service',
+    subTitle:
+      'A digital platform with exceptional, personalized customer experience so business continues to bloom.',
+    banner: '',
+    descriptiveText:
+      'Webshops, much like floral arrangements, can be delicate: one faulty order or misplaced orchid is all it takes to keep a customer from returning. So, when an opportunity sprouted up for Dutch Flowers to fortify their online channel’s technical capabilities, they acted quickly.',
+    challengeTitle:
+      'Our challenge - Renew the global leader in the floriculture industry',
+    challengeDescription:
+      'The challenge was clear: finding a solid e-commerce platform to handle this sheer volume of new products and prices on a daily basis. On top of this, Dutch Flowers wanted to continue providing an exceptional customer experience — one that was both personalized and allowed floral wholesale companies to maintain, customize and control their brand identity in the individual websites and assortments for their customers.',
+    solutionTitle:
+      'The solution we provided - User research and experience mapping',
+    solutionDescription:
+      'Working with us, Dutch Flowers kicked things off by leveraging design thinking and agile delivery methods, like user research and story mapping, to determine how the ideal customer journey would look as they peruse and purchase flowers online. Together, we developed a minimal viable product (MVP) based on the latest SAP Commerce Cloud Version 2.',
+    teamsTitle: 'Meet our team',
+    personName: 'Sean Green',
+    personJob: 'Lead – Interactive Technology',
+    serviceTitle: 'Immersive technologies',
+    serviceHeading:
+      'From novelty to utility. Excelling in digital commerce requires engaging product and service expertise that give confidence to consumer buying.',
+  })
+  await CustomerExperience.addCasestudy(ceC4.id)
+
   //**END OF CUSTOMER EXPERIENCE CASE STUDIES */
 
   //**IOT CASE STUDIES */
