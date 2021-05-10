@@ -10,7 +10,23 @@
         {{ area.description }}
       </p>
     </article>
-    <h3>Services</h3>
+    <p class="casestart">Why Choosing Us</p>
+    <p
+      class="caseintro"
+      :style="{
+        color: 'color: #464A52',
+      }"
+    >
+      our Services
+    </p>
+    <p
+      class="caseintro"
+      :style="{
+        color: '#FF4266 ',
+      }"
+    >
+      success business
+    </p>
     <section class="service-grid">
       <h4 v-if="area.services.length === 0">There are no services</h4>
       <div
@@ -26,8 +42,42 @@
         ></service-mini>
       </div>
     </section>
-
-    <h3>Case Studies</h3>
+    <div class="discover">
+      <p class="discover-text">DISCOVER ALL SERVICES</p>
+    </div>
+    <p :style="{ padding: '175px' }"></p>
+    <svg
+      width="101"
+      height="101"
+      viewBox="0 0 101 101"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M100.705 50.4995C86.841 64.3631 64.3636 64.3631 50.5 50.4995C64.3636 36.6359 86.841 36.6359 100.705 50.4995ZM0.295419 50.4995C14.159 36.6359 36.6364 36.6359 50.5 50.4995C36.6364 64.3631 14.159 64.3631 0.295419 50.4995ZM50.5 50.4995C36.6364 36.6359 36.6364 14.1585 50.5 0.294922C64.3636 14.1585 64.3636 36.6359 50.5 50.4995ZM50.5 50.4995C64.3636 64.3631 64.3636 86.8405 50.5 100.704C36.6364 86.8405 36.6364 64.3631 50.5 50.4995Z"
+        fill="#E8E7FF"
+      />
+    </svg>
+    <p :style="{ padding: '175px' }"></p>
+    <p class="casestart">WHAT WE DO</p>
+    <p
+      class="caseintro"
+      :style="{
+        color: 'color: #464A52',
+      }"
+    >
+      DISCOVER OUR
+    </p>
+    <p
+      class="caseintro"
+      :style="{
+        color: '#FF4266 ',
+      }"
+    >
+      clients Case Studies
+    </p>
     <section class="casestudies-grid">
       <h4 v-if="area.casestudies === 0">There are no cs</h4>
       <div
@@ -42,8 +92,28 @@
         ></case-study-mini>
       </div>
     </section>
+    <div class="discover">
+      <p class="discover-text">DISCOVER ALL CASES</p>
+    </div>
 
-    <h3>Team Members</h3>
+    <p class="casestart">the people</p>
+
+    <p
+      class="caseintro"
+      :style="{
+        color: 'color: #464A52',
+      }"
+    >
+      MEET OUR
+    </p>
+    <p
+      class="caseintro"
+      :style="{
+        color: ' #FF4266',
+      }"
+    >
+      PROFESSIONAL TEAM
+    </p>
     <section class="member-grid">
       <div
         v-for="(person, personIndex) of people"
@@ -116,10 +186,7 @@ h4 {
 img {
   max-width: 600px;
 }
-p {
-  text-align: left;
-  margin-top: 40px;
-}
+
 .member-grid {
   display: grid;
   grid-template-columns: repeat(3, calc(100% / 3));
@@ -129,5 +196,44 @@ p {
 .person {
   cursor: pointer;
   margin-bottom: 20px;
+}
+.discover {
+  background: #e8e6ff;
+  border-radius: 35px;
+  max-width: 30%;
+  margin: auto;
+}
+.discover-text {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 15px 25px 15px 25px;
+
+  color: #63639f;
+}
+
+.caseintro {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 70px;
+  line-height: 84px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.casestart {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  /* identical to box height */
+  padding-bottom: 44px;
+
+  text-align: center;
+  text-transform: uppercase;
+  color: #464a52;
 }
 </style>

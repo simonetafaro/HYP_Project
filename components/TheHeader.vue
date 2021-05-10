@@ -1,14 +1,33 @@
 <template>
   <header class="header">
     <div class="header-content">
-      <div class="title"><h3 @click="goTo(`/`)">Company Name</h3></div>
+      <div class="title">
+        <p
+          :style="{
+            color: `#000000`,
+            display: 'inline',
+          }"
+          @click="goTo(`/`)"
+        >
+          HEX
+        </p>
+        <p
+          :style="{
+            color: `#4D41C9`,
+            display: 'inline',
+          }"
+          @click="goTo(`/`)"
+        >
+          TECH.
+        </p>
+      </div>
       <nav class="right">
         <div
           v-for="(item, itemIndex) of menuOptions"
           :key="'menu-item-' + itemIndex"
           class="menu-item"
         >
-          <nuxt-link :to="item.path">
+          <nuxt-link class="headerContent" :to="item.path">
             {{ item.name }}
           </nuxt-link>
         </div>
@@ -57,12 +76,16 @@ export default {
 
 <style>
 .header {
+  position: sticky;
   height: 70px;
-  background: black;
-  color: white;
+  width: 100%;
+  top: 0;
+  background-color: white;
   display: flex;
   justify-content: space-between;
   text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  z-index: 1;
 }
 .header-content {
   width: 100%;
@@ -70,6 +93,19 @@ export default {
   margin-left: 50px;
   align-items: center;
   display: inline-flex;
+  color: black;
+}
+.headerContent {
+  width: 100%;
+  align-items: center;
+  display: inline-flex;
+  color: black;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 19px;
+  text-transform: uppercase;
 }
 .right {
   display: flex;
@@ -77,14 +113,17 @@ export default {
   width: 100%;
   margin-right: 50px;
   margin-left: auto;
-  max-width: 50%;
+  max-width: 70%;
 }
 .menu-item {
   margin-left: 50px;
 }
 .title {
-  font-size: 1.3rem;
-  margin-bottom: 5px;
   cursor: pointer;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 60px;
 }
 </style>
