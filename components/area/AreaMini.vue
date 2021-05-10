@@ -4,6 +4,7 @@
       <h3>{{ title }}</h3>
       <div class="img" :style="{ 'background-image': `url(${image})` }"></div>
       <p>{{ summary }}</p>
+      <button class="more_button">learn more</button>
     </div>
   </div>
 </template>

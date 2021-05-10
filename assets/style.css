@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow');
+:root {
+  background: #fbfbff;
+}
+/* || General styles */
+
+/* prova stile bottone learn more */
+
+body {
+  font-family: 'Barlow';
+}
+
+.more_button {
+  background: #424272;
+  box-shadow: 0px 4px 6px rgba(66, 66, 114, 0.16);
+  border-radius: 35px;
+  font-family: Barlow;
+  color: white;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px 32px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border: none;
+
+  background-position: center;
+  transition: background 0.8s;
+}
+
+.more_button:hover {
+background: #4D41C9 radial-gradient(circle, transparent 1%, #4D41C9 1%) center/15000%;
+}
+
+.more_button:active {
+  background-color: #CDC9FF;
+  background-size: 100%;
+  transition: background 0s;
+}
