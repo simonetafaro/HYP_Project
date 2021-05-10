@@ -175,8 +175,9 @@ async function insertRealData() {
     banner:
       'https://www.orion.on.ca/wp-content/uploads/2019/05/cybersecurity-banner.jpg',
     evocativeImage: '',
-    servicesTitle: 'Discover our services ',
-    servicesDescription: '',
+    servicesTitle: 'Discover our Security services',
+    servicesDescription:
+      'We are unique among IT security consulting firms. We combine security technology engineering, intelligence expertise and our data science DNA to help companies manage digital risk end-to-end.',
     caseStudyTitle: 'Read about our case studies',
     caseStudyDescription: 'TODO',
     teamTitle: 'Meet our team',
@@ -252,6 +253,19 @@ async function insertRealData() {
     subTitle:
       'offers a variety of services from information security consulting to assessing, testing and improving the protection of applications and networks for companies operating in healthcare, manufacturing, banking, retail, telecommunications, and other industries.',
     banner: 'https://www.comarch.com/files-com/file_545/c1.png',
+    evocativePhoto: '',
+    serviceTitle: '',
+    serviceDescription: '',
+    partnerTitle: '',
+    partnerDescription: '',
+    p1Name: '',
+    p1Logo: '',
+    p2Name: '',
+    p2Logo: '',
+    p3Name: '',
+    p3Logo: '',
+    caseStudyTitle: '',
+    realtedServiceTitle: '',
   })
   await Security.addService(ModernFraudProtection.id)
 
@@ -259,8 +273,111 @@ async function insertRealData() {
     title: 'Managed security',
     subTitle:
       'Helping clients rapidly scale security and compliance operations through innovative technology, as-a-Service capabilities and cybersecurity  services.',
+    banner: 'https://www.comarch.com/files-com/file_545/c1.png',
+    evocativePhoto: '',
+    serviceTitle: '',
+    serviceDescription:
+      'Achieve more-secure applications, compliant environments and safer systems development with industrialized and repeatable processes.',
+    partnerTitle: '',
+    partnerDescription: '',
+    p1Name: '',
+    p1Logo: '',
+    p2Name: '',
+    p2Logo: '',
+    p3Name: '',
+    p3Logo: '',
+    caseStudyTitle: '',
+    realtedServiceTitle: '',
   })
-  await Security.addService(ManagedSecurity.id)
+
+  const NetworkProtection = await Service.create({
+    title: 'Network protection',
+    subTitle:
+      '"COMPANY NAME" offers a variety of services from information security consulting to assessing, testing and improving the protection of applications and networks for companies operating in healthcare, manufacturing, banking, retail, telecommunications, and other industries.',
+    banner: 'https://www.comarch.com/files-com/file_545/c1.png',
+    evocativePhoto: '',
+    serviceTitle: '',
+    serviceDescription:
+      'We apply multiple defense layers to protect your corporate network and the sensitive data stored within it. Our security engineers know various ways to keep your proprietary information safe and reduce the probability that you will have to experience successful attack attempts against your network.',
+    partnerTitle: '',
+    partnerDescription: '',
+    p1Name: '',
+    p1Logo: '',
+    p2Name: '',
+    p2Logo: '',
+    p3Name: '',
+    p3Logo: '',
+    caseStudyTitle: '',
+    realtedServiceTitle: '',
+  })
+
+  const DataSecurity = await Service.create({
+    title: 'Data security',
+    subTitle:
+      'Our security experts develop a personal approach to each customer based on best practices and enriched with our own experience. We are ready to  support our clients at all project stages.',
+    banner: 'https://www.comarch.com/files-com/file_545/c1.png',
+    evocativePhoto: '',
+    serviceTitle: '',
+    serviceDescription:
+      "Our custom data security services help you incorporate a risk-balanced strategy with leading data protection technology to safeguard your organization's critical data. With both consulting and integration services, we help you optimize control over data using market-leading loss prevention and encryption technologies.",
+    partnerTitle: '',
+    partnerDescription: '',
+    p1Name: '',
+    p1Logo: '',
+    p2Name: '',
+    p2Logo: '',
+    p3Name: '',
+    p3Logo: '',
+    caseStudyTitle: '',
+    realtedServiceTitle: '',
+  })
+
+  const IdentityAccessManagement = await Service.create({
+    title: 'Identity access management',
+    subTitle: '',
+    banner: 'https://www.comarch.com/files-com/file_545/c1.png',
+    evocativePhoto: '',
+    serviceTitle: '',
+    serviceDescription:
+      'Our Identity & Access Management comes with world-class methods for authentication, authorization, identity lifecycle and accountability. Its modular architecture makes it easy to adapt to specific types of organizations across hierarchies and geographies.',
+    partnerTitle: '',
+    partnerDescription: '',
+    p1Name: '',
+    p1Logo: '',
+    p2Name: '',
+    p2Logo: '',
+    p3Name: '',
+    p3Logo: '',
+    caseStudyTitle: '',
+    realtedServiceTitle: '',
+  })
+
+  const SecurityAssessmentAndPlanning = await Service.create({
+    title: 'Security assessment and planning',
+    subTitle: '',
+    banner: 'https://www.comarch.com/files-com/file_545/c1.png',
+    evocativePhoto: '',
+    serviceTitle: '',
+    serviceDescription:
+      'We deliver full-scale security assessment and planning services for the components of IT infrastructures such as web, mobile and desktop applications, employee behaviour and remote access software.',
+    partnerTitle: '',
+    partnerDescription: '',
+    p1Name: '',
+    p1Logo: '',
+    p2Name: '',
+    p2Logo: '',
+    p3Name: '',
+    p3Logo: '',
+    caseStudyTitle: '',
+    realtedServiceTitle: '',
+  })
+
+  await Security.addService(ModernFraudProtection.id)
+  await Security.addService(NetworkProtection.id)
+  await Security.addService(DataSecurity.id)
+  await Security.addService(IdentityAccessManagement.id)
+  await Security.addService(SecurityAssessmentAndPlanning.id)
+
   //**END OF SECURITY SERVICES */
 
   //**IOT SERVICES */
@@ -627,15 +744,28 @@ async function insertRealData() {
   //** ------------------------------------------------------------ CASE STUDIES --------------------------------------------------------------- */
 
   //**SECURITY CASE STUDIES */
-  const cs3 = await CaseStudy.create({
-    title: 'cs3 title',
-    subTitle: 'cs3 subtitle',
+  const OnlineFraudDetection = await CaseStudy.create({
+    title: 'Next generation online fraud detection for banks',
+    subTitle: 'A new generation bank',
     teamsTitle: 'Team a caso',
     banner:
       'https://www.creativemotions.it/wp-content/uploads/2020/06/Il-segreto-per-scrivere-un-case-study-che-converte.png',
+    descriptiveText:
+      'Customers Bank is one of the fast-growing “new-generation” European banks. The Bank’s mission was set to offer a wide range of financial products and services for individuals, families and businesses with a strong focus on delivering new levels of quality, service and efficiency, while also providing the best possible user experience “without losing the human connection,”as articulated in their mission statement.',
+    challengeTitle: 'Effective and convenient fraud detection solution',
+    challengeDescription:
+      'The need for the Bank to deliver a new paradigm in user experience for online banking provided several challenges to their security team, as they were requested to minimize customer friction while supporting instant payment and open banking initiatives, andensure regulatory compliance (PSD2). In particular, the anti-fraud team had to select and implement the best fraud detection solution to ensure the Bank would quickly gain an excellent reputation in the market by delivering the best customer satisfaction in terms of protection against online frauds.',
+    solutionTitle: 'application-transparent approach',
+    solutionDescription:
+      'Our application-transparent approach does not require instrumenting or even touching applications. "COMPANY NAME" passive and dynamic delivery of controls allows security to be decoupled from application development & deployment, and is a critical functionality that can be independently delivered and managed by the security team.',
+    teamsTitle: 'Security departement',
+    personName: '',
+    personJob: '',
+    serviceTitle: '',
+    serviceHeading: '',
   })
-  await Security.addCasestudy(cs3.id)
-  await ManagedSecurity.addCasestudy(cs3.id)
+  await Security.addCasestudy(OnlineFraudDetection.id)
+  await ManagedSecurity.addCasestudy(OnlineFraudDetection.id)
 
   const cs1 = await CaseStudy.create({
     title: 'cs1 title',
@@ -712,12 +842,15 @@ async function insertRealData() {
       'Businesses can leverage the real-time data coming from IoT sensors to know when a product is about to go out-of-stock, or what their customers have bought that day.',
     banner:
       'https://www.intel.com/content/dam/www/public/us/en/images/iot/16x9/rss-rfid-power-of-data-16x9.jpg.rendition.intel.web.576.324.jpg',
-    descriptiveText: 'RFID tags are placed on all the items in the store. Data readings are forwarded to Intel gateways, and then pushed back to back office systems for cloud-based analytics. RFID antennas are always on, gathering and disseminating the Stock Keeping Unit (SKU)-level data on a constant basis. Since the system is continuously scanning for products, it is able to locate and account for every item on the sales floor at any one time. The system provides alerts to allow stock to be replenished when running low. Intel has designed its reader to be simple to set up and calibrate. Once the plug-and-play device is connected to an Intel gateway via one wire, it begins collecting and forwarding the inventory information.',
+    descriptiveText:
+      'RFID tags are placed on all the items in the store. Data readings are forwarded to Intel gateways, and then pushed back to back office systems for cloud-based analytics. RFID antennas are always on, gathering and disseminating the Stock Keeping Unit (SKU)-level data on a constant basis. Since the system is continuously scanning for products, it is able to locate and account for every item on the sales floor at any one time. The system provides alerts to allow stock to be replenished when running low. Intel has designed its reader to be simple to set up and calibrate. Once the plug-and-play device is connected to an Intel gateway via one wire, it begins collecting and forwarding the inventory information.',
     challengeTitle: 'Reduce lossess for retailers world-wide',
-    challengeDescription: 'According to McKinsey & Co, inventory distortion - in the form of overstock, stock-out and shrinkage - represents just over $1 trillion worth of losses for retailers world-wide. Furthermore, McKinsey estimates that the potential impact of IoT on retail will range from $410 billion to over $1 trillion per year by 2025.',
+    challengeDescription:
+      'According to McKinsey & Co, inventory distortion - in the form of overstock, stock-out and shrinkage - represents just over $1 trillion worth of losses for retailers world-wide. Furthermore, McKinsey estimates that the potential impact of IoT on retail will range from $410 billion to over $1 trillion per year by 2025.',
     solutionTitle: 'Improved understanding of customer behaviour',
-    solutionDescription: 'The system records not only when the item has been sold, but also what items have been touched and tried on. In addition, as well as being fully informed about their stocks, store staff gain a better understanding of customer traffic and local demand. The retailer is able to identify premium traffic areas, learn how customers interact with specific items, and learn which products are abandoned and which are preferred. McKinsey estimates that optimising store layouts can increase productivity by 5 percent',
-    teamsTitle: 'IoT Department',
+    solutionDescription:
+      'The system records not only when the item has been sold, but also what items have been touched and tried on. In addition, as well as being fully informed about their stocks, store staff gain a better understanding of customer traffic and local demand. The retailer is able to identify premium traffic areas, learn how customers interact with specific items, and learn which products are abandoned and which are preferred. McKinsey estimates that optimising store layouts can increase productivity by 5 percent',
+    teamsTitle: 'IoT Departement',
     personName: '',
     personJob: '',
     serviceTitle: '',
@@ -751,13 +884,18 @@ async function insertRealData() {
 
   const iotC3 = await CaseStudy.create({
     title: 'Transforming Retail Pain into Smart Gain',
-    subTitle: 'Capture data, improve customer service quality, and reduce costs by using space and resources more effectively.',
-    banner: 'https://simplecore.intel.com/insight-tech/wp-content/uploads/sites/45/2020/05/retail-data-computer-vision-0.jpg',
-    descriptiveText: 'With an IoT smart retail package, building operators can map scenarios such as space or comfort monitoring in their entirety or in a modular way. Retail building operators can now seamlessly capture data, improve customer service quality, and reduce costs by using space and resources more effectively.',
+    subTitle:
+      'Capture data, improve customer service quality, and reduce costs by using space and resources more effectively.',
+    banner:
+      'https://simplecore.intel.com/insight-tech/wp-content/uploads/sites/45/2020/05/retail-data-computer-vision-0.jpg',
+    descriptiveText:
+      'With an IoT smart retail package, building operators can map scenarios such as space or comfort monitoring in their entirety or in a modular way. Retail building operators can now seamlessly capture data, improve customer service quality, and reduce costs by using space and resources more effectively.',
     challengeTitle: 'Reduce energy consumption',
-    challengeDescription: 'The owner of a large fast-food chain, needed to significantly reduce energy consumption in all stores.',
+    challengeDescription:
+      'The owner of a large fast-food chain, needed to significantly reduce energy consumption in all stores.',
     solutionTitle: 'IoT smart retail package',
-    solutionDescription: 'Energy sensors were installed on A/Cs, refrigerators and lighting. After one month, the branches displayed different energy consumption patterns. Researching this further, they discovered that the refrigeration equipment in one of the branches was faulty and the compressors were overworked. The customer installed door sensors in the refrigerators to send an alert if doors weren’t fully closed after a set time interval. Often times, employees push the door closed without the door actually sealing, and the refrigerator needs to work harder to keep food cool. Leaving the door open overnight often results in food wastage. The goal was to develop a guest ‘comfort score.’ Sensors were installed to monitor noise, smell, air quality, and restaurant temperature. Data from each sensor were given a score and all scores were tallied up to create a guest comfort score that could be proactively monitored across locations. Alerts were sent if guest comfort scores dropped below an acceptable level. This system integrator is currently working on an extension to improve guest satisfaction. They are researching technology to track the time it takes guests to get their meal from the moment they enter the restaurant.',
+    solutionDescription:
+      'Energy sensors were installed on A/Cs, refrigerators and lighting. After one month, the branches displayed different energy consumption patterns. Researching this further, they discovered that the refrigeration equipment in one of the branches was faulty and the compressors were overworked. The customer installed door sensors in the refrigerators to send an alert if doors weren’t fully closed after a set time interval. Often times, employees push the door closed without the door actually sealing, and the refrigerator needs to work harder to keep food cool. Leaving the door open overnight often results in food wastage. The goal was to develop a guest ‘comfort score.’ Sensors were installed to monitor noise, smell, air quality, and restaurant temperature. Data from each sensor were given a score and all scores were tallied up to create a guest comfort score that could be proactively monitored across locations. Alerts were sent if guest comfort scores dropped below an acceptable level. This system integrator is currently working on an extension to improve guest satisfaction. They are researching technology to track the time it takes guests to get their meal from the moment they enter the restaurant.',
     teamsTitle: 'IoT Department',
     personName: '',
     personJob: '',
@@ -792,9 +930,12 @@ async function insertRealData() {
 
   const iotC5 = await CaseStudy.create({
     title: 'Abnox AG - 4.0 Industry',
-    subTitle: 'The concept of Industry 4.0 is based on several foundations, including technology, processes, organization, and operational and business models.',
-    banner: 'https://www.decision.com/wp-content/uploads/2020/12/Smart-Factory-1-1024x444.png',
-    descriptiveText: 'In discussion about Industry 4.0, it is difficult to draw a clear distinction between business and technological aspects. The development of supporting technologies has a direct influence on the business operations of manufacturing companies. This can be observed by looking at the cycle of activity in which cyber-physical systems play a major role, making it possible for those systems to communicate and process vast amounts of data. The end result of this cycle is a concrete step into the physical world (such as the creation of an end product)..',
+    subTitle:
+      'The concept of Industry 4.0 is based on several foundations, including technology, processes, organization, and operational and business models.',
+    banner:
+      'https://www.decision.com/wp-content/uploads/2020/12/Smart-Factory-1-1024x444.png',
+    descriptiveText:
+      'In discussion about Industry 4.0, it is difficult to draw a clear distinction between business and technological aspects. The development of supporting technologies has a direct influence on the business operations of manufacturing companies. This can be observed by looking at the cycle of activity in which cyber-physical systems play a major role, making it possible for those systems to communicate and process vast amounts of data. The end result of this cycle is a concrete step into the physical world (such as the creation of an end product)..',
     challengeTitle: 'Transition to Industry 4.0',
     challengeDescription:
       'Abnox AG is a Swiss company which manufactures specialized devices for dispensing lubricants used in several types of industry. These products are often made in small batches or in multiple versions. The specific nature of production focused on diversity causes numerous problems, such as frequent changes in the production documentation. As a result, mistakes are hard to avoid and there is a risk that employees will miss some components or steps in the process. Abnox’s specific style of production makes the processes more complicated. Issues arise at the stage of setting up workstations, designing tools and collecting and verifying the data needed at each manufacturing stage. Owing to the integration of IoT solutions with the ERP system',
@@ -884,13 +1025,13 @@ async function insertRealData() {
 
   //** ------------------------------------------------------------ TEAM MEMBER --------------------------------------------------------------- */
   const person1 = await TeamMember.create({
-    memberNameAndOccupation: 'Gianpiero Gasperini - Lead security',
+    memberNameAndOccupation: 'Alex Yasol - Lead security',
     personalQuote: 'Lorem ipsum dolor sit amet',
     personalDescription:
       ' Jane Goodall had long been an idol of mine before I had the opportunity to meet her personally. I have been a member of one of her international Jane-Goodall-Institutes (JGI) for a couple of years now. I have read some of her books and like her idea of teaching children all over the world about environmental conservation and wild animal care so much that I hope to do it personally one day, too. As the greatest and most popular scientist of chimpanzees in the world and today also an active member of the UN Security Council and close friend of Kofi Anan, she is very busy and always travelling, so the chance to see her is quite rare. ',
     workField: 'Security',
     teamsTitle: 'IoT Department',
-    personName: 'Gian Piero Gasperini',
+    personName: 'Alex Yasol',
     personJob: '',
     personPhoto:
       'https://image.freepik.com/free-photo/funny-man-looking-camera_23-2147799042.jpg',
@@ -906,7 +1047,7 @@ async function insertRealData() {
       'Mary is as beautiful as a Hollywood star. Her thick, wavy, long black hair gracefully falls down to her shoulders and encircles her diamond-shaped face. A golden suntan usually brings out her smooth, clear complexion and high cheek bones. Her slightly arched chestnut brown eyebrows highlight her emotions by moving up and down as she reacts to her world around her. Her large deep blue eyes, remind me of a lake on a stormy day. Her curved nose gives her a little girl look that makes me want to smile when she talks. And her mouth is a small mouth outlined by puffy lips that she often accentuates with glossy pink lipstick. When she smiles, which is often, her well formed and even, white teeth brighten up her whole face. I guess you can tell that I am head over heals in love with Mary.',
 
     workField: 'Security',
-    teamsTitle: 'IoT Department',
+    teamsTitle: 'Security Departement',
     personName: 'Luke Cobezzo',
     personJob: '',
     personPhoto:
@@ -916,9 +1057,45 @@ async function insertRealData() {
     serviceID: '1',
   })
 
+  const person3 = await TeamMember.create({
+    memberNameAndOccupation: 'Rori Duboff - Security Engineer',
+    personalQuote: 'Lorem ipsum dolor sit amet',
+    personalDescription:
+      'Mary is as beautiful as a Hollywood star. Her thick, wavy, long black hair gracefully falls down to her shoulders and encircles her diamond-shaped face. A golden suntan usually brings out her smooth, clear complexion and high cheek bones. Her slightly arched chestnut brown eyebrows highlight her emotions by moving up and down as she reacts to her world around her. Her large deep blue eyes, remind me of a lake on a stormy day. Her curved nose gives her a little girl look that makes me want to smile when she talks. And her mouth is a small mouth outlined by puffy lips that she often accentuates with glossy pink lipstick. When she smiles, which is often, her well formed and even, white teeth brighten up her whole face. I guess you can tell that I am head over heals in love with Mary.',
+
+    workField: 'Security',
+    teamsTitle: 'Security Departement',
+    personName: 'Rori Duboff',
+    personJob: '',
+    personPhoto:
+      'https://healthix.org/wp-content/uploads/2019/05/Todd-Rogow-High-Resolution-717x1024.jpg',
+    teamImage: '',
+    areaID: '1',
+    serviceID: '1',
+  })
+
+  const person4 = await TeamMember.create({
+    memberNameAndOccupation: 'John Molton - Security Engineer',
+    personalQuote: 'Lorem ipsum dolor sit amet',
+    personalDescription:
+      'Mary is as beautiful as a Hollywood star. Her thick, wavy, long black hair gracefully falls down to her shoulders and encircles her diamond-shaped face. A golden suntan usually brings out her smooth, clear complexion and high cheek bones. Her slightly arched chestnut brown eyebrows highlight her emotions by moving up and down as she reacts to her world around her. Her large deep blue eyes, remind me of a lake on a stormy day. Her curved nose gives her a little girl look that makes me want to smile when she talks. And her mouth is a small mouth outlined by puffy lips that she often accentuates with glossy pink lipstick. When she smiles, which is often, her well formed and even, white teeth brighten up her whole face. I guess you can tell that I am head over heals in love with Mary.',
+
+    workField: 'Security',
+    teamsTitle: 'Security Departement',
+    personName: 'John Molton',
+    personJob: '',
+    personPhoto:
+      'https://t3.ftcdn.net/jpg/02/22/85/16/360_F_222851624_jfoMGbJxwRi5AWGdPgXKSABMnzCQo9RN.jpg',
+    teamImage: '',
+    areaID: '1',
+    serviceID: '1',
+  })
+
   IoT.addTeammember(person1)
+  Security.addTeammember(person1)
   Security.addTeammember(person2)
-  
+  Security.addTeammember(person3)
+  Security.addTeammember(person4)
 
   iotC1.addTeammember(person1)
   iotC1.addTeammember(person2)

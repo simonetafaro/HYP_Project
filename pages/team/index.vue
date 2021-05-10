@@ -13,6 +13,19 @@
         mollit anim id est laborum.
       </h3>
     </header>
+    <div class="filter-bar">
+      <div class="filter active-filter" @click="findAllTeamMembers($event)">
+        All
+      </div>
+      <div
+        v-for="(area, areaIndex) of areas"
+        :key="'area-' + areaIndex"
+        class="filter"
+        @click="filterTeamMemberByArea($event, area.id)"
+      >
+        {{ area.title }}
+      </div>
+    </div>
     <section class="member-grid">
       <div
         v-for="(person, personIndex) of people"
@@ -41,11 +54,38 @@ export default {
   async asyncData({ $axios }) {
     const { data } = await $axios.get(`${process.env.BASE_URL}/api/teammembers`)
     const people = data
+    const areasData = await $axios.get(`${process.env.BASE_URL}/api/areas`)
+    const areas = areasData.data
     return {
       people,
+      areas,
     }
   },
   mixins: [GoToMixins],
+  methods: {
+    async filterTeamMemberByArea(e, areaID) {
+      this.people = await this.$axios.$get(
+        `${process.env.BASE_URL}/api/teammembersbyarea/${areaID}`
+      )
+      const filters = e.target.parentNode.children
+      filters.forEach((filter) => {
+        filter.classList.remove('active-filter')
+      })
+      const element = e.target
+      element.classList.add('active-filter')
+    },
+    async findAllTeamMembers(e) {
+      this.casestudies = await this.$axios.$get(
+        `${process.env.BASE_URL}/api/teammembers`
+      )
+      const filters = e.target.parentNode.children
+      filters.forEach((filter) => {
+        filter.classList.remove('active-filter')
+      })
+      const element = e.target
+      element.classList.add('active-filter')
+    },
+  },
 }
 </script>
 
@@ -72,6 +112,22 @@ h3 {
   grid-template-columns: repeat(3, calc(100% / 3));
   grid-gap: 10px;
   margin-top: 40px;
+}
+.filter-bar {
+  display: inline-flex;
+  width: 100%;
+  margin-top: 15px;
+}
+.filter {
+  margin-right: 15px;
+  font-size: 12px;
+  border: 1px solid black;
+  padding: 5px;
+  cursor: pointer;
+}
+.active-filter {
+  background: black;
+  color: white;
 }
 .member {
   cursor: pointer;
