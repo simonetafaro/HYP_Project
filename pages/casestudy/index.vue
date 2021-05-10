@@ -28,6 +28,7 @@
           :title="casestudy.title"
           :summary="casestudy.subTitle"
           :image="casestudy.banner"
+          :area="casestudy.area"
         ></case-study-mini>
       </div>
     </section>
