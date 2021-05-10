@@ -230,11 +230,13 @@ async function insertRealData() {
   })
   const BigDataAnalysis = await Area.create({
     title: 'BigDataAnalysis Area',
-    subTitle: 'BigDataAnalysis area, non so cosa scrivere',
+    subTitle:
+      'Analyze data from your database with a data driven approach to take important decisions inside your company.',
     description:
       'The science of analyzing raw data in order to make conclusions about that information, revealing reveal trends and metrics. Through our specialist your company will be more efficient in taking decisions. This process of analysis allows to operate a predictive analysis, that is, it allows to know in advance what will happen: this becomes possible because if we have a model and we have enough historical data we can determine what will happen in the near future with bases or statistical foundations.',
     banner: '',
-    evocativeImage: '',
+    evocativeImage:
+      'https://storage.googleapis.com/saepict-saepictwagtail-prod/images/big-data-analysis-2020.original.png',
     servicesTitle: 'Discover our services ',
     servicesDescription:
       'AI is only as smart as the insights that fuel it. We can help you unlock powerful analytics insights by tapping into data you did not even know you had.',
@@ -789,7 +791,114 @@ async function insertRealData() {
   //**END OF SECURITY CASE STUDIES */
 
   //**BIG DATA ANALYSIS CASE STUDIES */
-  const casestudy1 = await CaseStudy.create({
+  const bdaC1 = await CaseStudy.create({
+    title: 'BI IMPLEMENTATION FOR 200 HEALTHCARE CENTERS',
+    subTitle:
+      'The Customer is an American company that offers software to help 200 healthcare centers and retirement homes to process data related to patients and medication as well as build various types of reports.',
+    banner:
+      'https://www.scnsoft.com/boss/images/02d65838-eb3a-4d54-b7aa-b6b7aa0c1d47bi_healthcare.png',
+    descriptiveText:
+      'The Customer commissioned ScienceSoft to rewrite the software – a Java application used by the healthcare centers for management and reporting of data on medication inventory, clinical services, patient data, marketing activities and others. Within the project, the Customer also wanted the tool to allow its users to enable quality population health analytics with prompt reports.',
+    challengeTitle: 'BI IMPLEMENTATION',
+    challengeDescription:
+      'The Customer commissioned ScienceSoft to rewrite the software – a Java application used by the healthcare centers for management and reporting of data on medication inventory, clinical services, patient data, marketing activities and others. Within the project, the Customer also wanted the tool to allow its users to enable quality population health analytics with prompt reports.',
+    solutionTitle: 'Implented system',
+    solutionDescription:
+      '"To ensure scalability and short query response time, ScienceSoft’s BI implementation team built an analytical Microsoft SQL Server data warehouse which would use a Transact-SQL script to load data from the relational database. The latter was consolidated from 200 databases during the application development process and totaled 12GB."',
+    teamsTitle: 'Team a caso',
+    personName: '',
+    personJob: '',
+    serviceTitle: '',
+    serviceHeading: '',
+  })
+  await BigDataAnalysis.addCasestudy(bdaC1.id)
+
+  const bdaC2 = await CaseStudy.create({
+    title: 'Price optimization for e-commerce',
+    subTitle:
+      'This will be a glimpse of what you can achieve by sharing your sales data with us. We could perform an opportunity summary report in line with this use case, and uncover your own opportunities regarding price optimization. So, fasten your seatbelt and get ready for the take-off.',
+    banner:
+      'https://tryolabs.com/blog/images/blog/social/2018-09-24-price-optimization-machine-learning.d59ca712.jpg',
+    descriptiveText:
+      'We have discussed how a data-driven price optimization is no longer an option for retailers, but a question of how and when to do it. With a world that’s moving towards changing prices more and more dynamically, static pricing strategies can’t keep up, and data-driven approaches have arrived to stay. In this post, we’ll be focusing on how to perform data-driven price optimization, using a case study to showcase what can be done using sales data to predict demand and optimize prices.',
+    challengeTitle: 'Analyzing an E-Commerce Sales Data',
+    challengeDescription:
+      '"Having our data ready, we proceed to train the demand forecasting models. Our goal is to be able to build the demand curve for each item. The models will learn the relation between the demand and several factors such as the price, holidays/events, and macroeconomics. During this phase, the collaboration with the business team is particularly important. Business insights help to validate the selected features and ensures that we are not missing any important aspect that can be potentially used to forecast the demand."',
+    solutionTitle: 'Price optimized',
+    solutionDescription:
+      '"Combining their available dataset and other publicly available information, such as holidays/events data and macroeconomic series, we have been able to estimate demand curves for a subset of the items which would allow them to take optimal pricing decisions. The remaining items should undergo an exploration phase where new prices would be tried in order to be able to estimate their demand curves accurately. The exploration strategy is generally decided jointly with the client. For this example, given the data available and our past experience, we would suggest performing weekly price changes during the exploration phase. Furthermore, we have shown that there is plenty of room for inventory management improvement since there seems to be an important amount of revenue lost due to understock."',
+    teamsTitle: 'Team a caso',
+    personName: '',
+    personJob: '',
+    serviceTitle: '',
+    serviceHeading: '',
+  })
+  await BigDataAnalysis.addCasestudy(bdaC2.id)
+
+  const bdaC3 = await CaseStudy.create({
+    title: 'Integrated BDA Platform',
+    subTitle: 'Big Data automation platform enables new sides of powerful data',
+    banner:
+      'https://www.xenonstack.com/images/blog/need-of-modern-big-data-integration-platform.png',
+    descriptiveText:
+      'The essential feature of big data automation (BDA) is the realization that doing a lot more with a lot less is the new reality for IT organizations, and that smart IT organizations, in response to that reality, will seek to spend their scarce human talent  building value that their internal customers within the organization perceive to be valuable: new, enabling, differentiating. Today, that ingenuity is trapped, because IT teams are spending most or all of their time performing routine internally focused tasks, many of them invisible to internal business constituents, and most of them either susceptible to automation or acceleration.',
+    challengeTitle: 'Replacing Artistry with Automation',
+    challengeDescription:
+      'As big data technologies become an increasingly important part of our enterprise decision support environments — whether as staging areas, data engineering environments, sandboxes for data scientists and advanced analytics projects, or as a data management platform co-equal with our enterprise data warehouses — we should avoid making the same mistakes we made, with enterprise data warehousing, and instead build big data automation into our environment from the outset. That big data automation infrastructure cannot, we think, come from the open source community or the Hadoop distribution vendors. Those companies have no real experience with, or understanding of, the existing enterprise data warehousing environment, or commercial decision-making in general.',
+    solutionTitle: 'Developed platformfor BDA',
+    solutionDescription:
+      'We embrace  the very behaviors that got commercial IT organizations into such difficulties in enterprise data warehousing, by encouraging the broad-based, large-scale use of hand-coding techniques, in proprietary languages, using complex, poorly integrated tool chains, with little or no support for operations and management of production big data infrastructure, and no understanding of the essential role that rich, well-managed metadata plays into the effective operation, and modification, of production-grade analytics environments.',
+    teamsTitle: 'Team a caso',
+    personName: '',
+    personJob: '',
+    serviceTitle: '',
+    serviceHeading: '',
+  })
+  await BigDataAnalysis.addCasestudy(bdaC3.id)
+
+  const bdaC4 = await CaseStudy.create({
+    title: 'Predictive analytics in healthcare ',
+    subTitle: 'Our prediction can help you in everyday life',
+    banner:
+      'https://www.clicdata.com/wp-content/uploads/2018/08/predictive-analytics-healthcare.jpg',
+    descriptiveText:
+      'Predictive analytics can provide alerts to everyone from clinician and financial experts to administrative staff to inform them when events they are concerned with are likely to happen. As a result, they can make more informed, more timely, and usually better choices at times when small nuance can have big consequences.',
+    challengeTitle: 'Moving to the future in healthcare industry',
+    challengeDescription:
+      'Much of medicine is about anticipating and reducing risk based on current and historical patient data. How likely is this cancer patient to suffer complications if we perform surgery? What is the chance that this pneumonia patient will be readmitted to the intensive care unit (ICU) within 48 hours if she is discharged? Clinicians have always had to make decisions without absolute certainty – but with the advance of predictive analytics in healthcare, these decisions promise to be better informed than ever.  Predictive analytics aims to alert clinicians and caregivers of the likelihood of events and outcomes before they occur, helping them to prevent as much as cure health issues. Driven by the rise of Artificial Intelligence (AI) and the Internet of Things (IoT), we now have algorithms that can be fed with historical as well as real-time data to make meaningful predictions.',
+    solutionTitle: 'Prediction has been useful to help people',
+    solutionDescription:
+      'Predictive analytics can combine data from multiple sources – including hospital-based electronic medical records, fall detection pendants, and historical use of medical alert services – to identify seniors who are at risk of emergency transport in the next 30 days. This allows healthcare providers to reach out to a senior person even before a fall or other medical complication occurs, preventing unnecessary hospital readmissions and reducing costs of transportation, acute care, and rehabilitation. In a similar vein, one medical home network in the US reported using machine learning to identify individuals with a heightened risk of developing severe complications from COVID-19. Rather than calling all 122,000 of their members to check in on their well-being, the home network took a more targeted, data-driven approach to focus their initial outreach on the 4.4 percent at-risk patients. By educating this group on when and where they should seek medical care, providers sought to proactively help at-risk patients while managing strain on healthcare organizations"',
+    teamsTitle: 'Team a caso',
+    personName: '',
+    personJob: '',
+    serviceTitle: '',
+    serviceHeading: '',
+  })
+  await BigDataAnalysis.addCasestudy(bdaC4.id)
+
+  const bdaC5 = await CaseStudy.create({
+    title: 'Optimise digital marketing',
+    subTitle: 'Finding the right digital marketing agency isn’t easy.',
+    banner:
+      'https://deoriunde.com/wp-content/uploads/2019/11/Digital-marketing.jpg',
+    descriptiveText:
+      'The challenge for us was helping Intuit build visibility and become known for services outside of the main ones for which they are known. Plus there was some concern around their highly-specialized competitors like GoDaddy.',
+    challengeTitle: 'A good understanding of your customer’s behavior.',
+    challengeDescription:
+      'At its core, marketing is all about communicating with your customers in their own language on the platforms where they hang out. Before you can do that, you need to understand your audience. Not just surface level stuff like “they need help with SEO,” but a deeper understanding.',
+    solutionTitle: 'Improved understanding of customer behaviour',
+    solutionDescription:
+      'When you’re starting a business, it’s all about hustling. You’re just trying to generate revenue however you can. But as you grow, you must develop more documentation and processes around your workflows. For example, you might need to have documentation for how to run a PR, social media, or paid advertising campaign.',
+    teamsTitle: 'Team a caso',
+    personName: '',
+    personJob: '',
+    serviceTitle: '',
+    serviceHeading: '',
+  })
+  await BigDataAnalysis.addCasestudy(bdaC5.id)
+
+  const bdaC6 = await CaseStudy.create({
     title: 'BIG DATA ANALYSIS case study',
     subTitle: '',
     banner: '',
@@ -804,7 +913,7 @@ async function insertRealData() {
     serviceTitle: '',
     serviceHeading: '',
   })
-  await BigDataAnalysis.addCasestudy(casestudy1.id)
+  await BigDataAnalysis.addCasestudy(bdaC6.id)
   //**END OF BIG DATA ANALYSIS CASE STUDIES */
 
   //**CLOUD COMPUTING CASE STUDIES */
@@ -910,11 +1019,14 @@ async function insertRealData() {
       'Businesses can leverage the real-time data coming from IoT sensors to know when a product is about to go out-of-stock, or what their customers have bought that day.',
     banner:
       'https://www.intel.com/content/dam/www/public/us/en/images/iot/16x9/rss-rfid-power-of-data-16x9.jpg.rendition.intel.web.576.324.jpg',
-    descriptiveText: 'RFID tags are placed on all the items in the store. Data readings are forwarded to Intel gateways, and then pushed back to back office systems for cloud-based analytics. RFID antennas are always on, gathering and disseminating the Stock Keeping Unit (SKU)-level data on a constant basis. Since the system is continuously scanning for products, it is able to locate and account for every item on the sales floor at any one time. The system provides alerts to allow stock to be replenished when running low. Intel has designed its reader to be simple to set up and calibrate. Once the plug-and-play device is connected to an Intel gateway via one wire, it begins collecting and forwarding the inventory information.',
+    descriptiveText:
+      'RFID tags are placed on all the items in the store. Data readings are forwarded to Intel gateways, and then pushed back to back office systems for cloud-based analytics. RFID antennas are always on, gathering and disseminating the Stock Keeping Unit (SKU)-level data on a constant basis. Since the system is continuously scanning for products, it is able to locate and account for every item on the sales floor at any one time. The system provides alerts to allow stock to be replenished when running low. Intel has designed its reader to be simple to set up and calibrate. Once the plug-and-play device is connected to an Intel gateway via one wire, it begins collecting and forwarding the inventory information.',
     challengeTitle: 'Reduce lossess for retailers world-wide',
-    challengeDescription: 'According to McKinsey & Co, inventory distortion - in the form of overstock, stock-out and shrinkage - represents just over $1 trillion worth of losses for retailers world-wide. Furthermore, McKinsey estimates that the potential impact of IoT on retail will range from $410 billion to over $1 trillion per year by 2025.',
+    challengeDescription:
+      'According to McKinsey & Co, inventory distortion - in the form of overstock, stock-out and shrinkage - represents just over $1 trillion worth of losses for retailers world-wide. Furthermore, McKinsey estimates that the potential impact of IoT on retail will range from $410 billion to over $1 trillion per year by 2025.',
     solutionTitle: 'Improved understanding of customer behaviour',
-    solutionDescription: 'The system records not only when the item has been sold, but also what items have been touched and tried on. In addition, as well as being fully informed about their stocks, store staff gain a better understanding of customer traffic and local demand. The retailer is able to identify premium traffic areas, learn how customers interact with specific items, and learn which products are abandoned and which are preferred. McKinsey estimates that optimising store layouts can increase productivity by 5 percent',
+    solutionDescription:
+      'The system records not only when the item has been sold, but also what items have been touched and tried on. In addition, as well as being fully informed about their stocks, store staff gain a better understanding of customer traffic and local demand. The retailer is able to identify premium traffic areas, learn how customers interact with specific items, and learn which products are abandoned and which are preferred. McKinsey estimates that optimising store layouts can increase productivity by 5 percent',
     teamsTitle: 'IoT Department',
     personName: '',
     personJob: '',
@@ -949,13 +1061,18 @@ async function insertRealData() {
 
   const iotC3 = await CaseStudy.create({
     title: 'Transforming Retail Pain into Smart Gain',
-    subTitle: 'Capture data, improve customer service quality, and reduce costs by using space and resources more effectively.',
-    banner: 'https://simplecore.intel.com/insight-tech/wp-content/uploads/sites/45/2020/05/retail-data-computer-vision-0.jpg',
-    descriptiveText: 'With an IoT smart retail package, building operators can map scenarios such as space or comfort monitoring in their entirety or in a modular way. Retail building operators can now seamlessly capture data, improve customer service quality, and reduce costs by using space and resources more effectively.',
+    subTitle:
+      'Capture data, improve customer service quality, and reduce costs by using space and resources more effectively.',
+    banner:
+      'https://simplecore.intel.com/insight-tech/wp-content/uploads/sites/45/2020/05/retail-data-computer-vision-0.jpg',
+    descriptiveText:
+      'With an IoT smart retail package, building operators can map scenarios such as space or comfort monitoring in their entirety or in a modular way. Retail building operators can now seamlessly capture data, improve customer service quality, and reduce costs by using space and resources more effectively.',
     challengeTitle: 'Reduce energy consumption',
-    challengeDescription: 'The owner of a large fast-food chain, needed to significantly reduce energy consumption in all stores.',
+    challengeDescription:
+      'The owner of a large fast-food chain, needed to significantly reduce energy consumption in all stores.',
     solutionTitle: 'IoT smart retail package',
-    solutionDescription: 'Energy sensors were installed on A/Cs, refrigerators and lighting. After one month, the branches displayed different energy consumption patterns. Researching this further, they discovered that the refrigeration equipment in one of the branches was faulty and the compressors were overworked. The customer installed door sensors in the refrigerators to send an alert if doors weren’t fully closed after a set time interval. Often times, employees push the door closed without the door actually sealing, and the refrigerator needs to work harder to keep food cool. Leaving the door open overnight often results in food wastage. The goal was to develop a guest ‘comfort score.’ Sensors were installed to monitor noise, smell, air quality, and restaurant temperature. Data from each sensor were given a score and all scores were tallied up to create a guest comfort score that could be proactively monitored across locations. Alerts were sent if guest comfort scores dropped below an acceptable level. This system integrator is currently working on an extension to improve guest satisfaction. They are researching technology to track the time it takes guests to get their meal from the moment they enter the restaurant.',
+    solutionDescription:
+      'Energy sensors were installed on A/Cs, refrigerators and lighting. After one month, the branches displayed different energy consumption patterns. Researching this further, they discovered that the refrigeration equipment in one of the branches was faulty and the compressors were overworked. The customer installed door sensors in the refrigerators to send an alert if doors weren’t fully closed after a set time interval. Often times, employees push the door closed without the door actually sealing, and the refrigerator needs to work harder to keep food cool. Leaving the door open overnight often results in food wastage. The goal was to develop a guest ‘comfort score.’ Sensors were installed to monitor noise, smell, air quality, and restaurant temperature. Data from each sensor were given a score and all scores were tallied up to create a guest comfort score that could be proactively monitored across locations. Alerts were sent if guest comfort scores dropped below an acceptable level. This system integrator is currently working on an extension to improve guest satisfaction. They are researching technology to track the time it takes guests to get their meal from the moment they enter the restaurant.',
     teamsTitle: 'IoT Department',
     personName: '',
     personJob: '',
@@ -990,9 +1107,12 @@ async function insertRealData() {
 
   const iotC5 = await CaseStudy.create({
     title: 'Abnox AG - 4.0 Industry',
-    subTitle: 'The concept of Industry 4.0 is based on several foundations, including technology, processes, organization, and operational and business models.',
-    banner: 'https://www.decision.com/wp-content/uploads/2020/12/Smart-Factory-1-1024x444.png',
-    descriptiveText: 'In discussion about Industry 4.0, it is difficult to draw a clear distinction between business and technological aspects. The development of supporting technologies has a direct influence on the business operations of manufacturing companies. This can be observed by looking at the cycle of activity in which cyber-physical systems play a major role, making it possible for those systems to communicate and process vast amounts of data. The end result of this cycle is a concrete step into the physical world (such as the creation of an end product)..',
+    subTitle:
+      'The concept of Industry 4.0 is based on several foundations, including technology, processes, organization, and operational and business models.',
+    banner:
+      'https://www.decision.com/wp-content/uploads/2020/12/Smart-Factory-1-1024x444.png',
+    descriptiveText:
+      'In discussion about Industry 4.0, it is difficult to draw a clear distinction between business and technological aspects. The development of supporting technologies has a direct influence on the business operations of manufacturing companies. This can be observed by looking at the cycle of activity in which cyber-physical systems play a major role, making it possible for those systems to communicate and process vast amounts of data. The end result of this cycle is a concrete step into the physical world (such as the creation of an end product)..',
     challengeTitle: 'Transition to Industry 4.0',
     challengeDescription:
       'Abnox AG is a Swiss company which manufactures specialized devices for dispensing lubricants used in several types of industry. These products are often made in small batches or in multiple versions. The specific nature of production focused on diversity causes numerous problems, such as frequent changes in the production documentation. As a result, mistakes are hard to avoid and there is a risk that employees will miss some components or steps in the process. Abnox’s specific style of production makes the processes more complicated. Issues arise at the stage of setting up workstations, designing tools and collecting and verifying the data needed at each manufacturing stage. Owing to the integration of IoT solutions with the ERP system',
@@ -1116,7 +1236,6 @@ async function insertRealData() {
 
   IoT.addTeammember(person1)
   Security.addTeammember(person2)
-  
 
   iotC1.addTeammember(person1)
   iotC1.addTeammember(person2)
