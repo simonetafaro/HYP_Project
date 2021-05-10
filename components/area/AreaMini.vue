@@ -4,6 +4,7 @@
       <h3>{{ title }}</h3>
       <div class="img" :style="{ 'background-image': `url(${image})` }"></div>
       <p>{{ summary }}</p>
+      <button class="more_button">learn more</button>
     </div>
   </div>
 </template>
@@ -21,14 +22,23 @@ export default {
 <style scoped>
 .card {
   padding: 20px 10px;
-  border: 1px solid grey;
-  border-radius: 4px;
+  background: #fff;
+  border-radius: 20px;
+  border: 1px solid #e8e7ff;
+  box-shadow: 0px 3px 25px rgba(205, 201, 255, 0.3);
 }
 
 h3 {
-  height: 60px;
-  margin-bottom: 10px;
+  font-family: Barlow;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 29px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #63639f;
 }
+
 p {
   height: 60px;
 }
