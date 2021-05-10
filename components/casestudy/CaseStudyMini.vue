@@ -1,9 +1,16 @@
 <template>
   <div class="casestudy-mini">
-    <div class="card">
-      <h3>{{ title }}</h3>
-      <div class="img" :style="{ 'background-image': `url(${image})` }"></div>
-      <p>{{ description }}</p>
+    <div
+      class="casestudycontainer"
+      :style="{
+        'background-image': `url(${image})`,
+      }"
+    >
+      <div class="casestudycontent">
+        <div class="referenceArea">{{ area }}</div>
+        <p class="casestudytitle">{{ title }}</p>
+        <p>{{ description }}</p>
+      </div>
     </div>
   </div>
 </template>
@@ -14,23 +21,50 @@ export default {
     title: { type: String, default: () => '' },
     image: { type: String, default: () => '' },
     description: { type: String, default: () => '' },
+    area: { type: String, default: () => '' },
   },
 }
 </script>
 
 <style scoped>
-.card {
-  padding: 20px 10px;
-  border: 1px solid grey;
-  border-radius: 4px;
+.casestudycontainer {
+  position: relative;
+  height: 350px;
+  border: 1px solid #979797;
+  border-radius: 30px;
+  width: 100%;
+  background-repeat: no-repeat;
 }
-h3 {
-  height: 60px;
-  margin-bottom: 10px;
+
+.casestudycontent {
+  position: absolute;
+  background: #ffffff;
+  height: 260px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-radius: 29px;
+  padding: 30px;
+}
+p.casestudytitle {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  padding-bottom: 5px;
 }
 p {
   height: 60px;
-  overflow: hidden;
+  margin: 5px;
+}
+.referenceArea {
+  margin-block: 10px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  padding: 5px;
+  text-align: left;
+  color: #979797;
 }
 
 .img {
