@@ -26,17 +26,14 @@ body {
   margin: 4px 2px;
   cursor: pointer;
   border: none;
-
-  background-position: center;
-  transition: background 0.8s;
 }
 
 .more_button:hover {
-background: #4D41C9 radial-gradient(circle, transparent 1%, #4D41C9 1%) center/15000%;
+  background: #4D41C9;
+  box-shadow: 0px 4px 6px rgba(66, 66, 114, 0.16);
 }
 
 .more_button:active {
-  background-color: #CDC9FF;
-  background-size: 100%;
-  transition: background 0s;
+  background: #4D41C9;
+  box-shadow: inset 0px 4px 6px rgba(66, 66, 114, 0.16);
 }
