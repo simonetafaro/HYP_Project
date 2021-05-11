@@ -6,9 +6,9 @@
       <img :src="area.banner" :alt="area.title" />
     </header>
     <article>
-      <p>
+      <h4>
         {{ area.description }}
-      </p>
+      </h4>
     </article>
     <p class="casestart">Why Choosing Us</p>
     <p
