@@ -42,7 +42,7 @@ async function init() {
       where: { id },
       include: {
         model: Service,
-        model: TeamMember
+        model: TeamMember,
       },
     })
     return res.json(casestudy)
@@ -86,9 +86,7 @@ async function init() {
 
   app.get('/areas', async (req, res) => {
     const areas = await Area.findAll({
-      order: [
-        ['title', 'ASC'],
-      ],
+      order: [['title', 'ASC']],
     })
     return res.json(areas)
   })
@@ -99,7 +97,9 @@ async function init() {
   })
 
   app.get('/casestudies', async (req, res) => {
-    const casestudies = await CaseStudy.findAll({})
+    const casestudies = await CaseStudy.findAll({
+      include: { model: Area },
+    })
     return res.json(casestudies)
   })
 

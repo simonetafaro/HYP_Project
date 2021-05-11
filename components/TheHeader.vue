@@ -2,24 +2,8 @@
   <header class="header">
     <div class="header-content">
       <div class="title">
-        <p
-          :style="{
-            color: `#000000`,
-            display: 'inline',
-          }"
-          @click="goTo(`/`)"
-        >
-          HEX
-        </p>
-        <p
-          :style="{
-            color: `#4D41C9`,
-            display: 'inline',
-          }"
-          @click="goTo(`/`)"
-        >
-          TECH.
-        </p>
+        HEX
+        <span class="title-purple"> TECH. </span>
       </div>
       <nav class="right">
         <div
@@ -32,8 +16,8 @@
           </nuxt-link>
         </div>
       </nav>
-      <div class="contact">
-        <p class="contact-text">CONTACT US</p>
+      <div>
+        <button class="contact-button">CONTACT US</button>
       </div>
     </div>
   </header>
@@ -128,12 +112,14 @@ export default {
   font-weight: 800;
   font-size: 40px;
   line-height: 60px;
+  display: inline-flex;
+  color: black;
 }
-.contact {
-  background: #e8e6ff;
-  border-radius: 35px;
+.title-purple {
+  color: #4d41c9;
 }
-.contact-text {
+
+.contact-button {
   font-family: Barlow;
   font-style: normal;
   font-weight: bold;
@@ -143,5 +129,8 @@ export default {
   text-transform: uppercase;
   padding: 15px 25px 15px 25px;
   color: var(--cc-base2);
+  background: #e8e6ff;
+  border-radius: 35px;
+  border: none;
 }
 </style>

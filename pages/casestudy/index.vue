@@ -69,6 +69,7 @@ export default {
       this.casestudies = await this.$axios.$get(
         `${process.env.BASE_URL}/api/casestudies`
       )
+      console.log(this.casestudies)
       const filters = e.target.parentNode.children
       filters.forEach((filter) => {
         filter.classList.remove('active-filter')

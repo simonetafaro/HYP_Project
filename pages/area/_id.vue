@@ -10,23 +10,11 @@
         {{ area.description }}
       </h4>
     </article>
-    <p class="casestart">Why Choosing Us</p>
-    <p
-      class="caseintro"
-      :style="{
-        color: 'var(--c-grey1)',
-      }"
-    >
+    <p class="text-start">Why Choosing Us</p>
+    <div class="text-intro">
       our Services
-    </p>
-    <p
-      class="caseintro"
-      :style="{
-        color: 'var(--cc-red) ',
-      }"
-    >
-      success business
-    </p>
+      <p class="text-fucsia">success business</p>
+    </div>
     <section class="service-grid">
       <h4 v-if="area.services.length === 0">There are no services</h4>
       <div
@@ -41,8 +29,8 @@
         ></service-mini>
       </div>
     </section>
-    <div class="discover">
-      <p class="discover-text">DISCOVER ALL SERVICES</p>
+    <div>
+      <button class="button">DISCOVER ALL SERVICES</button>
     </div>
     <br />
     <svg
@@ -60,23 +48,12 @@
       />
     </svg>
     <br />
-    <p class="casestart">WHAT WE DO</p>
-    <p
-      class="caseintro"
-      :style="{
-        color: 'var(--c-grey1) ',
-      }"
-    >
+    <p class="text-start">WHAT WE DO</p>
+    <div class="text-intro">
       DISCOVER OUR
-    </p>
-    <p
-      class="caseintro"
-      :style="{
-        color: 'var(--cc-red) ',
-      }"
-    >
-      clients Case Studies
-    </p>
+      <p class="text-fucsia">clients Case Studies</p>
+    </div>
+
     <section class="casestudies-grid">
       <h4 v-if="area.casestudies === 0">There are no cs</h4>
       <div
@@ -92,28 +69,15 @@
         ></case-study-mini>
       </div>
     </section>
-    <div class="discover">
-      <p class="discover-text">DISCOVER ALL CASES</p>
+    <div>
+      <button class="button">DISCOVER ALL CASES</button>
     </div>
 
-    <p class="casestart">the people</p>
-
-    <p
-      class="caseintro"
-      :style="{
-        color: 'var(--c-grey1)',
-      }"
-    >
+    <p class="text-start">the people</p>
+    <div class="text-intro">
       MEET OUR
-    </p>
-    <p
-      class="caseintro"
-      :style="{
-        color: 'var(--cc-red)',
-      }"
-    >
-      PROFESSIONAL TEAM
-    </p>
+      <p class="text-fucsia">PROFESSIONAL TEAM</p>
+    </div>
     <section class="member-grid">
       <div
         v-for="(person, personIndex) of people"
@@ -216,13 +180,8 @@ img {
   cursor: pointer;
   margin-bottom: 20px;
 }
-.discover {
-  background: #e8e6ff;
-  border-radius: 35px;
-  max-width: 30%;
-  margin: auto;
-}
-.discover-text {
+
+.button {
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -231,22 +190,30 @@ img {
   text-transform: uppercase;
   padding: 15px 25px 15px 25px;
   color: var(--cc-base2);
+  background: #e8e6ff;
+  border-radius: 35px;
+  max-width: 30%;
+  margin: auto;
+  border: none;
 }
-.caseintro {
+.text-intro {
   font-style: normal;
   font-weight: bold;
   font-size: 70px;
   line-height: 84px;
   text-align: center;
   text-transform: uppercase;
+  color: var(--c-grey1);
 }
-.casestart {
+.text-fucsia {
+  color: var(--cc-red);
+}
+.text-start {
   padding-top: 44px;
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
   line-height: 24px;
-  /* identical to box height */
   padding-bottom: 44px;
   text-align: center;
   text-transform: uppercase;
