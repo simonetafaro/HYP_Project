@@ -33,12 +33,11 @@
         v-for="(service, serviceIndex) of area.services"
         :key="'service-' + serviceIndex"
         class="service"
-        @click="goTo(`/service/${service.id}`)"
       >
         <service-mini
           :title="service.title"
-          :summary="service.subTitle"
           :image="service.banner"
+          :path="service.id"
         ></service-mini>
       </div>
     </section>
@@ -142,6 +141,29 @@ export default {
     CaseStudyMini,
     MemberMini,
   },
+  mounted() {
+    //  resize service img height
+    Array.from(document.getElementsByClassName('service_img')).forEach(
+      function (img) {
+        img.style.height = img.width + 'px'
+      }
+    )
+    //  check highest card
+    let serviceCardMaxHeight = 0
+    Array.from(document.getElementsByClassName('service_card')).forEach(
+      function (card) {
+        if (card.clientHeight > serviceCardMaxHeight)
+          serviceCardMaxHeight = card.clientHeight
+      }
+    )
+    //  set the same height to all the cards
+    Array.from(document.getElementsByClassName('service_card')).forEach(
+      function (card) {
+        if (card.clientHeight < serviceCardMaxHeight)
+          card.style.height = serviceCardMaxHeight + 'px'
+      }
+    )
+  },
   async asyncData({ $axios, route }) {
     const { id } = route.params
     // console.log('this url', process.env.BASE_URL)
@@ -180,10 +202,7 @@ h4 {
   grid-gap: 10px;
   margin-top: 40px;
 }
-.service {
-  cursor: pointer;
-  margin-bottom: 20px;
-}
+
 img {
   max-width: 600px;
 }
