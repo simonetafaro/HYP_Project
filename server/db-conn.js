@@ -1,4 +1,4 @@
-const { Sequelize, DataTypes } = require('sequelize')
+const { Sequelize, DataTypes, Op } = require('sequelize')
 
 // Development
 const db = new Sequelize('mysql://root:4LUPPOLI@localhost:3306/dbtest', {})
@@ -234,12 +234,13 @@ async function insertRealData() {
       'Ideate, innovate, change the world, repeat. Meet our team of talented people using design thinking to create experiences that win awards and make headlines.',
   })
   const BigDataAnalysis = await Area.create({
-    title: 'BigDataAnalysis Area',
+    title: 'Big Data Analytics',
     subTitle:
       'Analyze data from your database with a data driven approach to take important decisions inside your company.',
     description:
       'The science of analyzing raw data in order to make conclusions about that information, revealing reveal trends and metrics. Through our specialist your company will be more efficient in taking decisions. This process of analysis allows to operate a predictive analysis, that is, it allows to know in advance what will happen: this becomes possible because if we have a model and we have enough historical data we can determine what will happen in the near future with bases or statistical foundations.',
-    banner: '',
+    banner:
+      'https://storage.googleapis.com/saepict-saepictwagtail-prod/images/big-data-analysis-2020.original.png',
     evocativeImage:
       'https://storage.googleapis.com/saepict-saepictwagtail-prod/images/big-data-analysis-2020.original.png',
     servicesTitle: 'Discover our services ',
@@ -965,6 +966,9 @@ async function insertRealData() {
     serviceHeading: '',
   })
   await BigDataAnalysis.addCasestudy(bdaC1.id)
+  await BIDWHConsulting.addCasestudy(bdaC1.id)
+  await PredictiveAnalyticsInHealthcare.addCasestudy(bdaC1.id)
+  await PredictionScenarioAnalysis.addCasestudy(bdaC1.id)
 
   const bdaC2 = await CaseStudy.create({
     title: 'Price optimization for e-commerce',
@@ -987,6 +991,9 @@ async function insertRealData() {
     serviceHeading: '',
   })
   await BigDataAnalysis.addCasestudy(bdaC2.id)
+  await PricingOptimization.addCasestudy(bdaC2.id)
+  await OptimizeDigitalMarketing.addCasestudy(bdaC2.id)
+  await BigDataAutomation.addCasestudy(bdaC2.id)
 
   const bdaC3 = await CaseStudy.create({
     title: 'Integrated BDA Platform',
@@ -1008,6 +1015,9 @@ async function insertRealData() {
     serviceHeading: '',
   })
   await BigDataAnalysis.addCasestudy(bdaC3.id)
+  await BigDataAutomation.addCasestudy(bdaC3.id)
+  await BIDWHConsulting.addCasestudy(bdaC3.id)
+  await PricingOptimization.addCasestudy(bdaC3.id)
 
   const bdaC4 = await CaseStudy.create({
     title: 'Predictive analytics in healthcare ',
@@ -1029,6 +1039,9 @@ async function insertRealData() {
     serviceHeading: '',
   })
   await BigDataAnalysis.addCasestudy(bdaC4.id)
+  await PredictiveAnalyticsInHealthcare.addCasestudy(bdaC4.id)
+  await PredictionScenarioAnalysis.addCasestudy(bdaC4.id)
+  await BIDWHConsulting.addCasestudy(bdaC4.id)
 
   const bdaC5 = await CaseStudy.create({
     title: 'Optimise digital marketing',
@@ -1050,16 +1063,25 @@ async function insertRealData() {
     serviceHeading: '',
   })
   await BigDataAnalysis.addCasestudy(bdaC5.id)
+  await OptimizeDigitalMarketing.addCasestudy(bdaC5.id)
+  await PricingOptimization.addCasestudy(bdaC5.id)
+  await PredictiveAnalyticsInHealthcare.addCasestudy(bdaC5.id)
 
   const bdaC6 = await CaseStudy.create({
-    title: 'BIG DATA ANALYSIS case study',
-    subTitle: '',
-    banner: '',
-    descriptiveText: '',
-    challengeTitle: '',
-    challengeDescription: '',
-    solutionTitle: '',
-    solutionDescription: '',
+    title:
+      'Real-time traffic prediction via highly automated fleet communication',
+    subTitle:
+      'Providing drivers and highly automated vehicles with a view of the road ahead that is as comprehensive as possible is the main idea of the project. ',
+    banner:
+      'https://www.carhs.de/newsletter-archive/images/news/ipgflottenkommunikationbig.jpg',
+    descriptiveText:
+      'Driving onto the highway and knowing in advance how slow the rush hour traffic will move or whether the two-hour buildup will clear up that moment, ensuring smooth driving – in the research project “Providentia – Pro-active video-based use of telecommunications technologies in innovative autobahn scenarios”, a real-time view of the highway traffic ahead is tested using corresponding sensors and big data. Via the highly precise localization of traffic objects within the system, driver and self-driving cars are provided with information, increasing the safety, efficiency, and comfort of driving. ',
+    challengeTitle: 'Simulation software CarMaker by HEXTECH.',
+    challengeDescription:
+      'The main aim of the project is to provide drivers and highly automated vehicles with a comprehensive view of the road ahead. Successful implementation requires a cellular network for data transfer and Car2X receivers, which process and transfer the relevant data. The ‘digital twin’ of the infrastructure is therefore always up-to-date and enables derivations of all relevant information for each vehicle in real time and under adverse weather conditions.',
+    solutionTitle: 'Development of the system',
+    solutionDescription:
+      'For the development of the system, the simulation software CarMaker by IPG Automotive offers important support. On-road field tests on the digital test bed on the German highway A9 are realistically transferred to the virtual world with CarMaker. Real traffic situations and objects are virtually modeled in real time which allow for realistic tests of the entire system in virtual test driving while taking uncertainties into account. If the interaction of sensors, Car2X components, and advanced driver assistance systems works in the scenarios, the real-time visualization in the vehicle is tackled in the next step. Data obtained in reality is then displayed on a laptop in the car while driving, and the information supply of the connected vehicles is tested in actual traffic scenarios on the test track.',
     teamsTitle: 'Team a caso',
     personName: '',
     personJob: '',
@@ -1067,6 +1089,9 @@ async function insertRealData() {
     serviceHeading: '',
   })
   await BigDataAnalysis.addCasestudy(bdaC6.id)
+  await PredictionScenarioAnalysis.addCasestudy(bdaC6.id)
+  await OptimizeDigitalMarketing.addCasestudy(bdaC6.id)
+  await BigDataAutomation.addCasestudy(bdaC6.id)
   //**END OF BIG DATA ANALYSIS CASE STUDIES */
 
   //**CLOUD COMPUTING CASE STUDIES */
