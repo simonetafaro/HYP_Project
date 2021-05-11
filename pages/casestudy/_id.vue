@@ -25,15 +25,32 @@
         ></service-mini>
       </div>
     </section>
-    <!--TODO: Add team member of this area-->
+
+    <h3>Team Members</h3>
+    <section class="member-grid">
+      <div
+        v-for="(person, personIndex) of casestudy.teammembers"
+        :key="'person-' + personIndex"
+        class="person"
+        @click="goTo(`/team/${person.id}`)"
+      >
+        <member-mini
+          :title="person.memberNameAndOccupation"
+          :summary="person.personalQuote"
+          :image="person.personPhoto"
+        ></member-mini>
+      </div>
+    </section>
   </section>
 </template>
 <script>
 import GoToMixins from '~/mixins/goTo-mixins.js'
 import ServiceMini from '~/components/service/ServiceMini.vue'
+import MemberMini from '~/components/team/MemberMini.vue'
 export default {
   components: {
     ServiceMini,
+    MemberMini,
   },
   mounted() {
     //  resize service img height
@@ -68,7 +85,7 @@ export default {
       `${process.env.BASE_URL}/api/casestudyservices/${id}`
     )
     relServices = relServices.data
-
+    console.log(casestudy)
     return {
       casestudy,
       relServices,
@@ -97,6 +114,16 @@ img {
 p {
   text-align: left;
   margin-top: 40px;
+}
+.member-grid {
+  display: grid;
+  grid-template-columns: repeat(3, calc(100% / 3));
+  grid-gap: 10px;
+  margin-top: 40px;
+}
+.person {
+  cursor: pointer;
+  margin-bottom: 20px;
 }
 @media screen and (max-width: 600px) {
   .casestudies-grid {
