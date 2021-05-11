@@ -86,6 +86,7 @@ export default {
   text-align: center;
   border: 1px solid rgba(255, 255, 255, 0.3);
   z-index: 1;
+  box-shadow: 0 0 8px 0 #dedede;
 }
 .header-content {
   width: 100%;
