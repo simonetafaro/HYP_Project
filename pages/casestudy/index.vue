@@ -26,7 +26,7 @@
       >
         <case-study-mini
           :title="casestudy.title"
-          :summary="casestudy.subTitle"
+          :description="casestudy.subTitle"
           :image="casestudy.banner"
           :area="casestudy.area"
         ></case-study-mini>
@@ -36,7 +36,7 @@
 </template>
 
 <script>
-import CaseStudyMini from '~/components/area/AreaMini.vue'
+import CaseStudyMini from '~/components/casestudy/CaseStudyMini.vue'
 import GoToMixins from '~/mixins/goTo-mixins.js'
 export default {
   components: {

@@ -5,11 +5,20 @@
       <h4>{{ casestudy.subTitle }}</h4>
       <img :src="casestudy.banner" :alt="casestudy.title" />
       <p>
-        {{ casestudy.description }}
+        {{ casestudy.descriptiveText }}
       </p>
+      <h3>CHALLENGE</h3>
+      <h2>{{ casestudy.challengeTitle }}</h2>
+
+      <p>{{ casestudy.challengeDescription }}</p>
+      <br />
+      <h3>SOLUTION</h3>
+      <h2>{{ casestudy.solutionTitle }}</h2>
+      <p>{{ casestudy.solutionDescription }}</p>
       <br />
     </header>
-    <h3>Services related to this project</h3>
+
+    <h3>SERVICES RELATED TO THIS PROJECT</h3>
     <section class="service-grid">
       <h4 v-if="relServices === 0">There are no related Services</h4>
       <div
@@ -20,13 +29,12 @@
       >
         <service-mini
           :title="service.title"
+          :summary="service.subTitle"
           :image="service.banner"
-          :path="service.id"
         ></service-mini>
       </div>
     </section>
-
-    <h3>Team Members</h3>
+    <h3>TEAM WORKING ON THIS PROJECT</h3>
     <section class="member-grid">
       <div
         v-for="(person, personIndex) of casestudy.teammembers"
@@ -52,29 +60,6 @@ export default {
     ServiceMini,
     MemberMini,
   },
-  mounted() {
-    //  resize service img height
-    Array.from(document.getElementsByClassName('service_img')).forEach(
-      function (img) {
-        img.style.height = img.width + 'px'
-      }
-    )
-    //  check highest card
-    let serviceCardMaxHeight = 0
-    Array.from(document.getElementsByClassName('service_card')).forEach(
-      function (card) {
-        if (card.clientHeight > serviceCardMaxHeight)
-          serviceCardMaxHeight = card.clientHeight
-      }
-    )
-    //  set the same height to all the cards
-    Array.from(document.getElementsByClassName('service_card')).forEach(
-      function (card) {
-        if (card.clientHeight < serviceCardMaxHeight)
-          card.style.height = serviceCardMaxHeight + 'px'
-      }
-    )
-  },
   async asyncData({ $axios, route }) {
     const { id } = route.params
     const { data } = await $axios.get(
@@ -85,7 +70,7 @@ export default {
       `${process.env.BASE_URL}/api/casestudyservices/${id}`
     )
     relServices = relServices.data
-    console.log(casestudy)
+
     return {
       casestudy,
       relServices,
@@ -105,8 +90,13 @@ h4 {
 }
 .service-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 30px;
+  grid-template-columns: repeat(3, calc(100% / 3));
+  grid-gap: 10px;
+  margin-top: 40px;
+}
+.service {
+  cursor: pointer;
+  margin-bottom: 20px;
 }
 img {
   max-width: 600px;
@@ -115,20 +105,25 @@ p {
   text-align: left;
   margin-top: 40px;
 }
-.member-grid {
-  display: grid;
-  grid-template-columns: repeat(3, calc(100% / 3));
-  grid-gap: 10px;
-  margin-top: 40px;
-}
-.person {
-  cursor: pointer;
-  margin-bottom: 20px;
-}
 @media screen and (max-width: 600px) {
   .casestudies-grid {
     display: block;
     margin: 40px 20px;
   }
+}
+.member-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, calc(100% / 3));
+
+  grid-gap: 10px;
+
+  margin-top: 40px;
+}
+
+.person {
+  cursor: pointer;
+
+  margin-bottom: 20px;
 }
 </style>
