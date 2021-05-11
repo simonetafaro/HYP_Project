@@ -31,6 +31,7 @@ export default {
   background: #ffffff;
   box-shadow: 0px 3px 25px rgba(205, 201, 255, 0.3);
   border-radius: 50px;
+  min-width: 350px;
 }
 .service_title {
   font-style: normal;

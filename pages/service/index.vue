@@ -94,6 +94,7 @@ h2 {
   margin-bottom: 30px;
 }
 .service-grid {
+  max-width: 1110px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 30px;
@@ -108,7 +109,7 @@ h2 {
 .inner-row {
   margin-left: auto;
   margin-right: auto;
-  max-width: 800px;
+  max-width: 1110px;
   padding-top: 46px;
   padding-bottom: 46px;
 }

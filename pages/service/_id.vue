@@ -26,6 +26,7 @@
       </div>
     </section>
     <h3>Related Services</h3>
+    <br />
     <section class="service-grid">
       <h4 v-if="relServices === 0">There are no related Services</h4>
       <div
@@ -110,7 +111,7 @@ h4 {
 }
 .service-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 30px;
 }
 img {

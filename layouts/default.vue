@@ -34,7 +34,7 @@ html {
 .container {
   padding: 10px;
   margin: 40px auto;
-  max-width: 800px;
+  max-width: 1110px;
   text-align: center;
 }
 a {
