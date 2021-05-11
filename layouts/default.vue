@@ -20,7 +20,8 @@ export default {
 
 <style>
 html {
-  font-family: 'Roboto', sans-serif;
+  /**font-family: 'Roboto', sans-serif;*/
+  font-family: 'Barlow';
   box-sizing: border-box;
 }
 
@@ -33,7 +34,7 @@ html {
 .container {
   padding: 10px;
   margin: 40px auto;
-  max-width: 800px;
+  max-width: 1110px;
   text-align: center;
 }
 a {

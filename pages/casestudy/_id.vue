@@ -20,8 +20,8 @@
       >
         <service-mini
           :title="service.title"
-          :summary="service.subTitle"
           :image="service.banner"
+          :path="service.id"
         ></service-mini>
       </div>
     </section>
@@ -34,6 +34,29 @@ import ServiceMini from '~/components/service/ServiceMini.vue'
 export default {
   components: {
     ServiceMini,
+  },
+  mounted() {
+    //  resize service img height
+    Array.from(document.getElementsByClassName('service_img')).forEach(
+      function (img) {
+        img.style.height = img.width + 'px'
+      }
+    )
+    //  check highest card
+    let serviceCardMaxHeight = 0
+    Array.from(document.getElementsByClassName('service_card')).forEach(
+      function (card) {
+        if (card.clientHeight > serviceCardMaxHeight)
+          serviceCardMaxHeight = card.clientHeight
+      }
+    )
+    //  set the same height to all the cards
+    Array.from(document.getElementsByClassName('service_card')).forEach(
+      function (card) {
+        if (card.clientHeight < serviceCardMaxHeight)
+          card.style.height = serviceCardMaxHeight + 'px'
+      }
+    )
   },
   async asyncData({ $axios, route }) {
     const { id } = route.params
@@ -65,13 +88,8 @@ h4 {
 }
 .service-grid {
   display: grid;
-  grid-template-columns: repeat(3, calc(100% / 3));
-  grid-gap: 10px;
-  margin-top: 40px;
-}
-.service {
-  cursor: pointer;
-  margin-bottom: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
 }
 img {
   max-width: 600px;
