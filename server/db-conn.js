@@ -509,7 +509,7 @@ async function insertRealData() {
   await IoT.addService(Healthcare.id)
 
   const IndustrialManufacturing = await Service.create({
-    title: 'IndustrialManufacturing',
+    title: 'Industrial Manufacturing',
     subTitle:
       'Industrial manufacturers are using IoT across the business: 60% on projects within their facilities, 57% with supply chain and other partners, 42% with end consumers and 58% with their business customers. Their top focus areas are logistics, supply chain and employee and customer operations.',
     description:
@@ -1380,6 +1380,8 @@ async function insertRealData() {
   //**END OF IOT CASE STUDIES */
 
   //** ------------------------------------------------------------ TEAM MEMBER --------------------------------------------------------------- */
+
+  //**SECURITY TEAM MEMBER */
   const person1 = await TeamMember.create({
     memberNameAndOccupation: 'Alex Yasol - Lead security',
     personalQuote: 'Lorem ipsum dolor sit amet',
@@ -1447,15 +1449,85 @@ async function insertRealData() {
     serviceID: '1',
   })
 
-  IoT.addTeammember(person1)
   Security.addTeammember(person1)
   Security.addTeammember(person2)
   Security.addTeammember(person3)
   Security.addTeammember(person4)
+  /** END OF SECURITY TEAM MEMBER */
 
-  iotC1.addTeammember(person1)
-  iotC1.addTeammember(person2)
-  iotC2.addTeammember(person1)
+
+  //**IOT TEAM MEMBER */
+  const iotP1 = await TeamMember.create({
+    memberNameAndOccupation: 'Olivier Haren - Chair of the IoT Board',
+    personalQuote: 'Lorem ipsum dolor sit amet',
+    personalDescription:
+      'Olivier joined us as an RF engineer in 1997. Since 2016, Olivier is the R&D manager for the IoT Business Unit.  Previously Bruno spent 11 years as the manager of the Electronic and Software Department of the Legrand Group’s Radio Frequency & Voice, Data and Image Competencies Center and 10 years in the wired and RF telecommunication field in various R&D positions as electronic designer or project leader. \n Olivier holds a master’s degree in electronic embedded systems from the Institut National Polytechnique de Grenoble, France.',
+    workField: 'Internet of things',
+    teamsTitle: 'IoT Department',
+    personName: 'Olivier Haren',
+    personJob: 'Chair of the IoT Board',
+    personPhoto:
+      'https://bridgelawyers.ca/wp-content/uploads/2020/08/depositphotos_39258143-stock-illustration-businessman-avatar-profile-picture.jpg',
+    teamImage: '',
+  })
+  IoT.addTeammember(iotP1)
+  iotC1.addTeammember(iotP1)
+  iotC7.addTeammember(iotP1)
+
+  const iotP2 = await TeamMember.create({
+    memberNameAndOccupation: 'Jean Orsaten | Chief of Smart Cities department ',
+    personalQuote: 'Lorem ipsum dolor sit amet',
+    personalDescription:
+      'He has over 30 years of experience in the home automation industry, within industry alliances and EU regulatory bodies. He is Director of the Smart Cities Department at ??COMPANY NAME??, overseeing technology partnerships, connectivity and wireless networking technologies and overall system architectures. With a strong focus on Interoperability, he has been deeply involved in the development of protocols with other leading home equipment manufacturers. The department he is heading deals with wireless protocols developments, focusing io-homecontrol, Thread, Zigbee and other open standard solutions for the Somfy Group.',
+    workField: 'Internet of things',
+    teamsTitle: 'IoT Department',
+    personName: 'Jean Orsaten',
+    personJob: 'Chief of Smart Cities department',
+    personPhoto:
+      'https://st3.depositphotos.com/15648834/17930/v/600/depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg',
+    teamImage: '',
+  })
+  IoT.addTeammember(iotP2)
+  iotC2.addTeammember(iotP2)
+  iotC3.addTeammember(iotP2)
+
+  const iotP3 = await TeamMember.create({
+    memberNameAndOccupation: 'Name Surname | Occupation ',
+    personalQuote: 'Lorem ipsum dolor sit amet',
+    personalDescription:
+      'He has over 30 years of experience in the home automation industry, within industry alliances and EU regulatory bodies. He is Director of the Smart Cities Department at ??COMPANY NAME??, overseeing technology partnerships, connectivity and wireless networking technologies and overall system architectures. With a strong focus on Interoperability, he has been deeply involved in the development of protocols with other leading home equipment manufacturers. The department he is heading deals with wireless protocols developments, focusing io-homecontrol, Thread, Zigbee and other open standard solutions for the Somfy Group.',
+    workField: 'Internet of things',
+    teamsTitle: 'IoT Department',
+    personName: 'Rori Duboff',
+    personJob: '',
+    personPhoto:
+      'https://lh3.googleusercontent.com/proxy/EV8Rl4BkQsH2ZMJaVsXyxo8JK28uIpF9bcmko2eipI3LDbh1ZAbj0Syr4QMT-EaonhmmrC2sxlFf32CQf5N8WC4yLS9c3ctyuiv6XWEh__q90z8hwsPsrrNrEHOa0Iai3Ajj-AnGiCACR2wJHp9II93bPbVa5dv_HpAMVQ',
+    teamImage: '',
+  })
+  IoT.addTeammember(iotP3)
+  iotC3.addTeammember(iotP3)
+  iotC4.addTeammember(iotP3)
+  iotC5.addTeammember(iotP3)
+  
+  const iotP4 = await TeamMember.create({
+    memberNameAndOccupation: 'Name1 Surname1 | Occupation ',
+    personalQuote: 'Lorem ipsum dolor sit amet',
+    personalDescription:
+      'Mary is as beautiful as a Hollywood star. Her thick, wavy, long black hair gracefully falls down to her shoulders and encircles her diamond-shaped face. A golden suntan usually brings out her smooth, clear complexion and high cheek bones. Her slightly arched chestnut brown eyebrows highlight her emotions by moving up and down as she reacts to her world around her. Her large deep blue eyes, remind me of a lake on a stormy day. Her curved nose gives her a little girl look that makes me want to smile when she talks. And her mouth is a small mouth outlined by puffy lips that she often accentuates with glossy pink lipstick. When she smiles, which is often, her well formed and even, white teeth brighten up her whole face. I guess you can tell that I am head over heals in love with Mary.',
+
+    workField: 'Security',
+    teamsTitle: 'Security Departement',
+    personName: 'John Molton',
+    personJob: '',
+    personPhoto:
+      'https://www.studiofrancesconi.com/wp-content/uploads/2019/03/placeholder-profile-sq.jpg',
+    teamImage: '',
+  })
+  IoT.addTeammember(iotP4)
+  iotC6.addTeammember(iotP4)
+  iotC7.addTeammember(iotP1)
+  
+  /** END OF IOT TEAM MEMBER */
 }
 
 /**
