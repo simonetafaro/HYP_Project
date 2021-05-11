@@ -20,7 +20,8 @@ export default {
 
 <style>
 html {
-  font-family: 'Roboto', sans-serif;
+  /**font-family: 'Roboto', sans-serif;*/
+  font-family: 'Barlow';
   box-sizing: border-box;
 }
 

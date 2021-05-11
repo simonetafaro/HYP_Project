@@ -17,12 +17,11 @@
             v-for="(service, serviceIndex) of getServiceByArea(area.id)"
             :key="'service-' + serviceIndex"
             class="service"
-            @click="goTo(`/service/${service.id}`)"
           >
             <service-mini
               :title="service.title"
-              :summary="service.subTitle"
               :image="service.banner"
+              :path="service.id"
             ></service-mini>
           </div>
         </section>
@@ -50,6 +49,29 @@ export default {
       areas,
     }
   },
+  mounted() {
+    //  resize service img height
+    Array.from(document.getElementsByClassName('service_img')).forEach(
+      function (img) {
+        img.style.height = img.width + 'px'
+      }
+    )
+    //  check highest card
+    let serviceCardMaxHeight = 0
+    Array.from(document.getElementsByClassName('service_card')).forEach(
+      function (card) {
+        if (card.clientHeight > serviceCardMaxHeight)
+          serviceCardMaxHeight = card.clientHeight
+      }
+    )
+    //  set the same height to all the cards
+    Array.from(document.getElementsByClassName('service_card')).forEach(
+      function (card) {
+        if (card.clientHeight < serviceCardMaxHeight)
+          card.style.height = serviceCardMaxHeight + 'px'
+      }
+    )
+  },
   mixins: [GoToMixins],
   methods: {
     getServiceByArea(areaID) {
@@ -73,15 +95,8 @@ h2 {
 }
 .service-grid {
   display: grid;
-  grid-template-columns: repeat(3, calc(100% / 3));
-  grid-gap: 10px;
-  margin-top: 46px;
-}
-.service {
-  cursor: pointer;
-  margin-bottom: 20px;
-  margin: 10px;
-  min-width: 33.33%;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
 }
 .ad img {
   width: 100%;
