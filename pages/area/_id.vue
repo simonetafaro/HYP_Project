@@ -187,7 +187,6 @@ h4 {
 img {
   max-width: 600px;
 }
-
 .member-grid {
   display: grid;
   grid-template-columns: repeat(3, calc(100% / 3));
@@ -212,10 +211,8 @@ img {
   text-align: center;
   text-transform: uppercase;
   padding: 15px 25px 15px 25px;
-
   color: var(--cc-base2);
 }
-
 .caseintro {
   font-style: normal;
   font-weight: bold;
@@ -224,7 +221,6 @@ img {
   text-align: center;
   text-transform: uppercase;
 }
-
 .casestart {
   padding-top: 44px;
   font-style: normal;

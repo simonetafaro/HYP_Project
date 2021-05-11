@@ -37,7 +37,7 @@
     <h3>TEAM WORKING ON THIS PROJECT</h3>
     <section class="member-grid">
       <div
-        v-for="(person, personIndex) of people"
+        v-for="(person, personIndex) of casestudy.teammembers"
         :key="'person-' + personIndex"
         class="person"
         @click="goTo(`/team/${person.id}`)"
@@ -54,9 +54,11 @@
 <script>
 import GoToMixins from '~/mixins/goTo-mixins.js'
 import ServiceMini from '~/components/service/ServiceMini.vue'
+import MemberMini from '~/components/team/MemberMini.vue'
 export default {
   components: {
     ServiceMini,
+    MemberMini,
   },
   async asyncData({ $axios, route }) {
     const { id } = route.params
@@ -108,5 +110,20 @@ p {
     display: block;
     margin: 40px 20px;
   }
+}
+.member-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, calc(100% / 3));
+
+  grid-gap: 10px;
+
+  margin-top: 40px;
+}
+
+.person {
+  cursor: pointer;
+
+  margin-bottom: 20px;
 }
 </style>

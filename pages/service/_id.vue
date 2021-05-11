@@ -27,18 +27,18 @@
       </div>
     </section>
     <h3>Related Services</h3>
+    <br />
     <section class="service-grid">
       <h4 v-if="relServices === 0">There are no related Services</h4>
       <div
         v-for="(service, serviceIndex) of relServices"
         :key="'service-' + serviceIndex"
         class="service"
-        @click="goTo(`/service/${service.id}`)"
       >
         <service-mini
           :title="service.title"
-          :summary="service.subTitle"
           :image="service.banner"
+          :path="service.id"
         ></service-mini>
       </div>
     </section>
@@ -46,17 +46,38 @@
   </section>
 </template>
 <script>
+import GoToMixins from '~/mixins/goTo-mixins.js'
 import CaseStudyMini from '~/components/casestudy/CaseStudyMini.vue'
 import ServiceMini from '~/components/service/ServiceMini.vue'
-import GoToMixins from '~/mixins/goTo-mixins.js'
 export default {
   components: {
     CaseStudyMini,
     ServiceMini,
   },
-
+  mounted() {
+    //  resize service img height
+    Array.from(document.getElementsByClassName('service_img')).forEach(
+      function (img) {
+        img.style.height = img.width + 'px'
+      }
+    )
+    //  check highest card
+    let serviceCardMaxHeight = 0
+    Array.from(document.getElementsByClassName('service_card')).forEach(
+      function (card) {
+        if (card.clientHeight > serviceCardMaxHeight)
+          serviceCardMaxHeight = card.clientHeight
+      }
+    )
+    //  set the same height to all the cards
+    Array.from(document.getElementsByClassName('service_card')).forEach(
+      function (card) {
+        if (card.clientHeight < serviceCardMaxHeight)
+          card.style.height = serviceCardMaxHeight + 'px'
+      }
+    )
+  },
   mixins: [GoToMixins],
-
   async asyncData({ $axios, route }) {
     const { id } = route.params
     const { data } = await $axios.get(
@@ -91,13 +112,8 @@ h4 {
 }
 .service-grid {
   display: grid;
-  grid-template-columns: repeat(3, calc(100% / 3));
-  grid-gap: 10px;
-  margin-top: 40px;
-}
-.service {
-  cursor: pointer;
-  margin-bottom: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
 }
 img {
   max-width: 600px;
