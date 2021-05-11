@@ -32,6 +32,9 @@
           </nuxt-link>
         </div>
       </nav>
+      <div class="contact">
+        <p class="contact-text">CONTACT US</p>
+      </div>
     </div>
   </header>
 </template>
@@ -64,7 +67,7 @@ export default {
           path: '/team',
         },
         {
-          name: 'About',
+          name: 'About Us',
           path: '/about',
         },
       ],
@@ -113,18 +116,32 @@ export default {
   justify-content: flex-end;
   width: 100%;
   margin-right: 50px;
-  margin-left: auto;
-  max-width: 70%;
+  max-width: 54%;
 }
 .menu-item {
   margin-left: 50px;
 }
 .title {
   cursor: pointer;
-  font-family: Poppins;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 40px;
   line-height: 60px;
+}
+.contact {
+  background: #e8e6ff;
+  border-radius: 35px;
+}
+.contact-text {
+  font-family: Barlow;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 15px 25px 15px 25px;
+  color: var(--cc-base2);
 }
 </style>

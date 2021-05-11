@@ -26,7 +26,7 @@
       >
         <case-study-mini
           :title="casestudy.title"
-          :summary="casestudy.subTitle"
+          :description="casestudy.subTitle"
           :image="casestudy.banner"
           :area="casestudy.area"
         ></case-study-mini>

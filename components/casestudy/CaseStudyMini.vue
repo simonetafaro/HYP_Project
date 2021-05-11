@@ -31,7 +31,7 @@ export default {
 .casestudycontainer {
   position: relative;
   height: 550px;
-  border: 1px solid #979797;
+  border: 1px solid #979797; /* manca il colore nella palette*/
   border-radius: 30px;
   width: 100%;
   text-align: left;
@@ -58,7 +58,7 @@ p.casestudytitle {
   font-weight: bold;
   font-size: 22px;
   line-height: 26px;
-  color: #424272;
+  color: var(--cc-base1);
   padding-bottom: 11px;
 }
 
@@ -68,7 +68,7 @@ p.referenceArea {
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
-  color: #909297;
+  color: var(--c-grey2);
 }
 
 p.casestudydescription {
@@ -76,7 +76,7 @@ p.casestudydescription {
   font-weight: 500;
   font-size: 18px;
   line-height: 24px;
-  color: #909297;
+  color: var(--c-grey2);
 }
 
 div.caseinfo {
@@ -85,7 +85,7 @@ div.caseinfo {
   font-weight: bold;
   font-size: 16px;
   text-transform: uppercase;
-  color: #424272;
+  color: var(--cc-base1);
   bottom: 30px;
   text-align: left;
 }

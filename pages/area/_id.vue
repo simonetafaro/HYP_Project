@@ -14,7 +14,7 @@
     <p
       class="caseintro"
       :style="{
-        color: 'color: #464A52',
+        color: 'var(--c-grey1)',
       }"
     >
       our Services
@@ -22,7 +22,7 @@
     <p
       class="caseintro"
       :style="{
-        color: '#FF4266 ',
+        color: 'var(--cc-red) ',
       }"
     >
       success business
@@ -45,7 +45,7 @@
     <div class="discover">
       <p class="discover-text">DISCOVER ALL SERVICES</p>
     </div>
-    <p :style="{ padding: '175px' }"></p>
+    <br />
     <svg
       width="101"
       height="101"
@@ -60,12 +60,12 @@
         fill="#E8E7FF"
       />
     </svg>
-    <p :style="{ padding: '175px' }"></p>
+    <br />
     <p class="casestart">WHAT WE DO</p>
     <p
       class="caseintro"
       :style="{
-        color: 'color: #464A52',
+        color: 'var(--c-grey1) ',
       }"
     >
       DISCOVER OUR
@@ -73,7 +73,7 @@
     <p
       class="caseintro"
       :style="{
-        color: '#FF4266 ',
+        color: 'var(--cc-red) ',
       }"
     >
       clients Case Studies
@@ -84,6 +84,7 @@
         v-for="(casestudy, casestudyIndex) of area.casestudies"
         :key="'casestudy-' + casestudyIndex"
         class="casestudy"
+        @click="goTo(`/casestudy/${casestudy.id}`)"
       >
         <case-study-mini
           :title="casestudy.title"
@@ -101,7 +102,7 @@
     <p
       class="caseintro"
       :style="{
-        color: 'color: #464A52',
+        color: 'var(--c-grey1)',
       }"
     >
       MEET OUR
@@ -109,7 +110,7 @@
     <p
       class="caseintro"
       :style="{
-        color: ' #FF4266',
+        color: 'var(--cc-red)',
       }"
     >
       PROFESSIONAL TEAM
@@ -212,7 +213,7 @@ img {
   text-transform: uppercase;
   padding: 15px 25px 15px 25px;
 
-  color: #63639f;
+  color: var(--cc-base2);
 }
 
 .caseintro {
@@ -225,15 +226,15 @@ img {
 }
 
 .casestart {
+  padding-top: 44px;
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
   line-height: 24px;
   /* identical to box height */
   padding-bottom: 44px;
-
   text-align: center;
   text-transform: uppercase;
-  color: #464a52;
+  color: var(--c-grey1);
 }
 </style>

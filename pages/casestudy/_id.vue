@@ -5,11 +5,20 @@
       <h4>{{ casestudy.subTitle }}</h4>
       <img :src="casestudy.banner" :alt="casestudy.title" />
       <p>
-        {{ casestudy.description }}
+        {{ casestudy.descriptiveText }}
       </p>
+      <h3>CHALLENGE</h3>
+      <h2>{{ casestudy.challengeTitle }}</h2>
+
+      <p>{{ casestudy.challengeDescription }}</p>
+      <br />
+      <h3>SOLUTION</h3>
+      <h2>{{ casestudy.solutionTitle }}</h2>
+      <p>{{ casestudy.solutionDescription }}</p>
       <br />
     </header>
-    <h3>Services related to this project</h3>
+
+    <h3>SERVICES RELATED TO THIS PROJECT</h3>
     <section class="service-grid">
       <h4 v-if="relServices === 0">There are no related Services</h4>
       <div
@@ -25,7 +34,21 @@
         ></service-mini>
       </div>
     </section>
-    <!--TODO: Add team member of this area-->
+    <h3>TEAM WORKING ON THIS PROJECT</h3>
+    <section class="member-grid">
+      <div
+        v-for="(person, personIndex) of people"
+        :key="'person-' + personIndex"
+        class="person"
+        @click="goTo(`/team/${person.id}`)"
+      >
+        <member-mini
+          :title="person.memberNameAndOccupation"
+          :summary="person.personalQuote"
+          :image="person.personPhoto"
+        ></member-mini>
+      </div>
+    </section>
   </section>
 </template>
 <script>

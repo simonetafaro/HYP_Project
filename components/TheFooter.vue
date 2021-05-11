@@ -74,7 +74,7 @@ export default {}
 .left {
   margin-right: auto;
   cursor: pointer;
-  font-family: Poppins;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 20px;
