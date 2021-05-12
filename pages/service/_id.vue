@@ -16,13 +16,13 @@
         v-for="(casestudy, casestudyIndex) of service.casestudies"
         :key="'casestudy-' + casestudyIndex"
         class="casestudy"
-        @click="goTo(`/casestudy/${casestudy.id}`)"
       >
         <case-study-mini
           :title="casestudy.title"
           :description="casestudy.subTitle"
           :image="casestudy.banner"
           :area="casestudy.area"
+          :path="casestudy.id"
         ></case-study-mini>
       </div>
     </section>
@@ -106,10 +106,7 @@ h4 {
   grid-gap: 10px;
   margin-top: 40px;
 }
-.casestudy {
-  cursor: pointer;
-  margin-bottom: 20px;
-}
+
 .service-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

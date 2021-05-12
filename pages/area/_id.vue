@@ -60,19 +60,18 @@
         v-for="(casestudy, casestudyIndex) of area.casestudies"
         :key="'casestudy-' + casestudyIndex"
         class="casestudy"
-        @click="goTo(`/casestudy/${casestudy.id}`)"
       >
         <case-study-mini
           :title="casestudy.title"
           :description="casestudy.subTitle"
           :image="casestudy.banner"
+          :path="casestudy.id"
         ></case-study-mini>
       </div>
     </section>
     <div>
       <button class="button">DISCOVER ALL CASES</button>
     </div>
-
     <p class="text-start">the people</p>
     <div class="text-intro">
       MEET OUR
@@ -156,10 +155,7 @@ h4 {
   grid-gap: 10px;
   margin-top: 40px;
 }
-.casestudy {
-  cursor: pointer;
-  margin-bottom: 20px;
-}
+
 .service-grid {
   display: grid;
   grid-template-columns: repeat(3, calc(100% / 3));
