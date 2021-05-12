@@ -1480,7 +1480,6 @@ async function insertRealData() {
   Security.addTeammember(person4)
   /** END OF SECURITY TEAM MEMBER */
 
-
   //**IOT TEAM MEMBER */
   const iotP1 = await TeamMember.create({
     memberNameAndOccupation: 'Olivier Haren - Chair of the IoT Board',
@@ -1533,7 +1532,7 @@ async function insertRealData() {
   iotC3.addTeammember(iotP3)
   iotC4.addTeammember(iotP3)
   iotC5.addTeammember(iotP3)
-  
+
   const iotP4 = await TeamMember.create({
     memberNameAndOccupation: 'Name1 Surname1 | Occupation ',
     personalQuote: 'Lorem ipsum dolor sit amet',
@@ -1551,8 +1550,147 @@ async function insertRealData() {
   IoT.addTeammember(iotP4)
   iotC6.addTeammember(iotP4)
   iotC7.addTeammember(iotP1)
-  
+
   /** END OF IOT TEAM MEMBER */
+
+  //**BiG DATA ANALYTICS TEAM MEMBER */
+
+  const bdaP1 = await TeamMember.create({
+    memberNameAndOccupation:
+      'Haru Nayaki - Chief Executive Officer of Analytics',
+    personalQuote: 'Lorem ipsum dolor sit amet',
+    personalDescription: '',
+
+    workField: 'Big Data Analytics',
+    teamsTitle: 'Analytics Departement',
+    personName: 'Haru Nayaki',
+    personJob: '',
+    personPhoto:
+      'https://images.pexels.com/photos/751204/pexels-photo-751204.jpeg',
+    teamImage: '',
+  })
+  BigDataAnalysis.addTeammember(bdaP1)
+  bdaC4.addTeammember(bdaP1)
+  bdaC1.addTeammember(bdaP1)
+  bdaC6.addTeammember(bdaP1)
+
+  const bdaP2 = await TeamMember.create({
+    memberNameAndOccupation: 'Juliè Harmon - Expert in Data Science',
+    personalQuote: 'Lorem ipsum dolor sit amet',
+    personalDescription: '',
+
+    workField: 'Big Data Analytics',
+    teamsTitle: 'Analytics Departement',
+    personName: 'Juliè Harmon',
+    personJob: '',
+    personPhoto:
+      'http://www.fotoservice.it/blog/files/2018/10/come-scattare-primo-piano-02.jpg',
+    teamImage: '',
+  })
+  BigDataAnalysis.addTeammember(bdaP2)
+  bdaC2.addTeammember(bdaP2)
+  bdaC3.addTeammember(bdaP2)
+
+  const bdaP3 = await TeamMember.create({
+    memberNameAndOccupation: 'Raùl Sirte - Expert in business intelligence',
+    personalQuote: 'Lorem ipsum dolor sit amet',
+    personalDescription: '',
+
+    workField: 'Big Data Analytics',
+    teamsTitle: 'Analytics Departement',
+    personName: 'Raùl Sirte',
+    personJob: '',
+    personPhoto:
+      'https://image.freepik.com/free-photo/emotions-people-concept-headshot-happy-attractive-man-laughing-smiling-express-rejoice_1258-26742.jpg',
+    teamImage: '',
+  })
+  BigDataAnalysis.addTeammember(bdaP3)
+  bdaC1.addTeammember(bdaP3)
+  bdaC4.addTeammember(bdaP3)
+
+  const bdaP4 = await TeamMember.create({
+    memberNameAndOccupation: 'Francesca Rizzo - Manager of the department',
+    personalQuote: 'Lorem ipsum dolor sit amet',
+    personalDescription: '',
+
+    workField: 'Big Data Analytics',
+    teamsTitle: 'Analytics Departement',
+    personName: 'Francesca Rizzo',
+    personJob: '',
+    personPhoto:
+      'https://www.stateofmind.it/wp-content/uploads/2017/11/Gerontofilia-l%E2%80%99attrazione-sessuale-verso-le-persone-anziane-3-680x382.jpg',
+    teamImage: '',
+  })
+  BigDataAnalysis.addTeammember(bdaP4)
+  bdaC6.addTeammember(bdaP4)
+  bdaC3.addTeammember(bdaP4)
+
+  const bdaP5 = await TeamMember.create({
+    memberNameAndOccupation: 'Jeff Peterson - Chair of Big Data department',
+    personalQuote: 'Lorem ipsum dolor sit amet',
+    personalDescription: '',
+
+    workField: 'Big Data Analytics',
+    teamsTitle: 'Analytics Departement',
+    personName: 'Jeff Peterson',
+    personJob: '',
+    personPhoto:
+      'https://thumbs.dreamstime.com/b/persone-di-affari-sguardo-del-primo-piano-10383125.jpg',
+    teamImage: '',
+  })
+  BigDataAnalysis.addTeammember(bdaP5)
+  bdaC3.addTeammember(bdaP5)
+
+  const bdaP6 = await TeamMember.create({
+    memberNameAndOccupation: 'Nina Morkov - Expert in Marketing',
+    personalQuote: 'Lorem ipsum dolor sit amet',
+    personalDescription: '',
+
+    workField: 'Big Data Analytics',
+    teamsTitle: 'Analytics Departement',
+    personName: 'Nina Morkov',
+    personJob: '',
+    personPhoto:
+      'https://image.freepik.com/free-photo/close-up-young-woman-outdoors_1098-1638.jpg',
+    teamImage: '',
+  })
+  BigDataAnalysis.addTeammember(bdaP6)
+  bdaC2.addTeammember(bdaP6)
+  bdaC5.addTeammember(bdaP6)
+
+  const bdaP7 = await TeamMember.create({
+    memberNameAndOccupation: 'Isi ホイップポップ - Designer of the group',
+    personalQuote: 'Lorem ipsum dolor sit amet',
+    personalDescription: '',
+
+    workField: 'Big Data Analytics',
+    teamsTitle: 'Analytics Departement',
+    personName: 'Isi ホイップポップ',
+    personJob: '',
+    personPhoto:
+      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJZqmyCCXRtvum7SOhS3Inp_abXJQguw7uTA&usqp=CAU',
+    teamImage: '',
+  })
+  BigDataAnalysis.addTeammember(bdaP7)
+  bdaC2.addTeammember(bdaP7)
+  bdaC4.addTeammember(bdaP7)
+
+  const bdaP8 = await TeamMember.create({
+    memberNameAndOccupation: 'Omar Zizou - Expert in Communication',
+    personalQuote: 'Lorem ipsum dolor sit amet',
+    personalDescription: '',
+
+    workField: 'Big Data Analytics',
+    teamsTitle: 'Analytics Departement',
+    personName: 'Omar Zizou',
+    personJob: '',
+    personPhoto:
+      'https://www.repstatic.it/content/localirep/img/rep-milano/2021/05/11/160311018-2f365fdb-45e3-4c52-9add-31d4f8f4258d.jpg',
+    teamImage: '',
+  })
+  BigDataAnalysis.addTeammember(bdaP8)
+  bdaC5.addTeammember(bdaP8)
+  bdaC6.addTeammember(bdaP8)
 }
 
 /**
