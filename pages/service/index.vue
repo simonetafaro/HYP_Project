@@ -10,7 +10,31 @@
       class="row"
       v-bind:class="isOddRow(areaIndex)"
     >
-      <div class="inner-row">
+      <div class="button-wrapper">
+        <button data-action="slideLeft">prev</button>
+      </div>
+      <div class="service-list-wrapper">
+        <h2 class="service-section-title">{{ area.title }}</h2>
+        <ul class="service-carousel" data-target="carousel">
+          <div
+            v-for="(service, serviceIndex) of getServiceByArea(area.id)"
+            :key="'service-' + serviceIndex"
+            class="service"
+          >
+            <li class="service-card service" data-target="card">
+              <service-mini
+                :title="service.title"
+                :image="service.banner"
+                :path="service.id"
+              ></service-mini>
+            </li>
+          </div>
+        </ul>
+      </div>
+      <div class="button-wrapper">
+        <button data-action="slideRight">Next</button>
+      </div>
+      <!--comment<div class="inner-row">
         <h2 class="service-section-title">{{ area.title }}</h2>
         <section class="service-grid">
           <div
@@ -27,6 +51,7 @@
         </section>
         <br />
       </div>
+        <comment-->
     </div>
   </main>
 </template>
@@ -36,6 +61,16 @@
 import ServiceMini from '~/components/service/ServiceMini.vue'
 import GoToMixins from '~/mixins/goTo-mixins.js'
 export default {
+  head() {
+    return {
+      script: [
+        {
+          src: 'assets/js/carousel.js',
+          body: true,
+        },
+      ],
+    }
+  },
   components: {
     ServiceMini,
   },
@@ -129,5 +164,29 @@ h2 {
     display: block;
     margin: 40px 20px;
   }
+}
+
+.service-list-wrapper {
+  height: 650px;
+  width: 1110px;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.service-carousel {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+  display: flex;
+  position: absolute;
+  left: 0;
+  transition: all 1s ease;
+}
+.service-card {
+  min-width: 350px;
+  margin-right: 15px;
+  margin-left: 15px;
+  display: inline-block;
 }
 </style>
