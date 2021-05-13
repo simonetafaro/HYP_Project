@@ -189,7 +189,7 @@ async function insertRealData() {
       'Acting as the bridge between the physical and the digital world, IoT offers a huge opportunity for companies.',
     description:
       'We help clients effectively capitalize on IoT technology and solutions, linking technology, vendors and customers through a holistic business model. IoT describes the connection of devices to the internet using embedded software and sensors to communicate, collect and exchange data with one another. IoT combines connectivity with sensors, devices and people, enabling a form of free-flowing conversation between man and machine, software and hardware. With IoT, the world is wide open, offering a virtually endless array of opportunities and connections at home, at work or at play.',
-    banner: 'https://i.ibb.co/pZ83v4z/iot-main.png',
+    banner: 'https://i.ibb.co/9pqzBKh/iot.png',
     evocativeImage: '',
     servicesTitle: 'Discover our IoT services ',
     servicesDescription:

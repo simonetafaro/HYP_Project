@@ -22,10 +22,10 @@ export default {
 <style scoped>
 .card {
   padding: 20px 10px;
-  background: #fff;
+  /* background: #fff;
   border-radius: 20px;
   border: 1px solid #e8e7ff;
-  box-shadow: 0px 3px 25px rgba(205, 201, 255, 0.3);
+  box-shadow: 0px 3px 25px rgba(205, 201, 255, 0.3); */
 }
 
 h3 {
@@ -45,8 +45,7 @@ p {
 
 .img {
   width: 100%;
-  height: 200px;
-  max-width: 600px;
+  height: 400px;
   margin: auto;
   background-size: cover;
   background-position: center;
