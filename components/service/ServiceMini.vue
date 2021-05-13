@@ -20,13 +20,17 @@ export default {
 
 <style scoped>
 .card {
-  padding: 20px 10px;
-  border: 1px solid grey;
-  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0px 3px 25px rgba(205, 201, 255, 0.3);
+  border-radius: 20px;
 }
+
 h3 {
+  font-size: 18px;
   height: 60px;
-  margin-bottom: 10px;
+  padding: 20px;
+  text-transform: uppercase;
+  display: inline-block;
 }
 p {
   height: 60px;
