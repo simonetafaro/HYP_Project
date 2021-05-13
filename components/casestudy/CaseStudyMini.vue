@@ -97,11 +97,11 @@ export default {
   border: none;
   background: none;
   cursor: pointer;
+  padding: 10px;
 }
 .case-button:hover {
   color: white;
   background-color: #4d41c9;
   border-radius: 29px;
-  padding: 10px;
 }
 </style>

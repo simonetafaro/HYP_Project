@@ -297,6 +297,7 @@ export default {
   line-height: 60px;
   display: inline-flex;
   color: #cdc9ff;
+  margin-right: 80px;
   /* vertical-align: center; NON SISTEMA IL PRO*/
 }
 .title-purple {
