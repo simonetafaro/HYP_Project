@@ -1,4 +1,4 @@
-const { Sequelize, DataTypes } = require('sequelize')
+const { Sequelize, DataTypes, Op } = require('sequelize')
 
 // Development
 const db = new Sequelize('mysql://root:4LUPPOLI@localhost:3306/dbtest', {})
@@ -234,12 +234,13 @@ async function insertRealData() {
       'Ideate, innovate, change the world, repeat. Meet our team of talented people using design thinking to create experiences that win awards and make headlines.',
   })
   const BigDataAnalysis = await Area.create({
-    title: 'BigDataAnalysis Area',
+    title: 'Big Data Analytics',
     subTitle:
       'Analyze data from your database with a data driven approach to take important decisions inside your company.',
     description:
       'The science of analyzing raw data in order to make conclusions about that information, revealing reveal trends and metrics. Through our specialist your company will be more efficient in taking decisions. This process of analysis allows to operate a predictive analysis, that is, it allows to know in advance what will happen: this becomes possible because if we have a model and we have enough historical data we can determine what will happen in the near future with bases or statistical foundations.',
-    banner: '',
+    banner:
+      'https://storage.googleapis.com/saepict-saepictwagtail-prod/images/big-data-analysis-2020.original.png',
     evocativeImage:
       'https://storage.googleapis.com/saepict-saepictwagtail-prod/images/big-data-analysis-2020.original.png',
     servicesTitle: 'Discover our services ',
@@ -509,7 +510,7 @@ async function insertRealData() {
   await IoT.addService(Healthcare.id)
 
   const IndustrialManufacturing = await Service.create({
-    title: 'IndustrialManufacturing',
+    title: 'Industrial Manufacturing',
     subTitle:
       'Industrial manufacturers are using IoT across the business: 60% on projects within their facilities, 57% with supply chain and other partners, 42% with end consumers and 58% with their business customers. Their top focus areas are logistics, supply chain and employee and customer operations.',
     description:
@@ -965,6 +966,9 @@ async function insertRealData() {
     serviceHeading: '',
   })
   await BigDataAnalysis.addCasestudy(bdaC1.id)
+  await BIDWHConsulting.addCasestudy(bdaC1.id)
+  await PredictiveAnalyticsInHealthcare.addCasestudy(bdaC1.id)
+  await PredictionScenarioAnalysis.addCasestudy(bdaC1.id)
 
   const bdaC2 = await CaseStudy.create({
     title: 'Price optimization for e-commerce',
@@ -987,6 +991,9 @@ async function insertRealData() {
     serviceHeading: '',
   })
   await BigDataAnalysis.addCasestudy(bdaC2.id)
+  await PricingOptimization.addCasestudy(bdaC2.id)
+  await OptimizeDigitalMarketing.addCasestudy(bdaC2.id)
+  await BigDataAutomation.addCasestudy(bdaC2.id)
 
   const bdaC3 = await CaseStudy.create({
     title: 'Integrated BDA Platform',
@@ -1008,6 +1015,9 @@ async function insertRealData() {
     serviceHeading: '',
   })
   await BigDataAnalysis.addCasestudy(bdaC3.id)
+  await BigDataAutomation.addCasestudy(bdaC3.id)
+  await BIDWHConsulting.addCasestudy(bdaC3.id)
+  await PricingOptimization.addCasestudy(bdaC3.id)
 
   const bdaC4 = await CaseStudy.create({
     title: 'Predictive analytics in healthcare ',
@@ -1029,6 +1039,9 @@ async function insertRealData() {
     serviceHeading: '',
   })
   await BigDataAnalysis.addCasestudy(bdaC4.id)
+  await PredictiveAnalyticsInHealthcare.addCasestudy(bdaC4.id)
+  await PredictionScenarioAnalysis.addCasestudy(bdaC4.id)
+  await BIDWHConsulting.addCasestudy(bdaC4.id)
 
   const bdaC5 = await CaseStudy.create({
     title: 'Optimise digital marketing',
@@ -1050,16 +1063,25 @@ async function insertRealData() {
     serviceHeading: '',
   })
   await BigDataAnalysis.addCasestudy(bdaC5.id)
+  await OptimizeDigitalMarketing.addCasestudy(bdaC5.id)
+  await PricingOptimization.addCasestudy(bdaC5.id)
+  await PredictiveAnalyticsInHealthcare.addCasestudy(bdaC5.id)
 
   const bdaC6 = await CaseStudy.create({
-    title: 'BIG DATA ANALYSIS case study',
-    subTitle: '',
-    banner: '',
-    descriptiveText: '',
-    challengeTitle: '',
-    challengeDescription: '',
-    solutionTitle: '',
-    solutionDescription: '',
+    title:
+      'Real-time traffic prediction via highly automated fleet communication',
+    subTitle:
+      'Providing drivers and highly automated vehicles with a view of the road ahead that is as comprehensive as possible is the main idea of the project. ',
+    banner:
+      'https://www.carhs.de/newsletter-archive/images/news/ipgflottenkommunikationbig.jpg',
+    descriptiveText:
+      'Driving onto the highway and knowing in advance how slow the rush hour traffic will move or whether the two-hour buildup will clear up that moment, ensuring smooth driving – in the research project “Providentia – Pro-active video-based use of telecommunications technologies in innovative autobahn scenarios”, a real-time view of the highway traffic ahead is tested using corresponding sensors and big data. Via the highly precise localization of traffic objects within the system, driver and self-driving cars are provided with information, increasing the safety, efficiency, and comfort of driving. ',
+    challengeTitle: 'Simulation software CarMaker by HEXTECH.',
+    challengeDescription:
+      'The main aim of the project is to provide drivers and highly automated vehicles with a comprehensive view of the road ahead. Successful implementation requires a cellular network for data transfer and Car2X receivers, which process and transfer the relevant data. The ‘digital twin’ of the infrastructure is therefore always up-to-date and enables derivations of all relevant information for each vehicle in real time and under adverse weather conditions.',
+    solutionTitle: 'Development of the system',
+    solutionDescription:
+      'For the development of the system, the simulation software CarMaker by IPG Automotive offers important support. On-road field tests on the digital test bed on the German highway A9 are realistically transferred to the virtual world with CarMaker. Real traffic situations and objects are virtually modeled in real time which allow for realistic tests of the entire system in virtual test driving while taking uncertainties into account. If the interaction of sensors, Car2X components, and advanced driver assistance systems works in the scenarios, the real-time visualization in the vehicle is tackled in the next step. Data obtained in reality is then displayed on a laptop in the car while driving, and the information supply of the connected vehicles is tested in actual traffic scenarios on the test track.',
     teamsTitle: 'Team a caso',
     personName: '',
     personJob: '',
@@ -1067,6 +1089,9 @@ async function insertRealData() {
     serviceHeading: '',
   })
   await BigDataAnalysis.addCasestudy(bdaC6.id)
+  await PredictionScenarioAnalysis.addCasestudy(bdaC6.id)
+  await OptimizeDigitalMarketing.addCasestudy(bdaC6.id)
+  await BigDataAutomation.addCasestudy(bdaC6.id)
   //**END OF BIG DATA ANALYSIS CASE STUDIES */
 
   //**CLOUD COMPUTING CASE STUDIES */
@@ -1380,6 +1405,8 @@ async function insertRealData() {
   //**END OF IOT CASE STUDIES */
 
   //** ------------------------------------------------------------ TEAM MEMBER --------------------------------------------------------------- */
+
+  //**SECURITY TEAM MEMBER */
   const person1 = await TeamMember.create({
     memberNameAndOccupation: 'Alex Yasol - Lead security',
     personalQuote: 'Lorem ipsum dolor sit amet',
@@ -1447,15 +1474,223 @@ async function insertRealData() {
     serviceID: '1',
   })
 
-  IoT.addTeammember(person1)
   Security.addTeammember(person1)
   Security.addTeammember(person2)
   Security.addTeammember(person3)
   Security.addTeammember(person4)
+  /** END OF SECURITY TEAM MEMBER */
 
-  iotC1.addTeammember(person1)
-  iotC1.addTeammember(person2)
-  iotC2.addTeammember(person1)
+  //**IOT TEAM MEMBER */
+  const iotP1 = await TeamMember.create({
+    memberNameAndOccupation: 'Olivier Haren - Chair of the IoT Board',
+    personalQuote: 'Lorem ipsum dolor sit amet',
+    personalDescription:
+      'Olivier joined us as an RF engineer in 1997. Since 2016, Olivier is the R&D manager for the IoT Business Unit.  Previously Bruno spent 11 years as the manager of the Electronic and Software Department of the Legrand Group’s Radio Frequency & Voice, Data and Image Competencies Center and 10 years in the wired and RF telecommunication field in various R&D positions as electronic designer or project leader. \n Olivier holds a master’s degree in electronic embedded systems from the Institut National Polytechnique de Grenoble, France.',
+    workField: 'Internet of things',
+    teamsTitle: 'IoT Department',
+    personName: 'Olivier Haren',
+    personJob: 'Chair of the IoT Board',
+    personPhoto:
+      'https://bridgelawyers.ca/wp-content/uploads/2020/08/depositphotos_39258143-stock-illustration-businessman-avatar-profile-picture.jpg',
+    teamImage: '',
+  })
+  IoT.addTeammember(iotP1)
+  iotC1.addTeammember(iotP1)
+  iotC7.addTeammember(iotP1)
+
+  const iotP2 = await TeamMember.create({
+    memberNameAndOccupation: 'Jean Orsaten | Chief of Smart Cities department ',
+    personalQuote: 'Lorem ipsum dolor sit amet',
+    personalDescription:
+      'He has over 30 years of experience in the home automation industry, within industry alliances and EU regulatory bodies. He is Director of the Smart Cities Department at ??COMPANY NAME??, overseeing technology partnerships, connectivity and wireless networking technologies and overall system architectures. With a strong focus on Interoperability, he has been deeply involved in the development of protocols with other leading home equipment manufacturers. The department he is heading deals with wireless protocols developments, focusing io-homecontrol, Thread, Zigbee and other open standard solutions for the Somfy Group.',
+    workField: 'Internet of things',
+    teamsTitle: 'IoT Department',
+    personName: 'Jean Orsaten',
+    personJob: 'Chief of Smart Cities department',
+    personPhoto:
+      'https://st3.depositphotos.com/15648834/17930/v/600/depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg',
+    teamImage: '',
+  })
+  IoT.addTeammember(iotP2)
+  iotC2.addTeammember(iotP2)
+  iotC3.addTeammember(iotP2)
+
+  const iotP3 = await TeamMember.create({
+    memberNameAndOccupation: 'Name Surname | Occupation ',
+    personalQuote: 'Lorem ipsum dolor sit amet',
+    personalDescription:
+      'He has over 30 years of experience in the home automation industry, within industry alliances and EU regulatory bodies. He is Director of the Smart Cities Department at ??COMPANY NAME??, overseeing technology partnerships, connectivity and wireless networking technologies and overall system architectures. With a strong focus on Interoperability, he has been deeply involved in the development of protocols with other leading home equipment manufacturers. The department he is heading deals with wireless protocols developments, focusing io-homecontrol, Thread, Zigbee and other open standard solutions for the Somfy Group.',
+    workField: 'Internet of things',
+    teamsTitle: 'IoT Department',
+    personName: 'Rori Duboff',
+    personJob: '',
+    personPhoto:
+      'https://lh3.googleusercontent.com/proxy/EV8Rl4BkQsH2ZMJaVsXyxo8JK28uIpF9bcmko2eipI3LDbh1ZAbj0Syr4QMT-EaonhmmrC2sxlFf32CQf5N8WC4yLS9c3ctyuiv6XWEh__q90z8hwsPsrrNrEHOa0Iai3Ajj-AnGiCACR2wJHp9II93bPbVa5dv_HpAMVQ',
+    teamImage: '',
+  })
+  IoT.addTeammember(iotP3)
+  iotC3.addTeammember(iotP3)
+  iotC4.addTeammember(iotP3)
+  iotC5.addTeammember(iotP3)
+
+  const iotP4 = await TeamMember.create({
+    memberNameAndOccupation: 'Name1 Surname1 | Occupation ',
+    personalQuote: 'Lorem ipsum dolor sit amet',
+    personalDescription:
+      'Mary is as beautiful as a Hollywood star. Her thick, wavy, long black hair gracefully falls down to her shoulders and encircles her diamond-shaped face. A golden suntan usually brings out her smooth, clear complexion and high cheek bones. Her slightly arched chestnut brown eyebrows highlight her emotions by moving up and down as she reacts to her world around her. Her large deep blue eyes, remind me of a lake on a stormy day. Her curved nose gives her a little girl look that makes me want to smile when she talks. And her mouth is a small mouth outlined by puffy lips that she often accentuates with glossy pink lipstick. When she smiles, which is often, her well formed and even, white teeth brighten up her whole face. I guess you can tell that I am head over heals in love with Mary.',
+
+    workField: 'Security',
+    teamsTitle: 'Security Departement',
+    personName: 'John Molton',
+    personJob: '',
+    personPhoto:
+      'https://www.studiofrancesconi.com/wp-content/uploads/2019/03/placeholder-profile-sq.jpg',
+    teamImage: '',
+  })
+  IoT.addTeammember(iotP4)
+  iotC6.addTeammember(iotP4)
+  iotC7.addTeammember(iotP1)
+
+  /** END OF IOT TEAM MEMBER */
+
+  //**BiG DATA ANALYTICS TEAM MEMBER */
+
+  const bdaP1 = await TeamMember.create({
+    memberNameAndOccupation:
+      'Haru Nayaki - Chief Executive Officer of Analytics',
+    personalQuote: 'Lorem ipsum dolor sit amet',
+    personalDescription: '',
+
+    workField: 'Big Data Analytics',
+    teamsTitle: 'Analytics Departement',
+    personName: 'Haru Nayaki',
+    personJob: '',
+    personPhoto:
+      'https://images.pexels.com/photos/751204/pexels-photo-751204.jpeg',
+    teamImage: '',
+  })
+  BigDataAnalysis.addTeammember(bdaP1)
+  bdaC4.addTeammember(bdaP1)
+  bdaC1.addTeammember(bdaP1)
+  bdaC6.addTeammember(bdaP1)
+
+  const bdaP2 = await TeamMember.create({
+    memberNameAndOccupation: 'Juliè Harmon - Expert in Data Science',
+    personalQuote: 'Lorem ipsum dolor sit amet',
+    personalDescription: '',
+
+    workField: 'Big Data Analytics',
+    teamsTitle: 'Analytics Departement',
+    personName: 'Juliè Harmon',
+    personJob: '',
+    personPhoto:
+      'http://www.fotoservice.it/blog/files/2018/10/come-scattare-primo-piano-02.jpg',
+    teamImage: '',
+  })
+  BigDataAnalysis.addTeammember(bdaP2)
+  bdaC2.addTeammember(bdaP2)
+  bdaC3.addTeammember(bdaP2)
+
+  const bdaP3 = await TeamMember.create({
+    memberNameAndOccupation: 'Raùl Sirte - Expert in business intelligence',
+    personalQuote: 'Lorem ipsum dolor sit amet',
+    personalDescription: '',
+
+    workField: 'Big Data Analytics',
+    teamsTitle: 'Analytics Departement',
+    personName: 'Raùl Sirte',
+    personJob: '',
+    personPhoto:
+      'https://image.freepik.com/free-photo/emotions-people-concept-headshot-happy-attractive-man-laughing-smiling-express-rejoice_1258-26742.jpg',
+    teamImage: '',
+  })
+  BigDataAnalysis.addTeammember(bdaP3)
+  bdaC1.addTeammember(bdaP3)
+  bdaC4.addTeammember(bdaP3)
+
+  const bdaP4 = await TeamMember.create({
+    memberNameAndOccupation: 'Francesca Rizzo - Manager of the department',
+    personalQuote: 'Lorem ipsum dolor sit amet',
+    personalDescription: '',
+
+    workField: 'Big Data Analytics',
+    teamsTitle: 'Analytics Departement',
+    personName: 'Francesca Rizzo',
+    personJob: '',
+    personPhoto:
+      'https://www.stateofmind.it/wp-content/uploads/2017/11/Gerontofilia-l%E2%80%99attrazione-sessuale-verso-le-persone-anziane-3-680x382.jpg',
+    teamImage: '',
+  })
+  BigDataAnalysis.addTeammember(bdaP4)
+  bdaC6.addTeammember(bdaP4)
+  bdaC3.addTeammember(bdaP4)
+
+  const bdaP5 = await TeamMember.create({
+    memberNameAndOccupation: 'Jeff Peterson - Chair of Big Data department',
+    personalQuote: 'Lorem ipsum dolor sit amet',
+    personalDescription: '',
+
+    workField: 'Big Data Analytics',
+    teamsTitle: 'Analytics Departement',
+    personName: 'Jeff Peterson',
+    personJob: '',
+    personPhoto:
+      'https://thumbs.dreamstime.com/b/persone-di-affari-sguardo-del-primo-piano-10383125.jpg',
+    teamImage: '',
+  })
+  BigDataAnalysis.addTeammember(bdaP5)
+  bdaC3.addTeammember(bdaP5)
+
+  const bdaP6 = await TeamMember.create({
+    memberNameAndOccupation: 'Nina Morkov - Expert in Marketing',
+    personalQuote: 'Lorem ipsum dolor sit amet',
+    personalDescription: '',
+
+    workField: 'Big Data Analytics',
+    teamsTitle: 'Analytics Departement',
+    personName: 'Nina Morkov',
+    personJob: '',
+    personPhoto:
+      'https://image.freepik.com/free-photo/close-up-young-woman-outdoors_1098-1638.jpg',
+    teamImage: '',
+  })
+  BigDataAnalysis.addTeammember(bdaP6)
+  bdaC2.addTeammember(bdaP6)
+  bdaC5.addTeammember(bdaP6)
+
+  const bdaP7 = await TeamMember.create({
+    memberNameAndOccupation: 'Isi ホイップポップ - Designer of the group',
+    personalQuote: 'Lorem ipsum dolor sit amet',
+    personalDescription: '',
+
+    workField: 'Big Data Analytics',
+    teamsTitle: 'Analytics Departement',
+    personName: 'Isi ホイップポップ',
+    personJob: '',
+    personPhoto:
+      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJZqmyCCXRtvum7SOhS3Inp_abXJQguw7uTA&usqp=CAU',
+    teamImage: '',
+  })
+  BigDataAnalysis.addTeammember(bdaP7)
+  bdaC2.addTeammember(bdaP7)
+  bdaC4.addTeammember(bdaP7)
+
+  const bdaP8 = await TeamMember.create({
+    memberNameAndOccupation: 'Omar Zizou - Expert in Communication',
+    personalQuote: 'Lorem ipsum dolor sit amet',
+    personalDescription: '',
+
+    workField: 'Big Data Analytics',
+    teamsTitle: 'Analytics Departement',
+    personName: 'Omar Zizou',
+    personJob: '',
+    personPhoto:
+      'https://www.repstatic.it/content/localirep/img/rep-milano/2021/05/11/160311018-2f365fdb-45e3-4c52-9add-31d4f8f4258d.jpg',
+    teamImage: '',
+  })
+  BigDataAnalysis.addTeammember(bdaP8)
+  bdaC5.addTeammember(bdaP8)
+  bdaC6.addTeammember(bdaP8)
 }
 
 /**

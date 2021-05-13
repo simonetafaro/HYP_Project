@@ -1,50 +1,58 @@
 <template>
-  <div class="article-mini">
-    <div class="card">
-      <h3>{{ title }}</h3>
-      <div class="img" :style="{ 'background-image': `url(${image})` }"></div>
-      <p>{{ summary }}</p>
+  <div class="service_mini">
+    <div class="service_card">
+      <div class="service_title">{{ title }}</div>
+      <div class="service_img_container">
+        <img class="service_img" :src="image" />
+      </div>
+      <button v-on:click="goTo('/service/' + path)" class="more_button">
+        LEARN MORE
+      </button>
     </div>
   </div>
 </template>
 
 <script>
+import GoToMixins from '~/mixins/goTo-mixins.js'
+
 export default {
   props: {
     title: { type: String, default: () => '' },
     image: { type: String, default: () => '' },
-    summary: { type: String, default: () => '' },
+    path: { type: Number, default: () => 0 },
   },
+  mixins: [GoToMixins],
 }
 </script>
 
 <style scoped>
-.card {
-  background: #fff;
+.service_card {
+  padding: 32px 10px 24px 10px;
+  background: #ffffff;
   box-shadow: 0px 3px 25px rgba(205, 201, 255, 0.3);
-  border-radius: 20px;
+  border-radius: 50px;
+  min-width: 350px;
 }
-
-h3 {
-  font-size: 18px;
-  height: 60px;
-  padding: 20px;
+.service_title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
   text-transform: uppercase;
-  display: inline-block;
+  color: var(--cc-base2);
 }
-p {
-  height: 60px;
-  overflow: hidden;
+.service_img_container {
+  margin: 35px 50px 35px 50px;
 }
 
-.img {
-  width: 100%;
-  height: 200px;
-  max-width: 600px;
-  margin: auto;
+.service_img {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  margin-bottom: 40px;
+  background-size: cover;
+  border-radius: 30px;
+  width: 100%;
+  object-fit: cover;
 }
 </style>
