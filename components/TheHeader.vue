@@ -3,9 +3,9 @@
     <div class="header-content">
       <div class="title">
         <svg
-          width="115"
-          height="115"
-          viewBox="0 0 115 115"
+          width="65"
+          height="65"
+          viewBox="0 0 115 112"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -247,7 +247,7 @@ export default {
 <style>
 .header {
   position: sticky;
-  height: 100px;
+  height: min-content;
   width: 100%;
   top: 0;
   background-color: white;
