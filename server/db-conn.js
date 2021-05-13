@@ -396,7 +396,8 @@ async function insertRealData() {
     description:
       'Municipalities of all sizes around the world are adopting smart city concepts based on Internet of Things (IoT) systems to optimize the efficient management of community assets, resources, operations and services. Smart cities foster service-oriented, sustainable local governance equipped to improve transportation systems, build energy-efficient infrastructure, decrease environmental pressures, maintain effective disaster response, and provide state-of-the-art security in public spaces. We work to serve each community with the appropriate smart city services and solutions according to its individual needs and unique vision.',
     banner:
-      'https://kritikalsolutions.com/wp-content/uploads/2019/10/smart-cities-banner.jpg',
+      // 'https://kritikalsolutions.com/wp-content/uploads/2019/10/smart-cities-banner.jpg',
+      'https://i.ibb.co/pWxK61N/da-scaricare.png',
     evocativePhoto: '',
     serviceTitle: '',
     serviceDescription: '',
@@ -420,7 +421,8 @@ async function insertRealData() {
     description:
       'Illumination systems are an essential part of urban infrastructure. They contribute to the sense of security in public areas and highlight the architectural beauty of cities around the world. Today we can go one step further by embracing a combination of modern IoT solutions and illumination systems. This combination creates smart city technology and  is used as innovative smart street lighting system.',
     banner:
-      'https://statetechmagazine.com/sites/statetechmagazine.com/files/styles/cdw_hero/public/articles/StateTech/201710/ST_Smart_Street_Lights_GettyImages-173553089.jpg?itok=rktclHwy',
+      // 'https://statetechmagazine.com/sites/statetechmagazine.com/files/styles/cdw_hero/public/articles/StateTech/201710/ST_Smart_Street_Lights_GettyImages-173553089.jpg?itok=rktclHwy',
+      'https://i.ibb.co/pWxK61N/da-scaricare.png',
     evocativePhoto: '',
     serviceTitle: '',
     serviceDescription: '',
@@ -444,7 +446,8 @@ async function insertRealData() {
     description:
       'Cars have become one of the fastest-growing mobile device category, with every vehicle turning into a node in a much larger network and ecosystems. The ongoing (re)evolution in terms of connectivity, electric, autonomous and mobility trends is full of great opportunities to achieve new revenue streams and improve quality of life in the near future. Yet, as with all new opportunities, challenges, disruptions and risks arise.',
     banner:
-      'https://www.consorziosicurezza.com/wp-content/uploads/2018/10/smart-car-resized.jpg',
+      // 'https://www.consorziosicurezza.com/wp-content/uploads/2018/10/smart-car-resized.jpg',
+      'https://i.ibb.co/pWxK61N/da-scaricare.png',
     evocativePhoto: '',
     serviceTitle: '',
     serviceDescription: '',
@@ -468,7 +471,8 @@ async function insertRealData() {
     description:
       'The increasing number of connected devices will lead to the emergence of a so-called connected ecosystem as a new paradigm of the interaction among manufacturers, sellers, and consumers, offering totally new opportunities and challenges to all the parties involved.',
     banner:
-      'https://www.zerynth.com/wp-content/uploads/2020/02/smart-retail.jpg',
+      // 'https://www.zerynth.com/wp-content/uploads/2020/02/smart-retail.jpg',
+      'https://i.ibb.co/pWxK61N/da-scaricare.png',
     evocativePhoto: '',
     serviceTitle: '',
     serviceDescription: '',
@@ -492,7 +496,8 @@ async function insertRealData() {
     description:
       'The health industry has been an early adopter of the internet of things (IoT). Nearly half (46%) of executives who participated in the survey said their organization is actively using IoT, and another 21% stated they have IoT projects in development. Their main ambition is efficiency: 54% already use IoT to improve operations, and another 21% plan to do so in the next two years. Overall, health industry execs are optimistic, with 90% believing that IoT’s benefits outweigh its risks. In addition, 79% believe that IoT will help them grow revenue or increase profits.',
     banner:
-      'https://iotbusinessnews.com/WordPress/wp-content/uploads/digital-health.jpg',
+      // 'https://iotbusinessnews.com/WordPress/wp-content/uploads/digital-health.jpg',
+      'https://i.ibb.co/pWxK61N/da-scaricare.png',
     evocativePhoto: '',
     serviceTitle: '',
     serviceDescription: '',
@@ -516,7 +521,8 @@ async function insertRealData() {
     description:
       'Industrial manufacturing firms are addressing these concerns by improving the tech infrastructure, deploying better data management methods and addressing workforce culture and change management. They also are taking steps to mitigate IoT’s challenges. For example, 60% are addressing AI bias, ethics and responsibility, 58% are working with partners to better manage ecosystems and 44% are developing more robust policies to address the impact of AI and IoT on data privacy.',
     banner:
-      'https://www.sensrtrx.com/wp-content/uploads/2019/06/IoT-Manufacturing-Future.png',
+      // 'https://www.sensrtrx.com/wp-content/uploads/2019/06/IoT-Manufacturing-Future.png',
+      'https://i.ibb.co/pWxK61N/da-scaricare.png',
     evocativePhoto: '',
     serviceTitle: 'Making operations self-sufficient',
     serviceDescription:
@@ -542,7 +548,8 @@ async function insertRealData() {
       'Give users what they are searching just when they land on your page in order to maximize sales.',
     description:
       'In order to grow your enterprise, you need to do more than keep your existing customers happy — you need to find new business. Big data can help you find new audiences and determine which groups are more likely to buy.    ',
-    banner: 'https://landerapp.com/blog/wp-content/uploads/2018/09/1-2.png',
+    banner: 
+    'https://landerapp.com/blog/wp-content/uploads/2018/09/1-2.png',
     evocativePhoto: '',
     serviceTitle: '',
     serviceDescription: '',

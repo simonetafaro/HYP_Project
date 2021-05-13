@@ -199,17 +199,17 @@ h4 {
 .service-grid {
   display: grid;
   grid-template-columns: repeat(3, calc(100% / 3));
-  grid-gap: 10px;
-  margin-top: 40px;
+  grid-gap: 5%;
+  margin-top: 8%;
 }
 
 img {
-  max-width: 600px;
+  max-width: 400px;
 }
 .member-grid {
   display: grid;
   grid-template-columns: repeat(3, calc(100% / 3));
-  grid-gap: 10px;
+  grid-gap: 40px;
   margin-top: 40px;
 }
 .person {
@@ -220,7 +220,9 @@ img {
   background: #e8e6ff;
   border-radius: 35px;
   max-width: 30%;
-  margin: auto;
+  margin: 10% auto;
+  position: relative;
+  display: inline-block;
 }
 .discover-text {
   font-style: normal;
@@ -229,7 +231,7 @@ img {
   line-height: 19px;
   text-align: center;
   text-transform: uppercase;
-  padding: 15px 25px 15px 25px;
+  padding: 15px 55px 15px 55px;
   color: var(--cc-base2);
 }
 .caseintro {
