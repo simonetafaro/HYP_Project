@@ -10,7 +10,7 @@
         <p class="referenceArea">Area{{ area }}</p>
         <p class="casestudytitle">{{ title }}</p>
         <p class="casestudydescription">{{ description }}</p>
-        <button v-on:click="goTo('/casestudy/' + path)" class="case-button">
+        <button class="case-button" @:click="goTo('/casestudy/' + path)">
           FIND OUT MORE >
         </button>
       </div>
@@ -22,6 +22,7 @@
 import GoToMixins from '~/mixins/goTo-mixins.js'
 
 export default {
+  mixins: [GoToMixins],
   props: {
     title: { type: String, default: () => '' },
     image: { type: String, default: () => '' },
@@ -29,7 +30,6 @@ export default {
     area: { type: String, default: () => '' },
     path: { type: Number, default: () => 0 },
   },
-  mixins: [GoToMixins],
 }
 </script>
 
@@ -99,7 +99,9 @@ export default {
   cursor: pointer;
 }
 .case-button:hover {
-  color: #4d41c9;
-  background: none;
+  color: white;
+  background-color: #4d41c9;
+  border-radius: 29px;
+  padding: 10px;
 }
 </style>

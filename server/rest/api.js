@@ -98,7 +98,7 @@ async function init() {
 
   app.get('/casestudies', async (req, res) => {
     const casestudies = await CaseStudy.findAll({
-      include: { model: Area },
+      /* include: { model: Area }, */
     })
     return res.json(casestudies)
   })

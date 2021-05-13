@@ -209,6 +209,8 @@
 import GoToMixins from '~/mixins/goTo-mixins.js'
 
 export default {
+  mixins: [GoToMixins],
+
   data() {
     return {
       menuOptions: [
@@ -239,7 +241,6 @@ export default {
       ],
     }
   },
-  mixins: [GoToMixins],
 }
 </script>
 
@@ -296,6 +297,7 @@ export default {
   line-height: 60px;
   display: inline-flex;
   color: #cdc9ff;
+  /* vertical-align: center; NON SISTEMA IL PRO*/
 }
 .title-purple {
   color: #4d41c9;

@@ -104,6 +104,21 @@ export default {
     CaseStudyMini,
     MemberMini,
   },
+  mixins: [GoToMixins],
+  async asyncData({ $axios, route }) {
+    const { id } = route.params
+    // console.log('this url', process.env.BASE_URL)
+    const { data } = await $axios.get(`${process.env.BASE_URL}/api/area/${id}`)
+    const area = data
+    const teammembers = await $axios.get(
+      `${process.env.BASE_URL}/api/teammembersbyarea/${id}`
+    )
+    const people = teammembers.data
+    return {
+      area,
+      people,
+    }
+  },
   mounted() {
     //  resize service img height
     Array.from(document.getElementsByClassName('service_img')).forEach(
@@ -127,21 +142,6 @@ export default {
       }
     )
   },
-  async asyncData({ $axios, route }) {
-    const { id } = route.params
-    // console.log('this url', process.env.BASE_URL)
-    const { data } = await $axios.get(`${process.env.BASE_URL}/api/area/${id}`)
-    const area = data
-    const teammembers = await $axios.get(
-      `${process.env.BASE_URL}/api/teammembersbyarea/${id}`
-    )
-    const people = teammembers.data
-    return {
-      area,
-      people,
-    }
-  },
-  mixins: [GoToMixins],
 }
 </script>
 
