@@ -27,16 +27,13 @@ export default {
 
 <style scoped>
 .service_card {
-  padding: 32px 10px 100% 10px;
+  padding: 32px 10px 24px 10px;
   background: #ffffff;
   box-shadow: 0px 3px 25px rgba(205, 201, 255, 0.3);
   border-radius: 50px;
-  /* min-width: 350px; */
-  width: 100%;
-  height: 0;
+  min-width: 350px;
 }
 .service_title {
-  font-family: Barlow;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
@@ -57,6 +54,5 @@ export default {
   border-radius: 30px;
   width: 100%;
   object-fit: cover;
-  /* box-shadow: 0px 3px 25px rgba(205, 201, 255, 0.3); */
 }
 </style>
