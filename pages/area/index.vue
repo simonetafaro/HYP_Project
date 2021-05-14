@@ -48,7 +48,7 @@ h2 {
   display: grid;
   grid-template-columns: repeat(3, calc(100% / 3));
   grid-gap: 10px;
-  margin-top: 40px;
+  margin-top: 30px;
 }
 .area {
   cursor: pointer;

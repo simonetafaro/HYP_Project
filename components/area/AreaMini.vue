@@ -21,10 +21,10 @@ export default {
 
 <style scoped>
 .card {
-  padding: 20px 10px;
+  padding: 20px 20px;
   background: #fff;
   border-radius: 20px;
-  border: 1px solid #e8e7ff;
+  /* border: 1px solid #e8e7ff; */
   box-shadow: 0px 3px 25px rgba(205, 201, 255, 0.3);
 }
 
