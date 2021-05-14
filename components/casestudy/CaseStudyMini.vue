@@ -10,7 +10,7 @@
         <p class="referenceArea">Area{{ area }}</p>
         <p class="casestudytitle">{{ title }}</p>
         <p class="casestudydescription">{{ description }}</p>
-        <button class="case-button" @:click="goTo('/casestudy/' + path)">
+        <button class="case-button" v-on:click="goTo('/casestudy/' + path)">
           FIND OUT MORE >
         </button>
       </div>

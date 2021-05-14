@@ -84,6 +84,19 @@ async function init() {
     return res.json(casestudies)
   })
 
+  app.get('/relatedCaseStudies/:areaID/:casestudyID', async (req, res) => {
+    const { areaID, casestudyID } = req.params
+    const relatedcasestudies = await CaseStudy.findAll({
+      where: {
+        areaID: areaID,
+        id: {
+          [Op.ne]: casestudyID,
+        },
+      },
+    })
+    return res.json(relatedcasestudies)
+  })
+
   app.get('/areas', async (req, res) => {
     const areas = await Area.findAll({
       order: [['title', 'ASC']],
