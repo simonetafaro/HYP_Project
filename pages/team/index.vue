@@ -115,19 +115,21 @@ h3 {
 }
 .filter-bar {
   display: inline-flex;
-  width: 100%;
   margin-top: 15px;
 }
 .filter {
-  margin-right: 15px;
-  font-size: 12px;
-  border: 1px solid black;
-  padding: 5px;
+  margin-right: 30px;
   cursor: pointer;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 24px;
+  text-transform: uppercase;
+
+  color: #424272;
 }
 .active-filter {
-  background: black;
-  color: white;
+  color: #ff4266;
 }
 .member {
   cursor: pointer;

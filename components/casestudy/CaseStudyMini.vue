@@ -10,19 +10,25 @@
         <p class="referenceArea">Area{{ area }}</p>
         <p class="casestudytitle">{{ title }}</p>
         <p class="casestudydescription">{{ description }}</p>
-        <div class="caseinfo">FIND OUT MORE ></div>
+        <button class="case-button" @:click="goTo('/casestudy/' + path)">
+          FIND OUT MORE >
+        </button>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import GoToMixins from '~/mixins/goTo-mixins.js'
+
 export default {
+  mixins: [GoToMixins],
   props: {
     title: { type: String, default: () => '' },
     image: { type: String, default: () => '' },
     description: { type: String, default: () => '' },
     area: { type: String, default: () => '' },
+    path: { type: Number, default: () => 0 },
   },
 }
 </script>
@@ -53,7 +59,7 @@ export default {
   padding: 30px;
   opacity: 0.87;
 }
-p.casestudytitle {
+.casestudytitle {
   font-style: normal;
   font-weight: bold;
   font-size: 22px;
@@ -62,7 +68,7 @@ p.casestudytitle {
   padding-bottom: 11px;
 }
 
-p.referenceArea {
+.referenceArea {
   padding-bottom: 6px;
   font-style: normal;
   font-weight: normal;
@@ -71,7 +77,7 @@ p.referenceArea {
   color: var(--c-grey2);
 }
 
-p.casestudydescription {
+.casestudydescription {
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -79,7 +85,7 @@ p.casestudydescription {
   color: var(--c-grey2);
 }
 
-div.caseinfo {
+.case-button {
   position: absolute;
   font-style: normal;
   font-weight: bold;
@@ -88,5 +94,14 @@ div.caseinfo {
   color: var(--cc-base1);
   bottom: 30px;
   text-align: left;
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 10px;
+}
+.case-button:hover {
+  color: white;
+  background-color: #4d41c9;
+  border-radius: 29px;
 }
 </style>

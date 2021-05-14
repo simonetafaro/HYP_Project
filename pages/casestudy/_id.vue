@@ -25,12 +25,12 @@
         v-for="(service, serviceIndex) of relServices"
         :key="'service-' + serviceIndex"
         class="service"
-        @click="goTo(`/service/${service.id}`)"
       >
         <service-mini
           :title="service.title"
           :summary="service.subTitle"
           :image="service.banner"
+          :path="service.id"
         ></service-mini>
       </div>
     </section>
@@ -94,10 +94,7 @@ h4 {
   grid-gap: 10px;
   margin-top: 40px;
 }
-.service {
-  cursor: pointer;
-  margin-bottom: 20px;
-}
+
 img {
   max-width: 600px;
 }

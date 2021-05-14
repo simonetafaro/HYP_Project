@@ -69,6 +69,7 @@ export default {
       this.casestudies = await this.$axios.$get(
         `${process.env.BASE_URL}/api/casestudies`
       )
+      console.log(this.casestudies)
       const filters = e.target.parentNode.children
       filters.forEach((filter) => {
         filter.classList.remove('active-filter')
@@ -101,19 +102,22 @@ h2 {
 }
 .filter-bar {
   display: inline-flex;
-  width: 100%;
   margin-top: 15px;
+  align-content: center;
 }
 .filter {
-  margin-right: 15px;
-  font-size: 12px;
-  border: 1px solid black;
-  padding: 5px;
+  margin-right: 30px;
   cursor: pointer;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 24px;
+  text-transform: uppercase;
+
+  color: #424272;
 }
 .active-filter {
-  background: black;
-  color: white;
+  color: #ff4266;
 }
 @media screen and (max-width: 600px) {
   .ad img {
