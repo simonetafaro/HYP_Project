@@ -185,7 +185,7 @@ export default {
       })
     },
     isOddRow(areaIndex) {
-      return areaIndex % 2 === 0 ? 'grey-row' : ''
+      return areaIndex % 2 === 0 ? '' : 'grey-row'
     },
     scrollRight(areaID) {
       this.carouselList.forEach((carousel) => {
@@ -277,7 +277,7 @@ h2 {
   padding-bottom: 46px;
 }
 .grey-row {
-  background: #ffffff;
+  background: #f9f9ff;
 }
 .service-section-title {
   font-family: Barlow;
