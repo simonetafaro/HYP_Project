@@ -618,8 +618,9 @@ export default {
   display: inline-flex;
 }
 .column-left {
-  align-items: center;
   margin-right: 100px;
+  align-content: flex-start;
+  max-width: 350px;
 }
 .links {
   text-align: left;
