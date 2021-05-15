@@ -28,7 +28,7 @@
           :title="casestudy.title"
           :description="casestudy.subTitle"
           :image="casestudy.banner"
-          :area="casestudy.area"
+          :area="casestudy.areaID"
         ></case-study-mini>
       </div>
     </section>
@@ -76,6 +76,11 @@ export default {
       })
       const element = e.target
       element.classList.add('active-filter')
+    },
+    getCaseStudyByArea(areaID) {
+      return this.casestudies.filter((casestudy) => {
+        return casestudy.areaID === areaID
+      })
     },
   },
 }

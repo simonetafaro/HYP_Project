@@ -580,9 +580,9 @@ export default {
   max-height: 1500px;
 }
 .footer-content {
-  max-width: 1150px;
   text-align: center;
-  width: 100%;
+  width: 80%;
+  margin: auto;
   display: inline-flex;
   padding-top: 50px;
 }
@@ -602,7 +602,7 @@ export default {
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
-  line-height: 60px;
+  line-height: 30px;
   /* identical to box height */
   color: #4d41c9;
 }
@@ -616,6 +616,10 @@ export default {
   line-height: 47px;
   color: #cdc9ff;
   display: inline-flex;
+}
+.column-left {
+  align-items: center;
+  margin-right: 100px;
 }
 .links {
   text-align: left;
@@ -650,12 +654,8 @@ ul.group-name-list li {
   font-weight: normal;
   font-size: 14px;
   /* identical to box height */
-  justify-content: space-between;
 }
-.column-left {
-  align-items: center;
-  margin-right: 100px;
-}
+
 .bottom {
   bottom: 0;
 }
