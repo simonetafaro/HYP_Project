@@ -187,19 +187,19 @@
         HEX
         <span class="title-purple"> TECH. </span>
       </div>
-      <div class="right">
-        <nav class="right">
-          <div
-            v-for="(item, itemIndex) of menuOptions"
-            :key="'menu-item-' + itemIndex"
-            class="menu-item"
-          >
-            <nuxt-link class="headerContent" :to="item.path">
-              {{ item.name }}
-            </nuxt-link>
-          </div>
-        </nav>
-        <div><button class="contact-button">CONTACT US</button></div>
+      <nav class="right">
+        <div
+          v-for="(item, itemIndex) of menuOptions"
+          :key="'menu-item-' + itemIndex"
+          class="menu-item"
+        >
+          <nuxt-link class="headerContent" :to="item.path">
+            {{ item.name }}
+          </nuxt-link>
+        </div>
+      </nav>
+      <div>
+        <button class="contact-button">CONTACT US</button>
       </div>
     </div>
   </header>
@@ -262,10 +262,9 @@ export default {
   width: 100%;
   margin-right: 50px;
   margin-left: 50px;
-  display: flex;
+  align-items: center;
+  display: inline-flex;
   color: black;
-  justify-content: space-between;
-  vertical-align: middle;
 }
 .headerContent {
   width: 100%;
@@ -280,12 +279,14 @@ export default {
   text-transform: uppercase;
 }
 .right {
-  display: inline-flex;
+  display: flex;
   justify-content: flex-end;
-  vertical-align: middle;
+  width: 100%;
+  margin-right: 50px;
+  max-width: 54%;
 }
 .menu-item {
-  margin-right: 50px;
+  margin-left: 50px;
 }
 .title {
   cursor: pointer;
@@ -310,7 +311,7 @@ export default {
   line-height: 19px;
   text-align: center;
   text-transform: uppercase;
-  padding: 10px 20px;
+  padding: 15px 25px 15px 25px;
   color: var(--cc-base2);
   background: #e8e6ff;
   border-radius: 35px;
