@@ -85,7 +85,7 @@
         @click="goTo(`/team/${person.id}`)"
       >
         <member-mini
-          :title="person.memberNameAndOccupation"
+          :personName="person.personName"
           :summary="person.personalQuote"
           :image="person.personPhoto"
         ></member-mini>

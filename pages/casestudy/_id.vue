@@ -52,7 +52,9 @@
 
       <!-- <h4>{{ casestudy.subTitle }}</h4> -->
     </header>
-    <h3>TEAM WORKING ON THIS PROJECT</h3>
+    <br /><br /><br />
+    <h3 class="pre-section">TEAM WORKING ON THIS PROJECT</h3>
+    <br /><br /><br /><br /><br />
     <section class="member-grid">
       <div
         v-for="(person, personIndex) of casestudy.teammembers"
@@ -61,13 +63,33 @@
         @click="goTo(`/team/${person.id}`)"
       >
         <member-mini
-          :title="person.memberNameAndOccupation"
+          :personName="person.personName"
           :summary="person.personalQuote"
           :image="person.personPhoto"
         ></member-mini>
       </div>
     </section>
-    <h3>SERVICES RELATED TO THIS PROJECT</h3>
+    <br /><br /><br />
+    <div class="pre-section">
+      <svg
+        width="71"
+        height="71"
+        viewBox="0 0 101 101"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M100.705 50.2046C86.841 64.0682 64.3636 64.0682 50.5 50.2046C64.3636 36.341 86.841 36.341 100.705 50.2046ZM0.295419 50.2046C14.159 36.341 36.6364 36.341 50.5 50.2046C36.6364 64.0682 14.159 64.0682 0.295419 50.2046ZM50.5 50.2046C36.6364 36.341 36.6364 13.8636 50.5 0C64.3636 13.8636 64.3636 36.341 50.5 50.2046ZM50.5 50.2046C64.3636 64.0682 64.3636 86.5455 50.5 100.409C36.6364 86.5455 36.6364 64.0682 50.5 50.2046Z"
+          fill="#E8E7FF"
+        />
+      </svg>
+    </div>
+    <br /><br /><br /><br /><br />
+    <h3 class="pre-section">YOU MAY BE INTERESTED IN</h3>
+    <h3 class="pre-section">OUR RELATED SERVICES</h3>
+    <br /><br /><br /><br /><br />
     <section class="service-grid">
       <h4 v-if="relServices === 0">There are no related Services</h4>
       <div
@@ -164,6 +186,18 @@ h4 {
 }
 h1 {
   text-align: left;
+}
+.pre-section {
+  text-align: center;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  /* identical to box height */
+
+  text-transform: uppercase;
+
+  color: #424272;
 }
 .casestudy {
   cursor: pointer;

@@ -1566,7 +1566,7 @@ async function insertRealData() {
     personName: 'Haru Nayaki',
     personJob: '',
     personPhoto:
-      'https://images.pexels.com/photos/751204/pexels-photo-751204.jpeg',
+      'https://media.gettyimages.com/photos/m-happy-with-where-my-career-is-heading-picture-id1138617116?s=612x612',
     teamImage: '',
   })
   BigDataAnalysis.addTeammember(bdaP1)
@@ -1584,7 +1584,7 @@ async function insertRealData() {
     personName: 'Juliè Harmon',
     personJob: '',
     personPhoto:
-      'http://www.fotoservice.it/blog/files/2018/10/come-scattare-primo-piano-02.jpg',
+      'https://media.gettyimages.com/photos/portrait-of-woman-smiling-on-white-background-picture-id1092658874?s=612x612',
     teamImage: '',
   })
   BigDataAnalysis.addTeammember(bdaP2)
@@ -1601,7 +1601,7 @@ async function insertRealData() {
     personName: 'Raùl Sirte',
     personJob: '',
     personPhoto:
-      'https://image.freepik.com/free-photo/emotions-people-concept-headshot-happy-attractive-man-laughing-smiling-express-rejoice_1258-26742.jpg',
+      'https://media.gettyimages.com/photos/nigel-farage-leader-of-the-uk-independence-party-leaves-the-northern-picture-id470057490?s=612x612',
     teamImage: '',
   })
   BigDataAnalysis.addTeammember(bdaP3)
@@ -1618,7 +1618,7 @@ async function insertRealData() {
     personName: 'Francesca Rizzo',
     personJob: '',
     personPhoto:
-      'https://www.stateofmind.it/wp-content/uploads/2017/11/Gerontofilia-l%E2%80%99attrazione-sessuale-verso-le-persone-anziane-3-680x382.jpg',
+      'https://media.gettyimages.com/photos/confident-mature-businesswoman-on-white-background-picture-id1132314350?s=612x612',
     teamImage: '',
   })
   BigDataAnalysis.addTeammember(bdaP4)
@@ -1635,7 +1635,7 @@ async function insertRealData() {
     personName: 'Jeff Peterson',
     personJob: '',
     personPhoto:
-      'https://thumbs.dreamstime.com/b/persone-di-affari-sguardo-del-primo-piano-10383125.jpg',
+      'https://media.gettyimages.com/photos/man-looking-at-camera-on-street-picture-id1197870409?s=612x612',
     teamImage: '',
   })
   BigDataAnalysis.addTeammember(bdaP5)
@@ -1651,7 +1651,7 @@ async function insertRealData() {
     personName: 'Nina Morkov',
     personJob: '',
     personPhoto:
-      'https://image.freepik.com/free-photo/close-up-young-woman-outdoors_1098-1638.jpg',
+      'https://media.istockphoto.com/photos/young-longhaired-smiling-woman-in-white-shirt-picture-id965523228?k=6&m=965523228&s=612x612&w=0&h=qeVmQfjRq1QWxaLdxLdF_IaXahI-dqt9UYcunaHUqA4=',
     teamImage: '',
   })
   BigDataAnalysis.addTeammember(bdaP6)
@@ -1668,7 +1668,7 @@ async function insertRealData() {
     personName: 'Isi ホイップポップ',
     personJob: '',
     personPhoto:
-      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJZqmyCCXRtvum7SOhS3Inp_abXJQguw7uTA&usqp=CAU',
+      'https://media.gettyimages.com/photos/mature-female-ceo-with-arms-crossed-picture-id1179627362?s=612x612',
     teamImage: '',
   })
   BigDataAnalysis.addTeammember(bdaP7)
@@ -1685,7 +1685,7 @@ async function insertRealData() {
     personName: 'Omar Zizou',
     personJob: '',
     personPhoto:
-      'https://www.repstatic.it/content/localirep/img/rep-milano/2021/05/11/160311018-2f365fdb-45e3-4c52-9add-31d4f8f4258d.jpg',
+      'https://media.gettyimages.com/photos/beautiful-italian-man-picture-id489171250?s=612x612',
     teamImage: '',
   })
   BigDataAnalysis.addTeammember(bdaP8)
