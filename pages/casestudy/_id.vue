@@ -81,7 +81,6 @@
       >
         <service-mini
           :title="service.title"
-          :summary="service.subTitle"
           :image="service.banner"
           :path="service.id"
         ></service-mini>
@@ -189,11 +188,13 @@ h1 {
   cursor: pointer;
   margin-bottom: 20px;
 }
+
 .service-grid {
+  max-width: 1110px;
   display: grid;
-  grid-template-columns: repeat(3, calc(100% / 3));
-  grid-gap: 10px;
-  margin-top: 40px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  text-align: center;
 }
 .description {
   font-family: Rubik;
