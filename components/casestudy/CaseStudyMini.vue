@@ -8,8 +8,11 @@
     >
       <div class="casestudycontent">
         <p class="referenceArea">Area{{ area }}</p>
-        <p class="casestudytitle">{{ title }}</p>
-        <p class="casestudydescription">{{ description }}</p>
+        <div class="case-info">
+          <p class="casestudytitle">{{ title }}</p>
+          <p class="casestudydescription">{{ description }}</p>
+        </div>
+
         <button class="case-button" v-on:click="goTo('/casestudy/' + path)">
           FIND OUT MORE >
         </button>
@@ -36,10 +39,10 @@ export default {
 <style scoped>
 .casestudycontainer {
   position: relative;
-  height: 550px;
   border: 1px solid #979797; /* manca il colore nella palette*/
   border-radius: 30px;
   width: 100%;
+  min-height: 350px;
   text-align: left;
   max-width: 600px;
   margin: auto;
@@ -52,7 +55,7 @@ export default {
   text-align: left;
   position: absolute;
   background: #ffffff;
-  height: 400px;
+  height: 75%;
   bottom: 0;
   width: 100%;
   border-radius: 29px;
@@ -103,5 +106,9 @@ export default {
   color: white;
   background-color: #4d41c9;
   border-radius: 29px;
+}
+.case-info {
+  max-height: 68%;
+  overflow: hidden;
 }
 </style>

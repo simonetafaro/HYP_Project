@@ -16,6 +16,16 @@
           <br />
           <a class="partner" href="#">PARTNER WEBSITE</a>
           <br /><br /><br /><br />
+          <h3>CHALLENGE</h3>
+          <br />
+          <h2 class="title-challenge">{{ casestudy.challengeTitle }}</h2>
+
+          <p class="description">{{ casestudy.challengeDescription }}</p>
+          <br /><br /><br />
+          <h3>SOLUTION</h3>
+          <br />
+          <h2 class="title-challenge">{{ casestudy.solutionTitle }}</h2>
+          <p class="description">{{ casestudy.solutionDescription }}</p>
         </div>
         <div class="cases-column">
           <h3>Other Case Studies</h3>
@@ -27,65 +37,21 @@
             @click="goTo(`/casestudy/${casestudy.id}`)"
           >
             <div>
-              <svg
-                width="80"
-                height="80"
-                viewBox="0 0 95 95"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect width="70" height="70" rx="47.5" fill="#E8E6FF" />
-                <mask
-                  id="mask0"
-                  mask-type="alpha"
-                  maskUnits="userSpaceOnUse"
-                  x="0"
-                  y="0"
-                  width="95"
-                  height="95"
-                >
-                  <rect width="95" height="95" rx="47.5" fill="white" />
-                </mask>
-                <g mask="url(#mask0)"></g>
-              </svg>
+              <img :src="casestudy.banner" class="related-case-study-image" />
             </div>
-            <div>
-              <h4 class="case-title">{{ casestudy.title }}</h4>
-              <h5>April 2, 2020</h5>
+            <div class="related-case-study-info">
+              <h4 class="related-case-study-title">{{ casestudy.title }}</h4>
+              <h5 class="related-case-study-date">April 2, 2020</h5>
             </div>
+            <br />
           </div>
         </div>
       </div>
-      <h3>CHALLENGE</h3>
-      <br />
-      <h2 class="title-challenge">{{ casestudy.challengeTitle }}</h2>
 
-      <p class="description">{{ casestudy.challengeDescription }}</p>
-      <br /><br /><br />
-      <h3>SOLUTION</h3>
-      <br />
-      <h2 class="title-challenge">{{ casestudy.solutionTitle }}</h2>
-      <p class="description">{{ casestudy.solutionDescription }}</p>
       <br />
 
       <!-- <h4>{{ casestudy.subTitle }}</h4> -->
     </header>
-
-    <h3>SERVICES RELATED TO THIS PROJECT</h3>
-    <section class="service-grid">
-      <h4 v-if="relServices === 0">There are no related Services</h4>
-      <div
-        v-for="(service, serviceIndex) of relServices"
-        :key="'service-' + serviceIndex"
-        class="service"
-      >
-        <service-mini
-          :title="service.title"
-          :image="service.banner"
-          :path="service.id"
-        ></service-mini>
-      </div>
-    </section>
     <h3>TEAM WORKING ON THIS PROJECT</h3>
     <section class="member-grid">
       <div
@@ -99,6 +65,21 @@
           :summary="person.personalQuote"
           :image="person.personPhoto"
         ></member-mini>
+      </div>
+    </section>
+    <h3>SERVICES RELATED TO THIS PROJECT</h3>
+    <section class="service-grid">
+      <h4 v-if="relServices === 0">There are no related Services</h4>
+      <div
+        v-for="(service, serviceIndex) of relServices"
+        :key="'service-' + serviceIndex"
+        class="service"
+      >
+        <service-mini
+          :title="service.title"
+          :image="service.banner"
+          :path="service.id"
+        ></service-mini>
       </div>
     </section>
   </section>
@@ -241,9 +222,12 @@ p {
   grid-template-columns: repeat(3, calc(100% / 3));
   grid-gap: 10px;
   margin-top: 40px;
+  align-content: center;
+  margin: auto;
 }
 .column {
   display: flex;
+  justify-content: space-between;
 }
 .case-container {
   text-align: left;
@@ -251,30 +235,28 @@ p {
   margin: 40px 13%;
 }
 .single-column {
-  max-width: 65%;
-  width: 80%;
+  max-width: 70%;
+  width: 90%;
 }
 
 .person {
   cursor: pointer;
   margin-bottom: 20px;
+  align-content: center;
 }
 .case-component {
   display: inline-flex;
   cursor: pointer;
+  padding: 10px 0;
 }
 .cases-column {
   max-width: 30%;
-}
-.case-title {
-  overflow: hidden;
 }
 .title-challenge {
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
   line-height: 43px;
-
   color: #63639f;
 }
 .title-case {
@@ -282,8 +264,6 @@ p {
   font-weight: bold;
   font-size: 50px;
   line-height: 60px;
-  /* identical to box height */
-
   color: #424272;
 }
 .area-title {
@@ -291,10 +271,34 @@ p {
   font-weight: bold;
   font-size: 20px;
   line-height: 24px;
-  /* identical to box height */
-
   text-transform: uppercase;
-
   color: #424272;
+}
+
+.related-case-study-info {
+  margin: auto;
+  margin-left: 20px;
+}
+.related-case-study-image {
+  border-radius: 50%;
+  width: 95px;
+  height: 95px;
+  object-fit: cover;
+}
+.related-case-study-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  color: var(--cc-base1);
+}
+.related-case-study-date {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--cc-base1);
+  mix-blend-mode: normal;
+  opacity: 0.6;
 }
 </style>

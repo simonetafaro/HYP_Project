@@ -1,7 +1,7 @@
 <template>
   <header class="header">
-    <div class="header-content">
-      <div class="title">
+    <div class="header-left-column">
+      <div class="title" @click="goTo('/home')">
         <svg
           width="65"
           height="65"
@@ -187,7 +187,10 @@
         HEX
         <span class="title-purple"> TECH. </span>
       </div>
-      <nav class="right">
+    </div>
+
+    <div class="header-right-column">
+      <nav>
         <div
           v-for="(item, itemIndex) of menuOptions"
           :key="'menu-item-' + itemIndex"
@@ -210,13 +213,12 @@ import GoToMixins from '~/mixins/goTo-mixins.js'
 
 export default {
   mixins: [GoToMixins],
-
   data() {
     return {
       menuOptions: [
         {
           name: 'Home',
-          path: '/',
+          path: '/home',
         },
         {
           name: 'Areas',
@@ -247,18 +249,78 @@ export default {
 <style>
 .header {
   position: sticky;
-  height: min-content;
+  height: 120px;
   width: 100%;
   top: 0;
   background-color: white;
   display: flex;
-  justify-content: space-between;
-  text-align: center;
   border: 1px solid rgba(255, 255, 255, 0.3);
   z-index: 1;
   box-shadow: 0 0 8px 0 #dedede;
 }
-.header-content {
+
+.header-left-column {
+  margin-left: 192px;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 60px;
+  display: inline-flex;
+  color: #cdc9ff;
+  align-items: center;
+}
+
+.title-purple,
+.nuxt-link-active {
+  color: #4d41c9 !important;
+}
+
+.header-right-column {
+  margin-right: 0;
+  display: flex;
+  align-items: center;
+}
+
+.contact-button {
+  font-family: Barlow;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 15px 25px 15px 25px;
+  color: var(--cc-base2);
+  background: #e8e6ff;
+  border-radius: 35px;
+  border: none;
+  margin-right: 190px;
+  margin-left: 175px;
+}
+
+.menu-item {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #000000;
+  margin-left: 45px;
+  display: inline-flex;
+}
+.menu-item:first-child {
+  margin-left: auto;
+}
+
+/* .header-content {
   width: 100%;
   margin-right: 50px;
   margin-left: 50px;
@@ -298,7 +360,6 @@ export default {
   display: inline-flex;
   color: #cdc9ff;
   margin-right: 80px;
-  /* vertical-align: center; NON SISTEMA IL PRO*/
 }
 .title-purple {
   color: #4d41c9;
@@ -317,5 +378,5 @@ export default {
   background: #e8e6ff;
   border-radius: 35px;
   border: none;
-}
+} */
 </style>
