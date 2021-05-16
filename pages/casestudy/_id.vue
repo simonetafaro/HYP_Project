@@ -37,31 +37,11 @@
             @click="goTo(`/casestudy/${casestudy.id}`)"
           >
             <div>
-              <svg width="70" height="70">
-                <defs>
-                  <pattern
-                    id="image"
-                    x="0"
-                    y="0"
-                    patternUnits="userSpaceOnUse"
-                    height="70"
-                    width="70"
-                  >
-                    <image
-                      x="-5"
-                      y="0"
-                      height="80"
-                      width="80"
-                      :xlink:href="casestudy.banner"
-                    ></image>
-                  </pattern>
-                </defs>
-                <circle id="top" cx="35" cy="35" r="35" fill="url(#image)" />
-              </svg>
+              <img :src="casestudy.banner" class="related-case-study-image" />
             </div>
-            <div>
-              <h4 class="case-title">{{ casestudy.title }}</h4>
-              <h5 class="case-title">April 2, 2020</h5>
+            <div class="related-case-study-info">
+              <h4 class="related-case-study-title">{{ casestudy.title }}</h4>
+              <h5 class="related-case-study-date">April 2, 2020</h5>
             </div>
             <br />
           </div>
@@ -272,16 +252,11 @@ p {
 .cases-column {
   max-width: 30%;
 }
-.case-title {
-  overflow: hidden;
-  padding-left: 15px;
-}
 .title-challenge {
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
   line-height: 43px;
-
   color: #63639f;
 }
 .title-case {
@@ -289,8 +264,6 @@ p {
   font-weight: bold;
   font-size: 50px;
   line-height: 60px;
-  /* identical to box height */
-
   color: #424272;
 }
 .area-title {
@@ -298,10 +271,34 @@ p {
   font-weight: bold;
   font-size: 20px;
   line-height: 24px;
-  /* identical to box height */
-
   text-transform: uppercase;
-
   color: #424272;
+}
+
+.related-case-study-info {
+  margin: auto;
+  margin-left: 20px;
+}
+.related-case-study-image {
+  border-radius: 50%;
+  width: 95px;
+  height: 95px;
+  object-fit: cover;
+}
+.related-case-study-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  color: var(--cc-base1);
+}
+.related-case-study-date {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--cc-base1);
+  mix-blend-mode: normal;
+  opacity: 0.6;
 }
 </style>
