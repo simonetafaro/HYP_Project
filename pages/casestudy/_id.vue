@@ -130,7 +130,6 @@ export default {
     )
 
     relCases = relCases.data
-    console.log(relCases)
     return {
       casestudy,
       relServices,
