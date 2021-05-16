@@ -16,6 +16,16 @@
           <br />
           <a class="partner" href="#">PARTNER WEBSITE</a>
           <br /><br /><br /><br />
+          <h3>CHALLENGE</h3>
+          <br />
+          <h2 class="title-challenge">{{ casestudy.challengeTitle }}</h2>
+
+          <p class="description">{{ casestudy.challengeDescription }}</p>
+          <br /><br /><br />
+          <h3>SOLUTION</h3>
+          <br />
+          <h2 class="title-challenge">{{ casestudy.solutionTitle }}</h2>
+          <p class="description">{{ casestudy.solutionDescription }}</p>
         </div>
         <div class="cases-column">
           <h3>Other Case Studies</h3>
@@ -57,16 +67,7 @@
           </div>
         </div>
       </div>
-      <h3>CHALLENGE</h3>
-      <br />
-      <h2 class="title-challenge">{{ casestudy.challengeTitle }}</h2>
 
-      <p class="description">{{ casestudy.challengeDescription }}</p>
-      <br /><br /><br />
-      <h3>SOLUTION</h3>
-      <br />
-      <h2 class="title-challenge">{{ casestudy.solutionTitle }}</h2>
-      <p class="description">{{ casestudy.solutionDescription }}</p>
       <br />
 
       <!-- <h4>{{ casestudy.subTitle }}</h4> -->
