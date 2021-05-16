@@ -22,13 +22,13 @@
         v-for="(casestudy, casestudyIndex) of casestudies"
         :key="'casestudy-' + casestudyIndex"
         class="casestudy"
-        @click="goTo(`/casestudy/${casestudy.id}`)"
       >
         <case-study-mini
           :title="casestudy.title"
           :description="casestudy.subTitle"
           :image="casestudy.banner"
-          :area="casestudy.areaID"
+          :area="casestudy.area.title"
+          :path="casestudy.id"
         ></case-study-mini>
       </div>
     </section>
@@ -69,7 +69,6 @@ export default {
       this.casestudies = await this.$axios.$get(
         `${process.env.BASE_URL}/api/casestudies`
       )
-      console.log(this.casestudies)
       const filters = e.target.parentNode.children
       filters.forEach((filter) => {
         filter.classList.remove('active-filter')
@@ -97,7 +96,6 @@ h2 {
   margin-top: 40px;
 }
 .casestudy {
-  cursor: pointer;
   margin-bottom: 20px;
   overflow: hidden;
 }

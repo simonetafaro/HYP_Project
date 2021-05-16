@@ -147,7 +147,7 @@ function defineDBStructure() {
 
   CaseStudy.belongsToMany(Service, { through: ServiceCaseStudy })
   CaseStudy.belongsToMany(TeamMember, { through: PersonCaseStudy })
-
+  CaseStudy.belongsTo(Area, { foreignKey: 'areaID' })
   TeamMember.belongsToMany(CaseStudy, { through: PersonCaseStudy })
 
   db._tables = {
