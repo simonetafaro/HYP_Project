@@ -603,7 +603,6 @@ export default {
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
-  /* identical to box height */
   color: #4d41c9;
 }
 .left {
@@ -640,10 +639,7 @@ ul.group-name-list li {
   font-weight: normal;
   font-size: 18px;
   line-height: 30px;
-  /* or 167% */
-
   color: #000000;
-
   mix-blend-mode: normal;
   opacity: 0.6;
 }
@@ -653,7 +649,6 @@ ul.group-name-list li {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  /* identical to box height */
 }
 
 .bottom {

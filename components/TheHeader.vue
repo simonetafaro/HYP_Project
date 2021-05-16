@@ -298,7 +298,6 @@ export default {
   display: inline-flex;
   color: #cdc9ff;
   margin-right: 80px;
-  /* vertical-align: center; NON SISTEMA IL PRO*/
 }
 .title-purple {
   color: #4d41c9;
