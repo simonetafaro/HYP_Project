@@ -603,7 +603,6 @@ export default {
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
-  /* identical to box height */
   color: #4d41c9;
 }
 .left {
@@ -618,9 +617,8 @@ export default {
   display: inline-flex;
 }
 .column-left {
+  align-items: center;
   margin-right: 100px;
-  align-content: flex-start;
-  max-width: 350px;
 }
 .links {
   text-align: left;
@@ -641,10 +639,7 @@ ul.group-name-list li {
   font-weight: normal;
   font-size: 18px;
   line-height: 30px;
-  /* or 167% */
-
   color: #000000;
-
   mix-blend-mode: normal;
   opacity: 0.6;
 }
@@ -654,7 +649,6 @@ ul.group-name-list li {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  /* identical to box height */
 }
 
 .bottom {
