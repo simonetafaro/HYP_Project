@@ -529,7 +529,7 @@ export default {
       menuOptions: [
         {
           name: 'Home',
-          path: '/',
+          path: '/home',
         },
         {
           name: 'Areas',
