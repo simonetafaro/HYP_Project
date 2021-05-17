@@ -480,7 +480,7 @@
         <div class="column-text">
           231 Gotham Square - 89 GM <br />
           Metropolis city <br />
-          Phone : +00 123 456 78 <br />
+          <br />Phone : +00 123 456 78 <br />
           Mail : info@mail.com
         </div>
       </div>
@@ -492,27 +492,27 @@
           <a
             class="links"
             href="https://www.linkedin.com/in/andrea-manglaviti-968685199/"
-            >Andrea Manglaviti | 10610431</a
-          >
+            >Andrea Manglaviti </a
+          >| 10610431
         </div>
         <div class="column-text">
           <a class="links" href="https://www.linkedin.com/in/isabella-possaghi/"
-            >Isabella Possaghi | 10570418
-          </a>
+            >Isabella Possaghi </a
+          >| 10570418
         </div>
         <div class="column-text">
           <a
             class="links"
             href="https://www.linkedin.com/in/marco-acquati-23bb31b8/"
-            >Marco Acquati | 10583134
-          </a>
+            >Marco Acquati </a
+          >| 10583134
         </div>
         <div class="column-text">
           <a
             class="links"
             href="https://www.linkedin.com/in/simone-tafaro-0b5a6bb7/"
-            >Simone Tafaro | 10639032
-          </a>
+            >Simone Tafaro </a
+          >| 10639032
         </div>
       </div>
     </div>
@@ -559,7 +559,7 @@ export default {
 
 <style>
 .footer {
-  height: 491px;
+  height: 390px;
   background: var(--cc-base5);
   width: 100%;
   display: flex;
@@ -569,12 +569,12 @@ export default {
 .footer-left-column {
   position: absolute;
   bottom: 0;
-  left: 158px;
+  left: 130px;
 }
 .footer-right-column {
   width: 1110px;
   margin: auto;
-  padding-top: 138px;
+  padding-top: 80px;
   text-align: right;
   display: flex;
   margin-top: 0;
@@ -582,7 +582,7 @@ export default {
 .single-column {
   width: max-content;
   text-align: left;
-  margin-left: 100px;
+  margin-left: 50px;
 }
 
 .single-column:first-child {
