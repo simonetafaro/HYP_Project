@@ -6,7 +6,7 @@
           <div class="service-title">
             <div class="back-to-arrow">
               <svg
-                @click="goTo('/service/#' + service.areaID)"
+                @click="goTo('/area/' + service.areaID)"
                 width="48"
                 height="49"
                 viewBox="0 0 48 49"
@@ -23,13 +23,12 @@
             {{ service.title }}
           </div>
           <div class="service-subtitle">{{ service.subTitle }}</div>
-          <!--comment><img :src="service.banner" :alt="service.title" /><--comment-->
           <div class="service-description-text">
             {{ service.description }}
           </div>
           <discover-button
-            :buttonLabel="'ALL ' + service.areaID + ' SERVICES'"
-            :path="'/area/' + service.areaID"
+            :buttonLabel="'ALL SERVICES'"
+            :path="'/service/#' + service.areaID"
           ></discover-button>
         </div>
       </div>
@@ -350,12 +349,37 @@
           :textp2="'SOLUTIONS'"
         ></double-color-title>
         <div class="section-intro-text">
-          We help brands tell stories and craft experiences in innovative and
-          immersive ways, opening up new kinds of interaction, new ways to work
-          and learn, and new revenue streams. It’s an emerging space for all to
-          play in. Let us help you take a lead in next-generation experience.
+          {{ service.serviceDescription }}
         </div>
-        <section class="solution-section"></section>
+        <section class="solution-section">
+          <div class="solution">
+            <img :src="service.s1Logo" class="solution-img" />
+            <div class="solution-name">
+              {{ service.s1Name }}
+            </div>
+            <div class="solution-description">
+              {{ service.s1Description }}
+            </div>
+          </div>
+          <div class="solution">
+            <img :src="service.s2Logo" class="solution-img" />
+            <div class="solution-name">
+              {{ service.s2Name }}
+            </div>
+            <div class="solution-description">
+              {{ service.s2Description }}
+            </div>
+          </div>
+          <div class="solution">
+            <img :src="service.s3Logo" class="solution-img" />
+            <div class="solution-name">
+              {{ service.s3Name }}
+            </div>
+            <div class="solution-description">
+              {{ service.s3Description }}
+            </div>
+          </div>
+        </section>
         <space-divider />
       </div>
     </div>
@@ -367,10 +391,28 @@
         :textp2="'AND PARTNERS'"
       ></double-color-title>
       <div class="section-intro-text">
-        At Hextech, together with our Partners, we are re-imagining the business
-        Deliver with unforgettable customer experiences
+        Partner description{{ service.partnerDescription }}
       </div>
-      <section class="partner-section"></section>
+      <section class="partner-section">
+        <div class="partner">
+          <img :src="service.p1Logo" class="partner-img" />
+          <div class="partner-name">
+            {{ service.p1Name }}
+          </div>
+        </div>
+        <div class="partner">
+          <img :src="service.p2Logo" class="partner-img" />
+          <div class="partner-name">
+            {{ service.p2Name }}
+          </div>
+        </div>
+        <div class="partner">
+          <img :src="service.p2Logo" class="partner-img" />
+          <div class="partner-name">
+            {{ service.p2Name }}
+          </div>
+        </div>
+      </section>
       <discover-button
         :buttonLabel="'DISCOVER MORE'"
         :path="'/about'"
@@ -385,11 +427,7 @@
           :textp1="'DISCOVER OUR'"
           :textp2="'CLIENTS CASE STUDIES'"
         ></double-color-title>
-        <div class="section-intro-text">
-          Reimagining business through experience. The following case studies
-          demonstrate how our company is an expert in the business of creating
-          comprehensive experiences from start to finish.
-        </div>
+        <div class="section-intro-text"></div>
         <section class="casestudies-grid">
           <h4 v-if="service.casestudies === 0">There are no cs</h4>
           <div
@@ -604,11 +642,52 @@ export default {
   margin: auto;
 }
 
+.partner-section,
+.solution-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+.partner-img,
+.solution-img {
+  border-radius: 50%;
+  width: 162px;
+  height: 162px;
+  object-fit: contain;
+  margin-bottom: 30px;
+}
+.solution-description {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: var(--c-grey1);
+  margin-top: 11px;
+}
+.partner-name {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: var(--cc-base1);
+  text-transform: uppercase;
+}
+
+.solution-name {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: var(--cc-base1);
+}
+
 .casestudies-grid {
   display: grid;
-  grid-template-columns: repeat(3, calc(100% / 3));
-  grid-gap: 10px;
-  margin-top: 40px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
 }
 
 .service-grid {
