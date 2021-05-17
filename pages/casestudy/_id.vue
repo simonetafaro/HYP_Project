@@ -20,7 +20,11 @@
           <br />
           <h2 class="title-challenge">{{ casestudy.challengeTitle }}</h2>
 
-          <p class="description">{{ casestudy.challengeDescription }}</p>
+          <div class="challenge-box">
+            <div class="challenge-container">
+              <p class="description">{{ casestudy.challengeDescription }}</p>
+            </div>
+          </div>
           <br /><br /><br />
           <h3>SOLUTION</h3>
           <br />
@@ -270,6 +274,12 @@ p {
 .single-column {
   max-width: 70%;
   width: 90%;
+}
+.challenge-box {
+  border-left: solid 7px rgba(151, 151, 151, 0.2);
+}
+.challenge-container {
+  margin-left: 35px;
 }
 
 .person {
