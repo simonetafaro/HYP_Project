@@ -80,6 +80,7 @@ async function init() {
       where: {
         areaID: areaID,
       },
+      include: { model: Area },
     })
     return res.json(casestudies)
   })
@@ -111,7 +112,7 @@ async function init() {
 
   app.get('/casestudies', async (req, res) => {
     const casestudies = await CaseStudy.findAll({
-      /* include: { model: Area }, */
+      include: { model: Area },
     })
     return res.json(casestudies)
   })
