@@ -44,7 +44,7 @@ export default {
   width: 100%;
   min-height: 350px;
   text-align: left;
-  max-width: 600px;
+  width: 350px;
   margin: auto;
   background-size: cover;
   background-position: center;
