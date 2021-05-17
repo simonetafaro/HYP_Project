@@ -1,7 +1,7 @@
 <template>
   <header class="header">
     <div class="header-left-column">
-      <div class="title" @click="goTo('/home')">
+      <div class="title-header" @click="goTo('/home')">
         <svg
           width="65"
           height="65"
@@ -196,7 +196,33 @@
           :key="'menu-item-' + itemIndex"
           class="menu-item"
         >
-          <nuxt-link class="headerContent" :to="item.path">
+          <ul v-if="item.name == 'Areas'" class="menu-item-dropdown">
+            <li @mouseover="areasList = true" @mouseleave="areasList = false">
+              <nuxt-link :to="item.path" class="headerContent">{{
+                item.name
+              }}</nuxt-link>
+              <transition name="fade">
+                <ul v-if="areasList" @click="areasList = false">
+                  <div class="elements-block">
+                    <li
+                      v-for="(area, areaIndex) of areas"
+                      :key="'menu-area-' + areaIndex"
+                      class="areas-element"
+                    >
+                      <nuxt-link :to="area.path" class="area-element-text">
+                        {{ area.name }}
+                      </nuxt-link>
+                    </li>
+                  </div>
+                </ul>
+              </transition>
+            </li>
+          </ul>
+          <nuxt-link
+            v-if="item.name != 'Areas'"
+            :to="item.path"
+            class="headerContent"
+          >
             {{ item.name }}
           </nuxt-link>
         </div>
@@ -215,6 +241,16 @@ export default {
   mixins: [GoToMixins],
   data() {
     return {
+      areas: [
+        { name: 'Security', path: '/area/1' },
+        { name: 'Internet of Things', path: '/area/2' },
+        { name: 'Cloud Computing', path: '/area/3' },
+        { name: 'Customer Experience', path: '/area/4' },
+        { name: 'Data Analytics', path: '/area/5' },
+      ],
+
+      areasList: true,
+
       menuOptions: [
         {
           name: 'Home',
@@ -266,7 +302,7 @@ export default {
   align-items: center;
 }
 
-.title {
+.title-header {
   cursor: pointer;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -319,5 +355,61 @@ export default {
 }
 .menu-item:first-child {
   margin-left: auto;
+}
+
+.menu-item ul {
+  list-style: none;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.2s;
+}
+.fade-enter,
+.fade-leave-active {
+  opacity: 0;
+}
+
+.menu-item-dropdown li {
+  float: left;
+  position: relative;
+  text-decoration: none;
+  top: 4px;
+}
+
+.menu-item-dropdown {
+  padding-left: 0;
+}
+
+.elements-block {
+  position: absolute;
+  left: -80px;
+  top: 23px;
+}
+
+.menu-item-dropdown li ul li {
+  padding: 20px;
+  display: block;
+  background: #cdc9ff;
+  transition: background 0.3s;
+  font-weight: 800;
+  text-transform: uppercase;
+  width: 200px;
+}
+.area-element-text {
+  color: black;
+  text-decoration: none;
+}
+
+.menu-item li ul li:hover {
+  background: #dcd9fb;
+}
+
+.menu-item li ul {
+  position: absolute;
+  left: 0;
+  top: 42px;
+  margin: 0;
+  color: white;
 }
 </style>
