@@ -16,10 +16,12 @@
       </div>
     </header>
     <br />
+
     <div
       v-for="(area, areaIndex) of areas"
       :key="'area-' + areaIndex"
       class="row"
+      :id="'service-box-' + area.id"
       v-bind:class="isOddRow(areaIndex)"
     >
       <div class="carousel-wrapper">
@@ -176,6 +178,18 @@ export default {
           card.style.lineHeight = serviceCardTitleMaxHeight + 'px'
       }
     )
+    /* if (this.$router.history.current.hash !== '') {
+      console.log(this.$router)
+      document
+        .getElementById(
+          'service-box' + this.$router.history.current.hash.substring(1)
+        )
+        .scrollIntoView({
+          behavior: 'smooth',
+          block: 'center',
+          inline: 'nearest',
+        })
+    } */
   },
   mixins: [GoToMixins],
   methods: {

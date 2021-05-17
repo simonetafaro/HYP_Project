@@ -1,7 +1,7 @@
 <template>
   <header class="header">
     <div class="header-left-column">
-      <div class="title" @click="goTo('/home')">
+      <div class="title-header" @click="goTo('/home')">
         <svg
           width="65"
           height="65"
@@ -302,7 +302,7 @@ export default {
   align-items: center;
 }
 
-.title {
+.title-header {
   cursor: pointer;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
