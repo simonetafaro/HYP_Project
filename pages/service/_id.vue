@@ -531,6 +531,14 @@ export default {
           card.style.lineHeight = serviceCardTitleMaxHeight + 'px'
       }
     )
+
+    // set arrow between title and margin left
+    const arrow = document.getElementsByClassName('back-to-arrow')[0]
+    arrow.style.left =
+      '-' +
+      document.getElementsByClassName('service-title')[0].offsetLeft / 2 +
+      'px'
+    arrow.style.display = 'block'
   },
   mixins: [GoToMixins],
   async asyncData({ $axios, route }) {
@@ -587,8 +595,9 @@ export default {
 .back-to-arrow {
   position: absolute;
   top: 0;
-  left: -180px;
+  left: -10px;
   cursor: pointer;
+  display: none;
 }
 .service-subtitle {
   font-style: normal;
