@@ -31,15 +31,57 @@
         v-for="(person, personIndex) of people"
         :key="'person-' + personIndex"
         class="person"
-        @click="goTo(`/team/${person.id}`)"
+        @click="showOverlay(person.id)"
       >
         <member-mini
           :personName="person.personName"
-          :summary="person.personalQuote"
+          :summary="person.workField"
           :image="person.personPhoto"
+          @click="overlay = false"
         ></member-mini>
       </div>
     </section>
+    <div v-if="overlay">
+      <section class="overlay-container">
+        <div class="overlay-tab">
+          <button class="close-button" @click="overlay = false">X</button>
+          <button class="right-arrow" @click="scrollRight(member.id)">-</button>
+          <button
+            v-if="member.id != 1"
+            class="left-arrow"
+            @click="scrollLeft(member.id)"
+          >
+            -
+          </button>
+          <img
+            :src="member.personPhoto"
+            :alt="member.memberNameAndOccupation"
+            class="overlay-photo"
+          />
+          <h1>{{ member.personName }}</h1>
+          <h4>{{ member.workField }}</h4>
+
+          <h3>Discover his projects</h3>
+          <section class="casestudies-grid">
+            <h4 v-if="relCasestudies === 0">
+              There are no related Case Studies
+            </h4>
+            <div
+              v-for="(casestudy, casestudyIndex) of relCasestudies"
+              :key="'casestudy-' + casestudyIndex"
+              class="casestudy"
+              @click="findCS(id)"
+            >
+              <case-study-mini
+                :title="casestudy.title"
+                :description="casestudy.subTitle"
+                :image="casestudy.banner"
+              ></case-study-mini>
+            </div>
+          </section>
+        </div>
+      </section>
+    </div>
   </main>
 </template>
 
@@ -47,21 +89,34 @@
 // import axios from 'axios'
 import MemberMini from '~/components/team/MemberMini.vue'
 import GoToMixins from '~/mixins/goTo-mixins.js'
+import CaseStudyMini from '~/components/casestudy/CaseStudyMini.vue'
+
 export default {
   components: {
     MemberMini,
+    CaseStudyMini,
   },
+
+  mixins: [GoToMixins],
   async asyncData({ $axios }) {
     const { data } = await $axios.get(`${process.env.BASE_URL}/api/teammembers`)
     const people = data
     const areasData = await $axios.get(`${process.env.BASE_URL}/api/areas`)
     const areas = areasData.data
+
     return {
       people,
       areas,
     }
   },
-  mixins: [GoToMixins],
+  data() {
+    return {
+      overlay: false,
+      member: {},
+      relCasestudies: {},
+      carouselList: [],
+    }
+  },
   methods: {
     async filterTeamMemberByArea(e, areaID) {
       this.people = await this.$axios.$get(
@@ -75,7 +130,7 @@ export default {
       element.classList.add('active-filter')
     },
     async findAllTeamMembers(e) {
-      this.casestudies = await this.$axios.$get(
+      this.people = await this.$axios.$get(
         `${process.env.BASE_URL}/api/teammembers`
       )
       const filters = e.target.parentNode.children
@@ -85,11 +140,116 @@ export default {
       const element = e.target
       element.classList.add('active-filter')
     },
+    async showOverlay(id) {
+      let member = await this.$axios.get(
+        `${process.env.BASE_URL}/api/teammembers/${id}`
+      )
+
+      member = member.data
+
+      let relCasestudies = await this.$axios.get(
+        `${process.env.BASE_URL}/api/casestudiesbyteammember/${id}`
+      )
+      relCasestudies = relCasestudies.data
+
+      this.overlay = true
+      console.log('accessing' + `${process.env.BASE_URL}/api/teammembers/${id}`)
+      console.log(id)
+      console.log(this.overlay)
+      console.log(member)
+
+      this.member = member
+      this.relCasestudies = relCasestudies
+    },
+
+    scrollRight(memberID) {
+      this.showOverlay(memberID + 1)
+    },
+
+    scrollLeft(memberID) {
+      this.showOverlay(memberID - 1)
+    },
   },
 }
 </script>
 
 <style scoped>
+.overlay-container {
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 55%;
+  left: 0%;
+  background: rgba(113, 126, 238, 0.3);
+  border-radius: 20px;
+  backdrop-filter: blur(8px);
+
+  padding: 50px;
+}
+
+.casestudies-grid {
+  display: grid;
+  grid-template-columns: repeat(2, calc(100% / 2));
+  grid-gap: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-right: 20px;
+}
+.casestudy {
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.right-arrow {
+  position: absolute;
+  left: 800px;
+  top: 200px;
+}
+
+.left-arrow {
+  position: absolute;
+  left: -150px;
+  top: 200px;
+}
+
+.overlay-tab {
+  background: #f9f9ff;
+  width: 50%;
+  border-radius: 10px;
+  position: relative;
+  left: 25%;
+  padding: 25px;
+}
+
+.overlay-photo {
+  width: auto;
+  float: center;
+  position: relative;
+  height: 200px;
+  border-radius: 10px;
+}
+.overlay-text {
+  width: 50%;
+  left: 100%;
+  opacity: 60%;
+  left: 60%;
+  position: relative;
+  font-family: Barlow;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+
+.close-button {
+  position: absolute;
+  z-index: 10;
+  left: 600px;
+  padding: 10px;
+}
+
 h2 {
   margin-bottom: 30px;
 }
@@ -100,6 +260,34 @@ h2 {
 
 h3 {
   text-align: left;
+  text-transform: uppercase;
+  font-family: Barlow;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  margin-top: 60px;
+  /* identical to box height */
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #424272;
+}
+
+h4 {
+  font-family: Barlow;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
+
+  /* identical to box height, or 100% */
+  text-align: center;
+
+  color: #464a52;
+
+  mix-blend-mode: normal;
+  opacity: 0.6;
 }
 
 .title {
@@ -113,6 +301,7 @@ h3 {
   grid-gap: 10px;
   margin-top: 40px;
 }
+
 .filter-bar {
   display: inline-flex;
   margin-top: 15px;

@@ -249,7 +249,7 @@ export default {
         { name: 'Data Analytics', path: '/area/5' },
       ],
 
-      areasList: true,
+      areasList: false,
 
       menuOptions: [
         {
