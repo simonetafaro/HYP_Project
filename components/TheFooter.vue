@@ -582,7 +582,7 @@ export default {
 .single-column {
   width: max-content;
   text-align: left;
-  margin-left: 130px;
+  margin-left: 100px;
 }
 
 .single-column:first-child {

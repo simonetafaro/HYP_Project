@@ -260,7 +260,7 @@ export default {
 }
 
 .header-left-column {
-  margin-left: 192px;
+  margin-left: 125px;
   margin-right: auto;
   display: flex;
   align-items: center;
@@ -302,8 +302,9 @@ export default {
   background: #e8e6ff;
   border-radius: 35px;
   border: none;
-  margin-right: 190px;
-  margin-left: 175px;
+  margin-right: 125px;
+  margin-left: 45px;
+  width: max-content;
 }
 
 .menu-item {
@@ -319,64 +320,4 @@ export default {
 .menu-item:first-child {
   margin-left: auto;
 }
-
-/* .header-content {
-  width: 100%;
-  margin-right: 50px;
-  margin-left: 50px;
-  align-items: center;
-  display: inline-flex;
-  color: black;
-}
-.headerContent {
-  width: 100%;
-  align-items: center;
-  display: inline-flex;
-  color: black;
-  text-decoration: none;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 15px;
-  line-height: 19px;
-  text-transform: uppercase;
-}
-.right {
-  display: flex;
-  justify-content: flex-end;
-  width: 100%;
-  margin-right: 50px;
-  max-width: 54%;
-}
-.menu-item {
-  margin-left: 50px;
-}
-.title {
-  cursor: pointer;
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 40px;
-  line-height: 60px;
-  display: inline-flex;
-  color: #cdc9ff;
-  margin-right: 80px;
-}
-.title-purple {
-  color: #4d41c9;
-}
-
-.contact-button {
-  font-family: Barlow;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 19px;
-  text-align: center;
-  text-transform: uppercase;
-  padding: 15px 25px 15px 25px;
-  color: var(--cc-base2);
-  background: #e8e6ff;
-  border-radius: 35px;
-  border: none;
-} */
 </style>
