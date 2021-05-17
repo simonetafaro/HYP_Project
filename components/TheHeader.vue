@@ -3,8 +3,8 @@
     <div class="header-left-column">
       <div class="title-header" @click="goTo('/home')">
         <svg
-          width="65"
-          height="65"
+          width="85"
+          height="85"
           viewBox="0 0 115 112"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -285,7 +285,7 @@ export default {
 <style>
 .header {
   position: sticky;
-  height: 120px;
+  height: 90px;
   width: 100%;
   top: 0;
   background-color: white;
@@ -296,7 +296,7 @@ export default {
 }
 
 .header-left-column {
-  margin-left: 125px;
+  margin-left: auto;
   margin-right: auto;
   display: flex;
   align-items: center;
@@ -320,7 +320,7 @@ export default {
 }
 
 .header-right-column {
-  margin-right: 0;
+  margin-right: auto;
   display: flex;
   align-items: center;
 }
@@ -338,7 +338,7 @@ export default {
   background: #e8e6ff;
   border-radius: 35px;
   border: none;
-  margin-right: 125px;
+  margin-right: auto;
   margin-left: 45px;
   width: max-content;
 }
