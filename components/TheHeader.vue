@@ -303,7 +303,8 @@ export default {
   border-radius: 35px;
   border: none;
   margin-right: 125px;
-  margin-left: 125px;
+  margin-left: 45px;
+  width: max-content;
 }
 
 .menu-item {
