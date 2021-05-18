@@ -1,8 +1,24 @@
 <template>
   <main class="container">
     <header>
-      <h1>Case studies of the company</h1>
-      <h4>All case studies</h4>
+      <h3 class="intro-text">WE PUT IT IN PRACTICE</h3>
+      <h1 class="title_case">
+        OUR CASE
+        <br />
+        <span class="title-purple">STUDIES</span>
+      </h1>
+      <br /><br />
+      <div class="container_description">
+        <h4 class="description">
+          Nulla ante risus, condimentum eu consectetur vel, facilisis ac nulla.
+          Sed blandit nulla diam, in mattis nibh porta quis. Donec accumsan,
+          erat in suscipit viverra, massa purus dignissim sapien, interdum
+          convallis leo magna vel quam. In massa felis, gravida in eros in,
+          ultricies vehicula ex. Praesent luctus non metus ac iaculis. Fusce
+          quis rutrum diam.
+        </h4>
+      </div>
+      <br /><br /><br /><br /><br />
     </header>
     <div class="filter-bar">
       <div class="filter active-filter" @click="findAllCaseStudy($event)">
@@ -86,14 +102,24 @@ export default {
 </script>
 
 <style scoped>
-h2 {
-  margin-bottom: 30px;
-}
 .casestudies-grid {
   display: grid;
-  grid-template-columns: repeat(3, calc(100% / 3));
-  grid-gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
   margin-top: 40px;
+}
+
+.intro-text {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  /* identical to box height */
+
+  text-transform: uppercase;
+
+  color: #424272;
+  text-align: left;
 }
 .casestudy {
   margin-bottom: 20px;
@@ -104,16 +130,17 @@ h2 {
   height: 200px;
 }
 .filter-bar {
-  display: inline-flex;
+  display: flex;
   margin-top: 15px;
-  align-content: center;
+  align-content: left;
+  text-align: left;
 }
 .filter {
   margin-right: 30px;
   cursor: pointer;
   font-style: normal;
   font-weight: bold;
-  font-size: 13px;
+  font-size: 16px;
   line-height: 24px;
   text-transform: uppercase;
 
@@ -122,14 +149,33 @@ h2 {
 .active-filter {
   color: #ff4266;
 }
-@media screen and (max-width: 600px) {
-  .ad img {
-    width: 100%;
-    height: 100px;
-  }
-  .casestudies-grid {
-    display: block;
-    margin: 40px 20px;
-  }
+.title_case {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 84px;
+  text-transform: uppercase;
+  text-align: left;
+  color: #424272;
+  font-family: Barlow;
+  margin: 0;
+}
+.title-purple {
+  color: #cdc9ff;
+}
+.description {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 32px;
+  /* or 160% */
+
+  color: #464a52;
+  text-align: left;
+  mix-blend-mode: normal;
+  opacity: 0.6;
+}
+.container_description {
+  max-width: 600px;
 }
 </style>
