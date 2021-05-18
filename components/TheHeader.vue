@@ -207,7 +207,6 @@
                     <li
                       v-for="(area, areaIndex) of areas"
                       :key="'menu-area-' + areaIndex"
-                      class="areas-element"
                     >
                       <nuxt-link :to="area.path" class="area-element-text">
                         {{ area.name }}
@@ -374,7 +373,7 @@ export default {
   float: left;
   position: relative;
   text-decoration: none;
-  top: 4px;
+  top: 3px;
 }
 
 .menu-item-dropdown {
@@ -382,18 +381,23 @@ export default {
 }
 
 .elements-block {
-  position: absolute;
-  left: -80px;
+  height: 300px;
+  width: 200px;
+  left: -55px;
   top: 23px;
+  display: block;
+  position: relative;
+  background: white;
+  box-shadow: 0px 3px 25px rgba(205, 201, 255, 0.3);
+  padding-left: 0;
+  border-radius: 16px;
 }
 
 .menu-item-dropdown li ul li {
   padding: 20px;
-  display: block;
-  background: #cdc9ff;
   transition: background 0.3s;
   font-weight: 800;
-  text-transform: uppercase;
+  text-transform: none;
   width: 200px;
 }
 .area-element-text {
@@ -402,7 +406,7 @@ export default {
 }
 
 .menu-item li ul li:hover {
-  background: #dcd9fb;
+  background: #fafaff;
 }
 
 .menu-item li ul {
