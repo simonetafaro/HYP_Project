@@ -105,7 +105,7 @@ export default {
 .casestudies-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 30px;
+  grid-gap: 20px;
   margin-top: 40px;
 }
 

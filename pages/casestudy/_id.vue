@@ -502,57 +502,53 @@
       </div>
     </div>
     <section>
-      <h3 class="pre-section">TEAM WORKING ON THIS PROJECT</h3>
-      <br /><br /><br /><br /><br />
-      <section class="member-grid">
-        <div
-          v-for="(person, personIndex) of casestudy.teammembers"
-          :key="'person-' + personIndex"
-          class="person"
-          @click="goTo(`/team/${person.id}`)"
-        >
-          <member-mini
-            :personName="person.personName"
-            :summary="person.personalQuote"
-            :image="person.personPhoto"
-          ></member-mini>
+      <div class="box-members">
+        <div class="inner-member">
+          <h3 class="pre-section">TEAM WORKING ON THIS PROJECT</h3>
         </div>
-      </section>
-      <br /><br /><br />
-      <div class="pre-section">
-        <svg
-          width="71"
-          height="71"
-          viewBox="0 0 101 101"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
-            d="M100.705 50.2046C86.841 64.0682 64.3636 64.0682 50.5 50.2046C64.3636 36.341 86.841 36.341 100.705 50.2046ZM0.295419 50.2046C14.159 36.341 36.6364 36.341 50.5 50.2046C36.6364 64.0682 14.159 64.0682 0.295419 50.2046ZM50.5 50.2046C36.6364 36.341 36.6364 13.8636 50.5 0C64.3636 13.8636 64.3636 36.341 50.5 50.2046ZM50.5 50.2046C64.3636 64.0682 64.3636 86.5455 50.5 100.409C36.6364 86.5455 36.6364 64.0682 50.5 50.2046Z"
-            fill="#E8E7FF"
-          />
-        </svg>
+
+        <section class="member-grid">
+          <div
+            v-for="(person, personIndex) of casestudy.teammembers"
+            :key="'person-' + personIndex"
+            class="person"
+            @click="goTo(`/team/${person.id}`)"
+          >
+            <member-mini
+              :personName="person.personName"
+              :summary="person.personalQuote"
+              :image="person.personPhoto"
+            ></member-mini>
+          </div>
+        </section>
       </div>
-      <br /><br /><br /><br /><br />
+      <space-divider />
+
       <h3 class="pre-section">YOU MAY BE INTERESTED IN</h3>
       <h3 class="pre-section">OUR RELATED SERVICES</h3>
-      <br /><br /><br /><br /><br />
-      <section class="service-grid">
-        <h4 v-if="relServices === 0">There are no related Services</h4>
-        <div
-          v-for="(service, serviceIndex) of relServices"
-          :key="'service-' + serviceIndex"
-          class="service"
-        >
-          <service-mini
-            :title="service.title"
-            :image="service.banner"
-            :path="service.id"
-          ></service-mini>
-        </div>
-      </section>
+
+      <div class="service-box">
+        <section class="service-grid">
+          <h4 v-if="relServices === 0">There are no related Services</h4>
+          <div
+            v-for="(service, serviceIndex) of relServices"
+            :key="'service-' + serviceIndex"
+            class="service"
+          >
+            <service-mini
+              :title="service.title"
+              :image="service.banner"
+              :path="service.id"
+            ></service-mini>
+          </div>
+        </section>
+      </div>
+      <div class="button">
+        <discover-button
+          :buttonLabel="'NEXT CASE STUDY'"
+          :path="'/casestudy/' + (casestudy.id + 1)"
+        ></discover-button>
+      </div>
     </section>
   </section>
 </template>
@@ -560,10 +556,15 @@
 import GoToMixins from '~/mixins/goTo-mixins.js'
 import ServiceMini from '~/components/service/ServiceMini.vue'
 import MemberMini from '~/components/team/MemberMini.vue'
+import SpaceDivider from '~/components/utils/SpaceDivider.vue'
+import DiscoverButton from '~/components/utils/DiscoverButton.vue'
+
 export default {
   components: {
     ServiceMini,
     MemberMini,
+    SpaceDivider,
+    DiscoverButton,
   },
   async asyncData({ $axios, route }) {
     const { id } = route.params
@@ -643,7 +644,6 @@ h1 {
   font-size: 20px;
   line-height: 24px;
   /* identical to box height */
-
   text-transform: uppercase;
 
   color: #424272;
@@ -653,14 +653,14 @@ h1 {
   margin-bottom: 20px;
 }
 .inner_caseMini {
-  margin: 40px auto;
-  width: 1110px;
+  margin: auto;
+  width: 100%;
   text-align: center;
   position: relative;
 }
 .container {
   min-width: 100%;
-  margin-top: 0;
+  margin: 0;
   padding: 0;
 }
 .container-custom {
@@ -670,7 +670,9 @@ h1 {
   position: relative;
   overflow: hidden;
 }
-
+.box-members {
+  background: #fbfbff;
+}
 .svg-bottom {
   bottom: -395px;
   right: 0;
@@ -680,10 +682,11 @@ h1 {
 }
 .service-grid {
   max-width: 1110px;
-  display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 30px;
-  text-align: center;
+  padding-top: 60px;
+  display: grid;
+  margin: auto;
 }
 .description {
   font-family: Rubik;
@@ -707,6 +710,7 @@ p {
   margin-top: 40px;
   width: 90%;
 }
+
 .partner {
   font-style: normal;
   font-weight: bold;
@@ -727,23 +731,22 @@ p {
 }
 .member-grid {
   display: grid;
-  grid-template-columns: repeat(3, calc(100% / 3));
-  grid-gap: 10px;
-  margin-top: 40px;
-  align-content: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  margin-top: 80px;
+  max-width: 1110px;
   margin: auto;
+}
+.inner-member {
+  padding: 80px 0;
 }
 .column {
   display: flex;
   justify-content: space-between;
 }
 
-.container {
-  margin: 0;
-}
 .case-container {
   text-align: left;
-  width: 1110px;
 
   margin: 40px 13%;
 }
@@ -819,5 +822,11 @@ p {
   color: var(--cc-base1);
   mix-blend-mode: normal;
   opacity: 0.6;
+}
+.service-box {
+  margin: auto;
+}
+.button {
+  padding-bottom: 80px;
 }
 </style>
