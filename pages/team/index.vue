@@ -38,6 +38,7 @@
           :summary="person.workField"
           :image="person.personPhoto"
           @click="overlay = false"
+          :index="personIndex"
         ></member-mini>
       </div>
     </section>
