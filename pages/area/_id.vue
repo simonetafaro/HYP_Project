@@ -1152,6 +1152,7 @@
               :personName="person.personName"
               :summary="person.personalQuote"
               :image="person.personPhoto"
+              :index="personIndex"
             ></member-mini>
           </div>
         </div>
