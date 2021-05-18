@@ -258,7 +258,7 @@ export default {
         },
         {
           name: 'Areas',
-          path: '#',
+          path: '/area',
         },
         {
           name: 'Services',
