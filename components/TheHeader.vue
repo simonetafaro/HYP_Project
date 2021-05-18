@@ -209,8 +209,11 @@
                       :key="'menu-area-' + areaIndex"
                       class="areas-element"
                     >
-                      <nuxt-link :to="area.path" class="area-element-text">
-                        {{ area.name }}
+                      <nuxt-link
+                        :to="'/area/' + area.id"
+                        class="area-element-text"
+                      >
+                        {{ area.title }}
                       </nuxt-link>
                     </li>
                   </div>
@@ -241,13 +244,7 @@ export default {
   mixins: [GoToMixins],
   data() {
     return {
-      areas: [
-        { name: 'Security', path: '/area/1' },
-        { name: 'Internet of Things', path: '/area/2' },
-        { name: 'Cloud Computing', path: '/area/3' },
-        { name: 'Customer Experience', path: '/area/4' },
-        { name: 'Data Analytics', path: '/area/5' },
-      ],
+      areas: [],
 
       areasList: false,
 
@@ -278,6 +275,11 @@ export default {
         },
       ],
     }
+  },
+  mounted() {
+    // retrive area dinamically from store
+    this.$store.dispatch('nuxtServerInit')
+    this.areas = this.$store.state.menuList
   },
 }
 </script>
