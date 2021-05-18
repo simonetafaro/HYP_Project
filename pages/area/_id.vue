@@ -1238,10 +1238,12 @@ export default {
   max-width: 100%;
   padding-top: 0px;
   margin-top: 0px;
+  padding: 0;
 }
 .area-header {
   height: 916px;
   position: relative;
+  overflow-x: clip;
 }
 .header-content {
   max-width: 1100px;
