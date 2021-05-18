@@ -117,7 +117,22 @@ export default {
     }
   },
   mounted() {
+    if (this.$router.history.current.hash !== '') {
+      setTimeout(() => {
+        const elem = document.getElementById(
+          'service-box-' + this.$router.history.current.hash.substring(1)
+        )
+        console.log(elem)
+        elem.scrollIntoView({
+          behavior: 'smooth',
+          block: 'center',
+          inline: 'nearest',
+        })
+      }, 0)
+    }
+
     const _this = this
+
     Array.from(document.querySelectorAll("[data-target='carousel']")).forEach(
       function (carousel) {
         const carouselWidth = carousel.offsetWidth
@@ -178,18 +193,6 @@ export default {
           card.style.lineHeight = serviceCardTitleMaxHeight + 'px'
       }
     )
-    /* if (this.$router.history.current.hash !== '') {
-      console.log(this.$router)
-      document
-        .getElementById(
-          'service-box' + this.$router.history.current.hash.substring(1)
-        )
-        .scrollIntoView({
-          behavior: 'smooth',
-          block: 'center',
-          inline: 'nearest',
-        })
-    } */
   },
   mixins: [GoToMixins],
   methods: {

@@ -10,7 +10,7 @@
         <defs>
           <pattern
             xmlns="http://www.w3.org/2000/svg"
-            id="img1"
+            :id="'team-' + index"
             patternUnits="userSpaceOnUse"
             width="450"
             height="250"
@@ -28,7 +28,7 @@
         <path
           clip-rule="evenodd"
           d="M244.424 212.428C209.071 256.341 27.3303 234.819 3.38754 181.475C-20.5553 128.131 88.1562 -7.51591 149.225 0.326202C210.294 8.16832 279.778 168.515 244.424 212.428Z"
-          fill="url(#img1)"
+          :fill="`url(#team-${index})`"
         />
       </svg>
       <br />
@@ -44,6 +44,7 @@ export default {
     personName: { type: String, default: () => '' },
     image: { type: String, default: () => '' },
     summary: { type: String, default: () => '' },
+    index: { type: Number, default: () => 0 },
   },
 }
 </script>
