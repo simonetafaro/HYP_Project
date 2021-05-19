@@ -287,13 +287,13 @@ export default {
 <style>
 .header {
   position: sticky;
+  z-index: 2;
   height: 90px;
   width: 100%;
   top: 0;
   background-color: white;
   display: flex;
   border: 1px solid rgba(255, 255, 255, 0.3);
-  z-index: 1;
   box-shadow: 0 0 8px 0 #dedede;
 }
 
