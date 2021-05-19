@@ -13,16 +13,19 @@
         sodales volutpat. Suspendisse potenti. Sed dapibus est ut magna egestas
         tincidunt.
       </div>
-
       <div class="button-container">
-        <button
-          v-for="(area, areaIndex) of areas"
-          :key="'area-' + areaIndex"
-          class="go-to-area-button"
-          @click="goTo(`/home#` + area.id)"
-        >
-          {{ area.title }}
-        </button>
+        <div class="scroll-text-compare">WHAT WE DO</div>
+        <div class="button-inner-container">
+          <button
+            v-for="(area, areaIndex) of areas"
+            :key="'area-' + areaIndex"
+            class="go-to-area-button"
+            :id="'button-area-' + area.id"
+            @click="moveTo(`area-box-` + area.id)"
+          >
+            {{ area.title }}
+          </button>
+        </div>
       </div>
       <div class="areas-inner-container">
         <div
@@ -48,6 +51,12 @@
 import AreaHomeMini from '~/components/area/AreaHomeMini.vue'
 import GoToMixins from '~/mixins/goTo-mixins.js'
 export default {
+  data() {
+    return {
+      isPositionFixed: false,
+      areas: [],
+    }
+  },
   components: {
     AreaHomeMini,
   },
@@ -60,18 +69,54 @@ export default {
   },
   mixins: [GoToMixins],
   mounted() {
-    if (this.$router.history.current.hash !== '') {
-      setTimeout(() => {
-        const elem = document.getElementById(
-          'area-box-' + this.$router.history.current.hash.substring(1)
-        )
-        elem.scrollIntoView({
-          behavior: 'smooth',
-          block: 'center',
-          inline: 'nearest',
-        })
-      }, 0)
-    }
+    document.addEventListener('scroll', this.handleScroll)
+  },
+  destroyed() {
+    document.removeEventListener('scroll', this.handleScroll)
+  },
+  methods: {
+    moveTo(path) {
+      const elem = document.getElementById(path)
+      elem.scrollIntoView({
+        behavior: 'smooth',
+        block: 'center',
+        inline: 'nearest',
+      })
+    },
+    handleScroll() {
+      const buttonBar = document.getElementsByClassName('button-container')[0]
+      const hiddenText = document.getElementsByClassName(
+        'scroll-text-compare'
+      )[0]
+      this.areas.forEach(function (area) {
+        if (
+          document.getElementById('area-box-' + area.id).getBoundingClientRect()
+            .top < 180 &&
+          document.getElementById('area-box-' + area.id).getBoundingClientRect()
+            .top > 0
+        ) {
+          document
+            .getElementById('button-area-' + area.id)
+            .classList.add('area-visibile-button')
+        } else {
+          document
+            .getElementById('button-area-' + area.id)
+            .classList.remove('area-visibile-button')
+        }
+      })
+      if (buttonBar.getBoundingClientRect().top < 90 && !this.isPositionFixed) {
+        hiddenText.style.display = 'block'
+        buttonBar.style.position = 'sticky'
+        buttonBar.style.top = '90px'
+        this.isPositionFixed = true
+      }
+      if (buttonBar.getBoundingClientRect().top > 90 && this.isPositionFixed) {
+        hiddenText.style.display = 'none'
+        buttonBar.style.position = 'static'
+        buttonBar.style.top = 0
+        this.isPositionFixed = false
+      }
+    },
   },
 }
 </script>
@@ -111,6 +156,18 @@ export default {
   margin-bottom: 44px;
   padding-top: 152px;
 }
+.scroll-text-compare {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #424272;
+  display: none;
+  margin: auto;
+  padding: 25px 15px;
+}
 
 .section-title {
   font-family: 'Barlow';
@@ -138,21 +195,28 @@ export default {
   max-width: 769px;
   margin: auto;
   margin-top: 86px;
+  margin-bottom: 162px;
 }
 
 .button-container {
-  display: inline-flex;
   width: 100%;
+  margin: auto;
+  background: #fff;
+  z-index: 1;
+  padding: 15px 0;
+  background: #fbfbff 79.17%;
+}
+.button-inner-container {
+  display: inline-flex;
   max-width: 1110px;
   margin: auto;
-  padding-top: 162px;
-  margin-bottom: 197px;
+  width: 100%;
+  padding-bottom: 15px;
 }
 .go-to-area-button {
   background: #f9f9ff;
   border: 2px solid #63639f;
   border-radius: 35px;
-  font-family: Barlow;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -160,9 +224,22 @@ export default {
   text-align: center;
   text-transform: uppercase;
   margin: auto;
-  padding: 15px;
+  padding: 10px;
   color: #63639f;
   cursor: pointer;
+}
+
+.go-to-area-button:hover {
+  background: #424272;
+  color: white;
+  cursor: pointer;
+  opacity: 1;
+}
+.area-visibile-button {
+  background: #424272;
+  color: white;
+  cursor: pointer;
+  opacity: 0.7;
 }
 .areas-container {
   background: linear-gradient(

@@ -40,7 +40,8 @@ export default {
   display: inline-flex;
   width: 100%;
   margin: auto;
-  margin-bottom: 175px;
+  margin-bottom: 27px;
+  margin-top: 147px;
 }
 .reverse-view {
   flex-direction: row-reverse;
