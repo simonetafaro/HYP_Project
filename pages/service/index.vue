@@ -300,7 +300,7 @@ export default {
   font-weight: bold;
   font-size: 20px;
   line-height: 24px;
-  color: #464a52;
+  color: var(--c-grey1);
   margin-bottom: 54px;
 }
 
@@ -310,7 +310,7 @@ export default {
   font-size: 70px;
   line-height: 84px;
   text-align: center;
-  color: #424272;
+  color: var(--cc-base1);
   margin-bottom: 70px;
 }
 .service-l2-light {
@@ -364,7 +364,6 @@ h2 {
   background: #f9f9ff;
 }
 .service-section-title {
-  font-family: Barlow;
   font-style: normal;
   font-weight: 600;
   font-size: 36px;

@@ -328,7 +328,6 @@ export default {
 }
 
 .contact-button {
-  font-family: Barlow;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -395,7 +394,7 @@ export default {
 .menu-item-dropdown li ul li {
   padding: 20px;
   display: block;
-  background: #cdc9ff;
+  background: var(--cc-base3);
   transition: background 0.3s;
   font-weight: 800;
   text-transform: uppercase;

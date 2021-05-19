@@ -235,7 +235,6 @@ export default {
   opacity: 60%;
   left: 60%;
   position: relative;
-  font-family: Barlow;
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
@@ -262,31 +261,23 @@ h2 {
 h3 {
   text-align: left;
   text-transform: uppercase;
-  font-family: Barlow;
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
   line-height: 24px;
   margin-top: 60px;
-  /* identical to box height */
   text-align: center;
   text-transform: uppercase;
-
-  color: #424272;
+  color: var(--cc-base1);
 }
 
 h4 {
-  font-family: Barlow;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
   line-height: 24px;
-
-  /* identical to box height, or 100% */
   text-align: center;
-
-  color: #464a52;
-
+  color: var();
   mix-blend-mode: normal;
   opacity: 0.6;
 }
@@ -316,10 +307,10 @@ h4 {
   line-height: 24px;
   text-transform: uppercase;
 
-  color: #424272;
+  color: var(--cc-base1);
 }
 .active-filter {
-  color: #ff4266;
+  color: var(--cc-red);
 }
 .member {
   cursor: pointer;
