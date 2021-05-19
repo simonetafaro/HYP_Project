@@ -9,36 +9,38 @@
             <h5 class="description">
               {{ casestudy.author }}Author's name | April 2, 2020 | 2 Comments
             </h5>
-            <br />
             <div class="column">
-              <div class="single-column">
+              <div class="single-column" id="padding">
                 <img :src="casestudy.banner" :alt="casestudy.title" />
                 <p class="description">
                   {{ casestudy.descriptiveText }}
                 </p>
-                <br />
-                <a class="partner" href="#">PARTNER WEBSITE</a>
-                <br /><br /><br /><br />
-                <h3>CHALLENGE</h3>
-                <br />
+
+                <div class="padding">
+                  <a class="partner" href="#">PARTNER WEBSITE</a>
+                </div>
+                <div class="padding"><h3>CHALLENGE</h3></div>
                 <h2 class="title-challenge">{{ casestudy.challengeTitle }}</h2>
 
-                <div class="challenge-box">
-                  <div class="challenge-container">
-                    <p class="description">
-                      {{ casestudy.challengeDescription }}
-                    </p>
+                <div class="padding">
+                  <div class="challenge-box">
+                    <div class="challenge-container">
+                      <p class="description">
+                        {{ casestudy.challengeDescription }}
+                      </p>
+                    </div>
                   </div>
                 </div>
-                <br /><br /><br />
-                <h3>SOLUTION</h3>
-                <br />
+                <div class="padding"><h3>SOLUTION</h3></div>
                 <h2 class="title-challenge">{{ casestudy.solutionTitle }}</h2>
-                <p class="description">{{ casestudy.solutionDescription }}</p>
+                <div class="padding">
+                  <p class="description">
+                    {{ casestudy.solutionDescription }}
+                  </p>
+                </div>
               </div>
               <div class="cases-column">
-                <h3>Other Case Studies</h3>
-                <br />
+                <h3 class="padding">Other Case Studies</h3>
                 <div
                   v-for="(casestudy, caseStudyIndex) of relCases"
                   :key="'casestudy-' + caseStudyIndex"
@@ -57,14 +59,10 @@
                     </h4>
                     <h5 class="related-case-study-date">April 2, 2020</h5>
                   </div>
-                  <br />
                 </div>
               </div>
             </div>
-
-            <br />
           </header>
-          <br /><br /><br />
         </section>
       </div>
       <div class="svg-bottom">
@@ -526,7 +524,7 @@
       <space-divider />
 
       <h3 class="pre-section">YOU MAY BE INTERESTED IN</h3>
-      <h3 class="pre-section">OUR RELATED SERVICES</h3>
+      <h3 class="pre-section" id="padding">OUR RELATED SERVICES</h3>
 
       <div class="service-box">
         <section class="service-grid">
@@ -544,7 +542,7 @@
           </div>
         </section>
       </div>
-      <div class="button">
+      <div v-if="nextCaseStudy != null" class="button">
         <discover-button
           :buttonLabel="'NEXT CASE STUDY'"
           :path="'/casestudy/' + (casestudy.id + 1)"
@@ -581,11 +579,17 @@ export default {
       `${process.env.BASE_URL}/api/relatedCaseStudies/${data.areaID}/${id}`
     )
 
+    let nextCaseStudy = await $axios.get(
+      `${process.env.BASE_URL}/api/casestudy/${casestudy.id + 1}`
+    )
+    nextCaseStudy = nextCaseStudy.data
     relCases = relCases.data
+
     return {
       casestudy,
       relServices,
       relCases,
+      nextCaseStudy,
     }
   },
   mounted() {
@@ -646,7 +650,6 @@ h1 {
   line-height: 24px;
   /* identical to box height */
   text-transform: uppercase;
-
   color: #424272;
 }
 .casestudy {
@@ -696,7 +699,6 @@ h1 {
   font-size: 18px;
   line-height: 32px;
   /* or 145% */
-
   color: #464a52;
 
   mix-blend-mode: normal;
@@ -718,10 +720,8 @@ p {
   font-size: 20px;
   line-height: 24px;
   /* identical to box height */
-
   text-decoration-line: underline;
   text-transform: uppercase;
-
   color: #cdc9ff;
 }
 @media screen and (max-width: 600px) {
@@ -729,6 +729,9 @@ p {
     display: block;
     margin: 40px 20px;
   }
+}
+.padding {
+  padding: 30px 0;
 }
 .member-grid {
   display: grid;
@@ -826,6 +829,7 @@ p {
 }
 .service-box {
   margin: auto;
+  padding-bottom: 60px;
 }
 .button {
   padding-bottom: 80px;
