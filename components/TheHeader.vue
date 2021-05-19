@@ -390,8 +390,6 @@ export default {
   position: absolute;
   left: -80px;
   top: 23px;
-  display: block;
-  z-index: 2;
 }
 
 .menu-item-dropdown li ul li {
