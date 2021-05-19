@@ -198,9 +198,9 @@
         >
           <ul v-if="item.name == 'Areas'" class="menu-item-dropdown">
             <li @mouseover="areasList = true" @mouseleave="areasList = false">
-              <nuxt-link :to="item.path" class="headerContent">{{
-                item.name
-              }}</nuxt-link>
+              <div class="headerContent headerContent-area">
+                {{ item.name }}
+              </div>
               <transition name="fade">
                 <ul v-if="areasList" @click="areasList = false">
                   <div class="elements-block">
@@ -287,13 +287,13 @@ export default {
 <style>
 .header {
   position: sticky;
+  z-index: 2;
   height: 90px;
   width: 100%;
   top: 0;
   background-color: white;
   display: flex;
   border: 1px solid rgba(255, 255, 255, 0.3);
-  z-index: 1;
   box-shadow: 0 0 8px 0 #dedede;
 }
 
@@ -354,6 +354,9 @@ export default {
   color: #000000;
   margin-left: 45px;
   display: inline-flex;
+}
+.headerContent-area {
+  cursor: default;
 }
 .menu-item:first-child {
   margin-left: auto;
