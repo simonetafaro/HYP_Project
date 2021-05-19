@@ -7,7 +7,7 @@
         <br />
         <span class="title-purple">STUDIES</span>
       </h1>
-      <br /><br />
+
       <div class="container_description">
         <h4 class="description">
           Nulla ante risus, condimentum eu consectetur vel, facilisis ac nulla.
@@ -18,7 +18,6 @@
           quis rutrum diam.
         </h4>
       </div>
-      <br /><br /><br /><br /><br />
     </header>
     <div class="filter-bar">
       <div class="filter active-filter" @click="findAllCaseStudy($event)">
@@ -177,5 +176,7 @@ export default {
 }
 .container_description {
   max-width: 600px;
+  padding-bottom: 60px;
+  padding-top: 30px;
 }
 </style>

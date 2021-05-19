@@ -439,7 +439,7 @@
               :title="casestudy.title"
               :description="casestudy.subTitle"
               :image="casestudy.banner"
-              :area="casestudy.area"
+              :area="casestudy.area.title"
               :path="casestudy.id"
             ></case-study-mini>
           </div>
