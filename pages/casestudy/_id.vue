@@ -581,7 +581,6 @@ export default {
     let nextCaseStudy = await $axios.get(
       `${process.env.BASE_URL}/api/casestudy/${casestudy.id + 1}`
     )
-    console.log(casestudy.areaID.title)
     nextCaseStudy = nextCaseStudy.data
     relCases = relCases.data
 
