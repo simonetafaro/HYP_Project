@@ -117,7 +117,7 @@ export default {
 
   text-transform: uppercase;
 
-  color: #424272;
+  color: var(--cc-base1);
   text-align: left;
 }
 .casestudy {
@@ -142,11 +142,10 @@ export default {
   font-size: 16px;
   line-height: 24px;
   text-transform: uppercase;
-
-  color: #424272;
+  color: var(--cc-base1);
 }
 .active-filter {
-  color: #ff4266;
+  color: var(--cc-red);
 }
 .title_case {
   font-style: normal;
@@ -155,20 +154,18 @@ export default {
   line-height: 84px;
   text-transform: uppercase;
   text-align: left;
-  color: #424272;
+  color: var(--cc-base1);
   margin: 0;
 }
 .title-purple {
-  color: #cdc9ff;
+  color: var(--cc-base3);
 }
 .description {
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
   line-height: 32px;
-  /* or 160% */
-
-  color: #464a52;
+  color: var(--c-grey1);
   text-align: left;
   mix-blend-mode: normal;
   opacity: 0.6;

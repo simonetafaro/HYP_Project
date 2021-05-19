@@ -650,7 +650,7 @@ h1 {
   line-height: 24px;
   /* identical to box height */
   text-transform: uppercase;
-  color: #424272;
+  color: var(--cc-base1);
 }
 .casestudy {
   cursor: pointer;
@@ -699,7 +699,7 @@ h1 {
   font-size: 18px;
   line-height: 32px;
   /* or 145% */
-  color: #464a52;
+  color: var(--c-grey1);
 
   mix-blend-mode: normal;
   opacity: 0.6;
@@ -722,7 +722,7 @@ p {
   /* identical to box height */
   text-decoration-line: underline;
   text-transform: uppercase;
-  color: #cdc9ff;
+  color: var(--cc-base3);
 }
 @media screen and (max-width: 600px) {
   .casestudies-grid {
@@ -783,14 +783,14 @@ p {
   font-weight: bold;
   font-size: 36px;
   line-height: 43px;
-  color: #63639f;
+  color: var(--cc-base2);
 }
 .title-case {
   font-style: normal;
   font-weight: bold;
   font-size: 50px;
   line-height: 60px;
-  color: #424272;
+  color: var(--cc-base1);
 }
 .area-title {
   font-style: normal;
@@ -798,7 +798,7 @@ p {
   font-size: 20px;
   line-height: 24px;
   text-transform: uppercase;
-  color: #424272;
+  color: var(--cc-base1);
 }
 
 .related-case-study-info {

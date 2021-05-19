@@ -74,7 +74,7 @@ export default {
   font-weight: normal;
   font-size: 20px;
   line-height: 32px;
-  color: #464a52;
+  color: var(--c-grey1);
   mix-blend-mode: normal;
   opacity: 0.6;
   margin-bottom: 22px;
@@ -86,7 +86,7 @@ export default {
   font-weight: 500;
   font-size: 24px;
   line-height: 32px;
-  color: #424272;
+  color: var(--cc-base1);
   text-transform: uppercase;
   position: absolute;
   bottom: 25px;
@@ -97,7 +97,7 @@ export default {
   background: #e8e6ff;
   box-shadow: 0px 4px 6px rgba(66, 66, 114, 0.16);
   border-radius: 35px;
-  color: #63639f;
+  color: var(--cc-base2);
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -111,7 +111,7 @@ export default {
 }
 
 .more_button:hover {
-  background: #424272;
+  background: var(--cc-base1);
   color: white;
   box-shadow: 0px 4px 6px rgba(66, 66, 114, 0.16);
 }

@@ -151,7 +151,7 @@ export default {
   font-size: 20px;
   line-height: 24px;
   text-transform: uppercase;
-  color: #424272;
+  color: var(--cc-base1);
   margin-bottom: 44px;
   padding-top: 152px;
 }
@@ -161,7 +161,7 @@ export default {
   font-size: 20px;
   line-height: 24px;
   text-transform: uppercase;
-  color: #424272;
+  color: var(--cc-base1);
   display: none;
   margin: auto;
   padding: 25px 15px;
@@ -174,7 +174,7 @@ export default {
   line-height: 84px;
   text-align: center;
   text-transform: uppercase;
-  color: #424272;
+  color: var(--cc-base1);
 }
 .section-title-2 {
   color: #e8e6ff;
@@ -185,7 +185,7 @@ export default {
   font-size: 20px;
   line-height: 32px;
   text-align: center;
-  color: #464a52;
+  color: var(--c-grey1);
   mix-blend-mode: normal;
   opacity: 0.6;
   max-width: 769px;
@@ -211,7 +211,7 @@ export default {
 }
 .go-to-area-button {
   background: #f9f9ff;
-  border: 2px solid #63639f;
+  border: 2px solid var(--cc-base2);
   border-radius: 35px;
   font-style: normal;
   font-weight: bold;
@@ -221,18 +221,18 @@ export default {
   text-transform: uppercase;
   margin: auto;
   padding: 10px;
-  color: #63639f;
+  color: var(--cc-base2);
   cursor: pointer;
 }
 
 .go-to-area-button:hover {
-  background: #424272;
+  background: var(--cc-base1);
   color: white;
   cursor: pointer;
   opacity: 1;
 }
 .area-visibile-button {
-  background: #424272;
+  background: var(--cc-base1);
   color: white;
   cursor: pointer;
   opacity: 0.7;

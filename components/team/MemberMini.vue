@@ -75,7 +75,6 @@ export default {
   font-size: 26px;
   line-height: 38px;
   text-align: center;
-
-  color: #424272;
+  color: var(--cc-base1);
 }
 </style>

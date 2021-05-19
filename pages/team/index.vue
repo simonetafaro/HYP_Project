@@ -268,8 +268,7 @@ h3 {
   margin-top: 60px;
   text-align: center;
   text-transform: uppercase;
-
-  color: #424272;
+  color: var(--cc-base1);
 }
 
 h4 {
@@ -278,7 +277,7 @@ h4 {
   font-size: 24px;
   line-height: 24px;
   text-align: center;
-  color: #464a52;
+  color: var();
   mix-blend-mode: normal;
   opacity: 0.6;
 }
@@ -308,10 +307,10 @@ h4 {
   line-height: 24px;
   text-transform: uppercase;
 
-  color: #424272;
+  color: var(--cc-base1);
 }
 .active-filter {
-  color: #ff4266;
+  color: var(--cc-red);
 }
 .member {
   cursor: pointer;
