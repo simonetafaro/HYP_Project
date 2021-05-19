@@ -146,7 +146,6 @@ export default {
 }
 
 .text1 {
-  font-family: 'Barlow';
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
@@ -157,7 +156,6 @@ export default {
   padding-top: 152px;
 }
 .scroll-text-compare {
-  font-family: 'Barlow';
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
@@ -170,7 +168,6 @@ export default {
 }
 
 .section-title {
-  font-family: 'Barlow';
   font-style: normal;
   font-weight: bold;
   font-size: 70px;
@@ -183,7 +180,6 @@ export default {
   color: #e8e6ff;
 }
 .section-description {
-  font-family: 'Barlow';
   font-style: normal;
   font-weight: normal;
   font-size: 20px;

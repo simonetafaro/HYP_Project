@@ -532,10 +532,6 @@ export default {
           path: '/home',
         },
         {
-          name: 'Areas',
-          path: '#',
-        },
-        {
           name: 'Services',
           path: '/service',
         },

@@ -1258,7 +1258,6 @@ export default {
   max-width: 780px;
 }
 .area-title {
-  font-family: Barlow;
   font-style: normal;
   font-weight: bold;
   font-size: 48px;

@@ -328,7 +328,6 @@ export default {
 }
 
 .contact-button {
-  font-family: Barlow;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;

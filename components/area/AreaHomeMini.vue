@@ -70,7 +70,6 @@ export default {
 }
 
 .area-description-text {
-  font-family: 'Barlow';
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
@@ -98,7 +97,6 @@ export default {
   background: #e8e6ff;
   box-shadow: 0px 4px 6px rgba(66, 66, 114, 0.16);
   border-radius: 35px;
-  font-family: Barlow;
   color: #63639f;
   font-style: normal;
   font-weight: bold;

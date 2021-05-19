@@ -156,7 +156,6 @@ export default {
   text-transform: uppercase;
   text-align: left;
   color: #424272;
-  font-family: Barlow;
   margin: 0;
 }
 .title-purple {

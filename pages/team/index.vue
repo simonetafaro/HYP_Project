@@ -235,7 +235,6 @@ export default {
   opacity: 60%;
   left: 60%;
   position: relative;
-  font-family: Barlow;
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
@@ -262,13 +261,11 @@ h2 {
 h3 {
   text-align: left;
   text-transform: uppercase;
-  font-family: Barlow;
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
   line-height: 24px;
   margin-top: 60px;
-  /* identical to box height */
   text-align: center;
   text-transform: uppercase;
 
@@ -276,17 +273,12 @@ h3 {
 }
 
 h4 {
-  font-family: Barlow;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
   line-height: 24px;
-
-  /* identical to box height, or 100% */
   text-align: center;
-
   color: #464a52;
-
   mix-blend-mode: normal;
   opacity: 0.6;
 }

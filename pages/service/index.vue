@@ -364,7 +364,6 @@ h2 {
   background: #f9f9ff;
 }
 .service-section-title {
-  font-family: Barlow;
   font-style: normal;
   font-weight: 600;
   font-size: 36px;

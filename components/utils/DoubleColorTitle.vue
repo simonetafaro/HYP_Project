@@ -20,18 +20,7 @@ export default {
   padding-bottom: 44px;
   display: block;
 }
-/** width: 100%;
-  padding-top: 44px;
-  padding-bottom: 44px;
-  font-family: Barlow;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 48px;
-  line-height: 58px;
-  text-align: center;
-  text-transform: uppercase;
-  display: block;
-  color: var(--cc-base1); */
+
 .title {
   font-style: normal;
   font-weight: bold;
