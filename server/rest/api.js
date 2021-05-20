@@ -31,6 +31,9 @@ async function init() {
       where: { id },
       include: {
         model: CaseStudy,
+        include: {
+          model: Area,
+        },
       },
     })
     return res.json(service)
