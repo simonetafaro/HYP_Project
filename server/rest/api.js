@@ -43,6 +43,7 @@ async function init() {
       include: {
         model: Service,
         model: TeamMember,
+        model: Area,
       },
     })
     return res.json(casestudy)
