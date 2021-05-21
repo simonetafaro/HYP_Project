@@ -164,22 +164,6 @@ export default {
         img.style.height = img.width + 'px'
       }
     )
-    //  check highest card
-    let serviceCardMaxHeight = 0
-    Array.from(document.getElementsByClassName('service_card')).forEach(
-      function (card) {
-        if (card.clientHeight > serviceCardMaxHeight)
-          serviceCardMaxHeight = card.clientHeight
-      }
-    )
-    //  set the same height to all the cards
-    Array.from(document.getElementsByClassName('service_card')).forEach(
-      function (card) {
-        if (card.clientHeight < serviceCardMaxHeight)
-          card.style.height = serviceCardMaxHeight + 'px'
-      }
-    )
-
     //  check highest title
     let serviceCardTitleMaxHeight = 0
     Array.from(document.getElementsByClassName('service_title')).forEach(
