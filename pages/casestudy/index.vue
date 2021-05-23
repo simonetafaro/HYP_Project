@@ -175,4 +175,33 @@ export default {
   padding-bottom: 60px;
   padding-top: 30px;
 }
+@media screen and (max-width: 1200px) {
+}
+@media screen and (max-width: 768px) {
+  .intro-text {
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+  }
+  .title_case {
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+  }
+  .description {
+    font-size: 12px;
+    line-height: 14px;
+    padding: 0px 50px;
+  }
+  .filter-bar {
+    display: none;
+  }
+  .casestudies-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 12px;
+  }
+  .container_description {
+    padding-bottom: 0px;
+  }
+}
 </style>

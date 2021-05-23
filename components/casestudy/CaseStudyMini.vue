@@ -2,6 +2,7 @@
   <div class="casestudy-mini">
     <div
       class="casestudycontainer"
+      v-on:click="goTo('/casestudy/' + path)"
       :style="{
         'background-image': `url(${image})`,
       }"
@@ -110,5 +111,39 @@ export default {
 .case-info {
   max-height: 68%;
   overflow: hidden;
+}
+
+@media screen and (max-width: 1200px) {
+}
+@media screen and (max-width: 768px) {
+  .casestudycontainer {
+    min-width: 146px;
+    min-height: 146px;
+    max-width: 150px;
+    max-height: 165px;
+    cursor: pointer;
+  }
+  .case-button {
+    display: none;
+  }
+  .referenceArea {
+    font-size: 10px;
+    line-height: 14px;
+    padding: 0;
+  }
+  .casestudytitle {
+    font-size: 14px;
+    line-height: 17px;
+    padding: 0;
+  }
+  .casestudycontent {
+    padding: 13px;
+  }
+  .casestudydescription {
+    display: none;
+  }
+  .case-info {
+    max-height: 83%;
+  }
 }
 </style>

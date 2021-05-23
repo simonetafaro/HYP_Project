@@ -10,15 +10,16 @@
               {{ casestudy.author }}Author's name | April 2, 2020 | 2 Comments
             </h5>
             <div class="column">
-              <div class="single-column" id="padding">
+              <div class="single-column">
                 <img :src="casestudy.banner" :alt="casestudy.title" />
                 <p class="description">
                   {{ casestudy.descriptiveText }}
                 </p>
 
-                <div class="padding">
+                <div class="partner-container">
                   <a class="partner" href="#">PARTNER WEBSITE</a>
                 </div>
+
                 <div class="padding"><h3>CHALLENGE</h3></div>
                 <h2 class="title-challenge">{{ casestudy.challengeTitle }}</h2>
 
@@ -548,6 +549,12 @@
           :path="'/casestudy/' + (casestudy.id + 1)"
         ></discover-button>
       </div>
+      <div v-if="nextCaseStudy == null" class="button">
+        <discover-button
+          :buttonLabel="'GO BACK TO FIRST CASE STUDY'"
+          :path="'/casestudy/1'"
+        ></discover-button>
+      </div>
     </section>
   </section>
 </template>
@@ -698,9 +705,7 @@ h1 {
   font-weight: normal;
   font-size: 18px;
   line-height: 32px;
-  /* or 145% */
   color: var(--c-grey1);
-
   mix-blend-mode: normal;
   opacity: 0.6;
 }
@@ -723,6 +728,9 @@ p {
   text-decoration-line: underline;
   text-transform: uppercase;
   color: var(--cc-base3);
+}
+.partner-container {
+  padding: 20px 0;
 }
 @media screen and (max-width: 600px) {
   .casestudies-grid {
@@ -833,5 +841,141 @@ p {
 }
 .button {
   padding-bottom: 80px;
+}
+@media screen and (max-width: 1200px) {
+  .area-title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .title-case {
+    font-size: 36px;
+    line-height: 43px;
+  }
+  .description {
+    font-size: 18px;
+    line-height: 22px;
+    color: #464a52;
+    padding-bottom: 0px;
+  }
+  .cases-column {
+    display: none;
+  }
+  .single-column {
+    max-width: 100%;
+    width: 100%;
+  }
+  p {
+    text-align: left;
+    margin-top: 20px;
+    width: 100%;
+  }
+  img {
+    width: 100%;
+    border-radius: 15px;
+    max-height: 380px;
+    overflow: hidden;
+  }
+  .partner {
+    font-size: 18px;
+    line-height: 22px;
+    display: inline-block;
+  }
+  .partner-container {
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+  }
+  h3 {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+  }
+  .title-challenge {
+    font-size: 28px;
+    line-height: 29px;
+    text-align: center;
+  }
+  .member-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+    margin-top: 85px;
+    margin: auto;
+  }
+  .service-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+    padding-top: 85px;
+    display: grid;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .area-title {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .title-case {
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .description {
+    font-size: 12px;
+    line-height: 12px;
+    color: #464a52;
+    padding-bottom: 0px;
+  }
+  .cases-column {
+    display: none;
+  }
+  .single-column {
+    max-width: 100%;
+    width: 100%;
+  }
+  p {
+    text-align: left;
+    margin-top: 20px;
+    width: 100%;
+  }
+  img {
+    width: 100%;
+    border-radius: 15px;
+    max-height: 180px;
+    overflow: hidden;
+  }
+  .partner {
+    font-size: 14px;
+    line-height: 17px;
+    display: inline-block;
+  }
+  .partner-container {
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+  }
+  h3 {
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+  }
+  .title-challenge {
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+  }
+  .member-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 13px;
+    margin-top: 25px;
+    margin: auto;
+  }
+  .service-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 13px;
+    padding-top: 20px;
+    display: grid;
+    margin: auto;
+  }
 }
 </style>
