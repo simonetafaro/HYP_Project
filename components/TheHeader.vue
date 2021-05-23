@@ -262,7 +262,9 @@
           </div>
         </nav>
         <div>
-          <button class="contact-button">CONTACT US</button>
+          <button class="contact-button" @click="goTo('/contact')">
+            CONTACT US
+          </button>
         </div>
       </div>
     </div>
@@ -338,7 +340,9 @@
           </nuxt-link>
         </div>
         <div class="contact-button-container">
-          <button class="contact-button">CONTACT US</button>
+          <button class="contact-button" @click="goTo('/contact')">
+            CONTACT US
+          </button>
         </div>
         <div class="menu-mobile-bottom">
           <svg
@@ -903,6 +907,11 @@ export default {
   margin-right: auto;
   margin-left: 45px;
   width: max-content;
+  cursor: pointer;
+}
+.contact-button:hover {
+  background: #63639f;
+  color: white;
 }
 
 .menu-item {
