@@ -118,7 +118,12 @@ export default {
       areas,
     }
   },
+  mixins: [GoToMixins],
   mounted() {
+    const _this = this
+    _this.$axios.get().then(() => {
+      _this.closeMobileMenu()
+    })
     if (this.$router.history.current.hash !== '') {
       setTimeout(() => {
         const elem = document.getElementById(
@@ -132,8 +137,6 @@ export default {
         })
       }, 0)
     }
-
-    const _this = this
 
     Array.from(document.querySelectorAll("[data-target='carousel']")).forEach(
       function (carousel) {
@@ -164,22 +167,6 @@ export default {
         img.style.height = img.width + 'px'
       }
     )
-    //  check highest card
-    let serviceCardMaxHeight = 0
-    Array.from(document.getElementsByClassName('service_card')).forEach(
-      function (card) {
-        if (card.clientHeight > serviceCardMaxHeight)
-          serviceCardMaxHeight = card.clientHeight
-      }
-    )
-    //  set the same height to all the cards
-    Array.from(document.getElementsByClassName('service_card')).forEach(
-      function (card) {
-        if (card.clientHeight < serviceCardMaxHeight)
-          card.style.height = serviceCardMaxHeight + 'px'
-      }
-    )
-
     //  check highest title
     let serviceCardTitleMaxHeight = 0
     Array.from(document.getElementsByClassName('service_title')).forEach(
@@ -196,7 +183,6 @@ export default {
       }
     )
   },
-  mixins: [GoToMixins],
   methods: {
     getServiceByArea(areaID) {
       return this.services.filter((service) => {

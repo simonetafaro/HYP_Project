@@ -15,8 +15,8 @@
 
       <div class="header-background">
         <svg
-          width="973"
-          height="737"
+          width="100%"
+          height="100%"
           viewBox="0 0 973 737"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -1292,8 +1292,9 @@ export default {
 .header-background {
   text-align: end;
   position: absolute;
-  bottom: -65px;
+  bottom: -3.5%;
   right: -65px;
+  width: 50%;
 }
 .services-container {
   padding-top: 151px;
