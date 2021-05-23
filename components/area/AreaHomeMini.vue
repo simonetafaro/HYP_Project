@@ -5,13 +5,13 @@
       'area-home-mini reverse-view': !isEven(index),
     }"
   >
-    <div class="area-description-column">
-      <div class="area-description-text">{{ summary }}</div>
-      <button class="more_button">learn more</button>
-    </div>
     <div class="area-image-column">
       <img class="service_img" src="https://i.ibb.co/pZ83v4z/iot-main.png" />
       <div class="area-title-text">{{ title }}</div>
+    </div>
+    <div class="area-description-column">
+      <div class="area-description-text">{{ summary }}</div>
+      <button class="more_button">learn more</button>
     </div>
   </div>
 </template>
@@ -119,5 +119,55 @@ export default {
 .more_button:active {
   background: #4d41c9;
   box-shadow: inset 0px 4px 6px rgba(66, 66, 114, 0.16);
+}
+
+@media screen and (max-width: 1200px) {
+  .area-home-mini {
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+  .area-image-column {
+    margin-bottom: 0px;
+    max-width: 50%;
+  }
+  .reverse-view {
+    flex-direction: unset;
+  }
+  .area-description-column {
+    margin-left: 25px;
+  }
+  .area-description-text {
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 18px;
+  }
+
+  .area-title-text {
+    font-size: 18px;
+    line-height: 32px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .area-home-mini {
+    display: block;
+    margin-bottom: 0px;
+    margin-top: 14px;
+  }
+  .reverse-view {
+    flex-direction: unset;
+  }
+  .area-image-column {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 26px;
+  }
+  .area-description-column {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 26px;
+    max-width: 100%;
+    text-align: center;
+  }
 }
 </style>

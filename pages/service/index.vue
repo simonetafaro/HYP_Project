@@ -118,7 +118,12 @@ export default {
       areas,
     }
   },
+  mixins: [GoToMixins],
   mounted() {
+    const _this = this
+    _this.$axios.get().then(() => {
+      _this.closeMobileMenu()
+    })
     if (this.$router.history.current.hash !== '') {
       setTimeout(() => {
         const elem = document.getElementById(
@@ -132,8 +137,6 @@ export default {
         })
       }, 0)
     }
-
-    const _this = this
 
     Array.from(document.querySelectorAll("[data-target='carousel']")).forEach(
       function (carousel) {
@@ -180,7 +183,6 @@ export default {
       }
     )
   },
-  mixins: [GoToMixins],
   methods: {
     getServiceByArea(areaID) {
       return this.services.filter((service) => {

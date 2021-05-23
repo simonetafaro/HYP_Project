@@ -27,4 +27,26 @@ export default {}
   padding-top: 149px;
   padding-bottom: 141px;
 }
+
+@media screen and (max-width: 1200px) {
+  .full-width-row {
+    padding-top: 55px;
+    padding-bottom: 33px;
+  }
+  svg {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .full-width-row {
+    padding-top: 93px;
+    padding-bottom: 0px;
+  }
+  svg {
+    width: 30px;
+    height: 30px;
+  }
+}
 </style>
