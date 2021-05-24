@@ -1,6 +1,12 @@
 <template>
   <div class="service_mini">
-    <div class="service_card">
+    <div
+      :class="
+        serviceIndex % 2 === 0
+          ? 'service-right service_card'
+          : 'service-left service_card'
+      "
+    >
       <div class="service_title">{{ title }}</div>
       <div class="service_img_container">
         <img class="service_img" :src="image" />
@@ -20,6 +26,7 @@ export default {
     title: { type: String, default: () => '' },
     image: { type: String, default: () => '' },
     path: { type: Number, default: () => 0 },
+    serviceIndex: { type: Number, default: () => 0 },
   },
   mixins: [GoToMixins],
 }
@@ -42,6 +49,7 @@ export default {
   text-transform: uppercase;
   color: var(--cc-base2);
 }
+
 .service_img_container {
   margin: 35px 50px 35px 50px;
 }
@@ -54,5 +62,56 @@ export default {
   border-radius: 30px;
   width: 100%;
   object-fit: cover;
+}
+
+@media screen and (max-width: 1200px) {
+  .service_card {
+    width: 90%;
+    max-width: 350px;
+    border-radius: 25px;
+    margin: auto;
+  }
+  .service-left {
+    margin-right: 0;
+  }
+  .service-right {
+    margin-left: 0;
+  }
+  .service_title {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .more_button {
+    display: none;
+  }
+  .service_img {
+    border-radius: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .service_card {
+    width: 100%;
+    padding-top: 10px;
+  }
+  .service-left {
+    margin-right: 0;
+  }
+  .service-right {
+    margin-left: 0;
+  }
+  .service_title {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .more_button {
+    display: none;
+  }
+  .service_img_container {
+    margin: 10px 30px 0px 30px;
+  }
+  .service_img {
+    border-radius: 10px;
+  }
 }
 </style>

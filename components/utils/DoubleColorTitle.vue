@@ -34,4 +34,20 @@ export default {
 .title-color {
   color: var(--cc-red);
 }
+@media screen and (max-width: 1200px) {
+  .title {
+    font-size: 36px;
+    line-height: 43px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .full-width-row {
+    padding-top: 27px;
+    padding-bottom: 27px;
+  }
+  .title {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
 </style>
