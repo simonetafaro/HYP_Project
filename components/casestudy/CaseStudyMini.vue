@@ -40,7 +40,7 @@ export default {
 <style scoped>
 .casestudycontainer {
   position: relative;
-  border: 1px solid #979797; /* manca il colore nella palette*/
+  border: 2px solid #cdc9ff; /* manca il colore nella palette*/
   border-radius: 30px;
   width: 100%;
   min-height: 350px;
@@ -114,6 +114,9 @@ export default {
 @media screen and (max-width: 1200px) {
   .case-button {
     display: none;
+  }
+  .case-info {
+    max-height: 80%;
   }
 }
 @media screen and (max-width: 768px) {
