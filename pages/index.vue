@@ -848,9 +848,8 @@
           @click="goTo(`/area/${area.id}`)"
         >
           <area-home-mini
-            :title="area.title"
             :summary="area.subTitle"
-            :image="area.banner"
+            :image="area.evocativeImage"
             :index="areaIndex + 1"
           ></area-home-mini>
           <div class="show-only-tablet-mobile">

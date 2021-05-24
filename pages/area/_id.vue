@@ -1432,6 +1432,7 @@ export default {
     );
     padding-left: 59px;
     margin-right: 0px;
+    height: 750px;
   }
   .services-container {
     padding-top: 0;

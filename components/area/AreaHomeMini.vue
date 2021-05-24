@@ -6,8 +6,7 @@
     }"
   >
     <div class="area-image-column">
-      <img class="service_img" src="https://i.ibb.co/pZ83v4z/iot-main.png" />
-      <div class="area-title-text">{{ title }}</div>
+      <img class="service_img" :src="image" />
     </div>
     <div class="area-description-column">
       <div class="area-description-text">{{ summary }}</div>
@@ -19,7 +18,6 @@
 <script>
 export default {
   props: {
-    title: { type: String, default: () => '' },
     image: {
       type: String,
       default: () => '',
