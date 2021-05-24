@@ -528,7 +528,7 @@
 
       <div class="service-box">
         <section class="service-grid">
-          <h4 v-if="relServices === 0">There are no related Services</h4>
+          <h4 v-if="casestudy.services === 0">There are no related Services</h4>
           <div
             v-for="(service, serviceIndex) of casestudy.services"
             :key="'service-' + serviceIndex"
