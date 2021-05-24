@@ -20,18 +20,7 @@ export default {
   padding-bottom: 44px;
   display: block;
 }
-/** width: 100%;
-  padding-top: 44px;
-  padding-bottom: 44px;
-  font-family: Barlow;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 48px;
-  line-height: 58px;
-  text-align: center;
-  text-transform: uppercase;
-  display: block;
-  color: var(--cc-base1); */
+
 .title {
   font-style: normal;
   font-weight: bold;
@@ -44,5 +33,21 @@ export default {
 
 .title-color {
   color: var(--cc-red);
+}
+@media screen and (max-width: 1200px) {
+  .title {
+    font-size: 36px;
+    line-height: 43px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .full-width-row {
+    padding-top: 27px;
+    padding-bottom: 27px;
+  }
+  .title {
+    font-size: 18px;
+    line-height: 22px;
+  }
 }
 </style>

@@ -30,7 +30,8 @@
           class="button-wrapper-prev"
         >
           <svg
-            class="carousel-arrow"
+            :id="'carousel-arrow-prev-' + area.id"
+            class="carousel-arrow disabled-arrow"
             @click="scrollLeft(area.id)"
             width="48"
             height="49"
@@ -73,6 +74,7 @@
           class="button-wrapper-next"
         >
           <svg
+            :id="'carousel-arrow-next-' + area.id"
             class="carousel-arrow"
             @click="scrollRight(area.id)"
             width="48"
@@ -116,7 +118,12 @@ export default {
       areas,
     }
   },
+  mixins: [GoToMixins],
   mounted() {
+    const _this = this
+    _this.$axios.get().then(() => {
+      _this.closeMobileMenu()
+    })
     if (this.$router.history.current.hash !== '') {
       setTimeout(() => {
         const elem = document.getElementById(
@@ -130,8 +137,6 @@ export default {
         })
       }, 0)
     }
-
-    const _this = this
 
     Array.from(document.querySelectorAll("[data-target='carousel']")).forEach(
       function (carousel) {
@@ -162,22 +167,6 @@ export default {
         img.style.height = img.width + 'px'
       }
     )
-    //  check highest card
-    let serviceCardMaxHeight = 0
-    Array.from(document.getElementsByClassName('service_card')).forEach(
-      function (card) {
-        if (card.clientHeight > serviceCardMaxHeight)
-          serviceCardMaxHeight = card.clientHeight
-      }
-    )
-    //  set the same height to all the cards
-    Array.from(document.getElementsByClassName('service_card')).forEach(
-      function (card) {
-        if (card.clientHeight < serviceCardMaxHeight)
-          card.style.height = serviceCardMaxHeight + 'px'
-      }
-    )
-
     //  check highest title
     let serviceCardTitleMaxHeight = 0
     Array.from(document.getElementsByClassName('service_title')).forEach(
@@ -194,7 +183,6 @@ export default {
       }
     )
   },
-  mixins: [GoToMixins],
   methods: {
     getServiceByArea(areaID) {
       return this.services.filter((service) => {
@@ -208,14 +196,43 @@ export default {
       this.carouselList.forEach((carousel) => {
         if (carousel.areaID.localeCompare(areaID) === 0) {
           if (carousel.offset > carousel.maxX) {
+            // if is the first scroll activate left arrow
+            if (carousel.offset === 0) {
+              document
+                .getElementById('carousel-arrow-prev-' + areaID)
+                .classList.remove('disabled-arrow')
+            }
             carousel.offset -= carousel.carouselWidth + carousel.cardMarginRight
             document.getElementById(areaID).style.transform = `translateX(${
               carousel.offset / 3
             }px)`
           }
+
+          // check if we are at the end of carousel
+          if (
+            carousel.offset <= carousel.maxX &&
+            !document
+              .getElementById('carousel-arrow-next-' + areaID)
+              .classList.contains('disabled-arrow')
+          ) {
+            document
+              .getElementById('carousel-arrow-next-' + areaID)
+              .classList.add('disabled-arrow')
+
+            document
+              .getElementById('carousel-arrow-prev-' + areaID)
+              .firstChild.classList.add('arrow-pulsation')
+
+            setTimeout(() => {
+              document
+                .getElementById('carousel-arrow-prev-' + areaID)
+                .firstChild.classList.remove('arrow-pulsation')
+            }, 3000)
+          }
         }
       })
     },
+
     scrollLeft(areaID) {
       this.carouselList.forEach((carousel) => {
         if (carousel.areaID.localeCompare(areaID) === 0) {
@@ -224,6 +241,37 @@ export default {
             document.getElementById(areaID).style.transform = `translateX(${
               carousel.offset / 3
             }px)`
+            if (
+              document
+                .getElementById('carousel-arrow-next-' + areaID)
+                .classList.contains('disabled-arrow')
+            ) {
+              // reset opacity to one
+              document
+                .getElementById('carousel-arrow-next-' + areaID)
+                .classList.remove('disabled-arrow')
+            }
+          }
+          // if we are back at beginning
+          if (
+            carousel.offset === 0 &&
+            !document
+              .getElementById('carousel-arrow-prev-' + areaID)
+              .classList.contains('disabled-arrow')
+          ) {
+            document
+              .getElementById('carousel-arrow-prev-' + areaID)
+              .classList.add('disabled-arrow')
+
+            document
+              .getElementById('carousel-arrow-next-' + areaID)
+              .firstChild.classList.add('arrow-pulsation')
+
+            setTimeout(() => {
+              document
+                .getElementById('carousel-arrow-next-' + areaID)
+                .firstChild.classList.remove('arrow-pulsation')
+            }, 3000)
           }
         }
       })
@@ -238,7 +286,7 @@ export default {
   font-weight: bold;
   font-size: 20px;
   line-height: 24px;
-  color: #464a52;
+  color: var(--c-grey1);
   margin-bottom: 54px;
 }
 
@@ -248,7 +296,7 @@ export default {
   font-size: 70px;
   line-height: 84px;
   text-align: center;
-  color: #424272;
+  color: var(--cc-base1);
   margin-bottom: 70px;
 }
 .service-l2-light {
@@ -266,6 +314,11 @@ export default {
 }
 .carousel-arrow {
   cursor: pointer;
+  overflow: visible;
+}
+
+.disabled-arrow {
+  opacity: 0.5;
 }
 .container {
   min-width: 100%;
@@ -297,7 +350,6 @@ h2 {
   background: #f9f9ff;
 }
 .service-section-title {
-  font-family: Barlow;
   font-style: normal;
   font-weight: 600;
   font-size: 36px;
@@ -349,5 +401,56 @@ h2 {
   display: flex;
   align-items: center;
   margin: auto;
+}
+.arrow-pulsation {
+  animation: pulse-me 2s linear;
+}
+
+@keyframes pulse-me {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  10% {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+  20% {
+    transform: scale(1.2);
+    opacity: 0.6;
+  }
+  30% {
+    transform: scale(1.3);
+    opacity: 0.4;
+  }
+
+  40% {
+    transform: scale(1.2);
+    opacity: 0.6;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+  60% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  70% {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+  80% {
+    transform: scale(1.2);
+    opacity: 0.6;
+  }
+  90% {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 </style>

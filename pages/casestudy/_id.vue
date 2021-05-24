@@ -4,67 +4,85 @@
       <div class="inner_caseMini">
         <section class="case-container">
           <header>
-            <h4 class="area-title">Area{{ casestudy.area }}</h4>
+            <h4 class="area-title">{{ casestudy.area.title }}</h4>
             <h1 class="title-case">{{ casestudy.title }}</h1>
             <h5 class="description">
               {{ casestudy.author }}Author's name | April 2, 2020 | 2 Comments
             </h5>
-            <br />
             <div class="column">
               <div class="single-column">
                 <img :src="casestudy.banner" :alt="casestudy.title" />
                 <p class="description">
                   {{ casestudy.descriptiveText }}
                 </p>
-                <br />
-                <a class="partner" href="#">PARTNER WEBSITE</a>
-                <br /><br /><br /><br />
-                <h3>CHALLENGE</h3>
-                <br />
+
+                <div class="partner-container">
+                  <a class="partner" href="#">PARTNER WEBSITE</a>
+                </div>
+
+                <div class="padding"><h3>CHALLENGE</h3></div>
                 <h2 class="title-challenge">{{ casestudy.challengeTitle }}</h2>
 
-                <div class="challenge-box">
-                  <div class="challenge-container">
-                    <p class="description">
-                      {{ casestudy.challengeDescription }}
-                    </p>
+                <div class="padding">
+                  <div class="challenge-box">
+                    <div class="challenge-container">
+                      <p class="description">
+                        {{ casestudy.challengeDescription }}
+                      </p>
+                    </div>
                   </div>
                 </div>
-                <br /><br /><br />
-                <h3>SOLUTION</h3>
-                <br />
+                <div class="padding"><h3>SOLUTION</h3></div>
                 <h2 class="title-challenge">{{ casestudy.solutionTitle }}</h2>
-                <p class="description">{{ casestudy.solutionDescription }}</p>
+                <div class="padding">
+                  <p class="description">
+                    {{ casestudy.solutionDescription }}
+                  </p>
+                </div>
+                <div v-if="nextCaseStudy != null" class="button">
+                  <discover-button
+                    :buttonLabel="'NEXT CASE STUDY'"
+                    :path="'/casestudy/' + (casestudy.id + 1)"
+                  ></discover-button>
+                </div>
+                <div v-if="nextCaseStudy == null" class="button">
+                  <discover-button
+                    :buttonLabel="'GO BACK TO FIRST CASE STUDY'"
+                    :path="'/casestudy/1'"
+                  ></discover-button>
+                </div>
               </div>
               <div class="cases-column">
-                <h3>Other Case Studies</h3>
-                <br />
-                <div
-                  v-for="(casestudy, caseStudyIndex) of relCases"
-                  :key="'casestudy-' + caseStudyIndex"
-                  class="case-component"
-                  @click="goTo(`/casestudy/${casestudy.id}`)"
-                >
-                  <div>
-                    <img
-                      :src="casestudy.banner"
-                      class="related-case-study-image"
-                    />
+                <h3 class="partner-container">Other Case Studies</h3>
+                <div class="relatedCases-grid">
+                  <div
+                    v-for="(casestudy, caseStudyIndex) of relCases"
+                    :key="'casestudy-' + caseStudyIndex"
+                    class="case-component"
+                    @click="goTo(`/casestudy/${casestudy.id}`)"
+                  >
+                    <div class="related-image">
+                      <img
+                        :src="casestudy.banner"
+                        class="related-case-study-image"
+                      />
+                    </div>
+                    <div class="related-case-study-info">
+                      <h4 class="related-case-study-title">
+                        {{ casestudy.title }}
+                      </h4>
+                      <div class="description-container">
+                        <h4 class="related-case-study-description">
+                          {{ casestudy.descriptiveText }}
+                        </h4>
+                      </div>
+                      <h5 class="related-case-study-date">April 2, 2020</h5>
+                    </div>
                   </div>
-                  <div class="related-case-study-info">
-                    <h4 class="related-case-study-title">
-                      {{ casestudy.title }}
-                    </h4>
-                    <h5 class="related-case-study-date">April 2, 2020</h5>
-                  </div>
-                  <br />
                 </div>
               </div>
             </div>
-
-            <br />
           </header>
-          <br /><br /><br />
         </section>
       </div>
       <div class="svg-bottom">
@@ -525,14 +543,16 @@
       </div>
       <space-divider />
 
-      <h3 class="pre-section">YOU MAY BE INTERESTED IN</h3>
-      <h3 class="pre-section">OUR RELATED SERVICES</h3>
+      <div class="partner-container">
+        <h3 class="pre-section">YOU MAY BE INTERESTED IN</h3>
+        <h3 class="pre-section">OUR RELATED SERVICES</h3>
+      </div>
 
       <div class="service-box">
         <section class="service-grid">
-          <h4 v-if="relServices === 0">There are no related Services</h4>
+          <h4 v-if="casestudy.services === 0">There are no related Services</h4>
           <div
-            v-for="(service, serviceIndex) of relServices"
+            v-for="(service, serviceIndex) of casestudy.services"
             :key="'service-' + serviceIndex"
             class="service"
           >
@@ -544,10 +564,16 @@
           </div>
         </section>
       </div>
-      <div class="button">
+      <div v-if="nextCaseStudy != null" class="button1">
         <discover-button
           :buttonLabel="'NEXT CASE STUDY'"
           :path="'/casestudy/' + (casestudy.id + 1)"
+        ></discover-button>
+      </div>
+      <div v-if="nextCaseStudy == null" class="button1">
+        <discover-button
+          :buttonLabel="'GO BACK TO FIRST CASE STUDY'"
+          :path="'/casestudy/1'"
         ></discover-button>
       </div>
     </section>
@@ -573,19 +599,20 @@ export default {
       `${process.env.BASE_URL}/api/casestudy/${id}`
     )
     const casestudy = data
-    let relServices = await $axios.get(
-      `${process.env.BASE_URL}/api/casestudyservices/${id}`
-    )
-    relServices = relServices.data
     let relCases = await $axios.get(
       `${process.env.BASE_URL}/api/relatedCaseStudies/${data.areaID}/${id}`
     )
 
+    let nextCaseStudy = await $axios.get(
+      `${process.env.BASE_URL}/api/casestudy/${casestudy.id + 1}`
+    )
+    nextCaseStudy = nextCaseStudy.data
     relCases = relCases.data
+
     return {
       casestudy,
-      relServices,
       relCases,
+      nextCaseStudy,
     }
   },
   mounted() {
@@ -595,21 +622,7 @@ export default {
         img.style.height = img.width + 'px'
       }
     )
-    //  check highest card
-    let serviceCardMaxHeight = 0
-    Array.from(document.getElementsByClassName('service_card')).forEach(
-      function (card) {
-        if (card.clientHeight > serviceCardMaxHeight)
-          serviceCardMaxHeight = card.clientHeight
-      }
-    )
-    //  set the same height to all the cards
-    Array.from(document.getElementsByClassName('service_card')).forEach(
-      function (card) {
-        if (card.clientHeight < serviceCardMaxHeight)
-          card.style.height = serviceCardMaxHeight + 'px'
-      }
-    )
+
     //  check highest title
     let serviceCardTitleMaxHeight = 0
     Array.from(document.getElementsByClassName('service_title')).forEach(
@@ -646,8 +659,7 @@ h1 {
   line-height: 24px;
   /* identical to box height */
   text-transform: uppercase;
-
-  color: #424272;
+  color: var(--cc-base1);
 }
 .casestudy {
   cursor: pointer;
@@ -695,16 +707,14 @@ h1 {
   font-weight: normal;
   font-size: 18px;
   line-height: 32px;
-  /* or 145% */
-
-  color: #464a52;
-
+  color: var(--c-grey1);
   mix-blend-mode: normal;
   opacity: 0.6;
 }
 img {
   align-content: left;
   width: 90%;
+  object-fit: cover;
 }
 p {
   text-align: left;
@@ -718,17 +728,15 @@ p {
   font-size: 20px;
   line-height: 24px;
   /* identical to box height */
-
   text-decoration-line: underline;
   text-transform: uppercase;
-
-  color: #cdc9ff;
+  color: var(--cc-base3);
 }
-@media screen and (max-width: 600px) {
-  .casestudies-grid {
-    display: block;
-    margin: 40px 20px;
-  }
+.partner-container {
+  padding: 20px 0;
+}
+.padding {
+  padding: 30px 0;
 }
 .member-grid {
   display: grid;
@@ -780,14 +788,14 @@ p {
   font-weight: bold;
   font-size: 36px;
   line-height: 43px;
-  color: #63639f;
+  color: var(--cc-base2);
 }
 .title-case {
   font-style: normal;
   font-weight: bold;
   font-size: 50px;
   line-height: 60px;
-  color: #424272;
+  color: var(--cc-base1);
 }
 .area-title {
   font-style: normal;
@@ -795,7 +803,7 @@ p {
   font-size: 20px;
   line-height: 24px;
   text-transform: uppercase;
-  color: #424272;
+  color: var(--cc-base1);
 }
 
 .related-case-study-info {
@@ -822,12 +830,220 @@ p {
   line-height: 19px;
   color: var(--cc-base1);
   mix-blend-mode: normal;
+
   opacity: 0.6;
+}
+.related-case-study-description {
+  padding: 0 30px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+
+  color: #464a52;
+}
+.description-container {
+  display: none;
 }
 .service-box {
   margin: auto;
+  padding-bottom: 60px;
 }
 .button {
   padding-bottom: 80px;
+  display: none;
+}
+.button1 {
+  padding-bottom: 80px;
+}
+@media screen and (max-width: 1200px) {
+  .area-title {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: left;
+  }
+  .title-case {
+    font-size: 36px;
+    line-height: 43px;
+  }
+  .description {
+    font-size: 18px;
+    line-height: 22px;
+    color: #464a52;
+    padding-bottom: 0px;
+  }
+  .column {
+    display: block;
+  }
+  .cases-column {
+    max-width: 100%;
+  }
+  .relatedCases-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+    margin-top: 85px;
+    margin: auto;
+  }
+  .related-case-study-date {
+    padding-top: 18px;
+  }
+  .case-component {
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .related-case-study-info {
+    margin: auto;
+    text-align: center;
+  }
+  .single-column {
+    max-width: 100%;
+    width: 100%;
+  }
+  p {
+    text-align: left;
+    margin-top: 20px;
+    width: 100%;
+  }
+  img {
+    width: 100%;
+    border-radius: 15px;
+    max-height: 380px;
+    overflow: hidden;
+  }
+  .partner {
+    font-size: 18px;
+    line-height: 22px;
+    display: inline-block;
+  }
+  .partner-container {
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+  }
+  .related-image {
+    padding: 20px 0;
+  }
+  .description-container {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+  h4 {
+    text-align: center;
+  }
+  h3 {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+  }
+  .title-challenge {
+    font-size: 28px;
+    line-height: 29px;
+    text-align: center;
+  }
+  .member-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+    margin-top: 85px;
+    margin: auto;
+  }
+  .service-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+    padding-top: 85px;
+    display: grid;
+    margin: auto;
+  }
+  .pre-section {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .button {
+    padding-bottom: 80px;
+    display: block;
+    text-align: center;
+  }
+  .button1 {
+    padding-bottom: 80px;
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .area-title {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .title-case {
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .description {
+    font-size: 12px;
+    line-height: 12px;
+    color: #464a52;
+    padding-bottom: 0px;
+  }
+  .cases-column {
+    display: none;
+  }
+  .single-column {
+    max-width: 100%;
+    width: 100%;
+  }
+  p {
+    text-align: left;
+    margin-top: 20px;
+    width: 100%;
+  }
+  img {
+    width: 100%;
+    border-radius: 15px;
+    max-height: 180px;
+    overflow: hidden;
+  }
+  .partner {
+    font-size: 14px;
+    line-height: 17px;
+    display: inline-block;
+  }
+  .partner-container {
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+  }
+  h3 {
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+  }
+  .title-challenge {
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+  }
+  .member-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 13px;
+    margin-top: 25px;
+    margin: auto;
+  }
+  .service-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 13px;
+    padding-top: 20px;
+    display: grid;
+    margin: auto;
+  }
+  .pre-section {
+    font-size: 12px;
+    line-height: 14px;
+  }
 }
 </style>

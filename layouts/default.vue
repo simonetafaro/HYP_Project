@@ -21,7 +21,7 @@ export default {
 <style>
 html {
   /**font-family: 'Roboto', sans-serif;*/
-  font-family: 'Barlow';
+  font-family: 'Barlow', sans-serif;
   box-sizing: border-box;
 }
 

@@ -382,16 +382,14 @@ h2 {
   text-align: left;
   font-size: 25px;
   text-transform: uppercase;
-  font-family: Barlow;
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
   line-height: 24px;
-
-  /* identical to box height */
+  margin-top: 60px;
+  text-align: center;
   text-transform: uppercase;
-
-  color: #424272;
+  color: var(--cc-base1);
 }
 
 .description {
@@ -407,7 +405,14 @@ h2 {
   /* or 160% */
 
   color: #464a52;
-
+}
+h4 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  color: var();
   mix-blend-mode: normal;
   opacity: 0.6;
 }
@@ -465,10 +470,10 @@ h2 {
   line-height: 24px;
   text-transform: uppercase;
 
-  color: #4d41c9;
+  color: var(--cc-base1);
 }
 .active-filter {
-  color: #424272;
+  color: var(--cc-red);
 }
 
 .header-image {

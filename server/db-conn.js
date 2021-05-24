@@ -1077,7 +1077,7 @@ async function insertRealData() {
 
   //**BIG DATA ANALYSIS CASE STUDIES */
   const bdaC1 = await CaseStudy.create({
-    title: 'BI IMPLEMENTATION FOR 200 HEALTHCARE CENTERS',
+    title: 'BI implementation for 200 healthcare centers',
     subTitle:
       'The Customer is an American company that offers software to help 200 healthcare centers and retirement homes to process data related to patients and medication as well as build various types of reports.',
     banner:
