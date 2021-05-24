@@ -151,6 +151,21 @@ function defineDBStructure() {
       timestamps: false,
     }
   )
+  const Partner = db.define(
+    'partner',
+    {
+      name: DataTypes.STRING,
+      description: DataTypes.TEXT,
+      image: {
+        type: DataTypes.STRING,
+        allowNull: true,
+      },
+      website: DataTypes.STRING,
+    },
+    {
+      timestamps: false,
+    }
+  )
 
   const ServiceCaseStudy = db.define('servicecasestudy')
 
@@ -175,11 +190,12 @@ function defineDBStructure() {
     TeamMember,
     ServiceCaseStudy,
     PersonCaseStudy,
+    Partner,
   }
 }
 
 async function insertRealData() {
-  const { Service, CaseStudy, Area, TeamMember } = db._tables
+  const { Service, CaseStudy, Area, TeamMember, Partner } = db._tables
 
   //** ------------------------------------------------------------ AREAS --------------------------------------------------------------- */
 
@@ -417,18 +433,26 @@ async function insertRealData() {
       'https://kritikalsolutions.com/wp-content/uploads/2019/10/smart-cities-banner.jpg',
     evocativePhoto: '',
     serviceTitle: '',
-    serviceDescription: 'Our services have been developed to ensure that wireless technology used in smart city strategies complies with established interoperability, cyber security, data privacy, operational safety, and performance reliability standards. We provide you the expertise you need in supplying, planning, building, and sustaining a connected and effective smart city. We serve you with comprehensive smart city services from a single source to save you time and money.',
+    serviceDescription:
+      'Our services have been developed to ensure that wireless technology used in smart city strategies complies with established interoperability, cyber security, data privacy, operational safety, and performance reliability standards. We provide you the expertise you need in supplying, planning, building, and sustaining a connected and effective smart city. We serve you with comprehensive smart city services from a single source to save you time and money.',
     s1Name: 'Road Traffic',
-    s1Description: 'Our smart traffic systems take intelligent actions based on the careful “study” of traffic flow, bringing human intervention down to a minimum.',
-    s1Logo: 'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
+    s1Description:
+      'Our smart traffic systems take intelligent actions based on the careful “study” of traffic flow, bringing human intervention down to a minimum.',
+    s1Logo:
+      'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
     s2Name: 'Lighting',
-    s2Description: 'Connecting sensors, across the street lighting system, helps to consume less energy and bringing down energy costs.',
-    s2Logo: 'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
+    s2Description:
+      'Connecting sensors, across the street lighting system, helps to consume less energy and bringing down energy costs.',
+    s2Logo:
+      'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
     s3Name: 'Safety',
-    s3Description: 'For enhancing public safety, we connect cameras, microphones and movement sensors to a smart city platform and power it with robust analytics tools.',
-    s3Logo: 'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
+    s3Description:
+      'For enhancing public safety, we connect cameras, microphones and movement sensors to a smart city platform and power it with robust analytics tools.',
+    s3Logo:
+      'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
     partnerTitle: '',
-    partnerDescription: 'Since user apps are an integral part of a smart city, we offer mobile consulting, UI/UX design, native (iOS, Android) and cross-platform (Cordova/PhoneGap, Xamarin, React Native) development, as well as mobile testing.',
+    partnerDescription:
+      'Since user apps are an integral part of a smart city, we offer mobile consulting, UI/UX design, native (iOS, Android) and cross-platform (Cordova/PhoneGap, Xamarin, React Native) development, as well as mobile testing.',
     p1Name: 'Flutter',
     p1Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
     p2Name: 'Salesforce',
@@ -450,18 +474,24 @@ async function insertRealData() {
       'https://statetechmagazine.com/sites/statetechmagazine.com/files/styles/cdw_hero/public/articles/StateTech/201710/ST_Smart_Street_Lights_GettyImages-173553089.jpg?itok=rktclHwy',
     evocativePhoto: '',
     serviceTitle: '',
-    serviceDescription: 'Organizations and government agencies across the world are facing increased pressure to find ways to become more energy efficient while reducing costs. Outdoor lighting is a great place to start as public and commercial lighting infrastructure is expensive and one of the greatest contributors to energy waste. The Internet of Things (IoT) makes it easy for public and private organizations to conserve more energy with smart lighting systems.',
+    serviceDescription:
+      'Organizations and government agencies across the world are facing increased pressure to find ways to become more energy efficient while reducing costs. Outdoor lighting is a great place to start as public and commercial lighting infrastructure is expensive and one of the greatest contributors to energy waste. The Internet of Things (IoT) makes it easy for public and private organizations to conserve more energy with smart lighting systems.',
     partnerTitle: '',
     partnerDescription: '',
     s1Name: 'Reduce energy costs',
-    s1Description: 'With connected lighting, your organization can monitor usage and provide lighting as needed in different areas based on their unique needs.',
-    s1Logo: 'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
+    s1Description:
+      'With connected lighting, your organization can monitor usage and provide lighting as needed in different areas based on their unique needs.',
+    s1Logo:
+      'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
     s2Name: 'Make your city a safer place',
-    s2Description: 'Smart lighting provides a greater sense of security and overall better experience for citizens as it helps cities enhance public safety',
-    s2Logo: 'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
+    s2Description:
+      'Smart lighting provides a greater sense of security and overall better experience for citizens as it helps cities enhance public safety',
+    s2Logo:
+      'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
     s3Name: '..........',
     s3Description: '............',
-    s3Logo: 'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
+    s3Logo:
+      'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
     p1Name: '......',
     p1Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
     p2Name: '..........',
@@ -483,18 +513,24 @@ async function insertRealData() {
       'https://www.consorziosicurezza.com/wp-content/uploads/2018/10/smart-car-resized.jpg',
     evocativePhoto: '',
     serviceTitle: '',
-    serviceDescription: 'The potential for connected vehicles during the interim, however, is an exciting, multi-faceted and high-growth area in the IoT’s development – enabling enhanced road safety, smart traffic management, advanced navigation assistance, passenger entertainment and much more.',
+    serviceDescription:
+      'The potential for connected vehicles during the interim, however, is an exciting, multi-faceted and high-growth area in the IoT’s development – enabling enhanced road safety, smart traffic management, advanced navigation assistance, passenger entertainment and much more.',
     partnerTitle: '',
     partnerDescription: '',
     s1Name: 'Automotive-grade M2M technology',
-    s1Description: 'A new lifestyles offering a suite of advanced features including mobile Wi-Fi hotspot, Internet radio, Web services and an improved navigation system.',
-    s1Logo: 'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
+    s1Description:
+      'A new lifestyles offering a suite of advanced features including mobile Wi-Fi hotspot, Internet radio, Web services and an improved navigation system.',
+    s1Logo:
+      'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
     s2Name: 'Thales Automotive Connectivity',
-    s2Description: 'Automotive-grade eSIMs leadership position, to identify vehicles, encrypt and secure communications. eSIMs also ensure remote connectivity provisioning as well as seamless connectivity.',
-    s2Logo: 'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
+    s2Description:
+      'Automotive-grade eSIMs leadership position, to identify vehicles, encrypt and secure communications. eSIMs also ensure remote connectivity provisioning as well as seamless connectivity.',
+    s2Logo:
+      'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
     s3Name: '-....',
     s3Description: '.....',
-    s3Logo: 'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
+    s3Logo:
+      'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
     p1Name: '........',
     p1Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
     p2Name: '......',
@@ -516,24 +552,34 @@ async function insertRealData() {
       'https://www.zerynth.com/wp-content/uploads/2020/02/smart-retail.jpg',
     evocativePhoto: '',
     serviceTitle: '',
-    serviceDescription: 'Retail was among the first industries to adopt IoT. According to a research, in the coming years, retailers will further increase their spend on IoT, which is expected to reach $2.5 billion. Below, we list the trends that will drive a new, consumer-centric retail model enabled by IoT technology.',
+    serviceDescription:
+      'Retail was among the first industries to adopt IoT. According to a research, in the coming years, retailers will further increase their spend on IoT, which is expected to reach $2.5 billion. Below, we list the trends that will drive a new, consumer-centric retail model enabled by IoT technology.',
     partnerTitle: '',
-    partnerDescription: 'No challenge is out of reach. We extend our industry expertise and comprehensive IoT services through a vast global network of market leaders and innovators.',
+    partnerDescription:
+      'No challenge is out of reach. We extend our industry expertise and comprehensive IoT services through a vast global network of market leaders and innovators.',
     s1Name: 'Automation',
-    s1Description: 'Smart price tags will adjust prices in real time, based on the item’s popularity, expiry date, and other factors. ',
-    s1Logo: 'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
+    s1Description:
+      'Smart price tags will adjust prices in real time, based on the item’s popularity, expiry date, and other factors. ',
+    s1Logo:
+      'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
     s2Name: 'Agile workforce',
-    s2Description: 'With the advancement of technologies, courses and webinars are already accessible for anyone, anytime, and from any device.',
-    s2Logo: 'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
+    s2Description:
+      'With the advancement of technologies, courses and webinars are already accessible for anyone, anytime, and from any device.',
+    s2Logo:
+      'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
     s3Name: 'Connectivity platforms',
-    s2Description: 'In the retail industry, connectivity platforms may take multiple forms: from large marketplaces, such as Amazon and Alibaba, to online payment systems and device communication hubs.',
-    s3Logo: 'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
+    s2Description:
+      'In the retail industry, connectivity platforms may take multiple forms: from large marketplaces, such as Amazon and Alibaba, to online payment systems and device communication hubs.',
+    s3Logo:
+      'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
     p1Name: 'Amazon Web Services',
     p1Logo: 'https://www.channelfutures.com/files/2015/05/aws_0.jpg',
     p2Name: 'Arduino',
-    p2Logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/ArduinoLogo_%C2%AE.svg/1200px-ArduinoLogo_%C2%AE.svg.png',
+    p2Logo:
+      'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/ArduinoLogo_%C2%AE.svg/1200px-ArduinoLogo_%C2%AE.svg.png',
     p3Name: 'Arm Intel',
-    p3Logo: 'https://internetofbusiness.com/wp-content/uploads/2018/10/Intel-ARM-Licensing-Deal-640x400.png',
+    p3Logo:
+      'https://internetofbusiness.com/wp-content/uploads/2018/10/Intel-ARM-Licensing-Deal-640x400.png',
     caseStudyTitle: '',
     realtedServiceTitle: '',
   })
@@ -549,18 +595,25 @@ async function insertRealData() {
       'https://iotbusinessnews.com/WordPress/wp-content/uploads/digital-health.jpg',
     evocativePhoto: '',
     serviceTitle: '',
-    serviceDescription: 'What we are approaching is a world where basic healthcare would become out of reach to most people, a large section of society would go unproductive owing to old age and people would be more prone to chronic disease. While technology can’t stop the population from ageing or eradicate chronic diseases at once, it can at least make healthcare easier on a pocket and in term of accessibility. Technology can move the routines of medical checks from a hospital (hospital-centric) to the patient’s home (home-centric).',
+    serviceDescription:
+      'What we are approaching is a world where basic healthcare would become out of reach to most people, a large section of society would go unproductive owing to old age and people would be more prone to chronic disease. While technology can’t stop the population from ageing or eradicate chronic diseases at once, it can at least make healthcare easier on a pocket and in term of accessibility. Technology can move the routines of medical checks from a hospital (hospital-centric) to the patient’s home (home-centric).',
     partnerTitle: '',
     partnerDescription: '',
     s1Name: 'Locating and managing assets',
-    s1Description: 'Knowing the exact location of life-saving devices and essential equipment like infusion pumps results in fewer delays for patients and helps optimize machine use.',
-    s1Logo: 'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
+    s1Description:
+      'Knowing the exact location of life-saving devices and essential equipment like infusion pumps results in fewer delays for patients and helps optimize machine use.',
+    s1Logo:
+      'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
     s2Name: 'Capturing data to drive better outcomes',
-    s2Description: 'Home monitoring of patients using connected blood pressure, glucose and other devices, which enables doctors and nurses to track patients more closely and identify individuals who are at risk.',
-    s1Logo: 'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
+    s2Description:
+      'Home monitoring of patients using connected blood pressure, glucose and other devices, which enables doctors and nurses to track patients more closely and identify individuals who are at risk.',
+    s1Logo:
+      'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
     s3Name: 'Enhancing the employee and patient experience',
-    s3Description: 'Medical teams can track the location of patients wearing wristbands with sensors and deliver relevant information to families via their smartphones.',
-    s3Logo: 'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
+    s3Description:
+      'Medical teams can track the location of patients wearing wristbands with sensors and deliver relevant information to families via their smartphones.',
+    s3Logo:
+      'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
     p1Name: '....',
     p1Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
     p2Name: '.....',
@@ -587,14 +640,20 @@ async function insertRealData() {
     partnerTitle: '',
     partnerDescription: '',
     s1Name: 'Making operations self-sufficient',
-    s1Description: 'Many use sensors to monitor and access everything—from the operational state of machinery to getting alerts when storage tanks, trash dumpsters, exit signs and smoke alarms need to be serviced.',
-    s1Logo: 'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
+    s1Description:
+      'Many use sensors to monitor and access everything—from the operational state of machinery to getting alerts when storage tanks, trash dumpsters, exit signs and smoke alarms need to be serviced.',
+    s1Logo:
+      'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
     s2Name: 'Optimizing factory conditions',
-    s2Description: 'IoT-enabled predictive maintenance can help prevent equipment from malfunctioning. Dashboards can provide deep visibility within a partner ecosystem and supply chain.',
-    s2Logo: 'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
+    s2Description:
+      'IoT-enabled predictive maintenance can help prevent equipment from malfunctioning. Dashboards can provide deep visibility within a partner ecosystem and supply chain.',
+    s2Logo:
+      'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
     s3Name: 'Monitoring the supply chain',
-    s3Description: 'IoT solutions can monitor the condition of products from when they are made in a factory (or grown on a farm) to the arrival at their final destination.',
-    s3Logo: 'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
+    s3Description:
+      'IoT solutions can monitor the condition of products from when they are made in a factory (or grown on a farm) to the arrival at their final destination.',
+    s3Logo:
+      'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
     p1Name: '.....',
     p1Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
     p2Name: '.....',
@@ -1763,6 +1822,52 @@ async function insertRealData() {
   BigDataAnalysis.addTeammember(bdaP8)
   bdaC5.addTeammember(bdaP8)
   bdaC6.addTeammember(bdaP8)
+
+  //** ------------------------------------------------------------ PARTNERS --------------------------------------------------------------- */
+
+  //**INSERT PARTNERS */
+  const CocaCola = await Partner.create({
+    name: 'CocaCola',
+    description: 'Taste the feeling',
+    image:
+      'https://www.radiosenisecentrale.it/wp-content/uploads/2019/12/a8c15493781667d05e628e2f76d65b3a.jpg',
+    website: 'https://www.coca-cola.com/',
+  })
+  const p1 = await Partner.create({
+    name: 'P1',
+    description: 'Test partner',
+    image:
+      'https://www.radiosenisecentrale.it/wp-content/uploads/2019/12/a8c15493781667d05e628e2f76d65b3a.jpg',
+    website: 'https://www.coca-cola.com/',
+  })
+  const p2 = await Partner.create({
+    name: 'P2',
+    description: 'Test partner',
+    image:
+      'https://www.radiosenisecentrale.it/wp-content/uploads/2019/12/a8c15493781667d05e628e2f76d65b3a.jpg',
+    website: 'https://www.coca-cola.com/',
+  })
+  const p3 = await Partner.create({
+    name: 'P3',
+    description: 'Test partner',
+    image:
+      'https://www.radiosenisecentrale.it/wp-content/uploads/2019/12/a8c15493781667d05e628e2f76d65b3a.jpg',
+    website: 'https://www.coca-cola.com/',
+  })
+  const p4 = await Partner.create({
+    name: 'P4',
+    description: 'Test partner',
+    image:
+      'https://www.radiosenisecentrale.it/wp-content/uploads/2019/12/a8c15493781667d05e628e2f76d65b3a.jpg',
+    website: 'https://www.coca-cola.com/',
+  })
+  const p5 = await Partner.create({
+    name: 'P5',
+    description: 'Test partner',
+    image:
+      'https://www.radiosenisecentrale.it/wp-content/uploads/2019/12/a8c15493781667d05e628e2f76d65b3a.jpg',
+    website: 'https://www.coca-cola.com/',
+  })
 }
 
 /**
