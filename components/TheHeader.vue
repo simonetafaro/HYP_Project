@@ -383,7 +383,7 @@ export default {
 }
 
 .elements-block {
-  height: 300px;
+  height: 320px;
   width: 200px;
   left: -55px;
   top: 23px;
@@ -405,6 +405,20 @@ export default {
 .area-element-text {
   color: black;
   text-decoration: none;
+}
+
+.area-element-text:hover {
+  color: #4d41c9 !important;
+}
+
+.menu-item li ul li:first-child:hover {
+  background: #fafaff;
+  border-radius: 16px 16px 0px 0px;
+}
+
+.menu-item li ul li:last-child:hover {
+  background: #fafaff;
+  border-radius: 0px 0px 16px 16px;
 }
 
 .menu-item li ul li:hover {
