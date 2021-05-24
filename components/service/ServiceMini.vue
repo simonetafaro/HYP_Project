@@ -22,7 +22,6 @@
 import GoToMixins from '~/mixins/goTo-mixins.js'
 
 export default {
-  MobileORTablet: false,
   props: {
     title: { type: String, default: () => '' },
     image: { type: String, default: () => '' },
