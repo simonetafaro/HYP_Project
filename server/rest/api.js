@@ -43,11 +43,11 @@ async function init() {
     const { id } = req.params
     const casestudy = await CaseStudy.findOne({
       where: { id },
-      include: {
-        model: Service,
-        model: TeamMember,
-        model: Area,
-      },
+      include: [
+        {model: Service, as:'services'},
+        {model: TeamMember, as: 'teammembers'},
+      {model: Area, as: 'area'}
+      ],
     })
     return res.json(casestudy)
   })

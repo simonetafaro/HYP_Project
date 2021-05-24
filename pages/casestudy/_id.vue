@@ -530,7 +530,7 @@
         <section class="service-grid">
           <h4 v-if="relServices === 0">There are no related Services</h4>
           <div
-            v-for="(service, serviceIndex) of relServices"
+            v-for="(service, serviceIndex) of casestudy.services"
             :key="'service-' + serviceIndex"
             class="service"
           >
@@ -571,10 +571,6 @@ export default {
       `${process.env.BASE_URL}/api/casestudy/${id}`
     )
     const casestudy = data
-    let relServices = await $axios.get(
-      `${process.env.BASE_URL}/api/casestudyservices/${id}`
-    )
-    relServices = relServices.data
     let relCases = await $axios.get(
       `${process.env.BASE_URL}/api/relatedCaseStudies/${data.areaID}/${id}`
     )
@@ -587,7 +583,6 @@ export default {
 
     return {
       casestudy,
-      relServices,
       relCases,
       nextCaseStudy,
     }
@@ -599,21 +594,7 @@ export default {
         img.style.height = img.width + 'px'
       }
     )
-    //  check highest card
-    let serviceCardMaxHeight = 0
-    Array.from(document.getElementsByClassName('service_card')).forEach(
-      function (card) {
-        if (card.clientHeight > serviceCardMaxHeight)
-          serviceCardMaxHeight = card.clientHeight
-      }
-    )
-    //  set the same height to all the cards
-    Array.from(document.getElementsByClassName('service_card')).forEach(
-      function (card) {
-        if (card.clientHeight < serviceCardMaxHeight)
-          card.style.height = serviceCardMaxHeight + 'px'
-      }
-    )
+
     //  check highest title
     let serviceCardTitleMaxHeight = 0
     Array.from(document.getElementsByClassName('service_title')).forEach(
