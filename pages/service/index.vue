@@ -281,6 +281,10 @@ export default {
 </script>
 
 <style scoped>
+.container {
+  padding: 0;
+  min-width: 100%;
+}
 .service-l1 {
   font-style: normal;
   font-weight: bold;
@@ -320,21 +324,12 @@ export default {
 .disabled-arrow {
   opacity: 0.5;
 }
-.container {
-  min-width: 100%;
-}
-h2 {
-  margin-bottom: 30px;
-}
+
 .service-grid {
   max-width: 1110px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 30px;
-}
-.ad img {
-  width: 100%;
-  height: 200px;
 }
 .row {
   width: 100%;
@@ -451,6 +446,78 @@ h2 {
   100% {
     transform: scale(1);
     opacity: 1;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .service-l1 {
+    margin-bottom: 20px;
+  }
+
+  .service-l2 {
+    font-size: 36px;
+    line-height: 43px;
+    margin-bottom: 41px;
+  }
+
+  .service-l3 {
+    font-size: 18px;
+    line-height: 22px;
+    max-width: 550px;
+  }
+
+  .button-wrapper-prev {
+    margin-right: 8px;
+  }
+  .button-wrapper-next {
+    margin-left: 8px;
+  }
+  .service-list-wrapper {
+    height: 348px;
+    width: 646px;
+    min-width: 646px;
+  }
+  .service-section-title {
+    font-size: 24px;
+    line-height: 29px;
+    margin: 33px auto 32px 0;
+  }
+  .service-grid {
+    max-width: 646px;
+    grid-gap: 23px;
+  }
+  .service {
+    margin-right: 12px;
+    margin-left: 12 px;
+  }
+  .service-card {
+    min-width: 200px;
+  }
+  .carousel-arrow {
+    width: 21px;
+    height: 21px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .service-l1 {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 54px;
+  }
+
+  .service-l2 {
+    font-size: 70px;
+    line-height: 84px;
+    text-align: center;
+    margin-bottom: 70px;
+  }
+
+  .service-l3 {
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+    max-width: 750px;
   }
 }
 </style>

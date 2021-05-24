@@ -34,7 +34,7 @@ export default {
 
 <style scoped>
 .service_card {
-  padding: 32px 10px 24px 10px;
+  padding: 24px 10px;
   background: #ffffff;
   box-shadow: 0px 3px 25px rgba(205, 201, 255, 0.3);
   border-radius: 50px;
@@ -51,7 +51,7 @@ export default {
 }
 
 .service_img_container {
-  margin: 35px 50px 35px 50px;
+  margin: 25px 50px 15px 50px;
 }
 
 .service_img {
@@ -66,6 +66,7 @@ export default {
 
 @media screen and (max-width: 1200px) {
   .service_card {
+    padding: 15px 10px 20px 10px;
     width: 90%;
     max-width: 350px;
     border-radius: 25px;
@@ -86,6 +87,9 @@ export default {
   }
   .service_img {
     border-radius: 10px;
+  }
+  .service_img_container {
+    margin: 15px 35px 10px 35px;
   }
 }
 
