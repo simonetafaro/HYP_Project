@@ -6,8 +6,6 @@
       </div>
       <div class="background-image-header">
         <svg
-          width="1920"
-          height="916"
           viewBox="0 0 1920 916"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -973,6 +971,7 @@ export default {
   z-index: -1;
   width: 100%;
   height: 100%;
+  bottom: 0;
 }
 .title-purple {
   color: #4d41c9;
@@ -1131,6 +1130,9 @@ export default {
 @media screen and (max-width: 768px) {
   .home-header {
     height: 165px;
+  }
+  .background-image-header {
+    bottom: -20px;
   }
   .text1 {
     font-size: 12px;
