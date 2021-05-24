@@ -50,6 +50,7 @@ export default {
   text-transform: uppercase;
   color: var(--cc-base2);
 }
+
 .service_img_container {
   margin: 35px 50px 35px 50px;
 }
@@ -84,17 +85,15 @@ export default {
   .more_button {
     display: none;
   }
-  .service_img_container {
-    margin: 21px 50px 21px 50px;
-  }
   .service_img {
     border-radius: 10px;
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 768px) {
   .service_card {
     width: 100%;
+    padding-top: 10px;
   }
   .service-left {
     margin-right: 0;
@@ -110,7 +109,7 @@ export default {
     display: none;
   }
   .service_img_container {
-    margin: 21px 50px 21px 50px;
+    margin: 10px 30px 0px 30px;
   }
   .service_img {
     border-radius: 10px;

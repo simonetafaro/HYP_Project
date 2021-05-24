@@ -1373,14 +1373,14 @@ export default {
   display: block;
 }
 @media screen and (max-width: 1200px) {
-  .mobile-hide {
-    display: none;
+  .header-background {
+    bottom: 0;
   }
   .header-content-top {
     padding-top: 49px;
+    margin-right: 59px;
   }
-  .area-header {
-    margin-left: 59px;
+  .header-content-bottom {
     margin-right: 59px;
   }
   .area-title {
@@ -1416,13 +1416,13 @@ export default {
     line-height: 22px;
     column-gap: 20px;
   }
-}
-
-@media screen and (max-width: 768px) {
-  .area-title {
-    margin-bottom: 15px;
-    font-size: 24px;
-    line-height: 29px;
+  .case-studies-container {
+    padding-top: 68px;
+    background: linear-gradient(
+      180deg,
+      #f9f9ff 91.15%,
+      rgba(251, 251, 255, 0) 100%
+    );
   }
   .area-header {
     background: linear-gradient(
@@ -1430,12 +1430,32 @@ export default {
       #f9f9ff 91.15%,
       rgba(251, 251, 255, 0) 100%
     );
+    padding-left: 59px;
+    margin-right: 0px;
+  }
+  .services-container {
+    padding-top: 0;
+    background: #ffffff;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mobile-hide {
+    display: none;
+  }
+  .area-title {
+    margin-bottom: 15px;
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .area-header {
     margin: 0;
     padding-left: 35px;
     padding-right: 35px;
     text-align: center;
     height: max-content;
   }
+
   .header-content-top {
     text-align: center;
   }
@@ -1489,23 +1509,12 @@ export default {
     font-size: 12px;
     line-height: 14px;
   }
-
+  .services-container {
+    padding-bottom: 65px;
+  }
   .mobile-show > .full-width-row {
     padding-top: 45px;
     padding-bottom: 45px;
-  }
-  .services-container {
-    padding-top: 0;
-    background: #ffffff;
-  }
-
-  .case-studies-container {
-    padding-top: 68px;
-    background: linear-gradient(
-      180deg,
-      #f9f9ff 91.15%,
-      rgba(251, 251, 255, 0) 100%
-    );
   }
 }
 </style>
