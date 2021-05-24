@@ -1,14 +1,10 @@
 <template>
   <section class="container">
     <div class="area-header">
-      <div class="header-content">
+      <div class="header-content-top">
         <div class="header-inner-content">
           <div class="area-title">
             {{ area.title }}
-          </div>
-          <div class="area-subtitle">{{ area.subTitle }}</div>
-          <div class="area-description-text">
-            {{ area.description }}
           </div>
         </div>
       </div>
@@ -1061,6 +1057,17 @@
           </g>
         </svg>
       </div>
+      <div class="header-content-bottom">
+        <div class="header-inner-content">
+          <div class="area-subtitle">{{ area.subTitle }}</div>
+          <div class="area-description-text">
+            {{ area.description }}
+          </div>
+        </div>
+      </div>
+      <div class="mobile-show">
+        <space-divider></space-divider>
+      </div>
     </div>
 
     <div class="services-container">
@@ -1079,12 +1086,12 @@
           <div
             v-for="(service, serviceIndex) of area.services"
             :key="'service-' + serviceIndex"
-            class="service"
           >
             <service-mini
               :title="service.title"
               :image="service.banner"
               :path="service.id"
+              :serviceIndex="serviceIndex + 1"
             ></service-mini>
           </div>
         </div>
@@ -1092,7 +1099,9 @@
           :buttonLabel="'DISCOVER ALL SERVICES'"
           :path="'/service'"
         ></discover-button>
-        <space-divider />
+        <div class="mobile-hide">
+          <space-divider />
+        </div>
       </div>
     </div>
 
@@ -1192,44 +1201,40 @@ export default {
       people,
     }
   },
+  methods: {
+    resizeServiceCard() {
+      //  resize service img height
+      Array.from(document.getElementsByClassName('service_img')).forEach(
+        function (img) {
+          img.style.height = img.width + 'px'
+        }
+      )
+      //  reset lineHeight
+      Array.from(document.getElementsByClassName('service_title')).forEach(
+        function (card) {
+          card.style.lineHeight = ''
+        }
+      )
+      //  check highest title
+      let serviceCardTitleMaxHeight = 0
+      Array.from(document.getElementsByClassName('service_title')).forEach(
+        function (card) {
+          if (card.clientHeight > serviceCardTitleMaxHeight)
+            serviceCardTitleMaxHeight = card.clientHeight
+        }
+      )
+      //  set the same height to all the title
+      Array.from(document.getElementsByClassName('service_title')).forEach(
+        function (card) {
+          if (card.clientHeight < serviceCardTitleMaxHeight)
+            card.style.lineHeight = serviceCardTitleMaxHeight + 'px'
+        }
+      )
+    },
+  },
   mounted() {
-    //  resize service img height
-    Array.from(document.getElementsByClassName('service_img')).forEach(
-      function (img) {
-        img.style.height = img.width + 'px'
-      }
-    )
-    //  check highest card
-    let serviceCardMaxHeight = 0
-    Array.from(document.getElementsByClassName('service_card')).forEach(
-      function (card) {
-        if (card.clientHeight > serviceCardMaxHeight)
-          serviceCardMaxHeight = card.clientHeight
-      }
-    )
-    //  set the same height to all the cards
-    Array.from(document.getElementsByClassName('service_card')).forEach(
-      function (card) {
-        if (card.clientHeight < serviceCardMaxHeight)
-          card.style.height = serviceCardMaxHeight + 'px'
-      }
-    )
-
-    //  check highest title
-    let serviceCardTitleMaxHeight = 0
-    Array.from(document.getElementsByClassName('service_title')).forEach(
-      function (card) {
-        if (card.clientHeight > serviceCardTitleMaxHeight)
-          serviceCardTitleMaxHeight = card.clientHeight
-      }
-    )
-    //  set the same height to all the title
-    Array.from(document.getElementsByClassName('service_title')).forEach(
-      function (card) {
-        if (card.clientHeight < serviceCardTitleMaxHeight)
-          card.style.lineHeight = serviceCardTitleMaxHeight + 'px'
-      }
-    )
+    this.resizeServiceCard()
+    window.addEventListener('resize', this.resizeServiceCard)
   },
 }
 </script>
@@ -1246,13 +1251,21 @@ export default {
   position: relative;
   overflow-x: clip;
 }
-.header-content {
+.header-content-bottom {
+  max-width: 1100px;
+  margin: auto;
+  display: block;
+  text-align: left;
+  padding-top: 0;
+  padding-bottom: 94px;
+}
+.header-content-top {
   max-width: 1100px;
   margin: auto;
   display: block;
   text-align: left;
   padding-top: 124px;
-  padding-bottom: 94px;
+  padding-bottom: 0;
 }
 .header-inner-content {
   max-width: 780px;
@@ -1351,5 +1364,148 @@ export default {
 .person {
   cursor: pointer;
   margin-bottom: 20px;
+}
+.mobile-show {
+  display: none;
+}
+
+.mobile-hide {
+  display: block;
+}
+@media screen and (max-width: 1200px) {
+  .mobile-hide {
+    display: none;
+  }
+  .header-content-top {
+    padding-top: 49px;
+  }
+  .area-header {
+    margin-left: 59px;
+    margin-right: 59px;
+  }
+  .area-title {
+    font-size: 36px;
+    line-height: 43px;
+    margin-bottom: 36px;
+  }
+  .section-intro-text {
+    margin-bottom: 27px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .inner-container {
+    max-width: 100%;
+    margin-right: 92px;
+    margin-left: 92px;
+  }
+  .service-grid,
+  .casestudies-grid,
+  .member-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 44px;
+  }
+  .area-subtitle {
+    font-size: 20px;
+    line-height: 24px;
+    margin-top: 0;
+    margin-bottom: 42px;
+  }
+  .area-description-text {
+    font-size: 18px;
+    line-height: 22px;
+    column-gap: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .area-title {
+    margin-bottom: 15px;
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .area-header {
+    background: linear-gradient(
+      180deg,
+      #f9f9ff 91.15%,
+      rgba(251, 251, 255, 0) 100%
+    );
+    margin: 0;
+    padding-left: 35px;
+    padding-right: 35px;
+    text-align: center;
+    height: max-content;
+  }
+  .header-content-top {
+    text-align: center;
+  }
+  .header-content-bottom {
+    margin-top: 30px;
+    text-align: center;
+    padding-bottom: 0;
+  }
+  .area-subtitle {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .area-description-text {
+    font-size: 12px;
+    line-height: 14px;
+    column-gap: 20px;
+    column-count: 1;
+    column-gap: 0;
+  }
+  .header-background {
+    text-align: center;
+    margin: auto;
+    position: relative;
+    bottom: 30px;
+    right: 0;
+    left: 0;
+    width: 85%;
+    top: 0;
+  }
+  .inner-container {
+    max-width: 100%;
+    margin-right: 35px;
+    margin-left: 35px;
+  }
+  .service-grid,
+  .casestudies-grid,
+  .member-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 13px;
+  }
+
+  .mobile-show {
+    display: block;
+  }
+  .section-title {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .section-intro-text {
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .mobile-show > .full-width-row {
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+  .services-container {
+    padding-top: 0;
+    background: #ffffff;
+  }
+
+  .case-studies-container {
+    padding-top: 68px;
+    background: linear-gradient(
+      180deg,
+      #f9f9ff 91.15%,
+      rgba(251, 251, 255, 0) 100%
+    );
+  }
 }
 </style>

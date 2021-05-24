@@ -42,7 +42,6 @@ export default {}
 @media screen and (max-width: 768px) {
   .full-width-row {
     padding-top: 93px;
-    padding-bottom: 0px;
   }
   svg {
     width: 30px;
