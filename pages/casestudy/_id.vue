@@ -10,15 +10,16 @@
               {{ casestudy.author }}Author's name | April 2, 2020 | 2 Comments
             </h5>
             <div class="column">
-              <div class="single-column" id="padding">
+              <div class="single-column">
                 <img :src="casestudy.banner" :alt="casestudy.title" />
                 <p class="description">
                   {{ casestudy.descriptiveText }}
                 </p>
 
-                <div class="padding">
+                <div class="partner-container">
                   <a class="partner" href="#">PARTNER WEBSITE</a>
                 </div>
+
                 <div class="padding"><h3>CHALLENGE</h3></div>
                 <h2 class="title-challenge">{{ casestudy.challengeTitle }}</h2>
 
@@ -38,26 +39,45 @@
                     {{ casestudy.solutionDescription }}
                   </p>
                 </div>
+                <div v-if="nextCaseStudy != null" class="button">
+                  <discover-button
+                    :buttonLabel="'NEXT CASE STUDY'"
+                    :path="'/casestudy/' + (casestudy.id + 1)"
+                  ></discover-button>
+                </div>
+                <div v-if="nextCaseStudy == null" class="button">
+                  <discover-button
+                    :buttonLabel="'GO BACK TO FIRST CASE STUDY'"
+                    :path="'/casestudy/1'"
+                  ></discover-button>
+                </div>
               </div>
               <div class="cases-column">
-                <h3 class="padding">Other Case Studies</h3>
-                <div
-                  v-for="(casestudy, caseStudyIndex) of relCases"
-                  :key="'casestudy-' + caseStudyIndex"
-                  class="case-component"
-                  @click="goTo(`/casestudy/${casestudy.id}`)"
-                >
-                  <div>
-                    <img
-                      :src="casestudy.banner"
-                      class="related-case-study-image"
-                    />
-                  </div>
-                  <div class="related-case-study-info">
-                    <h4 class="related-case-study-title">
-                      {{ casestudy.title }}
-                    </h4>
-                    <h5 class="related-case-study-date">April 2, 2020</h5>
+                <h3 class="partner-container">Other Case Studies</h3>
+                <div class="relatedCases-grid">
+                  <div
+                    v-for="(casestudy, caseStudyIndex) of relCases"
+                    :key="'casestudy-' + caseStudyIndex"
+                    class="case-component"
+                    @click="goTo(`/casestudy/${casestudy.id}`)"
+                  >
+                    <div class="related-image">
+                      <img
+                        :src="casestudy.banner"
+                        class="related-case-study-image"
+                      />
+                    </div>
+                    <div class="related-case-study-info">
+                      <h4 class="related-case-study-title">
+                        {{ casestudy.title }}
+                      </h4>
+                      <div class="description-container">
+                        <h4 class="related-case-study-description">
+                          {{ casestudy.descriptiveText }}
+                        </h4>
+                      </div>
+                      <h5 class="related-case-study-date">April 2, 2020</h5>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -523,8 +543,10 @@
       </div>
       <space-divider />
 
-      <h3 class="pre-section">YOU MAY BE INTERESTED IN</h3>
-      <h3 class="pre-section" id="padding">OUR RELATED SERVICES</h3>
+      <div class="partner-container">
+        <h3 class="pre-section">YOU MAY BE INTERESTED IN</h3>
+        <h3 class="pre-section">OUR RELATED SERVICES</h3>
+      </div>
 
       <div class="service-box">
         <section class="service-grid">
@@ -542,10 +564,16 @@
           </div>
         </section>
       </div>
-      <div v-if="nextCaseStudy != null" class="button">
+      <div v-if="nextCaseStudy != null" class="button1">
         <discover-button
           :buttonLabel="'NEXT CASE STUDY'"
           :path="'/casestudy/' + (casestudy.id + 1)"
+        ></discover-button>
+      </div>
+      <div v-if="nextCaseStudy == null" class="button1">
+        <discover-button
+          :buttonLabel="'GO BACK TO FIRST CASE STUDY'"
+          :path="'/casestudy/1'"
         ></discover-button>
       </div>
     </section>
@@ -679,15 +707,14 @@ h1 {
   font-weight: normal;
   font-size: 18px;
   line-height: 32px;
-  /* or 145% */
   color: var(--c-grey1);
-
   mix-blend-mode: normal;
   opacity: 0.6;
 }
 img {
   align-content: left;
   width: 90%;
+  object-fit: cover;
 }
 p {
   text-align: left;
@@ -705,11 +732,8 @@ p {
   text-transform: uppercase;
   color: var(--cc-base3);
 }
-@media screen and (max-width: 600px) {
-  .casestudies-grid {
-    display: block;
-    margin: 40px 20px;
-  }
+.partner-container {
+  padding: 20px 0;
 }
 .padding {
   padding: 30px 0;
@@ -806,7 +830,21 @@ p {
   line-height: 19px;
   color: var(--cc-base1);
   mix-blend-mode: normal;
+
   opacity: 0.6;
+}
+.related-case-study-description {
+  padding: 0 30px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+
+  color: #464a52;
+}
+.description-container {
+  display: none;
 }
 .service-box {
   margin: auto;
@@ -814,5 +852,198 @@ p {
 }
 .button {
   padding-bottom: 80px;
+  display: none;
+}
+.button1 {
+  padding-bottom: 80px;
+}
+@media screen and (max-width: 1200px) {
+  .area-title {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: left;
+  }
+  .title-case {
+    font-size: 36px;
+    line-height: 43px;
+  }
+  .description {
+    font-size: 18px;
+    line-height: 22px;
+    color: #464a52;
+    padding-bottom: 0px;
+  }
+  .column {
+    display: block;
+  }
+  .cases-column {
+    max-width: 100%;
+  }
+  .relatedCases-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+    margin-top: 85px;
+    margin: auto;
+  }
+  .related-case-study-date {
+    padding-top: 18px;
+  }
+  .case-component {
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .related-case-study-info {
+    margin: auto;
+    text-align: center;
+  }
+  .single-column {
+    max-width: 100%;
+    width: 100%;
+  }
+  p {
+    text-align: left;
+    margin-top: 20px;
+    width: 100%;
+  }
+  img {
+    width: 100%;
+    border-radius: 15px;
+    max-height: 380px;
+    overflow: hidden;
+  }
+  .partner {
+    font-size: 18px;
+    line-height: 22px;
+    display: inline-block;
+  }
+  .partner-container {
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+  }
+  .related-image {
+    padding: 20px 0;
+  }
+  .description-container {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+  h4 {
+    text-align: center;
+  }
+  h3 {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+  }
+  .title-challenge {
+    font-size: 28px;
+    line-height: 29px;
+    text-align: center;
+  }
+  .member-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+    margin-top: 85px;
+    margin: auto;
+  }
+  .service-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+    padding-top: 85px;
+    display: grid;
+    margin: auto;
+  }
+  .pre-section {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .button {
+    padding-bottom: 80px;
+    display: block;
+    text-align: center;
+  }
+  .button1 {
+    padding-bottom: 80px;
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .area-title {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .title-case {
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .description {
+    font-size: 12px;
+    line-height: 12px;
+    color: #464a52;
+    padding-bottom: 0px;
+  }
+  .cases-column {
+    display: none;
+  }
+  .single-column {
+    max-width: 100%;
+    width: 100%;
+  }
+  p {
+    text-align: left;
+    margin-top: 20px;
+    width: 100%;
+  }
+  img {
+    width: 100%;
+    border-radius: 15px;
+    max-height: 180px;
+    overflow: hidden;
+  }
+  .partner {
+    font-size: 14px;
+    line-height: 17px;
+    display: inline-block;
+  }
+  .partner-container {
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+  }
+  h3 {
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+  }
+  .title-challenge {
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+  }
+  .member-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 13px;
+    margin-top: 25px;
+    margin: auto;
+  }
+  .service-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 13px;
+    padding-top: 20px;
+    display: grid;
+    margin: auto;
+  }
+  .pre-section {
+    font-size: 12px;
+    line-height: 14px;
+  }
 }
 </style>

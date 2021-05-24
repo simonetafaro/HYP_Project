@@ -43,4 +43,11 @@ export default {
   color: var(--cc-base6);
   box-shadow: 0px 4px 6px rgba(66, 66, 114, 0.16);
 }
+
+@media screen and (max-width: 768px) {
+  .discover_button {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
 </style>
