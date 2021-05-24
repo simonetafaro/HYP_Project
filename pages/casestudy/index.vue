@@ -131,11 +131,12 @@ export default {
 .filter-bar {
   display: flex;
   margin-top: 15px;
-  align-content: left;
-  text-align: left;
+  text-align: center;
+  margin: auto;
+  justify-content: space-between;
+  padding: 0 20px;
 }
 .filter {
-  margin-right: 30px;
   cursor: pointer;
   font-style: normal;
   font-weight: bold;
@@ -176,6 +177,36 @@ export default {
   padding-top: 30px;
 }
 @media screen and (max-width: 1200px) {
+  .intro-text {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  .title_case {
+    font-size: 36px;
+    line-height: 43px;
+    text-align: center;
+  }
+  .description {
+    font-size: 18px;
+    line-height: 22px;
+    padding: 0px 50px;
+    text-align: center;
+  }
+  .filter {
+    font-size: 12px;
+  }
+  .casestudies-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 12px;
+  }
+  .container_description {
+    padding-bottom: 30px;
+    max-width: 80%;
+    text-align: center;
+    display: inline-block;
+  }
 }
 @media screen and (max-width: 768px) {
   .intro-text {
@@ -202,6 +233,7 @@ export default {
   }
   .container_description {
     padding-bottom: 0px;
+    width: 80%;
   }
 }
 </style>

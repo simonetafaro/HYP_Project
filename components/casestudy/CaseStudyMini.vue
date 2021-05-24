@@ -104,9 +104,7 @@ export default {
   padding: 10px;
 }
 .case-button:hover {
-  color: white;
-  background-color: #4d41c9;
-  border-radius: 29px;
+  text-decoration: underline;
 }
 .case-info {
   max-height: 68%;
@@ -114,13 +112,14 @@ export default {
 }
 
 @media screen and (max-width: 1200px) {
+  .case-button {
+    display: none;
+  }
 }
 @media screen and (max-width: 768px) {
   .casestudycontainer {
-    min-width: 146px;
-    min-height: 146px;
-    max-width: 150px;
-    max-height: 165px;
+    width: 80%;
+
     cursor: pointer;
   }
   .case-button {
