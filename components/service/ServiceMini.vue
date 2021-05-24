@@ -105,8 +105,8 @@ export default {
     margin-left: 0;
   }
   .service_title {
-    font-size: 14px;
-    line-height: 17px;
+    font-size: 12px;
+    line-height: 14px;
   }
   .more_button {
     display: none;

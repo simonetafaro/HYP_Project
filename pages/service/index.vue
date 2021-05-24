@@ -1,6 +1,6 @@
 <template>
   <main class="container">
-    <header>
+    <header class="services-header">
       <div class="service-l1">WHY CHOOSING US</div>
       <div class="service-l2">
         DISCOVER OUR <br />
@@ -179,7 +179,7 @@ export default {
     Array.from(document.getElementsByClassName('service_title')).forEach(
       function (card) {
         if (card.clientHeight < serviceCardTitleMaxHeight)
-          card.style.lineHeight = serviceCardTitleMaxHeight + 'px'
+          card.style.height = serviceCardTitleMaxHeight + 'px'
       }
     )
   },
@@ -325,12 +325,6 @@ export default {
   opacity: 0.5;
 }
 
-.service-grid {
-  max-width: 1110px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 30px;
-}
 .row {
   width: 100%;
 }
@@ -450,6 +444,11 @@ export default {
 }
 
 @media screen and (max-width: 1200px) {
+  .services-header {
+    padding-bottom: 31px;
+    border-bottom: 1px solid var(--ccc-base3);
+  }
+
   .service-l1 {
     margin-bottom: 20px;
   }
@@ -482,10 +481,6 @@ export default {
     line-height: 29px;
     margin: 33px auto 32px 0;
   }
-  .service-grid {
-    max-width: 646px;
-    grid-gap: 23px;
-  }
   .service {
     margin-right: 12px;
     margin-left: 12 px;
@@ -501,23 +496,60 @@ export default {
 
 @media screen and (max-width: 768px) {
   .service-l1 {
-    font-size: 20px;
-    line-height: 24px;
-    margin-bottom: 54px;
+    font-size: 12px;
+    line-height: 14px;
+    margin-bottom: 17px;
   }
 
   .service-l2 {
-    font-size: 70px;
-    line-height: 84px;
-    text-align: center;
-    margin-bottom: 70px;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 17px;
   }
 
   .service-l3 {
-    font-size: 20px;
-    line-height: 32px;
-    text-align: center;
-    max-width: 750px;
+    font-size: 12px;
+    line-height: 14px;
+    max-width: 270px;
+  }
+  .button-wrapper-prev,
+  .button-wrapper-next {
+    display: none;
+  }
+  .service-carousel {
+    overflow: scroll;
+    padding: 15px 0;
+  }
+  .service-list-wrapper {
+    height: 253px;
+    width: 100%;
+    min-width: 100%;
+  }
+  .service-section-title {
+    font-size: 14px;
+    line-height: 17px;
+    margin: 16px auto 21px 20px;
+  }
+  .service {
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+  .service:first-child {
+    margin-left: 20px !important;
+  }
+  .service:last-child {
+    margin-right: 20px !important;
+  }
+  .service-card {
+    min-width: 146px;
+  }
+  .carousel-arrow {
+    width: 0;
+    height: 0;
+  }
+  .carousel-wrapper {
+    width: 100%;
+    max-width: 100%;
   }
 }
 </style>
