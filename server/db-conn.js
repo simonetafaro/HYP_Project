@@ -151,6 +151,21 @@ function defineDBStructure() {
       timestamps: false,
     }
   )
+  const Partner = db.define(
+    'partner',
+    {
+      name: DataTypes.STRING,
+      description: DataTypes.TEXT,
+      image: {
+        type: DataTypes.STRING,
+        allowNull: true,
+      },
+      website: DataTypes.STRING,
+    },
+    {
+      timestamps: false,
+    }
+  )
 
   const ServiceCaseStudy = db.define('servicecasestudy')
 
@@ -175,11 +190,12 @@ function defineDBStructure() {
     TeamMember,
     ServiceCaseStudy,
     PersonCaseStudy,
+    Partner,
   }
 }
 
 async function insertRealData() {
-  const { Service, CaseStudy, Area, TeamMember } = db._tables
+  const { Service, CaseStudy, Area, TeamMember, Partner } = db._tables
 
   //** ------------------------------------------------------------ AREAS --------------------------------------------------------------- */
 
@@ -1806,6 +1822,52 @@ async function insertRealData() {
   BigDataAnalysis.addTeammember(bdaP8)
   bdaC5.addTeammember(bdaP8)
   bdaC6.addTeammember(bdaP8)
+
+  //** ------------------------------------------------------------ PARTNERS --------------------------------------------------------------- */
+
+  //**INSERT PARTNERS */
+  const CocaCola = await Partner.create({
+    name: 'CocaCola',
+    description: 'Taste the feeling',
+    image:
+      'https://www.radiosenisecentrale.it/wp-content/uploads/2019/12/a8c15493781667d05e628e2f76d65b3a.jpg',
+    website: 'https://www.coca-cola.com/',
+  })
+  const p1 = await Partner.create({
+    name: 'P1',
+    description: 'Test partner',
+    image:
+      'https://www.radiosenisecentrale.it/wp-content/uploads/2019/12/a8c15493781667d05e628e2f76d65b3a.jpg',
+    website: 'https://www.coca-cola.com/',
+  })
+  const p2 = await Partner.create({
+    name: 'P2',
+    description: 'Test partner',
+    image:
+      'https://www.radiosenisecentrale.it/wp-content/uploads/2019/12/a8c15493781667d05e628e2f76d65b3a.jpg',
+    website: 'https://www.coca-cola.com/',
+  })
+  const p3 = await Partner.create({
+    name: 'P3',
+    description: 'Test partner',
+    image:
+      'https://www.radiosenisecentrale.it/wp-content/uploads/2019/12/a8c15493781667d05e628e2f76d65b3a.jpg',
+    website: 'https://www.coca-cola.com/',
+  })
+  const p4 = await Partner.create({
+    name: 'P4',
+    description: 'Test partner',
+    image:
+      'https://www.radiosenisecentrale.it/wp-content/uploads/2019/12/a8c15493781667d05e628e2f76d65b3a.jpg',
+    website: 'https://www.coca-cola.com/',
+  })
+  const p5 = await Partner.create({
+    name: 'P5',
+    description: 'Test partner',
+    image:
+      'https://www.radiosenisecentrale.it/wp-content/uploads/2019/12/a8c15493781667d05e628e2f76d65b3a.jpg',
+    website: 'https://www.coca-cola.com/',
+  })
 }
 
 /**
