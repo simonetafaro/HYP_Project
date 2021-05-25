@@ -30,11 +30,13 @@ export default {
       const footerVisible =
         footer.top <
         (window.innerHeight || document.documentElement.clientHeight)
-
+      const mobileMenuOpen =
+        document.getElementById('mobile-menu-box').style.display === 'block'
       if (
         (document.body.scrollTop > 50 ||
           document.documentElement.scrollTop > 50) &&
-        !footerVisible
+        !footerVisible &&
+        !mobileMenuOpen
       ) {
         document.getElementById('goUpButton').style.display = 'block'
       } else {
