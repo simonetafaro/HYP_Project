@@ -19,7 +19,7 @@
                 <div class="partner-container">
                   <a class="partner" href="#">PARTNER WEBSITE</a>
                 </div>
-
+                <space-divider class="space-divider" />
                 <div class="padding"><h3>CHALLENGE</h3></div>
                 <h2 class="title-challenge">{{ casestudy.challengeTitle }}</h2>
 
@@ -52,8 +52,9 @@
                   ></discover-button>
                 </div>
               </div>
+              <space-divider class="space-divider" />
               <div class="cases-column">
-                <h3 class="partner-container">Other Case Studies</h3>
+                <h3 class="other-cases-container">Other Case Studies</h3>
                 <div class="relatedCases-grid">
                   <div
                     v-for="(casestudy, caseStudyIndex) of relCases"
@@ -77,6 +78,7 @@
                         </h4>
                       </div>
                       <h5 class="related-case-study-date">April 2, 2020</h5>
+                      <button class="case-button">FIND OUT MORE ></button>
                     </div>
                   </div>
                 </div>
@@ -543,7 +545,7 @@
       </div>
       <space-divider />
 
-      <div class="partner-container">
+      <div class="other-cases-container">
         <h3 class="pre-section">YOU MAY BE INTERESTED IN</h3>
         <h3 class="pre-section">OUR RELATED SERVICES</h3>
       </div>
@@ -648,6 +650,9 @@ h1 {
   cursor: pointer;
   margin-bottom: 20px;
 }
+.space-divider {
+  display: none;
+}
 .inner_caseMini {
   margin: auto;
   width: 100%;
@@ -684,6 +689,24 @@ h1 {
   display: grid;
   margin: auto;
 }
+.case-button {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: var(--cc-base1);
+  bottom: 30px;
+  padding-top: 30px;
+  text-align: center;
+  margin: auto;
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+.case-button:hover {
+  text-decoration: underline;
+}
 .description {
   font-family: Rubik;
   font-style: normal;
@@ -716,6 +739,9 @@ p {
   color: var(--cc-base3);
 }
 .partner-container {
+  margin: 20px 0;
+}
+.other-cases-container {
   padding: 20px 0;
 }
 .padding {
@@ -872,6 +898,9 @@ p {
   .related-case-study-date {
     padding-top: 18px;
   }
+  .case-button {
+    display: block;
+  }
   .case-component {
     display: inline-block;
     margin: 0 auto;
@@ -879,6 +908,10 @@ p {
   }
   .related-case-study-info {
     margin: auto;
+    text-align: center;
+  }
+  .space-divider {
+    display: block;
     text-align: center;
   }
   .single-column {
@@ -891,6 +924,7 @@ p {
     width: 100%;
   }
   img {
+    margin: 40px 0;
     width: 100%;
     border-radius: 15px;
     max-height: 380px;
@@ -916,17 +950,22 @@ p {
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
   }
-  h4 {
-    text-align: center;
-  }
+
   h3 {
     font-size: 20px;
     line-height: 24px;
-    text-align: center;
+  }
+  .partner-container {
+    margin-top: 78px;
   }
   .title-challenge {
     font-size: 28px;
     line-height: 29px;
+  }
+  .other-cases-container {
+    text-align: center;
+  }
+  .related-case-study-title {
     text-align: center;
   }
   .member-grid {
@@ -985,10 +1024,8 @@ p {
     width: 100%;
   }
   img {
-    width: 100%;
-    border-radius: 15px;
     max-height: 180px;
-    overflow: hidden;
+    margin: 20px 0;
   }
   .partner {
     font-size: 14px;
@@ -999,6 +1036,13 @@ p {
     text-align: center;
     display: inline-block;
     width: 100%;
+    margin-top: 15px;
+  }
+  .challenge-box {
+    margin-bottom: 50px;
+  }
+  .padding {
+    padding: 0px 0 15px 0;
   }
   h3 {
     font-size: 12px;

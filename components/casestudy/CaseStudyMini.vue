@@ -59,7 +59,7 @@ export default {
   height: 75%;
   bottom: 0;
   width: 100%;
-  border-radius: 29px;
+  border-radius: 27px;
   padding: 30px;
   opacity: 0.87;
 }

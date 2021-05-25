@@ -863,7 +863,10 @@ export default {
 .header {
   display: flex;
 }
-
+a {
+  color: black !important;
+  text-decoration: none;
+}
 .header-left-column {
   margin-left: auto;
   margin-right: auto;

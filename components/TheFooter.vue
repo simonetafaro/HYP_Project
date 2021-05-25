@@ -1465,7 +1465,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .footer {
   height: 390px;
   background: var(--cc-base5);
