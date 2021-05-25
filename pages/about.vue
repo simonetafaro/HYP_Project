@@ -493,9 +493,13 @@
                   <div class="partner-description">
                     {{ partner.description }}
                   </div>
-                  <div class="partner-website">
-                    {{ partner.website }}
-                  </div>
+                  <a
+                    class="partner-website"
+                    v-bind:href="partner.website"
+                    target="_blank"
+                  >
+                    Partner website
+                  </a>
                 </div>
               </li>
             </div>
@@ -873,7 +877,7 @@ export default {
 
 .partner-grid {
   position: relative;
-  height: 500px;
+  height: 350px;
   width: 1110px;
   grid-template-columns: repeat(4, calc(100% / 4));
   grid-gap: 10px;
@@ -918,12 +922,10 @@ export default {
   font-weight: bold;
   font-size: 18px;
   line-height: 24px;
-  /* identical to box height, or 133% */
+  cursor: pointer;
   text-align: center;
   text-decoration-line: underline;
-
-  color: #4d41c9;
-
+  color: #4d41c9 !important;
   mix-blend-mode: normal;
   opacity: 0.6;
 }
@@ -968,13 +970,15 @@ export default {
 .carousel-arrow-left {
   position: absolute;
   left: -5px;
+  top: 100px;
   cursor: pointer;
+  z-index: 10;
 }
 
 .carousel-arrow-right {
   position: absolute;
   right: 0;
-  top: 0;
+  top: 100px;
   cursor: pointer;
 }
 
