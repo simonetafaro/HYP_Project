@@ -468,6 +468,7 @@
             :title="service.title"
             :image="service.banner"
             :path="service.id"
+            :serviceIndex="serviceIndex + 1"
           ></service-mini>
         </div>
       </section>
@@ -495,50 +496,20 @@ export default {
     DiscoverButton,
   },
   mounted() {
-    //  resize service img height
-    Array.from(document.getElementsByClassName('service_img')).forEach(
-      function (img) {
-        img.style.height = img.width + 'px'
-      }
-    )
-    //  check highest card
-    let serviceCardMaxHeight = 0
-    Array.from(document.getElementsByClassName('service_card')).forEach(
-      function (card) {
-        if (card.clientHeight > serviceCardMaxHeight)
-          serviceCardMaxHeight = card.clientHeight
-      }
-    )
-    //  set the same height to all the cards
-    Array.from(document.getElementsByClassName('service_card')).forEach(
-      function (card) {
-        if (card.clientHeight < serviceCardMaxHeight)
-          card.style.height = serviceCardMaxHeight + 'px'
-      }
-    )
-    //  check highest title
-    let serviceCardTitleMaxHeight = 0
-    Array.from(document.getElementsByClassName('service_title')).forEach(
-      function (card) {
-        if (card.clientHeight > serviceCardTitleMaxHeight)
-          serviceCardTitleMaxHeight = card.clientHeight
-      }
-    )
-    //  set the same height to all the title
-    Array.from(document.getElementsByClassName('service_title')).forEach(
-      function (card) {
-        if (card.clientHeight < serviceCardTitleMaxHeight)
-          card.style.lineHeight = serviceCardTitleMaxHeight + 'px'
-      }
-    )
-
-    // set arrow between title and margin left
-    const arrow = document.getElementsByClassName('back-to-arrow')[0]
-    arrow.style.left =
-      '-' +
-      document.getElementsByClassName('service-title')[0].offsetLeft / 2 +
-      'px'
-    arrow.style.display = 'block'
+    this.resizeServiceCard()
+    window.addEventListener('resize', this.resizeServiceCard)
+    if (window.innerWidth > 1200) {
+      // set arrow between title and margin left
+      const arrow = document.getElementsByClassName('back-to-arrow')[0]
+      arrow.style.left =
+        '-' +
+        document.getElementsByClassName('service-title')[0].offsetLeft / 2 +
+        'px'
+      arrow.style.display = 'block'
+    }
+  },
+  destroyed() {
+    window.removeEventListener('resize', this.resizeServiceCard)
   },
   mixins: [GoToMixins],
   async asyncData({ $axios, route }) {
@@ -703,19 +674,6 @@ export default {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 30px;
 }
-img {
-  max-width: 600px;
-}
-p {
-  text-align: left;
-  margin-top: 40px;
-}
-@media screen and (max-width: 600px) {
-  .casestudies-grid {
-    display: block;
-    margin: 40px 20px;
-  }
-}
 .section-intro-text {
   margin: auto;
   margin-bottom: 54px;
@@ -739,5 +697,157 @@ p {
 }
 .related-services-title {
   margin-bottom: 73px;
+}
+
+@media screen and (max-width: 1200px) {
+  .service-header {
+    height: auto;
+  }
+  .header-content {
+    max-width: 100%;
+    text-align: center;
+    padding-top: 46px;
+    padding-bottom: 80px;
+  }
+  .header-inner-content {
+    max-width: 60%;
+    margin: auto;
+  }
+  .service-title {
+    font-size: 36px;
+    line-height: 43px;
+    margin-bottom: 36px;
+  }
+  .service-description-text {
+    line-height: 24px;
+    column-count: 1;
+    column-gap: 0px;
+  }
+  .header-background {
+    display: none;
+  }
+  .solution-container {
+    padding-top: 90px;
+    position: relative;
+    z-index: 0;
+  }
+  .section-intro-text {
+    max-width: 80%;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .solution-section {
+    display: inline-table;
+    width: 100%;
+    padding-bottom: 50px;
+  }
+  .solution {
+    display: table-cell;
+    margin: auto;
+  }
+  .solution:first-child {
+    min-width: 100%;
+    display: table-caption;
+    margin-bottom: 60px;
+  }
+  .solution-description {
+    display: none;
+  }
+  .solution-name {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .casestudies-grid,
+  .service-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 72px;
+    margin: auto;
+  }
+  .casestudy {
+    width: min-content;
+  }
+  .casestudy:nth-child(2n + 1),
+  .service:nth-child(2n + 1) {
+    margin-left: auto;
+  }
+  .casestudy:nth-child(2n + 2),
+  .service:nth-child(2n + 2) {
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .service-header {
+    height: auto;
+  }
+  .header-content {
+    padding-bottom: 25px;
+  }
+  .header-inner-content {
+    max-width: 80%;
+    margin: auto;
+  }
+  .service-title {
+    font-size: 24px;
+    line-height: 20px;
+    margin-bottom: 25px;
+  }
+  .service-subtitle {
+    font-size: 12px;
+    line-height: 14px;
+    margin-bottom: 25px;
+  }
+  .service-description-text {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .header-background {
+    display: none;
+  }
+  .solution-section {
+    padding-bottom: 0px;
+  }
+  .solution-container {
+    padding-top: 90px;
+    position: relative;
+    z-index: 0;
+  }
+  .solution-img {
+    width: 58px;
+    height: 58px;
+    margin-bottom: 10px;
+  }
+  .section-intro-text {
+    max-width: 80%;
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .solution:first-child {
+    margin-bottom: 25px;
+  }
+  .solution-name {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .casestudies-grid,
+  .service-grid {
+    grid-gap: 15px;
+    margin: 0 35px;
+  }
+  .casestudy {
+    width: 100%;
+  }
+  .partner-section {
+    width: 80%;
+    margin: auto;
+  }
+  .partner-img {
+    width: 58px;
+    height: 58px;
+    margin-bottom: 0px;
+  }
+  .partner-name {
+    display: none;
+  }
 }
 </style>

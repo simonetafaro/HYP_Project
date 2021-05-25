@@ -20,28 +20,8 @@ export default {
     GoUp,
   },
   mixins: [GoToMixins],
-  methods: {
-    scrollFunction() {
-      const footer = document
-        .getElementById('footer-element')
-        .getBoundingClientRect()
-
-      const footerVisible =
-        footer.top <
-        (window.innerHeight || document.documentElement.clientHeight)
-      if (
-        (document.body.scrollTop > 50 ||
-          document.documentElement.scrollTop > 50) &&
-        !footerVisible
-      ) {
-        document.getElementById('goUpButton').style.display = 'block'
-      } else {
-        document.getElementById('goUpButton').style.display = 'none'
-      }
-    },
-  },
   mounted() {
-    window.addEventListener('scroll', this.scrollFunction)
+    window.addEventListener('scroll', this.showGoUpButton)
   },
 }
 </script>
@@ -51,6 +31,7 @@ html {
   /**font-family: 'Roboto', sans-serif;*/
   font-family: 'Barlow', sans-serif;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -60,15 +41,8 @@ html {
   margin: 0;
 }
 .container {
-  padding: 10px;
   margin: 40px auto;
   max-width: 1110px;
   text-align: center;
-}
-a {
-  color: white;
-}
-img {
-  width: 100%;
 }
 </style>

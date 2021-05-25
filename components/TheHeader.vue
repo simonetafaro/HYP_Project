@@ -820,8 +820,10 @@ export default {
       const mobileMenu = document.getElementById('mobile-menu-box')
       if (mobileMenu.style.display === 'block') {
         mobileMenu.style.display = 'none'
+        this.showGoUpButton()
       } else {
         mobileMenu.style.display = 'block'
+        document.getElementById('goUpButton').style.display = 'none'
       }
     },
     openAreaDropdownMobile() {

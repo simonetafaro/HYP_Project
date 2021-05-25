@@ -49,5 +49,8 @@ export default {
     font-size: 12px;
     line-height: 14px;
   }
+  .full-width-row {
+    padding-top: 39px;
+  }
 }
 </style>
