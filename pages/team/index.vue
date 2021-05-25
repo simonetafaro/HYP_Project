@@ -387,7 +387,6 @@ h2 {
   font-size: 20px;
   line-height: 24px;
   margin-top: 60px;
-  text-align: center;
   text-transform: uppercase;
   color: var(--cc-base1);
 }
@@ -401,9 +400,7 @@ h2 {
   text-align: left;
   height: 337px;
   width: 730px;
-
-  /* or 160% */
-
+  margin-top: 22px;
   color: #464a52;
 }
 h4 {
