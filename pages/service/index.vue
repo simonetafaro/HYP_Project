@@ -1,6 +1,6 @@
 <template>
   <main class="container">
-    <header>
+    <header class="services-header">
       <div class="service-l1">WHY CHOOSING US</div>
       <div class="service-l2">
         DISCOVER OUR <br />
@@ -179,7 +179,7 @@ export default {
     Array.from(document.getElementsByClassName('service_title')).forEach(
       function (card) {
         if (card.clientHeight < serviceCardTitleMaxHeight)
-          card.style.lineHeight = serviceCardTitleMaxHeight + 'px'
+          card.style.height = serviceCardTitleMaxHeight + 'px'
       }
     )
   },
@@ -281,6 +281,10 @@ export default {
 </script>
 
 <style scoped>
+.container {
+  padding: 0;
+  min-width: 100%;
+}
 .service-l1 {
   font-style: normal;
   font-weight: bold;
@@ -320,22 +324,7 @@ export default {
 .disabled-arrow {
   opacity: 0.5;
 }
-.container {
-  min-width: 100%;
-}
-h2 {
-  margin-bottom: 30px;
-}
-.service-grid {
-  max-width: 1110px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 30px;
-}
-.ad img {
-  width: 100%;
-  height: 200px;
-}
+
 .row {
   width: 100%;
 }
@@ -451,6 +440,116 @@ h2 {
   100% {
     transform: scale(1);
     opacity: 1;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .services-header {
+    padding-bottom: 31px;
+    border-bottom: 1px solid var(--ccc-base3);
+  }
+
+  .service-l1 {
+    margin-bottom: 20px;
+  }
+
+  .service-l2 {
+    font-size: 36px;
+    line-height: 43px;
+    margin-bottom: 41px;
+  }
+
+  .service-l3 {
+    font-size: 18px;
+    line-height: 22px;
+    max-width: 550px;
+  }
+
+  .button-wrapper-prev {
+    margin-right: 8px;
+  }
+  .button-wrapper-next {
+    margin-left: 8px;
+  }
+  .service-list-wrapper {
+    height: 348px;
+    width: 646px;
+    min-width: 646px;
+  }
+  .service-section-title {
+    font-size: 24px;
+    line-height: 29px;
+    margin: 33px auto 32px 0;
+  }
+  .service {
+    margin-right: 12px;
+    margin-left: 12 px;
+  }
+  .service-card {
+    min-width: 200px;
+  }
+  .carousel-arrow {
+    width: 21px;
+    height: 21px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .service-l1 {
+    font-size: 12px;
+    line-height: 14px;
+    margin-bottom: 17px;
+  }
+
+  .service-l2 {
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 17px;
+  }
+
+  .service-l3 {
+    font-size: 12px;
+    line-height: 14px;
+    max-width: 270px;
+  }
+  .button-wrapper-prev,
+  .button-wrapper-next {
+    display: none;
+  }
+  .service-carousel {
+    overflow: scroll;
+    padding: 15px 0;
+  }
+  .service-list-wrapper {
+    height: 253px;
+    width: 100%;
+    min-width: 100%;
+  }
+  .service-section-title {
+    font-size: 14px;
+    line-height: 17px;
+    margin: 16px auto 21px 20px;
+  }
+  .service {
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+  .service:first-child {
+    margin-left: 20px !important;
+  }
+  .service:last-child {
+    margin-right: 20px !important;
+  }
+  .service-card {
+    min-width: 146px;
+  }
+  .carousel-arrow {
+    width: 0;
+    height: 0;
+  }
+  .carousel-wrapper {
+    width: 100%;
+    max-width: 100%;
   }
 }
 </style>

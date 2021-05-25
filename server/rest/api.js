@@ -10,7 +10,14 @@ async function init() {
   // Call the init function that returns the Database
   const db = await initializeDatabase()
   // Let's extract all the objects we need to perform queries inside the endpoints
-  const { Area, Service, CaseStudy, TeamMember, ServiceCaseStudy } = db._tables
+  const {
+    Area,
+    Service,
+    CaseStudy,
+    TeamMember,
+    ServiceCaseStudy,
+    Partner,
+  } = db._tables
 
   app.get('/area/:id', async (req, res) => {
     const { id } = req.params
@@ -124,6 +131,11 @@ async function init() {
   app.get('/teammembers', async (req, res) => {
     const teammember = await TeamMember.findAll({})
     return res.json(teammember)
+  })
+
+  app.get('/partners', async (req, res) => {
+    const partners = await Partner.findAll({})
+    return res.json(partners)
   })
 
   app.get('/teammembers/:id', async (req, res) => {
