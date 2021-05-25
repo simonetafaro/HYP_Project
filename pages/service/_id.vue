@@ -775,4 +775,79 @@ export default {
     margin-right: auto;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .service-header {
+    height: auto;
+  }
+  .header-content {
+    padding-bottom: 25px;
+  }
+  .header-inner-content {
+    max-width: 80%;
+    margin: auto;
+  }
+  .service-title {
+    font-size: 24px;
+    line-height: 20px;
+    margin-bottom: 25px;
+  }
+  .service-subtitle {
+    font-size: 12px;
+    line-height: 14px;
+    margin-bottom: 25px;
+  }
+  .service-description-text {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .header-background {
+    display: none;
+  }
+  .solution-section {
+    padding-bottom: 0px;
+  }
+  .solution-container {
+    padding-top: 90px;
+    position: relative;
+    z-index: 0;
+  }
+  .solution-img {
+    width: 58px;
+    height: 58px;
+    margin-bottom: 10px;
+  }
+  .section-intro-text {
+    max-width: 80%;
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .solution:first-child {
+    margin-bottom: 25px;
+  }
+  .solution-name {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .casestudies-grid,
+  .service-grid {
+    grid-gap: 15px;
+    margin: 0 35px;
+  }
+  .casestudy {
+    width: 100%;
+  }
+  .partner-section {
+    width: 80%;
+    margin: auto;
+  }
+  .partner-img {
+    width: 58px;
+    height: 58px;
+    margin-bottom: 0px;
+  }
+  .partner-name {
+    display: none;
+  }
+}
 </style>
