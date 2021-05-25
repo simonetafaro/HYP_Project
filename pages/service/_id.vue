@@ -495,42 +495,8 @@ export default {
     DiscoverButton,
   },
   mounted() {
-    //  resize service img height
-    Array.from(document.getElementsByClassName('service_img')).forEach(
-      function (img) {
-        img.style.height = img.width + 'px'
-      }
-    )
-    //  check highest card
-    let serviceCardMaxHeight = 0
-    Array.from(document.getElementsByClassName('service_card')).forEach(
-      function (card) {
-        if (card.clientHeight > serviceCardMaxHeight)
-          serviceCardMaxHeight = card.clientHeight
-      }
-    )
-    //  set the same height to all the cards
-    Array.from(document.getElementsByClassName('service_card')).forEach(
-      function (card) {
-        if (card.clientHeight < serviceCardMaxHeight)
-          card.style.height = serviceCardMaxHeight + 'px'
-      }
-    )
-    //  check highest title
-    let serviceCardTitleMaxHeight = 0
-    Array.from(document.getElementsByClassName('service_title')).forEach(
-      function (card) {
-        if (card.clientHeight > serviceCardTitleMaxHeight)
-          serviceCardTitleMaxHeight = card.clientHeight
-      }
-    )
-    //  set the same height to all the title
-    Array.from(document.getElementsByClassName('service_title')).forEach(
-      function (card) {
-        if (card.clientHeight < serviceCardTitleMaxHeight)
-          card.style.lineHeight = serviceCardTitleMaxHeight + 'px'
-      }
-    )
+    this.resizeServiceCard()
+    window.addEventListener('resize', this.resizeServiceCard)
 
     // set arrow between title and margin left
     const arrow = document.getElementsByClassName('back-to-arrow')[0]
@@ -539,6 +505,9 @@ export default {
       document.getElementsByClassName('service-title')[0].offsetLeft / 2 +
       'px'
     arrow.style.display = 'block'
+  },
+  destroyed() {
+    window.removeEventListener('resize', this.resizeServiceCard)
   },
   mixins: [GoToMixins],
   async asyncData({ $axios, route }) {
