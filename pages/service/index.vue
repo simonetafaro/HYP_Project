@@ -161,27 +161,11 @@ export default {
       }
     )
 
-    //  resize service img height
-    Array.from(document.getElementsByClassName('service_img')).forEach(
-      function (img) {
-        img.style.height = img.width + 'px'
-      }
-    )
-    //  check highest title
-    let serviceCardTitleMaxHeight = 0
-    Array.from(document.getElementsByClassName('service_title')).forEach(
-      function (card) {
-        if (card.clientHeight > serviceCardTitleMaxHeight)
-          serviceCardTitleMaxHeight = card.clientHeight
-      }
-    )
-    //  set the same height to all the title
-    Array.from(document.getElementsByClassName('service_title')).forEach(
-      function (card) {
-        if (card.clientHeight < serviceCardTitleMaxHeight)
-          card.style.height = serviceCardTitleMaxHeight + 'px'
-      }
-    )
+    this.resizeServiceCard()
+    window.addEventListener('resize', this.resizeServiceCard)
+  },
+  destroyed() {
+    window.removeEventListener('resize', this.resizeServiceCard)
   },
   methods: {
     getServiceByArea(areaID) {
@@ -519,7 +503,14 @@ export default {
   .service-carousel {
     overflow: scroll;
     padding: 15px 0;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
   }
+
+  .service-carousel::-webkit-scrollbar {
+    display: none;
+  }
+
   .service-list-wrapper {
     height: 253px;
     width: 100%;

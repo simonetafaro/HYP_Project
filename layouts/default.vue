@@ -40,15 +40,8 @@ html {
   margin: 0;
 }
 .container {
-  padding: 10px;
   margin: 40px auto;
   max-width: 1110px;
   text-align: center;
-}
-a {
-  color: white;
-}
-img {
-  width: 100%;
 }
 </style>

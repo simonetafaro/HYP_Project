@@ -6,6 +6,7 @@
           ? 'service-right service_card'
           : 'service-left service_card'
       "
+      @click="clickOnCardOnlyTabletAndMobile(path)"
     >
       <div class="service_title">{{ title }}</div>
       <div class="service_img_container">
@@ -29,6 +30,13 @@ export default {
     serviceIndex: { type: Number, default: () => 0 },
   },
   mixins: [GoToMixins],
+  methods: {
+    clickOnCardOnlyTabletAndMobile(path) {
+      if (window.innerWidth < 1200) {
+        return this.goTo('/service/' + path)
+      }
+    },
+  },
 }
 </script>
 
