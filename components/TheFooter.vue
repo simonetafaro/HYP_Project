@@ -1,5 +1,5 @@
 <template>
-  <footer class="footer">
+  <footer class="footer" id="footer-element">
     <div class="footer-left-column">
       <span class="show-desktop">
         <svg
@@ -1543,6 +1543,7 @@ a {
   .footer-right-column {
     padding-top: 26px;
     padding-right: 26px;
+    width: auto;
   }
   .footer-left-column {
     position: relative;
@@ -1556,6 +1557,9 @@ a {
   }
   .single-column:first-child {
     margin-left: auto;
+  }
+  .single-column:last-child {
+    margin-right: auto;
   }
   .column-title {
     font-size: 12px;
