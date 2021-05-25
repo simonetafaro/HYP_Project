@@ -20,28 +20,8 @@ export default {
     GoUp,
   },
   mixins: [GoToMixins],
-  methods: {
-    scrollFunction() {
-      const footer = document
-        .getElementById('footer-element')
-        .getBoundingClientRect()
-
-      const footerVisible =
-        footer.top <
-        (window.innerHeight || document.documentElement.clientHeight)
-      if (
-        (document.body.scrollTop > 50 ||
-          document.documentElement.scrollTop > 50) &&
-        !footerVisible
-      ) {
-        document.getElementById('goUpButton').style.display = 'block'
-      } else {
-        document.getElementById('goUpButton').style.display = 'none'
-      }
-    },
-  },
   mounted() {
-    window.addEventListener('scroll', this.scrollFunction)
+    window.addEventListener('scroll', this.showGoUpButton)
   },
 }
 </script>
