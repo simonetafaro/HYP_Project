@@ -208,7 +208,7 @@ async function insertRealData() {
       'Anytime. Anywhere. We create cybersecurity tailored to your specific business needs. We defend against cyberattacks with proactive, focused,  industry-relevant threat intelligence to give you the confidence that  comes from knowing your business is secure.',
     banner:
       'https://www.orion.on.ca/wp-content/uploads/2019/05/cybersecurity-banner.jpg',
-    evocativeImage: '',
+    evocativeImage: 'https://i.ibb.co/Ny7F40s/security.png',
     servicesTitle: 'Discover our Security services',
     servicesDescription:
       'We are unique among IT security consulting firms. We combine security technology engineering, intelligence expertise and our data science DNA to help companies manage digital risk end-to-end.',
@@ -224,7 +224,7 @@ async function insertRealData() {
     description:
       'We help clients effectively capitalize on IoT technology and solutions, linking technology, vendors and customers through a holistic business model. IoT describes the connection of devices to the internet using embedded software and sensors to communicate, collect and exchange data with one another. IoT combines connectivity with sensors, devices and people, enabling a form of free-flowing conversation between man and machine, software and hardware. With IoT, the world is wide open, offering a virtually endless array of opportunities and connections at home, at work or at play.',
     banner: 'https://i.ibb.co/pZ83v4z/iot-main.png',
-    evocativeImage: '',
+    evocativeImage: 'https://i.ibb.co/zRPbmf1/iot.png',
     servicesTitle: 'Discover our IoT services ',
     servicesDescription:
       'The growth of IoT is paving the path for new business avenues. The pertinent question for enterprises is no longer if their business benefits from IoT adoption - but rather what IoT functionalities can be best used to their advantage.',
@@ -239,7 +239,7 @@ async function insertRealData() {
     description:
       'Having been a major driving force of the ongoing digital revolution, the Cloud has completely changed the way enterprises run their operations - from IT infrastructure management, through financial administration, to data exchange. At ??COMPANY NAME??, we can move your existing IT environment to the Cloud, as well as provide a wide range of cloud-driven applications to help your company gain a competitive advantage. Scroll through this space to learn more.',
     banner: '',
-    evocativeImage: '',
+    evocativeImage: 'https://i.ibb.co/hf3LHBb/cloud.png',
     servicesTitle: 'Discover our Cloud Computing services ',
     servicesDescription:
       "As a result of the on-going digital revolution, the Cloud and business environment have become inseparable. Providing a foundation strong enough to support millions of operations at the same time, cloud computing has played a major role in the development of today's information-driven enterprises. Join them to: - Accelerate your company's digital transformation - Reduce workload and operational costs - Improve the performance of your systems and applications",
@@ -256,7 +256,7 @@ async function insertRealData() {
     description:
       'The way we interact with brands and companies has changed. We typically associate the customer experience with a traditional and interaction directly found inside a store with a specific aesthetic. he world has changed, and so has the business model: digitalisation had an huge impact on our existence, leading companies to shape a whole new entrepreneurial perspective. But it’s not just because of this. Many customer behaviour patterns have evolved and the company must be able to understand their needs and needs, possibly anticipating and surprising them.',
     banner: '',
-    evocativeImage: '',
+    evocativeImage: 'https://i.ibb.co/pxH7fJ1/customer-experience.png',
     servicesTitle: 'Explore our tailor-made services about Customer Experience',
     servicesDescription:
       'Hear how businesses have transformed how they work: Great experiences are no longer only a business accessory, they are of vital importance.',
@@ -276,7 +276,7 @@ async function insertRealData() {
     banner:
       'https://storage.googleapis.com/saepict-saepictwagtail-prod/images/big-data-analysis-2020.original.png',
     evocativeImage:
-      'https://storage.googleapis.com/saepict-saepictwagtail-prod/images/big-data-analysis-2020.original.png',
+      'https://i.ibb.co/KDhJdh0/data.png',
     servicesTitle: 'Discover our services ',
     servicesDescription:
       'AI is only as smart as the insights that fuel it. We can help you unlock powerful analytics insights by tapping into data you did not even know you had.',
