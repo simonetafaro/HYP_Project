@@ -519,7 +519,14 @@ export default {
   .service-carousel {
     overflow: scroll;
     padding: 15px 0;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
   }
+
+  .service-carousel::-webkit-scrollbar {
+    display: none;
+  }
+
   .service-list-wrapper {
     height: 253px;
     width: 100%;
