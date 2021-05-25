@@ -30,12 +30,17 @@
       </h3>
     </header>
     <div class="filter-bar">
-      <div class="filter active-filter" @click="findAllTeamMembers($event)">
+      <div
+        id="Null"
+        class="filter active-filter"
+        @click="findAllTeamMembers($event)"
+      >
         All
       </div>
       <div
         v-for="(area, areaIndex) of areas"
         :key="'area-' + areaIndex"
+        v-bind:id="area.id"
         class="filter"
         @click="filterTeamMemberByArea($event, area.id)"
       >
@@ -76,11 +81,7 @@
               />
             </svg>
           </div>
-          <div
-            v-if="member.id != 1"
-            class="left-arrow"
-            @click="scrollLeft(member.id)"
-          >
+          <div class="left-arrow" @click="scrollLeft(member.id)">
             <svg
               width="31"
               height="49"
@@ -116,33 +117,38 @@
                 />
               </svg>
             </div>
-            <img
-              :src="member.personPhoto"
-              :alt="member.memberNameAndOccupation"
-              class="overlay-photo"
-            />
-            <div class="overlay-texts">
-              <span class="overlay-name">{{ member.personName }}</span>
-              <span class="overlay-workfield">{{ member.workField }}</span>
-              <span class="overlay-discover">Discover his projects</span>
-            </div>
-            <section class="casestudies-grid">
-              <h4 v-if="relCasestudies === 0">
-                There are no related Case Studies
-              </h4>
-              <div
-                v-for="(casestudy, casestudyIndex) of relCasestudies"
-                :key="'casestudy-' + casestudyIndex"
-                class="casestudy"
-                @click="findCS(id)"
-              >
-                <case-study-mini
-                  :title="casestudy.title"
-                  :description="casestudy.subTitle"
-                  :image="casestudy.banner"
-                ></case-study-mini>
+            <div class="image-and-texts">
+              <img
+                :src="member.personPhoto"
+                :alt="member.memberNameAndOccupation"
+                class="overlay-photo"
+              />
+              <div class="overlay-texts">
+                <span class="overlay-name">{{ member.personName }}</span>
+                <span class="overlay-workfield">{{ member.workField }}</span>
+                <span class="overlay-discover">Discover his projects</span>
               </div>
-            </section>
+            </div>
+            <div class="casestudies-container">
+              <section class="casestudies-grid">
+                <h4 v-if="relCasestudies === 0">
+                  There are no related Case Studies
+                </h4>
+                <div
+                  v-for="(casestudy, casestudyIndex) of relCasestudies"
+                  :key="'casestudy-' + casestudyIndex"
+                  class="casestudy"
+                  @click="findCS(id)"
+                >
+                  <case-study-mini
+                    :title="casestudy.title"
+                    :description="casestudy.subTitle"
+                    :image="casestudy.banner"
+                    :path="casestudy.id"
+                  ></case-study-mini>
+                </div>
+              </section>
+            </div>
           </div>
         </section>
       </div>
@@ -206,25 +212,47 @@ export default {
       element.classList.add('active-filter')
     },
     async showOverlay(id) {
-      let member = await this.$axios.get(
-        `${process.env.BASE_URL}/api/teammembers/${id}`
-      )
+      let area = document.getElementsByClassName('filter active-filter')[0]
+      area = area.id
+      if (area === 'Null') {
+        let member = await this.$axios.get(
+          `${process.env.BASE_URL}/api/teammembers/${id}`
+        )
 
-      member = member.data
+        member = member.data
+        if (member === null) {
+          return
+        }
+        let relCasestudies = await this.$axios.get(
+          `${process.env.BASE_URL}/api/casestudiesbyteammember/${id}`
+        )
+        relCasestudies = relCasestudies.data
 
-      let relCasestudies = await this.$axios.get(
-        `${process.env.BASE_URL}/api/casestudiesbyteammember/${id}`
-      )
-      relCasestudies = relCasestudies.data
+        this.overlay = true
+        this.member = member
+        this.relCasestudies = relCasestudies
+      } else {
+        this.people = await this.$axios.$get(
+          `${process.env.BASE_URL}/api/teammembersbyarea/${area}`
+        )
 
-      this.overlay = true
-      console.log('accessing' + `${process.env.BASE_URL}/api/teammembers/${id}`)
-      console.log(id)
-      console.log(this.overlay)
-      console.log(member)
+        for (let i = 0; i < this.people.length; i++) {
+          if (this.people[i].id === id) {
+            const member = this.people[i]
+            console.log(member)
+            id = member.id
+            let relCasestudies = await this.$axios.get(
+              `${process.env.BASE_URL}/api/casestudiesbyteammember/${id}`
+            )
+            relCasestudies = relCasestudies.data
 
-      this.member = member
-      this.relCasestudies = relCasestudies
+            this.overlay = true
+            this.member = member
+            this.relCasestudies = relCasestudies
+            return
+          }
+        }
+      }
     },
 
     scrollRight(memberID) {
@@ -239,27 +267,14 @@ export default {
 </script>
 
 <style scoped>
-.casestudies-grid {
-  display: grid;
-  grid-template-columns: repeat(2, calc(100% / 2));
-  grid-gap: 20px;
-  margin-top: 40px;
-  margin-bottom: 40px;
-  margin-right: 20px;
-}
-.casestudy {
-  cursor: pointer;
-  margin-bottom: 20px;
-  width: 30px !important;
-}
-
 .overlay-container {
   display: block;
   width: 100%;
   height: 100%;
   max-height: max-content;
-  position: absolute;
-  top: 0;
+  position: fixed;
+  overflow: scroll;
+  top: 70px;
   background: rgba(113, 126, 238, 0.3);
   backdrop-filter: blur(8px);
   padding: 50px;
@@ -267,18 +282,19 @@ export default {
 
 .overlay-tab {
   background: #f9f9ff;
-  width: 50%;
+  width: 90%;
+  display: flex;
   height: max-content;
   border-radius: 10px;
   position: relative;
-  left: 25%;
+  margin: auto;
   padding: 25px;
 }
 
 .right-arrow {
   position: absolute;
   top: 200px;
-  right: 15%;
+  right: 5%;
   cursor: pointer;
 }
 
@@ -288,7 +304,7 @@ export default {
 
 .left-arrow {
   position: absolute;
-  left: 15%;
+  left: 5%;
   top: 200px;
   cursor: pointer;
 }
@@ -297,17 +313,22 @@ export default {
   transform: scale(1.1);
 }
 
+.image-and-texts {
+  position: relative;
+  left: 0;
+  margin-top: 20px;
+  top: 0;
+  width: 300px;
+}
+
 .overlay-photo {
-  display: block;
-  margin: auto;
-  height: 200px;
-  width: auto;
+  height: auto;
+  width: 300px;
   border-radius: 10px;
 }
 
 .overlay-texts {
-  position: relative;
-  margin: auto;
+  left: 2%;
 }
 
 .overlay-name {
@@ -348,6 +369,29 @@ export default {
   color: #424272;
 }
 
+.casestudies-container {
+  position: relative;
+  right: 0;
+  top: 0;
+  margin-top: 20px;
+  margin: auto;
+  width: 750px;
+}
+
+.casestudies-grid {
+  display: grid;
+  grid-template-columns: repeat(2, calc(100% / 2));
+  grid-gap: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-right: 20px;
+}
+.casestudy {
+  cursor: pointer;
+  margin-bottom: 20px;
+  width: 30px !important;
+}
+
 .close-button {
   position: absolute;
   right: 0%;
@@ -362,6 +406,7 @@ export default {
 
 .container {
   max-width: 100%;
+  padding: 0px;
 }
 
 .lower-section {
@@ -483,6 +528,11 @@ h4 {
   cursor: pointer;
   margin-bottom: 20px;
 }
+
+.member-mini {
+  margin-bottom: 50px;
+}
+
 .ad img {
   width: 100%;
   height: 200px;
