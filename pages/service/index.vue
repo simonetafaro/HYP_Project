@@ -121,9 +121,6 @@ export default {
   mixins: [GoToMixins],
   mounted() {
     const _this = this
-    _this.$axios.get().then(() => {
-      _this.closeMobileMenu()
-    })
     if (this.$router.history.current.hash !== '') {
       setTimeout(() => {
         const elem = document.getElementById(

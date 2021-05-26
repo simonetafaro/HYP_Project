@@ -722,6 +722,7 @@ export default {
     line-height: 24px;
     column-count: 1;
     column-gap: 0px;
+    text-align: center;
   }
   .header-background {
     display: none;
