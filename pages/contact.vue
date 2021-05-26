@@ -655,6 +655,22 @@
           <div class="contact-method-title">Message</div>
           <div class="contact-method-text">+39 123 456 78</div>
         </div>
+        <div class="contact-method show-mobile">
+          <svg
+            width="43"
+            height="43"
+            viewBox="0 0 43 43"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M42.6138 21.3069C36.73 27.1906 27.1906 27.1906 21.3069 21.3069C27.1906 15.4231 36.73 15.4231 42.6138 21.3069ZM9.14375e-06 21.3069C5.88374 15.4231 15.4232 15.4231 21.3069 21.3069C15.4232 27.1906 5.88374 27.1906 9.14375e-06 21.3069ZM21.3069 21.3069C15.4232 15.4231 15.4232 5.88373 21.3069 0C27.1906 5.88373 27.1906 15.4231 21.3069 21.3069ZM21.3069 21.3069C27.1906 27.1906 27.1906 36.73 21.3069 42.6138C15.4232 36.73 15.4232 27.1906 21.3069 21.3069Z"
+              fill="#E8E7FF"
+            />
+          </svg>
+        </div>
         <div class="contact-method">
           <div class="contact-method-image">
             <svg
@@ -739,10 +755,12 @@
               />
             </svg>
           </div>
-          <div class="location-city">Milano</div>
-          <div class="location-office-num">FIRST OFFICE</div>
-          <div class="contact-method-text">
-            231 Gotham Square - 89 GM Metropolis city
+          <div class="location-info-wrapper">
+            <div class="location-city">Milano</div>
+            <div class="location-office-num">FIRST OFFICE</div>
+            <div class="contact-method-text">
+              231 Gotham Square -<br />89 GM Metropolis city
+            </div>
           </div>
         </div>
         <div class="location-box">
@@ -764,10 +782,12 @@
               />
             </svg>
           </div>
-          <div class="location-city">Bilbao</div>
-          <div class="location-office-num">SECOND OFFICE</div>
-          <div class="contact-method-text">
-            231 Gotham Square - 89 GM Metropolis city
+          <div class="location-info-wrapper">
+            <div class="location-city">Bilbao</div>
+            <div class="location-office-num">SECOND OFFICE</div>
+            <div class="contact-method-text">
+              231 Gotham Square -<br />89 GM Metropolis city
+            </div>
           </div>
         </div>
         <div class="location-box">
@@ -789,10 +809,12 @@
               />
             </svg>
           </div>
-          <div class="location-city">London</div>
-          <div class="location-office-num">THIRD OFFICE</div>
-          <div class="contact-method-text">
-            231 Gotham Square - 89 GM Metropolis city
+          <div class="location-info-wrapper">
+            <div class="location-city">London</div>
+            <div class="location-office-num">THIRD OFFICE</div>
+            <div class="contact-method-text">
+              231 Gotham Square -<br />89 GM Metropolis city
+            </div>
           </div>
         </div>
       </div>
@@ -909,6 +931,7 @@ export default {
 .location-container {
   padding-top: 168px;
   max-width: 1110px;
+  width: 100%;
   margin: auto;
   display: inline-flex;
   padding-bottom: 185px;
@@ -917,21 +940,27 @@ export default {
   padding-top: 69px;
   padding-bottom: 0px;
 }
-.contact-method,
-.location-box {
+
+.location-box,
+.contact-method {
   width: max-content;
-  padding-right: 109px;
-  padding-left: 109px;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
 }
 .location-banner > img {
   max-height: 743px;
 }
-.contact-method:first-child {
-  padding-left: 0;
+.contact-method:first-child,
+.location-box:first-child {
+  margin-left: 0;
 }
-.contact-method:last-child {
-  padding-right: 0;
+.contact-method:last-child,
+.location-box:last-child {
+  margin-right: 0;
+}
+.show-mobile {
+  display: none;
 }
 .contact-method-image {
   border-radius: 50%;
@@ -1064,5 +1093,220 @@ export default {
   background: #63639f;
   border: 2px solid #e8e6ff;
   color: white;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    padding-bottom: 0;
+  }
+  .contact-header {
+    padding-top: 57px;
+  }
+  .page-subtitle {
+    font-size: 36px;
+    line-height: 43px;
+  }
+  .page-description {
+    font-size: 18px;
+    line-height: 22px;
+    max-width: 60%;
+    margin: auto;
+    margin-top: 41px;
+  }
+  .contact-container {
+    padding-top: 56px;
+    max-width: 80%;
+    padding-bottom: 40px;
+  }
+  .contact-method-image {
+    width: 111.5px;
+    height: 111.5px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .contact-method-title {
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 8px;
+  }
+  .location-section {
+    padding-top: 67px;
+    padding-bottom: 20px;
+  }
+  .location-container {
+    padding-top: 82px;
+    max-width: 80%;
+    width: 100%;
+  }
+  .location-box-image {
+    width: 129px;
+    height: 129px;
+    margin-bottom: 28px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .location-office-num {
+    margin-bottom: 10px;
+  }
+  .location-banner {
+    display: none;
+  }
+
+  .contact-form-container {
+    max-width: 80%;
+    flex-direction: column-reverse;
+  }
+  .left-column {
+    width: 100%;
+    padding-right: 0px;
+  }
+  .right-column {
+    width: 100%;
+    padding-right: 0px;
+    text-align: center;
+  }
+  .contact-form {
+    padding-bottom: 69px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact-header {
+    padding-top: 88px;
+    padding-bottom: 25px;
+  }
+  .page-title {
+    font-size: 12px;
+    line-height: 14px;
+    margin-bottom: 17px;
+  }
+  .page-subtitle {
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .page-description {
+    font-size: 12px;
+    line-height: 14px;
+    max-width: 80%;
+    margin: auto;
+    margin-top: 17px;
+  }
+  .contact-container {
+    padding-top: 56px;
+    max-width: 80%;
+    padding-bottom: 40px;
+    display: inline-table;
+  }
+  .show-mobile {
+    display: block;
+    vertical-align: middle;
+  }
+  .contact-method {
+    display: table-cell;
+    margin: auto;
+    width: 33.33%;
+  }
+  .contact-method:last-child {
+    display: table-caption;
+    width: 100%;
+    caption-side: bottom;
+  }
+  .contact-method-image {
+    width: 57px;
+    height: 57px;
+    margin-bottom: 12px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .contact-method-image > svg {
+    width: 12px;
+    height: 12px;
+  }
+  .contact-method-title {
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 2px;
+  }
+
+  .contact-method-text {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .location-section {
+    padding-top: 43px;
+    padding-bottom: 0;
+  }
+  .location-container {
+    padding-top: 46px;
+    max-width: 80%;
+    width: 100%;
+    display: block;
+  }
+  .location-box:first-child,
+  .location-box:last-child,
+  .location-box {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 17px;
+  }
+
+  .location-box-image {
+    width: 58px;
+    height: 58px;
+    margin-bottom: 0px;
+    margin-right: 16px;
+    margin-left: 0;
+  }
+  .location-box-image > svg {
+    width: 18px;
+    height: 23px;
+  }
+  .location-info-wrapper {
+    display: grid;
+  }
+  .location-info-wrapper > div.contact-method-text {
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  .location-city {
+    font-size: 10px;
+    line-height: 12px;
+    margin-bottom: 0px;
+    order: 2;
+    font-size: 10px;
+    line-height: 12px;
+    opacity: 1;
+    text-align: left;
+  }
+
+  .location-office-num {
+    font-size: 13px;
+    line-height: 16px;
+    margin-bottom: 6px;
+    order: 1;
+    text-align: left;
+  }
+  .contact-method-text {
+    order: 3;
+  }
+  .location-banner {
+    display: none;
+  }
+  .contact-form input {
+    border-radius: 10px;
+    margin-bottom: 12px;
+    padding: 12px 13px;
+    height: 43px;
+  }
+  .send-form-button {
+    font-size: 12px;
+    line-height: 14px;
+    padding: 9px;
+    width: 50%;
+    min-width: max-content;
+  }
 }
 </style>
