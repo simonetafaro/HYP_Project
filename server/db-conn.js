@@ -815,46 +815,77 @@ async function insertRealData() {
       'The easiest way to electronic invoicing is through the Cloud. Send e-invoices to your business partners & public administration entities in no time - wherever they are.',
     description:
       'In the light of the current national and EU legislation, Comarch e-Invoicing Cloud stands out as a simple and affordable tool that enables global, legally-compliant exchange of invoice documents with business partners and public administration entities. No matter your industry or product, our platform was designed to help you create, process, and store e-invoices, thus significantly improve your business efficiency. Plus, being a cloud-based solution, it does not require a long and cost-intensive implementation process. Instead, it gives you instant access to a virtual environment that is easy to navigate.',
-    banner: '',
+    banner: 'https://www.extrasys.it/hs-fs/hubfs/E-invoice%20benefits.png?width=800&name=E-invoice%20benefits.png',
     evocativePhoto: '',
     serviceTitle: 'E-Invoicing Service',
     serviceDescription:
       'Companies active in many countries or worldwide need to support and process a large number of different E-Invoicing standards. With ??COMPANY NAME?? you are on the safe side. We support E-Invoicing compliance in more than 55 countries. In recent years, E-Invoicing initiatives have been started in many countries to simplify the exchange of invoicing data between companies („B2B“), and between companies and authorities („B2G“), and to increase tax revenues. The defined standards within the scope of these initiatives are already widespread. Some are already regulated by national governments.',
+    s1Name: 'Service Variants',
+    s1Description:
+      'Using industry-specific modules which include the country-specific processes, standards and features, all companies can start right away.',
+    s1Logo:
+      'https://i.ibb.co/Rczq8Pv/sol-1.png',
+    s2Name: 'High Security B2B Cloud Operation',
+    s2Description:
+      'Our highly standardized operating processes meet strict requirements typically going far beyond what you can provide on your own system.',
+    s2Logo:
+      'https://i.ibb.co/KwskLjv/sol-2.png',
+    s3Name: 'Secure Investment',
+    s3Description:
+      'Our software is independent from the operating model. We offer all SEEBURGER solutions as a Cloud Service or On-Premises solution with identical functionality. ',
+    s3Logo:
+      'https://i.ibb.co/b77D3Fm/sol-3.png',
     partnerTitle: '',
     partnerDescription: '',
     p1Name: '',
-    p1Logo: '',
+    p1Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
     p2Name: '',
-    p2Logo: '',
+    p2Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
     p3Name: '',
-    p3Logo: '',
+    p3Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
     caseStudyTitle: '',
     realtedServiceTitle: '',
   })
   await CloudComputing.addService(EInvoice.id)
 
-  const CloudServices = await Service.create({
+  const CloudAppDevelopServices = await Service.create({
     title: 'Cloud App Development Services',
     subTitle:
       'With cloud application development services, businesses can build applications that are technically and architecturally adapted to being smoothly hosted and maintained by the cloud infrastructure and take advantage of the capabilities and services offered by PaaS (platform-as-a-service) and IaaS (infrastructure-as-a-service) providers.',
     description:
       '94% of companies already use cloud services reducing IT costs, granting their users reliability and availability and refocusing from routine maintenance to more strategic initiatives. Let us help you get cloud applications designed for high security, performance efficiency, and operational excellence while ensuring the optimal resource consumption.',
-    banner: '',
+    banner: 'https://4.imimg.com/data4/WT/LG/GLADMIN-22150665/0-500x500.jpg',
     evocativePhoto: '',
     serviceTitle: 'Application modernization services',
     serviceDescription: '',
+    s1Name: 'Cloud consulting',
+    s1Description:
+      'Plan a cloud app to meet your business needs.',
+    s1Logo:
+      'https://i.ibb.co/Rczq8Pv/sol-1.png',
+    s2Name: 'Cloud app development',
+    s2Description:
+      'We deliver a scalable, portable, reliable and secure containerized app based on the microservices.',
+    s2Logo:
+      'https://i.ibb.co/KwskLjv/sol-2.png',
+    s3Name: 'Application migration to the cloud',
+    s3Description:
+      'Application and/or DWH migration to the cloud with all-around modifications',
+    s3Logo:
+      'https://i.ibb.co/b77D3Fm/sol-3.png',
+    partnerTitle: '',
     partnerTitle: '',
     partnerDescription: '',
     p1Name: '',
-    p1Logo: '',
+    p1Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
     p2Name: '',
-    p2Logo: '',
+    p2Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
     p3Name: '',
-    p3Logo: '',
+    p3Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
     caseStudyTitle: '',
     realtedServiceTitle: '',
   })
-  await CloudComputing.addService(CloudServices.id)
+  await CloudComputing.addService(CloudAppDevelopServices.id)
   //**END OF CLOUD COMPUTING SERVICES */
 
   //**CUSTOMER EXPERIENCE SERVICES */
@@ -1226,22 +1257,51 @@ async function insertRealData() {
   //**END OF BIG DATA ANALYSIS CASE STUDIES */
 
   //**CLOUD COMPUTING CASE STUDIES */
-  const casestudy2 = await CaseStudy.create({
-    title: 'CLOUD COMPUTING CASE STUDIES',
-    subTitle: '',
-    banner: '',
-    descriptiveText: '',
-    challengeTitle: '',
-    challengeDescription: '',
-    solutionTitle: '',
-    solutionDescription: '',
-    teamsTitle: 'Team a caso',
+  const ccC1 = await CaseStudy.create({
+    title: 'Massive invoice volumes as key driver for e-invoicing',
+    subTitle:
+      '“KPN generates an astonishing 100 million invoices per year. This is more than eight million per month. We are, with the exception of the Tax Administration, the biggest paper factory in the Netherlands.” explains Hans Hodes, Business Consultant at KPN. Customers receive invoices with cost summaries each month, or every other month. With these volumes, it was clear that e-Invoicing could bring big benefits.',
+    banner:
+      'https://einvoice1-trial.nic.in/Images/Einvoice_banner2.jpg',
+    descriptiveText:
+      'The Netherlands’ leading telecommunications company, KPN, serves both consumers and business marketers – including 60% of the 1 million businesses in the Netherlands. Basware is helping them manage more than 100 million invoices per year.',
+    challengeTitle: 'The increasing popularity if e-invoicing',
+    challengeDescription:
+      'Over the years, electronic invoices became more common and KPN experienced a higher demand for this service. KPN’s German e-Invoicing service provider handled these requests. Hodes explains: “When customers called us, they were serviced by our German service provider after various detours and connections in the chain. In my opinion, this could have been done better.”',
+    solutionTitle: 'QUICK SWITCH OF E-INVOICING PROVIDER',
+    solutionDescription:
+      'Getting e-Invoicing to take off in amarket requires cooperation amongthe multiple e-Invoicing serviceproviders. The service providersneed to create a stable environmentfor customers, so that customerswill dare to make the switch to ‘true’e-Invoicing. If the e-Invoicing serviceproviders don’t work together,companies in the Netherlandswill stick to invoicing via directconnections or an e-mail with PDF.” In the Netherlands, the e-Invoicingmarket has been stagnant for afew years. For that reason, KPN isworking with Basware to encouragecooperation throughout the entireindustry. Once there is greatertransparency as to which companyis connected to which communityand information can be exchanged,e-Invoicing can be stimulated.',
+    teamsTitle: 'E-Invoice Departement',
     personName: '',
     personJob: '',
     serviceTitle: '',
     serviceHeading: '',
   })
-  await CloudComputing.addCasestudy(casestudy2.id)
+  await CloudComputing.addCasestudy(ccC1.id)
+  await EInvoice.addCasestudy(ccC1.id)
+
+  const ccC2 = await CaseStudy.create({
+    title: 'JAVA BACKEND DEVELOPMENT FOR AN INNOVATIVE HOTEL SELF-SERVICE APP',
+    subTitle:
+      'To date, the demo version of the application has been successfully presented to future end users and received their endorsement. Satisfied with the results, the Customer continues cooperation with ScienceSoft as new features and integrations are continuously added. In the nearest future, the app should be adopted by about 100 hotels around the globe.',
+    banner:
+      'https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/5000741/original/fca44be5f9f214b2c4937d99e292951b0a19c2f8/write-any-c-plus-plus-java-or-python-program.png',
+    descriptiveText:
+      'The Customer is a European startup company developing an innovative hotel self-service app to sell to various hotel facilities around the world. The new application is aimed to cover multiple hotel services at once. For example, it allows guests to check in on the way to a hotel, open a locked room door with their mobile device without any keys and plastic cards, quickly and easily manage room, food, and spa services offered by a hotel from any location and more.',
+    challengeTitle: 'Java backed for web-based solution',
+    challengeDescription:
+      'The Customer needed to create Java backend that would become the basis for their web-based solution as well as Android and iOS mobile apps. The backend had to support complex functionality (check-in, door opening, extra services management, check-out, etc.) as well as enable the application’s multitenancy, flexibility, sustainability and impeccable UX.',
+    solutionTitle: 'Microservices-based architecture',
+    solutionDescription:
+      'Turning to the microservices-based architecture, HexTech’s team managed to ensure quick ongoing Agile development and simplified future scaling and integration processes. The first release of the system consisted of 9 independent services, each being responsible for a set of functions. The implementation of the app’s functionality and expected multitenancy required a number of future integrations with external applications (e.g., applications of door lock providers, internal hotel management systems, etc.). To reduce time of future integration and necessary efforts, HexTech’s team created reliable, secure, and reusable APIs for microservices. As a result, only minor tweaks were needed to introduce new components to the system.',
+    teamsTitle: 'Cloud App Development Departement',
+    personName: '',
+    personJob: '',
+    serviceTitle: '',
+    serviceHeading: '',
+  })
+  await CloudComputing.addCasestudy(ccC2.id)
+  await CloudAppDevelopServices.addCasestudy(ccC2.id)
   //**END OF CLOUD COMPUTING CASE STUDIES */
 
   //**CUSTOMER EXPERIENCE CASE STUDIES */
@@ -1839,6 +1899,43 @@ async function insertRealData() {
   iotC11.addTeammember(iotP8)
 
   /** END OF IOT TEAM MEMBER */
+
+
+  /** CLOUD COMPUTING TEAM MEMBER */
+  const ccP1 = await TeamMember.create({
+    memberNameAndOccupation: 'Sarah Anderson',
+    personalQuote: 'Lorem ipsum dolor sit amet',
+    personalDescription:
+      'A corporate strategy, business unit strategy, customer-led category management and micro-battles specialist, Sarah has recently focused on the e-invoice sectors. Her case portfolio includes various diligences for both corporate clients and private. Beyond her client work, she is the leader of our London Diversity and Inclusion efforts and a member of our global D&I Committee. She is also a senior manager peer group leader and founded our London office\'s Social Impact Ringfence. ',
+    workField: 'Cloud Computing',
+    teamsTitle: 'E-Invoice Departement',
+    personName: 'Sarah Anderson',
+    personJob: '',
+    personPhoto:
+      'https://media.gettyimages.com/photos/happy-female-brunette-ceo-wearing-blue-denim-shirt-picture-id1179627283?s=612x612',
+    teamImage: '',
+  })
+  CloudComputing.addTeammember(ccP1)
+  ccC1.addTeammember(ccP1)
+
+  const ccP2 = await TeamMember.create({
+    memberNameAndOccupation: 'Giancarlo Andes',
+    personalQuote: 'Lorem ipsum dolor sit amet',
+    personalDescription:
+      'Giancarlo advises clients on market launch strategies, sales, pricing and commercial excellence programs. Since joining the firm in 2009, he has also worked in our São Paulo and Milan offices. He studied international business in both Rome and Shanghai.',
+    workField: 'Cloud Computing',
+    teamsTitle: 'Cloud App Development Departement',
+    personName: 'Giancarlo Andes',
+    personJob: '',
+    personPhoto:
+      'https://media.gettyimages.com/photos/smart-mature-businessman-in-city-picture-id157591367?s=612x612',
+    teamImage: '',
+  })
+  CloudComputing.addTeammember(ccP2)
+  ccC2.addTeammember(ccP2)
+
+  /** END OF CLOUD COMPUTING TEAM MEMBER */
+
 
   //**BiG DATA ANALYTICS TEAM MEMBER */
 
