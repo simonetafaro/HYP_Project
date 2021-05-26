@@ -207,7 +207,7 @@ async function insertRealData() {
     description:
       'Anytime. Anywhere. We create cybersecurity tailored to your specific business needs. We defend against cyberattacks with proactive, focused,  industry-relevant threat intelligence to give you the confidence that  comes from knowing your business is secure.',
     banner:
-      'https://i.ibb.co/pKLgfd6/security-grande.png',
+      'https://i.ibb.co/X5FrLTP/Frame-6.png',
     evocativeImage: 'https://i.ibb.co/Ny7F40s/security.png',
     servicesTitle: 'Discover our Security services',
     servicesDescription:
@@ -223,7 +223,7 @@ async function insertRealData() {
       'Acting as the bridge between the physical and the digital world, IoT offers a huge opportunity for companies.',
     description:
       'We help clients effectively capitalize on IoT technology and solutions, linking technology, vendors and customers through a holistic business model. IoT describes the connection of devices to the internet using embedded software and sensors to communicate, collect and exchange data with one another. IoT combines connectivity with sensors, devices and people, enabling a form of free-flowing conversation between man and machine, software and hardware. With IoT, the world is wide open, offering a virtually endless array of opportunities and connections at home, at work or at play.',
-    banner: 'https://i.ibb.co/Np8m5Dq/iot-grande.png',
+    banner: 'https://i.ibb.co/Pwt4Z5J/Frame-5.png',
     evocativeImage: 'https://i.ibb.co/zRPbmf1/iot.png',
     servicesTitle: 'Discover our IoT services ',
     servicesDescription:
@@ -238,7 +238,7 @@ async function insertRealData() {
     subTitle: 'Modernize your IT environment and improve business efficiency',
     description:
       'Having been a major driving force of the ongoing digital revolution, the Cloud has completely changed the way enterprises run their operations - from IT infrastructure management, through financial administration, to data exchange. At ??COMPANY NAME??, we can move your existing IT environment to the Cloud, as well as provide a wide range of cloud-driven applications to help your company gain a competitive advantage. Scroll through this space to learn more.',
-    banner: 'https://i.ibb.co/wrjLpB0/cloud-grande.png',
+    banner: 'https://i.ibb.co/crjyD7n/Frame-7.png',
     evocativeImage: 'https://i.ibb.co/hf3LHBb/cloud.png',
     servicesTitle: 'Discover our Cloud Computing services ',
     servicesDescription:
@@ -274,7 +274,7 @@ async function insertRealData() {
     description:
       'The science of analyzing raw data in order to make conclusions about that information, revealing reveal trends and metrics. Through our specialist your company will be more efficient in taking decisions. This process of analysis allows to operate a predictive analysis, that is, it allows to know in advance what will happen: this becomes possible because if we have a model and we have enough historical data we can determine what will happen in the near future with bases or statistical foundations.',
     banner:
-      'https://i.ibb.co/jWnxYP6/analysis-grande.png',
+      'https://i.ibb.co/F3W2W73/Frame-8.png',
     evocativeImage:
       'https://i.ibb.co/KDhJdh0/data.png',
     servicesTitle: 'Discover our services ',
