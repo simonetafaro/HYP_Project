@@ -389,8 +389,10 @@ export default {
 
   .header-content-top {
     text-align: center;
+    margin: auto;
   }
   .header-content-bottom {
+    margin: auto;
     margin-top: 30px;
     text-align: center;
     padding-bottom: 0;
@@ -405,6 +407,7 @@ export default {
     column-gap: 20px;
     column-count: 1;
     column-gap: 0;
+    text-align: center;
   }
   .header-background {
     text-align: center;
