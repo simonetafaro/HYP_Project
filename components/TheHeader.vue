@@ -983,7 +983,7 @@ a {
 .menu-item-dropdown li ul li {
   padding: 20px;
   display: block;
-  background: var(--cc-base3);
+  background: #ffffff;
   transition: background 0.3s;
   font-weight: 800;
   text-transform: none;
@@ -996,6 +996,14 @@ a {
 
 .area-element-text:hover {
   color: #4d41c9 !important;
+}
+
+.menu-item li ul li:first-child {
+  border-radius: 16px 16px 0px 0px;
+}
+
+.menu-item li ul li:last-child {
+  border-radius: 0px 0px 16px 16px;
 }
 
 .menu-item li ul li:first-child:hover {
