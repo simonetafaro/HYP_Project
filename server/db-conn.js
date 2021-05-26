@@ -207,7 +207,7 @@ async function insertRealData() {
     description:
       'Anytime. Anywhere. We create cybersecurity tailored to your specific business needs. We defend against cyberattacks with proactive, focused,  industry-relevant threat intelligence to give you the confidence that  comes from knowing your business is secure.',
     banner:
-      'https://www.orion.on.ca/wp-content/uploads/2019/05/cybersecurity-banner.jpg',
+      'https://i.ibb.co/X5FrLTP/Frame-6.png',
     evocativeImage: 'https://i.ibb.co/Ny7F40s/security.png',
     servicesTitle: 'Discover our Security services',
     servicesDescription:
@@ -223,7 +223,7 @@ async function insertRealData() {
       'Acting as the bridge between the physical and the digital world, IoT offers a huge opportunity for companies.',
     description:
       'We help clients effectively capitalize on IoT technology and solutions, linking technology, vendors and customers through a holistic business model. IoT describes the connection of devices to the internet using embedded software and sensors to communicate, collect and exchange data with one another. IoT combines connectivity with sensors, devices and people, enabling a form of free-flowing conversation between man and machine, software and hardware. With IoT, the world is wide open, offering a virtually endless array of opportunities and connections at home, at work or at play.',
-    banner: 'https://i.ibb.co/pZ83v4z/iot-main.png',
+    banner: 'https://i.ibb.co/Pwt4Z5J/Frame-5.png',
     evocativeImage: 'https://i.ibb.co/zRPbmf1/iot.png',
     servicesTitle: 'Discover our IoT services ',
     servicesDescription:
@@ -238,7 +238,7 @@ async function insertRealData() {
     subTitle: 'Modernize your IT environment and improve business efficiency',
     description:
       'Having been a major driving force of the ongoing digital revolution, the Cloud has completely changed the way enterprises run their operations - from IT infrastructure management, through financial administration, to data exchange. At ??COMPANY NAME??, we can move your existing IT environment to the Cloud, as well as provide a wide range of cloud-driven applications to help your company gain a competitive advantage. Scroll through this space to learn more.',
-    banner: '',
+    banner: 'https://i.ibb.co/crjyD7n/Frame-7.png',
     evocativeImage: 'https://i.ibb.co/hf3LHBb/cloud.png',
     servicesTitle: 'Discover our Cloud Computing services ',
     servicesDescription:
@@ -255,7 +255,7 @@ async function insertRealData() {
       'Understanding what customer experience is and why it’s no longer enough. We are reinventing business through this.',
     description:
       'The way we interact with brands and companies has changed. We typically associate the customer experience with a traditional and interaction directly found inside a store with a specific aesthetic. he world has changed, and so has the business model: digitalisation had an huge impact on our existence, leading companies to shape a whole new entrepreneurial perspective. But it’s not just because of this. Many customer behaviour patterns have evolved and the company must be able to understand their needs and needs, possibly anticipating and surprising them.',
-    banner: '',
+    banner: 'https://i.ibb.co/XpSgKYj/ce-grande.png',
     evocativeImage: 'https://i.ibb.co/pxH7fJ1/customer-experience.png',
     servicesTitle: 'Explore our tailor-made services about Customer Experience',
     servicesDescription:
@@ -274,7 +274,7 @@ async function insertRealData() {
     description:
       'The science of analyzing raw data in order to make conclusions about that information, revealing reveal trends and metrics. Through our specialist your company will be more efficient in taking decisions. This process of analysis allows to operate a predictive analysis, that is, it allows to know in advance what will happen: this becomes possible because if we have a model and we have enough historical data we can determine what will happen in the near future with bases or statistical foundations.',
     banner:
-      'https://storage.googleapis.com/saepict-saepictwagtail-prod/images/big-data-analysis-2020.original.png',
+      'https://i.ibb.co/F3W2W73/Frame-8.png',
     evocativeImage:
       'https://i.ibb.co/KDhJdh0/data.png',
     servicesTitle: 'Discover our services ',
@@ -439,17 +439,17 @@ async function insertRealData() {
     s1Description:
       'Our smart traffic systems take intelligent actions based on the careful “study” of traffic flow, bringing human intervention down to a minimum.',
     s1Logo:
-      'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
+      'https://i.ibb.co/Rczq8Pv/sol-1.png',
     s2Name: 'Lighting',
     s2Description:
       'Connecting sensors, across the street lighting system, helps to consume less energy and bringing down energy costs.',
     s2Logo:
-      'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
+      'https://i.ibb.co/KwskLjv/sol-2.png',
     s3Name: 'Safety',
     s3Description:
       'For enhancing public safety, we connect cameras, microphones and movement sensors to a smart city platform and power it with robust analytics tools.',
     s3Logo:
-      'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
+      'https://i.ibb.co/b77D3Fm/sol-3.png',
     partnerTitle: '',
     partnerDescription:
       'Since user apps are an integral part of a smart city, we offer mobile consulting, UI/UX design, native (iOS, Android) and cross-platform (Cordova/PhoneGap, Xamarin, React Native) development, as well as mobile testing.',
@@ -482,16 +482,16 @@ async function insertRealData() {
     s1Description:
       'With connected lighting, your organization can monitor usage and provide lighting as needed in different areas based on their unique needs.',
     s1Logo:
-      'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
+      'https://i.ibb.co/Rczq8Pv/sol-1.png',
     s2Name: 'Make your city a safer place',
     s2Description:
       'Smart lighting provides a greater sense of security and overall better experience for citizens as it helps cities enhance public safety',
     s2Logo:
-      'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
+      'https://i.ibb.co/KwskLjv/sol-2.png',
     s3Name: '..........',
     s3Description: '............',
     s3Logo:
-      'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
+      'https://i.ibb.co/b77D3Fm/sol-3.png',
     p1Name: '......',
     p1Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
     p2Name: '..........',
@@ -521,16 +521,16 @@ async function insertRealData() {
     s1Description:
       'A new lifestyles offering a suite of advanced features including mobile Wi-Fi hotspot, Internet radio, Web services and an improved navigation system.',
     s1Logo:
-      'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
+      'https://i.ibb.co/Rczq8Pv/sol-1.png',
     s2Name: 'Thales Automotive Connectivity',
     s2Description:
       'Automotive-grade eSIMs leadership position, to identify vehicles, encrypt and secure communications. eSIMs also ensure remote connectivity provisioning as well as seamless connectivity.',
     s2Logo:
-      'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
+      'https://i.ibb.co/KwskLjv/sol-2.png',
     s3Name: '-....',
     s3Description: '.....',
     s3Logo:
-      'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
+      'https://i.ibb.co/b77D3Fm/sol-3.png',
     p1Name: '........',
     p1Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
     p2Name: '......',
@@ -561,17 +561,17 @@ async function insertRealData() {
     s1Description:
       'Smart price tags will adjust prices in real time, based on the item’s popularity, expiry date, and other factors. ',
     s1Logo:
-      'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
+      'https://i.ibb.co/Rczq8Pv/sol-1.png',
     s2Name: 'Agile workforce',
     s2Description:
       'With the advancement of technologies, courses and webinars are already accessible for anyone, anytime, and from any device.',
     s2Logo:
-      'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
+      'https://i.ibb.co/KwskLjv/sol-2.png',
     s3Name: 'Connectivity platforms',
     s2Description:
       'In the retail industry, connectivity platforms may take multiple forms: from large marketplaces, such as Amazon and Alibaba, to online payment systems and device communication hubs.',
     s3Logo:
-      'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
+      'https://i.ibb.co/b77D3Fm/sol-3.png',
     p1Name: 'Amazon Web Services',
     p1Logo: 'https://www.channelfutures.com/files/2015/05/aws_0.jpg',
     p2Name: 'Arduino',
@@ -603,17 +603,17 @@ async function insertRealData() {
     s1Description:
       'Knowing the exact location of life-saving devices and essential equipment like infusion pumps results in fewer delays for patients and helps optimize machine use.',
     s1Logo:
-      'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
+      'https://i.ibb.co/Rczq8Pv/sol-1.png',
     s2Name: 'Capturing data to drive better outcomes',
     s2Description:
       'Home monitoring of patients using connected blood pressure, glucose and other devices, which enables doctors and nurses to track patients more closely and identify individuals who are at risk.',
-    s1Logo:
-      'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
+    s2Logo:
+      'https://i.ibb.co/KwskLjv/sol-2.png',
     s3Name: 'Enhancing the employee and patient experience',
     s3Description:
       'Medical teams can track the location of patients wearing wristbands with sensors and deliver relevant information to families via their smartphones.',
     s3Logo:
-      'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
+      'https://i.ibb.co/b77D3Fm/sol-3.png',
     p1Name: '....',
     p1Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
     p2Name: '.....',
@@ -643,17 +643,17 @@ async function insertRealData() {
     s1Description:
       'Many use sensors to monitor and access everything—from the operational state of machinery to getting alerts when storage tanks, trash dumpsters, exit signs and smoke alarms need to be serviced.',
     s1Logo:
-      'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
+      'https://i.ibb.co/Rczq8Pv/sol-1.png',
     s2Name: 'Optimizing factory conditions',
     s2Description:
       'IoT-enabled predictive maintenance can help prevent equipment from malfunctioning. Dashboards can provide deep visibility within a partner ecosystem and supply chain.',
     s2Logo:
-      'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
+      'https://i.ibb.co/KwskLjv/sol-2.png',
     s3Name: 'Monitoring the supply chain',
     s3Description:
       'IoT solutions can monitor the condition of products from when they are made in a factory (or grown on a farm) to the arrival at their final destination.',
     s3Logo:
-      'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
+      'https://i.ibb.co/b77D3Fm/sol-3.png',
     p1Name: '.....',
     p1Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
     p2Name: '.....',
