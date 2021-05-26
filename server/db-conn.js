@@ -488,8 +488,8 @@ async function insertRealData() {
       'Smart lighting provides a greater sense of security and overall better experience for citizens as it helps cities enhance public safety',
     s2Logo:
       'https://i.ibb.co/KwskLjv/sol-2.png',
-    s3Name: '..........',
-    s3Description: '............',
+    s3Name: 'Remote maintenance of smart lights',
+    s3Description: 'HexTech Smart Lighting Solution allows secure and reliable short distance communication, distributed control and remote smartlights management',
     s3Logo:
       'https://i.ibb.co/b77D3Fm/sol-3.png',
     p1Name: '......',
@@ -527,8 +527,8 @@ async function insertRealData() {
       'Automotive-grade eSIMs leadership position, to identify vehicles, encrypt and secure communications. eSIMs also ensure remote connectivity provisioning as well as seamless connectivity.',
     s2Logo:
       'https://i.ibb.co/KwskLjv/sol-2.png',
-    s3Name: '-....',
-    s3Description: '.....',
+    s3Name: 'Customer Engagement',
+    s3Description: 'Modern customers must have smarter, ‘connected’ cars, and appreciate innovative marketing as much as they like innovations with their vehicles.',
     s3Logo:
       'https://i.ibb.co/b77D3Fm/sol-3.png',
     p1Name: '........',
@@ -568,7 +568,7 @@ async function insertRealData() {
     s2Logo:
       'https://i.ibb.co/KwskLjv/sol-2.png',
     s3Name: 'Connectivity platforms',
-    s2Description:
+    s3Description:
       'In the retail industry, connectivity platforms may take multiple forms: from large marketplaces, such as Amazon and Alibaba, to online payment systems and device communication hubs.',
     s3Logo:
       'https://i.ibb.co/b77D3Fm/sol-3.png',
@@ -1487,6 +1487,28 @@ async function insertRealData() {
   await Healthcare.addCasestudy(iotC6.id)
 
   const iotC7 = await CaseStudy.create({
+    title: 'Internet of Medical Things',
+    subTitle:
+      'Ensure that the right people are assigned to the right places to efficiently deliver quality care while improving staff morale and patient satisfaction.',
+    banner: 'https://img.lovepik.com/photo/50056/0961.jpg_wh860.jpg',
+    descriptiveText:
+      'IoT in health care can dramatically optimize workflow and staffing. Even a basic IoT solution can collect and bring together such data as staff location and expertise, patient acuity and location, and availability and location of critical diagnostic and therapeutic equipment. Once modeled, this data can help staffing managers improve workflows and make better staffing and scheduling decisions.',
+    challengeTitle: 'Customized therapies and interaztions',
+    challengeDescription:
+      'Patients today expect more personalized interactions as well as customized therapies that are effective and cost-efficient. Health care systems can be overwhelmed by the flood of rich new data sources, including social media, wearables and medical devices (known as the Internet of Medical Things, or IoMT). The digitization of the health care industry – from patients to clinical infrastructure – provides unprecedented opportunities to transform delivery and meet the challenges of cost, quality and access.',
+    solutionTitle: 'IoT Analytics',
+    solutionDescription:
+      "Manage and analyze your IoMT data where, when and how it works best for your patient. Deliver the best patient experience – in real-time. Understand which data is relevant and private, so you'll know what to store and what to protect. SAS delivers trusted, automated IoT analytics solutions that can help you: - Maximize value from IoMT data. Identify and leverage data sources that provide tangible insights into enhancing patient care, streamlining processes and delivering cost optimization strategies. - Drive innovation in patient care and operations. Develop new business models and opportunities for data sharing and monetization with a more dynamic, open and agile platform. - Embed IoMT analytics within decision support systems. Reduce alarm fatigue, improve patient safety, optimize staff and patient flow, and accelerate the adoption of value-based health care and personalized medicine.",
+    teamsTitle: 'IoT Department',
+    personName: '',
+    personJob: '',
+    serviceTitle: '',
+    serviceHeading: '',
+  })
+  await IoT.addCasestudy(iotC7.id)
+  await Healthcare.addCasestudy(iotC7.id)
+
+  const iotC8 = await CaseStudy.create({
     title: 'Innovation to the streets of Jamshedpur',
     subTitle:
       'Optimise infrastructure services in Jamshedpur. Specific areas that involved safety and additional manual effort due to scale, took priority',
@@ -1506,32 +1528,99 @@ async function insertRealData() {
     serviceTitle: '',
     serviceHeading: '',
   })
-  await IoT.addCasestudy(iotC7.id)
-  await SmartLighting.addCasestudy(iotC7.id)
-  await SmartCities.addCasestudy(iotC7.id)
+  await IoT.addCasestudy(iotC8.id)
+  await SmartLighting.addCasestudy(iotC8.id)
+  await SmartCities.addCasestudy(iotC8.id)
 
-  const iotC8 = await CaseStudy.create({
-    title: 'Internet of Medical Things',
+  const iotC9 = await CaseStudy.create({
+    title: 'Building health monitoring',
     subTitle:
-      'Ensure that the right people are assigned to the right places to efficiently deliver quality care while improving staff morale and patient satisfaction.',
-    banner: 'https://img.lovepik.com/photo/50056/0961.jpg_wh860.jpg',
+      'The Customer received an easy-to-use IoT solution to monitor the state of a construction in real time. The tool automatically notifies the operator about a sensor failure or a construction defect and can be integrated with external systems',
+    banner: '',
     descriptiveText:
-      'IoT in health care can dramatically optimize workflow and staffing. Even a basic IoT solution can collect and bring together such data as staff location and expertise, patient acuity and location, and availability and location of critical diagnostic and therapeutic equipment. Once modeled, this data can help staffing managers improve workflows and make better staffing and scheduling decisions.',
-    challengeTitle: 'Customized therapies and interaztions',
+      'The Customer is a large company that provides construction sites with complex automation and security systems. The company offers design solutions and performs supply, installation and commissioning for various types of construction projects.',
+    challengeTitle: 'Continuous and efficient technical control',
     challengeDescription:
-      'Patients today expect more personalized interactions as well as customized therapies that are effective and cost-efficient. Health care systems can be overwhelmed by the flood of rich new data sources, including social media, wearables and medical devices (known as the Internet of Medical Things, or IoMT). The digitization of the health care industry – from patients to clinical infrastructure – provides unprecedented opportunities to transform delivery and meet the challenges of cost, quality and access.',
-    solutionTitle: 'IoT Analytics',
+      'In order to provide a continuous and efficient technical control and thus increased security of constructions and complex engineering objects, the Customer decided to develop a smart construction monitoring system for collecting and processing data through sensors installed on the key elements of a building. The solution was designed to automate regular data collection and processing.',
+    solutionTitle: 'Procesing and calculations on sensor data',
     solutionDescription:
-      "Manage and analyze your IoMT data where, when and how it works best for your patient. Deliver the best patient experience – in real-time. Understand which data is relevant and private, so you'll know what to store and what to protect. SAS delivers trusted, automated IoT analytics solutions that can help you: - Maximize value from IoMT data. Identify and leverage data sources that provide tangible insights into enhancing patient care, streamlining processes and delivering cost optimization strategies. - Drive innovation in patient care and operations. Develop new business models and opportunities for data sharing and monetization with a more dynamic, open and agile platform. - Embed IoMT analytics within decision support systems. Reduce alarm fatigue, improve patient safety, optimize staff and patient flow, and accelerate the adoption of value-based health care and personalized medicine.",
+      "HexTech development team designed and developed a smart solution to collect sensor data and aggregate it on a central server for processing and further calculations of a building’s state. Data processing and averaging make it possible to boost system performance and reduce data volumes. The user-friendly interface presents the data from connected through intuitive color coding – the green, yellow and red lights indicate the state of a building. Additionally, the system allows a flexible configuration of threshold values to regulate the transition from one status to another. To aggregate the data – suppose, for calculating a construction deformation, ScienceSoft developed a system of virtual sensors collecting information from several physical sensors. It allows users to monitor specific parameters which can be used only in the aggregate.",
     teamsTitle: 'IoT Department',
     personName: '',
     personJob: '',
     serviceTitle: '',
     serviceHeading: '',
   })
-  await IoT.addCasestudy(iotC8.id)
-  await Healthcare.addCasestudy(iotC8.id)
-  //  await SmartRetail.addCasestudy(iotC9.id)
+  await IoT.addCasestudy(iotC9.id)
+  await SmartCities.addCasestudy(iotC9.id)
+  
+  const iotC10 = await CaseStudy.create({
+    title: 'Remote patient monitoring software',
+    subTitle:
+      'The development team optimized the measurement API server and decreased the load on the system by introducing the following features: aggregation of requests, grouping of data, NGINX server settings, optimization of queries and MySQL. The solution for remote software deployment to SNA devices enabled the distribution order of install, delete and update commands as per specifics of Android OS by building a queue of commands and sending them to the devices.',
+    banner: '',
+    descriptiveText:
+      'The Customer is a US-based provider of healthcare solutions with development centers in Israel and Belarus.',
+    challengeTitle: 'Remote patient monitoring solution',
+    challengeDescription:
+      'The Customer wanted to deliver a sophisticated remote patient monitoring solution for clinics of North America. The solution should help to improve medical staff performance, avoid routine visits, and increase the quality of care. For that reason, the Customer needed a team of savvy professionals in R&D and healthcare IT.',
+    solutionTitle: 'App and Web Dashboard',
+    solutionDescription:
+      "The developers reviewed and analyzed available approaches and frameworks and picked WebRTC technology as the best one for platform-independent voice and video communication. Several Android-powered hardware devices were selected to implement central communication module or Sensor Network Appliances (SNAs). The development process was split into 2 major parts: the development of apps for Android and iOS devices and Web dashboard implementation. \n 1) ScienceSoft’s team delivered apps for both patients and medical staff. Gradle flavors were used to build the apps’ variations fully compatible with different screen sizes: wide screen (for doctors), tablet (for nurses) and smartphone (for healthcare services consumers). Patients could smoothly access numerous sensors in order to monitor data and synchronize it with the server. Medical staff members could diagnose and treat patient remotely and receive automated alerts and notifications, when, for example patient state suddenly changes. \n 2) A Web Dashboard assisted medical professionals in monitoring the overall status of patients drilling down on personal medical data. It sent alerts on poor health indicators and maintains the doctor-patient connection. The central communication module was built upon a TV-connected Android-powered device. ",
+    teamsTitle: 'IoT Department',
+    personName: '',
+    personJob: '',
+    serviceTitle: '',
+    serviceHeading: '',
+  })
+  await IoT.addCasestudy(iotC10.id)
+  await Healthcare.addCasestudy(iotC10.id)
+  
+  const iotC11 = await CaseStudy.create({
+    title: 'Image analysis software for automated optical inspections',
+    subTitle:
+      'HexTech’s team has successfully developed image analysis software for automated optical inspection of printed circuit assemblies. The application offers considerable opportunities for the SMT manufacturing industry, providing a fast and reliable solution for PCA quality control.',
+    banner:
+      '',
+    descriptiveText:
+      'ScienceSoft has developed an application for the electronics industry aimed at ensuring the quality of printed circuit assemblies (PCAs) by means of machine vision.',
+    challengeTitle: 'Faster and more efficient inspection',
+    challengeDescription:
+      'The application was to perform fast and efficient quality inspection of printed circuit assemblies right on the conveyor belt and detect if any of the PCA components were missing.',
+    solutionTitle: 'Industrial connected displays',
+    solutionDescription:
+      'A team of a project manager, a business analyst, 3 senior С++ developers, a senior UI designer, and a software testing engineer have delivered a desktop application based on image analysis algorithms, complemented with a simple and intuitive GUI. In particular, ORB algorithm has been used for feature detection, and a combination of algorithms (perceptual hash algorithm, PSNR and histograms comparing) have been employed to compare regions of interest in the reference template and in the image under inspection. The user provides a reference board template, putting on all the elements to be inspected with a tool that allows marking objects of three main shapes: \n-Elements with a round cross-section (mainly capacitors) \n-Rectangular elements (chips, diodes, transistors) \n-Dumbbell-shaped elements (resistors) \n After preparing the reference template with all the elements located, the user can proceed to the analysis of printed circuit assemblies of the same type as the reference PCA. Comparing these images with the reference assembly, the application defines defected ones and shows the locations of missing components in detail.',
+    teamsTitle: 'IoT Department',
+    personName: '',
+    personJob: '',
+    serviceTitle: '',
+    serviceHeading: '',
+  })
+  await IoT.addCasestudy(iotC11.id)
+  await IndustrialManufacturing.addCasestudy(iotC11.id)
+
+  const iotC12 = await CaseStudy.create({
+    title: 'Control Unit for Automotive Tier-I Supplier',
+    subTitle:
+      'We were able to successfully deliver a robust telematics solution within the desired timeframe.he customer was able to deliver the proof of concept (PoC) within 6 months. This helped them initiate demos with the OEMs and Suppliers earlier than expected.',
+    banner:
+      '',
+    descriptiveText:
+      'Our customer is a leading Tier-I Supplier of Infotainment Systems, Head-up Display (HUD) Solutions, Digital Instrument Clusters and Battery Management Systems (BMS) for Electric Vehicles.',
+    challengeTitle: 'Integrate Hextech features in their Digital Instrument Cluster product.',
+    challengeDescription:
+      'Business Challenge:\n-The customer desired to integrate Telematics features in their Digital Instrument Cluster product.\n-This Instrument Cluster solution has been designed for passenger vehicles (four-wheelers, two-wheelers, auto rickshaws and electric vehicles).\n-In order to launch this product along with the integrated Telematics Features, the support of Subject Matter Experts (SME) was required in areas of Cloud, Firmware, Device Drivers, and end-to end IoT Technology Stack.\n-The customer decided that their in-house teams should focus on the core product development activities and the telematics feature integration activity should be outsourced.\n-This made the role of the Product Engineering Services partner very critical.',
+    solutionTitle: ' IoT Sensor Network design and Cloud Interface development',
+    solutionDescription:
+      'Our more than a decade long expertise in the Automotive domain along with proven production grade Cloud-Telematics reference designs encouraged the customer to partner with us for this project. We leveraged our expertise in IoT Sensor Network design and Cloud Interface development, in order to enable the collection of data like speed, GPS location and more. This was facilitated with the help of MQTT protocol based communication interface. Our expertise in the automotive domain ensured that we achieve compliance with all the necessary standards while selecting components for hardware design. Additionally, we have leveraged our expertise in firmware, SPI, I2C and CAN protocols.',
+    teamsTitle: 'IoT Department',
+    personName: '',
+    personJob: '',
+    serviceTitle: '',
+    serviceHeading: '',
+  })
+  await IoT.addCasestudy(iotC12.id)
+  await Automotive.addCasestudy(iotC12.id)
 
   //**END OF IOT CASE STUDIES */
 
@@ -1616,13 +1705,13 @@ async function insertRealData() {
     memberNameAndOccupation: 'Olivier Haren - Chair of the IoT Board',
     personalQuote: 'Lorem ipsum dolor sit amet',
     personalDescription:
-      'Olivier joined us as an RF engineer in 1997. Since 2016, Olivier is the R&D manager for the IoT Business Unit.  Previously Bruno spent 11 years as the manager of the Electronic and Software Department of the Legrand Group’s Radio Frequency & Voice, Data and Image Competencies Center and 10 years in the wired and RF telecommunication field in various R&D positions as electronic designer or project leader. \n Olivier holds a master’s degree in electronic embedded systems from the Institut National Polytechnique de Grenoble, France.',
+      'Olivier joined us as an RF engineer in 1997. Since 2016, Olivier is the R&D manager for the IoT Business Unit. Previously Olivier spent 11 years as the manager of the Electronic and Software Department of the Legrand Group’s Radio Frequency & Voice, Data and Image Competencies Center and 10 years in the wired and RF telecommunication field in various R&D positions as electronic designer or project leader. \n Olivier holds a master’s degree in electronic embedded systems from the Institut National Polytechnique de Grenoble, France.',
     workField: 'Internet of things',
     teamsTitle: 'IoT Department',
     personName: 'Olivier Haren',
     personJob: 'Chair of the IoT Board',
     personPhoto:
-      'https://bridgelawyers.ca/wp-content/uploads/2020/08/depositphotos_39258143-stock-illustration-businessman-avatar-profile-picture.jpg',
+      'https://media.gettyimages.com/photos/portrait-of-welldressed-mature-businessman-picture-id1141508234?s=612x612',
     teamImage: '',
   })
   IoT.addTeammember(iotP1)
@@ -1639,7 +1728,7 @@ async function insertRealData() {
     personName: 'Jean Orsaten',
     personJob: 'Chief of Smart Cities department',
     personPhoto:
-      'https://st3.depositphotos.com/15648834/17930/v/600/depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg',
+      'https://media.gettyimages.com/photos/closeup-smiling-male-leader-wearing-eyeglasses-picture-id1179627340?s=612x612',
     teamImage: '',
   })
   IoT.addTeammember(iotP2)
@@ -1647,16 +1736,16 @@ async function insertRealData() {
   iotC3.addTeammember(iotP2)
 
   const iotP3 = await TeamMember.create({
-    memberNameAndOccupation: 'Name Surname | Occupation ',
+    memberNameAndOccupation: 'Kristen DiCerba',
     personalQuote: 'Lorem ipsum dolor sit amet',
     personalDescription:
-      'He has over 30 years of experience in the home automation industry, within industry alliances and EU regulatory bodies. He is Director of the Smart Cities Department at ??COMPANY NAME??, overseeing technology partnerships, connectivity and wireless networking technologies and overall system architectures. With a strong focus on Interoperability, he has been deeply involved in the development of protocols with other leading home equipment manufacturers. The department he is heading deals with wireless protocols developments, focusing io-homecontrol, Thread, Zigbee and other open standard solutions for the Somfy Group.',
+      'Kristen DiCerbo, Ph.D. is the head of Smart Retail department. In this role, she is responsible for driving and communicating our marketingstrategy for Khan HexTech’s services, content, and product to improve clients, partners engagement and outcomes. She ensures pedagogical coherence of our overall offering and ensures a research-informed design across product, content, and solutions.',
     workField: 'Internet of things',
-    teamsTitle: 'IoT Department',
-    personName: 'Rori Duboff',
+    teamsTitle: 'IoT Smart Retail Department',
+    personName: 'Kristen DiCerba',
     personJob: '',
     personPhoto:
-      'https://lh3.googleusercontent.com/proxy/EV8Rl4BkQsH2ZMJaVsXyxo8JK28uIpF9bcmko2eipI3LDbh1ZAbj0Syr4QMT-EaonhmmrC2sxlFf32CQf5N8WC4yLS9c3ctyuiv6XWEh__q90z8hwsPsrrNrEHOa0Iai3Ajj-AnGiCACR2wJHp9II93bPbVa5dv_HpAMVQ',
+      'https://media.gettyimages.com/photos/mature-female-ceo-with-arms-crossed-picture-id1179627362?s=612x612',
     teamImage: '',
   })
   IoT.addTeammember(iotP3)
@@ -1665,22 +1754,89 @@ async function insertRealData() {
   iotC5.addTeammember(iotP3)
 
   const iotP4 = await TeamMember.create({
-    memberNameAndOccupation: 'Name1 Surname1 | Occupation ',
+    memberNameAndOccupation: 'Michael Johnson',
     personalQuote: 'Lorem ipsum dolor sit amet',
     personalDescription:
-      'Mary is as beautiful as a Hollywood star. Her thick, wavy, long black hair gracefully falls down to her shoulders and encircles her diamond-shaped face. A golden suntan usually brings out her smooth, clear complexion and high cheek bones. Her slightly arched chestnut brown eyebrows highlight her emotions by moving up and down as she reacts to her world around her. Her large deep blue eyes, remind me of a lake on a stormy day. Her curved nose gives her a little girl look that makes me want to smile when she talks. And her mouth is a small mouth outlined by puffy lips that she often accentuates with glossy pink lipstick. When she smiles, which is often, her well formed and even, white teeth brighten up her whole face. I guess you can tell that I am head over heals in love with Mary.',
-
-    workField: 'Security',
-    teamsTitle: 'Security Departement',
-    personName: 'John Molton',
+      'Michael Johnson is the employer of the year at HexTech. He brings his teoretichal and operational experience to lead a cross-functional team of Business & Product Analytics. He looks across the organization to bring strategic insights and help drive critical business decision to help accelerate developing outcomes while ensuring compliance.',
+    workField: 'Chief',
+    teamsTitle: 'IoT Automotive Departement',
+    personName: 'Michael Johnson',
     personJob: '',
     personPhoto:
-      'https://www.studiofrancesconi.com/wp-content/uploads/2019/03/placeholder-profile-sq.jpg',
+      'https://media.gettyimages.com/photos/bearded-businessman-against-gray-background-picture-id1179627332?s=612x612',
     teamImage: '',
   })
   IoT.addTeammember(iotP4)
   iotC6.addTeammember(iotP4)
   iotC7.addTeammember(iotP1)
+
+  const iotP5 = await TeamMember.create({
+    memberNameAndOccupation: 'Peter Glynn',
+    personalQuote: 'Lorem ipsum dolor sit amet',
+    personalDescription:
+      'Peter has a degree in Computer Engineering from Dublin’s Trinity College and has 18 years’ experience in the TMT industry. Peter has helped large scale enterprises deliver on sales and market making activities across a number of large scale system integration, application services and outsourcing projects that had significant transformational business cases. Peter also has extensive experience with software and platform clients; managing and growing them from the ground up resulting in them becoming major accounts.',
+    workField: 'Internet of things',
+    teamsTitle: 'Industrial Manufacturing Departement',
+    personName: 'Peter Glynn',
+    personJob: '',
+    personPhoto:
+      'https://media.gettyimages.com/photos/portrait-of-senior-businessman-smiling-picture-id985138660?s=2048x2048',
+    teamImage: '',
+  })
+  
+  IoT.addTeammember(iotP5)
+  iotC8.addTeammember(iotP5)
+  iotC12.addTeammember(iotP5)
+
+  const iotP6= await TeamMember.create({
+    memberNameAndOccupation: 'Donald Leen',
+    personalQuote: 'Lorem ipsum dolor sit amet',
+    personalDescription:
+      ' Donal has over 8 years of experience in providing advisory and consulting services with a particular focus on large scale transformation programmes within the healtcare services industry. Prior to working in consulting, Donal was a finance manager for six magazines at Conde Nast Publications in New York, and held a number of finance and accounting positions at Aer Lingus in both New York and Dublin. Donal received his MBA (Finance) qualification from Fordham University, New York.',
+    workField: 'Internet of things',
+    teamsTitle: 'Healtcare Departement',
+    personName: 'Donald Leen',
+    personJob: '',
+    personPhoto:
+      'https://media.gettyimages.com/photos/smiling-man-outdoors-in-the-city-picture-id1179420343?s=612x612',
+    teamImage: '',
+  })
+  IoT.addTeammember(iotP6)
+  iotC9.addTeammember(iotP6)
+  iotC10.addTeammember(iotP6)
+
+  const iotP7 = await TeamMember.create({
+    memberNameAndOccupation: 'Adam Jentzsch',
+    personalQuote: 'Lorem ipsum dolor sit amet',
+    personalDescription:
+      'Adam is a Full-Stack Developer experienced in building content management solutions, mobile applications, POS systems, and reporting engines. During his career, he has accumulated deep expertise developing in .NET, C#, and Angular. Prior to Fresh, Adam worked as both a freelance mobile app developer and as a full-stack developer at a multi-level marketing company. As a full-stack developer, he provided content management software solutions for large clients, as well as wrote their reporting engine.',
+    workField: 'Internet of things',
+    teamsTitle: 'Smart Cities Departement',
+    personName: 'Adam Jentzsch',
+    personJob: '',
+    personPhoto:
+      'https://media.gettyimages.com/photos/young-man-standing-confidently-picture-id973481352?s=612x612',
+    teamImage: '',
+  })
+  IoT.addTeammember(iotP7)
+  iotC10.addTeammember(iotP7)
+
+
+  const iotP8 = await TeamMember.create({
+    memberNameAndOccupation: 'Michelle Tore',
+    personalQuote: 'Lorem ipsum dolor sit amet',
+    personalDescription:
+      'Michelle is a Certified LabVIEW developer working as a Controls System Engineer at Fresh. Having recently completed her master’s degree in Mechanical Engineering at the University of Washington, Michelle focuses on control system theory and design. Her previous engineering experience includes a start-up developing a ventilation/monitoring system to detect and prevent manhole explosions.',
+    workField: 'Internet of things',
+    teamsTitle: 'Smart Lighting Departement',
+    personName: 'Michelle Tore',
+    personJob: '',
+    personPhoto:
+      'https://media.gettyimages.com/photos/businesswoman-with-blond-hair-on-white-background-picture-id1053401356?s=612x612',
+    teamImage: '',
+  })
+  IoT.addTeammember(iotP8)
+  iotC11.addTeammember(iotP8)
 
   /** END OF IOT TEAM MEMBER */
 
