@@ -324,7 +324,10 @@
                 :key="'menu-area-' + areaIndex"
                 class="menu-area-item-mobile"
               >
-                <nuxt-link :to="'/area/' + area.id">
+                <nuxt-link
+                  :to="'/area/' + area.id"
+                  @click.native="openMenuMobile()"
+                >
                   {{ area.title }}
                 </nuxt-link>
               </div>
@@ -334,13 +337,17 @@
           <nuxt-link
             v-if="item.name != 'Areas'"
             :to="item.path"
+            @click.native="openMenuMobile()"
             class="headerContent"
           >
             {{ item.name }}
           </nuxt-link>
         </div>
         <div class="contact-button-container">
-          <button class="contact-button" @click="goTo('/contact')">
+          <button
+            class="contact-button"
+            @click="openMenuMobile(), goTo('/contact')"
+          >
             CONTACT US
           </button>
         </div>
@@ -1057,6 +1064,9 @@ a {
     );
     position: fixed;
     height: 100%;
+    top: 50px;
+    right: 0;
+    transition: visibility 0s, opacity 0.5s linear;
     z-index: 1;
   }
   .menu-item-mobile {
