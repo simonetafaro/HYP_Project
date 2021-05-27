@@ -896,9 +896,9 @@ async function insertRealData() {
     subTitle:
       'Learn how immersive technology can increase revenue and streamline the event planning process.',
     description:
-      'The Immersive and Innovative Experiences practice helps clients transform experiences for this world of unlimited possibility. We blend cutting-edge immersive technology with human creativity and strong ethical governance. We break down barriers between brands and their customers.',
-    banner: '',
-    evocativePhoto: '',
+      'What’s the future of customer experience? It’s multi-dimensional. As the boundaries between the digital and the physical continue to blur, new kinds of immersive interactions become possible. Augmented reality, virtual reality, mixed reality—it all comes together in creative experiences that flow freely across real and virtual spaces. The Immersive and Innovative Experiences practice helps clients transform experiences for this world of unlimited possibility. We blend cutting-edge immersive technology with human creativity and strong ethical governance. We break down barriers between brands and their customers. We help visualize and understand products in new ways. And we bring people together in new virtual environments.',
+    banner: 'https://images.unsplash.com/photo-1502185372788-6ff455aa92ff?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80',
+    evocativePhoto: 'https://images.unsplash.com/photo-1556740758-90de374c12ad?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80',
     serviceTitle: 'Immersive Technologies solutions',
     serviceDescription:
       'We help brands tell stories and craft experiences in innovative and immersive ways, opening up new kinds of interaction, new ways to work and learn, and new revenue streams. It’s an emerging space for all to play in. Let us help you take a lead in next-generation experience.',
@@ -912,7 +912,7 @@ async function insertRealData() {
     //detailDescription4: 'Building new ways to process information, master skills and improve performance through virtually simulated environments and situations.',
     partnerTitle: 'Alliances and partners',
     partnerDescription:
-      'At ?company name?, together with our Partners, we are re-imagining the business Deliver with unforgettable customer experiences',
+      'At HexTech, together with our Partners, we are re-imagining the business Deliver with unforgettable customer experiences',
     p1Name: 'Adobe',
     p1Logo: '',
     p2Name: '',
@@ -930,19 +930,25 @@ async function insertRealData() {
     subTitle:
       'Leading creative, business analysis, and advanced technology in user research',
     description:
-      'Design a new way to communicate. How to create brand new costumer’s experiences with the latest trend of user interfaces. An interface is the link between the corporate and the user, it must respond to customers’ new, often unmet and frequently changing needs and enable them to achieve their desired outcomes.',
-    banner: '',
-    evocativePhoto: '',
-    serviceTitle: '',
-    serviceDescription: '',
+      'Design a new way to communicate. User interface (or UI) design has grown substantially over the past few years, and has blossomed into one of the most creative, innovative and exciting fields in tech. Our service it is here to help you to create a brand new costumer’s experiences with the latest trend of user interfaces. An interface is the link between the corporate and the user, it must respond to customers’ new, often unmet and frequently changing needs and enable them to achieve their desired outcomes.',
+    banner: 'https://images.unsplash.com/photo-1618788372246-79faff0c3742?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=882&q=80',
+    evocativePhoto: 'https://images.unsplash.com/photo-1560461396-ec0ef7bb29dd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80',
+    serviceTitle: 'User Interfaces solutions',
+    serviceDescription: 'User interface elements are the parts we use to build interactive websites or apps. They provide touchpoints for the user as they navigate their way around; from buttons to scrollbars, to menu items and checkboxes. Every single detail matter!',
+    //detailTitle1: 'Design accessibility',
+    //detailDescription1: 'We can not fogot the crucial role of accessibility and inclusion. From designing a suite of UI elements, such as buttons, icons, and scrollbars, choosing colors and typefaces, to regularly testing their designs through prototyping, UI designers carefully weigh up what each design choice means for the end user.',
+    //detailTitle2: 'Trustwothy apps',
+    //detailDescription2: 'We know that users like to feel in control of themselves and their environment. With our help your interface to avoid having unplanned interactions, confusing pathways, and surprising outcomes, giving the customers insight into what to expect at every turn.',
+    //detailTitle3: '',
+    //detailDescription3: '',
     partnerTitle: 'Alliances and partners',
     partnerDescription:
-      'At ?company name?, together with our Partners, we are re-imagining the business Deliver with unforgettable customer experiences',
+      'We use the latest services in terms of technological design, we refer to the best partners and create with softwares that allows us to achieve extremely intuitive layouts for ours ideas.',
     p1Name: 'Adobe',
     p1Logo: '',
-    p2Name: '',
+    p2Name: 'Figma',
     p2Logo: '',
-    p3Name: '',
+    p3Name: 'Sketch',
     p3Logo: '',
     caseStudyTitle: 'Read about our case studies',
     realtedServiceTitle: 'You might be interested also to these services.',
@@ -953,16 +959,16 @@ async function insertRealData() {
   const DigitalCustomer = await Service.create({
     title: 'Customer Experience Engine',
     subTitle:
-      'Your customers are always connected. Shouldn’t their experiences be too? The Customer Experience Engine turns touchpoints into a story: unify the moments. Own the experience.',
-    description: '',
-    banner: '',
-    evocativePhoto: '',
+      'Your customers are always connected. Shouldn’t their experiences be too?',
+    description: 'Most customer experiences are created from a hodge-podge of systems. But customers don’t care about those systems. They expect a convenient, continuous and meaningful experience on the website, in the mobile app and in the store. The Customer Experience Engine powers an ongoing experience in which your brand stands out by disappearing into the fabric of customers’ lives. It’s the connective tissue across your systems that lets you focus on what you care about: delivering an unforgettable and impactful customer experience now and protecting that experience in the future.',
+    banner: 'https://images.unsplash.com/photo-1556745753-b2904692b3cd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1866&q=80',
+    evocativePhoto: 'https://images.unsplash.com/photo-1550071593-fd1bdaf1f93c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80',
     serviceTitle: 'Customer Experience Engine solutions',
     serviceDescription:
       'Our experience-led approach helps ensure that organizations have the right experience architecture to allow customers to create their own journey on their own terms. We view technology as the enabler of the customer experience, not the driver.',
     partnerTitle: 'Alliances and partners',
     partnerDescription:
-      'At ?company name?, together with our Partners, we are re-imagining the business Deliver with unforgettable customer experiences',
+      'The Customer Experience Engine turns touchpoints into a story: unify the moments. Own the experience. Together with the best Partners we are going to achieve this.',
     //detailTitle1: 'Single view of the customer',
     //detailDescription1: 'Lines of business and stakeholder groups have the visibility into how the business is interacting with customers to drive connected experiences.',
     //detailTitle2: 'Seamless plug and play with the latest tech',
@@ -983,15 +989,21 @@ async function insertRealData() {
   //4
   const Campaign = await Service.create({
     title: 'Campaign Management',
-    subTitle: '...',
-    description: '',
-    banner: '',
-    evocativePhoto: '',
-    serviceTitle: '',
-    serviceDescription: '',
+    subTitle: 'Communicate marketing messages at speed and scale to acquire and retain customers, driving sustainable growth.',
+    description: 'We all know communication is critical, but knowing what to say and when to say it—and whom to say it to—can make or break the message. That's why Accenture Interactive's Marketing Engagement Services team specializes in solutions to help clients understand their customers, define the experience, and deliver relevant, compelling messages. We understand the new digital landscape and evolving customer expectations. Connections need to be made throughout the customer journey, constantly and across channels. "Always-on" campaigns are designed to capture attention and amplify demand, leads and revenue generation.',
+    banner: 'https://images.unsplash.com/photo-1552664730-d307ca884978?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80',
+    evocativePhoto: 'https://images.unsplash.com/photo-1557425529-b1ae9c141e7d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80',
+    serviceTitle: 'Campaign management solutions',
+    serviceDescription: 'We design and build creative campaigns that target customers with the right message to drive engagement. Our insights into new and evolving digital technologies mean we understand how to deliver personalized messages at the right time, helping acquire new customers, grow wallet share with existing customers, and retain the most profitable customers.',
     partnerTitle: 'Alliances and partners',
     partnerDescription:
-      'At ?company name?, together with our Partners, we are re-imagining the business Deliver with unforgettable customer experiences',
+      'How to deliver the right message at the right time? With the best Partners our company will grant you success.',
+    //detailTitle1: 'Campaign planning',
+    //detailDescription1: 'Create a consistent experience throughout the customer journey and across the channels.',
+    //detailTitle2: 'Campaign management and optimization',
+    //detailDescription2: 'Enable a high-performing campaign management solution that utilizes the capabilities of the new digital marketing ecosystem.',
+    //detailTitle3: 'Lead generation',
+    //detailDescription3: 'Fuel your funnel by driving demand from qualified leads.',
     p1Name: '',
     p1Logo: '',
     p2Name: '',
@@ -1010,8 +1022,8 @@ async function insertRealData() {
       'Make every customer feel like the only customer: Change the customer experience with conversational AI.',
     description:
       'Solutions.AI for Customer Engagement is built for putting AI at the frontline of every interaction streamlines service, better equips agents, and enhances the overall experience with personalized, precise, and empathetic care. It helps brands quickly and responsibly use data to understand and predict customer needs and arm agents behind the screen with the right message and offers. And it improves the original product and service by analyzing and incorporating insights from customer interactions through a constant feedback loop.',
-    banner: '',
-    evocativePhoto: '',
+    banner: 'https://images.unsplash.com/photo-1519558260268-cde7e03a0152?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80',
+    evocativePhoto: 'https://images.unsplash.com/photo-1531747118685-ca8fa6e08806?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1842&q=80',
     serviceTitle: 'Customer Service AI solutions',
     serviceDescription:
       'With our range of pre-built AI modules and ecosystem of technology partners, we are able to quickly scale hyper-personalized experiences to help clients anticipate and address their customers needs.',
@@ -1023,7 +1035,7 @@ async function insertRealData() {
     //detailDescription3: 'Responsibly establish a strong foundation of customer and journey data to generate insights around specific business inefficiencies that unlock value.',
     partnerTitle: 'Alliances and partners',
     partnerDescription:
-      'At ?company name?, together with our Partners, we are re-imagining the business Deliver with unforgettable customer experiences',
+      'HexTech, with the best Partners, will make your customers to have higher expectations than ever before. They crave a consistent experience no matter the time or channel.',
     p1Name: '',
     p1Logo: '',
     p2Name: '',
@@ -1042,8 +1054,8 @@ async function insertRealData() {
       'Build your brand and drive demand through high-impact, creative customer experiences. Discover the transformative power of a story.',
     description:
       'We take a holistic approach that combines creative, content, data and technological expertise to translate brand vision and business goals into customer engagement strategies and business results. With our help, you wll delight your customers with relevant, elegant, and intuitive experiences. Our insights into audiences and markets help us create effective brand strategies that drive real engagement for every customer across every channel.',
-    banner: '',
-    evocativePhoto: '',
+    banner: 'https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=993&q=80',
+    evocativePhoto: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80',
     serviceTitle: 'Creative Marketing Services solutions',
     serviceDescription:
       'What does it mean to build a brand? We take it from the ground up—from strategy and content to activation.',
@@ -1055,7 +1067,7 @@ async function insertRealData() {
     //detailDescription3: 'We activate and optimize programs that deliver high engagement and return on investment.',
     partnerTitle: 'Alliances and partners',
     partnerDescription:
-      'At ?company name?, together with our Partners, we are re-imagining the business Deliver with unforgettable customer experiences',
+      'With HexTech and its best Partners, you will delight your customers with relevant, elegant, and intuitive experiences.',
     p1Name: '',
     p1Logo: '',
     p2Name: '',
