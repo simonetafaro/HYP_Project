@@ -550,3 +550,22 @@ export default {
   }
 }
 </style>
+
+<style>
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  .service-left {
+    margin-right: 0px !important;
+  }
+  .service-right {
+    margin-left: 0px !important;
+  }
+  .service_card {
+    max-width: 200px !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .service_card {
+    max-width: 146px !important;
+  }
+}
+</style>
