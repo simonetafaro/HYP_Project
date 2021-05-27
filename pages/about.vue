@@ -1341,7 +1341,7 @@
         <p class="title-2">our successful</p>
         <p class="subtitle-2">path</p>
 
-        <h3 class="description">
+        <h3 class="description-2-1">
           Nulla ante risus, condimentum eu consectetur vel, facilisis ac nulla.
           Sed blandit nulla diam, in mattis nibh porta quis. Donec accumsan,
           erat in suscipit viverra, massa purus dignissim sapien, interdum
@@ -1364,7 +1364,7 @@
             fill="#E8E7FF"
           />
         </svg>
-        <h3 class="description">
+        <h3 class="description-2-2">
           Mauris consectetur sodales volutpat. Suspendisse potenti. Sed dapibus
           est ut magna egestas tincidunt. Vivamus a ligula vitae lacus venenatis
           mollis vitae vitae augue. Praesent quis nisi malesuada, rutrum ante
@@ -1773,9 +1773,26 @@ export default {
   color: #cdc9ff;
 }
 
-.description {
+.description-2-1 {
   position: absolute;
   right: 0;
+  text-transform: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: right;
+  color: #464a52;
+  width: 350px;
+  height: 610px;
+  mix-blend-mode: normal;
+  opacity: 0.6;
+}
+
+.description-2-2 {
+  position: absolute;
+  right: 0;
+  top: 250%;
   text-transform: none;
   font-style: normal;
   font-weight: normal;
@@ -1869,8 +1886,6 @@ export default {
   grid-template-columns: repeat(4, calc(100% / 4));
   grid-gap: 25px;
   margin: auto;
-  margin-left: 50px;
-  margin-right: 50px;
   margin-top: 50px;
 }
 
@@ -2115,7 +2130,22 @@ p {
     margin-bottom: 38px;
   }
 
-  .description {
+  .description-2-1 {
+    position: inherit;
+    text-transform: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: right;
+    color: #464a52;
+    width: 272px;
+    height: 123px;
+    mix-blend-mode: normal;
+    opacity: 0.6;
+  }
+
+  .description-2-2 {
     position: inherit;
     text-transform: none;
     font-style: normal;
@@ -2155,6 +2185,10 @@ p {
   .flower {
     margin-bottom: 30px;
     transform: scale(0.5);
+  }
+
+  .person {
+    margin-left: 70px;
   }
 
   .partner-carousel {
