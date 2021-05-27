@@ -654,24 +654,26 @@ async function insertRealData() {
       'Give users what they are searching just when they land on your page in order to maximize sales.',
     description:
       'In order to grow your enterprise, you need to do more than keep your existing customers happy — you need to find new business. Big data can help you find new audiences and determine which groups are more likely to buy.    ',
-    banner: 'https://landerapp.com/blog/wp-content/uploads/2018/09/1-2.png',
+    banner: 'https://i.imgur.com/1ZKpYyo.png',
     evocativePhoto: '',
     serviceTitle: '',
-    serviceDescription: '',
-    s1Name: '',
-    s1Description: '',
-    s1Logo:
-      'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
-    s2Name: '',
-    s2Description: '',
-    s2Logo:
-      'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
-    s3Name: '',
-    s3Description: '',
-    s3Logo:
-      'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
+    serviceDescription:
+      'We put in practise all the experience we gained during all the life of this company in order to give our clients a very good customer experience. Moreover, all our experts are very professional on the service we provide to clients.',
+    s1Name: 'Optimize SEO',
+    s1Description:
+      'Search engine optimization is the process of optimizing web pages and their content to be easily discoverable by users searching for terms relevant to your website. ',
+    s1Logo: 'https://i.ibb.co/Rczq8Pv/sol-1.png',
+    s2Name: 'Social Media Marketing',
+    s2Description:
+      'Social media marketing is a powerful way for businesses, professionals and organizations of all sizes to find and connect with repeat or potential customers / users.',
+    s2Logo: 'https://i.ibb.co/KwskLjv/sol-2.png',
+    s3Name: 'E-Commerce Marketing',
+    s3Description:
+      'For eCommerce marketing we mean a strategic planning that aims to build brand awareness, increasing the number of sales and loyal customers.',
+    s3Logo: 'https://i.ibb.co/b77D3Fm/sol-3.png',
     partnerTitle: '',
-    partnerDescription: '',
+    partnerDescription:
+      'On all the case studies we worked on we had gained experience from our partners. Although some of them are very big companies, we had an equal exchange of expertise since we have really professional experts wprking on many industries.',
     p1Name: 'Mckinsey',
     p1Logo:
       'https://s3-ap-southeast-1.amazonaws.com/p2swebsite/images/smeKhabar/news/IndiaCanCreateoverOne-TrillionDollarsWorthofDigitalEconomyby2025SaysMEITMcKinseyReport_1550744301446_48.jpg',
@@ -696,21 +698,23 @@ async function insertRealData() {
       'https://images.techhive.com/images/article/2015/07/health-analytics-ts-100599204-large.jpg',
     evocativePhoto: '',
     serviceTitle: '',
-    serviceDescription: '',
-    s1Name: '',
-    s1Description: '',
-    s1Logo:
-      'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
-    s2Name: '',
-    s2Description: '',
-    s2Logo:
-      'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
-    s3Name: '',
-    s3Description: '',
-    s3Logo:
-      'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
+    serviceDescription:
+      'We put in practise all the experience we gained during all the life of this company in order to give our clients a very good customer experience. Moreover, all our experts are very professional on the service we provide to clients.',
+    s1Name: 'Efficiencies for operational management',
+    s1Description:
+      'Predictive analytics allows for the improvement of operational efficiency. Big data and predictive analytics are currently playing an integral part in health care. ',
+    s1Logo: 'https://i.ibb.co/Rczq8Pv/sol-1.png',
+    s2Name: 'Personal medicine',
+    s2Description:
+      'In personal medicine, predictive analytics can play a key role at the individual level and enable the use of prognostic analytics.',
+    s2Logo: 'https://i.ibb.co/KwskLjv/sol-2.png',
+    s3Name: 'Fast pace of technology and impact on care',
+    s3Description:
+      ' The term digital disruption has arisen to capture the essence of just how fast everything is changing based on new technologies. ',
+    s3Logo: 'https://i.ibb.co/b77D3Fm/sol-3.png',
     partnerTitle: '',
-    partnerDescription: '',
+    partnerDescription:
+      'On all the case studies we worked on we had gained experience from our partners. Although some of them are very big companies, we had an equal exchange of expertise since we have really professional experts wprking on many industries.',
     p1Name: 'Rock Health',
     p1Logo:
       'https://rockhealth.com/wp-content/uploads/2017/09/Rock-Health-Image-smaller.jpg',
@@ -734,21 +738,23 @@ async function insertRealData() {
       'https://image.shutterstock.com/image-photo/predictive-analytics-big-data-analysis-260nw-1348992500.jpg',
     evocativePhoto: '',
     serviceTitle: '',
-    serviceDescription: '',
-    s1Name: '',
-    s1Description: '',
-    s1Logo:
-      'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
-    s2Name: '',
-    s2Description: '',
-    s2Logo:
-      'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
-    s3Name: '',
-    s3Description: '',
-    s3Logo:
-      'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
+    serviceDescription:
+      'We put in practise all the experience we gained during all the life of this company in order to give our clients a very good customer experience. Moreover, all our experts are very professional on the service we provide to clients.',
+    s1Name: 'Real time prediction',
+    s1Description:
+      'A real-time prediction is a synchronous call to Amazon Machine Learning. The prediction is made when Amazon ML gets the request. ',
+    s1Logo: 'https://i.ibb.co/Rczq8Pv/sol-1.png',
+    s2Name: 'Data Science',
+    s2Description:
+      'Machine learning applications in computer vision, NLP, recommender systems, forecasting. network science, BI, and visualization.',
+    s2Logo: 'https://i.ibb.co/KwskLjv/sol-2.png',
+    s3Name: 'New Era of Data Innovation',
+    s3Description:
+      'Businesses hoard data. And often, so much of it isn’t used due to infrastructure costs and technology bottlenecks. ',
+    s3Logo: 'https://i.ibb.co/b77D3Fm/sol-3.png',
     partnerTitle: '',
-    partnerDescription: '',
+    partnerDescription:
+      'On all the case studies we worked on we had gained experience from our partners. Although some of them are very big companies, we had an equal exchange of expertise since we have really professional experts wprking on many industries.',
     p1Name: 'NetSuite',
     p1Logo:
       'https://www.01net.it/wp-content/uploads/sites/14/2016/07/netsuite-logo-600x180.png',
@@ -772,21 +778,23 @@ async function insertRealData() {
     banner: 'https://www.sygmatechnology.com/hubfs/shutterstock_1133982038.jpg',
     evocativePhoto: '',
     serviceTitle: '',
-    serviceDescription: '',
-    s1Name: '',
-    s1Description: '',
-    s1Logo:
-      'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
-    s2Name: '',
-    s2Description: '',
-    s2Logo:
-      'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
-    s3Name: '',
-    s3Description: '',
-    s3Logo:
-      'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
+    serviceDescription:
+      'We put in practise all the experience we gained during all the life of this company in order to give our clients a very good customer experience. Moreover, all our experts are very professional on the service we provide to clients.',
+    s1Name: 'Automation Expertise',
+    s1Description:
+      'Incorrect decisions through disjointed applications of expertise across the company and inefficient services come at a huge cost to your organization.    ',
+    s1Logo: 'https://i.ibb.co/Rczq8Pv/sol-1.png',
+    s2Name: 'Role in Data Preparation',
+    s2Description:
+      'Data cleaning is a fundamental operation to improve the performance of predictive analysis. As we know Big Data can be both structured and unstructured and come from different sources. ',
+    s2Logo: 'https://i.ibb.co/KwskLjv/sol-2.png',
+    s3Name: 'Data Workflow',
+    s3Description:
+      'Big Data Automation uses advanced features to better manage the flow of activities, creating a single and integrated environment that allows you to maintain a unified view of data.',
+    s3Logo: 'https://i.ibb.co/b77D3Fm/sol-3.png',
     partnerTitle: '',
-    partnerDescription: '',
+    partnerDescription:
+      'On all the case studies we worked on we had gained experience from our partners. Although some of them are very big companies, we had an equal exchange of expertise since we have really professional experts wprking on many industries.',
     p1Name: 'Reply',
     p1Logo:
       'https://mms.businesswire.com/media/20210415005484/it/809563/23/Reply_-_LOGO_300dpi.jpg',
@@ -811,21 +819,23 @@ async function insertRealData() {
       'https://www.smartdatacollective.com/wp-content/uploads/2020/11/business-intelligence-future-in-coming-years.jpg',
     evocativePhoto: '',
     serviceTitle: '',
-    serviceDescription: '',
-    s1Name: '',
-    s1Description: '',
-    s1Logo:
-      'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
-    s2Name: '',
-    s2Description: '',
-    s2Logo:
-      'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
-    s3Name: '',
-    s3Description: '',
-    s3Logo:
-      'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
+    serviceDescription:
+      'We put in practise all the experience we gained during all the life of this company in order to give our clients a very good customer experience. Moreover, all our experts are very professional on the service we provide to clients.',
+    s1Name: 'Business intelligence consulting',
+    s1Description:
+      'While improving your existing BI solution, we identify the evident and hidden problems that hinder your BI solution’s smooth performance.',
+    s1Logo: 'https://i.ibb.co/Rczq8Pv/sol-1.png',
+    s2Name: 'Big data consulting',
+    s2Description:
+      'Our consultants conduct dedicated training sessions to help various target audiences, be it top managers or the technical team, to understand how to get value out of big data.',
+    s2Logo: 'https://i.ibb.co/KwskLjv/sol-2.png',
+    s3Name: 'Data Visualization',
+    s3Description:
+      'Data visualization services help communicate company’s data to business users using visual elements. ',
+    s3Logo: 'https://i.ibb.co/b77D3Fm/sol-3.png',
     partnerTitle: '',
-    partnerDescription: '',
+    partnerDescription:
+      'On all the case studies we worked on we had gained experience from our partners. Although some of them are very big companies, we had an equal exchange of expertise since we have really professional experts wprking on many industries.',
     p1Name: 'Microsoft',
     p1Logo:
       'https://lh3.googleusercontent.com/proxy/WYX7gll105oAtJPvW5B8LUnxR57mBUmNyzZQoINC7_VDOXBNx2MqJAISdf6Pwq6s1jxgWenxPGZnjPGvo6-Oc1KA7vly5i3o7TnGf00bqFak1Jf4Q1A',
@@ -848,21 +858,23 @@ async function insertRealData() {
     banner:
       'https://associationsnow.com/wp-content/uploads/2018/12/GettyImages-940692576_hrvcc-600x360.jpg',
     serviceTitle: '',
-    serviceDescription: '',
-    s1Name: '',
-    s1Description: '',
-    s1Logo:
-      'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
-    s2Name: '',
-    s2Description: '',
-    s2Logo:
-      'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
-    s3Name: '',
-    s3Description: '',
-    s3Logo:
-      'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
+    serviceDescription:
+      'We put in practise all the experience we gained during all the life of this company in order to give our clients a very good customer experience. Moreover, all our experts are very professional on the service we provide to clients.',
+    s1Name: 'B2B pricing',
+    s1Description:
+      'Pricing represents the greatest opportunity for B2B companies to increase profits, especially in the short term. ',
+    s1Logo: 'https://i.ibb.co/Rczq8Pv/sol-1.png',
+    s2Name: 'Consumer Pricing',
+    s2Description:
+      'Customers can compare your price to your competitors’ without leaving the house. But internet-fueled transparency can also foster greater customer loyalty. ',
+    s2Logo: 'https://i.ibb.co/KwskLjv/sol-2.png',
+    s3Name: 'Dynamic pricing',
+    s3Description:
+      'The algorithm automatically generates a price based on data provided by the partner and learnings from similar past deals.',
+    s3Logo: 'https://i.ibb.co/b77D3Fm/sol-3.png',
     partnerTitle: '',
-    partnerDescription: '',
+    partnerDescription:
+      'On all the case studies we worked on we had gained experience from our partners. Although some of them are very big companies, we had an equal exchange of expertise since we have really professional experts wprking on many industries.',
     p1Name: 'Simon Kucker',
     p1Logo:
       'https://media-exp1.licdn.com/dms/image/C4E0BAQHNWjH2RvlaTA/company-logo_200_200/0/1596201887751?e=2159024400&v=beta&t=DgJhJ5fpwQgFhYZB0TMe1tU-mEwyGOxIav8W2gdixSk',
@@ -949,6 +961,84 @@ async function insertRealData() {
     realtedServiceTitle: '',
   })
   await CloudComputing.addService(CloudAppDevelopServices.id)
+
+  const LiveVideoBroadcasting = await Service.create({
+    title: 'Live Video Broadcasting',
+    subTitle: 'Moving towards future always looking ahead of the technology',
+    description:
+      'Live streaming is one of the best ways to connect in a meaningful and authentic way with your community. Every day around the world, in offices, fitness studios, stadiums, houses of worship,and our own houses, moments are made. A livestream platform connects you instantly to your employees, customers, subscribers, or followers when a virtual event or series is your best option.',
+    banner:
+      'https://res.cloudinary.com/practicaldev/image/fetch/s--UpbEnajb--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://dev-to-uploads.s3.amazonaws.com/i/ah8zju0kmh6br3w69cgq.jpg',
+    evocativePhoto: '',
+    serviceTitle: '',
+    serviceDescription:
+      'We put in practise all the experience we gained during all the life of this company in order to give our clients a very good customer experience. Moreover, all our experts are very professional on the service we provide to clients.',
+    s1Name: 'Maximise quality video',
+    s1Description:
+      'We use very advanced techonology to guarantee an optimal quality. ',
+    s1Logo: 'https://i.ibb.co/Rczq8Pv/sol-1.png',
+    s2Name: 'Avoid rude content',
+    s2Description:
+      'Our developed AI recognise almost immediately contents that have to be banned.',
+    s2Logo: 'https://i.ibb.co/KwskLjv/sol-2.png',
+    s3Name: 'Minimal delay',
+    s3Description:
+      'Our conversion rate tends to be very small in order to let user be really live.',
+    s3Logo: 'https://i.ibb.co/b77D3Fm/sol-3.png',
+    partnerTitle: '',
+    partnerDescription:
+      'On all the case studies we worked on we had gained experience from our partners. Although some of them are very big companies, we had an equal exchange of expertise since we have really professional experts wprking on many industries.',
+    p1Name: 'Tencent',
+    p1Logo:
+      'https://www.thegamesmachine.it/wp-content/uploads/2020/05/tencent-logo-min.jpg',
+    p2Name: 'Twich',
+    p2Logo: 'https://www.oiesports.it/wp-content/uploads/2020/05/twitch.png',
+    p3Name: 'Netflix',
+    p3Logo:
+      'https://www.mediagol.it/wp-content/uploads/sites/27/2020/07/maxresdefault.jpg',
+    caseStudyTitle: '',
+    realtedServiceTitle: '',
+  })
+  await CloudComputing.addService(LiveVideoBroadcasting.id)
+
+  const LiveECommerce = await Service.create({
+    title: 'Live streaming E-Commerce',
+    subTitle: 'Moving towards future always looking ahead of the technology',
+    description:
+      'With live streaming you can sell products during a live stream in which the characteristics of the item for sale are recognized. This allows you to share more information, offer product demonstrations, satisfy viewers questions and respond to their reactions. It is an interactive system for both brands and stores, and for viewers who can purchase in real time, during the live broadcast. What is now fast becoming a profitable online sales channel for many luxury brands, actually originated in China as a form of entertainment: singers, comedians and other performers broadcast live for their fans in exchange for virtual gifts. In 2016, Chinese authorities started dozens of these live streaming platforms, sanctioning thousands of artists: this attempt to appease the phenomenon actually turned into an opportunity for more forward-thinking apps, such as Taobao, which they were the first to recognize its potential by investing in this new mode of commercial communication.',
+    banner:
+      'https://www.robvanlinda.de/wp-content/uploads/2020/08/Live-stream-banner.jpg',
+    evocativePhoto: '',
+    serviceTitle: '',
+    serviceDescription:
+      'We put in practise all the experience we gained during all the life of this company in order to give our clients a very good customer experience. Moreover, all our experts are very professional on the service we provide to clients.',
+    s1Name: 'Fast shipping',
+    s1Description: 'Our delivery service is very well organized.',
+    s1Logo: 'https://i.ibb.co/Rczq8Pv/sol-1.png',
+    s2Name: 'New buying experience',
+    s2Description:
+      'This new technology makes innovative the ways to purchase a product.',
+    s2Logo: 'https://i.ibb.co/KwskLjv/sol-2.png',
+    s3Name: 'Live Feedback',
+    s3Description:
+      'Due to live streaming users can see the real product and makes an idea about it.',
+    s3Logo: 'https://i.ibb.co/b77D3Fm/sol-3.png',
+    partnerTitle: '',
+    partnerDescription:
+      'On all the case studies we worked on we had gained experience from our partners. Although some of them are very big companies, we had an equal exchange of expertise since we have really professional experts wprking on many industries.',
+    p1Name: 'Tencent',
+    p1Logo:
+      'https://www.thegamesmachine.it/wp-content/uploads/2020/05/tencent-logo-min.jpg',
+    p2Name: 'TaoBao',
+    p2Logo:
+      'https://img.alicdn.com/tfs/TB1giluwEY1gK0jSZFMXXaWcVXa-1280-1280.png',
+    p3Name: 'Alibaba',
+    p3Logo: 'https://images-eu.ssl-images-amazon.com/images/I/71IxKvGqiWL.png',
+    caseStudyTitle: '',
+    realtedServiceTitle: '',
+  })
+  await CloudComputing.addService(LiveECommerce.id)
+
   //**END OF CLOUD COMPUTING SERVICES */
 
   //**CUSTOMER EXPERIENCE SERVICES */
@@ -1364,6 +1454,56 @@ async function insertRealData() {
   })
   await CloudComputing.addCasestudy(ccC2.id)
   await CloudAppDevelopServices.addCasestudy(ccC2.id)
+
+  const ccC3 = await CaseStudy.create({
+    title: 'Live Event Broadcasting Video Platform',
+    subTitle:
+      'Present Communications provides audio-visuals, video conferencing equipments, webcasting, video productions, and other technical services to the live event industry.',
+    banner:
+      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTycYMziZzUxXQc-01VqqG5sT1ofurNRhvXDw&usqp=CAU',
+    descriptiveText:
+      'Present Communications provides audio-visuals, video conferencing equipments, webcasting, video productions, and other technical services to the live event industry. The platform was also expected to allow presenters to play a slideshow along with the webcast. They wanted the users to be able to share their queries about the event, and participate in online polls conducted during the live webcast.',
+    challengeTitle:
+      'Our client wanted to use a third-party video streaming platform to take care of the webcasting solution.',
+    challengeDescription:
+      'Our team could foresee some initial challenges with this request. One issue was to determine whether the third-party platform would be able to provide automated app creation, with the web services. Our team anticipated issues related to IPs and assessed the need to find out what kind of browser issues would possibly occur. Another challenge was to find a video player that could offer adaptive bit-rate streaming. Since there were no specific requirements given to us by the client, our team had to work on refining the scope for the application as well.',
+    solutionTitle: 'Ideation',
+    solutionDescription:
+      "The product owner team took the baton of ideating the requirements with the client via regular documented brainstorming sessions. The requirements were then converted into a visual representation via wireframes which represented the probable user flow on the platform. We then assigned relative priorities to the features in order to identify the Minimum Viable Product ( MVP ) and kept the 'extra' features out of the first release. This helped us keep the costs down and ensure greater value.",
+    teamsTitle: 'Live Broadcasting Department',
+    personName: '',
+    personJob: '',
+    serviceTitle: '',
+    serviceHeading: '',
+  })
+  await CloudComputing.addCasestudy(ccC3.id)
+  await LiveVideoBroadcasting.addCasestudy(ccC3.id)
+  await LiveECommerce.addCasestudy(ccC3.id)
+
+  const ccC4 = await CaseStudy.create({
+    title: 'Maybelline Proves sintony between E-Commerce and Live-Streaming',
+    subTitle:
+      'Maybelline New York faces the same challenge as many other brands: building an authentic connection with young women that drives sales. ',
+    banner:
+      'https://www.livescale.tv/wp-content/uploads/2020/12/Live-Shopping-Livescale-Checkout-Flow-Fashion-1.jpg',
+    descriptiveText:
+      'Maybelline New York faces the same challenge as many other brands: building an authentic connection with young women that drives sales. In China, many brands try to show women of generation X that they understand by using gimmicks, trends, or celebrity partnerships. For the launch of its new lipstick, Lip Flush Oil, Maybelline New York went beyond its typical new product launch by creating an experience for customers that gave them what they wanted when they wanted it.',
+    challengeTitle:
+      'Searching for sinergy between E-Commerce and Live-Streaming',
+    challengeDescription:
+      'Many Chinese gen X women have no siblings and long to stay connected to their friends, culture, and current events. Similar to their counterparts in other regions, they have short attention spans. Maybelline wanted to provide a riveting, immediate experience that would spark interest in the new lipstick.',
+    solutionTitle: 'Developed platform for live e-commerce',
+    solutionDescription:
+      'Live-streaming apps gained popularity in the spring of 2016. Among them were Meipai, Nice, and Panda TV, which each have more than 10 million daily active users. But many brands began using them with negative results. Maybelline’s marketing team decided to take live-streaming off of niche apps by using the leading mobile purchase platform, Taobao. Using this app allowed Maybelline to shorten the purchase journey during the launch from weeks to a single click. By live-streaming the launch event directly on Taobao, fans could become an integral, engaged element of the launch event.',
+    teamsTitle: 'Live Broadcasting Department',
+    personName: '',
+    personJob: '',
+    serviceTitle: '',
+    serviceHeading: '',
+  })
+  await CloudComputing.addCasestudy(ccC4.id)
+  await LiveVideoBroadcasting.addCasestudy(ccC4.id)
+  await LiveECommerce.addCasestudy(ccC4.id)
   //**END OF CLOUD COMPUTING CASE STUDIES */
 
   //**CUSTOMER EXPERIENCE CASE STUDIES */
