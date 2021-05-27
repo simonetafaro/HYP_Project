@@ -75,9 +75,9 @@ export default {
 @media screen and (max-width: 1200px) {
   .service_card {
     padding: 15px 10px 20px 10px;
-    max-width: 200px;
     border-radius: 25px;
     margin: auto;
+    max-width: 350px;
   }
   .service-left {
     margin-right: 0;
@@ -103,14 +103,8 @@ export default {
 @media screen and (max-width: 768px) {
   .service_card {
     width: 100%;
-    max-width: 146px;
+    max-width: 270px;
     padding-top: 10px;
-  }
-  .service-left {
-    margin-right: 0;
-  }
-  .service-right {
-    margin-left: 0;
   }
   .service_title {
     font-size: 12px;
