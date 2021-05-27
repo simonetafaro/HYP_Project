@@ -2192,43 +2192,43 @@ async function insertRealData() {
     name: 'CocaCola',
     description: 'Taste the feeling',
     image:
-      'https://www.radiosenisecentrale.it/wp-content/uploads/2019/12/a8c15493781667d05e628e2f76d65b3a.jpg',
+      'https://i.ibb.co/SBqydD8/coca-cola.png',
     website: 'https://www.coca-cola.com/',
   })
-  const p1 = await Partner.create({
-    name: 'P1',
-    description: 'Test partner',
+  const Figma = await Partner.create({
+    name: 'Figma',
+    description: 'The collaborative interface design tool',
     image:
-      'https://www.radiosenisecentrale.it/wp-content/uploads/2019/12/a8c15493781667d05e628e2f76d65b3a.jpg',
-    website: 'https://www.coca-cola.com/',
+      'https://i.ibb.co/W25yZ0m/figma.png',
+    website: 'https://www.figma.com/',
   })
-  const p2 = await Partner.create({
-    name: 'P2',
-    description: 'Test partner',
+  const Adobe = await Partner.create({
+    name: 'Adobe',
+    description: 'Creatività per tutti',
     image:
-      'https://www.radiosenisecentrale.it/wp-content/uploads/2019/12/a8c15493781667d05e628e2f76d65b3a.jpg',
-    website: 'https://www.coca-cola.com/',
+      'https://i.ibb.co/sw4Rx4M/adobe.png',
+    website: 'https://www.adobe.com/',
   })
-  const p3 = await Partner.create({
-    name: 'P3',
-    description: 'Test partner',
+  const Sketch = await Partner.create({
+    name: 'Sketch',
+    description: 'It all starts here',
     image:
-      'https://www.radiosenisecentrale.it/wp-content/uploads/2019/12/a8c15493781667d05e628e2f76d65b3a.jpg',
-    website: 'https://www.coca-cola.com/',
+      'https://i.ibb.co/QdHXCx7/sketch-01.png',
+    website: 'https://www.sketch.com/',
   })
-  const p4 = await Partner.create({
-    name: 'P4',
-    description: 'Test partner',
+  const Arduino = await Partner.create({
+    name: 'Arduino',
+    description: 'So easy, my granny can use it',
     image:
-      'https://www.radiosenisecentrale.it/wp-content/uploads/2019/12/a8c15493781667d05e628e2f76d65b3a.jpg',
-    website: 'https://www.coca-cola.com/',
+      'https://i.ibb.co/KDcLxdy/arduino.png',
+    website: 'https://www.arduino.cc/',
   })
-  const p5 = await Partner.create({
-    name: 'P5',
-    description: 'Test partner',
+  const GoogleCloud = await Partner.create({
+    name: 'Google Cloud',
+    description: 'Cloud Computing Services',
     image:
-      'https://www.radiosenisecentrale.it/wp-content/uploads/2019/12/a8c15493781667d05e628e2f76d65b3a.jpg',
-    website: 'https://www.coca-cola.com/',
+      'https://i.ibb.co/SsctBTT/cloud.png',
+    website: 'https://cloud.google.com/',
   })
 }
 
