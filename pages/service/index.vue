@@ -120,10 +120,6 @@ export default {
   },
   mixins: [GoToMixins],
   mounted() {
-    const _this = this
-    _this.$axios.get().then(() => {
-      _this.closeMobileMenu()
-    })
     if (this.$router.history.current.hash !== '') {
       setTimeout(() => {
         const elem = document.getElementById(
@@ -138,34 +134,15 @@ export default {
       }, 0)
     }
 
-    Array.from(document.querySelectorAll("[data-target='carousel']")).forEach(
-      function (carousel) {
-        const carouselWidth = carousel.offsetWidth
-        const cardMarginRight = 30
-        const cardCount = carousel.querySelectorAll("[data-target='card']")
-          .length
-        const maxX = -(
-          cardCount * carouselWidth +
-          cardMarginRight * cardCount -
-          carouselWidth -
-          cardMarginRight -
-          (carouselWidth + cardMarginRight) * 2
-        )
-        _this.carouselList.push({
-          areaID: carousel.id,
-          offset: 0,
-          carouselWidth,
-          cardMarginRight,
-          maxX,
-        })
-      }
-    )
+    this.fillCarouselData()
 
     this.resizeServiceCard()
     window.addEventListener('resize', this.resizeServiceCard)
+    window.addEventListener('resize', this.resetCarouselOffset)
   },
   destroyed() {
     window.removeEventListener('resize', this.resizeServiceCard)
+    window.removeEventListener('resize', this.resetCarouselOffset)
   },
   methods: {
     getServiceByArea(areaID) {
@@ -175,6 +152,28 @@ export default {
     },
     isOddRow(areaIndex) {
       return areaIndex % 2 === 0 ? '' : 'grey-row'
+    },
+    fillCarouselData() {
+      const _this = this
+      Array.from(document.querySelectorAll("[data-target='carousel']")).forEach(
+        function (carousel) {
+          const carouselWidth = carousel.offsetWidth
+          const cardMarginRight = carousel.querySelectorAll(
+            "[data-target='card']"
+          )[0].parentNode.style.marginRight
+          const cardCount = carousel.querySelectorAll("[data-target='card']")
+            .length
+          const maxX = -(cardCount - 3) * carouselWidth
+
+          _this.carouselList.push({
+            areaID: carousel.id,
+            offset: 0,
+            carouselWidth,
+            cardMarginRight,
+            maxX,
+          })
+        }
+      )
     },
     scrollRight(areaID) {
       this.carouselList.forEach((carousel) => {
@@ -186,7 +185,7 @@ export default {
                 .getElementById('carousel-arrow-prev-' + areaID)
                 .classList.remove('disabled-arrow')
             }
-            carousel.offset -= carousel.carouselWidth + carousel.cardMarginRight
+            carousel.offset -= carousel.carouselWidth
             document.getElementById(areaID).style.transform = `translateX(${
               carousel.offset / 3
             }px)`
@@ -221,7 +220,7 @@ export default {
       this.carouselList.forEach((carousel) => {
         if (carousel.areaID.localeCompare(areaID) === 0) {
           if (carousel.offset !== 0) {
-            carousel.offset += carousel.carouselWidth + carousel.cardMarginRight
+            carousel.offset += carousel.carouselWidth
             document.getElementById(areaID).style.transform = `translateX(${
               carousel.offset / 3
             }px)`
@@ -258,6 +257,15 @@ export default {
             }, 3000)
           }
         }
+      })
+    },
+    resetCarouselOffset() {
+      this.fillCarouselData()
+      this.carouselList.forEach((carousel) => {
+        carousel.offset = 0
+        document.getElementById(
+          carousel.areaID
+        ).style.transform = `translateX(0px)`
       })
     },
   },
@@ -335,11 +343,10 @@ export default {
 
 .service-list-wrapper {
   height: 650px;
-  width: 1110px;
+  width: 1020px;
   position: relative;
   overflow: hidden;
   margin: 0 auto;
-  min-width: 1110px;
 }
 .service-carousel {
   margin: 0;
@@ -352,7 +359,7 @@ export default {
   transition: all 1s ease;
 }
 .service-card {
-  min-width: 350px;
+  min-width: 310px;
   display: inline-block;
 }
 
@@ -360,9 +367,9 @@ export default {
   margin-right: 15px;
   margin-left: 15px;
 }
-.service-carousel div:first-child {
+/* .service-carousel div:first-child {
   margin-left: 0px;
-}
+} */
 .button-wrapper-prev {
   margin-right: 15px;
 }
@@ -426,7 +433,6 @@ export default {
     opacity: 1;
   }
 }
-
 @media screen and (max-width: 1200px) {
   .services-header {
     padding-bottom: 31px;
@@ -457,8 +463,8 @@ export default {
   }
   .service-list-wrapper {
     height: 348px;
-    width: 646px;
-    min-width: 646px;
+    width: 672px;
+    min-width: 672px;
   }
   .service-section-title {
     font-size: 24px;
@@ -467,7 +473,7 @@ export default {
   }
   .service {
     margin-right: 12px;
-    margin-left: 12 px;
+    margin-left: 12px;
   }
   .service-card {
     min-width: 200px;
@@ -541,6 +547,25 @@ export default {
   .carousel-wrapper {
     width: 100%;
     max-width: 100%;
+  }
+}
+</style>
+
+<style>
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  .service-left {
+    margin-right: 0px !important;
+  }
+  .service-right {
+    margin-left: 0px !important;
+  }
+  .service_card {
+    max-width: 200px !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .service_card {
+    max-width: 146px !important;
   }
 }
 </style>

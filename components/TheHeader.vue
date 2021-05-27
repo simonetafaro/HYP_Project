@@ -324,7 +324,10 @@
                 :key="'menu-area-' + areaIndex"
                 class="menu-area-item-mobile"
               >
-                <nuxt-link :to="'/area/' + area.id">
+                <nuxt-link
+                  :to="'/area/' + area.id"
+                  @click.native="openMenuMobile()"
+                >
                   {{ area.title }}
                 </nuxt-link>
               </div>
@@ -334,13 +337,17 @@
           <nuxt-link
             v-if="item.name != 'Areas'"
             :to="item.path"
+            @click.native="openMenuMobile()"
             class="headerContent"
           >
             {{ item.name }}
           </nuxt-link>
         </div>
         <div class="contact-button-container">
-          <button class="contact-button" @click="goTo('/contact')">
+          <button
+            class="contact-button"
+            @click="openMenuMobile(), goTo('/contact')"
+          >
             CONTACT US
           </button>
         </div>
@@ -976,7 +983,7 @@ a {
 .menu-item-dropdown li ul li {
   padding: 20px;
   display: block;
-  background: var(--cc-base3);
+  background: #ffffff;
   transition: background 0.3s;
   font-weight: 800;
   text-transform: none;
@@ -989,6 +996,14 @@ a {
 
 .area-element-text:hover {
   color: #4d41c9 !important;
+}
+
+.menu-item li ul li:first-child {
+  border-radius: 16px 16px 0px 0px;
+}
+
+.menu-item li ul li:last-child {
+  border-radius: 0px 0px 16px 16px;
 }
 
 .menu-item li ul li:first-child:hover {
@@ -1056,6 +1071,9 @@ a {
     );
     position: fixed;
     height: 100%;
+    top: 50px;
+    right: 0;
+    transition: visibility 0s, opacity 0.5s linear;
     z-index: 1;
   }
   .menu-item-mobile {

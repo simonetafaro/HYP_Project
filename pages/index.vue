@@ -883,10 +883,6 @@ export default {
   },
   mixins: [GoToMixins],
   mounted() {
-    const _this = this
-    _this.$axios.get().then(() => {
-      _this.closeMobileMenu()
-    })
     document.addEventListener('scroll', this.handleScroll)
   },
   destroyed() {
@@ -1124,6 +1120,9 @@ export default {
   }
   .single-area-section {
     width: 100%;
+  }
+  .single-area-section:last-child > .show-only-tablet-mobile {
+    display: none;
   }
 }
 

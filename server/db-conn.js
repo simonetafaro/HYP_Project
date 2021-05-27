@@ -206,8 +206,7 @@ async function insertRealData() {
       'Wherever your business goes, whoever it works with, you need cybersecurity that covers it all.',
     description:
       'Anytime. Anywhere. We create cybersecurity tailored to your specific business needs. We defend against cyberattacks with proactive, focused,  industry-relevant threat intelligence to give you the confidence that  comes from knowing your business is secure.',
-    banner:
-      'https://www.orion.on.ca/wp-content/uploads/2019/05/cybersecurity-banner.jpg',
+    banner: 'https://i.ibb.co/X5FrLTP/Frame-6.png',
     evocativeImage: 'https://i.ibb.co/Ny7F40s/security.png',
     servicesTitle: 'Discover our Security services',
     servicesDescription:
@@ -223,7 +222,7 @@ async function insertRealData() {
       'Acting as the bridge between the physical and the digital world, IoT offers a huge opportunity for companies.',
     description:
       'We help clients effectively capitalize on IoT technology and solutions, linking technology, vendors and customers through a holistic business model. IoT describes the connection of devices to the internet using embedded software and sensors to communicate, collect and exchange data with one another. IoT combines connectivity with sensors, devices and people, enabling a form of free-flowing conversation between man and machine, software and hardware. With IoT, the world is wide open, offering a virtually endless array of opportunities and connections at home, at work or at play.',
-    banner: 'https://i.ibb.co/pZ83v4z/iot-main.png',
+    banner: 'https://i.ibb.co/Pwt4Z5J/Frame-5.png',
     evocativeImage: 'https://i.ibb.co/zRPbmf1/iot.png',
     servicesTitle: 'Discover our IoT services ',
     servicesDescription:
@@ -237,8 +236,8 @@ async function insertRealData() {
     title: 'Cloud Computing',
     subTitle: 'Modernize your IT environment and improve business efficiency',
     description:
-      'Having been a major driving force of the ongoing digital revolution, the Cloud has completely changed the way enterprises run their operations - from IT infrastructure management, through financial administration, to data exchange. At ??COMPANY NAME??, we can move your existing IT environment to the Cloud, as well as provide a wide range of cloud-driven applications to help your company gain a competitive advantage. Scroll through this space to learn more.',
-    banner: '',
+      'Having been a major driving force of the ongoing digital revolution, the Cloud has completely changed the way enterprises run their operations - from IT infrastructure management, through financial administration, to data exchange. At HexTech, we can move your existing IT environment to the Cloud, as well as provide a wide range of cloud-driven applications to help your company gain a competitive advantage. Scroll through this space to learn more.',
+    banner: 'https://i.ibb.co/crjyD7n/Frame-7.png',
     evocativeImage: 'https://i.ibb.co/hf3LHBb/cloud.png',
     servicesTitle: 'Discover our Cloud Computing services ',
     servicesDescription:
@@ -255,7 +254,7 @@ async function insertRealData() {
       'Understanding what customer experience is and why it’s no longer enough. We are reinventing business through this.',
     description:
       'The way we interact with brands and companies has changed. We typically associate the customer experience with a traditional and interaction directly found inside a store with a specific aesthetic. he world has changed, and so has the business model: digitalisation had an huge impact on our existence, leading companies to shape a whole new entrepreneurial perspective. But it’s not just because of this. Many customer behaviour patterns have evolved and the company must be able to understand their needs and needs, possibly anticipating and surprising them.',
-    banner: '',
+    banner: 'https://i.ibb.co/XpSgKYj/ce-grande.png',
     evocativeImage: 'https://i.ibb.co/pxH7fJ1/customer-experience.png',
     servicesTitle: 'Explore our tailor-made services about Customer Experience',
     servicesDescription:
@@ -273,8 +272,7 @@ async function insertRealData() {
       'Analyze data from your database with a data driven approach to take important decisions inside your company.',
     description:
       'The science of analyzing raw data in order to make conclusions about that information, revealing reveal trends and metrics. Through our specialist your company will be more efficient in taking decisions. This process of analysis allows to operate a predictive analysis, that is, it allows to know in advance what will happen: this becomes possible because if we have a model and we have enough historical data we can determine what will happen in the near future with bases or statistical foundations.',
-    banner:
-      'https://storage.googleapis.com/saepict-saepictwagtail-prod/images/big-data-analysis-2020.original.png',
+    banner: 'https://i.ibb.co/F3W2W73/Frame-8.png',
     evocativeImage: 'https://i.ibb.co/KDhJdh0/data.png',
     servicesTitle: 'Discover our services ',
     servicesDescription:
@@ -425,7 +423,7 @@ async function insertRealData() {
   const SmartCities = await Service.create({
     title: 'Smart Cities',
     subTitle:
-      'A smart city system gathers and analyzes data from sensors and smart devices to enable efficient management of urban processes (e.g., transportation, lighting). With 9-year experience in IoT, ??CompanyName?? designs and implements end-to-end IoT solutions to bring smart city vision to reality.',
+      'A smart city system gathers and analyzes data from sensors and smart devices to enable efficient management of urban processes (e.g., transportation, lighting). With 9-year experience in IoT, HexTech designs and implements end-to-end IoT solutions to bring smart city vision to reality.',
     description:
       'Municipalities of all sizes around the world are adopting smart city concepts based on Internet of Things (IoT) systems to optimize the efficient management of community assets, resources, operations and services. Smart cities foster service-oriented, sustainable local governance equipped to improve transportation systems, build energy-efficient infrastructure, decrease environmental pressures, maintain effective disaster response, and provide state-of-the-art security in public spaces. We work to serve each community with the appropriate smart city services and solutions according to its individual needs and unique vision.',
     banner:
@@ -437,18 +435,15 @@ async function insertRealData() {
     s1Name: 'Road Traffic',
     s1Description:
       'Our smart traffic systems take intelligent actions based on the careful “study” of traffic flow, bringing human intervention down to a minimum.',
-    s1Logo:
-      'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
+    s1Logo: 'https://i.ibb.co/Rczq8Pv/sol-1.png',
     s2Name: 'Lighting',
     s2Description:
       'Connecting sensors, across the street lighting system, helps to consume less energy and bringing down energy costs.',
-    s2Logo:
-      'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
+    s2Logo: 'https://i.ibb.co/KwskLjv/sol-2.png',
     s3Name: 'Safety',
     s3Description:
       'For enhancing public safety, we connect cameras, microphones and movement sensors to a smart city platform and power it with robust analytics tools.',
-    s3Logo:
-      'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
+    s3Logo: 'https://i.ibb.co/b77D3Fm/sol-3.png',
     partnerTitle: '',
     partnerDescription:
       'Since user apps are an integral part of a smart city, we offer mobile consulting, UI/UX design, native (iOS, Android) and cross-platform (Cordova/PhoneGap, Xamarin, React Native) development, as well as mobile testing.',
@@ -480,17 +475,15 @@ async function insertRealData() {
     s1Name: 'Reduce energy costs',
     s1Description:
       'With connected lighting, your organization can monitor usage and provide lighting as needed in different areas based on their unique needs.',
-    s1Logo:
-      'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
+    s1Logo: 'https://i.ibb.co/Rczq8Pv/sol-1.png',
     s2Name: 'Make your city a safer place',
     s2Description:
       'Smart lighting provides a greater sense of security and overall better experience for citizens as it helps cities enhance public safety',
-    s2Logo:
-      'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
-    s3Name: '..........',
-    s3Description: '............',
-    s3Logo:
-      'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
+    s2Logo: 'https://i.ibb.co/KwskLjv/sol-2.png',
+    s3Name: 'Remote maintenance of smart lights',
+    s3Description:
+      'HexTech Smart Lighting Solution allows secure and reliable short distance communication, distributed control and remote smartlights management',
+    s3Logo: 'https://i.ibb.co/b77D3Fm/sol-3.png',
     p1Name: '......',
     p1Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
     p2Name: '..........',
@@ -505,7 +498,7 @@ async function insertRealData() {
   const Automotive = await Service.create({
     title: 'Automotive',
     subTitle:
-      '??COMPANY NAME?? IoT Connected Vehicle Insights is connected car software that integrates real-time data about drivers, vehicles and the environment to optimize the in-car experience. The dedicated cloud service streams data from vehicle sensors and uses analytics and AI to understand driver behavior. It links with other information systems in the cloud, such as weather and traffic, to add context and situational awareness.',
+      'HexTech IoT Connected Vehicle Insights is connected car software that integrates real-time data about drivers, vehicles and the environment to optimize the in-car experience. The dedicated cloud service streams data from vehicle sensors and uses analytics and AI to understand driver behavior. It links with other information systems in the cloud, such as weather and traffic, to add context and situational awareness.',
     description:
       'Cars have become one of the fastest-growing mobile device category, with every vehicle turning into a node in a much larger network and ecosystems. The ongoing (re)evolution in terms of connectivity, electric, autonomous and mobility trends is full of great opportunities to achieve new revenue streams and improve quality of life in the near future. Yet, as with all new opportunities, challenges, disruptions and risks arise.',
     banner:
@@ -519,17 +512,15 @@ async function insertRealData() {
     s1Name: 'Automotive-grade M2M technology',
     s1Description:
       'A new lifestyles offering a suite of advanced features including mobile Wi-Fi hotspot, Internet radio, Web services and an improved navigation system.',
-    s1Logo:
-      'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
+    s1Logo: 'https://i.ibb.co/Rczq8Pv/sol-1.png',
     s2Name: 'Thales Automotive Connectivity',
     s2Description:
       'Automotive-grade eSIMs leadership position, to identify vehicles, encrypt and secure communications. eSIMs also ensure remote connectivity provisioning as well as seamless connectivity.',
-    s2Logo:
-      'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
-    s3Name: '-....',
-    s3Description: '.....',
-    s3Logo:
-      'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
+    s2Logo: 'https://i.ibb.co/KwskLjv/sol-2.png',
+    s3Name: 'Customer Engagement',
+    s3Description:
+      'Modern customers must have smarter, ‘connected’ cars, and appreciate innovative marketing as much as they like innovations with their vehicles.',
+    s3Logo: 'https://i.ibb.co/b77D3Fm/sol-3.png',
     p1Name: '........',
     p1Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
     p2Name: '......',
@@ -559,18 +550,15 @@ async function insertRealData() {
     s1Name: 'Automation',
     s1Description:
       'Smart price tags will adjust prices in real time, based on the item’s popularity, expiry date, and other factors. ',
-    s1Logo:
-      'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
+    s1Logo: 'https://i.ibb.co/Rczq8Pv/sol-1.png',
     s2Name: 'Agile workforce',
     s2Description:
       'With the advancement of technologies, courses and webinars are already accessible for anyone, anytime, and from any device.',
-    s2Logo:
-      'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
+    s2Logo: 'https://i.ibb.co/KwskLjv/sol-2.png',
     s3Name: 'Connectivity platforms',
-    s2Description:
+    s3Description:
       'In the retail industry, connectivity platforms may take multiple forms: from large marketplaces, such as Amazon and Alibaba, to online payment systems and device communication hubs.',
-    s3Logo:
-      'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
+    s3Logo: 'https://i.ibb.co/b77D3Fm/sol-3.png',
     p1Name: 'Amazon Web Services',
     p1Logo: 'https://www.channelfutures.com/files/2015/05/aws_0.jpg',
     p2Name: 'Arduino',
@@ -587,7 +575,7 @@ async function insertRealData() {
   const Healthcare = await Service.create({
     title: 'IoT Solutions for Healthcare',
     subTitle:
-      'Medical IoT facilitates monitoring patient health state and tracking medical staff and assets through the network of smart devices and sensors connected to the cloud. With 9 years in IoT, "COMPANY NAME" provides reliable IoMT solutions to improve patient care, asset use, and staff productivity.',
+      'Medical IoT facilitates monitoring patient health state and tracking medical staff and assets through the network of smart devices and sensors connected to the cloud. With 9 years in IoT, HexTech provides reliable IoMT solutions to improve patient care, asset use, and staff productivity.',
     description:
       'The health industry has been an early adopter of the internet of things (IoT). Nearly half (46%) of executives who participated in the survey said their organization is actively using IoT, and another 21% stated they have IoT projects in development. Their main ambition is efficiency: 54% already use IoT to improve operations, and another 21% plan to do so in the next two years. Overall, health industry execs are optimistic, with 90% believing that IoT’s benefits outweigh its risks. In addition, 79% believe that IoT will help them grow revenue or increase profits.',
     banner:
@@ -601,18 +589,15 @@ async function insertRealData() {
     s1Name: 'Locating and managing assets',
     s1Description:
       'Knowing the exact location of life-saving devices and essential equipment like infusion pumps results in fewer delays for patients and helps optimize machine use.',
-    s1Logo:
-      'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
+    s1Logo: 'https://i.ibb.co/Rczq8Pv/sol-1.png',
     s2Name: 'Capturing data to drive better outcomes',
     s2Description:
       'Home monitoring of patients using connected blood pressure, glucose and other devices, which enables doctors and nurses to track patients more closely and identify individuals who are at risk.',
-    s1Logo:
-      'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
+    s2Logo: 'https://i.ibb.co/KwskLjv/sol-2.png',
     s3Name: 'Enhancing the employee and patient experience',
     s3Description:
       'Medical teams can track the location of patients wearing wristbands with sensors and deliver relevant information to families via their smartphones.',
-    s3Logo:
-      'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
+    s3Logo: 'https://i.ibb.co/b77D3Fm/sol-3.png',
     p1Name: '....',
     p1Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
     p2Name: '.....',
@@ -641,18 +626,15 @@ async function insertRealData() {
     s1Name: 'Making operations self-sufficient',
     s1Description:
       'Many use sensors to monitor and access everything—from the operational state of machinery to getting alerts when storage tanks, trash dumpsters, exit signs and smoke alarms need to be serviced.',
-    s1Logo:
-      'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
+    s1Logo: 'https://i.ibb.co/Rczq8Pv/sol-1.png',
     s2Name: 'Optimizing factory conditions',
     s2Description:
       'IoT-enabled predictive maintenance can help prevent equipment from malfunctioning. Dashboards can provide deep visibility within a partner ecosystem and supply chain.',
-    s2Logo:
-      'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
+    s2Logo: 'https://i.ibb.co/KwskLjv/sol-2.png',
     s3Name: 'Monitoring the supply chain',
     s3Description:
       'IoT solutions can monitor the condition of products from when they are made in a factory (or grown on a farm) to the arrival at their final destination.',
-    s3Logo:
-      'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
+    s3Logo: 'https://i.ibb.co/b77D3Fm/sol-3.png',
     p1Name: '.....',
     p1Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
     p2Name: '.....',
@@ -902,46 +884,71 @@ async function insertRealData() {
       'The easiest way to electronic invoicing is through the Cloud. Send e-invoices to your business partners & public administration entities in no time - wherever they are.',
     description:
       'In the light of the current national and EU legislation, Comarch e-Invoicing Cloud stands out as a simple and affordable tool that enables global, legally-compliant exchange of invoice documents with business partners and public administration entities. No matter your industry or product, our platform was designed to help you create, process, and store e-invoices, thus significantly improve your business efficiency. Plus, being a cloud-based solution, it does not require a long and cost-intensive implementation process. Instead, it gives you instant access to a virtual environment that is easy to navigate.',
-    banner: '',
+    banner:
+      'https://www.extrasys.it/hs-fs/hubfs/E-invoice%20benefits.png?width=800&name=E-invoice%20benefits.png',
     evocativePhoto: '',
     serviceTitle: 'E-Invoicing Service',
     serviceDescription:
-      'Companies active in many countries or worldwide need to support and process a large number of different E-Invoicing standards. With ??COMPANY NAME?? you are on the safe side. We support E-Invoicing compliance in more than 55 countries. In recent years, E-Invoicing initiatives have been started in many countries to simplify the exchange of invoicing data between companies („B2B“), and between companies and authorities („B2G“), and to increase tax revenues. The defined standards within the scope of these initiatives are already widespread. Some are already regulated by national governments.',
+      'Companies active in many countries or worldwide need to support and process a large number of different E-Invoicing standards. With HexTech you are on the safe side. We support E-Invoicing compliance in more than 55 countries. In recent years, E-Invoicing initiatives have been started in many countries to simplify the exchange of invoicing data between companies („B2B“), and between companies and authorities („B2G“), and to increase tax revenues. The defined standards within the scope of these initiatives are already widespread. Some are already regulated by national governments.',
+    s1Name: 'Service Variants',
+    s1Description:
+      'Using industry-specific modules which include the country-specific processes, standards and features, all companies can start right away.',
+    s1Logo: 'https://i.ibb.co/Rczq8Pv/sol-1.png',
+    s2Name: 'High Security B2B Cloud Operation',
+    s2Description:
+      'Our highly standardized operating processes meet strict requirements typically going far beyond what you can provide on your own system.',
+    s2Logo: 'https://i.ibb.co/KwskLjv/sol-2.png',
+    s3Name: 'Secure Investment',
+    s3Description:
+      'Our software is independent from the operating model. We offer all SEEBURGER solutions as a Cloud Service or On-Premises solution with identical functionality. ',
+    s3Logo: 'https://i.ibb.co/b77D3Fm/sol-3.png',
     partnerTitle: '',
     partnerDescription: '',
     p1Name: '',
-    p1Logo: '',
+    p1Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
     p2Name: '',
-    p2Logo: '',
+    p2Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
     p3Name: '',
-    p3Logo: '',
+    p3Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
     caseStudyTitle: '',
     realtedServiceTitle: '',
   })
   await CloudComputing.addService(EInvoice.id)
 
-  const CloudServices = await Service.create({
+  const CloudAppDevelopServices = await Service.create({
     title: 'Cloud App Development Services',
     subTitle:
       'With cloud application development services, businesses can build applications that are technically and architecturally adapted to being smoothly hosted and maintained by the cloud infrastructure and take advantage of the capabilities and services offered by PaaS (platform-as-a-service) and IaaS (infrastructure-as-a-service) providers.',
     description:
       '94% of companies already use cloud services reducing IT costs, granting their users reliability and availability and refocusing from routine maintenance to more strategic initiatives. Let us help you get cloud applications designed for high security, performance efficiency, and operational excellence while ensuring the optimal resource consumption.',
-    banner: '',
+    banner: 'https://4.imimg.com/data4/WT/LG/GLADMIN-22150665/0-500x500.jpg',
     evocativePhoto: '',
     serviceTitle: 'Application modernization services',
     serviceDescription: '',
+    s1Name: 'Cloud consulting',
+    s1Description: 'Plan a cloud app to meet your business needs.',
+    s1Logo: 'https://i.ibb.co/Rczq8Pv/sol-1.png',
+    s2Name: 'Cloud app development',
+    s2Description:
+      'We deliver a scalable, portable, reliable and secure containerized app based on the microservices.',
+    s2Logo: 'https://i.ibb.co/KwskLjv/sol-2.png',
+    s3Name: 'Application migration to the cloud',
+    s3Description:
+      'Application and/or DWH migration to the cloud with all-around modifications',
+    s3Logo: 'https://i.ibb.co/b77D3Fm/sol-3.png',
+    partnerTitle: '',
     partnerTitle: '',
     partnerDescription: '',
     p1Name: '',
-    p1Logo: '',
+    p1Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
     p2Name: '',
-    p2Logo: '',
+    p2Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
     p3Name: '',
-    p3Logo: '',
+    p3Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
     caseStudyTitle: '',
     realtedServiceTitle: '',
   })
-  await CloudComputing.addService(CloudServices.id)
+  await CloudComputing.addService(CloudAppDevelopServices.id)
   //**END OF CLOUD COMPUTING SERVICES */
 
   //**CUSTOMER EXPERIENCE SERVICES */
@@ -1313,22 +1320,50 @@ async function insertRealData() {
   //**END OF BIG DATA ANALYSIS CASE STUDIES */
 
   //**CLOUD COMPUTING CASE STUDIES */
-  const casestudy2 = await CaseStudy.create({
-    title: 'CLOUD COMPUTING CASE STUDIES',
-    subTitle: '',
-    banner: '',
-    descriptiveText: '',
-    challengeTitle: '',
-    challengeDescription: '',
-    solutionTitle: '',
-    solutionDescription: '',
-    teamsTitle: 'Team a caso',
+  const ccC1 = await CaseStudy.create({
+    title: 'Massive invoice volumes as key driver for e-invoicing',
+    subTitle:
+      '“KPN generates an astonishing 100 million invoices per year. This is more than eight million per month. We are, with the exception of the Tax Administration, the biggest paper factory in the Netherlands.” explains Hans Hodes, Business Consultant at KPN. Customers receive invoices with cost summaries each month, or every other month. With these volumes, it was clear that e-Invoicing could bring big benefits.',
+    banner: 'https://einvoice1-trial.nic.in/Images/Einvoice_banner2.jpg',
+    descriptiveText:
+      'The Netherlands’ leading telecommunications company, KPN, serves both consumers and business marketers – including 60% of the 1 million businesses in the Netherlands. Basware is helping them manage more than 100 million invoices per year.',
+    challengeTitle: 'The increasing popularity if e-invoicing',
+    challengeDescription:
+      'Over the years, electronic invoices became more common and KPN experienced a higher demand for this service. KPN’s German e-Invoicing service provider handled these requests. Hodes explains: “When customers called us, they were serviced by our German service provider after various detours and connections in the chain. In my opinion, this could have been done better.”',
+    solutionTitle: 'QUICK SWITCH OF E-INVOICING PROVIDER',
+    solutionDescription:
+      'Getting e-Invoicing to take off in amarket requires cooperation amongthe multiple e-Invoicing serviceproviders. The service providersneed to create a stable environmentfor customers, so that customerswill dare to make the switch to ‘true’e-Invoicing. If the e-Invoicing serviceproviders don’t work together,companies in the Netherlandswill stick to invoicing via directconnections or an e-mail with PDF.” In the Netherlands, the e-Invoicingmarket has been stagnant for afew years. For that reason, KPN isworking with Basware to encouragecooperation throughout the entireindustry. Once there is greatertransparency as to which companyis connected to which communityand information can be exchanged,e-Invoicing can be stimulated.',
+    teamsTitle: 'E-Invoice Departement',
     personName: '',
     personJob: '',
     serviceTitle: '',
     serviceHeading: '',
   })
-  await CloudComputing.addCasestudy(casestudy2.id)
+  await CloudComputing.addCasestudy(ccC1.id)
+  await EInvoice.addCasestudy(ccC1.id)
+
+  const ccC2 = await CaseStudy.create({
+    title: 'JAVA BACKEND DEVELOPMENT FOR AN INNOVATIVE HOTEL SELF-SERVICE APP',
+    subTitle:
+      'To date, the demo version of the application has been successfully presented to future end users and received their endorsement. Satisfied with the results, the Customer continues cooperation with ScienceSoft as new features and integrations are continuously added. In the nearest future, the app should be adopted by about 100 hotels around the globe.',
+    banner:
+      'https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/5000741/original/fca44be5f9f214b2c4937d99e292951b0a19c2f8/write-any-c-plus-plus-java-or-python-program.png',
+    descriptiveText:
+      'The Customer is a European startup company developing an innovative hotel self-service app to sell to various hotel facilities around the world. The new application is aimed to cover multiple hotel services at once. For example, it allows guests to check in on the way to a hotel, open a locked room door with their mobile device without any keys and plastic cards, quickly and easily manage room, food, and spa services offered by a hotel from any location and more.',
+    challengeTitle: 'Java backed for web-based solution',
+    challengeDescription:
+      'The Customer needed to create Java backend that would become the basis for their web-based solution as well as Android and iOS mobile apps. The backend had to support complex functionality (check-in, door opening, extra services management, check-out, etc.) as well as enable the application’s multitenancy, flexibility, sustainability and impeccable UX.',
+    solutionTitle: 'Microservices-based architecture',
+    solutionDescription:
+      'Turning to the microservices-based architecture, HexTech’s team managed to ensure quick ongoing Agile development and simplified future scaling and integration processes. The first release of the system consisted of 9 independent services, each being responsible for a set of functions. The implementation of the app’s functionality and expected multitenancy required a number of future integrations with external applications (e.g., applications of door lock providers, internal hotel management systems, etc.). To reduce time of future integration and necessary efforts, HexTech’s team created reliable, secure, and reusable APIs for microservices. As a result, only minor tweaks were needed to introduce new components to the system.',
+    teamsTitle: 'Cloud App Development Departement',
+    personName: '',
+    personJob: '',
+    serviceTitle: '',
+    serviceHeading: '',
+  })
+  await CloudComputing.addCasestudy(ccC2.id)
+  await CloudAppDevelopServices.addCasestudy(ccC2.id)
   //**END OF CLOUD COMPUTING CASE STUDIES */
 
   //**CUSTOMER EXPERIENCE CASE STUDIES */
@@ -1465,7 +1500,7 @@ async function insertRealData() {
     banner:
       'https://www.viewsonic.com/library/wp-content/uploads/2019/08/LB0040-hero-compressed.png',
     descriptiveText:
-      'Through its long years of relationship with ?Company Name?, a trusted partner that had a true understanding of the store business process of the ground reality, 7-Eleven was able to build a reliable and user-friendly IT system. Specifically, ?Company Name? realized a robust framework that supported the store management of each franchisee: providing merchandising support on ordering and product assortment, while improving the store operation efficiency.',
+      'Through its long years of relationship with HexTech, a trusted partner that had a true understanding of the store business process of the ground reality, 7-Eleven was able to build a reliable and user-friendly IT system. Specifically, HexTech realized a robust framework that supported the store management of each franchisee: providing merchandising support on ordering and product assortment, while improving the store operation efficiency.',
     challengeTitle: 'Promote global expansion',
     challengeDescription:
       "7-Eleven's challenge is to further promote its active global expansion and area licensee movement to the matured and emerging retail markets. In order to achieve such business goal, 7-Eleven required a solution partner that had a true understanding of its business strategy and process, thereby providing the most appropriate support that corresponded to each need of the specific country or region.",
@@ -1507,7 +1542,7 @@ async function insertRealData() {
   const iotC4 = await CaseStudy.create({
     title: 'Building a connected car ecosystem',
     subTitle:
-      '??COMPANY NAME??, with its Automotive division, constantly develops solutions for innovation trends such as e-mobility and ACES (for cars intended to be autonomous, connected, electric and shared)',
+      'HexTech, with its Automotive division, constantly develops solutions for innovation trends such as e-mobility and ACES (for cars intended to be autonomous, connected, electric and shared)',
     banner:
       'https://images.acvmagazine.com/file/BIT-Magazine-Images/feature_cover_06.jpg',
     descriptiveText:
@@ -1574,6 +1609,28 @@ async function insertRealData() {
   await Healthcare.addCasestudy(iotC6.id)
 
   const iotC7 = await CaseStudy.create({
+    title: 'Internet of Medical Things',
+    subTitle:
+      'Ensure that the right people are assigned to the right places to efficiently deliver quality care while improving staff morale and patient satisfaction.',
+    banner: 'https://img.lovepik.com/photo/50056/0961.jpg_wh860.jpg',
+    descriptiveText:
+      'IoT in health care can dramatically optimize workflow and staffing. Even a basic IoT solution can collect and bring together such data as staff location and expertise, patient acuity and location, and availability and location of critical diagnostic and therapeutic equipment. Once modeled, this data can help staffing managers improve workflows and make better staffing and scheduling decisions.',
+    challengeTitle: 'Customized therapies and interaztions',
+    challengeDescription:
+      'Patients today expect more personalized interactions as well as customized therapies that are effective and cost-efficient. Health care systems can be overwhelmed by the flood of rich new data sources, including social media, wearables and medical devices (known as the Internet of Medical Things, or IoMT). The digitization of the health care industry – from patients to clinical infrastructure – provides unprecedented opportunities to transform delivery and meet the challenges of cost, quality and access.',
+    solutionTitle: 'IoT Analytics',
+    solutionDescription:
+      "Manage and analyze your IoMT data where, when and how it works best for your patient. Deliver the best patient experience – in real-time. Understand which data is relevant and private, so you'll know what to store and what to protect. SAS delivers trusted, automated IoT analytics solutions that can help you: - Maximize value from IoMT data. Identify and leverage data sources that provide tangible insights into enhancing patient care, streamlining processes and delivering cost optimization strategies. - Drive innovation in patient care and operations. Develop new business models and opportunities for data sharing and monetization with a more dynamic, open and agile platform. - Embed IoMT analytics within decision support systems. Reduce alarm fatigue, improve patient safety, optimize staff and patient flow, and accelerate the adoption of value-based health care and personalized medicine.",
+    teamsTitle: 'IoT Department',
+    personName: '',
+    personJob: '',
+    serviceTitle: '',
+    serviceHeading: '',
+  })
+  await IoT.addCasestudy(iotC7.id)
+  await Healthcare.addCasestudy(iotC7.id)
+
+  const iotC8 = await CaseStudy.create({
     title: 'Innovation to the streets of Jamshedpur',
     subTitle:
       'Optimise infrastructure services in Jamshedpur. Specific areas that involved safety and additional manual effort due to scale, took priority',
@@ -1593,32 +1650,98 @@ async function insertRealData() {
     serviceTitle: '',
     serviceHeading: '',
   })
-  await IoT.addCasestudy(iotC7.id)
-  await SmartLighting.addCasestudy(iotC7.id)
-  await SmartCities.addCasestudy(iotC7.id)
+  await IoT.addCasestudy(iotC8.id)
+  await SmartLighting.addCasestudy(iotC8.id)
+  await SmartCities.addCasestudy(iotC8.id)
 
-  const iotC8 = await CaseStudy.create({
-    title: 'Internet of Medical Things',
+  const iotC9 = await CaseStudy.create({
+    title: 'Building health monitoring',
     subTitle:
-      'Ensure that the right people are assigned to the right places to efficiently deliver quality care while improving staff morale and patient satisfaction.',
-    banner: 'https://img.lovepik.com/photo/50056/0961.jpg_wh860.jpg',
+      'The Customer received an easy-to-use IoT solution to monitor the state of a construction in real time. The tool automatically notifies the operator about a sensor failure or a construction defect and can be integrated with external systems',
+    banner: '',
     descriptiveText:
-      'IoT in health care can dramatically optimize workflow and staffing. Even a basic IoT solution can collect and bring together such data as staff location and expertise, patient acuity and location, and availability and location of critical diagnostic and therapeutic equipment. Once modeled, this data can help staffing managers improve workflows and make better staffing and scheduling decisions.',
-    challengeTitle: 'Customized therapies and interaztions',
+      'The Customer is a large company that provides construction sites with complex automation and security systems. The company offers design solutions and performs supply, installation and commissioning for various types of construction projects.',
+    challengeTitle: 'Continuous and efficient technical control',
     challengeDescription:
-      'Patients today expect more personalized interactions as well as customized therapies that are effective and cost-efficient. Health care systems can be overwhelmed by the flood of rich new data sources, including social media, wearables and medical devices (known as the Internet of Medical Things, or IoMT). The digitization of the health care industry – from patients to clinical infrastructure – provides unprecedented opportunities to transform delivery and meet the challenges of cost, quality and access.',
-    solutionTitle: 'IoT Analytics',
+      'In order to provide a continuous and efficient technical control and thus increased security of constructions and complex engineering objects, the Customer decided to develop a smart construction monitoring system for collecting and processing data through sensors installed on the key elements of a building. The solution was designed to automate regular data collection and processing.',
+    solutionTitle: 'Procesing and calculations on sensor data',
     solutionDescription:
-      "Manage and analyze your IoMT data where, when and how it works best for your patient. Deliver the best patient experience – in real-time. Understand which data is relevant and private, so you'll know what to store and what to protect. SAS delivers trusted, automated IoT analytics solutions that can help you: - Maximize value from IoMT data. Identify and leverage data sources that provide tangible insights into enhancing patient care, streamlining processes and delivering cost optimization strategies. - Drive innovation in patient care and operations. Develop new business models and opportunities for data sharing and monetization with a more dynamic, open and agile platform. - Embed IoMT analytics within decision support systems. Reduce alarm fatigue, improve patient safety, optimize staff and patient flow, and accelerate the adoption of value-based health care and personalized medicine.",
+      'HexTech development team designed and developed a smart solution to collect sensor data and aggregate it on a central server for processing and further calculations of a building’s state. Data processing and averaging make it possible to boost system performance and reduce data volumes. The user-friendly interface presents the data from connected through intuitive color coding – the green, yellow and red lights indicate the state of a building. Additionally, the system allows a flexible configuration of threshold values to regulate the transition from one status to another. To aggregate the data – suppose, for calculating a construction deformation, ScienceSoft developed a system of virtual sensors collecting information from several physical sensors. It allows users to monitor specific parameters which can be used only in the aggregate.',
     teamsTitle: 'IoT Department',
     personName: '',
     personJob: '',
     serviceTitle: '',
     serviceHeading: '',
   })
-  await IoT.addCasestudy(iotC8.id)
-  await Healthcare.addCasestudy(iotC8.id)
-  //  await SmartRetail.addCasestudy(iotC9.id)
+  await IoT.addCasestudy(iotC9.id)
+  await SmartCities.addCasestudy(iotC9.id)
+
+  const iotC10 = await CaseStudy.create({
+    title: 'Remote patient monitoring software',
+    subTitle:
+      'The development team optimized the measurement API server and decreased the load on the system by introducing the following features: aggregation of requests, grouping of data, NGINX server settings, optimization of queries and MySQL. The solution for remote software deployment to SNA devices enabled the distribution order of install, delete and update commands as per specifics of Android OS by building a queue of commands and sending them to the devices.',
+    banner: '',
+    descriptiveText:
+      'The Customer is a US-based provider of healthcare solutions with development centers in Israel and Belarus.',
+    challengeTitle: 'Remote patient monitoring solution',
+    challengeDescription:
+      'The Customer wanted to deliver a sophisticated remote patient monitoring solution for clinics of North America. The solution should help to improve medical staff performance, avoid routine visits, and increase the quality of care. For that reason, the Customer needed a team of savvy professionals in R&D and healthcare IT.',
+    solutionTitle: 'App and Web Dashboard',
+    solutionDescription:
+      'The developers reviewed and analyzed available approaches and frameworks and picked WebRTC technology as the best one for platform-independent voice and video communication. Several Android-powered hardware devices were selected to implement central communication module or Sensor Network Appliances (SNAs). The development process was split into 2 major parts: the development of apps for Android and iOS devices and Web dashboard implementation. \n 1) ScienceSoft’s team delivered apps for both patients and medical staff. Gradle flavors were used to build the apps’ variations fully compatible with different screen sizes: wide screen (for doctors), tablet (for nurses) and smartphone (for healthcare services consumers). Patients could smoothly access numerous sensors in order to monitor data and synchronize it with the server. Medical staff members could diagnose and treat patient remotely and receive automated alerts and notifications, when, for example patient state suddenly changes. \n 2) A Web Dashboard assisted medical professionals in monitoring the overall status of patients drilling down on personal medical data. It sent alerts on poor health indicators and maintains the doctor-patient connection. The central communication module was built upon a TV-connected Android-powered device. ',
+    teamsTitle: 'IoT Department',
+    personName: '',
+    personJob: '',
+    serviceTitle: '',
+    serviceHeading: '',
+  })
+  await IoT.addCasestudy(iotC10.id)
+  await Healthcare.addCasestudy(iotC10.id)
+
+  const iotC11 = await CaseStudy.create({
+    title: 'Image analysis software for automated optical inspections',
+    subTitle:
+      'HexTech’s team has successfully developed image analysis software for automated optical inspection of printed circuit assemblies. The application offers considerable opportunities for the SMT manufacturing industry, providing a fast and reliable solution for PCA quality control.',
+    banner: '',
+    descriptiveText:
+      'ScienceSoft has developed an application for the electronics industry aimed at ensuring the quality of printed circuit assemblies (PCAs) by means of machine vision.',
+    challengeTitle: 'Faster and more efficient inspection',
+    challengeDescription:
+      'The application was to perform fast and efficient quality inspection of printed circuit assemblies right on the conveyor belt and detect if any of the PCA components were missing.',
+    solutionTitle: 'Industrial connected displays',
+    solutionDescription:
+      'A team of a project manager, a business analyst, 3 senior С++ developers, a senior UI designer, and a software testing engineer have delivered a desktop application based on image analysis algorithms, complemented with a simple and intuitive GUI. In particular, ORB algorithm has been used for feature detection, and a combination of algorithms (perceptual hash algorithm, PSNR and histograms comparing) have been employed to compare regions of interest in the reference template and in the image under inspection. The user provides a reference board template, putting on all the elements to be inspected with a tool that allows marking objects of three main shapes: \n-Elements with a round cross-section (mainly capacitors) \n-Rectangular elements (chips, diodes, transistors) \n-Dumbbell-shaped elements (resistors) \n After preparing the reference template with all the elements located, the user can proceed to the analysis of printed circuit assemblies of the same type as the reference PCA. Comparing these images with the reference assembly, the application defines defected ones and shows the locations of missing components in detail.',
+    teamsTitle: 'IoT Department',
+    personName: '',
+    personJob: '',
+    serviceTitle: '',
+    serviceHeading: '',
+  })
+  await IoT.addCasestudy(iotC11.id)
+  await IndustrialManufacturing.addCasestudy(iotC11.id)
+
+  const iotC12 = await CaseStudy.create({
+    title: 'Control Unit for Automotive Tier-I Supplier',
+    subTitle:
+      'We were able to successfully deliver a robust telematics solution within the desired timeframe.he customer was able to deliver the proof of concept (PoC) within 6 months. This helped them initiate demos with the OEMs and Suppliers earlier than expected.',
+    banner: '',
+    descriptiveText:
+      'Our customer is a leading Tier-I Supplier of Infotainment Systems, Head-up Display (HUD) Solutions, Digital Instrument Clusters and Battery Management Systems (BMS) for Electric Vehicles.',
+    challengeTitle:
+      'Integrate Hextech features in their Digital Instrument Cluster product.',
+    challengeDescription:
+      'Business Challenge:\n-The customer desired to integrate Telematics features in their Digital Instrument Cluster product.\n-This Instrument Cluster solution has been designed for passenger vehicles (four-wheelers, two-wheelers, auto rickshaws and electric vehicles).\n-In order to launch this product along with the integrated Telematics Features, the support of Subject Matter Experts (SME) was required in areas of Cloud, Firmware, Device Drivers, and end-to end IoT Technology Stack.\n-The customer decided that their in-house teams should focus on the core product development activities and the telematics feature integration activity should be outsourced.\n-This made the role of the Product Engineering Services partner very critical.',
+    solutionTitle: ' IoT Sensor Network design and Cloud Interface development',
+    solutionDescription:
+      'Our more than a decade long expertise in the Automotive domain along with proven production grade Cloud-Telematics reference designs encouraged the customer to partner with us for this project. We leveraged our expertise in IoT Sensor Network design and Cloud Interface development, in order to enable the collection of data like speed, GPS location and more. This was facilitated with the help of MQTT protocol based communication interface. Our expertise in the automotive domain ensured that we achieve compliance with all the necessary standards while selecting components for hardware design. Additionally, we have leveraged our expertise in firmware, SPI, I2C and CAN protocols.',
+    teamsTitle: 'IoT Department',
+    personName: '',
+    personJob: '',
+    serviceTitle: '',
+    serviceHeading: '',
+  })
+  await IoT.addCasestudy(iotC12.id)
+  await Automotive.addCasestudy(iotC12.id)
 
   //**END OF IOT CASE STUDIES */
 
@@ -1703,13 +1826,13 @@ async function insertRealData() {
     memberNameAndOccupation: 'Olivier Haren - Chair of the IoT Board',
     personalQuote: 'Lorem ipsum dolor sit amet',
     personalDescription:
-      'Olivier joined us as an RF engineer in 1997. Since 2016, Olivier is the R&D manager for the IoT Business Unit.  Previously Bruno spent 11 years as the manager of the Electronic and Software Department of the Legrand Group’s Radio Frequency & Voice, Data and Image Competencies Center and 10 years in the wired and RF telecommunication field in various R&D positions as electronic designer or project leader. \n Olivier holds a master’s degree in electronic embedded systems from the Institut National Polytechnique de Grenoble, France.',
+      'Olivier joined us as an RF engineer in 1997. Since 2016, Olivier is the R&D manager for the IoT Business Unit. Previously Olivier spent 11 years as the manager of the Electronic and Software Department of the Legrand Group’s Radio Frequency & Voice, Data and Image Competencies Center and 10 years in the wired and RF telecommunication field in various R&D positions as electronic designer or project leader. \n Olivier holds a master’s degree in electronic embedded systems from the Institut National Polytechnique de Grenoble, France.',
     workField: 'Internet of things',
     teamsTitle: 'IoT Department',
     personName: 'Olivier Haren',
     personJob: 'Chair of the IoT Board',
     personPhoto:
-      'https://bridgelawyers.ca/wp-content/uploads/2020/08/depositphotos_39258143-stock-illustration-businessman-avatar-profile-picture.jpg',
+      'https://media.gettyimages.com/photos/portrait-of-welldressed-mature-businessman-picture-id1141508234?s=612x612',
     teamImage: '',
   })
   IoT.addTeammember(iotP1)
@@ -1720,13 +1843,13 @@ async function insertRealData() {
     memberNameAndOccupation: 'Jean Orsaten | Chief of Smart Cities department ',
     personalQuote: 'Lorem ipsum dolor sit amet',
     personalDescription:
-      'He has over 30 years of experience in the home automation industry, within industry alliances and EU regulatory bodies. He is Director of the Smart Cities Department at ??COMPANY NAME??, overseeing technology partnerships, connectivity and wireless networking technologies and overall system architectures. With a strong focus on Interoperability, he has been deeply involved in the development of protocols with other leading home equipment manufacturers. The department he is heading deals with wireless protocols developments, focusing io-homecontrol, Thread, Zigbee and other open standard solutions for the Somfy Group.',
+      'He has over 30 years of experience in the home automation industry, within industry alliances and EU regulatory bodies. He is Director of the Smart Cities Department at HexTech, overseeing technology partnerships, connectivity and wireless networking technologies and overall system architectures. With a strong focus on Interoperability, he has been deeply involved in the development of protocols with other leading home equipment manufacturers. The department he is heading deals with wireless protocols developments, focusing io-homecontrol, Thread, Zigbee and other open standard solutions for the Somfy Group.',
     workField: 'Internet of things',
     teamsTitle: 'IoT Department',
     personName: 'Jean Orsaten',
     personJob: 'Chief of Smart Cities department',
     personPhoto:
-      'https://st3.depositphotos.com/15648834/17930/v/600/depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg',
+      'https://media.gettyimages.com/photos/closeup-smiling-male-leader-wearing-eyeglasses-picture-id1179627340?s=612x612',
     teamImage: '',
   })
   IoT.addTeammember(iotP2)
@@ -1734,16 +1857,16 @@ async function insertRealData() {
   iotC3.addTeammember(iotP2)
 
   const iotP3 = await TeamMember.create({
-    memberNameAndOccupation: 'Name Surname | Occupation ',
+    memberNameAndOccupation: 'Kristen DiCerba',
     personalQuote: 'Lorem ipsum dolor sit amet',
     personalDescription:
-      'He has over 30 years of experience in the home automation industry, within industry alliances and EU regulatory bodies. He is Director of the Smart Cities Department at ??COMPANY NAME??, overseeing technology partnerships, connectivity and wireless networking technologies and overall system architectures. With a strong focus on Interoperability, he has been deeply involved in the development of protocols with other leading home equipment manufacturers. The department he is heading deals with wireless protocols developments, focusing io-homecontrol, Thread, Zigbee and other open standard solutions for the Somfy Group.',
+      'Kristen DiCerbo, Ph.D. is the head of Smart Retail department. In this role, she is responsible for driving and communicating our marketingstrategy for Khan HexTech’s services, content, and product to improve clients, partners engagement and outcomes. She ensures pedagogical coherence of our overall offering and ensures a research-informed design across product, content, and solutions.',
     workField: 'Internet of things',
-    teamsTitle: 'IoT Department',
-    personName: 'Rori Duboff',
+    teamsTitle: 'IoT Smart Retail Department',
+    personName: 'Kristen DiCerba',
     personJob: '',
     personPhoto:
-      'https://lh3.googleusercontent.com/proxy/EV8Rl4BkQsH2ZMJaVsXyxo8JK28uIpF9bcmko2eipI3LDbh1ZAbj0Syr4QMT-EaonhmmrC2sxlFf32CQf5N8WC4yLS9c3ctyuiv6XWEh__q90z8hwsPsrrNrEHOa0Iai3Ajj-AnGiCACR2wJHp9II93bPbVa5dv_HpAMVQ',
+      'https://media.gettyimages.com/photos/mature-female-ceo-with-arms-crossed-picture-id1179627362?s=612x612',
     teamImage: '',
   })
   IoT.addTeammember(iotP3)
@@ -1752,24 +1875,125 @@ async function insertRealData() {
   iotC5.addTeammember(iotP3)
 
   const iotP4 = await TeamMember.create({
-    memberNameAndOccupation: 'Name1 Surname1 | Occupation ',
+    memberNameAndOccupation: 'Michael Johnson',
     personalQuote: 'Lorem ipsum dolor sit amet',
     personalDescription:
-      'Mary is as beautiful as a Hollywood star. Her thick, wavy, long black hair gracefully falls down to her shoulders and encircles her diamond-shaped face. A golden suntan usually brings out her smooth, clear complexion and high cheek bones. Her slightly arched chestnut brown eyebrows highlight her emotions by moving up and down as she reacts to her world around her. Her large deep blue eyes, remind me of a lake on a stormy day. Her curved nose gives her a little girl look that makes me want to smile when she talks. And her mouth is a small mouth outlined by puffy lips that she often accentuates with glossy pink lipstick. When she smiles, which is often, her well formed and even, white teeth brighten up her whole face. I guess you can tell that I am head over heals in love with Mary.',
-
-    workField: 'Security',
-    teamsTitle: 'Security Departement',
-    personName: 'John Molton',
+      'Michael Johnson is the employer of the year at HexTech. He brings his teoretichal and operational experience to lead a cross-functional team of Business & Product Analytics. He looks across the organization to bring strategic insights and help drive critical business decision to help accelerate developing outcomes while ensuring compliance.',
+    workField: 'Chief',
+    teamsTitle: 'IoT Automotive Departement',
+    personName: 'Michael Johnson',
     personJob: '',
     personPhoto:
-      'https://www.studiofrancesconi.com/wp-content/uploads/2019/03/placeholder-profile-sq.jpg',
+      'https://media.gettyimages.com/photos/bearded-businessman-against-gray-background-picture-id1179627332?s=612x612',
     teamImage: '',
   })
   IoT.addTeammember(iotP4)
   iotC6.addTeammember(iotP4)
   iotC7.addTeammember(iotP1)
 
+  const iotP5 = await TeamMember.create({
+    memberNameAndOccupation: 'Peter Glynn',
+    personalQuote: 'Lorem ipsum dolor sit amet',
+    personalDescription:
+      'Peter has a degree in Computer Engineering from Dublin’s Trinity College and has 18 years’ experience in the TMT industry. Peter has helped large scale enterprises deliver on sales and market making activities across a number of large scale system integration, application services and outsourcing projects that had significant transformational business cases. Peter also has extensive experience with software and platform clients; managing and growing them from the ground up resulting in them becoming major accounts.',
+    workField: 'Internet of things',
+    teamsTitle: 'Industrial Manufacturing Departement',
+    personName: 'Peter Glynn',
+    personJob: '',
+    personPhoto:
+      'https://media.gettyimages.com/photos/portrait-of-senior-businessman-smiling-picture-id985138660?s=2048x2048',
+    teamImage: '',
+  })
+
+  IoT.addTeammember(iotP5)
+  iotC8.addTeammember(iotP5)
+  iotC12.addTeammember(iotP5)
+
+  const iotP6 = await TeamMember.create({
+    memberNameAndOccupation: 'Donald Leen',
+    personalQuote: 'Lorem ipsum dolor sit amet',
+    personalDescription:
+      ' Donal has over 8 years of experience in providing advisory and consulting services with a particular focus on large scale transformation programmes within the healtcare services industry. Prior to working in consulting, Donal was a finance manager for six magazines at Conde Nast Publications in New York, and held a number of finance and accounting positions at Aer Lingus in both New York and Dublin. Donal received his MBA (Finance) qualification from Fordham University, New York.',
+    workField: 'Internet of things',
+    teamsTitle: 'Healtcare Departement',
+    personName: 'Donald Leen',
+    personJob: '',
+    personPhoto:
+      'https://media.gettyimages.com/photos/smiling-man-outdoors-in-the-city-picture-id1179420343?s=612x612',
+    teamImage: '',
+  })
+  IoT.addTeammember(iotP6)
+  iotC9.addTeammember(iotP6)
+  iotC10.addTeammember(iotP6)
+
+  const iotP7 = await TeamMember.create({
+    memberNameAndOccupation: 'Adam Jentzsch',
+    personalQuote: 'Lorem ipsum dolor sit amet',
+    personalDescription:
+      'Adam is a Full-Stack Developer experienced in building content management solutions, mobile applications, POS systems, and reporting engines. During his career, he has accumulated deep expertise developing in .NET, C#, and Angular. Prior to Fresh, Adam worked as both a freelance mobile app developer and as a full-stack developer at a multi-level marketing company. As a full-stack developer, he provided content management software solutions for large clients, as well as wrote their reporting engine.',
+    workField: 'Internet of things',
+    teamsTitle: 'Smart Cities Departement',
+    personName: 'Adam Jentzsch',
+    personJob: '',
+    personPhoto:
+      'https://media.gettyimages.com/photos/young-man-standing-confidently-picture-id973481352?s=612x612',
+    teamImage: '',
+  })
+  IoT.addTeammember(iotP7)
+  iotC10.addTeammember(iotP7)
+
+  const iotP8 = await TeamMember.create({
+    memberNameAndOccupation: 'Michelle Tore',
+    personalQuote: 'Lorem ipsum dolor sit amet',
+    personalDescription:
+      'Michelle is a Certified LabVIEW developer working as a Controls System Engineer at Fresh. Having recently completed her master’s degree in Mechanical Engineering at the University of Washington, Michelle focuses on control system theory and design. Her previous engineering experience includes a start-up developing a ventilation/monitoring system to detect and prevent manhole explosions.',
+    workField: 'Internet of things',
+    teamsTitle: 'Smart Lighting Departement',
+    personName: 'Michelle Tore',
+    personJob: '',
+    personPhoto:
+      'https://media.gettyimages.com/photos/businesswoman-with-blond-hair-on-white-background-picture-id1053401356?s=612x612',
+    teamImage: '',
+  })
+  IoT.addTeammember(iotP8)
+  iotC11.addTeammember(iotP8)
+
   /** END OF IOT TEAM MEMBER */
+
+  /** CLOUD COMPUTING TEAM MEMBER */
+  const ccP1 = await TeamMember.create({
+    memberNameAndOccupation: 'Sarah Anderson',
+    personalQuote: 'Lorem ipsum dolor sit amet',
+    personalDescription:
+      "A corporate strategy, business unit strategy, customer-led category management and micro-battles specialist, Sarah has recently focused on the e-invoice sectors. Her case portfolio includes various diligences for both corporate clients and private. Beyond her client work, she is the leader of our London Diversity and Inclusion efforts and a member of our global D&I Committee. She is also a senior manager peer group leader and founded our London office's Social Impact Ringfence. ",
+    workField: 'Cloud Computing',
+    teamsTitle: 'E-Invoice Departement',
+    personName: 'Sarah Anderson',
+    personJob: '',
+    personPhoto:
+      'https://media.gettyimages.com/photos/happy-female-brunette-ceo-wearing-blue-denim-shirt-picture-id1179627283?s=612x612',
+    teamImage: '',
+  })
+  CloudComputing.addTeammember(ccP1)
+  ccC1.addTeammember(ccP1)
+
+  const ccP2 = await TeamMember.create({
+    memberNameAndOccupation: 'Giancarlo Andes',
+    personalQuote: 'Lorem ipsum dolor sit amet',
+    personalDescription:
+      'Giancarlo advises clients on market launch strategies, sales, pricing and commercial excellence programs. Since joining the firm in 2009, he has also worked in our São Paulo and Milan offices. He studied international business in both Rome and Shanghai.',
+    workField: 'Cloud Computing',
+    teamsTitle: 'Cloud App Development Departement',
+    personName: 'Giancarlo Andes',
+    personJob: '',
+    personPhoto:
+      'https://media.gettyimages.com/photos/smart-mature-businessman-in-city-picture-id157591367?s=612x612',
+    teamImage: '',
+  })
+  CloudComputing.addTeammember(ccP2)
+  ccC2.addTeammember(ccP2)
+
+  /** END OF CLOUD COMPUTING TEAM MEMBER */
 
   //**BiG DATA ANALYTICS TEAM MEMBER */
 

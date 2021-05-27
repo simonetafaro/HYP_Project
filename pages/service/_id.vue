@@ -722,6 +722,7 @@ export default {
     line-height: 24px;
     column-count: 1;
     column-gap: 0px;
+    text-align: center;
   }
   .header-background {
     display: none;
@@ -732,9 +733,9 @@ export default {
     z-index: 0;
   }
   .section-intro-text {
-    max-width: 80%;
     font-size: 18px;
     line-height: 22px;
+    max-width: 100%;
   }
   .solution-section {
     display: inline-table;
@@ -744,6 +745,7 @@ export default {
   .solution {
     display: table-cell;
     margin: auto;
+    width: 50%;
   }
   .solution:first-child {
     min-width: 100%;
@@ -757,11 +759,20 @@ export default {
     font-size: 18px;
     line-height: 22px;
   }
+  .inner-container {
+    margin-right: 92px;
+    margin-left: 92px;
+  }
   .casestudies-grid,
   .service-grid {
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 72px;
+    grid-gap: 44px;
     margin: auto;
+  }
+
+  .service-grid {
+    margin-right: 58px;
+    margin-left: 58px;
   }
   .casestudy {
     width: min-content;
@@ -784,8 +795,9 @@ export default {
     padding-bottom: 25px;
   }
   .header-inner-content {
-    max-width: 80%;
-    margin: auto;
+    max-width: 100%;
+    margin-right: 52px;
+    margin-left: 52px;
   }
   .service-title {
     font-size: 24px;
@@ -804,6 +816,10 @@ export default {
   .header-background {
     display: none;
   }
+  .inner-container {
+    margin-left: 35px;
+    margin-right: 35px;
+  }
   .solution-section {
     padding-bottom: 0px;
   }
@@ -818,7 +834,6 @@ export default {
     margin-bottom: 10px;
   }
   .section-intro-text {
-    max-width: 80%;
     font-size: 12px;
     line-height: 14px;
   }
@@ -831,14 +846,17 @@ export default {
   }
   .casestudies-grid,
   .service-grid {
-    grid-gap: 15px;
-    margin: 0 35px;
+    grid-gap: 13px;
+    margin: 0;
+  }
+  .related-services-title {
+    margin-bottom: 45px;
   }
   .casestudy {
     width: 100%;
   }
   .partner-section {
-    width: 80%;
+    width: 100%;
     margin: auto;
   }
   .partner-img {
@@ -848,6 +866,26 @@ export default {
   }
   .partner-name {
     display: none;
+  }
+}
+</style>
+
+<style>
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  .service-left {
+    margin-right: 12px !important;
+  }
+  .service-right {
+    margin-left: 12px !important;
+  }
+  .service_card {
+    max-width: 350px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .service_card {
+    max-width: 270px !important;
   }
 }
 </style>
