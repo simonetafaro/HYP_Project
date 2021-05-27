@@ -46,7 +46,7 @@ export default {
   background: #ffffff;
   box-shadow: 0px 3px 25px rgba(205, 201, 255, 0.3);
   border-radius: 50px;
-  width: 350px;
+  max-width: 310px;
 }
 .service_title {
   font-style: normal;
@@ -75,8 +75,7 @@ export default {
 @media screen and (max-width: 1200px) {
   .service_card {
     padding: 15px 10px 20px 10px;
-    width: 90%;
-    max-width: 350px;
+    max-width: 200px;
     border-radius: 25px;
     margin: auto;
   }
@@ -104,6 +103,7 @@ export default {
 @media screen and (max-width: 768px) {
   .service_card {
     width: 100%;
+    max-width: 146px;
     padding-top: 10px;
   }
   .service-left {
