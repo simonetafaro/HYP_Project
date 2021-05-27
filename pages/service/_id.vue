@@ -745,6 +745,7 @@ export default {
   .solution {
     display: table-cell;
     margin: auto;
+    width: 50%;
   }
   .solution:first-child {
     min-width: 100%;
