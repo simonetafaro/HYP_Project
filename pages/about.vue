@@ -1670,6 +1670,220 @@ p {
   text-align: left;
 }
 
+@media screen and (max-width: 1200px) {
+  .head-image {
+    display: initial;
+  }
+
+  .first-paragraph {
+    position: relative;
+    margin: auto;
+    margin-top: 28px;
+    height: 716px;
+    width: 550px;
+  }
+
+  .pre_title {
+    text-align: center;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .title {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 43px;
+    text-align: center;
+  }
+
+  .subtitle {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 43px;
+    text-align: center;
+    margin-bottom: 41px;
+  }
+
+  .descriptions {
+    height: 439px;
+    width: 550px;
+  }
+
+  .description-1 {
+    font-size: 18px;
+    line-height: 22px;
+    height: 210px;
+    width: 550px;
+  }
+
+  .description-flower {
+    display: initial;
+    left: 0;
+    margin-top: 14px;
+    margin-bottom: 14px;
+  }
+
+  .description-2 {
+    font-size: 18px;
+    line-height: 22px;
+    width: 550px;
+    position: initial;
+    margin-top: 14px;
+  }
+
+  .omino {
+    display: none;
+  }
+
+  .omino-mobile {
+    display: initial;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  .second-paragraph {
+    height: 517px;
+    width: 550px;
+    margin-top: 36px;
+  }
+
+  .second-paragraph-contents {
+    position: inherit;
+    min-height: max-content;
+  }
+
+  .pre_title-2 {
+    text-align: center;
+    margin-bottom: 17px;
+
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .title-2 {
+    font-size: 36px;
+    line-height: 43px;
+    text-align: center;
+  }
+
+  .subtitle-2 {
+    font-size: 36px;
+    line-height: 43px;
+    text-align: center;
+    margin-bottom: 38px;
+  }
+
+  .description-2-1 {
+    position: inherit;
+    text-transform: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: right;
+    color: #464a52;
+    width: 550px;
+    height: 123px;
+    mix-blend-mode: normal;
+    opacity: 0.6;
+  }
+
+  .description-2-2 {
+    position: inherit;
+    text-transform: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: right;
+    color: #464a52;
+    width: 550px;
+    height: 123px;
+    mix-blend-mode: normal;
+    opacity: 0.6;
+  }
+
+  .image {
+    display: none;
+  }
+
+  .pre-title-3 {
+    line-height: 29px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .title-3 {
+    margin-top: 17px;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 43px;
+  }
+
+  .subtitle-3 {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 43px;
+    margin-bottom: 17px;
+  }
+
+  .description-3 {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    width: 550px;
+  }
+
+  .flower {
+    margin-bottom: 30px;
+    transform: scale(0.5);
+  }
+
+  .member-grid {
+    display: grid;
+    position: relative;
+    width: 646px;
+    grid-template-columns: repeat(2, calc(100% / 2));
+    grid-gap: 10px;
+  }
+
+  .partner-carousel {
+    overflow: scroll;
+    padding: 15px 0;
+    width: 100%;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .carousel-arrow-right {
+    display: none;
+  }
+
+  .carousel-arrow-left {
+    display: none;
+  }
+
+  .partner-list-wrapper {
+    height: 353px;
+    width: 646px;
+  }
+
+  .carousel-wrapper {
+    max-width: 646px;
+    margin-left: 7%;
+  }
+
+  .partner {
+    margin-right: 0;
+    width: 30%;
+  }
+
+  .partner-card {
+    min-width: 646px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .head-image {
     display: initial;
