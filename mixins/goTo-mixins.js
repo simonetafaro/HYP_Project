@@ -39,6 +39,7 @@ export default {
       let serviceCardTitleMaxHeight = 0
       Array.from(document.getElementsByClassName('service_title')).forEach(
         function (card) {
+          card.style.height = ''
           if (card.clientHeight > serviceCardTitleMaxHeight)
             serviceCardTitleMaxHeight = card.clientHeight
         }
