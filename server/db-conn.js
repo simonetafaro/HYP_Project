@@ -275,8 +275,7 @@ async function insertRealData() {
       'The science of analyzing raw data in order to make conclusions about that information, revealing reveal trends and metrics. Through our specialist your company will be more efficient in taking decisions. This process of analysis allows to operate a predictive analysis, that is, it allows to know in advance what will happen: this becomes possible because if we have a model and we have enough historical data we can determine what will happen in the near future with bases or statistical foundations.',
     banner:
       'https://storage.googleapis.com/saepict-saepictwagtail-prod/images/big-data-analysis-2020.original.png',
-    evocativeImage:
-      'https://i.ibb.co/KDhJdh0/data.png',
+    evocativeImage: 'https://i.ibb.co/KDhJdh0/data.png',
     servicesTitle: 'Discover our services ',
     servicesDescription:
       'AI is only as smart as the insights that fuel it. We can help you unlock powerful analytics insights by tapping into data you did not even know you had.',
@@ -677,14 +676,29 @@ async function insertRealData() {
     evocativePhoto: '',
     serviceTitle: '',
     serviceDescription: '',
+    s1Name: '',
+    s1Description: '',
+    s1Logo:
+      'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
+    s2Name: '',
+    s2Description: '',
+    s2Logo:
+      'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
+    s3Name: '',
+    s3Description: '',
+    s3Logo:
+      'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
     partnerTitle: '',
     partnerDescription: '',
-    p1Name: '',
-    p1Logo: '',
-    p2Name: '',
-    p2Logo: '',
-    p3Name: '',
-    p3Logo: '',
+    p1Name: 'Mckinsey',
+    p1Logo:
+      'https://s3-ap-southeast-1.amazonaws.com/p2swebsite/images/smeKhabar/news/IndiaCanCreateoverOne-TrillionDollarsWorthofDigitalEconomyby2025SaysMEITMcKinseyReport_1550744301446_48.jpg',
+    p2Name: 'Optimize',
+    p2Logo:
+      'https://lh3.googleusercontent.com/proxy/OtxMsmSjRgs_qllMxOpqrUYDYYF8sMgPU1oJBJp-0MxK8DA8ZEdaoZeAfeMdyi7A9Fpog4l1P8vqL1FP2PdDeUjVkA',
+    p3Name: 'Eclincher',
+    p3Logo:
+      'https://media-exp1.licdn.com/dms/image/C4E0BAQE_8uje7Spe1g/company-logo_200_200/0/1578120960890?e=2159024400&v=beta&t=0pLs4HfyleatwiUUZHOGsVSLhyOEVMuQ4qgEdUeEtWs',
     caseStudyTitle: '',
     realtedServiceTitle: '',
   })
@@ -701,14 +715,29 @@ async function insertRealData() {
     evocativePhoto: '',
     serviceTitle: '',
     serviceDescription: '',
+    s1Name: '',
+    s1Description: '',
+    s1Logo:
+      'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
+    s2Name: '',
+    s2Description: '',
+    s2Logo:
+      'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
+    s3Name: '',
+    s3Description: '',
+    s3Logo:
+      'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
     partnerTitle: '',
     partnerDescription: '',
-    p1Name: '',
-    p1Logo: '',
-    p2Name: '',
-    p2Logo: '',
-    p3Name: '',
-    p3Logo: '',
+    p1Name: 'Rock Health',
+    p1Logo:
+      'https://rockhealth.com/wp-content/uploads/2017/09/Rock-Health-Image-smaller.jpg',
+    p2Name: 'Philips',
+    p2Logo:
+      'https://www.luciamo.it/ImgGalery/Img1/Clanky/aktuality-home/Philips_a_jeho_mensi_firmy.jpg',
+    p3Name: 'Intel',
+    p3Logo:
+      'https://www.tomshw.it/images/images/2020/06/intel-logo-97706.1200x675.jpg',
     caseStudyTitle: '',
     realtedServiceTitle: '',
   })
@@ -724,14 +753,29 @@ async function insertRealData() {
     evocativePhoto: '',
     serviceTitle: '',
     serviceDescription: '',
+    s1Name: '',
+    s1Description: '',
+    s1Logo:
+      'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
+    s2Name: '',
+    s2Description: '',
+    s2Logo:
+      'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
+    s3Name: '',
+    s3Description: '',
+    s3Logo:
+      'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
     partnerTitle: '',
     partnerDescription: '',
-    p1Name: '',
-    p1Logo: '',
-    p2Name: '',
-    p2Logo: '',
-    p3Name: '',
-    p3Logo: '',
+    p1Name: 'NetSuite',
+    p1Logo:
+      'https://www.01net.it/wp-content/uploads/sites/14/2016/07/netsuite-logo-600x180.png',
+    p2Name: 'Amazon',
+    p2Logo:
+      'https://www.fastweb.it/var/storage_feeds/CMS/articoli/17a/17aff0ceb57a46aaa79df025e78f6e64/logo%20amazon.png',
+    p3Name: 'River Logic',
+    p3Logo:
+      'https://awsmp-logos.s3.amazonaws.com/e981e56c-9504-4acd-a441-81c99483b239/9801997f62aa29e763040bf44e7b2485.png',
     caseStudyTitle: '',
     realtedServiceTitle: '',
   })
@@ -747,14 +791,29 @@ async function insertRealData() {
     evocativePhoto: '',
     serviceTitle: '',
     serviceDescription: '',
+    s1Name: '',
+    s1Description: '',
+    s1Logo:
+      'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
+    s2Name: '',
+    s2Description: '',
+    s2Logo:
+      'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
+    s3Name: '',
+    s3Description: '',
+    s3Logo:
+      'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
     partnerTitle: '',
     partnerDescription: '',
-    p1Name: '',
-    p1Logo: '',
-    p2Name: '',
-    p2Logo: '',
-    p3Name: '',
-    p3Logo: '',
+    p1Name: 'Reply',
+    p1Logo:
+      'https://mms.businesswire.com/media/20210415005484/it/809563/23/Reply_-_LOGO_300dpi.jpg',
+    p2Name: 'Siemens',
+    p2Logo:
+      'https://pbs.twimg.com/profile_images/1311596912706023429/aFWLoMhS.png',
+    p3Name: 'LuTech',
+    p3Logo:
+      'https://abieventi-statics-external.s3-eu-west-1.amazonaws.com/url_59edc98ae011a96693a21dec.jpg',
     caseStudyTitle: '',
     realtedServiceTitle: '',
   })
@@ -771,14 +830,28 @@ async function insertRealData() {
     evocativePhoto: '',
     serviceTitle: '',
     serviceDescription: '',
+    s1Name: '',
+    s1Description: '',
+    s1Logo:
+      'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
+    s2Name: '',
+    s2Description: '',
+    s2Logo:
+      'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
+    s3Name: '',
+    s3Description: '',
+    s3Logo:
+      'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
     partnerTitle: '',
     partnerDescription: '',
-    p1Name: '',
-    p1Logo: '',
-    p2Name: '',
-    p2Logo: '',
-    p3Name: '',
-    p3Logo: '',
+    p1Name: 'Microsoft',
+    p1Logo:
+      'https://lh3.googleusercontent.com/proxy/WYX7gll105oAtJPvW5B8LUnxR57mBUmNyzZQoINC7_VDOXBNx2MqJAISdf6Pwq6s1jxgWenxPGZnjPGvo6-Oc1KA7vly5i3o7TnGf00bqFak1Jf4Q1A',
+    p2Name: 'Intelligence partner',
+    p2Logo:
+      'https://www.intelligencepartner.com/wp-content/themes/intelligencepartner/img/intelligencepartner_logo.svg',
+    p3Name: 'SB Italia',
+    p3Logo: 'https://www.sbitalia.com/wp-content/uploads/2015/11/logo.png',
     caseStudyTitle: '',
     realtedServiceTitle: '',
   })
@@ -794,14 +867,28 @@ async function insertRealData() {
       'https://associationsnow.com/wp-content/uploads/2018/12/GettyImages-940692576_hrvcc-600x360.jpg',
     serviceTitle: '',
     serviceDescription: '',
+    s1Name: '',
+    s1Description: '',
+    s1Logo:
+      'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
+    s2Name: '',
+    s2Description: '',
+    s2Logo:
+      'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
+    s3Name: '',
+    s3Description: '',
+    s3Logo:
+      'http://www.terenzianihome.it/wp-content/uploads/2019/01/punto-interrogativo.png',
     partnerTitle: '',
     partnerDescription: '',
-    p1Name: '',
-    p1Logo: '',
-    p2Name: '',
-    p2Logo: '',
-    p3Name: '',
-    p3Logo: '',
+    p1Name: 'Simon Kucker',
+    p1Logo:
+      'https://media-exp1.licdn.com/dms/image/C4E0BAQHNWjH2RvlaTA/company-logo_200_200/0/1596201887751?e=2159024400&v=beta&t=DgJhJ5fpwQgFhYZB0TMe1tU-mEwyGOxIav8W2gdixSk',
+    p2Name: 'Accenture',
+    p2Logo: 'https://www.wecanjob.it/moduli/output_immagine.php?id=5288',
+    p3Name: 'Price Fx',
+    p3Logo:
+      'https://www.pricefx.com/wp-content/uploads/2020/04/Pricefx_logo_2019_White.png',
     caseStudyTitle: '',
     realtedServiceTitle: '',
   })
