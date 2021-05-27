@@ -1226,7 +1226,7 @@ async function insertRealData() {
     title: 'Building the in-store experience that everyone desires',
     subTitle:
       'How to provide a custom and tailored experience each time a customer walks into their store.',
-    banner 'https://images.unsplash.com/photo-1515165244752-2465b61f0441?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1889&q=80',
+    banner:'https://images.unsplash.com/photo-1515165244752-2465b61f0441?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1889&q=80',
     descriptiveText:
       'If you have ever wondered what’s behind the happy customers and packed stores it’s several factors including a focus on personalization, innovation and a loyalty program that is so good that it has 25 million members. All of these factors and several more make LoveMakeup one of the most successful beauty retailers in the world.',
     challengeTitle:
@@ -1249,20 +1249,38 @@ async function insertRealData() {
   //6  
   const ceC6 = await CaseStudy.create({
     title: 'A magical experience deserves a magical app',
-    subTitle: '',
+    subTitle: 'A personalized experience comes from valuing each customer and taking the time to make their visit amazing.',
     banner: 'https://images.unsplash.com/photo-1534450539339-6d1c81ad18e2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1019&q=80',
-    descriptiveText: '',
-    challengeTitle: '',
-    challengeDescription: '',
-    solutionTitle: '',
+    descriptiveText: 'Guests of all ages can appreciate Disney’s magical approach to customer experience. Disney provides lessons for brands in all industries on creating unique, detailed experiences that will stick with customers for a lifetime. We helped a brand excellence to improve their local customer service',
+    challengeTitle: 'Our challenge - Provide an experience organizer',
+    challengeDescription: 'Mobile devices continually redefine how people communicate and organizations must have a mobile-first mindset to retain their share of market. More than half of online traffic now comes from smartphones and tablets and that number is continuing to rise. Organizations must have a mobile-first mindset and continually think about the human on the other side of the screen.',
+    solutionTitle: 'The solution we provided - The ultimate planning app',
     solutionDescription: 'The app we designed for Disney contains most of the information on the website but it’s not just the website shoved into app-form. It’s laid out well and even has GPS-enabled walking directions between attractions. I can easily find park hours, showtimes, wait times for rides, and order food so you don’t need to wait in line anymore. All of the tickets, dining reservations, and photos are in the app, along with a personalized schedule that I can create to make sure I don’t miss the biggest rides and attractions.',
     teamsTitle: 'Meet our team',
     personName: 'John Daisy',
     personJob: 'Digital Technical Architect',
-    serviceTitle: 'Immersive technologies',
-    serviceHeading: 'From novelty to utility. Excelling in digital commerce requires engaging product and service expertise that give confidence to consumer buying.',
+    serviceTitle: 'User Interfaces',
+    serviceHeading: 'Leading creative, business analysis, and advanced technology in user research.',
   })
   await CustomerExperience.addCasestudy(ceC6.id)
+
+  //7  
+  const ceC7 = await CaseStudy.create({
+    title: 'A magical experience deserves a magical app',
+    subTitle: 'A personalized experience comes from valuing each customer and taking the time to make their visit amazing.',
+    banner: 'https://images.unsplash.com/photo-1534450539339-6d1c81ad18e2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1019&q=80',
+    descriptiveText: 'Guests of all ages can appreciate Disney’s magical approach to customer experience. Disney provides lessons for brands in all industries on creating unique, detailed experiences that will stick with customers for a lifetime. We helped a brand excellence to improve their local customer service',
+    challengeTitle: 'Our challenge - Provide an experience organizer',
+    challengeDescription: 'Mobile devices continually redefine how people communicate and organizations must have a mobile-first mindset to retain their share of market. More than half of online traffic now comes from smartphones and tablets and that number is continuing to rise. Organizations must have a mobile-first mindset and continually think about the human on the other side of the screen.',
+    solutionTitle: 'The solution we provided - The ultimate planning app',
+    solutionDescription: 'The app we designed for Disney contains most of the information on the website but it’s not just the website shoved into app-form. It’s laid out well and even has GPS-enabled walking directions between attractions. I can easily find park hours, showtimes, wait times for rides, and order food so you don’t need to wait in line anymore. All of the tickets, dining reservations, and photos are in the app, along with a personalized schedule that I can create to make sure I don’t miss the biggest rides and attractions.',
+    teamsTitle: 'Meet our team',
+    personName: 'John Daisy',
+    personJob: 'Digital Technical Architect',
+    serviceTitle: 'User Interfaces',
+    serviceHeading: 'Leading creative, business analysis, and advanced technology in user research.',
+  })
+  await CustomerExperience.addCasestudy(ceC7.id)
 
   //**END OF CUSTOMER EXPERIENCE CASE STUDIES */
 
