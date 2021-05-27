@@ -1,7 +1,7 @@
 <template>
-  <main class="container-esterno">
-    <div class="container-custom">
-      <div class="svg-top">
+  <main class="container">
+    <header class="contact-header">
+      <div class="header-image">
         <svg
           viewBox="0 0 768 252"
           fill="none"
@@ -619,281 +619,694 @@
           </defs>
         </svg>
       </div>
-      <div class="inner-case">
-        <section class="case-container">
-          <header>
-            <h3 class="intro-text">WE PUT IT IN PRACTICE</h3>
-            <h1 class="title_case">
-              OUR CASE
-              <br />
-              <span class="title-purple">STUDIES</span>
-            </h1>
-
-            <div class="container_description">
-              <h4 class="description">
-                Nulla ante risus, condimentum eu consectetur vel, facilisis ac
-                nulla. Sed blandit nulla diam, in mattis nibh porta quis. Donec
-                accumsan, erat in suscipit viverra, massa purus dignissim
-                sapien, interdum convallis leo magna vel quam. In massa felis,
-                gravida in eros in, ultricies vehicula ex. Praesent luctus non
-                metus ac iaculis. Fusce quis rutrum diam.
-              </h4>
-            </div>
-          </header>
-        </section>
+      <div class="page-title">CONTACT US</div>
+      <div class="page-subtitle">
+        GET IN<br /><span class="page-subtitle-light">TOUCH</span>
       </div>
-      <div class="container">
-        <div class="filter-bar">
-          <div class="filter active-filter" @click="findAllCaseStudy($event)">
-            All
+      <div class="page-description">
+        Nulla ante risus, condimentum eu consectetur vel, facilisis ac nulla.
+        Sed blandit nulla diam, in mattis nibh porta quis. Donec accumsan, erat
+        in suscipit viverra, massa purus dignissim sapien, interdum convallis
+        leo magna vel quam. In massa felis, gravida in eros in, ultricies
+        vehicula ex. Praesent luctus non metus ac iaculis. Fusce quis rutrum
+        diam.
+      </div>
+      <div class="contact-container">
+        <div class="contact-method">
+          <div class="contact-method-image">
+            <svg
+              width="40"
+              height="35"
+              viewBox="0 0 40 35"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M11.0011 2C6.03074 2 2.00146 5.99828 2.00146 10.9304V16.884C2.00146 17.2418 2.02266 17.5946 2.06388 17.9413C2.02233 18.0778 2 18.2225 2 18.3724V31.5087C2 32.7803 3.50312 33.4664 4.47609 32.6388L11.9393 26.291C12.301 25.9833 12.7603 25.8144 13.2351 25.8144H29.0004C33.9707 25.8144 38 21.8161 38 16.884V10.9304C38 5.99828 33.9707 2 29.0004 2H11.0011Z"
+                stroke="white"
+                stroke-width="3"
+              />
+              <path
+                d="M13.7462 15.904C13.3942 15.904 13.1062 15.792 12.8822 15.568C12.6582 15.344 12.5462 15.056 12.5462 14.704C12.5462 14.352 12.6582 14.064 12.8822 13.84C13.1062 13.616 13.3942 13.504 13.7462 13.504C14.0982 13.504 14.3862 13.616 14.6102 13.84C14.8342 14.064 14.9462 14.352 14.9462 14.704C14.9462 15.056 14.8342 15.344 14.6102 15.568C14.3862 15.792 14.0982 15.904 13.7462 15.904ZM20.4727 15.904C20.1207 15.904 19.8327 15.792 19.6087 15.568C19.3847 15.344 19.2727 15.056 19.2727 14.704C19.2727 14.352 19.3847 14.064 19.6087 13.84C19.8327 13.616 20.1207 13.504 20.4727 13.504C20.8247 13.504 21.1127 13.616 21.3367 13.84C21.5607 14.064 21.6727 14.352 21.6727 14.704C21.6727 15.056 21.5607 15.344 21.3367 15.568C21.1127 15.792 20.8247 15.904 20.4727 15.904ZM27.1993 15.904C26.8473 15.904 26.5593 15.792 26.3353 15.568C26.1113 15.344 25.9993 15.056 25.9993 14.704C25.9993 14.352 26.1113 14.064 26.3353 13.84C26.5593 13.616 26.8473 13.504 27.1993 13.504C27.5513 13.504 27.8393 13.616 28.0633 13.84C28.2873 14.064 28.3993 14.352 28.3993 14.704C28.3993 15.056 28.2873 15.344 28.0633 15.568C27.8393 15.792 27.5513 15.904 27.1993 15.904Z"
+                fill="white"
+              />
+            </svg>
           </div>
-          <div
-            v-for="(area, areaIndex) of areas"
-            :key="'area-' + areaIndex"
-            class="filter"
-            @click="filterCaseStudyByArea($event, area.id)"
+          <div class="contact-method-title">Message</div>
+          <div class="contact-method-text">+39 123 456 78</div>
+        </div>
+        <div class="contact-method show-mobile">
+          <svg
+            width="43"
+            height="43"
+            viewBox="0 0 43 43"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            {{ area.title }}
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M42.6138 21.3069C36.73 27.1906 27.1906 27.1906 21.3069 21.3069C27.1906 15.4231 36.73 15.4231 42.6138 21.3069ZM9.14375e-06 21.3069C5.88374 15.4231 15.4232 15.4231 21.3069 21.3069C15.4232 27.1906 5.88374 27.1906 9.14375e-06 21.3069ZM21.3069 21.3069C15.4232 15.4231 15.4232 5.88373 21.3069 0C27.1906 5.88373 27.1906 15.4231 21.3069 21.3069ZM21.3069 21.3069C27.1906 27.1906 27.1906 36.73 21.3069 42.6138C15.4232 36.73 15.4232 27.1906 21.3069 21.3069Z"
+              fill="#E8E7FF"
+            />
+          </svg>
+        </div>
+        <div class="contact-method">
+          <div class="contact-method-image">
+            <svg
+              width="36"
+              height="30"
+              viewBox="0 0 36 30"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M5.2 2H30.8C32.56 2 34 3.44 34 5.2V24.4C34 26.16 32.56 27.6 30.8 27.6H5.2C3.44 27.6 2 26.16 2 24.4V5.2C2 3.44 3.44 2 5.2 2Z"
+                stroke="white"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M34 5.19995L18 16.4L2 5.19995"
+                stroke="white"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <div class="contact-method-title">Email</div>
+          <div class="contact-method-text">
+            info@dvant.com<br />contact@dvant.com
           </div>
         </div>
-
-        <section class="casestudies-grid">
-          <div
-            v-for="(casestudy, casestudyIndex) of casestudies"
-            :key="'casestudy-' + casestudyIndex"
-            class="casestudy"
-          >
-            <case-study-mini
-              :title="casestudy.title"
-              :description="casestudy.subTitle"
-              :image="casestudy.banner"
-              :area="casestudy.area.title"
-              :path="casestudy.id"
-            ></case-study-mini>
+        <div class="contact-method">
+          <div class="contact-method-image">
+            <svg
+              width="36"
+              height="36"
+              viewBox="0 0 36 36"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M34 25.8719V30.6719C34.0037 31.5729 33.6273 32.4338 32.9633 33.0429C32.2994 33.652 31.4094 33.953 30.512 33.8719C25.5885 33.3369 20.8592 31.6545 16.704 28.9599C12.8381 26.5034 9.56055 23.2258 7.10401 19.3599C4.39998 15.1858 2.7172 10.4335 2.19201 5.48791C2.11117 4.59331 2.41005 3.70592 3.01564 3.04251C3.62123 2.3791 4.47777 2.00076 5.37601 1.99991H10.176C11.7822 1.9841 13.1512 3.16146 13.376 4.75191C13.5786 6.28802 13.9543 7.79628 14.496 9.24791C14.9356 10.4173 14.6544 11.7356 13.776 12.6239L11.744 14.6559C14.0217 18.6616 17.3383 21.9782 21.344 24.2559L23.376 22.2239C24.2643 21.3455 25.5826 21.0643 26.752 21.5039C28.2037 22.0456 29.7119 22.4213 31.248 22.6239C32.8569 22.8509 34.0403 24.2476 34 25.8719Z"
+                stroke="white"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
           </div>
-        </section>
+          <div class="contact-method-title">Call</div>
+          <div class="contact-method-text">
+            +00 123 456 78<br />+00 345 678 90
+          </div>
+        </div>
       </div>
-    </div>
+    </header>
+    <section class="location-section">
+      <div class="page-title">OUR OFFICES</div>
+      <div class="page-subtitle">
+        FIND OUR<br /><span class="page-subtitle-light">LOCATIONS</span>
+      </div>
+      <div class="location-container">
+        <div class="location-box">
+          <div class="location-box-image">
+            <svg
+              width="55"
+              height="68"
+              viewBox="0 0 55 68"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M55 27.9549C55 12.5303 42.7115 0.0237412 27.5435 3.40112e-05C12.5587 -0.0236049 0.236841 12.2781 0.00397032 27.5133C-0.122965 35.0996 2.7985 42.4106 8.0937 47.7579H8.0613L25.8395 67.2109C26.301 67.7161 26.9492 68.0021 27.6274 68C28.3056 67.9978 28.952 67.7077 29.4105 67.1996L46.9406 47.7579H46.9082C52.0957 42.5182 55.0089 35.3888 55 27.9549Z"
+                fill="#63639F"
+              />
+              <path
+                d="M27 45C36.3888 45 44 37.6127 44 28.5C44 19.3873 36.3888 12 27 12C17.6112 12 10 19.3873 10 28.5C10 37.6127 17.6112 45 27 45Z"
+                fill="white"
+              />
+            </svg>
+          </div>
+          <div class="location-info-wrapper">
+            <div class="location-city">Milano</div>
+            <div class="location-office-num">FIRST OFFICE</div>
+            <div class="contact-method-text">
+              231 Gotham Square -<br />89 GM Metropolis city
+            </div>
+          </div>
+        </div>
+        <div class="location-box">
+          <div class="location-box-image">
+            <svg
+              width="55"
+              height="68"
+              viewBox="0 0 55 68"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M55 27.9549C55 12.5303 42.7115 0.0237412 27.5435 3.40112e-05C12.5587 -0.0236049 0.236841 12.2781 0.00397032 27.5133C-0.122965 35.0996 2.7985 42.4106 8.0937 47.7579H8.0613L25.8395 67.2109C26.301 67.7161 26.9492 68.0021 27.6274 68C28.3056 67.9978 28.952 67.7077 29.4105 67.1996L46.9406 47.7579H46.9082C52.0957 42.5182 55.0089 35.3888 55 27.9549Z"
+                fill="#63639F"
+              />
+              <path
+                d="M27 45C36.3888 45 44 37.6127 44 28.5C44 19.3873 36.3888 12 27 12C17.6112 12 10 19.3873 10 28.5C10 37.6127 17.6112 45 27 45Z"
+                fill="white"
+              />
+            </svg>
+          </div>
+          <div class="location-info-wrapper">
+            <div class="location-city">Bilbao</div>
+            <div class="location-office-num">SECOND OFFICE</div>
+            <div class="contact-method-text">
+              231 Gotham Square -<br />89 GM Metropolis city
+            </div>
+          </div>
+        </div>
+        <div class="location-box">
+          <div class="location-box-image">
+            <svg
+              width="55"
+              height="68"
+              viewBox="0 0 55 68"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M55 27.9549C55 12.5303 42.7115 0.0237412 27.5435 3.40112e-05C12.5587 -0.0236049 0.236841 12.2781 0.00397032 27.5133C-0.122965 35.0996 2.7985 42.4106 8.0937 47.7579H8.0613L25.8395 67.2109C26.301 67.7161 26.9492 68.0021 27.6274 68C28.3056 67.9978 28.952 67.7077 29.4105 67.1996L46.9406 47.7579H46.9082C52.0957 42.5182 55.0089 35.3888 55 27.9549Z"
+                fill="#63639F"
+              />
+              <path
+                d="M27 45C36.3888 45 44 37.6127 44 28.5C44 19.3873 36.3888 12 27 12C17.6112 12 10 19.3873 10 28.5C10 37.6127 17.6112 45 27 45Z"
+                fill="white"
+              />
+            </svg>
+          </div>
+          <div class="location-info-wrapper">
+            <div class="location-city">London</div>
+            <div class="location-office-num">THIRD OFFICE</div>
+            <div class="contact-method-text">
+              231 Gotham Square -<br />89 GM Metropolis city
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="location-banner">
+        <img
+          src="https://i.ibb.co/mGC86xF/location.png"
+          alt="location section image"
+        />
+      </div>
+    </section>
+    <space-divider></space-divider>
+    <section class="contact-form-container">
+      <div class="left-column">
+        <img
+          src="https://i.ibb.co/Fqvhj73/Contact-us-immagine.png"
+          alt="Contact Us Image"
+        />
+      </div>
+      <div class="right-column">
+        <div class="page-title">DO YOU WANT TO CHOOSE US?</div>
+        <div class="page-subtitle">
+          FILL THE<br /><span class="page-subtitle-light">CONTACT FORM</span>
+        </div>
+        <form class="contact-form" action="">
+          <input type="text" placeholder="Name" required />
+          <input type="email" placeholder="Email" required />
+          <input type="text" placeholder="Subject" required />
+          <input
+            class="message-box"
+            type="text"
+            placeholder="Message"
+            required
+          />
+          <button type="submit" class="send-form-button">SEND FORM</button>
+        </form>
+      </div>
+    </section>
   </main>
 </template>
 
 <script>
-import CaseStudyMini from '~/components/casestudy/CaseStudyMini.vue'
-import GoToMixins from '~/mixins/goTo-mixins.js'
+import SpaceDivider from '~/components/utils/SpaceDivider.vue'
 export default {
   components: {
-    CaseStudyMini,
+    SpaceDivider,
   },
-  async asyncData({ $axios }) {
-    const { data } = await $axios.get(`${process.env.BASE_URL}/api/casestudies`)
-    const casestudies = data
-    const areasData = await $axios.get(`${process.env.BASE_URL}/api/areas`)
-    const areas = areasData.data
+  head() {
     return {
-      casestudies,
-      areas,
+      title: 'Company Name - Contact Us',
     }
-  },
-  mixins: [GoToMixins],
-  methods: {
-    async filterCaseStudyByArea(e, areaID) {
-      this.casestudies = await this.$axios.$get(
-        `${process.env.BASE_URL}/api/casestudiesbyarea/${areaID}`
-      )
-      const filters = e.target.parentNode.children
-      filters.forEach((filter) => {
-        filter.classList.remove('active-filter')
-      })
-      const element = e.target
-      element.classList.add('active-filter')
-    },
-    async findAllCaseStudy(e) {
-      this.casestudies = await this.$axios.$get(
-        `${process.env.BASE_URL}/api/casestudies`
-      )
-      const filters = e.target.parentNode.children
-      filters.forEach((filter) => {
-        filter.classList.remove('active-filter')
-      })
-      const element = e.target
-      element.classList.add('active-filter')
-    },
-    getCaseStudyByArea(areaID) {
-      return this.casestudies.filter((casestudy) => {
-        return casestudy.areaID === areaID
-      })
-    },
   },
 }
 </script>
 
 <style scoped>
-.casestudies-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
-  margin-top: 40px;
+.container {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 40px;
+  overflow: hidden;
 }
-.svg-top {
+.contact-header {
+  text-align: center;
+  padding-top: 138px;
+  position: relative;
+}
+
+.header-image {
   width: 101%;
   z-index: -1;
   overflow: hidden;
   position: absolute;
+  top: 0;
 }
-.container-esterno {
-  min-width: 100%;
-  margin: 0;
-  padding: 0;
-}
-.container-custom {
-  width: 100%;
-  margin-top: 0;
-  padding: 0;
-  position: relative;
-  overflow: hidden;
-}
-.case-container {
-  text-align: left;
-
-  margin: 40px 8%;
-}
-.inner-case {
-  margin: auto;
-  width: 100%;
-  text-align: center;
-  position: relative;
-}
-.intro-text {
+.page-title {
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
   line-height: 24px;
-  /* identical to box height */
-
   text-transform: uppercase;
-
-  color: var(--cc-base1);
-  text-align: left;
-}
-.casestudy {
+  color: #424272;
   margin-bottom: 20px;
-  overflow: hidden;
 }
-.ad img {
-  width: 100%;
-  height: 200px;
-}
-.filter-bar {
-  display: flex;
-  margin-top: 15px;
-  text-align: center;
-  margin: auto;
-  justify-content: space-between;
-  padding: 0 20px;
-}
-.filter {
-  cursor: pointer;
+
+.page-subtitle {
   font-style: normal;
   font-weight: bold;
-  font-size: 16px;
-  line-height: 24px;
-  text-transform: uppercase;
-  color: var(--cc-base1);
-}
-.active-filter {
-  color: var(--cc-red);
-}
-.title_case {
-  font-style: normal;
-  font-weight: 700;
   font-size: 70px;
   line-height: 84px;
   text-transform: uppercase;
-  text-align: left;
-  color: var(--cc-base1);
-  margin: 0;
+  color: #424272;
+  margin: auto;
+  width: max-content;
 }
-.title-purple {
-  color: var(--cc-base3);
+.page-subtitle-light {
+  color: #e8e6ff;
 }
-.description {
+.page-description {
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
   line-height: 32px;
-  color: var(--c-grey1);
-  text-align: left;
+  text-align: center;
+  color: #000000;
   mix-blend-mode: normal;
   opacity: 0.6;
+  max-width: 730px;
+  margin: auto;
+  margin-top: 69px;
 }
-.container_description {
-  max-width: 600px;
-  padding-bottom: 60px;
-  padding-top: 30px;
+
+.contact-container,
+.location-container {
+  padding-top: 168px;
+  max-width: 1110px;
+  width: 100%;
+  margin: auto;
+  display: inline-flex;
+  padding-bottom: 185px;
 }
+.location-container {
+  padding-top: 69px;
+  padding-bottom: 0px;
+}
+
+.location-box,
+.contact-method {
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.location-banner > img {
+  max-height: 743px;
+}
+.contact-method:first-child,
+.location-box:first-child {
+  margin-left: 0;
+}
+.contact-method:last-child,
+.location-box:last-child {
+  margin-right: 0;
+}
+.show-mobile {
+  display: none;
+}
+.contact-method-image {
+  border-radius: 50%;
+  width: 162px;
+  height: 162px;
+  background: #63639f;
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-method-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 38px;
+  text-align: center;
+  color: #424272;
+  margin-bottom: 28px;
+}
+.contact-method-text {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #464a52;
+}
+
+.location-section {
+  background: linear-gradient(
+    180deg,
+    #fbfbff 79.17%,
+    rgba(251, 251, 255, 0) 100%
+  );
+  padding-top: 185px;
+}
+.location-box-image {
+  border-radius: 50%;
+  width: 162px;
+  height: 162px;
+  background: #e8e6ff;
+  margin-bottom: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.location-city {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: #464a52;
+  mix-blend-mode: normal;
+  opacity: 0.6;
+  margin-bottom: 11px;
+}
+.location-office-num {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #424272;
+  margin-bottom: 30px;
+}
+.contact-form-container {
+  max-width: 1110px;
+  display: inline-flex;
+}
+.left-column {
+  width: 50%;
+  display: flex;
+  padding-right: 25px;
+}
+.left-column > img {
+  width: 100%;
+  display: inline-block;
+  align-self: flex-end;
+}
+.right-column {
+  width: 50%;
+  padding-right: 118px;
+  text-align: left;
+}
+.contact-form {
+  margin-top: 55px;
+  display: block;
+}
+.contact-form input {
+  display: block;
+  background: #f9f9ff;
+  border: 1px solid #e8e6ff;
+  border-radius: 35px;
+  margin-bottom: 20px;
+  padding: 25px 40px;
+  width: 100%;
+  height: 70px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #464a52;
+}
+.message-box {
+  height: 180px !important;
+}
+.contact-form input:focus {
+  outline: none !important;
+  border: 1px solid #424272;
+}
+.send-form-button {
+  margin-top: 20px;
+  background: #f9f9ff;
+  border: 2px solid #63639f;
+  box-shadow: 0px 4px 6px rgba(66, 66, 114, 0.16);
+  border-radius: 35px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #63639f;
+  padding: 15px;
+  width: 50%;
+  min-width: max-content;
+}
+.send-form-button:hover {
+  background: #63639f;
+  border: 2px solid #e8e6ff;
+  color: white;
+}
+
 @media screen and (max-width: 1200px) {
-  .intro-text {
-    font-size: 20px;
-    line-height: 24px;
-    text-align: center;
-    padding-bottom: 20px;
+  .container {
+    padding-bottom: 0;
   }
-  .title_case {
+  .contact-header {
+    padding-top: 57px;
+  }
+  .page-subtitle {
     font-size: 36px;
     line-height: 43px;
-    text-align: center;
   }
-  .description {
+  .page-description {
     font-size: 18px;
     line-height: 22px;
-    padding: 0px 50px;
-    text-align: center;
-  }
-  .filter-bar {
-    padding-bottom: 35px;
-  }
-  .filter {
-    font-size: 12px;
-  }
-  .casestudies-grid {
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 12px;
-    max-width: 750px;
+    max-width: 60%;
     margin: auto;
+    margin-top: 41px;
   }
-  .container_description {
-    padding-bottom: 30px;
+  .contact-container {
+    padding-top: 56px;
     max-width: 80%;
-    text-align: center;
-    margin: auto;
+    padding-bottom: 40px;
   }
-}
-@media screen and (max-width: 768px) {
-  .intro-text {
-    font-size: 12px;
-    line-height: 14px;
-    text-align: center;
+  .contact-method-image {
+    width: 111.5px;
+    height: 111.5px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
   }
-  .title_case {
+  .contact-method-title {
     font-size: 24px;
     line-height: 29px;
-    text-align: center;
+    margin-bottom: 8px;
   }
-  .description {
-    font-size: 12px;
-    line-height: 14px;
-    padding: 0px 50px;
+  .location-section {
+    padding-top: 67px;
+    padding-bottom: 20px;
   }
-  .filter-bar {
+  .location-container {
+    padding-top: 82px;
+    max-width: 80%;
+    width: 100%;
+  }
+  .location-box-image {
+    width: 129px;
+    height: 129px;
+    margin-bottom: 28px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .location-office-num {
+    margin-bottom: 10px;
+  }
+  .location-banner {
     display: none;
   }
-  .casestudies-grid {
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 12px;
+
+  .contact-form-container {
+    max-width: 80%;
+    flex-direction: column-reverse;
   }
-  .container_description {
-    padding-bottom: 0px;
-    width: 80%;
+  .left-column {
+    width: 100%;
+    padding-right: 0px;
+  }
+  .right-column {
+    width: 100%;
+    padding-right: 0px;
+    text-align: center;
+  }
+  .contact-form {
+    padding-bottom: 69px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact-header {
+    padding-top: 88px;
+    padding-bottom: 25px;
+  }
+  .page-title {
+    font-size: 12px;
+    line-height: 14px;
+    margin-bottom: 17px;
+  }
+  .page-subtitle {
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .page-description {
+    font-size: 12px;
+    line-height: 14px;
+    max-width: 80%;
+    margin: auto;
+    margin-top: 17px;
+  }
+  .contact-container {
+    padding-top: 56px;
+    max-width: 80%;
+    padding-bottom: 40px;
+    display: inline-table;
+  }
+  .show-mobile {
+    display: block;
+    vertical-align: middle;
+  }
+  .contact-method {
+    display: table-cell;
+    margin: auto;
+    width: 33.33%;
+  }
+  .contact-method:last-child {
+    display: table-caption;
+    width: 100%;
+    caption-side: bottom;
+  }
+  .contact-method-image {
+    width: 57px;
+    height: 57px;
+    margin-bottom: 12px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .contact-method-image > svg {
+    width: 12px;
+    height: 12px;
+  }
+  .contact-method-title {
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 2px;
+  }
+
+  .contact-method-text {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .location-section {
+    padding-top: 43px;
+    padding-bottom: 0;
+  }
+  .location-container {
+    padding-top: 46px;
+    max-width: 80%;
+    width: 100%;
+    display: block;
+  }
+  .location-box:first-child,
+  .location-box:last-child,
+  .location-box {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 17px;
+  }
+
+  .location-box-image {
+    width: 58px;
+    height: 58px;
+    margin-bottom: 0px;
+    margin-right: 16px;
+    margin-left: 0;
+  }
+  .location-box-image > svg {
+    width: 18px;
+    height: 23px;
+  }
+  .location-info-wrapper {
+    display: grid;
+  }
+  .location-info-wrapper > div.contact-method-text {
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  .location-city {
+    font-size: 10px;
+    line-height: 12px;
+    margin-bottom: 0px;
+    order: 2;
+    font-size: 10px;
+    line-height: 12px;
+    opacity: 1;
+    text-align: left;
+  }
+
+  .location-office-num {
+    font-size: 13px;
+    line-height: 16px;
+    margin-bottom: 6px;
+    order: 1;
+    text-align: left;
+  }
+  .contact-method-text {
+    order: 3;
+  }
+  .location-banner {
+    display: none;
+  }
+  .contact-form input {
+    border-radius: 10px;
+    margin-bottom: 12px;
+    padding: 12px 13px;
+    height: 43px;
+  }
+  .send-form-button {
+    font-size: 12px;
+    line-height: 14px;
+    padding: 9px;
+    width: 50%;
+    min-width: max-content;
   }
 }
 </style>

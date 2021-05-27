@@ -2,27 +2,37 @@
   <div class="casestudy-mini">
     <div
       class="casestudycontainer"
+      v-on:click="goTo('/casestudy/' + path)"
       :style="{
         'background-image': `url(${image})`,
       }"
     >
       <div class="casestudycontent">
-        <p class="referenceArea">Area{{ area }}</p>
-        <p class="casestudytitle">{{ title }}</p>
-        <p class="casestudydescription">{{ description }}</p>
-        <div class="caseinfo">FIND OUT MORE ></div>
+        <p class="referenceArea">{{ area }}</p>
+        <div class="case-info">
+          <p class="casestudytitle">{{ title }}</p>
+          <p class="casestudydescription">{{ description }}</p>
+        </div>
+
+        <button class="case-button" v-on:click="goTo('/casestudy/' + path)">
+          FIND OUT MORE >
+        </button>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import GoToMixins from '~/mixins/goTo-mixins.js'
+
 export default {
+  mixins: [GoToMixins],
   props: {
     title: { type: String, default: () => '' },
     image: { type: String, default: () => '' },
     description: { type: String, default: () => '' },
     area: { type: String, default: () => '' },
+    path: { type: Number, default: () => 0 },
   },
 }
 </script>
@@ -30,12 +40,12 @@ export default {
 <style scoped>
 .casestudycontainer {
   position: relative;
-  height: 550px;
-  border: 1px solid #979797; /* manca il colore nella palette*/
+  border: 2px solid #cdc9ff; /* manca il colore nella palette*/
   border-radius: 30px;
   width: 100%;
+  min-height: 350px;
   text-align: left;
-  max-width: 600px;
+  width: 350px;
   margin: auto;
   background-size: cover;
   background-position: center;
@@ -46,14 +56,14 @@ export default {
   text-align: left;
   position: absolute;
   background: #ffffff;
-  height: 400px;
+  height: 75%;
   bottom: 0;
   width: 100%;
-  border-radius: 29px;
+  border-radius: 27px;
   padding: 30px;
   opacity: 0.87;
 }
-p.casestudytitle {
+.casestudytitle {
   font-style: normal;
   font-weight: bold;
   font-size: 22px;
@@ -62,7 +72,7 @@ p.casestudytitle {
   padding-bottom: 11px;
 }
 
-p.referenceArea {
+.referenceArea {
   padding-bottom: 6px;
   font-style: normal;
   font-weight: normal;
@@ -71,7 +81,7 @@ p.referenceArea {
   color: var(--c-grey2);
 }
 
-p.casestudydescription {
+.casestudydescription {
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -79,7 +89,7 @@ p.casestudydescription {
   color: var(--c-grey2);
 }
 
-div.caseinfo {
+.case-button {
   position: absolute;
   font-style: normal;
   font-weight: bold;
@@ -88,5 +98,54 @@ div.caseinfo {
   color: var(--cc-base1);
   bottom: 30px;
   text-align: left;
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 10px;
+}
+.case-button:hover {
+  text-decoration: underline;
+}
+.case-info {
+  max-height: 68%;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1200px) {
+  .case-button {
+    display: none;
+  }
+  .case-info {
+    max-height: 80%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .casestudycontainer {
+    width: 80%;
+
+    cursor: pointer;
+  }
+  .case-button {
+    display: none;
+  }
+  .referenceArea {
+    font-size: 10px;
+    line-height: 14px;
+    padding: 0;
+  }
+  .casestudytitle {
+    font-size: 14px;
+    line-height: 17px;
+    padding: 0;
+  }
+  .casestudycontent {
+    padding: 13px;
+  }
+  .casestudydescription {
+    display: none;
+  }
+  .case-info {
+    max-height: 83%;
+  }
 }
 </style>

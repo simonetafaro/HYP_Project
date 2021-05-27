@@ -10,7 +10,14 @@ async function init() {
   // Call the init function that returns the Database
   const db = await initializeDatabase()
   // Let's extract all the objects we need to perform queries inside the endpoints
-  const { Area, Service, CaseStudy, TeamMember, ServiceCaseStudy } = db._tables
+  const {
+    Area,
+    Service,
+    CaseStudy,
+    TeamMember,
+    ServiceCaseStudy,
+    Partner,
+  } = db._tables
 
   app.get('/area/:id', async (req, res) => {
     const { id } = req.params
@@ -31,6 +38,9 @@ async function init() {
       where: { id },
       include: {
         model: CaseStudy,
+        include: {
+          model: Area,
+        },
       },
     })
     return res.json(service)
@@ -40,10 +50,11 @@ async function init() {
     const { id } = req.params
     const casestudy = await CaseStudy.findOne({
       where: { id },
-      include: {
-        model: Service,
-        model: TeamMember
-      },
+      include: [
+        {model: Service, as:'services'},
+        {model: TeamMember, as: 'teammembers'},
+      {model: Area, as: 'area'}
+      ],
     })
     return res.json(casestudy)
   })
@@ -80,15 +91,27 @@ async function init() {
       where: {
         areaID: areaID,
       },
+      include: { model: Area },
     })
     return res.json(casestudies)
   })
 
+  app.get('/relatedCaseStudies/:areaID/:casestudyID', async (req, res) => {
+    const { areaID, casestudyID } = req.params
+    const relatedcasestudies = await CaseStudy.findAll({
+      where: {
+        areaID: areaID,
+        id: {
+          [Op.ne]: casestudyID,
+        },
+      },
+    })
+    return res.json(relatedcasestudies)
+  })
+
   app.get('/areas', async (req, res) => {
     const areas = await Area.findAll({
-      order: [
-        ['title', 'ASC'],
-      ],
+      order: [['title', 'ASC']],
     })
     return res.json(areas)
   })
@@ -99,13 +122,20 @@ async function init() {
   })
 
   app.get('/casestudies', async (req, res) => {
-    const casestudies = await CaseStudy.findAll({})
+    const casestudies = await CaseStudy.findAll({
+      include: { model: Area },
+    })
     return res.json(casestudies)
   })
 
   app.get('/teammembers', async (req, res) => {
     const teammember = await TeamMember.findAll({})
     return res.json(teammember)
+  })
+
+  app.get('/partners', async (req, res) => {
+    const partners = await Partner.findAll({})
+    return res.json(partners)
   })
 
   app.get('/teammembers/:id', async (req, res) => {

@@ -11,9 +11,18 @@ export default {
       handler: '~/server/rest/api.js',
     },
   ],
+  router: {
+    extendRoutes(routes, resolve) {
+      routes.push({
+        name: 'home',
+        path: '/home',
+        component: resolve(__dirname, 'pages/index.vue'),
+      })
+    },
+  },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Company Name',
+    title: 'HexTech',
     htmlAttrs: {
       lang: 'en',
     },
@@ -23,7 +32,7 @@ export default {
       { hid: 'description', name: 'description', content: '' },
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'icon', type: 'image/x-icon', href: '/HexTechLogo.ico' },
       { rel: 'preconnect', href: 'https://fonts.gstatic.com' },
       {
         href:

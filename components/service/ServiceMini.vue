@@ -1,6 +1,13 @@
 <template>
   <div class="service_mini">
-    <div class="service_card">
+    <div
+      :class="
+        serviceIndex % 2 === 0
+          ? 'service-right service_card'
+          : 'service-left service_card'
+      "
+      @click="clickOnCardOnlyTabletAndMobile(path)"
+    >
       <div class="service_title">{{ title }}</div>
       <div class="service_img_container">
         <img class="service_img" :src="image" />
@@ -20,23 +27,28 @@ export default {
     title: { type: String, default: () => '' },
     image: { type: String, default: () => '' },
     path: { type: Number, default: () => 0 },
+    serviceIndex: { type: Number, default: () => 0 },
   },
   mixins: [GoToMixins],
+  methods: {
+    clickOnCardOnlyTabletAndMobile(path) {
+      if (window.innerWidth < 1200) {
+        return this.goTo('/service/' + path)
+      }
+    },
+  },
 }
 </script>
 
 <style scoped>
 .service_card {
-  padding: 32px 10px 100% 10px;
+  padding: 24px 10px;
   background: #ffffff;
   box-shadow: 0px 3px 25px rgba(205, 201, 255, 0.3);
   border-radius: 50px;
-  /* min-width: 350px; */
-  width: 100%;
-  height: 0;
+  width: 350px;
 }
 .service_title {
-  font-family: Barlow;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
@@ -45,8 +57,9 @@ export default {
   text-transform: uppercase;
   color: var(--cc-base2);
 }
+
 .service_img_container {
-  margin: 35px 50px 35px 50px;
+  margin: 25px 50px 15px 50px;
 }
 
 .service_img {
@@ -57,6 +70,60 @@ export default {
   border-radius: 30px;
   width: 100%;
   object-fit: cover;
-  /* box-shadow: 0px 3px 25px rgba(205, 201, 255, 0.3); */
+}
+
+@media screen and (max-width: 1200px) {
+  .service_card {
+    padding: 15px 10px 20px 10px;
+    width: 90%;
+    max-width: 350px;
+    border-radius: 25px;
+    margin: auto;
+  }
+  .service-left {
+    margin-right: 0;
+  }
+  .service-right {
+    margin-left: 0;
+  }
+  .service_title {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .more_button {
+    display: none;
+  }
+  .service_img {
+    border-radius: 10px;
+  }
+  .service_img_container {
+    margin: 15px 35px 10px 35px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .service_card {
+    width: 100%;
+    padding-top: 10px;
+  }
+  .service-left {
+    margin-right: 0;
+  }
+  .service-right {
+    margin-left: 0;
+  }
+  .service_title {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .more_button {
+    display: none;
+  }
+  .service_img_container {
+    margin: 10px 30px 0px 30px;
+  }
+  .service_img {
+    border-radius: 10px;
+  }
 }
 </style>

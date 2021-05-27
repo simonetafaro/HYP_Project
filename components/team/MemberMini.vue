@@ -1,9 +1,39 @@
 <template>
-  <div class="article-mini">
+  <div class="member-mini">
     <div class="card">
-      <h3>{{ title }}</h3>
-      <div class="img" :style="{ 'background-image': `url(${image})` }"></div>
-      <p>{{ summary }}</p>
+      <svg
+        width="234"
+        height="216"
+        viewBox="0 0 254 236"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <defs>
+          <pattern
+            xmlns="http://www.w3.org/2000/svg"
+            :id="'team-' + index"
+            patternUnits="userSpaceOnUse"
+            width="450"
+            height="250"
+          >
+            <image
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              :xlink:href="image"
+              x="-60"
+              y="-10"
+              width="400"
+              height="280"
+            />
+          </pattern>
+        </defs>
+        <path
+          clip-rule="evenodd"
+          d="M244.424 212.428C209.071 256.341 27.3303 234.819 3.38754 181.475C-20.5553 128.131 88.1562 -7.51591 149.225 0.326202C210.294 8.16832 279.778 168.515 244.424 212.428Z"
+          :fill="`url(#team-${index})`"
+        />
+      </svg>
+      <br />
+      <p class="occupation">Chief Operating Officer</p>
+      <h2 class="personName">{{ personName }}</h2>
     </div>
   </div>
 </template>
@@ -11,36 +41,40 @@
 <script>
 export default {
   props: {
-    title: { type: String, default: () => '' },
+    personName: { type: String, default: () => '' },
     image: { type: String, default: () => '' },
     summary: { type: String, default: () => '' },
+    index: { type: Number, default: () => 0 },
   },
 }
 </script>
 
 <style scoped>
 .card {
-  padding: 20px 10px;
-  border: 1px solid grey;
-  border-radius: 4px;
+  display: table;
+  margin: 0 auto;
 }
+.occupation {
+  padding-top: 20px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  /* identical to box height, or 171% */
 
-h3 {
-  height: 60px;
-  margin-bottom: 10px;
-}
-p {
-  height: 60px;
-}
+  text-align: center;
 
-.img {
-  width: 100%;
-  height: 200px;
-  max-width: 600px;
-  margin: auto;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  margin-bottom: 40px;
+  color: #000000;
+
+  mix-blend-mode: normal;
+  opacity: 0.6;
+}
+.personName {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 38px;
+  text-align: center;
+  color: var(--cc-base1);
 }
 </style>
