@@ -1126,7 +1126,7 @@ async function insertRealData() {
     title: 'Reimagining guest experiences on the high seas',
     subTitle:
       'Carnival Corporation connects high-touch technology and the human touch to create hyper-relevant experiences for thousands of guests at a time.',
-    banner: '',
+    banner: 'https://images.unsplash.com/photo-1558923240-2672e219374b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1867&q=80',
     descriptiveText:
       'Carnival Corp.’s CEO Arnold Donald has dubbed today “the golden age of cruising.” With growth in guest numbers, fleet sizes, ticket prices and a sea of new competitors, the description certainly fits. However, as dynamic as the industry is, the cruise travel category remains under penetrated. The company’s leadership knew to expand the market for cruise vacations, the cruise model itself had to change. The focus needed to go beyond building and marketing new ships to leveraging the company’s scale to create a new and sustainable competitive advantage. With the world’s largest fleet spanning nine distinct brands, Carnival Corp. envisioned a new model that elevated guest experience enablement above the physical ship platform. ',
     challengeTitle:
@@ -1149,10 +1149,10 @@ async function insertRealData() {
   //2
   const ceC2 = await CaseStudy.create({
     title:
-      'illycaffè - Finding the perfect blend for the digital customer experience',
+      'Finding the perfect blend for the digital customer experience',
     subTitle:
       'illycaffè, the premium Italian coffee brand, offers a unique taste and aroma that’s recognized by coffee lovers around the world, the company sells its products and services to consumers and trade customers in 140 different countries.',
-    banner: '',
+    banner: 'https://images.unsplash.com/photo-1442512595331-e89e73853f31?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80',
     descriptiveText:
       'Our data-driven, comprehensive and consistent social media strategy is optimizing the creative effort, ensuring premium content with that unique “illycaffè” blend reaches the right audience at the right time on the right channel. Social media activities have increased engagement and reach by 15 percent.',
     challengeTitle: 'Our challenge - Business approach reimagination',
@@ -1173,10 +1173,10 @@ async function insertRealData() {
 
   //3
   const ceC3 = await CaseStudy.create({
-    title: 'Subway - A data-driven recipe for delighting customers',
+    title: 'A data-driven recipe for delighting customers',
     subTitle:
       'Reinventing experiences: Subway CDO on personalization. Delivering meaningful insights that are helping them delight customers every day.',
-    banner: '',
+    banner: 'https://images.unsplash.com/photo-1604908554025-e477d54e85e0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2389&q=80',
     descriptiveText:
       'For today’s fast-food consumers, mobile and online ordering are must-haves. But delivering them effectively can be a tall order even for hugely successful brands. As part of a broader digital transformation, we helped Subway® restaurants make sure all their customer touchpoints were hitting the mark by creating a new data-driven experience optimization operating model.',
     challengeTitle:
@@ -1186,7 +1186,7 @@ async function insertRealData() {
     solutionTitle:
       'The solution we provided - Building up a new operating model, layer by layer',
     solutionDescription:
-      '"Using our deep experience of both organizational design and personalization, we helped Subway devise a completely new recipe for success – an operating model that would continuously optimize customer experiences through a dedication to scientific experimentation Leveraging the technologies of Adobe Analytics and Target, the new model enables Subway to run vast numbers of user experience tests across digital channels – everything from changing the color of a single button to revising homepage promotional messaging – and see the results instantly. That’s providing statistically meaningful insights into how design changes affect customer behavior – and company revenue.',
+      'Using our deep experience of both organizational design and personalization, we helped Subway devise a completely new recipe for success – an operating model that would continuously optimize customer experiences through a dedication to scientific experimentation Leveraging the technologies of Adobe Analytics and Target, the new model enables Subway to run vast numbers of user experience tests across digital channels – everything from changing the color of a single button to revising homepage promotional messaging – and see the results instantly. That’s providing statistically meaningful insights into how design changes affect customer behavior – and company revenue.',
     teamsTitle: 'Meet our team',
     personName: 'Sean Green',
     personJob: 'Lead – Interactive Technology',
@@ -1198,10 +1198,10 @@ async function insertRealData() {
 
   //4
   const ceC4 = await CaseStudy.create({
-    title: 'Dutch Flowers - Bouquet of innovation, personalization and service',
+    title: 'Bouquet of innovation, personalization and service',
     subTitle:
       'A digital platform with exceptional, personalized customer experience so business continues to bloom.',
-    banner: '',
+    banner: 'https://images.unsplash.com/photo-1459662784036-fb86bbf1104f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80',
     descriptiveText:
       'Webshops, much like floral arrangements, can be delicate: one faulty order or misplaced orchid is all it takes to keep a customer from returning. So, when an opportunity sprouted up for Dutch Flowers to fortify their online channel’s technical capabilities, they acted quickly.',
     challengeTitle:
@@ -1220,6 +1220,49 @@ async function insertRealData() {
       'From novelty to utility. Excelling in digital commerce requires engaging product and service expertise that give confidence to consumer buying.',
   })
   await CustomerExperience.addCasestudy(ceC4.id)
+
+  //5
+  const ceC5 = await CaseStudy.create({
+    title: 'Building the in-store experience that everyone desires',
+    subTitle:
+      'How to provide a custom and tailored experience each time a customer walks into their store.',
+    banner 'https://images.unsplash.com/photo-1515165244752-2465b61f0441?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1889&q=80',
+    descriptiveText:
+      'If you have ever wondered what’s behind the happy customers and packed stores it’s several factors including a focus on personalization, innovation and a loyalty program that is so good that it has 25 million members. All of these factors and several more make LoveMakeup one of the most successful beauty retailers in the world.',
+    challengeTitle:
+      'Our challenge - Every customer has to be unique',
+    challengeDescription: 
+      'The beauty industry as a whole faces a multitude of problems mainly around transparency, accuracy and trust of products. For these reasons, online shopping poses key challenges in purchasing beauty products while retail stores pose their own challenge in having the capabilities and manpower to assist every customer in finding the right products.',
+    solutionTitle:
+      'The solution we provided - Personalization at the next level',
+    solutionDescription:
+      'Customers are increasingly demanding customization as part of their shopping experience, especially if they’re shelling out for luxuries like makeup. Whether it’s primer for oily skin or moisturizer for dry, LoveMakeup recognizes that their customers require a unique and personalized approach, and they offer this through in-store swatch samplings and makeup demonstrations that allow shoppers to test different brands to be sure they’re buying the right product at the right place. But LoveMakeup doesn’t stop there: their personalized shopping experience extends to the web, which has been a major key to their success in keeping customers loyal to their brand.',
+    teamsTitle: 'Meet our team',
+    personName: 'Sean Green',
+    personJob: 'Lead – Interactive Technology',
+    serviceTitle: 'Immersive technologies',
+    serviceHeading:
+      'From novelty to utility. Excelling in digital commerce requires engaging product and service expertise that give confidence to consumer buying.',
+  })
+  await CustomerExperience.addCasestudy(ceC5.id)
+
+  //6  
+  const ceC6 = await CaseStudy.create({
+    title: 'A magical experience deserves a magical app',
+    subTitle: '',
+    banner: 'https://images.unsplash.com/photo-1534450539339-6d1c81ad18e2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1019&q=80',
+    descriptiveText: '',
+    challengeTitle: '',
+    challengeDescription: '',
+    solutionTitle: '',
+    solutionDescription: 'The app we designed for Disney contains most of the information on the website but it’s not just the website shoved into app-form. It’s laid out well and even has GPS-enabled walking directions between attractions. I can easily find park hours, showtimes, wait times for rides, and order food so you don’t need to wait in line anymore. All of the tickets, dining reservations, and photos are in the app, along with a personalized schedule that I can create to make sure I don’t miss the biggest rides and attractions.',
+    teamsTitle: 'Meet our team',
+    personName: 'John Daisy',
+    personJob: 'Digital Technical Architect',
+    serviceTitle: 'Immersive technologies',
+    serviceHeading: 'From novelty to utility. Excelling in digital commerce requires engaging product and service expertise that give confidence to consumer buying.',
+  })
+  await CustomerExperience.addCasestudy(ceC6.id)
 
   //**END OF CUSTOMER EXPERIENCE CASE STUDIES */
 
