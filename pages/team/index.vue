@@ -1276,21 +1276,16 @@ h4 {
   }
 
   .member-grid {
-    width: 272px;
-    grid-template-columns: repeat(2, calc(100% / 2));
+    width: 282px;
+    grid-template-columns: repeat(2, calc(252px / 2));
     grid-auto-rows: 200px;
-    grid-gap: 30px;
+    grid-gap: 25px;
     margin: auto;
-    margin-top: 20px;
-  }
-
-  .person {
-    transform: scale(0.5);
-    position: relative;
-    left: -40px;
+    margin-top: 50px;
   }
 
   .filter-bar {
+    cursor: pointer;
     max-width: 375px;
     min-height: 49px;
     margin-top: 50px;
