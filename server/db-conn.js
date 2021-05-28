@@ -83,7 +83,7 @@ function defineDBStructure() {
       solutionTitle: DataTypes.STRING,
       solutionDescription: DataTypes.TEXT,
       personName: DataTypes.STRING,
-      createdData: DataTypes.STRING,  
+      createdData: DataTypes.STRING,
     },
 
     {
@@ -187,11 +187,10 @@ async function insertRealData() {
     evocativeImage: 'https://i.ibb.co/Ny7F40s/security.png',
     servicesDescription:
       'We are unique among IT security consulting firms. We combine security technology engineering, intelligence expertise and our data science DNA to help companies manage digital risk end-to-end.',
-      caseStudyDescription:
+    caseStudyDescription:
       'Reimagining business through experience. The following case studies demonstrate how our company is an expert in the business of creating comprehensive experiences from start to finish.',
     teamDescription:
       'Ideate, innovate, change the world, repeat. Meet our team of talented people using design thinking to create experiences that win awards and make headlines.',
-  
   })
   const IoT = await Area.create({
     title: 'Internet Of Things',
@@ -203,11 +202,10 @@ async function insertRealData() {
     evocativeImage: 'https://i.ibb.co/zRPbmf1/iot.png',
     servicesDescription:
       'The growth of IoT is paving the path for new business avenues. The pertinent question for enterprises is no longer if their business benefits from IoT adoption - but rather what IoT functionalities can be best used to their advantage.',
-      caseStudyDescription:
+    caseStudyDescription:
       'Reimagining business through experience. The following case studies demonstrate how our company is an expert in the business of creating comprehensive experiences from start to finish.',
     teamDescription:
       'Ideate, innovate, change the world, repeat. Meet our team of talented people using design thinking to create experiences that win awards and make headlines.',
-  
   })
   const CloudComputing = await Area.create({
     title: 'Cloud Computing',
@@ -218,11 +216,10 @@ async function insertRealData() {
     evocativeImage: 'https://i.ibb.co/hf3LHBb/cloud.png',
     servicesDescription:
       "As a result of the on-going digital revolution, the Cloud and business environment have become inseparable. Providing a foundation strong enough to support millions of operations at the same time, cloud computing has played a major role in the development of today's information-driven enterprises. Join them to: - Accelerate your company's digital transformation - Reduce workload and operational costs - Improve the performance of your systems and applications",
-      caseStudyDescription:
+    caseStudyDescription:
       'Reimagining business through experience. The following case studies demonstrate how our company is an expert in the business of creating comprehensive experiences from start to finish.',
     teamDescription:
       'Ideate, innovate, change the world, repeat. Meet our team of talented people using design thinking to create experiences that win awards and make headlines.',
-  
   })
   // isi
   const CustomerExperience = await Area.create({
@@ -250,11 +247,10 @@ async function insertRealData() {
     evocativeImage: 'https://i.ibb.co/KDhJdh0/data.png',
     servicesDescription:
       'AI is only as smart as the insights that fuel it. We can help you unlock powerful analytics insights by tapping into data you did not even know you had.',
-      caseStudyDescription:
+    caseStudyDescription:
       'Reimagining business through experience. The following case studies demonstrate how our company is an expert in the business of creating comprehensive experiences from start to finish.',
     teamDescription:
       'Ideate, innovate, change the world, repeat. Meet our team of talented people using design thinking to create experiences that win awards and make headlines.',
-  
   })
   //**END OF AREAS */
 
@@ -262,103 +258,193 @@ async function insertRealData() {
 
   //**SECURITY SERVICES */
   const ModernFraudProtection = await Service.create({
-    title: 'Modern fraud protection software',
-    subTitle:
-      'offers a variety of services from information security consulting to assessing, testing and improving the protection of applications and networks for companies operating in healthcare, manufacturing, banking, retail, telecommunications, and other industries.',
-    banner: 'https://www.comarch.com/files-com/file_545/c1.png',
+    title: 'Modern Fraud Protection Software',
+    subTitle: 'Detect and combat fraud more efficiently with AI',
+    description:
+      'Enterprises lose billions of dollars a year due to fraud. Bogus payments, money laundering, loyalty program fraud and cyber security incidents, just to name a few. Enterprises have explored a wide variety of ways to combat fraud, including hiring additional staff which has proven ineffective. It’s time-consuming, and nearly impossible to investigate every claim. The perpetrators of fraud are highly sophisticated, and their techniques evolve quickly, often making solutions obsolete just as soon as they’re implemented.',
+    banner: 'https://www.researchdive.com/blogImages/FrALRKwcsi.jpeg',
     serviceDescription:
-      'Protect your business from the most common attack: fraud',
-    partnerDescription: '',
-    p1Name: 'Coca-Cola',
-    p1Logo: 'https://i.ibb.co/njhmnqv/coca-cola.png',
-    p2Name: 'Adobe',
-    p2Logo: 'https://i.ibb.co/fpWF6WP/adobe.png',
-    p3Name: '',
-    p3Logo: '',
+      'HexTech Fraud Protection software is a platform which significantly increases the efficiency of suspicious event detection compared to rule-based methods. The solution is based on machine learning, which is a state-of-the-art approach where Artificial Intelligence (AI) is used for creating models that, based on historical data, can determine the occurrence of suspicious events with high accuracy.',
+    s1Name: 'Detect anomalies and classify events',
+    s1Description:
+      'Our fraud detection software recognizes relationships and similarities between data and can detect anomalies – events that do not conform to an expected pattern in a data set.',
+    s1Logo: 'https://i.ibb.co/Rczq8Pv/sol-1.png',
+    s2Name: 'Act in real time',
+    s2Description:
+      'Once an anomaly is detected, immediate action can be taken to prevent fraudulent activities. Our software works in real-time.',
+    s2Logo: 'https://i.ibb.co/KwskLjv/sol-2.png',
+    s3Name: 'Monitor and analyze',
+    s3Description:
+      'You can easily analyze fraudulent events, extract insights, and improve your security. Reporting modules allow for an effective investigation of abusive activities. Our AI is transparent and generates explanations for its decisions.',
+    s3Logo: 'https://i.ibb.co/b77D3Fm/sol-3.png',
+    partnerTitle: '',
+    partnerDescription:
+      'Since security is an integral part of a great company, we offer 24h consulting and all of our know how to help you protect your business.',
+    p1Name: 'AWS',
+    p1Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
+    p2Name: 'Xiaomi',
+    p2Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
+    p3Name: 'Coca-Cola',
+    p3Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
   })
   await Security.addService(ModernFraudProtection.id)
 
   const ManagedSecurity = await Service.create({
-    title: 'Managed security',
+    title: 'Managed Security',
     subTitle:
-      'Helping clients rapidly scale security and compliance operations through innovative technology, as-a-Service capabilities and cybersecurity  services.',
-    banner: 'https://www.comarch.com/files-com/file_545/c1.png',
+      "Explore the latest managed security services for today's hybrid cloud world",
+    description:
+      'Providing superior monitored and managed security services to your expanding network perimeter 24x7',
+    banner:
+      'https://dnewpydm90vfx.cloudfront.net/wp-content/uploads/2018/11/Cyber-security-e-managed-services.jpg',
     serviceDescription:
-      'Achieve more-secure applications, compliant environments and safer systems development with industrialized and repeatable processes.',
-    partnerTitle: 'Alliances and partners',
+      'HexTech Managed Security Services (MSS) helps security leaders obtain prescriptive actions, contextual insights, and transparent reporting so they can make more informed decisions for their organization. Our MSS capabilities help reduce the time spent on low value alerts so you can focus on the right priorities.',
+    s1Name: 'Fully managed security',
+    s1Description:
+      'As your trusted advisors, HexTech specialists help you address your security needs, from the simplest to the most complex, monitoring and managing security incidents 24x7x365. Our people, technology, facilities and processes are among the best in the world.',
+    s1Logo: 'https://i.ibb.co/Rczq8Pv/sol-1.png',
+    s2Name: 'An extended-team approach',
+    s2Description:
+      'Your organization may have working tools and processes but could benefit from trusted security advisors. HexTech Managed Security Services can augment your security program with tailored services, including threat, cloud, infrastructure, data, identity and response management.',
+    s2Logo: 'https://i.ibb.co/KwskLjv/sol-2.png',
+    s3Name: 'Transformational initiatives',
+    s3Description:
+      'Some organizations require help with developing a continuous improvement process to protect their enterprise during multi-year projects. HexTech MSS specialists can help optimize, fine-tune, and improve security program efficiency for the long-term.',
+    s3Logo: 'https://i.ibb.co/b77D3Fm/sol-3.png',
+    partnerTitle: '',
     partnerDescription: '',
-    p1Name: 'Figma',
-    p1Logo: 'https://i.ibb.co/W25yZ0m/figma.png',
-    p2Name: '',
-    p2Logo: '',
-    p3Name: '',
-    p3Logo: '',
+    p1Name: '......',
+    p1Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
+    p2Name: '......',
+    p2Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
+    p3Name: '......',
+    p3Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
   })
 
   const NetworkProtection = await Service.create({
-    title: 'Network protection',
-    subTitle:
-      'HexTech offers a variety of services from information security consulting to assessing, testing and improving the protection of applications and networks for companies operating in healthcare, manufacturing, banking, retail, telecommunications, and other industries.',
-    banner: 'https://www.comarch.com/files-com/file_545/c1.png',
+    title: 'Network Protection',
+    subTitle: 'Keep online fraudsters at bay.',
+    description:
+      'Cyber Network Protection is a powerful monitoring solution designed to guard firms and institutions against online frauds. The solution tracks both user and device activity to calculate a unique scoring for authentication, authorization, and more.',
+    banner:
+      'https://www.cellusys.com/wp-content/uploads/2019/12/roaming-steering-of-roaming-logo-blue.svg',
     serviceDescription:
-      'We apply multiple defense layers to protect your corporate network and the sensitive data stored within it. Our security engineers know various ways to keep your proprietary information safe and reduce the probability that you will have to experience successful attack attempts against your network.',
-    partnerTitle: 'Alliances and partners',
+      'HexTech Cyber Threat Protection (CTP) is a transparent anti-fraud system that can work on both user workstations and mobile devices. Based on the analysis of user work environment, the system returns a scoring that serves as a basis for further decisions, such as introducing 2FA, terminating operations, or making a telephone verification. HexTech Cyber Threat Protection has a modular structure, so you can order only those modules that suit you best.',
+    s1Name: 'Comprehensiveness',
+    s1Description: 'Compatibility with both workstations and mobiles.',
+    s1Logo: 'https://i.ibb.co/Rczq8Pv/sol-1.png',
+    s2Name: 'User-friendliness',
+    s2Description: 'No need for any extra software.',
+    s2Logo: 'https://i.ibb.co/KwskLjv/sol-2.png',
+    s3Name: 'Usability',
+    s3Description: 'Frictionless identification/authorization steps.',
+    s3Logo: 'https://i.ibb.co/b77D3Fm/sol-3.png',
+    partnerTitle: '',
     partnerDescription: '',
-    p1Name: 'Adobe',
-    p1Logo: 'https://i.ibb.co/fpWF6WP/adobe.png',
-    p2Name: '',
-    p2Logo: '',
-    p3Name: '',
-    p3Logo: '',
+    p1Name: '......',
+    p1Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
+    p2Name: '......',
+    p2Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
+    p3Name: '......',
+    p3Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
   })
 
   const DataSecurity = await Service.create({
-    title: 'Data security',
+    title: 'Data Security',
     subTitle:
-      'Our security experts develop a personal approach to each customer based on best practices and enriched with our own experience. We are ready to  support our clients at all project stages.',
-    banner: 'https://www.comarch.com/files-com/file_545/c1.png',
+      'Comprehensive data protection for the most critical enterprise data',
+    description:
+      'Workload migration to hybrid cloud environments increases the attack surface, which can result in a host of new data security and compliance challenges.',
+    banner:
+      'https://bestarion.com/wp-content/uploads/2020/08/what-is-data-security-pillar-top-illustration-featured.png',
     serviceDescription:
-      "Our custom data security services help you incorporate a risk-balanced strategy with leading data protection technology to safeguard your organization's critical data. With both consulting and integration services, we help you optimize control over data using market-leading loss prevention and encryption technologies.",
-    partnerTitle: 'Alliances and partners',
-    partnerDescription: '',
-    p1Name: 'Arduino',
-    p1Logo: 'https://i.ibb.co/KDcLxdy/arduino.png',
-    p2Name: '',
-    p2Logo: '',
-    p3Name: '',
-    p3Logo: '',
+      'A robust data-centric cybersecurity program can provide you comprehensive data protection, centralized visibility and monitoring against unauthorized access, exposure, or data theft across your enterprise data landscape.',
+    s1Name: 'Backup & Recovery',
+    s1Description:
+      'An essential part of any business continuity plan is a robust backup & recovery strategy. In case of uncertain events, companies need to protect their prime asset, which is data. We apply the latest backup & recovery techniques to ensure complete data protection.',
+    s1Logo: 'https://i.ibb.co/Rczq8Pv/sol-1.png',
+    s2Name: 'Data protection & Security',
+    s2Description:
+      'We ensure the confidentiality, integrity, and availability of your data by protecting it against any unauthorized access.',
+    s2Logo: 'https://i.ibb.co/KwskLjv/sol-2.png',
+    s3Name: 'Compliance Assessment',
+    s3Description:
+      'We assist in identifying gaps between the existing control environment and the required one. The compliance risk assessment is implemented to identify potential risks in the system. We also help with compliance testing and the remediation process to ensure the integrity of your data.',
+    s3Logo: 'https://i.ibb.co/b77D3Fm/sol-3.png',
+    partnerTitle: '',
+    partnerDescription:
+      'Since user apps are an integral part of a smart city, we offer mobile consulting, UI/UX design, native (iOS, Android) and cross-platform (Cordova/PhoneGap, Xamarin, React Native) development, as well as mobile testing.',
+    p1Name: 'Flutter',
+    p1Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
+    p2Name: 'Salesforce',
+    p2Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
+    p3Name: '......',
+    p3Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
   })
 
   const IdentityAccessManagement = await Service.create({
-    title: 'Identity access management',
-    subTitle: '',
-    banner: 'https://www.comarch.com/files-com/file_545/c1.png',
+    title: 'Identity Access Management',
+    subTitle:
+      'Get your workforce and consumer IAM program on the road to success.',
+    description:
+      'Identity and access management (IAM) is essential for security and regulatory compliance. It can also be a significant undertaking without the right skills, strategy and support from identity and security experts to help you architect and manage solutions across hybrid cloud environments and leading IAM products and platforms.',
+    banner:
+      'https://www.cisco.com/c/dam/assets/swa/img/anchor-info/what-is-iam-banner-628x353.png',
     serviceDescription:
-      'Our Identity & Access Management comes with world-class methods for authentication, authorization, identity lifecycle and accountability. Its modular architecture makes it easy to adapt to specific types of organizations across hierarchies and geographies.',
-    partnerTitle: 'Alliances and partners',
-    partnerDescription: '',
-    p1Name: 'Adobe',
-    p1Logo: 'https://i.ibb.co/fpWF6WP/adobe.png',
-    p2Name: '',
-    p2Logo: '',
-    p3Name: '',
-    p3Logo: '',
+      'It’s a tricky balance: facilitate near-ubiquitous access to the apps and tools your users need to help grow the business, but also protect sensitive information from security threats. You need a solid IAM design to enable more cost-efficient and effective access management, authentication, identity management and governance across your enterprise to help prevent security risks.',
+    s1Name: 'Custom solution design',
+    s1Description:
+      'Align IAM with your business priorities to help manage regulatory compliance, strengthen security posture or enable better user access.',
+    s1Logo: 'https://i.ibb.co/Rczq8Pv/sol-1.png',
+    s2Name: 'Integration',
+    s2Description:
+      'Use existing assets and automation within an integrated technology framework, to integrate IAM with business and human resources functions.',
+    s2Logo: 'https://i.ibb.co/KwskLjv/sol-2.png',
+    s3Name: 'Scalable for future requirements',
+    s3Description:
+      'Look beyond your immediate IAM project to architect, design and implement a solution for your current and future business requirements.',
+    s3Logo: 'https://i.ibb.co/b77D3Fm/sol-3.png',
+    partnerTitle: '',
+    partnerDescription:
+      'Plan and execute a cloud identity and access management (IAM) program transformation.',
+    p1Name: 'Philips',
+    p1Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
+    p2Name: 'Cisco',
+    p2Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
+    p3Name: '......',
+    p3Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
   })
 
   const SecurityAssessmentAndPlanning = await Service.create({
-    title: 'Security assessment and planning',
-    subTitle: '',
-    banner: 'https://www.comarch.com/files-com/file_545/c1.png',
+    title: 'Security Assessment and Planning',
+    subTitle:
+      'Making your organization the best it can be starts with a plan; security is no different. ',
+    description:
+      'HexTech uses our proven assessment and planning tools to clearly identify your security risks and plan for the appropriate short and long term actions designed to keep your organization secure.',
+    banner: 'http://jwhightech.com/asset/images/assesment.jpg',
     serviceDescription:
-      'We deliver full-scale security assessment and planning services for the components of IT infrastructures such as web, mobile and desktop applications, employee behaviour and remote access software.',
-    partnerTitle: 'Alliances and partners',
-    partnerDescription: '',
-    p1Name: 'Figma',
-    p1Logo: 'https://i.ibb.co/W25yZ0m/figma.png',
-    p2Name: '',
-    p2Logo: '',
-    p3Name: '',
-    p3Logo: '',
+      'Risk is a compilation of threats and vulnerabilities as they relate to specific assets. Sentinel’s unique risk assessment methodology uses information collected in the field and through our data partners to identify threats, vulnerabilities and security concerns, so that appropriate and cost effective mitigation efforts can be designed and deployed.',
+    s1Name: 'Threat Assessments',
+    s1Description:
+      'Understanding your security threats will help you define how to organize and prepare your security planning.',
+    s1Logo: 'https://i.ibb.co/Rczq8Pv/sol-1.png',
+    s2Name: 'Gap Analisys',
+    s2Description:
+      'This analysis of security systems and operations is both qualitative and quantitative, reporting on the delta between the actual conditions vs. required level of performance.',
+    s2Logo: 'https://i.ibb.co/KwskLjv/sol-2.png',
+    s3Name: 'Security Master Planning',
+    s3Description:
+      ' We understand the complexities of rolling out an enterprise approach to security while justifying costs and key economization factors.',
+    s3Logo: 'https://i.ibb.co/b77D3Fm/sol-3.png',
+    partnerTitle: '',
+    partnerDescription:
+      'Since user apps are an integral part of a smart city, we offer mobile consulting, UI/UX design, native (iOS, Android) and cross-platform (Cordova/PhoneGap, Xamarin, React Native) development, as well as mobile testing.',
+    p1Name: 'Flutter',
+    p1Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
+    p2Name: 'Salesforce',
+    p2Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
+    p3Name: '......',
+    p3Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
   })
 
   await Security.addService(ModernFraudProtection.id)
@@ -798,7 +884,7 @@ async function insertRealData() {
     subTitle:
       'The easiest way to electronic invoicing is through the Cloud. Send e-invoices to your business partners & public administration entities in no time - wherever they are.',
     description:
-      'In the light of the current national and EU legislation, Comarch e-Invoicing Cloud stands out as a simple and affordable tool that enables global, legally-compliant exchange of invoice documents with business partners and public administration entities. No matter your industry or product, our platform was designed to help you create, process, and store e-invoices, thus significantly improve your business efficiency. Plus, being a cloud-based solution, it does not require a long and cost-intensive implementation process. Instead, it gives you instant access to a virtual environment that is easy to navigate.',
+      'In the light of the current national and EU legislation, HexTech e-Invoicing Cloud stands out as a simple and affordable tool that enables global, legally-compliant exchange of invoice documents with business partners and public administration entities. No matter your industry or product, our platform was designed to help you create, process, and store e-invoices, thus significantly improve your business efficiency. Plus, being a cloud-based solution, it does not require a long and cost-intensive implementation process. Instead, it gives you instant access to a virtual environment that is easy to navigate.',
     banner:
       'https://www.extrasys.it/hs-fs/hubfs/E-invoice%20benefits.png?width=800&name=E-invoice%20benefits.png',
     serviceDescription:
@@ -937,7 +1023,8 @@ async function insertRealData() {
       'Learn how immersive technology can increase revenue and streamline the event planning process.',
     description:
       'What’s the future of customer experience? It’s multi-dimensional. As the boundaries between the digital and the physical continue to blur, new kinds of immersive interactions become possible. Augmented reality, virtual reality, mixed reality—it all comes together in creative experiences that flow freely across real and virtual spaces. The Immersive and Innovative Experiences practice helps clients transform experiences for this world of unlimited possibility. We blend cutting-edge immersive technology with human creativity and strong ethical governance. We break down barriers between brands and their customers. We help visualize and understand products in new ways. And we bring people together in new virtual environments.',
-    banner: 'https://images.unsplash.com/photo-1502185372788-6ff455aa92ff?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80',
+    banner:
+      'https://images.unsplash.com/photo-1502185372788-6ff455aa92ff?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80',
     serviceDescription:
       'We help brands tell stories and craft experiences in innovative and immersive ways, opening up new kinds of interaction, new ways to work and learn, and new revenue streams. It’s an emerging space for all to play in. Let us help you take a lead in next-generation experience.',
     //detailTitle1: 'Spatial storytelling',
@@ -967,8 +1054,10 @@ async function insertRealData() {
       'Leading creative, business analysis, and advanced technology in user research',
     description:
       'Design a new way to communicate. User interface (or UI) design has grown substantially over the past few years, and has blossomed into one of the most creative, innovative and exciting fields in tech. Our service it is here to help you to create a brand new costumer’s experiences with the latest trend of user interfaces. An interface is the link between the corporate and the user, it must respond to customers’ new, often unmet and frequently changing needs and enable them to achieve their desired outcomes.',
-    banner: 'https://images.unsplash.com/photo-1618788372246-79faff0c3742?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=882&q=80',
-    serviceDescription: 'User interface elements are the parts we use to build interactive websites or apps. They provide touchpoints for the user as they navigate their way around; from buttons to scrollbars, to menu items and checkboxes. Every single detail matter!',
+    banner:
+      'https://images.unsplash.com/photo-1618788372246-79faff0c3742?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=882&q=80',
+    serviceDescription:
+      'User interface elements are the parts we use to build interactive websites or apps. They provide touchpoints for the user as they navigate their way around; from buttons to scrollbars, to menu items and checkboxes. Every single detail matter!',
     //detailTitle1: 'Design accessibility',
     //detailDescription1: 'We can not fogot the crucial role of accessibility and inclusion. From designing a suite of UI elements, such as buttons, icons, and scrollbars, choosing colors and typefaces, to regularly testing their designs through prototyping, UI designers carefully weigh up what each design choice means for the end user.',
     //detailTitle2: 'Trustwothy apps',
@@ -992,8 +1081,10 @@ async function insertRealData() {
     title: 'Customer Experience Engine',
     subTitle:
       'Your customers are always connected. Shouldn’t their experiences be too?',
-    description: 'Most customer experiences are created from a hodge-podge of systems. But customers don’t care about those systems. They expect a convenient, continuous and meaningful experience on the website, in the mobile app and in the store. The Customer Experience Engine powers an ongoing experience in which your brand stands out by disappearing into the fabric of customers’ lives. It’s the connective tissue across your systems that lets you focus on what you care about: delivering an unforgettable and impactful customer experience now and protecting that experience in the future.',
-    banner: 'https://images.unsplash.com/photo-1556745753-b2904692b3cd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1866&q=80',
+    description:
+      'Most customer experiences are created from a hodge-podge of systems. But customers don’t care about those systems. They expect a convenient, continuous and meaningful experience on the website, in the mobile app and in the store. The Customer Experience Engine powers an ongoing experience in which your brand stands out by disappearing into the fabric of customers’ lives. It’s the connective tissue across your systems that lets you focus on what you care about: delivering an unforgettable and impactful customer experience now and protecting that experience in the future.',
+    banner:
+      'https://images.unsplash.com/photo-1556745753-b2904692b3cd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1866&q=80',
     serviceDescription:
       'Our experience-led approach helps ensure that organizations have the right experience architecture to allow customers to create their own journey on their own terms. We view technology as the enabler of the customer experience, not the driver.',
     partnerTitle: 'Alliances and partners',
@@ -1017,10 +1108,14 @@ async function insertRealData() {
   //4
   const Campaign = await Service.create({
     title: 'Campaign Management',
-    subTitle: 'Communicate marketing messages at speed and scale to acquire and retain customers, driving sustainable growth.',
-    description: 'We all know communication is critical, but knowing what to say and when to say it—and whom to say it to—can make or break the message. That is why Accenture Interactive Marketing Engagement Services team specializes in solutions to help clients understand their customers, define the experience, and deliver relevant, compelling messages. We understand the new digital landscape and evolving customer expectations. Connections need to be made throughout the customer journey, constantly and across channels. "Always-on" campaigns are designed to capture attention and amplify demand, leads and revenue generation.',
-    banner: 'https://images.unsplash.com/photo-1552664730-d307ca884978?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80',
-    serviceDescription: 'We design and build creative campaigns that target customers with the right message to drive engagement. Our insights into new and evolving digital technologies mean we understand how to deliver personalized messages at the right time, helping acquire new customers, grow wallet share with existing customers, and retain the most profitable customers.',
+    subTitle:
+      'Communicate marketing messages at speed and scale to acquire and retain customers, driving sustainable growth.',
+    description:
+      'We all know communication is critical, but knowing what to say and when to say it—and whom to say it to—can make or break the message. That is why Accenture Interactive Marketing Engagement Services team specializes in solutions to help clients understand their customers, define the experience, and deliver relevant, compelling messages. We understand the new digital landscape and evolving customer expectations. Connections need to be made throughout the customer journey, constantly and across channels. "Always-on" campaigns are designed to capture attention and amplify demand, leads and revenue generation.',
+    banner:
+      'https://images.unsplash.com/photo-1552664730-d307ca884978?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80',
+    serviceDescription:
+      'We design and build creative campaigns that target customers with the right message to drive engagement. Our insights into new and evolving digital technologies mean we understand how to deliver personalized messages at the right time, helping acquire new customers, grow wallet share with existing customers, and retain the most profitable customers.',
     partnerTitle: 'Alliances and partners',
     partnerDescription:
       'How to deliver the right message at the right time? With the best Partners our company will grant you success.',
@@ -1046,7 +1141,8 @@ async function insertRealData() {
       'Make every customer feel like the only customer: Change the customer experience with conversational AI.',
     description:
       'Solutions.AI for Customer Engagement is built for putting AI at the frontline of every interaction streamlines service, better equips agents, and enhances the overall experience with personalized, precise, and empathetic care. It helps brands quickly and responsibly use data to understand and predict customer needs and arm agents behind the screen with the right message and offers. And it improves the original product and service by analyzing and incorporating insights from customer interactions through a constant feedback loop.',
-    banner: 'https://images.unsplash.com/photo-1519558260268-cde7e03a0152?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80',
+    banner:
+      'https://images.unsplash.com/photo-1519558260268-cde7e03a0152?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80',
     serviceDescription:
       'With our range of pre-built AI modules and ecosystem of technology partners, we are able to quickly scale hyper-personalized experiences to help clients anticipate and address their customers needs.',
     //detailTitle1: 'Patented conversational AI platform',
@@ -1074,7 +1170,8 @@ async function insertRealData() {
       'Build your brand and drive demand through high-impact, creative customer experiences. Discover the transformative power of a story.',
     description:
       'We take a holistic approach that combines creative, content, data and technological expertise to translate brand vision and business goals into customer engagement strategies and business results. With our help, you wll delight your customers with relevant, elegant, and intuitive experiences. Our insights into audiences and markets help us create effective brand strategies that drive real engagement for every customer across every channel.',
-    banner: 'https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=993&q=80',
+    banner:
+      'https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=993&q=80',
     serviceDescription:
       'What does it mean to build a brand? We take it from the ground up—from strategy and content to activation.',
     //detailTitle1: 'Intent discovery and analytics',
@@ -1117,6 +1214,7 @@ async function insertRealData() {
   })
   await Security.addCasestudy(OnlineFraudDetection.id)
   await ManagedSecurity.addCasestudy(OnlineFraudDetection.id)
+  await ModernFraudProtection.addCasestudy(OnlineFraudDetection.id)
 
   const cs1 = await CaseStudy.create({
     title: 'Network protection for worldwide companies',
@@ -1130,10 +1228,11 @@ async function insertRealData() {
     solutionTitle: 'Implented system',
     solutionDescription:
       'To develop a syestem as transparent as possible our team implemented a network protection layer that features AI capabilities to detect undesired connections',
-    createdData: 'March 22, 2021',  
+    createdData: 'March 22, 2021',
   })
   await Security.addCasestudy(cs1.id)
   await ModernFraudProtection.addCasestudy(cs1.id)
+  await NetworkProtection.addCasestudy(cs1.id)
 
   const cs2 = await CaseStudy.create({
     title: 'Company access with secure credentials',
@@ -1152,42 +1251,47 @@ async function insertRealData() {
   })
   await Security.addCasestudy(cs2.id)
   await NetworkProtection.addCasestudy(cs2.id)
+  await IdentityAccessManagement.addCasestudy(cs2.id)
 
   const cs3 = await CaseStudy.create({
-    title: 'Network protection for worldwide companies',
+    title: 'Factoring data migration from Raiffeisen to BNP',
     subTitle: 'A secure connection',
     banner:
       'https://www.creativemotions.it/wp-content/uploads/2020/06/Il-segreto-per-scrivere-un-case-study-che-converte.png',
     descriptiveText:
-      'The Customer commissioned HexTech to rewrite the software – a Java application used by the healthcare centers for management and reporting of data on medication inventory, clinical services, patient data, marketing activities and others. Within the project, the Customer also wanted the tool to allow its users to enable quality population health analytics with prompt reports.',
-    challengeTitle: 'BI IMPLEMENTATION',
+      'In 2019, HexTech was selected as a provider of data migration services from a factoring platform used by Raiffeisen to another platform working at BNP Paribas. The amount of data to be migrated was so substantial that it nearly doubled the business volume of BNP in Poland.',
+    challengeTitle:
+      'We had to find a workaround tool which converted the available data into files and then processed them for migration purposes.',
     challengeDescription:
-      'The Customer commissioned HexTech to rewrite the software – a Java application used by the healthcare centers for management and reporting of data on medication inventory, clinical services, patient data, marketing activities and others. Within the project, the Customer also wanted the tool to allow its users to enable quality population health analytics with prompt reports.',
+      'After few months of preparation, we have developed and deployed a multi-threaded migration tool, which was ready to run over a weekend. The new BNP-Raiffeisen entity became second largest in the country  in terms of factoring turnover after only 1 quarter.',
     solutionTitle: 'Implented system',
     solutionDescription:
-      '"To ensure scalability and short query response time, HexTech’s BI implementation team built an analytical Microsoft SQL Server data warehouse which would use a Transact-SQL script to load data from the relational database. The latter was consolidated from 200 databases during the application development process and totaled 12GB."',
+      'We have identified various discrepancies and workarounds in the ex Raiffeisen’s platform, which had to be taken into account to avoid shaking up BNP’s operations and preventing customer churn. For this purpose, we came up with a mechanism which detected potentially erroneous data. ',
     createdData: 'January 2, 2021',
   })
   await Security.addCasestudy(cs3.id)
   await DataSecurity.addCasestudy(cs3.id)
+  await NetworkProtection.addCasestudy(cs3.id)
 
   const cs4 = await CaseStudy.create({
-    title: 'Network protection for worldwide companies',
+    title: 'Implementation of HexTech Loyalty Management at Livelo',
     subTitle: 'A secure connection',
     banner:
       'https://www.creativemotions.it/wp-content/uploads/2020/06/Il-segreto-per-scrivere-un-case-study-che-converte.png',
     descriptiveText:
-      'The Customer commissioned HexTech to rewrite the software – a Java application used by the healthcare centers for management and reporting of data on medication inventory, clinical services, patient data, marketing activities and others. Within the project, the Customer also wanted the tool to allow its users to enable quality population health analytics with prompt reports.',
-    challengeTitle: 'BI IMPLEMENTATION',
+      'One of the main challenges for customer-oriented enterprises is to create a strong bond between customers and the brand.',
+    challengeTitle:
+      'work integrated with Agile method and selected vendor of Livelo’s blueprint systems',
     challengeDescription:
-      'The Customer commissioned HexTech to rewrite the software – a Java application used by the healthcare centers for management and reporting of data on medication inventory, clinical services, patient data, marketing activities and others. Within the project, the Customer also wanted the tool to allow its users to enable quality population health analytics with prompt reports.',
+      'Livelo was looking for an innovative IT platform that would help the company in becoming the most dynamic redemption option and leading coalition in Brazil. The goal was to manage all aspects of their members´transactions and profile information, as well as the complex billing with accrual and redemption partners.',
     solutionTitle: 'Implented system',
     solutionDescription:
-      '"To ensure scalability and short query response time, HexTech’s BI implementation team built an analytical Microsoft SQL Server data warehouse which would use a Transact-SQL script to load data from the relational database. The latter was consolidated from 200 databases during the application development process and totaled 12GB."',
+      'The project was started in November 2014. Thanks to the strong cooperation and flexibility of HexTech project team, the implementation went as Livelo expected and finished according to schedule. Project was finished within nine months. HexTech ensured integration with existing client systems including: campaign management system (IBM UNIQA), e-commerce (ORACLE ATG), third-party Mobile App, SAP Finance, Livelo Taxa Online, Fast Shop S.A. The HexTech team also migrated over 16 million customer accounts. HexTech provided on-site support and maintenance services, dedicated program manager and on-site trainings.',
     createdData: 'December 2, 2020',
   })
   await Security.addCasestudy(cs4.id)
   await IdentityAccessManagement.addCasestudy(cs4.id)
+  await ManagedSecurity.addCasestudy(cs4.id)
 
   //**END OF SECURITY CASE STUDIES */
 
@@ -1406,7 +1510,8 @@ async function insertRealData() {
     title: 'Reimagining guest experiences on the high seas',
     subTitle:
       'Carnival Corporation connects high-touch technology and the human touch to create hyper-relevant experiences for thousands of guests at a time.',
-    banner: 'https://images.unsplash.com/photo-1558923240-2672e219374b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1867&q=80',
+    banner:
+      'https://images.unsplash.com/photo-1558923240-2672e219374b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1867&q=80',
     descriptiveText:
       'Carnival Corp.’s CEO Arnold Donald has dubbed today “the golden age of cruising.” With growth in guest numbers, fleet sizes, ticket prices and a sea of new competitors, the description certainly fits. However, as dynamic as the industry is, the cruise travel category remains under penetrated. The company’s leadership knew to expand the market for cruise vacations, the cruise model itself had to change. The focus needed to go beyond building and marketing new ships to leveraging the company’s scale to create a new and sustainable competitive advantage. With the world’s largest fleet spanning nine distinct brands, Carnival Corp. envisioned a new model that elevated guest experience enablement above the physical ship platform. ',
     challengeTitle:
@@ -1423,11 +1528,11 @@ async function insertRealData() {
 
   //2
   const ceC2 = await CaseStudy.create({
-    title:
-      'Finding the perfect blend for the digital customer experience',
+    title: 'Finding the perfect blend for the digital customer experience',
     subTitle:
       'illycaffè, the premium Italian coffee brand, offers a unique taste and aroma that’s recognized by coffee lovers around the world, the company sells its products and services to consumers and trade customers in 140 different countries.',
-    banner: 'https://images.unsplash.com/photo-1442512595331-e89e73853f31?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80',
+    banner:
+      'https://images.unsplash.com/photo-1442512595331-e89e73853f31?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80',
     descriptiveText:
       'Our data-driven, comprehensive and consistent social media strategy is optimizing the creative effort, ensuring premium content with that unique “illycaffè” blend reaches the right audience at the right time on the right channel. Social media activities have increased engagement and reach by 15 percent.',
     challengeTitle: 'Our challenge - Business approach reimagination',
@@ -1446,7 +1551,8 @@ async function insertRealData() {
     title: 'A data-driven recipe for delighting customers',
     subTitle:
       'Reinventing experiences: Subway CDO on personalization. Delivering meaningful insights that are helping them delight customers every day.',
-    banner: 'https://images.unsplash.com/photo-1604908554025-e477d54e85e0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2389&q=80',
+    banner:
+      'https://images.unsplash.com/photo-1604908554025-e477d54e85e0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2389&q=80',
     descriptiveText:
       'For today’s fast-food consumers, mobile and online ordering are must-haves. But delivering them effectively can be a tall order even for hugely successful brands. As part of a broader digital transformation, we helped Subway® restaurants make sure all their customer touchpoints were hitting the mark by creating a new data-driven experience optimization operating model.',
     challengeTitle:
@@ -1466,7 +1572,8 @@ async function insertRealData() {
     title: 'Bouquet of innovation, personalization and service',
     subTitle:
       'A digital platform with exceptional, personalized customer experience so business continues to bloom.',
-    banner: 'https://images.unsplash.com/photo-1459662784036-fb86bbf1104f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80',
+    banner:
+      'https://images.unsplash.com/photo-1459662784036-fb86bbf1104f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80',
     descriptiveText:
       'Webshops, much like floral arrangements, can be delicate: one faulty order or misplaced orchid is all it takes to keep a customer from returning. So, when an opportunity sprouted up for Dutch Flowers to fortify their online channel’s technical capabilities, they acted quickly.',
     challengeTitle:
@@ -1486,12 +1593,12 @@ async function insertRealData() {
     title: 'Building the in-store experience that everyone desires',
     subTitle:
       'How to provide a custom and tailored experience each time a customer walks into their store.',
-    banner:'https://images.unsplash.com/photo-1515165244752-2465b61f0441?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1889&q=80',
+    banner:
+      'https://images.unsplash.com/photo-1515165244752-2465b61f0441?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1889&q=80',
     descriptiveText:
       'If you have ever wondered what’s behind the happy customers and packed stores it’s several factors including a focus on personalization, innovation and a loyalty program that is so good that it has 25 million members. All of these factors and several more make LoveMakeup one of the most successful beauty retailers in the world.',
-    challengeTitle:
-      'Our challenge - Every customer has to be unique',
-    challengeDescription: 
+    challengeTitle: 'Our challenge - Every customer has to be unique',
+    challengeDescription:
       'The beauty industry as a whole faces a multitude of problems mainly around transparency, accuracy and trust of products. For these reasons, online shopping poses key challenges in purchasing beauty products while retail stores pose their own challenge in having the capabilities and manpower to assist every customer in finding the right products.',
     solutionTitle:
       'The solution we provided - Personalization at the next level',
@@ -1501,21 +1608,26 @@ async function insertRealData() {
   })
   await CustomerExperience.addCasestudy(ceC5.id)
 
-  //6  
+  //6
   const ceC6 = await CaseStudy.create({
     title: 'A magical experience deserves a magical app',
-    subTitle: 'A personalized experience comes from valuing each customer and taking the time to make their visit amazing.',
-    banner: 'https://images.unsplash.com/photo-1534450539339-6d1c81ad18e2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1019&q=80',
-    descriptiveText: 'Guests of all ages can appreciate Disney’s magical approach to customer experience. Disney provides lessons for brands in all industries on creating unique, detailed experiences that will stick with customers for a lifetime. We helped a brand excellence to improve their local customer service',
+    subTitle:
+      'A personalized experience comes from valuing each customer and taking the time to make their visit amazing.',
+    banner:
+      'https://images.unsplash.com/photo-1534450539339-6d1c81ad18e2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1019&q=80',
+    descriptiveText:
+      'Guests of all ages can appreciate Disney’s magical approach to customer experience. Disney provides lessons for brands in all industries on creating unique, detailed experiences that will stick with customers for a lifetime. We helped a brand excellence to improve their local customer service',
     challengeTitle: 'Our challenge - Provide an experience organizer',
-    challengeDescription: 'Mobile devices continually redefine how people communicate and organizations must have a mobile-first mindset to retain their share of market. More than half of online traffic now comes from smartphones and tablets and that number is continuing to rise. Organizations must have a mobile-first mindset and continually think about the human on the other side of the screen.',
+    challengeDescription:
+      'Mobile devices continually redefine how people communicate and organizations must have a mobile-first mindset to retain their share of market. More than half of online traffic now comes from smartphones and tablets and that number is continuing to rise. Organizations must have a mobile-first mindset and continually think about the human on the other side of the screen.',
     solutionTitle: 'The solution we provided - The ultimate planning app',
-    solutionDescription: 'The app we designed for Disney contains most of the information on the website but it’s not just the website shoved into app-form. It’s laid out well and even has GPS-enabled walking directions between attractions. I can easily find park hours, showtimes, wait times for rides, and order food so you don’t need to wait in line anymore. All of the tickets, dining reservations, and photos are in the app, along with a personalized schedule that I can create to make sure I don’t miss the biggest rides and attractions.',
+    solutionDescription:
+      'The app we designed for Disney contains most of the information on the website but it’s not just the website shoved into app-form. It’s laid out well and even has GPS-enabled walking directions between attractions. I can easily find park hours, showtimes, wait times for rides, and order food so you don’t need to wait in line anymore. All of the tickets, dining reservations, and photos are in the app, along with a personalized schedule that I can create to make sure I don’t miss the biggest rides and attractions.',
     createdData: 'July 17, 2020',
   })
   await CustomerExperience.addCasestudy(ceC6.id)
 
-  //7  
+  //7
   const ceC7 = await CaseStudy.create({
     title: 'Bringing clothing to life directly in-store',
     subTitle: 'How Zara is now leading the mid-market tech fashion pack.',
@@ -1529,30 +1641,42 @@ async function insertRealData() {
   })
   await CustomerExperience.addCasestudy(ceC7.id)
 
-   //8  
-   const ceC8 = await CaseStudy.create({
+  //8
+  const ceC8 = await CaseStudy.create({
     title: 'A smooth checkout-free shop',
-    subTitle: 'Reimagine the In-store Customer Experience with Frictionless Shopping.',
-    banner: 'https://images.unsplash.com/photo-1590599145008-e4ec48682067?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80',
-    descriptiveText: 'Innovative retailers realize they need to create smart stores to enhance their customer experiences.  Recent advances in point-of-sale technologies are making it possible for retailers to reimagine the shopper in-store journey. With new retail technologies, long retail checkout lines and other in-store bottlenecks could soon be a thing of the past.',
-    challengeTitle: 'Our challenge - Realizing a bridge between offline and online shopping',
-    challengeDescription: 'We want to create a whole new shopping style with some characteristics. When you shop at one of these stores, you never have to wait in line. The store works with an Amazon Go app for iOS or Android: You enter, take the products you want and, thanks to the app, just leave again. The app is linked to your Amazon account for billing. Our goal is making the customer feeling fascinated by picking things up and putting them back, just like from your own cupboard.',
-    solutionTitle: 'The solution we provided - The ultimate frictionless shopping experience',
-    solutionDescription: 'We developed a unique system that allows to enter the store with the Amazon Go app open on your phone, fill your shopping bags with whatever you want, and then leave the store. Amazon Go stores use cameras and sensors to know what’s been taken off the shelves, so items can be charged to your credit card, which is stored in the Amazon Go app. No cashiers, no long lines, no paper receipts. Amazon Go showcases the convergence of technology and traditional retail shopping in a convenience store format.',
+    subTitle:
+      'Reimagine the In-store Customer Experience with Frictionless Shopping.',
+    banner:
+      'https://images.unsplash.com/photo-1590599145008-e4ec48682067?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80',
+    descriptiveText:
+      'Innovative retailers realize they need to create smart stores to enhance their customer experiences.  Recent advances in point-of-sale technologies are making it possible for retailers to reimagine the shopper in-store journey. With new retail technologies, long retail checkout lines and other in-store bottlenecks could soon be a thing of the past.',
+    challengeTitle:
+      'Our challenge - Realizing a bridge between offline and online shopping',
+    challengeDescription:
+      'We want to create a whole new shopping style with some characteristics. When you shop at one of these stores, you never have to wait in line. The store works with an Amazon Go app for iOS or Android: You enter, take the products you want and, thanks to the app, just leave again. The app is linked to your Amazon account for billing. Our goal is making the customer feeling fascinated by picking things up and putting them back, just like from your own cupboard.',
+    solutionTitle:
+      'The solution we provided - The ultimate frictionless shopping experience',
+    solutionDescription:
+      'We developed a unique system that allows to enter the store with the Amazon Go app open on your phone, fill your shopping bags with whatever you want, and then leave the store. Amazon Go stores use cameras and sensors to know what’s been taken off the shelves, so items can be charged to your credit card, which is stored in the Amazon Go app. No cashiers, no long lines, no paper receipts. Amazon Go showcases the convergence of technology and traditional retail shopping in a convenience store format.',
     createdData: 'March 27, 2019',
   })
   await CustomerExperience.addCasestudy(ceC8.id)
 
-   //9  
-   const ceC9 = await CaseStudy.create({
+  //9
+  const ceC9 = await CaseStudy.create({
     title: 'Delivering value to customer Service',
     subTitle: 'Increase the brand-loyality of the number one coffee company.',
-    banner: 'https://images.unsplash.com/photo-1570526427067-b456f83a4de4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80',
-    descriptiveText: 'Starbucks is a major specialty-coffee brand in the North. Recent market research has indicated that the service level of the company is currently not meeting the expectations of customers. Thus, the company is discussing a plan to increase customer satisfaction by increasing the amount of labor in each coffee store and, as a consequence, increase the speed-of-service.',
+    banner:
+      'https://images.unsplash.com/photo-1570526427067-b456f83a4de4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80',
+    descriptiveText:
+      'Starbucks is a major specialty-coffee brand in the North. Recent market research has indicated that the service level of the company is currently not meeting the expectations of customers. Thus, the company is discussing a plan to increase customer satisfaction by increasing the amount of labor in each coffee store and, as a consequence, increase the speed-of-service.',
     challengeTitle: 'Our challenge - Increase loyalty',
-    challengeDescription: 'One of the core issues the company is facing is that its services are not meeting customer expectations. It is mainly due to changes in target customers, decreasing age and income groups, and customer’s poor perception of the company.',
-    solutionTitle: 'The solution we provided - Leveraging technological and experiential methods',
-    solutionDescription: 'We wanted to start from store design, or brand localization. This is just one of the creative ways Starbucks can connects with its customers, integrating local aesthetics into each of its stores. The company’s design studios are strategically located so that designers can better understand their communities. Furthermore, we developed the "tech-side", creating an Amazon Alexa platform and the My Starbucks Barista chatbot debuted, letting users order their favorite coffees using simple voice commands.',
+    challengeDescription:
+      'One of the core issues the company is facing is that its services are not meeting customer expectations. It is mainly due to changes in target customers, decreasing age and income groups, and customer’s poor perception of the company.',
+    solutionTitle:
+      'The solution we provided - Leveraging technological and experiential methods',
+    solutionDescription:
+      'We wanted to start from store design, or brand localization. This is just one of the creative ways Starbucks can connects with its customers, integrating local aesthetics into each of its stores. The company’s design studios are strategically located so that designers can better understand their communities. Furthermore, we developed the "tech-side", creating an Amazon Alexa platform and the My Starbucks Barista chatbot debuted, letting users order their favorite coffees using simple voice commands.',
     createdData: 'January 17, 2019',
   })
   await CustomerExperience.addCasestudy(ceC9.id)
@@ -1724,7 +1848,7 @@ async function insertRealData() {
       'In order to provide a continuous and efficient technical control and thus increased security of constructions and complex engineering objects, the Customer decided to develop a smart construction monitoring system for collecting and processing data through sensors installed on the key elements of a building. The solution was designed to automate regular data collection and processing.',
     solutionTitle: 'Procesing and calculations on sensor data',
     solutionDescription:
-    'HexTech development team designed and developed a smart solution to collect sensor data and aggregate it on a central server for processing and further calculations of a building’s state. Data processing and averaging make it possible to boost system performance and reduce data volumes. The user-friendly interface presents the data from connected through intuitive color coding – the green, yellow and red lights indicate the state of a building. Additionally, the system allows a flexible configuration of threshold values to regulate the transition from one status to another. To aggregate the data – suppose, for calculating a construction deformation, ScienceSoft developed a system of virtual sensors collecting information from several physical sensors. It allows users to monitor specific parameters which can be used only in the aggregate.',
+      'HexTech development team designed and developed a smart solution to collect sensor data and aggregate it on a central server for processing and further calculations of a building’s state. Data processing and averaging make it possible to boost system performance and reduce data volumes. The user-friendly interface presents the data from connected through intuitive color coding – the green, yellow and red lights indicate the state of a building. Additionally, the system allows a flexible configuration of threshold values to regulate the transition from one status to another. To aggregate the data – suppose, for calculating a construction deformation, ScienceSoft developed a system of virtual sensors collecting information from several physical sensors. It allows users to monitor specific parameters which can be used only in the aggregate.',
     createdData: 'November 5, 2018',
   })
   await IoT.addCasestudy(iotC9.id)
@@ -1741,7 +1865,8 @@ async function insertRealData() {
     challengeDescription:
       'The Customer wanted to deliver a sophisticated remote patient monitoring solution for clinics of North America. The solution should help to improve medical staff performance, avoid routine visits, and increase the quality of care. For that reason, the Customer needed a team of savvy professionals in R&D and healthcare IT.',
     solutionTitle: 'App and Web Dashboard',
-    solutionDescription: 'The developers reviewed and analyzed available approaches and frameworks and picked WebRTC technology as the best one for platform-independent voice and video communication. Several Android-powered hardware devices were selected to implement central communication module or Sensor Network Appliances (SNAs). The development process was split into 2 major parts: the development of apps for Android and iOS devices and Web dashboard implementation. \n 1) HexTech’s team delivered apps for both patients and medical staff. Gradle flavors were used to build the apps’ variations fully compatible with different screen sizes: wide screen (for doctors), tablet (for nurses) and smartphone (for healthcare services consumers). Patients could smoothly access numerous sensors in order to monitor data and synchronize it with the server. Medical staff members could diagnose and treat patient remotely and receive automated alerts and notifications, when, for example patient state suddenly changes. \n 2) A Web Dashboard assisted medical professionals in monitoring the overall status of patients drilling down on personal medical data. It sent alerts on poor health indicators and maintains the doctor-patient connection. The central communication module was built upon a TV-connected Android-powered device. ',
+    solutionDescription:
+      'The developers reviewed and analyzed available approaches and frameworks and picked WebRTC technology as the best one for platform-independent voice and video communication. Several Android-powered hardware devices were selected to implement central communication module or Sensor Network Appliances (SNAs). The development process was split into 2 major parts: the development of apps for Android and iOS devices and Web dashboard implementation. \n 1) HexTech’s team delivered apps for both patients and medical staff. Gradle flavors were used to build the apps’ variations fully compatible with different screen sizes: wide screen (for doctors), tablet (for nurses) and smartphone (for healthcare services consumers). Patients could smoothly access numerous sensors in order to monitor data and synchronize it with the server. Medical staff members could diagnose and treat patient remotely and receive automated alerts and notifications, when, for example patient state suddenly changes. \n 2) A Web Dashboard assisted medical professionals in monitoring the overall status of patients drilling down on personal medical data. It sent alerts on poor health indicators and maintains the doctor-patient connection. The central communication module was built upon a TV-connected Android-powered device. ',
     createdData: 'June 17, 2018',
   })
   await IoT.addCasestudy(iotC10.id)
@@ -1791,40 +1916,92 @@ async function insertRealData() {
   //**SECURITY TEAM MEMBER */
   const person1 = await TeamMember.create({
     occupation: 'Lead security',
-    teamsTitle: 'IoT Department',
+    teamsTitle: 'Security Department',
     personName: 'Alex Yasol',
     personPhoto:
-      'https://image.freepik.com/free-photo/funny-man-looking-camera_23-2147799042.jpg',
+      'https://media.gettyimages.com/photos/portrait-of-smiling-young-man-wearing-eyeglasses-picture-id985138634?k=6&m=985138634&s=612x612&w=0&h=6i0LAXpNR_tcBc7VQ1ahbOoV1TKN-vbp1yPpW3s0cLw=',
   })
 
   const person2 = await TeamMember.create({
     occupation: 'Lead security',
-    teamsTitle: 'IoT Department',
+    teamsTitle: 'Security Department',
     personName: 'Luke Cobezzo',
     personPhoto:
-      'https://img.freepik.com/free-photo/portrait-white-man-isolated_53876-40306.jpg?size=626&ext=jpg',
+      'https://media.gettyimages.com/photos/portrait-of-smiling-bald-businessman-in-pink-shirt-picture-id1179627287?k=6&m=1179627287&s=612x612&w=0&h=v26UaTH8SCanGtFTz3sO2osCiDpyplI7zG_W-WVHmgc=',
   })
 
   const person3 = await TeamMember.create({
-    occupation: 'Rori Duboff - Security Engineer',
+    occupation: 'Security Engineer',
     teamsTitle: 'Security Departement',
     personName: 'Rori Duboff',
     personPhoto:
-      'https://healthix.org/wp-content/uploads/2019/05/Todd-Rogow-High-Resolution-717x1024.jpg',
-    })
+      'https://media.gettyimages.com/photos/mature-businessman-smiling-over-white-background-picture-id685132245?k=6&m=685132245&s=612x612&w=0&h=KO9YNXHtaYV4NGqoGQcTd5Aq8zD0Dl06knQQGP0BrwM=',
+  })
 
   const person4 = await TeamMember.create({
-    occupation: 'John Molton - Security Engineer',
-    teamsTitle: 'Security Departement',
+    occupation: 'Security Engineer',
+    teamsTitle: 'Network Security Departement',
     personName: 'John Molton',
     personPhoto:
-      'https://t3.ftcdn.net/jpg/02/22/85/16/360_F_222851624_jfoMGbJxwRi5AWGdPgXKSABMnzCQo9RN.jpg',
-   })
+      'https://media.gettyimages.com/photos/portrait-of-mature-man-smiling-against-white-picture-id1092658940?k=6&m=1092658940&s=612x612&w=0&h=SBXVcqfIk1JzidfgMgS3dzVZwc9OX0H8jApYHnFVhNc=',
+  })
 
+  const person5 = await TeamMember.create({
+    occupation: 'Lead security',
+    teamsTitle: 'Communications Department',
+    personName: 'Albert Gituff',
+    personPhoto:
+      'https://media.gettyimages.com/photos/portrait-of-senior-businessman-wearing-shirt-picture-id1250238643?k=6&m=1250238643&s=612x612&w=0&h=ja0b_WcisaXXqDfHmKCGw-YBU55ZKHRwkuLujwMEPLI=',
+  })
+  const person6 = await TeamMember.create({
+    occupation: 'Network security Engineer',
+    teamsTitle: 'Communications Department',
+    personName: 'Tina Niere',
+    personPhoto:
+      'https://media.gettyimages.com/photos/confident-mature-businesswoman-on-white-background-picture-id1132314350?k=6&m=1132314350&s=612x612&w=0&h=WwPaInvvkxiIEHCBPTsSaWZRtc-ZT2lc-8conkFaQtk=',
+  })
+  const person7 = await TeamMember.create({
+    occupation: 'Network security Engineer',
+    teamsTitle: 'Anti Fraud Department',
+    personName: 'Samuel Corsly',
+    personPhoto:
+      'https://media.gettyimages.com/photos/portrait-of-senior-businessman-smiling-picture-id985138660?k=6&m=985138660&s=612x612&w=0&h=xpSNW4A8wTwNE4yYLLX7BQnV_YYy_fV5kiE6cjpY43A=',
+  })
+  const person8 = await TeamMember.create({
+    occupation: 'Lead security',
+    teamsTitle: 'Anti Fraud Department',
+    personName: 'Daniel Ferton',
+    personPhoto:
+      'https://media.gettyimages.com/photos/closeup-smiling-male-leader-wearing-eyeglasses-picture-id1179627340?k=6&m=1179627340&s=612x612&w=0&h=GTRsydUj5lqB7q3EFvgKHJJS9K2vjjnW_F1jYq7SddU=',
+  })
   Security.addTeammember(person1)
   Security.addTeammember(person2)
   Security.addTeammember(person3)
   Security.addTeammember(person4)
+  Security.addTeammember(person5)
+  Security.addTeammember(person6)
+  Security.addTeammember(person7)
+  Security.addTeammember(person8)
+
+  OnlineFraudDetection.addTeammember(person8)
+  OnlineFraudDetection.addTeammember(person7)
+  OnlineFraudDetection.addTeammember(person6)
+
+  cs1.addTeammember(person6)
+  cs1.addTeammember(person4)
+  cs1.addTeammember(person1)
+
+  cs2.addTeammember(person2)
+  cs2.addTeammember(person3)
+  cs2.addTeammember(person1)
+
+  cs3.addTeammember(person5)
+  cs3.addTeammember(person2)
+  cs3.addTeammember(person8)
+
+  cs4.addTeammember(person2)
+  cs4.addTeammember(person4)
+  cs4.addTeammember(person5)
   /** END OF SECURITY TEAM MEMBER */
 
   //**IOT TEAM MEMBER */
@@ -1944,8 +2121,7 @@ async function insertRealData() {
   //**BiG DATA ANALYTICS TEAM MEMBER */
 
   const bdaP1 = await TeamMember.create({
-    occupation:
-      'Chief Executive Officer of Analytics',
+    occupation: 'Chief Executive Officer of Analytics',
     teamsTitle: 'Analytics Departement',
     personName: 'Haru Nayaki',
     personPhoto:
@@ -1984,7 +2160,7 @@ async function insertRealData() {
     personName: 'Francesca Rizzo',
     personPhoto:
       'https://media.gettyimages.com/photos/confident-mature-businesswoman-on-white-background-picture-id1132314350?s=612x612',
- })
+  })
   BigDataAnalysis.addTeammember(bdaP4)
   bdaC6.addTeammember(bdaP4)
   bdaC3.addTeammember(bdaP4)
@@ -2005,7 +2181,7 @@ async function insertRealData() {
     personName: 'Nina Morkov',
     personPhoto:
       'https://media.istockphoto.com/photos/young-longhaired-smiling-woman-in-white-shirt-picture-id965523228?k=6&m=965523228&s=612x612&w=0&h=qeVmQfjRq1QWxaLdxLdF_IaXahI-dqt9UYcunaHUqA4=',
- })
+  })
   BigDataAnalysis.addTeammember(bdaP6)
   bdaC2.addTeammember(bdaP6)
   bdaC5.addTeammember(bdaP6)
@@ -2038,43 +2214,37 @@ async function insertRealData() {
   const CocaCola = await Partner.create({
     name: 'CocaCola',
     description: 'Taste the feeling',
-    image:
-      'https://i.ibb.co/SBqydD8/coca-cola.png',
+    image: 'https://i.ibb.co/SBqydD8/coca-cola.png',
     website: 'https://www.coca-cola.com/',
   })
   const Figma = await Partner.create({
     name: 'Figma',
     description: 'The collaborative interface design tool',
-    image:
-      'https://i.ibb.co/W25yZ0m/figma.png',
+    image: 'https://i.ibb.co/W25yZ0m/figma.png',
     website: 'https://www.figma.com/',
   })
   const Adobe = await Partner.create({
     name: 'Adobe',
     description: 'Creativity for everyone',
-    image:
-      'https://i.ibb.co/sw4Rx4M/adobe.png',
+    image: 'https://i.ibb.co/sw4Rx4M/adobe.png',
     website: 'https://www.adobe.com/',
   })
   const Sketch = await Partner.create({
     name: 'Sketch',
     description: 'It all starts here',
-    image:
-      'https://i.ibb.co/QdHXCx7/sketch-01.png',
+    image: 'https://i.ibb.co/QdHXCx7/sketch-01.png',
     website: 'https://www.sketch.com/',
   })
   const Arduino = await Partner.create({
     name: 'Arduino',
     description: 'So easy, my granny can use it',
-    image:
-      'https://i.ibb.co/KDcLxdy/arduino.png',
+    image: 'https://i.ibb.co/KDcLxdy/arduino.png',
     website: 'https://www.arduino.cc/',
   })
   const GoogleCloud = await Partner.create({
     name: 'Google Cloud',
     description: 'Cloud Computing Services',
-    image:
-      'https://i.ibb.co/SsctBTT/cloud.png',
+    image: 'https://i.ibb.co/SsctBTT/cloud.png',
     website: 'https://cloud.google.com/',
   })
 }
