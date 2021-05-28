@@ -1121,6 +1121,9 @@ export default {
   .single-area-section {
     width: 100%;
   }
+  .single-area-section:last-child > .show-only-tablet-mobile {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 768px) {

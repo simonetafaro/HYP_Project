@@ -335,6 +335,10 @@ export default {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 44px;
   }
+  .service-grid {
+    margin-right: 58px;
+    margin-left: 58px;
+  }
   .area-subtitle {
     font-size: 20px;
     line-height: 24px;
@@ -432,6 +436,10 @@ export default {
     grid-gap: 13px;
   }
 
+  .service-grid {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
   .mobile-show {
     display: block;
   }
@@ -449,6 +457,25 @@ export default {
   .mobile-show > .full-width-row {
     padding-top: 45px;
     padding-bottom: 45px;
+  }
+}
+</style>
+
+<style>
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  .service-left {
+    margin-right: 12px !important;
+  }
+  .service-right {
+    margin-left: 12px !important;
+  }
+  .service_card {
+    max-width: 350px !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .service_card {
+    max-width: 270px !important;
   }
 }
 </style>

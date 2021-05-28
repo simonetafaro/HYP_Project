@@ -33,6 +33,14 @@ export default {
     description: { type: String, default: () => '' },
     area: { type: String, default: () => '' },
     path: { type: Number, default: () => 0 },
+    caseIndex: { type: Number, default: () => 0 },
+  },
+  methods: {
+    clickOnCardOnlyTabletAndMobile(path) {
+      if (window.innerWidth < 1200) {
+        return this.goTo('/casestudy/' + path)
+      }
+    },
   },
 }
 </script>
@@ -42,7 +50,6 @@ export default {
   position: relative;
   border: 2px solid #cdc9ff; /* manca il colore nella palette*/
   border-radius: 30px;
-  width: 100%;
   min-height: 350px;
   text-align: left;
   width: 350px;
@@ -96,7 +103,7 @@ export default {
   font-size: 16px;
   text-transform: uppercase;
   color: var(--cc-base1);
-  bottom: 30px;
+  bottom: 20px;
   text-align: left;
   border: none;
   background: none;
@@ -112,6 +119,11 @@ export default {
 }
 
 @media screen and (max-width: 1200px) {
+  .casestudycontainer {
+    width: 300px;
+    min-height: 300px;
+    cursor: pointer;
+  }
   .case-button {
     display: none;
   }
@@ -121,8 +133,8 @@ export default {
 }
 @media screen and (max-width: 768px) {
   .casestudycontainer {
-    width: 80%;
-
+    width: 150px;
+    min-height: 150px;
     cursor: pointer;
   }
   .case-button {
@@ -142,10 +154,11 @@ export default {
     padding: 13px;
   }
   .casestudydescription {
-    display: none;
+    font-size: 12px;
+    line-height: 14px;
   }
   .case-info {
-    max-height: 83%;
+    max-height: 80%;
   }
 }
 </style>

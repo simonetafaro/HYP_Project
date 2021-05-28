@@ -238,7 +238,7 @@ async function insertRealData() {
     title: 'Cloud Computing',
     subTitle: 'Modernize your IT environment and improve business efficiency',
     description:
-      'Having been a major driving force of the ongoing digital revolution, the Cloud has completely changed the way enterprises run their operations - from IT infrastructure management, through financial administration, to data exchange. At ??COMPANY NAME??, we can move your existing IT environment to the Cloud, as well as provide a wide range of cloud-driven applications to help your company gain a competitive advantage. Scroll through this space to learn more.',
+      'Having been a major driving force of the ongoing digital revolution, the Cloud has completely changed the way enterprises run their operations - from IT infrastructure management, through financial administration, to data exchange. At HexTech, we can move your existing IT environment to the Cloud, as well as provide a wide range of cloud-driven applications to help your company gain a competitive advantage. Scroll through this space to learn more.',
     banner: 'https://i.ibb.co/crjyD7n/Frame-7.png',
     evocativeImage: 'https://i.ibb.co/hf3LHBb/cloud.png',
     servicesTitle: 'Discover our Cloud Computing services ',
@@ -426,7 +426,7 @@ async function insertRealData() {
   const SmartCities = await Service.create({
     title: 'Smart Cities',
     subTitle:
-      'A smart city system gathers and analyzes data from sensors and smart devices to enable efficient management of urban processes (e.g., transportation, lighting). With 9-year experience in IoT, ??CompanyName?? designs and implements end-to-end IoT solutions to bring smart city vision to reality.',
+      'A smart city system gathers and analyzes data from sensors and smart devices to enable efficient management of urban processes (e.g., transportation, lighting). With 9-year experience in IoT, HexTech designs and implements end-to-end IoT solutions to bring smart city vision to reality.',
     description:
       'Municipalities of all sizes around the world are adopting smart city concepts based on Internet of Things (IoT) systems to optimize the efficient management of community assets, resources, operations and services. Smart cities foster service-oriented, sustainable local governance equipped to improve transportation systems, build energy-efficient infrastructure, decrease environmental pressures, maintain effective disaster response, and provide state-of-the-art security in public spaces. We work to serve each community with the appropriate smart city services and solutions according to its individual needs and unique vision.',
     banner:
@@ -501,7 +501,7 @@ async function insertRealData() {
   const Automotive = await Service.create({
     title: 'Automotive',
     subTitle:
-      '??COMPANY NAME?? IoT Connected Vehicle Insights is connected car software that integrates real-time data about drivers, vehicles and the environment to optimize the in-car experience. The dedicated cloud service streams data from vehicle sensors and uses analytics and AI to understand driver behavior. It links with other information systems in the cloud, such as weather and traffic, to add context and situational awareness.',
+      'HexTech IoT Connected Vehicle Insights is connected car software that integrates real-time data about drivers, vehicles and the environment to optimize the in-car experience. The dedicated cloud service streams data from vehicle sensors and uses analytics and AI to understand driver behavior. It links with other information systems in the cloud, such as weather and traffic, to add context and situational awareness.',
     description:
       'Cars have become one of the fastest-growing mobile device category, with every vehicle turning into a node in a much larger network and ecosystems. The ongoing (re)evolution in terms of connectivity, electric, autonomous and mobility trends is full of great opportunities to achieve new revenue streams and improve quality of life in the near future. Yet, as with all new opportunities, challenges, disruptions and risks arise.',
     banner:
@@ -657,18 +657,35 @@ async function insertRealData() {
       'Give users what they are searching just when they land on your page in order to maximize sales.',
     description:
       'In order to grow your enterprise, you need to do more than keep your existing customers happy — you need to find new business. Big data can help you find new audiences and determine which groups are more likely to buy.    ',
-    banner: 'https://landerapp.com/blog/wp-content/uploads/2018/09/1-2.png',
+    banner: 'https://i.imgur.com/1ZKpYyo.png',
     evocativePhoto: '',
     serviceTitle: '',
-    serviceDescription: '',
+    serviceDescription:
+      'We put in practise all the experience we gained during all the life of this company in order to give our clients a very good customer experience. Moreover, all our experts are very professional on the service we provide to clients.',
+    s1Name: 'Optimize SEO',
+    s1Description:
+      'Search engine optimization is the process of optimizing web pages and their content to be easily discoverable by users searching for terms relevant to your website. ',
+    s1Logo: 'https://i.ibb.co/Rczq8Pv/sol-1.png',
+    s2Name: 'Social Media Marketing',
+    s2Description:
+      'Social media marketing is a powerful way for businesses, professionals and organizations of all sizes to find and connect with repeat or potential customers / users.',
+    s2Logo: 'https://i.ibb.co/KwskLjv/sol-2.png',
+    s3Name: 'E-Commerce Marketing',
+    s3Description:
+      'For eCommerce marketing we mean a strategic planning that aims to build brand awareness, increasing the number of sales and loyal customers.',
+    s3Logo: 'https://i.ibb.co/b77D3Fm/sol-3.png',
     partnerTitle: '',
-    partnerDescription: '',
-    p1Name: '',
-    p1Logo: '',
-    p2Name: '',
-    p2Logo: '',
-    p3Name: '',
-    p3Logo: '',
+    partnerDescription:
+      'On all the case studies we worked on we had gained experience from our partners. Although some of them are very big companies, we had an equal exchange of expertise since we have really professional experts wprking on many industries.',
+    p1Name: 'Mckinsey',
+    p1Logo:
+      'https://s3-ap-southeast-1.amazonaws.com/p2swebsite/images/smeKhabar/news/IndiaCanCreateoverOne-TrillionDollarsWorthofDigitalEconomyby2025SaysMEITMcKinseyReport_1550744301446_48.jpg',
+    p2Name: 'Optimize',
+    p2Logo:
+      'https://lh3.googleusercontent.com/proxy/OtxMsmSjRgs_qllMxOpqrUYDYYF8sMgPU1oJBJp-0MxK8DA8ZEdaoZeAfeMdyi7A9Fpog4l1P8vqL1FP2PdDeUjVkA',
+    p3Name: 'Eclincher',
+    p3Logo:
+      'https://media-exp1.licdn.com/dms/image/C4E0BAQE_8uje7Spe1g/company-logo_200_200/0/1578120960890?e=2159024400&v=beta&t=0pLs4HfyleatwiUUZHOGsVSLhyOEVMuQ4qgEdUeEtWs',
     caseStudyTitle: '',
     realtedServiceTitle: '',
   })
@@ -684,15 +701,32 @@ async function insertRealData() {
       'https://images.techhive.com/images/article/2015/07/health-analytics-ts-100599204-large.jpg',
     evocativePhoto: '',
     serviceTitle: '',
-    serviceDescription: '',
+    serviceDescription:
+      'We put in practise all the experience we gained during all the life of this company in order to give our clients a very good customer experience. Moreover, all our experts are very professional on the service we provide to clients.',
+    s1Name: 'Efficiencies for operational management',
+    s1Description:
+      'Predictive analytics allows for the improvement of operational efficiency. Big data and predictive analytics are currently playing an integral part in health care. ',
+    s1Logo: 'https://i.ibb.co/Rczq8Pv/sol-1.png',
+    s2Name: 'Personal medicine',
+    s2Description:
+      'In personal medicine, predictive analytics can play a key role at the individual level and enable the use of prognostic analytics.',
+    s2Logo: 'https://i.ibb.co/KwskLjv/sol-2.png',
+    s3Name: 'Fast pace of technology and impact on care',
+    s3Description:
+      ' The term digital disruption has arisen to capture the essence of just how fast everything is changing based on new technologies. ',
+    s3Logo: 'https://i.ibb.co/b77D3Fm/sol-3.png',
     partnerTitle: '',
-    partnerDescription: '',
-    p1Name: '',
-    p1Logo: '',
-    p2Name: '',
-    p2Logo: '',
-    p3Name: '',
-    p3Logo: '',
+    partnerDescription:
+      'On all the case studies we worked on we had gained experience from our partners. Although some of them are very big companies, we had an equal exchange of expertise since we have really professional experts wprking on many industries.',
+    p1Name: 'Rock Health',
+    p1Logo:
+      'https://rockhealth.com/wp-content/uploads/2017/09/Rock-Health-Image-smaller.jpg',
+    p2Name: 'Philips',
+    p2Logo:
+      'https://www.luciamo.it/ImgGalery/Img1/Clanky/aktuality-home/Philips_a_jeho_mensi_firmy.jpg',
+    p3Name: 'Intel',
+    p3Logo:
+      'https://www.tomshw.it/images/images/2020/06/intel-logo-97706.1200x675.jpg',
     caseStudyTitle: '',
     realtedServiceTitle: '',
   })
@@ -707,15 +741,32 @@ async function insertRealData() {
       'https://image.shutterstock.com/image-photo/predictive-analytics-big-data-analysis-260nw-1348992500.jpg',
     evocativePhoto: '',
     serviceTitle: '',
-    serviceDescription: '',
+    serviceDescription:
+      'We put in practise all the experience we gained during all the life of this company in order to give our clients a very good customer experience. Moreover, all our experts are very professional on the service we provide to clients.',
+    s1Name: 'Real time prediction',
+    s1Description:
+      'A real-time prediction is a synchronous call to Amazon Machine Learning. The prediction is made when Amazon ML gets the request. ',
+    s1Logo: 'https://i.ibb.co/Rczq8Pv/sol-1.png',
+    s2Name: 'Data Science',
+    s2Description:
+      'Machine learning applications in computer vision, NLP, recommender systems, forecasting. network science, BI, and visualization.',
+    s2Logo: 'https://i.ibb.co/KwskLjv/sol-2.png',
+    s3Name: 'New Era of Data Innovation',
+    s3Description:
+      'Businesses hoard data. And often, so much of it isn’t used due to infrastructure costs and technology bottlenecks. ',
+    s3Logo: 'https://i.ibb.co/b77D3Fm/sol-3.png',
     partnerTitle: '',
-    partnerDescription: '',
-    p1Name: '',
-    p1Logo: '',
-    p2Name: '',
-    p2Logo: '',
-    p3Name: '',
-    p3Logo: '',
+    partnerDescription:
+      'On all the case studies we worked on we had gained experience from our partners. Although some of them are very big companies, we had an equal exchange of expertise since we have really professional experts wprking on many industries.',
+    p1Name: 'NetSuite',
+    p1Logo:
+      'https://www.01net.it/wp-content/uploads/sites/14/2016/07/netsuite-logo-600x180.png',
+    p2Name: 'Amazon',
+    p2Logo:
+      'https://www.fastweb.it/var/storage_feeds/CMS/articoli/17a/17aff0ceb57a46aaa79df025e78f6e64/logo%20amazon.png',
+    p3Name: 'River Logic',
+    p3Logo:
+      'https://awsmp-logos.s3.amazonaws.com/e981e56c-9504-4acd-a441-81c99483b239/9801997f62aa29e763040bf44e7b2485.png',
     caseStudyTitle: '',
     realtedServiceTitle: '',
   })
@@ -730,15 +781,32 @@ async function insertRealData() {
     banner: 'https://www.sygmatechnology.com/hubfs/shutterstock_1133982038.jpg',
     evocativePhoto: '',
     serviceTitle: '',
-    serviceDescription: '',
+    serviceDescription:
+      'We put in practise all the experience we gained during all the life of this company in order to give our clients a very good customer experience. Moreover, all our experts are very professional on the service we provide to clients.',
+    s1Name: 'Automation Expertise',
+    s1Description:
+      'Incorrect decisions through disjointed applications of expertise across the company and inefficient services come at a huge cost to your organization.    ',
+    s1Logo: 'https://i.ibb.co/Rczq8Pv/sol-1.png',
+    s2Name: 'Role in Data Preparation',
+    s2Description:
+      'Data cleaning is a fundamental operation to improve the performance of predictive analysis. As we know Big Data can be both structured and unstructured and come from different sources. ',
+    s2Logo: 'https://i.ibb.co/KwskLjv/sol-2.png',
+    s3Name: 'Data Workflow',
+    s3Description:
+      'Big Data Automation uses advanced features to better manage the flow of activities, creating a single and integrated environment that allows you to maintain a unified view of data.',
+    s3Logo: 'https://i.ibb.co/b77D3Fm/sol-3.png',
     partnerTitle: '',
-    partnerDescription: '',
-    p1Name: '',
-    p1Logo: '',
-    p2Name: '',
-    p2Logo: '',
-    p3Name: '',
-    p3Logo: '',
+    partnerDescription:
+      'On all the case studies we worked on we had gained experience from our partners. Although some of them are very big companies, we had an equal exchange of expertise since we have really professional experts wprking on many industries.',
+    p1Name: 'Reply',
+    p1Logo:
+      'https://mms.businesswire.com/media/20210415005484/it/809563/23/Reply_-_LOGO_300dpi.jpg',
+    p2Name: 'Siemens',
+    p2Logo:
+      'https://pbs.twimg.com/profile_images/1311596912706023429/aFWLoMhS.png',
+    p3Name: 'LuTech',
+    p3Logo:
+      'https://abieventi-statics-external.s3-eu-west-1.amazonaws.com/url_59edc98ae011a96693a21dec.jpg',
     caseStudyTitle: '',
     realtedServiceTitle: '',
   })
@@ -754,15 +822,31 @@ async function insertRealData() {
       'https://www.smartdatacollective.com/wp-content/uploads/2020/11/business-intelligence-future-in-coming-years.jpg',
     evocativePhoto: '',
     serviceTitle: '',
-    serviceDescription: '',
+    serviceDescription:
+      'We put in practise all the experience we gained during all the life of this company in order to give our clients a very good customer experience. Moreover, all our experts are very professional on the service we provide to clients.',
+    s1Name: 'Business intelligence consulting',
+    s1Description:
+      'While improving your existing BI solution, we identify the evident and hidden problems that hinder your BI solution’s smooth performance.',
+    s1Logo: 'https://i.ibb.co/Rczq8Pv/sol-1.png',
+    s2Name: 'Big data consulting',
+    s2Description:
+      'Our consultants conduct dedicated training sessions to help various target audiences, be it top managers or the technical team, to understand how to get value out of big data.',
+    s2Logo: 'https://i.ibb.co/KwskLjv/sol-2.png',
+    s3Name: 'Data Visualization',
+    s3Description:
+      'Data visualization services help communicate company’s data to business users using visual elements. ',
+    s3Logo: 'https://i.ibb.co/b77D3Fm/sol-3.png',
     partnerTitle: '',
-    partnerDescription: '',
-    p1Name: '',
-    p1Logo: '',
-    p2Name: '',
-    p2Logo: '',
-    p3Name: '',
-    p3Logo: '',
+    partnerDescription:
+      'On all the case studies we worked on we had gained experience from our partners. Although some of them are very big companies, we had an equal exchange of expertise since we have really professional experts wprking on many industries.',
+    p1Name: 'Microsoft',
+    p1Logo:
+      'https://lh3.googleusercontent.com/proxy/WYX7gll105oAtJPvW5B8LUnxR57mBUmNyzZQoINC7_VDOXBNx2MqJAISdf6Pwq6s1jxgWenxPGZnjPGvo6-Oc1KA7vly5i3o7TnGf00bqFak1Jf4Q1A',
+    p2Name: 'Intelligence partner',
+    p2Logo:
+      'https://www.intelligencepartner.com/wp-content/themes/intelligencepartner/img/intelligencepartner_logo.svg',
+    p3Name: 'SB Italia',
+    p3Logo: 'https://www.sbitalia.com/wp-content/uploads/2015/11/logo.png',
     caseStudyTitle: '',
     realtedServiceTitle: '',
   })
@@ -777,15 +861,31 @@ async function insertRealData() {
     banner:
       'https://associationsnow.com/wp-content/uploads/2018/12/GettyImages-940692576_hrvcc-600x360.jpg',
     serviceTitle: '',
-    serviceDescription: '',
+    serviceDescription:
+      'We put in practise all the experience we gained during all the life of this company in order to give our clients a very good customer experience. Moreover, all our experts are very professional on the service we provide to clients.',
+    s1Name: 'B2B pricing',
+    s1Description:
+      'Pricing represents the greatest opportunity for B2B companies to increase profits, especially in the short term. ',
+    s1Logo: 'https://i.ibb.co/Rczq8Pv/sol-1.png',
+    s2Name: 'Consumer Pricing',
+    s2Description:
+      'Customers can compare your price to your competitors’ without leaving the house. But internet-fueled transparency can also foster greater customer loyalty. ',
+    s2Logo: 'https://i.ibb.co/KwskLjv/sol-2.png',
+    s3Name: 'Dynamic pricing',
+    s3Description:
+      'The algorithm automatically generates a price based on data provided by the partner and learnings from similar past deals.',
+    s3Logo: 'https://i.ibb.co/b77D3Fm/sol-3.png',
     partnerTitle: '',
-    partnerDescription: '',
-    p1Name: '',
-    p1Logo: '',
-    p2Name: '',
-    p2Logo: '',
-    p3Name: '',
-    p3Logo: '',
+    partnerDescription:
+      'On all the case studies we worked on we had gained experience from our partners. Although some of them are very big companies, we had an equal exchange of expertise since we have really professional experts wprking on many industries.',
+    p1Name: 'Simon Kucker',
+    p1Logo:
+      'https://media-exp1.licdn.com/dms/image/C4E0BAQHNWjH2RvlaTA/company-logo_200_200/0/1596201887751?e=2159024400&v=beta&t=DgJhJ5fpwQgFhYZB0TMe1tU-mEwyGOxIav8W2gdixSk',
+    p2Name: 'Accenture',
+    p2Logo: 'https://www.wecanjob.it/moduli/output_immagine.php?id=5288',
+    p3Name: 'Price Fx',
+    p3Logo:
+      'https://www.pricefx.com/wp-content/uploads/2020/04/Pricefx_logo_2019_White.png',
     caseStudyTitle: '',
     realtedServiceTitle: '',
   })
@@ -804,7 +904,7 @@ async function insertRealData() {
     evocativePhoto: '',
     serviceTitle: 'E-Invoicing Service',
     serviceDescription:
-      'Companies active in many countries or worldwide need to support and process a large number of different E-Invoicing standards. With ??COMPANY NAME?? you are on the safe side. We support E-Invoicing compliance in more than 55 countries. In recent years, E-Invoicing initiatives have been started in many countries to simplify the exchange of invoicing data between companies („B2B“), and between companies and authorities („B2G“), and to increase tax revenues. The defined standards within the scope of these initiatives are already widespread. Some are already regulated by national governments.',
+      'Companies active in many countries or worldwide need to support and process a large number of different E-Invoicing standards. With HexTech you are on the safe side. We support E-Invoicing compliance in more than 55 countries. In recent years, E-Invoicing initiatives have been started in many countries to simplify the exchange of invoicing data between companies („B2B“), and between companies and authorities („B2G“), and to increase tax revenues. The defined standards within the scope of these initiatives are already widespread. Some are already regulated by national governments.',
     s1Name: 'Service Variants',
     s1Description:
       'Using industry-specific modules which include the country-specific processes, standards and features, all companies can start right away.',
@@ -864,6 +964,84 @@ async function insertRealData() {
     realtedServiceTitle: '',
   })
   await CloudComputing.addService(CloudAppDevelopServices.id)
+
+  const LiveVideoBroadcasting = await Service.create({
+    title: 'Live Video Broadcasting',
+    subTitle: 'Moving towards future always looking ahead of the technology',
+    description:
+      'Live streaming is one of the best ways to connect in a meaningful and authentic way with your community. Every day around the world, in offices, fitness studios, stadiums, houses of worship,and our own houses, moments are made. A livestream platform connects you instantly to your employees, customers, subscribers, or followers when a virtual event or series is your best option.',
+    banner:
+      'https://res.cloudinary.com/practicaldev/image/fetch/s--UpbEnajb--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://dev-to-uploads.s3.amazonaws.com/i/ah8zju0kmh6br3w69cgq.jpg',
+    evocativePhoto: '',
+    serviceTitle: '',
+    serviceDescription:
+      'We put in practise all the experience we gained during all the life of this company in order to give our clients a very good customer experience. Moreover, all our experts are very professional on the service we provide to clients.',
+    s1Name: 'Maximise quality video',
+    s1Description:
+      'We use very advanced techonology to guarantee an optimal quality. ',
+    s1Logo: 'https://i.ibb.co/Rczq8Pv/sol-1.png',
+    s2Name: 'Avoid rude content',
+    s2Description:
+      'Our developed AI recognise almost immediately contents that have to be banned.',
+    s2Logo: 'https://i.ibb.co/KwskLjv/sol-2.png',
+    s3Name: 'Minimal delay',
+    s3Description:
+      'Our conversion rate tends to be very small in order to let user be really live.',
+    s3Logo: 'https://i.ibb.co/b77D3Fm/sol-3.png',
+    partnerTitle: '',
+    partnerDescription:
+      'On all the case studies we worked on we had gained experience from our partners. Although some of them are very big companies, we had an equal exchange of expertise since we have really professional experts wprking on many industries.',
+    p1Name: 'Tencent',
+    p1Logo:
+      'https://www.thegamesmachine.it/wp-content/uploads/2020/05/tencent-logo-min.jpg',
+    p2Name: 'Twich',
+    p2Logo: 'https://www.oiesports.it/wp-content/uploads/2020/05/twitch.png',
+    p3Name: 'Netflix',
+    p3Logo:
+      'https://www.mediagol.it/wp-content/uploads/sites/27/2020/07/maxresdefault.jpg',
+    caseStudyTitle: '',
+    realtedServiceTitle: '',
+  })
+  await CloudComputing.addService(LiveVideoBroadcasting.id)
+
+  const LiveECommerce = await Service.create({
+    title: 'Live streaming E-Commerce',
+    subTitle: 'Moving towards future always looking ahead of the technology',
+    description:
+      'With live streaming you can sell products during a live stream in which the characteristics of the item for sale are recognized. This allows you to share more information, offer product demonstrations, satisfy viewers questions and respond to their reactions. It is an interactive system for both brands and stores, and for viewers who can purchase in real time, during the live broadcast. What is now fast becoming a profitable online sales channel for many luxury brands, actually originated in China as a form of entertainment: singers, comedians and other performers broadcast live for their fans in exchange for virtual gifts. In 2016, Chinese authorities started dozens of these live streaming platforms, sanctioning thousands of artists: this attempt to appease the phenomenon actually turned into an opportunity for more forward-thinking apps, such as Taobao, which they were the first to recognize its potential by investing in this new mode of commercial communication.',
+    banner:
+      'https://www.robvanlinda.de/wp-content/uploads/2020/08/Live-stream-banner.jpg',
+    evocativePhoto: '',
+    serviceTitle: '',
+    serviceDescription:
+      'We put in practise all the experience we gained during all the life of this company in order to give our clients a very good customer experience. Moreover, all our experts are very professional on the service we provide to clients.',
+    s1Name: 'Fast shipping',
+    s1Description: 'Our delivery service is very well organized.',
+    s1Logo: 'https://i.ibb.co/Rczq8Pv/sol-1.png',
+    s2Name: 'New buying experience',
+    s2Description:
+      'This new technology makes innovative the ways to purchase a product.',
+    s2Logo: 'https://i.ibb.co/KwskLjv/sol-2.png',
+    s3Name: 'Live Feedback',
+    s3Description:
+      'Due to live streaming users can see the real product and makes an idea about it.',
+    s3Logo: 'https://i.ibb.co/b77D3Fm/sol-3.png',
+    partnerTitle: '',
+    partnerDescription:
+      'On all the case studies we worked on we had gained experience from our partners. Although some of them are very big companies, we had an equal exchange of expertise since we have really professional experts wprking on many industries.',
+    p1Name: 'Tencent',
+    p1Logo:
+      'https://www.thegamesmachine.it/wp-content/uploads/2020/05/tencent-logo-min.jpg',
+    p2Name: 'TaoBao',
+    p2Logo:
+      'https://img.alicdn.com/tfs/TB1giluwEY1gK0jSZFMXXaWcVXa-1280-1280.png',
+    p3Name: 'Alibaba',
+    p3Logo: 'https://images-eu.ssl-images-amazon.com/images/I/71IxKvGqiWL.png',
+    caseStudyTitle: '',
+    realtedServiceTitle: '',
+  })
+  await CloudComputing.addService(LiveECommerce.id)
+
   //**END OF CLOUD COMPUTING SERVICES */
 
   //**CUSTOMER EXPERIENCE SERVICES */
@@ -874,9 +1052,9 @@ async function insertRealData() {
     subTitle:
       'Learn how immersive technology can increase revenue and streamline the event planning process.',
     description:
-      'The Immersive and Innovative Experiences practice helps clients transform experiences for this world of unlimited possibility. We blend cutting-edge immersive technology with human creativity and strong ethical governance. We break down barriers between brands and their customers.',
-    banner: '',
-    evocativePhoto: '',
+      'What’s the future of customer experience? It’s multi-dimensional. As the boundaries between the digital and the physical continue to blur, new kinds of immersive interactions become possible. Augmented reality, virtual reality, mixed reality—it all comes together in creative experiences that flow freely across real and virtual spaces. The Immersive and Innovative Experiences practice helps clients transform experiences for this world of unlimited possibility. We blend cutting-edge immersive technology with human creativity and strong ethical governance. We break down barriers between brands and their customers. We help visualize and understand products in new ways. And we bring people together in new virtual environments.',
+    banner: 'https://images.unsplash.com/photo-1502185372788-6ff455aa92ff?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80',
+    evocativePhoto: 'https://images.unsplash.com/photo-1556740758-90de374c12ad?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80',
     serviceTitle: 'Immersive Technologies solutions',
     serviceDescription:
       'We help brands tell stories and craft experiences in innovative and immersive ways, opening up new kinds of interaction, new ways to work and learn, and new revenue streams. It’s an emerging space for all to play in. Let us help you take a lead in next-generation experience.',
@@ -890,7 +1068,7 @@ async function insertRealData() {
     //detailDescription4: 'Building new ways to process information, master skills and improve performance through virtually simulated environments and situations.',
     partnerTitle: 'Alliances and partners',
     partnerDescription:
-      'At ?company name?, together with our Partners, we are re-imagining the business Deliver with unforgettable customer experiences',
+      'At HexTech, together with our Partners, we are re-imagining the business Deliver with unforgettable customer experiences',
     p1Name: 'Adobe',
     p1Logo: '',
     p2Name: '',
@@ -908,19 +1086,25 @@ async function insertRealData() {
     subTitle:
       'Leading creative, business analysis, and advanced technology in user research',
     description:
-      'Design a new way to communicate. How to create brand new costumer’s experiences with the latest trend of user interfaces. An interface is the link between the corporate and the user, it must respond to customers’ new, often unmet and frequently changing needs and enable them to achieve their desired outcomes.',
-    banner: '',
-    evocativePhoto: '',
-    serviceTitle: '',
-    serviceDescription: '',
+      'Design a new way to communicate. User interface (or UI) design has grown substantially over the past few years, and has blossomed into one of the most creative, innovative and exciting fields in tech. Our service it is here to help you to create a brand new costumer’s experiences with the latest trend of user interfaces. An interface is the link between the corporate and the user, it must respond to customers’ new, often unmet and frequently changing needs and enable them to achieve their desired outcomes.',
+    banner: 'https://images.unsplash.com/photo-1618788372246-79faff0c3742?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=882&q=80',
+    evocativePhoto: 'https://images.unsplash.com/photo-1560461396-ec0ef7bb29dd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80',
+    serviceTitle: 'User Interfaces solutions',
+    serviceDescription: 'User interface elements are the parts we use to build interactive websites or apps. They provide touchpoints for the user as they navigate their way around; from buttons to scrollbars, to menu items and checkboxes. Every single detail matter!',
+    //detailTitle1: 'Design accessibility',
+    //detailDescription1: 'We can not fogot the crucial role of accessibility and inclusion. From designing a suite of UI elements, such as buttons, icons, and scrollbars, choosing colors and typefaces, to regularly testing their designs through prototyping, UI designers carefully weigh up what each design choice means for the end user.',
+    //detailTitle2: 'Trustwothy apps',
+    //detailDescription2: 'We know that users like to feel in control of themselves and their environment. With our help your interface to avoid having unplanned interactions, confusing pathways, and surprising outcomes, giving the customers insight into what to expect at every turn.',
+    //detailTitle3: '',
+    //detailDescription3: '',
     partnerTitle: 'Alliances and partners',
     partnerDescription:
-      'At ?company name?, together with our Partners, we are re-imagining the business Deliver with unforgettable customer experiences',
+      'We use the latest services in terms of technological design, we refer to the best partners and create with softwares that allows us to achieve extremely intuitive layouts for ours ideas.',
     p1Name: 'Adobe',
     p1Logo: '',
-    p2Name: '',
+    p2Name: 'Figma',
     p2Logo: '',
-    p3Name: '',
+    p3Name: 'Sketch',
     p3Logo: '',
     caseStudyTitle: 'Read about our case studies',
     realtedServiceTitle: 'You might be interested also to these services.',
@@ -931,16 +1115,16 @@ async function insertRealData() {
   const DigitalCustomer = await Service.create({
     title: 'Customer Experience Engine',
     subTitle:
-      'Your customers are always connected. Shouldn’t their experiences be too? The Customer Experience Engine turns touchpoints into a story: unify the moments. Own the experience.',
-    description: '',
-    banner: '',
-    evocativePhoto: '',
+      'Your customers are always connected. Shouldn’t their experiences be too?',
+    description: 'Most customer experiences are created from a hodge-podge of systems. But customers don’t care about those systems. They expect a convenient, continuous and meaningful experience on the website, in the mobile app and in the store. The Customer Experience Engine powers an ongoing experience in which your brand stands out by disappearing into the fabric of customers’ lives. It’s the connective tissue across your systems that lets you focus on what you care about: delivering an unforgettable and impactful customer experience now and protecting that experience in the future.',
+    banner: 'https://images.unsplash.com/photo-1556745753-b2904692b3cd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1866&q=80',
+    evocativePhoto: 'https://images.unsplash.com/photo-1550071593-fd1bdaf1f93c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80',
     serviceTitle: 'Customer Experience Engine solutions',
     serviceDescription:
       'Our experience-led approach helps ensure that organizations have the right experience architecture to allow customers to create their own journey on their own terms. We view technology as the enabler of the customer experience, not the driver.',
     partnerTitle: 'Alliances and partners',
     partnerDescription:
-      'At ?company name?, together with our Partners, we are re-imagining the business Deliver with unforgettable customer experiences',
+      'The Customer Experience Engine turns touchpoints into a story: unify the moments. Own the experience. Together with the best Partners we are going to achieve this.',
     //detailTitle1: 'Single view of the customer',
     //detailDescription1: 'Lines of business and stakeholder groups have the visibility into how the business is interacting with customers to drive connected experiences.',
     //detailTitle2: 'Seamless plug and play with the latest tech',
@@ -961,15 +1145,21 @@ async function insertRealData() {
   //4
   const Campaign = await Service.create({
     title: 'Campaign Management',
-    subTitle: '...',
-    description: '',
-    banner: '',
-    evocativePhoto: '',
-    serviceTitle: '',
-    serviceDescription: '',
+    subTitle: 'Communicate marketing messages at speed and scale to acquire and retain customers, driving sustainable growth.',
+    description: 'We all know communication is critical, but knowing what to say and when to say it—and whom to say it to—can make or break the message. That is why Accenture Interactive Marketing Engagement Services team specializes in solutions to help clients understand their customers, define the experience, and deliver relevant, compelling messages. We understand the new digital landscape and evolving customer expectations. Connections need to be made throughout the customer journey, constantly and across channels. "Always-on" campaigns are designed to capture attention and amplify demand, leads and revenue generation.',
+    banner: 'https://images.unsplash.com/photo-1552664730-d307ca884978?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80',
+    evocativePhoto: 'https://images.unsplash.com/photo-1557425529-b1ae9c141e7d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80',
+    serviceTitle: 'Campaign management solutions',
+    serviceDescription: 'We design and build creative campaigns that target customers with the right message to drive engagement. Our insights into new and evolving digital technologies mean we understand how to deliver personalized messages at the right time, helping acquire new customers, grow wallet share with existing customers, and retain the most profitable customers.',
     partnerTitle: 'Alliances and partners',
     partnerDescription:
-      'At ?company name?, together with our Partners, we are re-imagining the business Deliver with unforgettable customer experiences',
+      'How to deliver the right message at the right time? With the best Partners our company will grant you success.',
+    //detailTitle1: 'Campaign planning',
+    //detailDescription1: 'Create a consistent experience throughout the customer journey and across the channels.',
+    //detailTitle2: 'Campaign management and optimization',
+    //detailDescription2: 'Enable a high-performing campaign management solution that utilizes the capabilities of the new digital marketing ecosystem.',
+    //detailTitle3: 'Lead generation',
+    //detailDescription3: 'Fuel your funnel by driving demand from qualified leads.',
     p1Name: '',
     p1Logo: '',
     p2Name: '',
@@ -988,8 +1178,8 @@ async function insertRealData() {
       'Make every customer feel like the only customer: Change the customer experience with conversational AI.',
     description:
       'Solutions.AI for Customer Engagement is built for putting AI at the frontline of every interaction streamlines service, better equips agents, and enhances the overall experience with personalized, precise, and empathetic care. It helps brands quickly and responsibly use data to understand and predict customer needs and arm agents behind the screen with the right message and offers. And it improves the original product and service by analyzing and incorporating insights from customer interactions through a constant feedback loop.',
-    banner: '',
-    evocativePhoto: '',
+    banner: 'https://images.unsplash.com/photo-1519558260268-cde7e03a0152?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80',
+    evocativePhoto: 'https://images.unsplash.com/photo-1531747118685-ca8fa6e08806?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1842&q=80',
     serviceTitle: 'Customer Service AI solutions',
     serviceDescription:
       'With our range of pre-built AI modules and ecosystem of technology partners, we are able to quickly scale hyper-personalized experiences to help clients anticipate and address their customers needs.',
@@ -1001,7 +1191,7 @@ async function insertRealData() {
     //detailDescription3: 'Responsibly establish a strong foundation of customer and journey data to generate insights around specific business inefficiencies that unlock value.',
     partnerTitle: 'Alliances and partners',
     partnerDescription:
-      'At ?company name?, together with our Partners, we are re-imagining the business Deliver with unforgettable customer experiences',
+      'HexTech, with the best Partners, will make your customers to have higher expectations than ever before. They crave a consistent experience no matter the time or channel.',
     p1Name: '',
     p1Logo: '',
     p2Name: '',
@@ -1020,8 +1210,8 @@ async function insertRealData() {
       'Build your brand and drive demand through high-impact, creative customer experiences. Discover the transformative power of a story.',
     description:
       'We take a holistic approach that combines creative, content, data and technological expertise to translate brand vision and business goals into customer engagement strategies and business results. With our help, you wll delight your customers with relevant, elegant, and intuitive experiences. Our insights into audiences and markets help us create effective brand strategies that drive real engagement for every customer across every channel.',
-    banner: '',
-    evocativePhoto: '',
+    banner: 'https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=993&q=80',
+    evocativePhoto: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80',
     serviceTitle: 'Creative Marketing Services solutions',
     serviceDescription:
       'What does it mean to build a brand? We take it from the ground up—from strategy and content to activation.',
@@ -1033,7 +1223,7 @@ async function insertRealData() {
     //detailDescription3: 'We activate and optimize programs that deliver high engagement and return on investment.',
     partnerTitle: 'Alliances and partners',
     partnerDescription:
-      'At ?company name?, together with our Partners, we are re-imagining the business Deliver with unforgettable customer experiences',
+      'With HexTech and its best Partners, you will delight your customers with relevant, elegant, and intuitive experiences.',
     p1Name: '',
     p1Logo: '',
     p2Name: '',
@@ -1346,6 +1536,56 @@ async function insertRealData() {
   })
   await CloudComputing.addCasestudy(ccC2.id)
   await CloudAppDevelopServices.addCasestudy(ccC2.id)
+
+  const ccC3 = await CaseStudy.create({
+    title: 'Live Event Broadcasting Video Platform',
+    subTitle:
+      'Present Communications provides audio-visuals, video conferencing equipments, webcasting, video productions, and other technical services to the live event industry.',
+    banner:
+      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTycYMziZzUxXQc-01VqqG5sT1ofurNRhvXDw&usqp=CAU',
+    descriptiveText:
+      'Present Communications provides audio-visuals, video conferencing equipments, webcasting, video productions, and other technical services to the live event industry. The platform was also expected to allow presenters to play a slideshow along with the webcast. They wanted the users to be able to share their queries about the event, and participate in online polls conducted during the live webcast.',
+    challengeTitle:
+      'Our client wanted to use a third-party video streaming platform to take care of the webcasting solution.',
+    challengeDescription:
+      'Our team could foresee some initial challenges with this request. One issue was to determine whether the third-party platform would be able to provide automated app creation, with the web services. Our team anticipated issues related to IPs and assessed the need to find out what kind of browser issues would possibly occur. Another challenge was to find a video player that could offer adaptive bit-rate streaming. Since there were no specific requirements given to us by the client, our team had to work on refining the scope for the application as well.',
+    solutionTitle: 'Ideation',
+    solutionDescription:
+      "The product owner team took the baton of ideating the requirements with the client via regular documented brainstorming sessions. The requirements were then converted into a visual representation via wireframes which represented the probable user flow on the platform. We then assigned relative priorities to the features in order to identify the Minimum Viable Product ( MVP ) and kept the 'extra' features out of the first release. This helped us keep the costs down and ensure greater value.",
+    teamsTitle: 'Live Broadcasting Department',
+    personName: '',
+    personJob: '',
+    serviceTitle: '',
+    serviceHeading: '',
+  })
+  await CloudComputing.addCasestudy(ccC3.id)
+  await LiveVideoBroadcasting.addCasestudy(ccC3.id)
+  await LiveECommerce.addCasestudy(ccC3.id)
+
+  const ccC4 = await CaseStudy.create({
+    title: 'Maybelline Proves sintony between E-Commerce and Live-Streaming',
+    subTitle:
+      'Maybelline New York faces the same challenge as many other brands: building an authentic connection with young women that drives sales. ',
+    banner:
+      'https://www.livescale.tv/wp-content/uploads/2020/12/Live-Shopping-Livescale-Checkout-Flow-Fashion-1.jpg',
+    descriptiveText:
+      'Maybelline New York faces the same challenge as many other brands: building an authentic connection with young women that drives sales. In China, many brands try to show women of generation X that they understand by using gimmicks, trends, or celebrity partnerships. For the launch of its new lipstick, Lip Flush Oil, Maybelline New York went beyond its typical new product launch by creating an experience for customers that gave them what they wanted when they wanted it.',
+    challengeTitle:
+      'Searching for sinergy between E-Commerce and Live-Streaming',
+    challengeDescription:
+      'Many Chinese gen X women have no siblings and long to stay connected to their friends, culture, and current events. Similar to their counterparts in other regions, they have short attention spans. Maybelline wanted to provide a riveting, immediate experience that would spark interest in the new lipstick.',
+    solutionTitle: 'Developed platform for live e-commerce',
+    solutionDescription:
+      'Live-streaming apps gained popularity in the spring of 2016. Among them were Meipai, Nice, and Panda TV, which each have more than 10 million daily active users. But many brands began using them with negative results. Maybelline’s marketing team decided to take live-streaming off of niche apps by using the leading mobile purchase platform, Taobao. Using this app allowed Maybelline to shorten the purchase journey during the launch from weeks to a single click. By live-streaming the launch event directly on Taobao, fans could become an integral, engaged element of the launch event.',
+    teamsTitle: 'Live Broadcasting Department',
+    personName: '',
+    personJob: '',
+    serviceTitle: '',
+    serviceHeading: '',
+  })
+  await CloudComputing.addCasestudy(ccC4.id)
+  await LiveVideoBroadcasting.addCasestudy(ccC4.id)
+  await LiveECommerce.addCasestudy(ccC4.id)
   //**END OF CLOUD COMPUTING CASE STUDIES */
 
   //**CUSTOMER EXPERIENCE CASE STUDIES */
@@ -1354,7 +1594,7 @@ async function insertRealData() {
     title: 'Reimagining guest experiences on the high seas',
     subTitle:
       'Carnival Corporation connects high-touch technology and the human touch to create hyper-relevant experiences for thousands of guests at a time.',
-    banner: '',
+    banner: 'https://images.unsplash.com/photo-1558923240-2672e219374b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1867&q=80',
     descriptiveText:
       'Carnival Corp.’s CEO Arnold Donald has dubbed today “the golden age of cruising.” With growth in guest numbers, fleet sizes, ticket prices and a sea of new competitors, the description certainly fits. However, as dynamic as the industry is, the cruise travel category remains under penetrated. The company’s leadership knew to expand the market for cruise vacations, the cruise model itself had to change. The focus needed to go beyond building and marketing new ships to leveraging the company’s scale to create a new and sustainable competitive advantage. With the world’s largest fleet spanning nine distinct brands, Carnival Corp. envisioned a new model that elevated guest experience enablement above the physical ship platform. ',
     challengeTitle:
@@ -1377,10 +1617,10 @@ async function insertRealData() {
   //2
   const ceC2 = await CaseStudy.create({
     title:
-      'illycaffè - Finding the perfect blend for the digital customer experience',
+      'Finding the perfect blend for the digital customer experience',
     subTitle:
       'illycaffè, the premium Italian coffee brand, offers a unique taste and aroma that’s recognized by coffee lovers around the world, the company sells its products and services to consumers and trade customers in 140 different countries.',
-    banner: '',
+    banner: 'https://images.unsplash.com/photo-1442512595331-e89e73853f31?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80',
     descriptiveText:
       'Our data-driven, comprehensive and consistent social media strategy is optimizing the creative effort, ensuring premium content with that unique “illycaffè” blend reaches the right audience at the right time on the right channel. Social media activities have increased engagement and reach by 15 percent.',
     challengeTitle: 'Our challenge - Business approach reimagination',
@@ -1401,10 +1641,10 @@ async function insertRealData() {
 
   //3
   const ceC3 = await CaseStudy.create({
-    title: 'Subway - A data-driven recipe for delighting customers',
+    title: 'A data-driven recipe for delighting customers',
     subTitle:
       'Reinventing experiences: Subway CDO on personalization. Delivering meaningful insights that are helping them delight customers every day.',
-    banner: '',
+    banner: 'https://images.unsplash.com/photo-1604908554025-e477d54e85e0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2389&q=80',
     descriptiveText:
       'For today’s fast-food consumers, mobile and online ordering are must-haves. But delivering them effectively can be a tall order even for hugely successful brands. As part of a broader digital transformation, we helped Subway® restaurants make sure all their customer touchpoints were hitting the mark by creating a new data-driven experience optimization operating model.',
     challengeTitle:
@@ -1414,7 +1654,7 @@ async function insertRealData() {
     solutionTitle:
       'The solution we provided - Building up a new operating model, layer by layer',
     solutionDescription:
-      '"Using our deep experience of both organizational design and personalization, we helped Subway devise a completely new recipe for success – an operating model that would continuously optimize customer experiences through a dedication to scientific experimentation Leveraging the technologies of Adobe Analytics and Target, the new model enables Subway to run vast numbers of user experience tests across digital channels – everything from changing the color of a single button to revising homepage promotional messaging – and see the results instantly. That’s providing statistically meaningful insights into how design changes affect customer behavior – and company revenue.',
+      'Using our deep experience of both organizational design and personalization, we helped Subway devise a completely new recipe for success – an operating model that would continuously optimize customer experiences through a dedication to scientific experimentation Leveraging the technologies of Adobe Analytics and Target, the new model enables Subway to run vast numbers of user experience tests across digital channels – everything from changing the color of a single button to revising homepage promotional messaging – and see the results instantly. That’s providing statistically meaningful insights into how design changes affect customer behavior – and company revenue.',
     teamsTitle: 'Meet our team',
     personName: 'Sean Green',
     personJob: 'Lead – Interactive Technology',
@@ -1426,10 +1666,10 @@ async function insertRealData() {
 
   //4
   const ceC4 = await CaseStudy.create({
-    title: 'Dutch Flowers - Bouquet of innovation, personalization and service',
+    title: 'Bouquet of innovation, personalization and service',
     subTitle:
       'A digital platform with exceptional, personalized customer experience so business continues to bloom.',
-    banner: '',
+    banner: 'https://images.unsplash.com/photo-1459662784036-fb86bbf1104f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80',
     descriptiveText:
       'Webshops, much like floral arrangements, can be delicate: one faulty order or misplaced orchid is all it takes to keep a customer from returning. So, when an opportunity sprouted up for Dutch Flowers to fortify their online channel’s technical capabilities, they acted quickly.',
     challengeTitle:
@@ -1448,6 +1688,103 @@ async function insertRealData() {
       'From novelty to utility. Excelling in digital commerce requires engaging product and service expertise that give confidence to consumer buying.',
   })
   await CustomerExperience.addCasestudy(ceC4.id)
+
+  //5
+  const ceC5 = await CaseStudy.create({
+    title: 'Building the in-store experience that everyone desires',
+    subTitle:
+      'How to provide a custom and tailored experience each time a customer walks into their store.',
+    banner:'https://images.unsplash.com/photo-1515165244752-2465b61f0441?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1889&q=80',
+    descriptiveText:
+      'If you have ever wondered what’s behind the happy customers and packed stores it’s several factors including a focus on personalization, innovation and a loyalty program that is so good that it has 25 million members. All of these factors and several more make LoveMakeup one of the most successful beauty retailers in the world.',
+    challengeTitle:
+      'Our challenge - Every customer has to be unique',
+    challengeDescription: 
+      'The beauty industry as a whole faces a multitude of problems mainly around transparency, accuracy and trust of products. For these reasons, online shopping poses key challenges in purchasing beauty products while retail stores pose their own challenge in having the capabilities and manpower to assist every customer in finding the right products.',
+    solutionTitle:
+      'The solution we provided - Personalization at the next level',
+    solutionDescription:
+      'Customers are increasingly demanding customization as part of their shopping experience, especially if they’re shelling out for luxuries like makeup. Whether it’s primer for oily skin or moisturizer for dry, LoveMakeup recognizes that their customers require a unique and personalized approach, and they offer this through in-store swatch samplings and makeup demonstrations that allow shoppers to test different brands to be sure they’re buying the right product at the right place. But LoveMakeup doesn’t stop there: their personalized shopping experience extends to the web, which has been a major key to their success in keeping customers loyal to their brand.',
+    teamsTitle: 'Meet our team',
+    personName: 'Sean Green',
+    personJob: 'Lead – Interactive Technology',
+    serviceTitle: 'Immersive technologies',
+    serviceHeading:
+      'From novelty to utility. Excelling in digital commerce requires engaging product and service expertise that give confidence to consumer buying.',
+  })
+  await CustomerExperience.addCasestudy(ceC5.id)
+
+  //6  
+  const ceC6 = await CaseStudy.create({
+    title: 'A magical experience deserves a magical app',
+    subTitle: 'A personalized experience comes from valuing each customer and taking the time to make their visit amazing.',
+    banner: 'https://images.unsplash.com/photo-1534450539339-6d1c81ad18e2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1019&q=80',
+    descriptiveText: 'Guests of all ages can appreciate Disney’s magical approach to customer experience. Disney provides lessons for brands in all industries on creating unique, detailed experiences that will stick with customers for a lifetime. We helped a brand excellence to improve their local customer service',
+    challengeTitle: 'Our challenge - Provide an experience organizer',
+    challengeDescription: 'Mobile devices continually redefine how people communicate and organizations must have a mobile-first mindset to retain their share of market. More than half of online traffic now comes from smartphones and tablets and that number is continuing to rise. Organizations must have a mobile-first mindset and continually think about the human on the other side of the screen.',
+    solutionTitle: 'The solution we provided - The ultimate planning app',
+    solutionDescription: 'The app we designed for Disney contains most of the information on the website but it’s not just the website shoved into app-form. It’s laid out well and even has GPS-enabled walking directions between attractions. I can easily find park hours, showtimes, wait times for rides, and order food so you don’t need to wait in line anymore. All of the tickets, dining reservations, and photos are in the app, along with a personalized schedule that I can create to make sure I don’t miss the biggest rides and attractions.',
+    teamsTitle: 'Meet our team',
+    personName: 'John Daisy',
+    personJob: 'Digital Technical Architect',
+    serviceTitle: 'User Interfaces',
+    serviceHeading: 'Leading creative, business analysis, and advanced technology in user research.',
+  })
+  await CustomerExperience.addCasestudy(ceC6.id)
+
+  //7  
+  const ceC7 = await CaseStudy.create({
+    title: 'Bringing clothing to life directly in-store',
+    subTitle: 'How Zara is now leading the mid-market tech fashion pack.',
+    banner: 'https://www.mind-mag.com/wp-content/uploads/2018/04/IMG2645.jpg',
+    descriptiveText: '',
+    challengeTitle: 'Our challenge - ',
+    challengeDescription: '',
+    solutionTitle: 'The solution we provided - ',
+    solutionDescription: '',
+    teamsTitle: 'Meet our team',
+    personName: 'John Daisy',
+    personJob: 'Digital Technical Architect',
+    serviceTitle: 'User Interfaces',
+    serviceHeading: 'Leading creative, business analysis, and advanced technology in user research.',
+  })
+  await CustomerExperience.addCasestudy(ceC7.id)
+
+   //8  
+   const ceC8 = await CaseStudy.create({
+    title: 'A smooth checkout-free shop',
+    subTitle: 'Reimagine the In-store Customer Experience with Frictionless Shopping.',
+    banner: 'https://images.unsplash.com/photo-1590599145008-e4ec48682067?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80',
+    descriptiveText: 'Innovative retailers realize they need to create smart stores to enhance their customer experiences.  Recent advances in point-of-sale technologies are making it possible for retailers to reimagine the shopper in-store journey. With new retail technologies, long retail checkout lines and other in-store bottlenecks could soon be a thing of the past.',
+    challengeTitle: 'Our challenge - Realizing a bridge between offline and online shopping',
+    challengeDescription: 'We want to create a whole new shopping style with some characteristics. When you shop at one of these stores, you never have to wait in line. The store works with an Amazon Go app for iOS or Android: You enter, take the products you want and, thanks to the app, just leave again. The app is linked to your Amazon account for billing. Our goal is making the customer feeling fascinated by picking things up and putting them back, just like from your own cupboard.',
+    solutionTitle: 'The solution we provided - The ultimate frictionless shopping experience',
+    solutionDescription: 'We developed a unique system that allows to enter the store with the Amazon Go app open on your phone, fill your shopping bags with whatever you want, and then leave the store. Amazon Go stores use cameras and sensors to know what’s been taken off the shelves, so items can be charged to your credit card, which is stored in the Amazon Go app. No cashiers, no long lines, no paper receipts. Amazon Go showcases the convergence of technology and traditional retail shopping in a convenience store format.',
+    teamsTitle: 'Meet our team',
+    personName: 'John Daisy',
+    personJob: 'Digital Technical Architect',
+    serviceTitle: 'User Interfaces',
+    serviceHeading: 'Leading creative, business analysis, and advanced technology in user research.',
+  })
+  await CustomerExperience.addCasestudy(ceC8.id)
+
+   //9  
+   const ceC9 = await CaseStudy.create({
+    title: 'Delivering value to customer Service',
+    subTitle: 'Increase the brand-loyality of the number one coffee company.',
+    banner: 'https://images.unsplash.com/photo-1570526427067-b456f83a4de4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80',
+    descriptiveText: 'Starbucks is a major specialty-coffee brand in the North. Recent market research has indicated that the service level of the company is currently not meeting the expectations of customers. Thus, the company is discussing a plan to increase customer satisfaction by increasing the amount of labor in each coffee store and, as a consequence, increase the speed-of-service.',
+    challengeTitle: 'Our challenge - Increase loyalty',
+    challengeDescription: 'One of the core issues the company is facing is that its services are not meeting customer expectations. It is mainly due to changes in target customers, decreasing age and income groups, and customer’s poor perception of the company.',
+    solutionTitle: 'The solution we provided - Leveraging technological and experiential methods',
+    solutionDescription: 'We wanted to start from store design, or brand localization. This is just one of the creative ways Starbucks can connects with its customers, integrating local aesthetics into each of its stores. The company’s design studios are strategically located so that designers can better understand their communities. Furthermore, we developed the "tech-side", creating an Amazon Alexa platform and the My Starbucks Barista chatbot debuted, letting users order their favorite coffees using simple voice commands.',
+    teamsTitle: 'Meet our team',
+    personName: 'John Daisy',
+    personJob: 'Digital Technical Architect',
+    serviceTitle: 'User Interfaces',
+    serviceHeading: 'Leading creative, business analysis, and advanced technology in user research.',
+  })
+  await CustomerExperience.addCasestudy(ceC9.id)
 
   //**END OF CUSTOMER EXPERIENCE CASE STUDIES */
 
@@ -1482,7 +1819,7 @@ async function insertRealData() {
     banner:
       'https://www.viewsonic.com/library/wp-content/uploads/2019/08/LB0040-hero-compressed.png',
     descriptiveText:
-      'Through its long years of relationship with ?Company Name?, a trusted partner that had a true understanding of the store business process of the ground reality, 7-Eleven was able to build a reliable and user-friendly IT system. Specifically, ?Company Name? realized a robust framework that supported the store management of each franchisee: providing merchandising support on ordering and product assortment, while improving the store operation efficiency.',
+      'Through its long years of relationship with HexTech, a trusted partner that had a true understanding of the store business process of the ground reality, 7-Eleven was able to build a reliable and user-friendly IT system. Specifically, HexTech realized a robust framework that supported the store management of each franchisee: providing merchandising support on ordering and product assortment, while improving the store operation efficiency.',
     challengeTitle: 'Promote global expansion',
     challengeDescription:
       "7-Eleven's challenge is to further promote its active global expansion and area licensee movement to the matured and emerging retail markets. In order to achieve such business goal, 7-Eleven required a solution partner that had a true understanding of its business strategy and process, thereby providing the most appropriate support that corresponded to each need of the specific country or region.",
@@ -1524,7 +1861,7 @@ async function insertRealData() {
   const iotC4 = await CaseStudy.create({
     title: 'Building a connected car ecosystem',
     subTitle:
-      '??COMPANY NAME??, with its Automotive division, constantly develops solutions for innovation trends such as e-mobility and ACES (for cars intended to be autonomous, connected, electric and shared)',
+      'HexTech, with its Automotive division, constantly develops solutions for innovation trends such as e-mobility and ACES (for cars intended to be autonomous, connected, electric and shared)',
     banner:
       'https://images.acvmagazine.com/file/BIT-Magazine-Images/feature_cover_06.jpg',
     descriptiveText:
@@ -1648,7 +1985,7 @@ async function insertRealData() {
       'In order to provide a continuous and efficient technical control and thus increased security of constructions and complex engineering objects, the Customer decided to develop a smart construction monitoring system for collecting and processing data through sensors installed on the key elements of a building. The solution was designed to automate regular data collection and processing.',
     solutionTitle: 'Procesing and calculations on sensor data',
     solutionDescription:
-      'HexTech development team designed and developed a smart solution to collect sensor data and aggregate it on a central server for processing and further calculations of a building’s state. Data processing and averaging make it possible to boost system performance and reduce data volumes. The user-friendly interface presents the data from connected through intuitive color coding – the green, yellow and red lights indicate the state of a building. Additionally, the system allows a flexible configuration of threshold values to regulate the transition from one status to another. To aggregate the data – suppose, for calculating a construction deformation, HexTech developed a system of virtual sensors collecting information from several physical sensors. It allows users to monitor specific parameters which can be used only in the aggregate.',
+    'HexTech development team designed and developed a smart solution to collect sensor data and aggregate it on a central server for processing and further calculations of a building’s state. Data processing and averaging make it possible to boost system performance and reduce data volumes. The user-friendly interface presents the data from connected through intuitive color coding – the green, yellow and red lights indicate the state of a building. Additionally, the system allows a flexible configuration of threshold values to regulate the transition from one status to another. To aggregate the data – suppose, for calculating a construction deformation, ScienceSoft developed a system of virtual sensors collecting information from several physical sensors. It allows users to monitor specific parameters which can be used only in the aggregate.',
     teamsTitle: 'IoT Department',
     personName: '',
     personJob: '',
@@ -1669,8 +2006,8 @@ async function insertRealData() {
     challengeDescription:
       'The Customer wanted to deliver a sophisticated remote patient monitoring solution for clinics of North America. The solution should help to improve medical staff performance, avoid routine visits, and increase the quality of care. For that reason, the Customer needed a team of savvy professionals in R&D and healthcare IT.',
     solutionTitle: 'App and Web Dashboard',
-    solutionDescription:
-      'The developers reviewed and analyzed available approaches and frameworks and picked WebRTC technology as the best one for platform-independent voice and video communication. Several Android-powered hardware devices were selected to implement central communication module or Sensor Network Appliances (SNAs). The development process was split into 2 major parts: the development of apps for Android and iOS devices and Web dashboard implementation. \n 1) HexTech’s team delivered apps for both patients and medical staff. Gradle flavors were used to build the apps’ variations fully compatible with different screen sizes: wide screen (for doctors), tablet (for nurses) and smartphone (for healthcare services consumers). Patients could smoothly access numerous sensors in order to monitor data and synchronize it with the server. Medical staff members could diagnose and treat patient remotely and receive automated alerts and notifications, when, for example patient state suddenly changes. \n 2) A Web Dashboard assisted medical professionals in monitoring the overall status of patients drilling down on personal medical data. It sent alerts on poor health indicators and maintains the doctor-patient connection. The central communication module was built upon a TV-connected Android-powered device. ',
+    solutionDescription: 'The developers reviewed and analyzed available approaches and frameworks and picked WebRTC technology as the best one for platform-independent voice and video communication. Several Android-powered hardware devices were selected to implement central communication module or Sensor Network Appliances (SNAs). The development process was split into 2 major parts: the development of apps for Android and iOS devices and Web dashboard implementation. \n 1) HexTech’s team delivered apps for both patients and medical staff. Gradle flavors were used to build the apps’ variations fully compatible with different screen sizes: wide screen (for doctors), tablet (for nurses) and smartphone (for healthcare services consumers). Patients could smoothly access numerous sensors in order to monitor data and synchronize it with the server. Medical staff members could diagnose and treat patient remotely and receive automated alerts and notifications, when, for example patient state suddenly changes. \n 2) A Web Dashboard assisted medical professionals in monitoring the overall status of patients drilling down on personal medical data. It sent alerts on poor health indicators and maintains the doctor-patient connection. The central communication module was built upon a TV-connected Android-powered device. ',
+
     teamsTitle: 'IoT Department',
     personName: '',
     personJob: '',
@@ -1825,7 +2162,7 @@ async function insertRealData() {
     memberNameAndOccupation: 'Jean Orsaten | Chief of Smart Cities department ',
     personalQuote: 'Lorem ipsum dolor sit amet',
     personalDescription:
-      'He has over 30 years of experience in the home automation industry, within industry alliances and EU regulatory bodies. He is Director of the Smart Cities Department at ??COMPANY NAME??, overseeing technology partnerships, connectivity and wireless networking technologies and overall system architectures. With a strong focus on Interoperability, he has been deeply involved in the development of protocols with other leading home equipment manufacturers. The department he is heading deals with wireless protocols developments, focusing io-homecontrol, Thread, Zigbee and other open standard solutions for the Somfy Group.',
+      'He has over 30 years of experience in the home automation industry, within industry alliances and EU regulatory bodies. He is Director of the Smart Cities Department at HexTech, overseeing technology partnerships, connectivity and wireless networking technologies and overall system architectures. With a strong focus on Interoperability, he has been deeply involved in the development of protocols with other leading home equipment manufacturers. The department he is heading deals with wireless protocols developments, focusing io-homecontrol, Thread, Zigbee and other open standard solutions for the Somfy Group.',
     workField: 'Internet of things',
     teamsTitle: 'IoT Department',
     personName: 'Jean Orsaten',
@@ -2123,43 +2460,43 @@ async function insertRealData() {
     name: 'CocaCola',
     description: 'Taste the feeling',
     image:
-      'https://www.radiosenisecentrale.it/wp-content/uploads/2019/12/a8c15493781667d05e628e2f76d65b3a.jpg',
+      'https://i.ibb.co/SBqydD8/coca-cola.png',
     website: 'https://www.coca-cola.com/',
   })
-  const p1 = await Partner.create({
-    name: 'P1',
-    description: 'Test partner',
+  const Figma = await Partner.create({
+    name: 'Figma',
+    description: 'The collaborative interface design tool',
     image:
-      'https://www.radiosenisecentrale.it/wp-content/uploads/2019/12/a8c15493781667d05e628e2f76d65b3a.jpg',
-    website: 'https://www.coca-cola.com/',
+      'https://i.ibb.co/W25yZ0m/figma.png',
+    website: 'https://www.figma.com/',
   })
-  const p2 = await Partner.create({
-    name: 'P2',
-    description: 'Test partner',
+  const Adobe = await Partner.create({
+    name: 'Adobe',
+    description: 'Creatività per tutti',
     image:
-      'https://www.radiosenisecentrale.it/wp-content/uploads/2019/12/a8c15493781667d05e628e2f76d65b3a.jpg',
-    website: 'https://www.coca-cola.com/',
+      'https://i.ibb.co/sw4Rx4M/adobe.png',
+    website: 'https://www.adobe.com/',
   })
-  const p3 = await Partner.create({
-    name: 'P3',
-    description: 'Test partner',
+  const Sketch = await Partner.create({
+    name: 'Sketch',
+    description: 'It all starts here',
     image:
-      'https://www.radiosenisecentrale.it/wp-content/uploads/2019/12/a8c15493781667d05e628e2f76d65b3a.jpg',
-    website: 'https://www.coca-cola.com/',
+      'https://i.ibb.co/QdHXCx7/sketch-01.png',
+    website: 'https://www.sketch.com/',
   })
-  const p4 = await Partner.create({
-    name: 'P4',
-    description: 'Test partner',
+  const Arduino = await Partner.create({
+    name: 'Arduino',
+    description: 'So easy, my granny can use it',
     image:
-      'https://www.radiosenisecentrale.it/wp-content/uploads/2019/12/a8c15493781667d05e628e2f76d65b3a.jpg',
-    website: 'https://www.coca-cola.com/',
+      'https://i.ibb.co/KDcLxdy/arduino.png',
+    website: 'https://www.arduino.cc/',
   })
-  const p5 = await Partner.create({
-    name: 'P5',
-    description: 'Test partner',
+  const GoogleCloud = await Partner.create({
+    name: 'Google Cloud',
+    description: 'Cloud Computing Services',
     image:
-      'https://www.radiosenisecentrale.it/wp-content/uploads/2019/12/a8c15493781667d05e628e2f76d65b3a.jpg',
-    website: 'https://www.coca-cola.com/',
+      'https://i.ibb.co/SsctBTT/cloud.png',
+    website: 'https://cloud.google.com/',
   })
 }
 
