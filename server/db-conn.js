@@ -82,12 +82,10 @@ function defineDBStructure() {
       challengeDescription: DataTypes.TEXT,
       solutionTitle: DataTypes.STRING,
       solutionDescription: DataTypes.TEXT,
-      teamsTitle: DataTypes.STRING,
       personName: DataTypes.STRING,
-      personJob: DataTypes.TEXT,
-      serviceTitle: DataTypes.STRING,
-      serviceHeading: DataTypes.TEXT,
+      createdData: DataTypes.STRING,  
     },
+
     {
       timestamps: false,
     }
@@ -1117,7 +1115,6 @@ async function insertRealData() {
   const OnlineFraudDetection = await CaseStudy.create({
     title: 'Next generation online fraud detection for banks',
     subTitle: 'A new generation bank',
-    teamsTitle: 'Fraud prevention team',
     banner:
       'https://www.creativemotions.it/wp-content/uploads/2020/06/Il-segreto-per-scrivere-un-case-study-che-converte.png',
     descriptiveText:
@@ -1128,11 +1125,7 @@ async function insertRealData() {
     solutionTitle: 'application-transparent approach',
     solutionDescription:
       'Our application-transparent approach does not require instrumenting or even touching applications. HexTech passive and dynamic delivery of controls allows security to be decoupled from application development & deployment, and is a critical functionality that can be independently delivered and managed by the security team.',
-    teamsTitle: 'Security departement',
-    personName: '',
-    personJob: '',
-    serviceTitle: 'Managed Security',
-    serviceHeading: '',
+    createdData: 'April 2, 2021',
   })
   await Security.addCasestudy(OnlineFraudDetection.id)
   await ManagedSecurity.addCasestudy(OnlineFraudDetection.id)
@@ -1142,7 +1135,6 @@ async function insertRealData() {
     subTitle: 'A secure connection',
     banner:
       'https://www.creativemotions.it/wp-content/uploads/2020/06/Il-segreto-per-scrivere-un-case-study-che-converte.png',
-    teamsTitle: 'Network protection team',
     descriptiveText:
       "The Customer asked HexTech to protect it's network against undesired connection or network attacks",
     challengeTitle: 'Smart and transparent network protection',
@@ -1150,9 +1142,7 @@ async function insertRealData() {
     solutionTitle: 'Implented system',
     solutionDescription:
       'To develop a syestem as transparent as possible our team implemented a network protection layer that features AI capabilities to detect undesired connections',
-    personJob: '',
-    serviceTitle: 'Network protection',
-    serviceHeading: '',
+    createdData: 'March 22, 2021',  
   })
 
   const cs2 = await CaseStudy.create({
@@ -1160,7 +1150,6 @@ async function insertRealData() {
     subTitle: 'Access guaranteed only to the ones you trust',
     banner:
       'https://e7.pngegg.com/pngimages/183/248/png-clipart-access-control-radio-frequency-identification-television-pensiunea-mioval-technology-rfid-card-logo-transmitter.png',
-    teamsTitle: 'Network protection team',
     descriptiveText:
       'The Customer commissioned HexTech to develop a system to ensure that certain sections of the company could be accessed only to qualified people.',
     challengeTitle: 'important data have to be secured',
@@ -1169,9 +1158,7 @@ async function insertRealData() {
     solutionTitle: 'Implented system',
     solutionDescription:
       '"To ensure scalability and short query response time, HexTech’s BI implementation team built an analytical Microsoft SQL Server data warehouse which would use a Transact-SQL script to load data from the relational database. The latter was consolidated from 200 databases during the application development process and totaled 12GB."',
-    personJob: '',
-    serviceTitle: 'Network protection',
-    serviceHeading: '',
+    createdData: 'January 24, 2021',
   })
 
   const cs3 = await CaseStudy.create({
@@ -1179,7 +1166,6 @@ async function insertRealData() {
     subTitle: 'A secure connection',
     banner:
       'https://www.creativemotions.it/wp-content/uploads/2020/06/Il-segreto-per-scrivere-un-case-study-che-converte.png',
-    teamsTitle: 'Network protection team',
     descriptiveText:
       'The Customer commissioned HexTech to rewrite the software – a Java application used by the healthcare centers for management and reporting of data on medication inventory, clinical services, patient data, marketing activities and others. Within the project, the Customer also wanted the tool to allow its users to enable quality population health analytics with prompt reports.',
     challengeTitle: 'BI IMPLEMENTATION',
@@ -1188,9 +1174,7 @@ async function insertRealData() {
     solutionTitle: 'Implented system',
     solutionDescription:
       '"To ensure scalability and short query response time, HexTech’s BI implementation team built an analytical Microsoft SQL Server data warehouse which would use a Transact-SQL script to load data from the relational database. The latter was consolidated from 200 databases during the application development process and totaled 12GB."',
-    personJob: '',
-    serviceTitle: 'Network protection',
-    serviceHeading: '',
+    createdData: 'January 2, 2021',
   })
 
   const cs4 = await CaseStudy.create({
@@ -1198,7 +1182,6 @@ async function insertRealData() {
     subTitle: 'A secure connection',
     banner:
       'https://www.creativemotions.it/wp-content/uploads/2020/06/Il-segreto-per-scrivere-un-case-study-che-converte.png',
-    teamsTitle: 'Network protection team',
     descriptiveText:
       'The Customer commissioned HexTech to rewrite the software – a Java application used by the healthcare centers for management and reporting of data on medication inventory, clinical services, patient data, marketing activities and others. Within the project, the Customer also wanted the tool to allow its users to enable quality population health analytics with prompt reports.',
     challengeTitle: 'BI IMPLEMENTATION',
@@ -1207,9 +1190,7 @@ async function insertRealData() {
     solutionTitle: 'Implented system',
     solutionDescription:
       '"To ensure scalability and short query response time, HexTech’s BI implementation team built an analytical Microsoft SQL Server data warehouse which would use a Transact-SQL script to load data from the relational database. The latter was consolidated from 200 databases during the application development process and totaled 12GB."',
-    personJob: '',
-    serviceTitle: 'Network protection',
-    serviceHeading: '',
+    createdData: 'December 2, 2020',
   })
   await Security.addCasestudy(cs1.id)
   await ManagedSecurity.addCasestudy(cs1.id)
@@ -1230,11 +1211,7 @@ async function insertRealData() {
     solutionTitle: 'Implented system',
     solutionDescription:
       '"To ensure scalability and short query response time, HexTech’s BI implementation team built an analytical Microsoft SQL Server data warehouse which would use a Transact-SQL script to load data from the relational database. The latter was consolidated from 200 databases during the application development process and totaled 12GB."',
-    teamsTitle: 'Team a caso',
-    personName: '',
-    personJob: '',
-    serviceTitle: '',
-    serviceHeading: '',
+    createdData: 'March 12, 2021',
   })
   await BigDataAnalysis.addCasestudy(bdaC1.id)
   await BIDWHConsulting.addCasestudy(bdaC1.id)
@@ -1255,11 +1232,7 @@ async function insertRealData() {
     solutionTitle: 'Price optimized',
     solutionDescription:
       '"Combining their available dataset and other publicly available information, such as holidays/events data and macroeconomic series, we have been able to estimate demand curves for a subset of the items which would allow them to take optimal pricing decisions. The remaining items should undergo an exploration phase where new prices would be tried in order to be able to estimate their demand curves accurately. The exploration strategy is generally decided jointly with the client. For this example, given the data available and our past experience, we would suggest performing weekly price changes during the exploration phase. Furthermore, we have shown that there is plenty of room for inventory management improvement since there seems to be an important amount of revenue lost due to understock."',
-    teamsTitle: 'Team a caso',
-    personName: '',
-    personJob: '',
-    serviceTitle: '',
-    serviceHeading: '',
+    createdData: 'February 15, 2021',
   })
   await BigDataAnalysis.addCasestudy(bdaC2.id)
   await PricingOptimization.addCasestudy(bdaC2.id)
@@ -1279,11 +1252,7 @@ async function insertRealData() {
     solutionTitle: 'Developed platformfor BDA',
     solutionDescription:
       'We embrace  the very behaviors that got commercial IT organizations into such difficulties in enterprise data warehousing, by encouraging the broad-based, large-scale use of hand-coding techniques, in proprietary languages, using complex, poorly integrated tool chains, with little or no support for operations and management of production big data infrastructure, and no understanding of the essential role that rich, well-managed metadata plays into the effective operation, and modification, of production-grade analytics environments.',
-    teamsTitle: 'Team a caso',
-    personName: '',
-    personJob: '',
-    serviceTitle: '',
-    serviceHeading: '',
+    createdData: 'January 17, 2021',
   })
   await BigDataAnalysis.addCasestudy(bdaC3.id)
   await BigDataAutomation.addCasestudy(bdaC3.id)
@@ -1303,11 +1272,7 @@ async function insertRealData() {
     solutionTitle: 'Prediction has been useful to help people',
     solutionDescription:
       'Predictive analytics can combine data from multiple sources – including hospital-based electronic medical records, fall detection pendants, and historical use of medical alert services – to identify seniors who are at risk of emergency transport in the next 30 days. This allows healthcare providers to reach out to a senior person even before a fall or other medical complication occurs, preventing unnecessary hospital readmissions and reducing costs of transportation, acute care, and rehabilitation. In a similar vein, one medical home network in the US reported using machine learning to identify individuals with a heightened risk of developing severe complications from COVID-19. Rather than calling all 122,000 of their members to check in on their well-being, the home network took a more targeted, data-driven approach to focus their initial outreach on the 4.4 percent at-risk patients. By educating this group on when and where they should seek medical care, providers sought to proactively help at-risk patients while managing strain on healthcare organizations"',
-    teamsTitle: 'Team a caso',
-    personName: '',
-    personJob: '',
-    serviceTitle: '',
-    serviceHeading: '',
+    createdData: 'November 2, 2020',
   })
   await BigDataAnalysis.addCasestudy(bdaC4.id)
   await PredictiveAnalyticsInHealthcare.addCasestudy(bdaC4.id)
@@ -1327,11 +1292,7 @@ async function insertRealData() {
     solutionTitle: 'Improved understanding of customer behaviour',
     solutionDescription:
       'When you’re starting a business, it’s all about hustling. You’re just trying to generate revenue however you can. But as you grow, you must develop more documentation and processes around your workflows. For example, you might need to have documentation for how to run a PR, social media, or paid advertising campaign.',
-    teamsTitle: 'Team a caso',
-    personName: '',
-    personJob: '',
-    serviceTitle: '',
-    serviceHeading: '',
+    createdData: 'October 27, 2020',
   })
   await BigDataAnalysis.addCasestudy(bdaC5.id)
   await OptimizeDigitalMarketing.addCasestudy(bdaC5.id)
@@ -1353,11 +1314,7 @@ async function insertRealData() {
     solutionTitle: 'Development of the system',
     solutionDescription:
       'For the development of the system, the simulation software CarMaker by IPG Automotive offers important support. On-road field tests on the digital test bed on the German highway A9 are realistically transferred to the virtual world with CarMaker. Real traffic situations and objects are virtually modeled in real time which allow for realistic tests of the entire system in virtual test driving while taking uncertainties into account. If the interaction of sensors, Car2X components, and advanced driver assistance systems works in the scenarios, the real-time visualization in the vehicle is tackled in the next step. Data obtained in reality is then displayed on a laptop in the car while driving, and the information supply of the connected vehicles is tested in actual traffic scenarios on the test track.',
-    teamsTitle: 'Team a caso',
-    personName: '',
-    personJob: '',
-    serviceTitle: '',
-    serviceHeading: '',
+    createdData: 'September 23, 2020',
   })
   await BigDataAnalysis.addCasestudy(bdaC6.id)
   await PredictionScenarioAnalysis.addCasestudy(bdaC6.id)
@@ -1379,11 +1336,7 @@ async function insertRealData() {
     solutionTitle: 'QUICK SWITCH OF E-INVOICING PROVIDER',
     solutionDescription:
       'Getting e-Invoicing to take off in amarket requires cooperation amongthe multiple e-Invoicing serviceproviders. The service providersneed to create a stable environmentfor customers, so that customerswill dare to make the switch to ‘true’e-Invoicing. If the e-Invoicing serviceproviders don’t work together,companies in the Netherlandswill stick to invoicing via directconnections or an e-mail with PDF.” In the Netherlands, the e-Invoicingmarket has been stagnant for afew years. For that reason, KPN isworking with Basware to encouragecooperation throughout the entireindustry. Once there is greatertransparency as to which companyis connected to which communityand information can be exchanged,e-Invoicing can be stimulated.',
-    teamsTitle: 'E-Invoice Departement',
-    personName: '',
-    personJob: '',
-    serviceTitle: '',
-    serviceHeading: '',
+    createdData: 'January 17, 2021',
   })
   await CloudComputing.addCasestudy(ccC1.id)
   await EInvoice.addCasestudy(ccC1.id)
@@ -1403,10 +1356,7 @@ async function insertRealData() {
     solutionDescription:
       'Turning to the microservices-based architecture, HexTech’s team managed to ensure quick ongoing Agile development and simplified future scaling and integration processes. The first release of the system consisted of 9 independent services, each being responsible for a set of functions. The implementation of the app’s functionality and expected multitenancy required a number of future integrations with external applications (e.g., applications of door lock providers, internal hotel management systems, etc.). To reduce time of future integration and necessary efforts, HexTech’s team created reliable, secure, and reusable APIs for microservices. As a result, only minor tweaks were needed to introduce new components to the system.',
     teamsTitle: 'Cloud App Development Departement',
-    personName: '',
-    personJob: '',
-    serviceTitle: '',
-    serviceHeading: '',
+    createdData: 'October 1, 2020',
   })
   await CloudComputing.addCasestudy(ccC2.id)
   await CloudAppDevelopServices.addCasestudy(ccC2.id)
@@ -1426,11 +1376,7 @@ async function insertRealData() {
     solutionTitle: 'Ideation',
     solutionDescription:
       "The product owner team took the baton of ideating the requirements with the client via regular documented brainstorming sessions. The requirements were then converted into a visual representation via wireframes which represented the probable user flow on the platform. We then assigned relative priorities to the features in order to identify the Minimum Viable Product ( MVP ) and kept the 'extra' features out of the first release. This helped us keep the costs down and ensure greater value.",
-    teamsTitle: 'Live Broadcasting Department',
-    personName: '',
-    personJob: '',
-    serviceTitle: '',
-    serviceHeading: '',
+    createdData: 'June 27, 2020',
   })
   await CloudComputing.addCasestudy(ccC3.id)
   await LiveVideoBroadcasting.addCasestudy(ccC3.id)
@@ -1452,10 +1398,7 @@ async function insertRealData() {
     solutionDescription:
       'Live-streaming apps gained popularity in the spring of 2016. Among them were Meipai, Nice, and Panda TV, which each have more than 10 million daily active users. But many brands began using them with negative results. Maybelline’s marketing team decided to take live-streaming off of niche apps by using the leading mobile purchase platform, Taobao. Using this app allowed Maybelline to shorten the purchase journey during the launch from weeks to a single click. By live-streaming the launch event directly on Taobao, fans could become an integral, engaged element of the launch event.',
     teamsTitle: 'Live Broadcasting Department',
-    personName: '',
-    personJob: '',
-    serviceTitle: '',
-    serviceHeading: '',
+    createdData: 'March 17, 2020',
   })
   await CloudComputing.addCasestudy(ccC4.id)
   await LiveVideoBroadcasting.addCasestudy(ccC4.id)
@@ -1479,12 +1422,7 @@ async function insertRealData() {
       'The solution we provided - Connecting every guest to personalized experiences',
     solutionDescription:
       'Each guest receives a free Medallion. The light, quarter-sized disc enables frictionless payment, keyless stateroom access, accelerated embarkation and much more.',
-    teamsTitle: 'Meet our team',
-    personName: 'Sean Hyland',
-    personJob: 'Digital Technical Architect',
-    serviceTitle: 'Immersive technologies',
-    serviceHeading:
-      'From novelty to utility. Excelling in digital commerce requires engaging product and service expertise that give confidence to consumer buying.',
+    createdData: 'March 17, 2021',
   })
   await CustomerExperience.addCasestudy(ceC1.id)
 
@@ -1504,12 +1442,7 @@ async function insertRealData() {
       'The solution we provided - A whole brand new client approach',
     solutionDescription:
       'Leveraging knowledge from across Interactive design and beyond—in strategy, technology, digital experiences and more—we’re helping illycaffè every step of the way as it drives its transformation forward. Beginning with a digital transformation roadmap, we’re setting the business on a path to transform customer experience in everything from the website to the contact center, putting a customer-centric mindset at the core',
-    teamsTitle: 'Meet our team',
-    personName: 'Hari Murakami',
-    personJob: 'Lead – Immersive Experiences, Interactive',
-    serviceTitle: 'Immersive technologies',
-    serviceHeading:
-      'From novelty to utility. Excelling in digital commerce requires engaging product and service expertise that give confidence to consumer buying.',
+    createdData: 'January 27, 2021',
   })
   await CustomerExperience.addCasestudy(ceC2.id)
 
@@ -1529,12 +1462,7 @@ async function insertRealData() {
       'The solution we provided - Building up a new operating model, layer by layer',
     solutionDescription:
       'Using our deep experience of both organizational design and personalization, we helped Subway devise a completely new recipe for success – an operating model that would continuously optimize customer experiences through a dedication to scientific experimentation Leveraging the technologies of Adobe Analytics and Target, the new model enables Subway to run vast numbers of user experience tests across digital channels – everything from changing the color of a single button to revising homepage promotional messaging – and see the results instantly. That’s providing statistically meaningful insights into how design changes affect customer behavior – and company revenue.',
-    teamsTitle: 'Meet our team',
-    personName: 'Sean Green',
-    personJob: 'Lead – Interactive Technology',
-    serviceTitle: 'Immersive technologies',
-    serviceHeading:
-      'From novelty to utility. Excelling in digital commerce requires engaging product and service expertise that give confidence to consumer buying.',
+    createdData: 'December 25, 2020',
   })
   await CustomerExperience.addCasestudy(ceC3.id)
 
@@ -1554,12 +1482,7 @@ async function insertRealData() {
       'The solution we provided - User research and experience mapping',
     solutionDescription:
       'Working with us, Dutch Flowers kicked things off by leveraging design thinking and agile delivery methods, like user research and story mapping, to determine how the ideal customer journey would look as they peruse and purchase flowers online. Together, we developed a minimal viable product (MVP) based on the latest SAP Commerce Cloud Version 2.',
-    teamsTitle: 'Meet our team',
-    personName: 'Sean Green',
-    personJob: 'Lead – Interactive Technology',
-    serviceTitle: 'Immersive technologies',
-    serviceHeading:
-      'From novelty to utility. Excelling in digital commerce requires engaging product and service expertise that give confidence to consumer buying.',
+    createdData: 'November 7, 2020',
   })
   await CustomerExperience.addCasestudy(ceC4.id)
 
@@ -1579,12 +1502,7 @@ async function insertRealData() {
       'The solution we provided - Personalization at the next level',
     solutionDescription:
       'Customers are increasingly demanding customization as part of their shopping experience, especially if they’re shelling out for luxuries like makeup. Whether it’s primer for oily skin or moisturizer for dry, LoveMakeup recognizes that their customers require a unique and personalized approach, and they offer this through in-store swatch samplings and makeup demonstrations that allow shoppers to test different brands to be sure they’re buying the right product at the right place. But LoveMakeup doesn’t stop there: their personalized shopping experience extends to the web, which has been a major key to their success in keeping customers loyal to their brand.',
-    teamsTitle: 'Meet our team',
-    personName: 'Sean Green',
-    personJob: 'Lead – Interactive Technology',
-    serviceTitle: 'Immersive technologies',
-    serviceHeading:
-      'From novelty to utility. Excelling in digital commerce requires engaging product and service expertise that give confidence to consumer buying.',
+    createdData: 'August 28, 2020',
   })
   await CustomerExperience.addCasestudy(ceC5.id)
 
@@ -1598,11 +1516,7 @@ async function insertRealData() {
     challengeDescription: 'Mobile devices continually redefine how people communicate and organizations must have a mobile-first mindset to retain their share of market. More than half of online traffic now comes from smartphones and tablets and that number is continuing to rise. Organizations must have a mobile-first mindset and continually think about the human on the other side of the screen.',
     solutionTitle: 'The solution we provided - The ultimate planning app',
     solutionDescription: 'The app we designed for Disney contains most of the information on the website but it’s not just the website shoved into app-form. It’s laid out well and even has GPS-enabled walking directions between attractions. I can easily find park hours, showtimes, wait times for rides, and order food so you don’t need to wait in line anymore. All of the tickets, dining reservations, and photos are in the app, along with a personalized schedule that I can create to make sure I don’t miss the biggest rides and attractions.',
-    teamsTitle: 'Meet our team',
-    personName: 'John Daisy',
-    personJob: 'Digital Technical Architect',
-    serviceTitle: 'User Interfaces',
-    serviceHeading: 'Leading creative, business analysis, and advanced technology in user research.',
+    createdData: 'July 17, 2020',
   })
   await CustomerExperience.addCasestudy(ceC6.id)
 
@@ -1616,11 +1530,7 @@ async function insertRealData() {
     challengeDescription: '',
     solutionTitle: 'The solution we provided - ',
     solutionDescription: '',
-    teamsTitle: 'Meet our team',
-    personName: 'John Daisy',
-    personJob: 'Digital Technical Architect',
-    serviceTitle: 'User Interfaces',
-    serviceHeading: 'Leading creative, business analysis, and advanced technology in user research.',
+    createdData: 'April 7, 2020',
   })
   await CustomerExperience.addCasestudy(ceC7.id)
 
@@ -1634,11 +1544,7 @@ async function insertRealData() {
     challengeDescription: 'We want to create a whole new shopping style with some characteristics. When you shop at one of these stores, you never have to wait in line. The store works with an Amazon Go app for iOS or Android: You enter, take the products you want and, thanks to the app, just leave again. The app is linked to your Amazon account for billing. Our goal is making the customer feeling fascinated by picking things up and putting them back, just like from your own cupboard.',
     solutionTitle: 'The solution we provided - The ultimate frictionless shopping experience',
     solutionDescription: 'We developed a unique system that allows to enter the store with the Amazon Go app open on your phone, fill your shopping bags with whatever you want, and then leave the store. Amazon Go stores use cameras and sensors to know what’s been taken off the shelves, so items can be charged to your credit card, which is stored in the Amazon Go app. No cashiers, no long lines, no paper receipts. Amazon Go showcases the convergence of technology and traditional retail shopping in a convenience store format.',
-    teamsTitle: 'Meet our team',
-    personName: 'John Daisy',
-    personJob: 'Digital Technical Architect',
-    serviceTitle: 'User Interfaces',
-    serviceHeading: 'Leading creative, business analysis, and advanced technology in user research.',
+    createdData: 'March 27, 2019',
   })
   await CustomerExperience.addCasestudy(ceC8.id)
 
@@ -1652,11 +1558,7 @@ async function insertRealData() {
     challengeDescription: 'One of the core issues the company is facing is that its services are not meeting customer expectations. It is mainly due to changes in target customers, decreasing age and income groups, and customer’s poor perception of the company.',
     solutionTitle: 'The solution we provided - Leveraging technological and experiential methods',
     solutionDescription: 'We wanted to start from store design, or brand localization. This is just one of the creative ways Starbucks can connects with its customers, integrating local aesthetics into each of its stores. The company’s design studios are strategically located so that designers can better understand their communities. Furthermore, we developed the "tech-side", creating an Amazon Alexa platform and the My Starbucks Barista chatbot debuted, letting users order their favorite coffees using simple voice commands.',
-    teamsTitle: 'Meet our team',
-    personName: 'John Daisy',
-    personJob: 'Digital Technical Architect',
-    serviceTitle: 'User Interfaces',
-    serviceHeading: 'Leading creative, business analysis, and advanced technology in user research.',
+    createdData: 'January 17, 2019',
   })
   await CustomerExperience.addCasestudy(ceC9.id)
 
@@ -1677,11 +1579,7 @@ async function insertRealData() {
     solutionTitle: 'Improved understanding of customer behaviour',
     solutionDescription:
       'The system records not only when the item has been sold, but also what items have been touched and tried on. In addition, as well as being fully informed about their stocks, store staff gain a better understanding of customer traffic and local demand. The retailer is able to identify premium traffic areas, learn how customers interact with specific items, and learn which products are abandoned and which are preferred. McKinsey estimates that optimising store layouts can increase productivity by 5 percent',
-    teamsTitle: 'IoT Departement',
-    personName: '',
-    personJob: '',
-    serviceTitle: '',
-    serviceHeading: '',
+    createdData: 'January 17, 2021',
   })
   await IoT.addCasestudy(iotC1.id)
   await SmartRetail.addCasestudy(iotC1.id)
@@ -1700,11 +1598,7 @@ async function insertRealData() {
     solutionTitle: 'Retailer Initiative',
     solutionDescription:
       '7-Eleven has come to gain a ‘No. 1 Convenience Store’ status in many countries and regions around the world. Such remarkable result was achieved by adapting the concept of Retailer Initiative supported by highly sophisticated IT and network technologies in order to adjust to the specific conditions and situations of each region. In the US, the average sales figures for franchise stores incorporating this advanced business model have soared by 43 percent.',
-    teamsTitle: 'IoT Department',
-    personName: '',
-    personJob: '',
-    serviceTitle: '',
-    serviceHeading: '',
+    createdData: 'December 17, 2020',
   })
   await IoT.addCasestudy(iotC2.id)
   await SmartRetail.addCasestudy(iotC2.id)
@@ -1723,11 +1617,7 @@ async function insertRealData() {
     solutionTitle: 'IoT smart retail package',
     solutionDescription:
       'Energy sensors were installed on A/Cs, refrigerators and lighting. After one month, the branches displayed different energy consumption patterns. Researching this further, they discovered that the refrigeration equipment in one of the branches was faulty and the compressors were overworked. The customer installed door sensors in the refrigerators to send an alert if doors weren’t fully closed after a set time interval. Often times, employees push the door closed without the door actually sealing, and the refrigerator needs to work harder to keep food cool. Leaving the door open overnight often results in food wastage. The goal was to develop a guest ‘comfort score.’ Sensors were installed to monitor noise, smell, air quality, and restaurant temperature. Data from each sensor were given a score and all scores were tallied up to create a guest comfort score that could be proactively monitored across locations. Alerts were sent if guest comfort scores dropped below an acceptable level. This system integrator is currently working on an extension to improve guest satisfaction. They are researching technology to track the time it takes guests to get their meal from the moment they enter the restaurant.',
-    teamsTitle: 'IoT Department',
-    personName: '',
-    personJob: '',
-    serviceTitle: '',
-    serviceHeading: '',
+    createdData: 'March 17, 2020',
   })
   await IoT.addCasestudy(iotC3.id)
   await SmartRetail.addCasestudy(iotC3.id)
@@ -1746,11 +1636,7 @@ async function insertRealData() {
     solutionTitle: 'Alexa Skill - New implementation af Alexa for Skoda',
     solutionDescription:
       'The idea was to understand the client’s needs and obtain feedback to effectively move from proof of concept to the final product. For this purpose, we adopted an iterative agile approach. With many years of experience using this methodology, we have established a dedicated scrum team, consisting not only of developers, but also of user experience/ interface designers. Their involvement allowed the creation of an intuitive voice user interface. As a result, we delivered a Skill, which allows the end-user to manage their car remotely.',
-    teamsTitle: 'IoT Department',
-    personName: '',
-    personJob: '',
-    serviceTitle: '',
-    serviceHeading: '',
+    createdData: 'November 17, 2019',
   })
   await IoT.addCasestudy(iotC4.id)
   await Automotive.addCasestudy(iotC4.id)
@@ -1769,11 +1655,7 @@ async function insertRealData() {
     solutionTitle: 'Industrial connected displays',
     solutionDescription:
       'The solution was based on dedicated industrial displays which were connected to the LAN network already existing in the plant. The displays present assembly instructions for, employees, to ensure that no steps of the process are missed. The digitization of manufacturing made possible by IoT and ERP reduced the problem of delegating tasks at workstations, made the production processes more efficient, and brought better communication between the machines, systems and employees.',
-    teamsTitle: 'IoT Department',
-    personName: '',
-    personJob: '',
-    serviceTitle: '',
-    serviceHeading: '',
+    createdData: 'October 17, 2019',
   })
   await IoT.addCasestudy(iotC5.id)
   await IndustrialManufacturing.addCasestudy(iotC5.id)
@@ -1792,11 +1674,7 @@ async function insertRealData() {
     solutionTitle: 'Lung health measured by an algorithm ',
     solutionDescription:
       'Today there are nearly nine billion phones, most of them cell phones. Patel’s team developed an algorithm that measures lung health by analyzing the sound of someone blowing on a phone’s microphone. This replicates a spirometer without the expense and hospital visit. All a COPD sufferer has to do is call a toll-free number and blow on their phone. Networked computers take care of the rest by performing complex calculations, then delivering the results a few seconds later via a voice or text message. The early versions of the algorithm only worked on expensive smart phones, but Patel and his team refined it over time until it could work on any phone. Diagnosing and treating COPD provides a glimpse of how the Internet of Things will improve healthcare in the future.',
-    teamsTitle: 'IoT Department',
-    personName: '',
-    personJob: '',
-    serviceTitle: '',
-    serviceHeading: '',
+    createdData: 'September 17, 2019',
   })
   await IoT.addCasestudy(iotC6.id)
   await Healthcare.addCasestudy(iotC6.id)
@@ -1814,11 +1692,7 @@ async function insertRealData() {
     solutionTitle: 'IoT Analytics',
     solutionDescription:
       "Manage and analyze your IoMT data where, when and how it works best for your patient. Deliver the best patient experience – in real-time. Understand which data is relevant and private, so you'll know what to store and what to protect. SAS delivers trusted, automated IoT analytics solutions that can help you: - Maximize value from IoMT data. Identify and leverage data sources that provide tangible insights into enhancing patient care, streamlining processes and delivering cost optimization strategies. - Drive innovation in patient care and operations. Develop new business models and opportunities for data sharing and monetization with a more dynamic, open and agile platform. - Embed IoMT analytics within decision support systems. Reduce alarm fatigue, improve patient safety, optimize staff and patient flow, and accelerate the adoption of value-based health care and personalized medicine.",
-    teamsTitle: 'IoT Department',
-    personName: '',
-    personJob: '',
-    serviceTitle: '',
-    serviceHeading: '',
+    createdData: 'July 17, 2019',
   })
   await IoT.addCasestudy(iotC7.id)
   await Healthcare.addCasestudy(iotC7.id)
@@ -1837,11 +1711,7 @@ async function insertRealData() {
     solutionTitle: 'Smart lighting IoT solution',
     solutionDescription:
       'Enabled by the underlying Low Power Wide Area Network (LPWAN) based on Semtech’s LoRa® devices and wireless radio frequency technology (LoRa Technology) that is developed to support multiple smart city use cases at scale, Tata Communications and its device partners deployed smart sensors on the street lights of Jamshedpur. The solution tracked and optimised energy consumption with the automated switching of street lights, along with the capability to control light intensity based on the external lighting conditions. JUSCO realised the power of IoT byc transferring complete control of smart lights to its command centre. It also enjoys the assurance of enterprise-grade SLAs from Tata Communications. The command centre could centrally operate, monitor and optimise all of its smart lights through a web-based application. This integrated view allowed JUSCO to significantly improve their response time and minimise disruption in service and safety. The command centre could accurately identify the smart lights that must be promptly serviced, delivering a better quality of life to the residents of Jamshedpur. All of this is achieved at lower cost and effort.',
-    teamsTitle: 'IoT Department',
-    personName: '',
-    personJob: '',
-    serviceTitle: '',
-    serviceHeading: '',
+    createdData: 'January 19, 2019',
   })
   await IoT.addCasestudy(iotC8.id)
   await SmartLighting.addCasestudy(iotC8.id)
@@ -1860,11 +1730,7 @@ async function insertRealData() {
     solutionTitle: 'Procesing and calculations on sensor data',
     solutionDescription:
     'HexTech development team designed and developed a smart solution to collect sensor data and aggregate it on a central server for processing and further calculations of a building’s state. Data processing and averaging make it possible to boost system performance and reduce data volumes. The user-friendly interface presents the data from connected through intuitive color coding – the green, yellow and red lights indicate the state of a building. Additionally, the system allows a flexible configuration of threshold values to regulate the transition from one status to another. To aggregate the data – suppose, for calculating a construction deformation, ScienceSoft developed a system of virtual sensors collecting information from several physical sensors. It allows users to monitor specific parameters which can be used only in the aggregate.',
-    teamsTitle: 'IoT Department',
-    personName: '',
-    personJob: '',
-    serviceTitle: '',
-    serviceHeading: '',
+    createdData: 'November 5, 2018',
   })
   await IoT.addCasestudy(iotC9.id)
   await SmartCities.addCasestudy(iotC9.id)
@@ -1881,12 +1747,7 @@ async function insertRealData() {
       'The Customer wanted to deliver a sophisticated remote patient monitoring solution for clinics of North America. The solution should help to improve medical staff performance, avoid routine visits, and increase the quality of care. For that reason, the Customer needed a team of savvy professionals in R&D and healthcare IT.',
     solutionTitle: 'App and Web Dashboard',
     solutionDescription: 'The developers reviewed and analyzed available approaches and frameworks and picked WebRTC technology as the best one for platform-independent voice and video communication. Several Android-powered hardware devices were selected to implement central communication module or Sensor Network Appliances (SNAs). The development process was split into 2 major parts: the development of apps for Android and iOS devices and Web dashboard implementation. \n 1) HexTech’s team delivered apps for both patients and medical staff. Gradle flavors were used to build the apps’ variations fully compatible with different screen sizes: wide screen (for doctors), tablet (for nurses) and smartphone (for healthcare services consumers). Patients could smoothly access numerous sensors in order to monitor data and synchronize it with the server. Medical staff members could diagnose and treat patient remotely and receive automated alerts and notifications, when, for example patient state suddenly changes. \n 2) A Web Dashboard assisted medical professionals in monitoring the overall status of patients drilling down on personal medical data. It sent alerts on poor health indicators and maintains the doctor-patient connection. The central communication module was built upon a TV-connected Android-powered device. ',
-
-    teamsTitle: 'IoT Department',
-    personName: '',
-    personJob: '',
-    serviceTitle: '',
-    serviceHeading: '',
+    createdData: 'June 17, 2018',
   })
   await IoT.addCasestudy(iotC10.id)
   await Healthcare.addCasestudy(iotC10.id)
@@ -1904,11 +1765,7 @@ async function insertRealData() {
     solutionTitle: 'Industrial connected displays',
     solutionDescription:
       'A team of a project manager, a business analyst, 3 senior С++ developers, a senior UI designer, and a software testing engineer have delivered a desktop application based on image analysis algorithms, complemented with a simple and intuitive GUI. In particular, ORB algorithm has been used for feature detection, and a combination of algorithms (perceptual hash algorithm, PSNR and histograms comparing) have been employed to compare regions of interest in the reference template and in the image under inspection. The user provides a reference board template, putting on all the elements to be inspected with a tool that allows marking objects of three main shapes: \n-Elements with a round cross-section (mainly capacitors) \n-Rectangular elements (chips, diodes, transistors) \n-Dumbbell-shaped elements (resistors) \n After preparing the reference template with all the elements located, the user can proceed to the analysis of printed circuit assemblies of the same type as the reference PCA. Comparing these images with the reference assembly, the application defines defected ones and shows the locations of missing components in detail.',
-    teamsTitle: 'IoT Department',
-    personName: '',
-    personJob: '',
-    serviceTitle: '',
-    serviceHeading: '',
+    createdData: 'April 17, 2018',
   })
   await IoT.addCasestudy(iotC11.id)
   await IndustrialManufacturing.addCasestudy(iotC11.id)
@@ -1927,11 +1784,7 @@ async function insertRealData() {
     solutionTitle: ' IoT Sensor Network design and Cloud Interface development',
     solutionDescription:
       'Our more than a decade long expertise in the Automotive domain along with proven production grade Cloud-Telematics reference designs encouraged the customer to partner with us for this project. We leveraged our expertise in IoT Sensor Network design and Cloud Interface development, in order to enable the collection of data like speed, GPS location and more. This was facilitated with the help of MQTT protocol based communication interface. Our expertise in the automotive domain ensured that we achieve compliance with all the necessary standards while selecting components for hardware design. Additionally, we have leveraged our expertise in firmware, SPI, I2C and CAN protocols.',
-    teamsTitle: 'IoT Department',
-    personName: '',
-    personJob: '',
-    serviceTitle: '',
-    serviceHeading: '',
+    createdData: 'January 5, 2018',
   })
   await IoT.addCasestudy(iotC12.id)
   await Automotive.addCasestudy(iotC12.id)
