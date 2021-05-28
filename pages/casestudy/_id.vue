@@ -6,7 +6,7 @@
           <header>
             <h4 class="area-title">{{ casestudy.area.title }}</h4>
             <h1 class="title-case">{{ casestudy.title }}</h1>
-            <h5 class="description">
+            <h5 class="sub-title">
               {{ casestudy.author }}Author's name | April 2, 2020 | 2 Comments
             </h5>
             <div class="column">
@@ -636,6 +636,14 @@ h4 {
 h1 {
   text-align: left;
 }
+.sub-title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #464a52;
+  margin-bottom: 15px;
+}
 .pre-section {
   text-align: center;
   font-style: normal;
@@ -721,6 +729,7 @@ img {
   align-content: left;
   width: 90%;
   object-fit: cover;
+  max-height: 375px;
 }
 p {
   text-align: left;

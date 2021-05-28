@@ -2,6 +2,7 @@
   <div class="member-mini">
     <div class="card">
       <svg
+        class="personPhoto"
         width="234"
         height="216"
         viewBox="0 0 254 236"
@@ -76,5 +77,47 @@ export default {
   line-height: 38px;
   text-align: center;
   color: var(--cc-base1);
+}
+
+@media screen and (max-width: 1200px) {
+  .card {
+    height: 400px;
+    width: 200px;
+  }
+  .occupation {
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 24px;
+  }
+  .personName {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .personPhoto {
+    height: 200px;
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    height: 200px;
+    width: 100px;
+  }
+  .occupation {
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 24px;
+  }
+  .personName {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .personPhoto {
+    height: 110px;
+    width: auto;
+  }
 }
 </style>

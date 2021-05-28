@@ -206,8 +206,7 @@ async function insertRealData() {
       'Wherever your business goes, whoever it works with, you need cybersecurity that covers it all.',
     description:
       'Anytime. Anywhere. We create cybersecurity tailored to your specific business needs. We defend against cyberattacks with proactive, focused,  industry-relevant threat intelligence to give you the confidence that  comes from knowing your business is secure.',
-    banner:
-      'https://i.ibb.co/X5FrLTP/Frame-6.png',
+    banner: 'https://i.ibb.co/X5FrLTP/Frame-6.png',
     evocativeImage: 'https://i.ibb.co/Ny7F40s/security.png',
     servicesTitle: 'Discover our Security services',
     servicesDescription:
@@ -237,7 +236,7 @@ async function insertRealData() {
     title: 'Cloud Computing',
     subTitle: 'Modernize your IT environment and improve business efficiency',
     description:
-      'Having been a major driving force of the ongoing digital revolution, the Cloud has completely changed the way enterprises run their operations - from IT infrastructure management, through financial administration, to data exchange. At ??COMPANY NAME??, we can move your existing IT environment to the Cloud, as well as provide a wide range of cloud-driven applications to help your company gain a competitive advantage. Scroll through this space to learn more.',
+      'Having been a major driving force of the ongoing digital revolution, the Cloud has completely changed the way enterprises run their operations - from IT infrastructure management, through financial administration, to data exchange. At HexTech, we can move your existing IT environment to the Cloud, as well as provide a wide range of cloud-driven applications to help your company gain a competitive advantage. Scroll through this space to learn more.',
     banner: 'https://i.ibb.co/crjyD7n/Frame-7.png',
     evocativeImage: 'https://i.ibb.co/hf3LHBb/cloud.png',
     servicesTitle: 'Discover our Cloud Computing services ',
@@ -273,10 +272,8 @@ async function insertRealData() {
       'Analyze data from your database with a data driven approach to take important decisions inside your company.',
     description:
       'The science of analyzing raw data in order to make conclusions about that information, revealing reveal trends and metrics. Through our specialist your company will be more efficient in taking decisions. This process of analysis allows to operate a predictive analysis, that is, it allows to know in advance what will happen: this becomes possible because if we have a model and we have enough historical data we can determine what will happen in the near future with bases or statistical foundations.',
-    banner:
-      'https://i.ibb.co/F3W2W73/Frame-8.png',
-    evocativeImage:
-      'https://i.ibb.co/KDhJdh0/data.png',
+    banner: 'https://i.ibb.co/F3W2W73/Frame-8.png',
+    evocativeImage: 'https://i.ibb.co/KDhJdh0/data.png',
     servicesTitle: 'Discover our services ',
     servicesDescription:
       'AI is only as smart as the insights that fuel it. We can help you unlock powerful analytics insights by tapping into data you did not even know you had.',
@@ -426,7 +423,7 @@ async function insertRealData() {
   const SmartCities = await Service.create({
     title: 'Smart Cities',
     subTitle:
-      'A smart city system gathers and analyzes data from sensors and smart devices to enable efficient management of urban processes (e.g., transportation, lighting). With 9-year experience in IoT, ??CompanyName?? designs and implements end-to-end IoT solutions to bring smart city vision to reality.',
+      'A smart city system gathers and analyzes data from sensors and smart devices to enable efficient management of urban processes (e.g., transportation, lighting). With 9-year experience in IoT, HexTech designs and implements end-to-end IoT solutions to bring smart city vision to reality.',
     description:
       'Municipalities of all sizes around the world are adopting smart city concepts based on Internet of Things (IoT) systems to optimize the efficient management of community assets, resources, operations and services. Smart cities foster service-oriented, sustainable local governance equipped to improve transportation systems, build energy-efficient infrastructure, decrease environmental pressures, maintain effective disaster response, and provide state-of-the-art security in public spaces. We work to serve each community with the appropriate smart city services and solutions according to its individual needs and unique vision.',
     banner:
@@ -438,18 +435,15 @@ async function insertRealData() {
     s1Name: 'Road Traffic',
     s1Description:
       'Our smart traffic systems take intelligent actions based on the careful “study” of traffic flow, bringing human intervention down to a minimum.',
-    s1Logo:
-      'https://i.ibb.co/Rczq8Pv/sol-1.png',
+    s1Logo: 'https://i.ibb.co/Rczq8Pv/sol-1.png',
     s2Name: 'Lighting',
     s2Description:
       'Connecting sensors, across the street lighting system, helps to consume less energy and bringing down energy costs.',
-    s2Logo:
-      'https://i.ibb.co/KwskLjv/sol-2.png',
+    s2Logo: 'https://i.ibb.co/KwskLjv/sol-2.png',
     s3Name: 'Safety',
     s3Description:
       'For enhancing public safety, we connect cameras, microphones and movement sensors to a smart city platform and power it with robust analytics tools.',
-    s3Logo:
-      'https://i.ibb.co/b77D3Fm/sol-3.png',
+    s3Logo: 'https://i.ibb.co/b77D3Fm/sol-3.png',
     partnerTitle: '',
     partnerDescription:
       'Since user apps are an integral part of a smart city, we offer mobile consulting, UI/UX design, native (iOS, Android) and cross-platform (Cordova/PhoneGap, Xamarin, React Native) development, as well as mobile testing.',
@@ -481,17 +475,15 @@ async function insertRealData() {
     s1Name: 'Reduce energy costs',
     s1Description:
       'With connected lighting, your organization can monitor usage and provide lighting as needed in different areas based on their unique needs.',
-    s1Logo:
-      'https://i.ibb.co/Rczq8Pv/sol-1.png',
+    s1Logo: 'https://i.ibb.co/Rczq8Pv/sol-1.png',
     s2Name: 'Make your city a safer place',
     s2Description:
       'Smart lighting provides a greater sense of security and overall better experience for citizens as it helps cities enhance public safety',
-    s2Logo:
-      'https://i.ibb.co/KwskLjv/sol-2.png',
+    s2Logo: 'https://i.ibb.co/KwskLjv/sol-2.png',
     s3Name: 'Remote maintenance of smart lights',
-    s3Description: 'HexTech Smart Lighting Solution allows secure and reliable short distance communication, distributed control and remote smartlights management',
-    s3Logo:
-      'https://i.ibb.co/b77D3Fm/sol-3.png',
+    s3Description:
+      'HexTech Smart Lighting Solution allows secure and reliable short distance communication, distributed control and remote smartlights management',
+    s3Logo: 'https://i.ibb.co/b77D3Fm/sol-3.png',
     p1Name: '......',
     p1Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
     p2Name: '..........',
@@ -506,7 +498,7 @@ async function insertRealData() {
   const Automotive = await Service.create({
     title: 'Automotive',
     subTitle:
-      '??COMPANY NAME?? IoT Connected Vehicle Insights is connected car software that integrates real-time data about drivers, vehicles and the environment to optimize the in-car experience. The dedicated cloud service streams data from vehicle sensors and uses analytics and AI to understand driver behavior. It links with other information systems in the cloud, such as weather and traffic, to add context and situational awareness.',
+      'HexTech IoT Connected Vehicle Insights is connected car software that integrates real-time data about drivers, vehicles and the environment to optimize the in-car experience. The dedicated cloud service streams data from vehicle sensors and uses analytics and AI to understand driver behavior. It links with other information systems in the cloud, such as weather and traffic, to add context and situational awareness.',
     description:
       'Cars have become one of the fastest-growing mobile device category, with every vehicle turning into a node in a much larger network and ecosystems. The ongoing (re)evolution in terms of connectivity, electric, autonomous and mobility trends is full of great opportunities to achieve new revenue streams and improve quality of life in the near future. Yet, as with all new opportunities, challenges, disruptions and risks arise.',
     banner:
@@ -520,17 +512,15 @@ async function insertRealData() {
     s1Name: 'Automotive-grade M2M technology',
     s1Description:
       'A new lifestyles offering a suite of advanced features including mobile Wi-Fi hotspot, Internet radio, Web services and an improved navigation system.',
-    s1Logo:
-      'https://i.ibb.co/Rczq8Pv/sol-1.png',
+    s1Logo: 'https://i.ibb.co/Rczq8Pv/sol-1.png',
     s2Name: 'Thales Automotive Connectivity',
     s2Description:
       'Automotive-grade eSIMs leadership position, to identify vehicles, encrypt and secure communications. eSIMs also ensure remote connectivity provisioning as well as seamless connectivity.',
-    s2Logo:
-      'https://i.ibb.co/KwskLjv/sol-2.png',
+    s2Logo: 'https://i.ibb.co/KwskLjv/sol-2.png',
     s3Name: 'Customer Engagement',
-    s3Description: 'Modern customers must have smarter, ‘connected’ cars, and appreciate innovative marketing as much as they like innovations with their vehicles.',
-    s3Logo:
-      'https://i.ibb.co/b77D3Fm/sol-3.png',
+    s3Description:
+      'Modern customers must have smarter, ‘connected’ cars, and appreciate innovative marketing as much as they like innovations with their vehicles.',
+    s3Logo: 'https://i.ibb.co/b77D3Fm/sol-3.png',
     p1Name: '........',
     p1Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
     p2Name: '......',
@@ -560,18 +550,15 @@ async function insertRealData() {
     s1Name: 'Automation',
     s1Description:
       'Smart price tags will adjust prices in real time, based on the item’s popularity, expiry date, and other factors. ',
-    s1Logo:
-      'https://i.ibb.co/Rczq8Pv/sol-1.png',
+    s1Logo: 'https://i.ibb.co/Rczq8Pv/sol-1.png',
     s2Name: 'Agile workforce',
     s2Description:
       'With the advancement of technologies, courses and webinars are already accessible for anyone, anytime, and from any device.',
-    s2Logo:
-      'https://i.ibb.co/KwskLjv/sol-2.png',
+    s2Logo: 'https://i.ibb.co/KwskLjv/sol-2.png',
     s3Name: 'Connectivity platforms',
     s3Description:
       'In the retail industry, connectivity platforms may take multiple forms: from large marketplaces, such as Amazon and Alibaba, to online payment systems and device communication hubs.',
-    s3Logo:
-      'https://i.ibb.co/b77D3Fm/sol-3.png',
+    s3Logo: 'https://i.ibb.co/b77D3Fm/sol-3.png',
     p1Name: 'Amazon Web Services',
     p1Logo: 'https://www.channelfutures.com/files/2015/05/aws_0.jpg',
     p2Name: 'Arduino',
@@ -588,7 +575,7 @@ async function insertRealData() {
   const Healthcare = await Service.create({
     title: 'IoT Solutions for Healthcare',
     subTitle:
-      'Medical IoT facilitates monitoring patient health state and tracking medical staff and assets through the network of smart devices and sensors connected to the cloud. With 9 years in IoT, "COMPANY NAME" provides reliable IoMT solutions to improve patient care, asset use, and staff productivity.',
+      'Medical IoT facilitates monitoring patient health state and tracking medical staff and assets through the network of smart devices and sensors connected to the cloud. With 9 years in IoT, HexTech provides reliable IoMT solutions to improve patient care, asset use, and staff productivity.',
     description:
       'The health industry has been an early adopter of the internet of things (IoT). Nearly half (46%) of executives who participated in the survey said their organization is actively using IoT, and another 21% stated they have IoT projects in development. Their main ambition is efficiency: 54% already use IoT to improve operations, and another 21% plan to do so in the next two years. Overall, health industry execs are optimistic, with 90% believing that IoT’s benefits outweigh its risks. In addition, 79% believe that IoT will help them grow revenue or increase profits.',
     banner:
@@ -602,18 +589,15 @@ async function insertRealData() {
     s1Name: 'Locating and managing assets',
     s1Description:
       'Knowing the exact location of life-saving devices and essential equipment like infusion pumps results in fewer delays for patients and helps optimize machine use.',
-    s1Logo:
-      'https://i.ibb.co/Rczq8Pv/sol-1.png',
+    s1Logo: 'https://i.ibb.co/Rczq8Pv/sol-1.png',
     s2Name: 'Capturing data to drive better outcomes',
     s2Description:
       'Home monitoring of patients using connected blood pressure, glucose and other devices, which enables doctors and nurses to track patients more closely and identify individuals who are at risk.',
-    s2Logo:
-      'https://i.ibb.co/KwskLjv/sol-2.png',
+    s2Logo: 'https://i.ibb.co/KwskLjv/sol-2.png',
     s3Name: 'Enhancing the employee and patient experience',
     s3Description:
       'Medical teams can track the location of patients wearing wristbands with sensors and deliver relevant information to families via their smartphones.',
-    s3Logo:
-      'https://i.ibb.co/b77D3Fm/sol-3.png',
+    s3Logo: 'https://i.ibb.co/b77D3Fm/sol-3.png',
     p1Name: '....',
     p1Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
     p2Name: '.....',
@@ -642,18 +626,15 @@ async function insertRealData() {
     s1Name: 'Making operations self-sufficient',
     s1Description:
       'Many use sensors to monitor and access everything—from the operational state of machinery to getting alerts when storage tanks, trash dumpsters, exit signs and smoke alarms need to be serviced.',
-    s1Logo:
-      'https://i.ibb.co/Rczq8Pv/sol-1.png',
+    s1Logo: 'https://i.ibb.co/Rczq8Pv/sol-1.png',
     s2Name: 'Optimizing factory conditions',
     s2Description:
       'IoT-enabled predictive maintenance can help prevent equipment from malfunctioning. Dashboards can provide deep visibility within a partner ecosystem and supply chain.',
-    s2Logo:
-      'https://i.ibb.co/KwskLjv/sol-2.png',
+    s2Logo: 'https://i.ibb.co/KwskLjv/sol-2.png',
     s3Name: 'Monitoring the supply chain',
     s3Description:
       'IoT solutions can monitor the condition of products from when they are made in a factory (or grown on a farm) to the arrival at their final destination.',
-    s3Logo:
-      'https://i.ibb.co/b77D3Fm/sol-3.png',
+    s3Logo: 'https://i.ibb.co/b77D3Fm/sol-3.png',
     p1Name: '.....',
     p1Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
     p2Name: '.....',
@@ -673,18 +654,35 @@ async function insertRealData() {
       'Give users what they are searching just when they land on your page in order to maximize sales.',
     description:
       'In order to grow your enterprise, you need to do more than keep your existing customers happy — you need to find new business. Big data can help you find new audiences and determine which groups are more likely to buy.    ',
-    banner: 'https://landerapp.com/blog/wp-content/uploads/2018/09/1-2.png',
+    banner: 'https://i.imgur.com/1ZKpYyo.png',
     evocativePhoto: '',
     serviceTitle: '',
-    serviceDescription: '',
+    serviceDescription:
+      'We put in practise all the experience we gained during all the life of this company in order to give our clients a very good customer experience. Moreover, all our experts are very professional on the service we provide to clients.',
+    s1Name: 'Optimize SEO',
+    s1Description:
+      'Search engine optimization is the process of optimizing web pages and their content to be easily discoverable by users searching for terms relevant to your website. ',
+    s1Logo: 'https://i.ibb.co/Rczq8Pv/sol-1.png',
+    s2Name: 'Social Media Marketing',
+    s2Description:
+      'Social media marketing is a powerful way for businesses, professionals and organizations of all sizes to find and connect with repeat or potential customers / users.',
+    s2Logo: 'https://i.ibb.co/KwskLjv/sol-2.png',
+    s3Name: 'E-Commerce Marketing',
+    s3Description:
+      'For eCommerce marketing we mean a strategic planning that aims to build brand awareness, increasing the number of sales and loyal customers.',
+    s3Logo: 'https://i.ibb.co/b77D3Fm/sol-3.png',
     partnerTitle: '',
-    partnerDescription: '',
-    p1Name: '',
-    p1Logo: '',
-    p2Name: '',
-    p2Logo: '',
-    p3Name: '',
-    p3Logo: '',
+    partnerDescription:
+      'On all the case studies we worked on we had gained experience from our partners. Although some of them are very big companies, we had an equal exchange of expertise since we have really professional experts wprking on many industries.',
+    p1Name: 'Mckinsey',
+    p1Logo:
+      'https://s3-ap-southeast-1.amazonaws.com/p2swebsite/images/smeKhabar/news/IndiaCanCreateoverOne-TrillionDollarsWorthofDigitalEconomyby2025SaysMEITMcKinseyReport_1550744301446_48.jpg',
+    p2Name: 'Optimize',
+    p2Logo:
+      'https://lh3.googleusercontent.com/proxy/OtxMsmSjRgs_qllMxOpqrUYDYYF8sMgPU1oJBJp-0MxK8DA8ZEdaoZeAfeMdyi7A9Fpog4l1P8vqL1FP2PdDeUjVkA',
+    p3Name: 'Eclincher',
+    p3Logo:
+      'https://media-exp1.licdn.com/dms/image/C4E0BAQE_8uje7Spe1g/company-logo_200_200/0/1578120960890?e=2159024400&v=beta&t=0pLs4HfyleatwiUUZHOGsVSLhyOEVMuQ4qgEdUeEtWs',
     caseStudyTitle: '',
     realtedServiceTitle: '',
   })
@@ -700,15 +698,32 @@ async function insertRealData() {
       'https://images.techhive.com/images/article/2015/07/health-analytics-ts-100599204-large.jpg',
     evocativePhoto: '',
     serviceTitle: '',
-    serviceDescription: '',
+    serviceDescription:
+      'We put in practise all the experience we gained during all the life of this company in order to give our clients a very good customer experience. Moreover, all our experts are very professional on the service we provide to clients.',
+    s1Name: 'Efficiencies for operational management',
+    s1Description:
+      'Predictive analytics allows for the improvement of operational efficiency. Big data and predictive analytics are currently playing an integral part in health care. ',
+    s1Logo: 'https://i.ibb.co/Rczq8Pv/sol-1.png',
+    s2Name: 'Personal medicine',
+    s2Description:
+      'In personal medicine, predictive analytics can play a key role at the individual level and enable the use of prognostic analytics.',
+    s2Logo: 'https://i.ibb.co/KwskLjv/sol-2.png',
+    s3Name: 'Fast pace of technology and impact on care',
+    s3Description:
+      ' The term digital disruption has arisen to capture the essence of just how fast everything is changing based on new technologies. ',
+    s3Logo: 'https://i.ibb.co/b77D3Fm/sol-3.png',
     partnerTitle: '',
-    partnerDescription: '',
-    p1Name: '',
-    p1Logo: '',
-    p2Name: '',
-    p2Logo: '',
-    p3Name: '',
-    p3Logo: '',
+    partnerDescription:
+      'On all the case studies we worked on we had gained experience from our partners. Although some of them are very big companies, we had an equal exchange of expertise since we have really professional experts wprking on many industries.',
+    p1Name: 'Rock Health',
+    p1Logo:
+      'https://rockhealth.com/wp-content/uploads/2017/09/Rock-Health-Image-smaller.jpg',
+    p2Name: 'Philips',
+    p2Logo:
+      'https://www.luciamo.it/ImgGalery/Img1/Clanky/aktuality-home/Philips_a_jeho_mensi_firmy.jpg',
+    p3Name: 'Intel',
+    p3Logo:
+      'https://www.tomshw.it/images/images/2020/06/intel-logo-97706.1200x675.jpg',
     caseStudyTitle: '',
     realtedServiceTitle: '',
   })
@@ -723,15 +738,32 @@ async function insertRealData() {
       'https://image.shutterstock.com/image-photo/predictive-analytics-big-data-analysis-260nw-1348992500.jpg',
     evocativePhoto: '',
     serviceTitle: '',
-    serviceDescription: '',
+    serviceDescription:
+      'We put in practise all the experience we gained during all the life of this company in order to give our clients a very good customer experience. Moreover, all our experts are very professional on the service we provide to clients.',
+    s1Name: 'Real time prediction',
+    s1Description:
+      'A real-time prediction is a synchronous call to Amazon Machine Learning. The prediction is made when Amazon ML gets the request. ',
+    s1Logo: 'https://i.ibb.co/Rczq8Pv/sol-1.png',
+    s2Name: 'Data Science',
+    s2Description:
+      'Machine learning applications in computer vision, NLP, recommender systems, forecasting. network science, BI, and visualization.',
+    s2Logo: 'https://i.ibb.co/KwskLjv/sol-2.png',
+    s3Name: 'New Era of Data Innovation',
+    s3Description:
+      'Businesses hoard data. And often, so much of it isn’t used due to infrastructure costs and technology bottlenecks. ',
+    s3Logo: 'https://i.ibb.co/b77D3Fm/sol-3.png',
     partnerTitle: '',
-    partnerDescription: '',
-    p1Name: '',
-    p1Logo: '',
-    p2Name: '',
-    p2Logo: '',
-    p3Name: '',
-    p3Logo: '',
+    partnerDescription:
+      'On all the case studies we worked on we had gained experience from our partners. Although some of them are very big companies, we had an equal exchange of expertise since we have really professional experts wprking on many industries.',
+    p1Name: 'NetSuite',
+    p1Logo:
+      'https://www.01net.it/wp-content/uploads/sites/14/2016/07/netsuite-logo-600x180.png',
+    p2Name: 'Amazon',
+    p2Logo:
+      'https://www.fastweb.it/var/storage_feeds/CMS/articoli/17a/17aff0ceb57a46aaa79df025e78f6e64/logo%20amazon.png',
+    p3Name: 'River Logic',
+    p3Logo:
+      'https://awsmp-logos.s3.amazonaws.com/e981e56c-9504-4acd-a441-81c99483b239/9801997f62aa29e763040bf44e7b2485.png',
     caseStudyTitle: '',
     realtedServiceTitle: '',
   })
@@ -746,15 +778,32 @@ async function insertRealData() {
     banner: 'https://www.sygmatechnology.com/hubfs/shutterstock_1133982038.jpg',
     evocativePhoto: '',
     serviceTitle: '',
-    serviceDescription: '',
+    serviceDescription:
+      'We put in practise all the experience we gained during all the life of this company in order to give our clients a very good customer experience. Moreover, all our experts are very professional on the service we provide to clients.',
+    s1Name: 'Automation Expertise',
+    s1Description:
+      'Incorrect decisions through disjointed applications of expertise across the company and inefficient services come at a huge cost to your organization.    ',
+    s1Logo: 'https://i.ibb.co/Rczq8Pv/sol-1.png',
+    s2Name: 'Role in Data Preparation',
+    s2Description:
+      'Data cleaning is a fundamental operation to improve the performance of predictive analysis. As we know Big Data can be both structured and unstructured and come from different sources. ',
+    s2Logo: 'https://i.ibb.co/KwskLjv/sol-2.png',
+    s3Name: 'Data Workflow',
+    s3Description:
+      'Big Data Automation uses advanced features to better manage the flow of activities, creating a single and integrated environment that allows you to maintain a unified view of data.',
+    s3Logo: 'https://i.ibb.co/b77D3Fm/sol-3.png',
     partnerTitle: '',
-    partnerDescription: '',
-    p1Name: '',
-    p1Logo: '',
-    p2Name: '',
-    p2Logo: '',
-    p3Name: '',
-    p3Logo: '',
+    partnerDescription:
+      'On all the case studies we worked on we had gained experience from our partners. Although some of them are very big companies, we had an equal exchange of expertise since we have really professional experts wprking on many industries.',
+    p1Name: 'Reply',
+    p1Logo:
+      'https://mms.businesswire.com/media/20210415005484/it/809563/23/Reply_-_LOGO_300dpi.jpg',
+    p2Name: 'Siemens',
+    p2Logo:
+      'https://pbs.twimg.com/profile_images/1311596912706023429/aFWLoMhS.png',
+    p3Name: 'LuTech',
+    p3Logo:
+      'https://abieventi-statics-external.s3-eu-west-1.amazonaws.com/url_59edc98ae011a96693a21dec.jpg',
     caseStudyTitle: '',
     realtedServiceTitle: '',
   })
@@ -770,15 +819,31 @@ async function insertRealData() {
       'https://www.smartdatacollective.com/wp-content/uploads/2020/11/business-intelligence-future-in-coming-years.jpg',
     evocativePhoto: '',
     serviceTitle: '',
-    serviceDescription: '',
+    serviceDescription:
+      'We put in practise all the experience we gained during all the life of this company in order to give our clients a very good customer experience. Moreover, all our experts are very professional on the service we provide to clients.',
+    s1Name: 'Business intelligence consulting',
+    s1Description:
+      'While improving your existing BI solution, we identify the evident and hidden problems that hinder your BI solution’s smooth performance.',
+    s1Logo: 'https://i.ibb.co/Rczq8Pv/sol-1.png',
+    s2Name: 'Big data consulting',
+    s2Description:
+      'Our consultants conduct dedicated training sessions to help various target audiences, be it top managers or the technical team, to understand how to get value out of big data.',
+    s2Logo: 'https://i.ibb.co/KwskLjv/sol-2.png',
+    s3Name: 'Data Visualization',
+    s3Description:
+      'Data visualization services help communicate company’s data to business users using visual elements. ',
+    s3Logo: 'https://i.ibb.co/b77D3Fm/sol-3.png',
     partnerTitle: '',
-    partnerDescription: '',
-    p1Name: '',
-    p1Logo: '',
-    p2Name: '',
-    p2Logo: '',
-    p3Name: '',
-    p3Logo: '',
+    partnerDescription:
+      'On all the case studies we worked on we had gained experience from our partners. Although some of them are very big companies, we had an equal exchange of expertise since we have really professional experts wprking on many industries.',
+    p1Name: 'Microsoft',
+    p1Logo:
+      'https://lh3.googleusercontent.com/proxy/WYX7gll105oAtJPvW5B8LUnxR57mBUmNyzZQoINC7_VDOXBNx2MqJAISdf6Pwq6s1jxgWenxPGZnjPGvo6-Oc1KA7vly5i3o7TnGf00bqFak1Jf4Q1A',
+    p2Name: 'Intelligence partner',
+    p2Logo:
+      'https://www.intelligencepartner.com/wp-content/themes/intelligencepartner/img/intelligencepartner_logo.svg',
+    p3Name: 'SB Italia',
+    p3Logo: 'https://www.sbitalia.com/wp-content/uploads/2015/11/logo.png',
     caseStudyTitle: '',
     realtedServiceTitle: '',
   })
@@ -793,15 +858,31 @@ async function insertRealData() {
     banner:
       'https://associationsnow.com/wp-content/uploads/2018/12/GettyImages-940692576_hrvcc-600x360.jpg',
     serviceTitle: '',
-    serviceDescription: '',
+    serviceDescription:
+      'We put in practise all the experience we gained during all the life of this company in order to give our clients a very good customer experience. Moreover, all our experts are very professional on the service we provide to clients.',
+    s1Name: 'B2B pricing',
+    s1Description:
+      'Pricing represents the greatest opportunity for B2B companies to increase profits, especially in the short term. ',
+    s1Logo: 'https://i.ibb.co/Rczq8Pv/sol-1.png',
+    s2Name: 'Consumer Pricing',
+    s2Description:
+      'Customers can compare your price to your competitors’ without leaving the house. But internet-fueled transparency can also foster greater customer loyalty. ',
+    s2Logo: 'https://i.ibb.co/KwskLjv/sol-2.png',
+    s3Name: 'Dynamic pricing',
+    s3Description:
+      'The algorithm automatically generates a price based on data provided by the partner and learnings from similar past deals.',
+    s3Logo: 'https://i.ibb.co/b77D3Fm/sol-3.png',
     partnerTitle: '',
-    partnerDescription: '',
-    p1Name: '',
-    p1Logo: '',
-    p2Name: '',
-    p2Logo: '',
-    p3Name: '',
-    p3Logo: '',
+    partnerDescription:
+      'On all the case studies we worked on we had gained experience from our partners. Although some of them are very big companies, we had an equal exchange of expertise since we have really professional experts wprking on many industries.',
+    p1Name: 'Simon Kucker',
+    p1Logo:
+      'https://media-exp1.licdn.com/dms/image/C4E0BAQHNWjH2RvlaTA/company-logo_200_200/0/1596201887751?e=2159024400&v=beta&t=DgJhJ5fpwQgFhYZB0TMe1tU-mEwyGOxIav8W2gdixSk',
+    p2Name: 'Accenture',
+    p2Logo: 'https://www.wecanjob.it/moduli/output_immagine.php?id=5288',
+    p3Name: 'Price Fx',
+    p3Logo:
+      'https://www.pricefx.com/wp-content/uploads/2020/04/Pricefx_logo_2019_White.png',
     caseStudyTitle: '',
     realtedServiceTitle: '',
   })
@@ -815,26 +896,24 @@ async function insertRealData() {
       'The easiest way to electronic invoicing is through the Cloud. Send e-invoices to your business partners & public administration entities in no time - wherever they are.',
     description:
       'In the light of the current national and EU legislation, Comarch e-Invoicing Cloud stands out as a simple and affordable tool that enables global, legally-compliant exchange of invoice documents with business partners and public administration entities. No matter your industry or product, our platform was designed to help you create, process, and store e-invoices, thus significantly improve your business efficiency. Plus, being a cloud-based solution, it does not require a long and cost-intensive implementation process. Instead, it gives you instant access to a virtual environment that is easy to navigate.',
-    banner: 'https://www.extrasys.it/hs-fs/hubfs/E-invoice%20benefits.png?width=800&name=E-invoice%20benefits.png',
+    banner:
+      'https://www.extrasys.it/hs-fs/hubfs/E-invoice%20benefits.png?width=800&name=E-invoice%20benefits.png',
     evocativePhoto: '',
     serviceTitle: 'E-Invoicing Service',
     serviceDescription:
-      'Companies active in many countries or worldwide need to support and process a large number of different E-Invoicing standards. With ??COMPANY NAME?? you are on the safe side. We support E-Invoicing compliance in more than 55 countries. In recent years, E-Invoicing initiatives have been started in many countries to simplify the exchange of invoicing data between companies („B2B“), and between companies and authorities („B2G“), and to increase tax revenues. The defined standards within the scope of these initiatives are already widespread. Some are already regulated by national governments.',
+      'Companies active in many countries or worldwide need to support and process a large number of different E-Invoicing standards. With HexTech you are on the safe side. We support E-Invoicing compliance in more than 55 countries. In recent years, E-Invoicing initiatives have been started in many countries to simplify the exchange of invoicing data between companies („B2B“), and between companies and authorities („B2G“), and to increase tax revenues. The defined standards within the scope of these initiatives are already widespread. Some are already regulated by national governments.',
     s1Name: 'Service Variants',
     s1Description:
       'Using industry-specific modules which include the country-specific processes, standards and features, all companies can start right away.',
-    s1Logo:
-      'https://i.ibb.co/Rczq8Pv/sol-1.png',
+    s1Logo: 'https://i.ibb.co/Rczq8Pv/sol-1.png',
     s2Name: 'High Security B2B Cloud Operation',
     s2Description:
       'Our highly standardized operating processes meet strict requirements typically going far beyond what you can provide on your own system.',
-    s2Logo:
-      'https://i.ibb.co/KwskLjv/sol-2.png',
+    s2Logo: 'https://i.ibb.co/KwskLjv/sol-2.png',
     s3Name: 'Secure Investment',
     s3Description:
       'Our software is independent from the operating model. We offer all SEEBURGER solutions as a Cloud Service or On-Premises solution with identical functionality. ',
-    s3Logo:
-      'https://i.ibb.co/b77D3Fm/sol-3.png',
+    s3Logo: 'https://i.ibb.co/b77D3Fm/sol-3.png',
     partnerTitle: '',
     partnerDescription: '',
     p1Name: '',
@@ -859,20 +938,16 @@ async function insertRealData() {
     serviceTitle: 'Application modernization services',
     serviceDescription: '',
     s1Name: 'Cloud consulting',
-    s1Description:
-      'Plan a cloud app to meet your business needs.',
-    s1Logo:
-      'https://i.ibb.co/Rczq8Pv/sol-1.png',
+    s1Description: 'Plan a cloud app to meet your business needs.',
+    s1Logo: 'https://i.ibb.co/Rczq8Pv/sol-1.png',
     s2Name: 'Cloud app development',
     s2Description:
       'We deliver a scalable, portable, reliable and secure containerized app based on the microservices.',
-    s2Logo:
-      'https://i.ibb.co/KwskLjv/sol-2.png',
+    s2Logo: 'https://i.ibb.co/KwskLjv/sol-2.png',
     s3Name: 'Application migration to the cloud',
     s3Description:
       'Application and/or DWH migration to the cloud with all-around modifications',
-    s3Logo:
-      'https://i.ibb.co/b77D3Fm/sol-3.png',
+    s3Logo: 'https://i.ibb.co/b77D3Fm/sol-3.png',
     partnerTitle: '',
     partnerTitle: '',
     partnerDescription: '',
@@ -886,6 +961,84 @@ async function insertRealData() {
     realtedServiceTitle: '',
   })
   await CloudComputing.addService(CloudAppDevelopServices.id)
+
+  const LiveVideoBroadcasting = await Service.create({
+    title: 'Live Video Broadcasting',
+    subTitle: 'Moving towards future always looking ahead of the technology',
+    description:
+      'Live streaming is one of the best ways to connect in a meaningful and authentic way with your community. Every day around the world, in offices, fitness studios, stadiums, houses of worship,and our own houses, moments are made. A livestream platform connects you instantly to your employees, customers, subscribers, or followers when a virtual event or series is your best option.',
+    banner:
+      'https://res.cloudinary.com/practicaldev/image/fetch/s--UpbEnajb--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://dev-to-uploads.s3.amazonaws.com/i/ah8zju0kmh6br3w69cgq.jpg',
+    evocativePhoto: '',
+    serviceTitle: '',
+    serviceDescription:
+      'We put in practise all the experience we gained during all the life of this company in order to give our clients a very good customer experience. Moreover, all our experts are very professional on the service we provide to clients.',
+    s1Name: 'Maximise quality video',
+    s1Description:
+      'We use very advanced techonology to guarantee an optimal quality. ',
+    s1Logo: 'https://i.ibb.co/Rczq8Pv/sol-1.png',
+    s2Name: 'Avoid rude content',
+    s2Description:
+      'Our developed AI recognise almost immediately contents that have to be banned.',
+    s2Logo: 'https://i.ibb.co/KwskLjv/sol-2.png',
+    s3Name: 'Minimal delay',
+    s3Description:
+      'Our conversion rate tends to be very small in order to let user be really live.',
+    s3Logo: 'https://i.ibb.co/b77D3Fm/sol-3.png',
+    partnerTitle: '',
+    partnerDescription:
+      'On all the case studies we worked on we had gained experience from our partners. Although some of them are very big companies, we had an equal exchange of expertise since we have really professional experts wprking on many industries.',
+    p1Name: 'Tencent',
+    p1Logo:
+      'https://www.thegamesmachine.it/wp-content/uploads/2020/05/tencent-logo-min.jpg',
+    p2Name: 'Twich',
+    p2Logo: 'https://www.oiesports.it/wp-content/uploads/2020/05/twitch.png',
+    p3Name: 'Netflix',
+    p3Logo:
+      'https://www.mediagol.it/wp-content/uploads/sites/27/2020/07/maxresdefault.jpg',
+    caseStudyTitle: '',
+    realtedServiceTitle: '',
+  })
+  await CloudComputing.addService(LiveVideoBroadcasting.id)
+
+  const LiveECommerce = await Service.create({
+    title: 'Live streaming E-Commerce',
+    subTitle: 'Moving towards future always looking ahead of the technology',
+    description:
+      'With live streaming you can sell products during a live stream in which the characteristics of the item for sale are recognized. This allows you to share more information, offer product demonstrations, satisfy viewers questions and respond to their reactions. It is an interactive system for both brands and stores, and for viewers who can purchase in real time, during the live broadcast. What is now fast becoming a profitable online sales channel for many luxury brands, actually originated in China as a form of entertainment: singers, comedians and other performers broadcast live for their fans in exchange for virtual gifts. In 2016, Chinese authorities started dozens of these live streaming platforms, sanctioning thousands of artists: this attempt to appease the phenomenon actually turned into an opportunity for more forward-thinking apps, such as Taobao, which they were the first to recognize its potential by investing in this new mode of commercial communication.',
+    banner:
+      'https://www.robvanlinda.de/wp-content/uploads/2020/08/Live-stream-banner.jpg',
+    evocativePhoto: '',
+    serviceTitle: '',
+    serviceDescription:
+      'We put in practise all the experience we gained during all the life of this company in order to give our clients a very good customer experience. Moreover, all our experts are very professional on the service we provide to clients.',
+    s1Name: 'Fast shipping',
+    s1Description: 'Our delivery service is very well organized.',
+    s1Logo: 'https://i.ibb.co/Rczq8Pv/sol-1.png',
+    s2Name: 'New buying experience',
+    s2Description:
+      'This new technology makes innovative the ways to purchase a product.',
+    s2Logo: 'https://i.ibb.co/KwskLjv/sol-2.png',
+    s3Name: 'Live Feedback',
+    s3Description:
+      'Due to live streaming users can see the real product and makes an idea about it.',
+    s3Logo: 'https://i.ibb.co/b77D3Fm/sol-3.png',
+    partnerTitle: '',
+    partnerDescription:
+      'On all the case studies we worked on we had gained experience from our partners. Although some of them are very big companies, we had an equal exchange of expertise since we have really professional experts wprking on many industries.',
+    p1Name: 'Tencent',
+    p1Logo:
+      'https://www.thegamesmachine.it/wp-content/uploads/2020/05/tencent-logo-min.jpg',
+    p2Name: 'TaoBao',
+    p2Logo:
+      'https://img.alicdn.com/tfs/TB1giluwEY1gK0jSZFMXXaWcVXa-1280-1280.png',
+    p3Name: 'Alibaba',
+    p3Logo: 'https://images-eu.ssl-images-amazon.com/images/I/71IxKvGqiWL.png',
+    caseStudyTitle: '',
+    realtedServiceTitle: '',
+  })
+  await CloudComputing.addService(LiveECommerce.id)
+
   //**END OF CLOUD COMPUTING SERVICES */
 
   //**CUSTOMER EXPERIENCE SERVICES */
@@ -1273,8 +1426,7 @@ async function insertRealData() {
     title: 'Massive invoice volumes as key driver for e-invoicing',
     subTitle:
       '“KPN generates an astonishing 100 million invoices per year. This is more than eight million per month. We are, with the exception of the Tax Administration, the biggest paper factory in the Netherlands.” explains Hans Hodes, Business Consultant at KPN. Customers receive invoices with cost summaries each month, or every other month. With these volumes, it was clear that e-Invoicing could bring big benefits.',
-    banner:
-      'https://einvoice1-trial.nic.in/Images/Einvoice_banner2.jpg',
+    banner: 'https://einvoice1-trial.nic.in/Images/Einvoice_banner2.jpg',
     descriptiveText:
       'The Netherlands’ leading telecommunications company, KPN, serves both consumers and business marketers – including 60% of the 1 million businesses in the Netherlands. Basware is helping them manage more than 100 million invoices per year.',
     challengeTitle: 'The increasing popularity if e-invoicing',
@@ -1314,6 +1466,56 @@ async function insertRealData() {
   })
   await CloudComputing.addCasestudy(ccC2.id)
   await CloudAppDevelopServices.addCasestudy(ccC2.id)
+
+  const ccC3 = await CaseStudy.create({
+    title: 'Live Event Broadcasting Video Platform',
+    subTitle:
+      'Present Communications provides audio-visuals, video conferencing equipments, webcasting, video productions, and other technical services to the live event industry.',
+    banner:
+      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTycYMziZzUxXQc-01VqqG5sT1ofurNRhvXDw&usqp=CAU',
+    descriptiveText:
+      'Present Communications provides audio-visuals, video conferencing equipments, webcasting, video productions, and other technical services to the live event industry. The platform was also expected to allow presenters to play a slideshow along with the webcast. They wanted the users to be able to share their queries about the event, and participate in online polls conducted during the live webcast.',
+    challengeTitle:
+      'Our client wanted to use a third-party video streaming platform to take care of the webcasting solution.',
+    challengeDescription:
+      'Our team could foresee some initial challenges with this request. One issue was to determine whether the third-party platform would be able to provide automated app creation, with the web services. Our team anticipated issues related to IPs and assessed the need to find out what kind of browser issues would possibly occur. Another challenge was to find a video player that could offer adaptive bit-rate streaming. Since there were no specific requirements given to us by the client, our team had to work on refining the scope for the application as well.',
+    solutionTitle: 'Ideation',
+    solutionDescription:
+      "The product owner team took the baton of ideating the requirements with the client via regular documented brainstorming sessions. The requirements were then converted into a visual representation via wireframes which represented the probable user flow on the platform. We then assigned relative priorities to the features in order to identify the Minimum Viable Product ( MVP ) and kept the 'extra' features out of the first release. This helped us keep the costs down and ensure greater value.",
+    teamsTitle: 'Live Broadcasting Department',
+    personName: '',
+    personJob: '',
+    serviceTitle: '',
+    serviceHeading: '',
+  })
+  await CloudComputing.addCasestudy(ccC3.id)
+  await LiveVideoBroadcasting.addCasestudy(ccC3.id)
+  await LiveECommerce.addCasestudy(ccC3.id)
+
+  const ccC4 = await CaseStudy.create({
+    title: 'Maybelline Proves sintony between E-Commerce and Live-Streaming',
+    subTitle:
+      'Maybelline New York faces the same challenge as many other brands: building an authentic connection with young women that drives sales. ',
+    banner:
+      'https://www.livescale.tv/wp-content/uploads/2020/12/Live-Shopping-Livescale-Checkout-Flow-Fashion-1.jpg',
+    descriptiveText:
+      'Maybelline New York faces the same challenge as many other brands: building an authentic connection with young women that drives sales. In China, many brands try to show women of generation X that they understand by using gimmicks, trends, or celebrity partnerships. For the launch of its new lipstick, Lip Flush Oil, Maybelline New York went beyond its typical new product launch by creating an experience for customers that gave them what they wanted when they wanted it.',
+    challengeTitle:
+      'Searching for sinergy between E-Commerce and Live-Streaming',
+    challengeDescription:
+      'Many Chinese gen X women have no siblings and long to stay connected to their friends, culture, and current events. Similar to their counterparts in other regions, they have short attention spans. Maybelline wanted to provide a riveting, immediate experience that would spark interest in the new lipstick.',
+    solutionTitle: 'Developed platform for live e-commerce',
+    solutionDescription:
+      'Live-streaming apps gained popularity in the spring of 2016. Among them were Meipai, Nice, and Panda TV, which each have more than 10 million daily active users. But many brands began using them with negative results. Maybelline’s marketing team decided to take live-streaming off of niche apps by using the leading mobile purchase platform, Taobao. Using this app allowed Maybelline to shorten the purchase journey during the launch from weeks to a single click. By live-streaming the launch event directly on Taobao, fans could become an integral, engaged element of the launch event.',
+    teamsTitle: 'Live Broadcasting Department',
+    personName: '',
+    personJob: '',
+    serviceTitle: '',
+    serviceHeading: '',
+  })
+  await CloudComputing.addCasestudy(ccC4.id)
+  await LiveVideoBroadcasting.addCasestudy(ccC4.id)
+  await LiveECommerce.addCasestudy(ccC4.id)
   //**END OF CLOUD COMPUTING CASE STUDIES */
 
   //**CUSTOMER EXPERIENCE CASE STUDIES */
@@ -1547,7 +1749,7 @@ async function insertRealData() {
     banner:
       'https://www.viewsonic.com/library/wp-content/uploads/2019/08/LB0040-hero-compressed.png',
     descriptiveText:
-      'Through its long years of relationship with ?Company Name?, a trusted partner that had a true understanding of the store business process of the ground reality, 7-Eleven was able to build a reliable and user-friendly IT system. Specifically, ?Company Name? realized a robust framework that supported the store management of each franchisee: providing merchandising support on ordering and product assortment, while improving the store operation efficiency.',
+      'Through its long years of relationship with HexTech, a trusted partner that had a true understanding of the store business process of the ground reality, 7-Eleven was able to build a reliable and user-friendly IT system. Specifically, HexTech realized a robust framework that supported the store management of each franchisee: providing merchandising support on ordering and product assortment, while improving the store operation efficiency.',
     challengeTitle: 'Promote global expansion',
     challengeDescription:
       "7-Eleven's challenge is to further promote its active global expansion and area licensee movement to the matured and emerging retail markets. In order to achieve such business goal, 7-Eleven required a solution partner that had a true understanding of its business strategy and process, thereby providing the most appropriate support that corresponded to each need of the specific country or region.",
@@ -1589,7 +1791,7 @@ async function insertRealData() {
   const iotC4 = await CaseStudy.create({
     title: 'Building a connected car ecosystem',
     subTitle:
-      '??COMPANY NAME??, with its Automotive division, constantly develops solutions for innovation trends such as e-mobility and ACES (for cars intended to be autonomous, connected, electric and shared)',
+      'HexTech, with its Automotive division, constantly develops solutions for innovation trends such as e-mobility and ACES (for cars intended to be autonomous, connected, electric and shared)',
     banner:
       'https://images.acvmagazine.com/file/BIT-Magazine-Images/feature_cover_06.jpg',
     descriptiveText:
@@ -1713,7 +1915,7 @@ async function insertRealData() {
       'In order to provide a continuous and efficient technical control and thus increased security of constructions and complex engineering objects, the Customer decided to develop a smart construction monitoring system for collecting and processing data through sensors installed on the key elements of a building. The solution was designed to automate regular data collection and processing.',
     solutionTitle: 'Procesing and calculations on sensor data',
     solutionDescription:
-      "HexTech development team designed and developed a smart solution to collect sensor data and aggregate it on a central server for processing and further calculations of a building’s state. Data processing and averaging make it possible to boost system performance and reduce data volumes. The user-friendly interface presents the data from connected through intuitive color coding – the green, yellow and red lights indicate the state of a building. Additionally, the system allows a flexible configuration of threshold values to regulate the transition from one status to another. To aggregate the data – suppose, for calculating a construction deformation, ScienceSoft developed a system of virtual sensors collecting information from several physical sensors. It allows users to monitor specific parameters which can be used only in the aggregate.",
+      'HexTech development team designed and developed a smart solution to collect sensor data and aggregate it on a central server for processing and further calculations of a building’s state. Data processing and averaging make it possible to boost system performance and reduce data volumes. The user-friendly interface presents the data from connected through intuitive color coding – the green, yellow and red lights indicate the state of a building. Additionally, the system allows a flexible configuration of threshold values to regulate the transition from one status to another. To aggregate the data – suppose, for calculating a construction deformation, ScienceSoft developed a system of virtual sensors collecting information from several physical sensors. It allows users to monitor specific parameters which can be used only in the aggregate.',
     teamsTitle: 'IoT Department',
     personName: '',
     personJob: '',
@@ -1722,7 +1924,7 @@ async function insertRealData() {
   })
   await IoT.addCasestudy(iotC9.id)
   await SmartCities.addCasestudy(iotC9.id)
-  
+
   const iotC10 = await CaseStudy.create({
     title: 'Remote patient monitoring software',
     subTitle:
@@ -1735,7 +1937,7 @@ async function insertRealData() {
       'The Customer wanted to deliver a sophisticated remote patient monitoring solution for clinics of North America. The solution should help to improve medical staff performance, avoid routine visits, and increase the quality of care. For that reason, the Customer needed a team of savvy professionals in R&D and healthcare IT.',
     solutionTitle: 'App and Web Dashboard',
     solutionDescription:
-      "The developers reviewed and analyzed available approaches and frameworks and picked WebRTC technology as the best one for platform-independent voice and video communication. Several Android-powered hardware devices were selected to implement central communication module or Sensor Network Appliances (SNAs). The development process was split into 2 major parts: the development of apps for Android and iOS devices and Web dashboard implementation. \n 1) ScienceSoft’s team delivered apps for both patients and medical staff. Gradle flavors were used to build the apps’ variations fully compatible with different screen sizes: wide screen (for doctors), tablet (for nurses) and smartphone (for healthcare services consumers). Patients could smoothly access numerous sensors in order to monitor data and synchronize it with the server. Medical staff members could diagnose and treat patient remotely and receive automated alerts and notifications, when, for example patient state suddenly changes. \n 2) A Web Dashboard assisted medical professionals in monitoring the overall status of patients drilling down on personal medical data. It sent alerts on poor health indicators and maintains the doctor-patient connection. The central communication module was built upon a TV-connected Android-powered device. ",
+      'The developers reviewed and analyzed available approaches and frameworks and picked WebRTC technology as the best one for platform-independent voice and video communication. Several Android-powered hardware devices were selected to implement central communication module or Sensor Network Appliances (SNAs). The development process was split into 2 major parts: the development of apps for Android and iOS devices and Web dashboard implementation. \n 1) ScienceSoft’s team delivered apps for both patients and medical staff. Gradle flavors were used to build the apps’ variations fully compatible with different screen sizes: wide screen (for doctors), tablet (for nurses) and smartphone (for healthcare services consumers). Patients could smoothly access numerous sensors in order to monitor data and synchronize it with the server. Medical staff members could diagnose and treat patient remotely and receive automated alerts and notifications, when, for example patient state suddenly changes. \n 2) A Web Dashboard assisted medical professionals in monitoring the overall status of patients drilling down on personal medical data. It sent alerts on poor health indicators and maintains the doctor-patient connection. The central communication module was built upon a TV-connected Android-powered device. ',
     teamsTitle: 'IoT Department',
     personName: '',
     personJob: '',
@@ -1744,13 +1946,12 @@ async function insertRealData() {
   })
   await IoT.addCasestudy(iotC10.id)
   await Healthcare.addCasestudy(iotC10.id)
-  
+
   const iotC11 = await CaseStudy.create({
     title: 'Image analysis software for automated optical inspections',
     subTitle:
       'HexTech’s team has successfully developed image analysis software for automated optical inspection of printed circuit assemblies. The application offers considerable opportunities for the SMT manufacturing industry, providing a fast and reliable solution for PCA quality control.',
-    banner:
-      '',
+    banner: '',
     descriptiveText:
       'ScienceSoft has developed an application for the electronics industry aimed at ensuring the quality of printed circuit assemblies (PCAs) by means of machine vision.',
     challengeTitle: 'Faster and more efficient inspection',
@@ -1772,11 +1973,11 @@ async function insertRealData() {
     title: 'Control Unit for Automotive Tier-I Supplier',
     subTitle:
       'We were able to successfully deliver a robust telematics solution within the desired timeframe.he customer was able to deliver the proof of concept (PoC) within 6 months. This helped them initiate demos with the OEMs and Suppliers earlier than expected.',
-    banner:
-      '',
+    banner: '',
     descriptiveText:
       'Our customer is a leading Tier-I Supplier of Infotainment Systems, Head-up Display (HUD) Solutions, Digital Instrument Clusters and Battery Management Systems (BMS) for Electric Vehicles.',
-    challengeTitle: 'Integrate Hextech features in their Digital Instrument Cluster product.',
+    challengeTitle:
+      'Integrate Hextech features in their Digital Instrument Cluster product.',
     challengeDescription:
       'Business Challenge:\n-The customer desired to integrate Telematics features in their Digital Instrument Cluster product.\n-This Instrument Cluster solution has been designed for passenger vehicles (four-wheelers, two-wheelers, auto rickshaws and electric vehicles).\n-In order to launch this product along with the integrated Telematics Features, the support of Subject Matter Experts (SME) was required in areas of Cloud, Firmware, Device Drivers, and end-to end IoT Technology Stack.\n-The customer decided that their in-house teams should focus on the core product development activities and the telematics feature integration activity should be outsourced.\n-This made the role of the Product Engineering Services partner very critical.',
     solutionTitle: ' IoT Sensor Network design and Cloud Interface development',
@@ -1891,7 +2092,7 @@ async function insertRealData() {
     memberNameAndOccupation: 'Jean Orsaten | Chief of Smart Cities department ',
     personalQuote: 'Lorem ipsum dolor sit amet',
     personalDescription:
-      'He has over 30 years of experience in the home automation industry, within industry alliances and EU regulatory bodies. He is Director of the Smart Cities Department at ??COMPANY NAME??, overseeing technology partnerships, connectivity and wireless networking technologies and overall system architectures. With a strong focus on Interoperability, he has been deeply involved in the development of protocols with other leading home equipment manufacturers. The department he is heading deals with wireless protocols developments, focusing io-homecontrol, Thread, Zigbee and other open standard solutions for the Somfy Group.',
+      'He has over 30 years of experience in the home automation industry, within industry alliances and EU regulatory bodies. He is Director of the Smart Cities Department at HexTech, overseeing technology partnerships, connectivity and wireless networking technologies and overall system architectures. With a strong focus on Interoperability, he has been deeply involved in the development of protocols with other leading home equipment manufacturers. The department he is heading deals with wireless protocols developments, focusing io-homecontrol, Thread, Zigbee and other open standard solutions for the Somfy Group.',
     workField: 'Internet of things',
     teamsTitle: 'IoT Department',
     personName: 'Jean Orsaten',
@@ -1952,12 +2153,12 @@ async function insertRealData() {
       'https://media.gettyimages.com/photos/portrait-of-senior-businessman-smiling-picture-id985138660?s=2048x2048',
     teamImage: '',
   })
-  
+
   IoT.addTeammember(iotP5)
   iotC8.addTeammember(iotP5)
   iotC12.addTeammember(iotP5)
 
-  const iotP6= await TeamMember.create({
+  const iotP6 = await TeamMember.create({
     memberNameAndOccupation: 'Donald Leen',
     personalQuote: 'Lorem ipsum dolor sit amet',
     personalDescription:
@@ -1990,7 +2191,6 @@ async function insertRealData() {
   IoT.addTeammember(iotP7)
   iotC10.addTeammember(iotP7)
 
-
   const iotP8 = await TeamMember.create({
     memberNameAndOccupation: 'Michelle Tore',
     personalQuote: 'Lorem ipsum dolor sit amet',
@@ -2009,13 +2209,12 @@ async function insertRealData() {
 
   /** END OF IOT TEAM MEMBER */
 
-
   /** CLOUD COMPUTING TEAM MEMBER */
   const ccP1 = await TeamMember.create({
     memberNameAndOccupation: 'Sarah Anderson',
     personalQuote: 'Lorem ipsum dolor sit amet',
     personalDescription:
-      'A corporate strategy, business unit strategy, customer-led category management and micro-battles specialist, Sarah has recently focused on the e-invoice sectors. Her case portfolio includes various diligences for both corporate clients and private. Beyond her client work, she is the leader of our London Diversity and Inclusion efforts and a member of our global D&I Committee. She is also a senior manager peer group leader and founded our London office\'s Social Impact Ringfence. ',
+      "A corporate strategy, business unit strategy, customer-led category management and micro-battles specialist, Sarah has recently focused on the e-invoice sectors. Her case portfolio includes various diligences for both corporate clients and private. Beyond her client work, she is the leader of our London Diversity and Inclusion efforts and a member of our global D&I Committee. She is also a senior manager peer group leader and founded our London office's Social Impact Ringfence. ",
     workField: 'Cloud Computing',
     teamsTitle: 'E-Invoice Departement',
     personName: 'Sarah Anderson',
@@ -2044,7 +2243,6 @@ async function insertRealData() {
   ccC2.addTeammember(ccP2)
 
   /** END OF CLOUD COMPUTING TEAM MEMBER */
-
 
   //**BiG DATA ANALYTICS TEAM MEMBER */
 
