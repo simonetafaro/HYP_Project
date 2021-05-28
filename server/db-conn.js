@@ -206,16 +206,17 @@ async function insertRealData() {
       'Wherever your business goes, whoever it works with, you need cybersecurity that covers it all.',
     description:
       'Anytime. Anywhere. We create cybersecurity tailored to your specific business needs. We defend against cyberattacks with proactive, focused,  industry-relevant threat intelligence to give you the confidence that  comes from knowing your business is secure.',
-    banner:
-      'https://i.ibb.co/X5FrLTP/Frame-6.png',
+    banner: 'https://i.ibb.co/X5FrLTP/Frame-6.png',
     evocativeImage: 'https://i.ibb.co/Ny7F40s/security.png',
     servicesTitle: 'Discover our Security services',
     servicesDescription:
       'We are unique among IT security consulting firms. We combine security technology engineering, intelligence expertise and our data science DNA to help companies manage digital risk end-to-end.',
     caseStudyTitle: 'Read about our case studies',
-    caseStudyDescription: 'TODO',
+    caseStudyDescription:
+      'Not only words. We put ourselves in everything we do to help you to protect your company',
     teamTitle: 'Meet our team',
-    teamDescription: 'TODO',
+    teamDescription:
+      'Meet the experts that make our security services great for your business',
   })
   const IoT = await Area.create({
     title: 'Internet Of Things',
@@ -273,10 +274,8 @@ async function insertRealData() {
       'Analyze data from your database with a data driven approach to take important decisions inside your company.',
     description:
       'The science of analyzing raw data in order to make conclusions about that information, revealing reveal trends and metrics. Through our specialist your company will be more efficient in taking decisions. This process of analysis allows to operate a predictive analysis, that is, it allows to know in advance what will happen: this becomes possible because if we have a model and we have enough historical data we can determine what will happen in the near future with bases or statistical foundations.',
-    banner:
-      'https://i.ibb.co/F3W2W73/Frame-8.png',
-    evocativeImage:
-      'https://i.ibb.co/KDhJdh0/data.png',
+    banner: 'https://i.ibb.co/F3W2W73/Frame-8.png',
+    evocativeImage: 'https://i.ibb.co/KDhJdh0/data.png',
     servicesTitle: 'Discover our services ',
     servicesDescription:
       'AI is only as smart as the insights that fuel it. We can help you unlock powerful analytics insights by tapping into data you did not even know you had.',
@@ -297,13 +296,14 @@ async function insertRealData() {
     banner: 'https://www.comarch.com/files-com/file_545/c1.png',
     evocativePhoto: '',
     serviceTitle: '',
-    serviceDescription: '',
-    partnerTitle: '',
+    serviceDescription:
+      'Protect your business from the most common attack: fraud',
+    partnerTitle: 'Alliances and partners',
     partnerDescription: '',
-    p1Name: '',
-    p1Logo: '',
-    p2Name: '',
-    p2Logo: '',
+    p1Name: 'Coca-Cola',
+    p1Logo: 'https://i.ibb.co/njhmnqv/coca-cola.png',
+    p2Name: 'Adobe',
+    p2Logo: 'https://i.ibb.co/fpWF6WP/adobe.png',
     p3Name: '',
     p3Logo: '',
     caseStudyTitle: '',
@@ -320,10 +320,10 @@ async function insertRealData() {
     serviceTitle: '',
     serviceDescription:
       'Achieve more-secure applications, compliant environments and safer systems development with industrialized and repeatable processes.',
-    partnerTitle: '',
+    partnerTitle: 'Alliances and partners',
     partnerDescription: '',
-    p1Name: '',
-    p1Logo: '',
+    p1Name: 'Figma',
+    p1Logo: 'https://i.ibb.co/W25yZ0m/figma.png',
     p2Name: '',
     p2Logo: '',
     p3Name: '',
@@ -335,16 +335,16 @@ async function insertRealData() {
   const NetworkProtection = await Service.create({
     title: 'Network protection',
     subTitle:
-      '"COMPANY NAME" offers a variety of services from information security consulting to assessing, testing and improving the protection of applications and networks for companies operating in healthcare, manufacturing, banking, retail, telecommunications, and other industries.',
+      'HexTech offers a variety of services from information security consulting to assessing, testing and improving the protection of applications and networks for companies operating in healthcare, manufacturing, banking, retail, telecommunications, and other industries.',
     banner: 'https://www.comarch.com/files-com/file_545/c1.png',
     evocativePhoto: '',
     serviceTitle: '',
     serviceDescription:
       'We apply multiple defense layers to protect your corporate network and the sensitive data stored within it. Our security engineers know various ways to keep your proprietary information safe and reduce the probability that you will have to experience successful attack attempts against your network.',
-    partnerTitle: '',
+    partnerTitle: 'Alliances and partners',
     partnerDescription: '',
-    p1Name: '',
-    p1Logo: '',
+    p1Name: 'Adobe',
+    p1Logo: 'https://i.ibb.co/fpWF6WP/adobe.png',
     p2Name: '',
     p2Logo: '',
     p3Name: '',
@@ -362,10 +362,10 @@ async function insertRealData() {
     serviceTitle: '',
     serviceDescription:
       "Our custom data security services help you incorporate a risk-balanced strategy with leading data protection technology to safeguard your organization's critical data. With both consulting and integration services, we help you optimize control over data using market-leading loss prevention and encryption technologies.",
-    partnerTitle: '',
+    partnerTitle: 'Alliances and partners',
     partnerDescription: '',
-    p1Name: '',
-    p1Logo: '',
+    p1Name: 'Arduino',
+    p1Logo: 'https://i.ibb.co/KDcLxdy/arduino.png',
     p2Name: '',
     p2Logo: '',
     p3Name: '',
@@ -382,10 +382,10 @@ async function insertRealData() {
     serviceTitle: '',
     serviceDescription:
       'Our Identity & Access Management comes with world-class methods for authentication, authorization, identity lifecycle and accountability. Its modular architecture makes it easy to adapt to specific types of organizations across hierarchies and geographies.',
-    partnerTitle: '',
+    partnerTitle: 'Alliances and partners',
     partnerDescription: '',
-    p1Name: '',
-    p1Logo: '',
+    p1Name: 'Adobe',
+    p1Logo: 'https://i.ibb.co/fpWF6WP/adobe.png',
     p2Name: '',
     p2Logo: '',
     p3Name: '',
@@ -402,10 +402,10 @@ async function insertRealData() {
     serviceTitle: '',
     serviceDescription:
       'We deliver full-scale security assessment and planning services for the components of IT infrastructures such as web, mobile and desktop applications, employee behaviour and remote access software.',
-    partnerTitle: '',
+    partnerTitle: 'Alliances and partners',
     partnerDescription: '',
-    p1Name: '',
-    p1Logo: '',
+    p1Name: 'Figma',
+    p1Logo: 'https://i.ibb.co/W25yZ0m/figma.png',
     p2Name: '',
     p2Logo: '',
     p3Name: '',
@@ -438,18 +438,15 @@ async function insertRealData() {
     s1Name: 'Road Traffic',
     s1Description:
       'Our smart traffic systems take intelligent actions based on the careful “study” of traffic flow, bringing human intervention down to a minimum.',
-    s1Logo:
-      'https://i.ibb.co/Rczq8Pv/sol-1.png',
+    s1Logo: 'https://i.ibb.co/Rczq8Pv/sol-1.png',
     s2Name: 'Lighting',
     s2Description:
       'Connecting sensors, across the street lighting system, helps to consume less energy and bringing down energy costs.',
-    s2Logo:
-      'https://i.ibb.co/KwskLjv/sol-2.png',
+    s2Logo: 'https://i.ibb.co/KwskLjv/sol-2.png',
     s3Name: 'Safety',
     s3Description:
       'For enhancing public safety, we connect cameras, microphones and movement sensors to a smart city platform and power it with robust analytics tools.',
-    s3Logo:
-      'https://i.ibb.co/b77D3Fm/sol-3.png',
+    s3Logo: 'https://i.ibb.co/b77D3Fm/sol-3.png',
     partnerTitle: '',
     partnerDescription:
       'Since user apps are an integral part of a smart city, we offer mobile consulting, UI/UX design, native (iOS, Android) and cross-platform (Cordova/PhoneGap, Xamarin, React Native) development, as well as mobile testing.',
@@ -481,17 +478,15 @@ async function insertRealData() {
     s1Name: 'Reduce energy costs',
     s1Description:
       'With connected lighting, your organization can monitor usage and provide lighting as needed in different areas based on their unique needs.',
-    s1Logo:
-      'https://i.ibb.co/Rczq8Pv/sol-1.png',
+    s1Logo: 'https://i.ibb.co/Rczq8Pv/sol-1.png',
     s2Name: 'Make your city a safer place',
     s2Description:
       'Smart lighting provides a greater sense of security and overall better experience for citizens as it helps cities enhance public safety',
-    s2Logo:
-      'https://i.ibb.co/KwskLjv/sol-2.png',
+    s2Logo: 'https://i.ibb.co/KwskLjv/sol-2.png',
     s3Name: 'Remote maintenance of smart lights',
-    s3Description: 'HexTech Smart Lighting Solution allows secure and reliable short distance communication, distributed control and remote smartlights management',
-    s3Logo:
-      'https://i.ibb.co/b77D3Fm/sol-3.png',
+    s3Description:
+      'HexTech Smart Lighting Solution allows secure and reliable short distance communication, distributed control and remote smartlights management',
+    s3Logo: 'https://i.ibb.co/b77D3Fm/sol-3.png',
     p1Name: '......',
     p1Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
     p2Name: '..........',
@@ -520,17 +515,15 @@ async function insertRealData() {
     s1Name: 'Automotive-grade M2M technology',
     s1Description:
       'A new lifestyles offering a suite of advanced features including mobile Wi-Fi hotspot, Internet radio, Web services and an improved navigation system.',
-    s1Logo:
-      'https://i.ibb.co/Rczq8Pv/sol-1.png',
+    s1Logo: 'https://i.ibb.co/Rczq8Pv/sol-1.png',
     s2Name: 'Thales Automotive Connectivity',
     s2Description:
       'Automotive-grade eSIMs leadership position, to identify vehicles, encrypt and secure communications. eSIMs also ensure remote connectivity provisioning as well as seamless connectivity.',
-    s2Logo:
-      'https://i.ibb.co/KwskLjv/sol-2.png',
+    s2Logo: 'https://i.ibb.co/KwskLjv/sol-2.png',
     s3Name: 'Customer Engagement',
-    s3Description: 'Modern customers must have smarter, ‘connected’ cars, and appreciate innovative marketing as much as they like innovations with their vehicles.',
-    s3Logo:
-      'https://i.ibb.co/b77D3Fm/sol-3.png',
+    s3Description:
+      'Modern customers must have smarter, ‘connected’ cars, and appreciate innovative marketing as much as they like innovations with their vehicles.',
+    s3Logo: 'https://i.ibb.co/b77D3Fm/sol-3.png',
     p1Name: '........',
     p1Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
     p2Name: '......',
@@ -560,18 +553,15 @@ async function insertRealData() {
     s1Name: 'Automation',
     s1Description:
       'Smart price tags will adjust prices in real time, based on the item’s popularity, expiry date, and other factors. ',
-    s1Logo:
-      'https://i.ibb.co/Rczq8Pv/sol-1.png',
+    s1Logo: 'https://i.ibb.co/Rczq8Pv/sol-1.png',
     s2Name: 'Agile workforce',
     s2Description:
       'With the advancement of technologies, courses and webinars are already accessible for anyone, anytime, and from any device.',
-    s2Logo:
-      'https://i.ibb.co/KwskLjv/sol-2.png',
+    s2Logo: 'https://i.ibb.co/KwskLjv/sol-2.png',
     s3Name: 'Connectivity platforms',
     s3Description:
       'In the retail industry, connectivity platforms may take multiple forms: from large marketplaces, such as Amazon and Alibaba, to online payment systems and device communication hubs.',
-    s3Logo:
-      'https://i.ibb.co/b77D3Fm/sol-3.png',
+    s3Logo: 'https://i.ibb.co/b77D3Fm/sol-3.png',
     p1Name: 'Amazon Web Services',
     p1Logo: 'https://www.channelfutures.com/files/2015/05/aws_0.jpg',
     p2Name: 'Arduino',
@@ -588,7 +578,7 @@ async function insertRealData() {
   const Healthcare = await Service.create({
     title: 'IoT Solutions for Healthcare',
     subTitle:
-      'Medical IoT facilitates monitoring patient health state and tracking medical staff and assets through the network of smart devices and sensors connected to the cloud. With 9 years in IoT, "COMPANY NAME" provides reliable IoMT solutions to improve patient care, asset use, and staff productivity.',
+      'Medical IoT facilitates monitoring patient health state and tracking medical staff and assets through the network of smart devices and sensors connected to the cloud. With 9 years in IoT, HexTech provides reliable IoMT solutions to improve patient care, asset use, and staff productivity.',
     description:
       'The health industry has been an early adopter of the internet of things (IoT). Nearly half (46%) of executives who participated in the survey said their organization is actively using IoT, and another 21% stated they have IoT projects in development. Their main ambition is efficiency: 54% already use IoT to improve operations, and another 21% plan to do so in the next two years. Overall, health industry execs are optimistic, with 90% believing that IoT’s benefits outweigh its risks. In addition, 79% believe that IoT will help them grow revenue or increase profits.',
     banner:
@@ -602,18 +592,15 @@ async function insertRealData() {
     s1Name: 'Locating and managing assets',
     s1Description:
       'Knowing the exact location of life-saving devices and essential equipment like infusion pumps results in fewer delays for patients and helps optimize machine use.',
-    s1Logo:
-      'https://i.ibb.co/Rczq8Pv/sol-1.png',
+    s1Logo: 'https://i.ibb.co/Rczq8Pv/sol-1.png',
     s2Name: 'Capturing data to drive better outcomes',
     s2Description:
       'Home monitoring of patients using connected blood pressure, glucose and other devices, which enables doctors and nurses to track patients more closely and identify individuals who are at risk.',
-    s2Logo:
-      'https://i.ibb.co/KwskLjv/sol-2.png',
+    s2Logo: 'https://i.ibb.co/KwskLjv/sol-2.png',
     s3Name: 'Enhancing the employee and patient experience',
     s3Description:
       'Medical teams can track the location of patients wearing wristbands with sensors and deliver relevant information to families via their smartphones.',
-    s3Logo:
-      'https://i.ibb.co/b77D3Fm/sol-3.png',
+    s3Logo: 'https://i.ibb.co/b77D3Fm/sol-3.png',
     p1Name: '....',
     p1Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
     p2Name: '.....',
@@ -642,18 +629,15 @@ async function insertRealData() {
     s1Name: 'Making operations self-sufficient',
     s1Description:
       'Many use sensors to monitor and access everything—from the operational state of machinery to getting alerts when storage tanks, trash dumpsters, exit signs and smoke alarms need to be serviced.',
-    s1Logo:
-      'https://i.ibb.co/Rczq8Pv/sol-1.png',
+    s1Logo: 'https://i.ibb.co/Rczq8Pv/sol-1.png',
     s2Name: 'Optimizing factory conditions',
     s2Description:
       'IoT-enabled predictive maintenance can help prevent equipment from malfunctioning. Dashboards can provide deep visibility within a partner ecosystem and supply chain.',
-    s2Logo:
-      'https://i.ibb.co/KwskLjv/sol-2.png',
+    s2Logo: 'https://i.ibb.co/KwskLjv/sol-2.png',
     s3Name: 'Monitoring the supply chain',
     s3Description:
       'IoT solutions can monitor the condition of products from when they are made in a factory (or grown on a farm) to the arrival at their final destination.',
-    s3Logo:
-      'https://i.ibb.co/b77D3Fm/sol-3.png',
+    s3Logo: 'https://i.ibb.co/b77D3Fm/sol-3.png',
     p1Name: '.....',
     p1Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
     p2Name: '.....',
@@ -815,7 +799,8 @@ async function insertRealData() {
       'The easiest way to electronic invoicing is through the Cloud. Send e-invoices to your business partners & public administration entities in no time - wherever they are.',
     description:
       'In the light of the current national and EU legislation, Comarch e-Invoicing Cloud stands out as a simple and affordable tool that enables global, legally-compliant exchange of invoice documents with business partners and public administration entities. No matter your industry or product, our platform was designed to help you create, process, and store e-invoices, thus significantly improve your business efficiency. Plus, being a cloud-based solution, it does not require a long and cost-intensive implementation process. Instead, it gives you instant access to a virtual environment that is easy to navigate.',
-    banner: 'https://www.extrasys.it/hs-fs/hubfs/E-invoice%20benefits.png?width=800&name=E-invoice%20benefits.png',
+    banner:
+      'https://www.extrasys.it/hs-fs/hubfs/E-invoice%20benefits.png?width=800&name=E-invoice%20benefits.png',
     evocativePhoto: '',
     serviceTitle: 'E-Invoicing Service',
     serviceDescription:
@@ -823,18 +808,15 @@ async function insertRealData() {
     s1Name: 'Service Variants',
     s1Description:
       'Using industry-specific modules which include the country-specific processes, standards and features, all companies can start right away.',
-    s1Logo:
-      'https://i.ibb.co/Rczq8Pv/sol-1.png',
+    s1Logo: 'https://i.ibb.co/Rczq8Pv/sol-1.png',
     s2Name: 'High Security B2B Cloud Operation',
     s2Description:
       'Our highly standardized operating processes meet strict requirements typically going far beyond what you can provide on your own system.',
-    s2Logo:
-      'https://i.ibb.co/KwskLjv/sol-2.png',
+    s2Logo: 'https://i.ibb.co/KwskLjv/sol-2.png',
     s3Name: 'Secure Investment',
     s3Description:
       'Our software is independent from the operating model. We offer all SEEBURGER solutions as a Cloud Service or On-Premises solution with identical functionality. ',
-    s3Logo:
-      'https://i.ibb.co/b77D3Fm/sol-3.png',
+    s3Logo: 'https://i.ibb.co/b77D3Fm/sol-3.png',
     partnerTitle: '',
     partnerDescription: '',
     p1Name: '',
@@ -859,20 +841,16 @@ async function insertRealData() {
     serviceTitle: 'Application modernization services',
     serviceDescription: '',
     s1Name: 'Cloud consulting',
-    s1Description:
-      'Plan a cloud app to meet your business needs.',
-    s1Logo:
-      'https://i.ibb.co/Rczq8Pv/sol-1.png',
+    s1Description: 'Plan a cloud app to meet your business needs.',
+    s1Logo: 'https://i.ibb.co/Rczq8Pv/sol-1.png',
     s2Name: 'Cloud app development',
     s2Description:
       'We deliver a scalable, portable, reliable and secure containerized app based on the microservices.',
-    s2Logo:
-      'https://i.ibb.co/KwskLjv/sol-2.png',
+    s2Logo: 'https://i.ibb.co/KwskLjv/sol-2.png',
     s3Name: 'Application migration to the cloud',
     s3Description:
       'Application and/or DWH migration to the cloud with all-around modifications',
-    s3Logo:
-      'https://i.ibb.co/b77D3Fm/sol-3.png',
+    s3Logo: 'https://i.ibb.co/b77D3Fm/sol-3.png',
     partnerTitle: '',
     partnerTitle: '',
     partnerDescription: '',
@@ -1075,7 +1053,7 @@ async function insertRealData() {
   const OnlineFraudDetection = await CaseStudy.create({
     title: 'Next generation online fraud detection for banks',
     subTitle: 'A new generation bank',
-    teamsTitle: 'Team a caso',
+    teamsTitle: 'Fraud prevention team',
     banner:
       'https://www.creativemotions.it/wp-content/uploads/2020/06/Il-segreto-per-scrivere-un-case-study-che-converte.png',
     descriptiveText:
@@ -1085,22 +1063,89 @@ async function insertRealData() {
       'The need for the Bank to deliver a new paradigm in user experience for online banking provided several challenges to their security team, as they were requested to minimize customer friction while supporting instant payment and open banking initiatives, andensure regulatory compliance (PSD2). In particular, the anti-fraud team had to select and implement the best fraud detection solution to ensure the Bank would quickly gain an excellent reputation in the market by delivering the best customer satisfaction in terms of protection against online frauds.',
     solutionTitle: 'application-transparent approach',
     solutionDescription:
-      'Our application-transparent approach does not require instrumenting or even touching applications. "COMPANY NAME" passive and dynamic delivery of controls allows security to be decoupled from application development & deployment, and is a critical functionality that can be independently delivered and managed by the security team.',
+      'Our application-transparent approach does not require instrumenting or even touching applications. HexTech passive and dynamic delivery of controls allows security to be decoupled from application development & deployment, and is a critical functionality that can be independently delivered and managed by the security team.',
     teamsTitle: 'Security departement',
     personName: '',
     personJob: '',
-    serviceTitle: '',
+    serviceTitle: 'Managed Security',
     serviceHeading: '',
   })
   await Security.addCasestudy(OnlineFraudDetection.id)
   await ManagedSecurity.addCasestudy(OnlineFraudDetection.id)
 
   const cs1 = await CaseStudy.create({
-    title: 'cs1 title',
-    subTitle: 'cs1 subtitle',
+    title: 'Network protection for worldwide companies',
+    subTitle: 'A secure connection',
     banner:
       'https://www.creativemotions.it/wp-content/uploads/2020/06/Il-segreto-per-scrivere-un-case-study-che-converte.png',
-    teamsTitle: 'Team a caso',
+    teamsTitle: 'Network protection team',
+    descriptiveText:
+      "The Customer asked HexTech to protect it's network against undesired connection or network attacks",
+    challengeTitle: 'Smart and transparent network protection',
+    challengeDescription: 'A zero time loss solution',
+    solutionTitle: 'Implented system',
+    solutionDescription:
+      'To develop a syestem as transparent as possible our team implemented a network protection layer that features AI capabilities to detect undesired connections',
+    personJob: '',
+    serviceTitle: 'Network protection',
+    serviceHeading: '',
+  })
+
+  const cs2 = await CaseStudy.create({
+    title: 'Company access with secure credentials',
+    subTitle: 'Access guaranteed only to the ones you trust',
+    banner:
+      'https://e7.pngegg.com/pngimages/183/248/png-clipart-access-control-radio-frequency-identification-television-pensiunea-mioval-technology-rfid-card-logo-transmitter.png',
+    teamsTitle: 'Network protection team',
+    descriptiveText:
+      'The Customer commissioned HexTech to develop a system to ensure that certain sections of the company could be accessed only to qualified people.',
+    challengeTitle: 'important data have to be secured',
+    challengeDescription:
+      'The Customer commissioned HexTech implement a system that guarantees access only to the allowed personnel',
+    solutionTitle: 'Implented system',
+    solutionDescription:
+      '"To ensure scalability and short query response time, HexTech’s BI implementation team built an analytical Microsoft SQL Server data warehouse which would use a Transact-SQL script to load data from the relational database. The latter was consolidated from 200 databases during the application development process and totaled 12GB."',
+    personJob: '',
+    serviceTitle: 'Network protection',
+    serviceHeading: '',
+  })
+
+  const cs3 = await CaseStudy.create({
+    title: 'Network protection for worldwide companies',
+    subTitle: 'A secure connection',
+    banner:
+      'https://www.creativemotions.it/wp-content/uploads/2020/06/Il-segreto-per-scrivere-un-case-study-che-converte.png',
+    teamsTitle: 'Network protection team',
+    descriptiveText:
+      'The Customer commissioned HexTech to rewrite the software – a Java application used by the healthcare centers for management and reporting of data on medication inventory, clinical services, patient data, marketing activities and others. Within the project, the Customer also wanted the tool to allow its users to enable quality population health analytics with prompt reports.',
+    challengeTitle: 'BI IMPLEMENTATION',
+    challengeDescription:
+      'The Customer commissioned HexTech to rewrite the software – a Java application used by the healthcare centers for management and reporting of data on medication inventory, clinical services, patient data, marketing activities and others. Within the project, the Customer also wanted the tool to allow its users to enable quality population health analytics with prompt reports.',
+    solutionTitle: 'Implented system',
+    solutionDescription:
+      '"To ensure scalability and short query response time, HexTech’s BI implementation team built an analytical Microsoft SQL Server data warehouse which would use a Transact-SQL script to load data from the relational database. The latter was consolidated from 200 databases during the application development process and totaled 12GB."',
+    personJob: '',
+    serviceTitle: 'Network protection',
+    serviceHeading: '',
+  })
+
+  const cs4 = await CaseStudy.create({
+    title: 'Network protection for worldwide companies',
+    subTitle: 'A secure connection',
+    banner:
+      'https://www.creativemotions.it/wp-content/uploads/2020/06/Il-segreto-per-scrivere-un-case-study-che-converte.png',
+    teamsTitle: 'Network protection team',
+    descriptiveText:
+      'The Customer commissioned HexTech to rewrite the software – a Java application used by the healthcare centers for management and reporting of data on medication inventory, clinical services, patient data, marketing activities and others. Within the project, the Customer also wanted the tool to allow its users to enable quality population health analytics with prompt reports.',
+    challengeTitle: 'BI IMPLEMENTATION',
+    challengeDescription:
+      'The Customer commissioned HexTech to rewrite the software – a Java application used by the healthcare centers for management and reporting of data on medication inventory, clinical services, patient data, marketing activities and others. Within the project, the Customer also wanted the tool to allow its users to enable quality population health analytics with prompt reports.',
+    solutionTitle: 'Implented system',
+    solutionDescription:
+      '"To ensure scalability and short query response time, HexTech’s BI implementation team built an analytical Microsoft SQL Server data warehouse which would use a Transact-SQL script to load data from the relational database. The latter was consolidated from 200 databases during the application development process and totaled 12GB."',
+    personJob: '',
+    serviceTitle: 'Network protection',
+    serviceHeading: '',
   })
   await Security.addCasestudy(cs1.id)
   await ManagedSecurity.addCasestudy(cs1.id)
@@ -1114,13 +1159,13 @@ async function insertRealData() {
     banner:
       'https://www.scnsoft.com/boss/images/02d65838-eb3a-4d54-b7aa-b6b7aa0c1d47bi_healthcare.png',
     descriptiveText:
-      'The Customer commissioned ScienceSoft to rewrite the software – a Java application used by the healthcare centers for management and reporting of data on medication inventory, clinical services, patient data, marketing activities and others. Within the project, the Customer also wanted the tool to allow its users to enable quality population health analytics with prompt reports.',
+      'The Customer commissioned HexTech to rewrite the software – a Java application used by the healthcare centers for management and reporting of data on medication inventory, clinical services, patient data, marketing activities and others. Within the project, the Customer also wanted the tool to allow its users to enable quality population health analytics with prompt reports.',
     challengeTitle: 'BI IMPLEMENTATION',
     challengeDescription:
-      'The Customer commissioned ScienceSoft to rewrite the software – a Java application used by the healthcare centers for management and reporting of data on medication inventory, clinical services, patient data, marketing activities and others. Within the project, the Customer also wanted the tool to allow its users to enable quality population health analytics with prompt reports.',
+      'The Customer commissioned HexTech to rewrite the software – a Java application used by the healthcare centers for management and reporting of data on medication inventory, clinical services, patient data, marketing activities and others. Within the project, the Customer also wanted the tool to allow its users to enable quality population health analytics with prompt reports.',
     solutionTitle: 'Implented system',
     solutionDescription:
-      '"To ensure scalability and short query response time, ScienceSoft’s BI implementation team built an analytical Microsoft SQL Server data warehouse which would use a Transact-SQL script to load data from the relational database. The latter was consolidated from 200 databases during the application development process and totaled 12GB."',
+      '"To ensure scalability and short query response time, HexTech’s BI implementation team built an analytical Microsoft SQL Server data warehouse which would use a Transact-SQL script to load data from the relational database. The latter was consolidated from 200 databases during the application development process and totaled 12GB."',
     teamsTitle: 'Team a caso',
     personName: '',
     personJob: '',
@@ -1261,8 +1306,7 @@ async function insertRealData() {
     title: 'Massive invoice volumes as key driver for e-invoicing',
     subTitle:
       '“KPN generates an astonishing 100 million invoices per year. This is more than eight million per month. We are, with the exception of the Tax Administration, the biggest paper factory in the Netherlands.” explains Hans Hodes, Business Consultant at KPN. Customers receive invoices with cost summaries each month, or every other month. With these volumes, it was clear that e-Invoicing could bring big benefits.',
-    banner:
-      'https://einvoice1-trial.nic.in/Images/Einvoice_banner2.jpg',
+    banner: 'https://einvoice1-trial.nic.in/Images/Einvoice_banner2.jpg',
     descriptiveText:
       'The Netherlands’ leading telecommunications company, KPN, serves both consumers and business marketers – including 60% of the 1 million businesses in the Netherlands. Basware is helping them manage more than 100 million invoices per year.',
     challengeTitle: 'The increasing popularity if e-invoicing',
@@ -1283,7 +1327,7 @@ async function insertRealData() {
   const ccC2 = await CaseStudy.create({
     title: 'JAVA BACKEND DEVELOPMENT FOR AN INNOVATIVE HOTEL SELF-SERVICE APP',
     subTitle:
-      'To date, the demo version of the application has been successfully presented to future end users and received their endorsement. Satisfied with the results, the Customer continues cooperation with ScienceSoft as new features and integrations are continuously added. In the nearest future, the app should be adopted by about 100 hotels around the globe.',
+      'To date, the demo version of the application has been successfully presented to future end users and received their endorsement. Satisfied with the results, the Customer continues cooperation with HexTech as new features and integrations are continuously added. In the nearest future, the app should be adopted by about 100 hotels around the globe.',
     banner:
       'https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/5000741/original/fca44be5f9f214b2c4937d99e292951b0a19c2f8/write-any-c-plus-plus-java-or-python-program.png',
     descriptiveText:
@@ -1604,7 +1648,7 @@ async function insertRealData() {
       'In order to provide a continuous and efficient technical control and thus increased security of constructions and complex engineering objects, the Customer decided to develop a smart construction monitoring system for collecting and processing data through sensors installed on the key elements of a building. The solution was designed to automate regular data collection and processing.',
     solutionTitle: 'Procesing and calculations on sensor data',
     solutionDescription:
-      "HexTech development team designed and developed a smart solution to collect sensor data and aggregate it on a central server for processing and further calculations of a building’s state. Data processing and averaging make it possible to boost system performance and reduce data volumes. The user-friendly interface presents the data from connected through intuitive color coding – the green, yellow and red lights indicate the state of a building. Additionally, the system allows a flexible configuration of threshold values to regulate the transition from one status to another. To aggregate the data – suppose, for calculating a construction deformation, ScienceSoft developed a system of virtual sensors collecting information from several physical sensors. It allows users to monitor specific parameters which can be used only in the aggregate.",
+      'HexTech development team designed and developed a smart solution to collect sensor data and aggregate it on a central server for processing and further calculations of a building’s state. Data processing and averaging make it possible to boost system performance and reduce data volumes. The user-friendly interface presents the data from connected through intuitive color coding – the green, yellow and red lights indicate the state of a building. Additionally, the system allows a flexible configuration of threshold values to regulate the transition from one status to another. To aggregate the data – suppose, for calculating a construction deformation, HexTech developed a system of virtual sensors collecting information from several physical sensors. It allows users to monitor specific parameters which can be used only in the aggregate.',
     teamsTitle: 'IoT Department',
     personName: '',
     personJob: '',
@@ -1613,7 +1657,7 @@ async function insertRealData() {
   })
   await IoT.addCasestudy(iotC9.id)
   await SmartCities.addCasestudy(iotC9.id)
-  
+
   const iotC10 = await CaseStudy.create({
     title: 'Remote patient monitoring software',
     subTitle:
@@ -1626,7 +1670,7 @@ async function insertRealData() {
       'The Customer wanted to deliver a sophisticated remote patient monitoring solution for clinics of North America. The solution should help to improve medical staff performance, avoid routine visits, and increase the quality of care. For that reason, the Customer needed a team of savvy professionals in R&D and healthcare IT.',
     solutionTitle: 'App and Web Dashboard',
     solutionDescription:
-      "The developers reviewed and analyzed available approaches and frameworks and picked WebRTC technology as the best one for platform-independent voice and video communication. Several Android-powered hardware devices were selected to implement central communication module or Sensor Network Appliances (SNAs). The development process was split into 2 major parts: the development of apps for Android and iOS devices and Web dashboard implementation. \n 1) ScienceSoft’s team delivered apps for both patients and medical staff. Gradle flavors were used to build the apps’ variations fully compatible with different screen sizes: wide screen (for doctors), tablet (for nurses) and smartphone (for healthcare services consumers). Patients could smoothly access numerous sensors in order to monitor data and synchronize it with the server. Medical staff members could diagnose and treat patient remotely and receive automated alerts and notifications, when, for example patient state suddenly changes. \n 2) A Web Dashboard assisted medical professionals in monitoring the overall status of patients drilling down on personal medical data. It sent alerts on poor health indicators and maintains the doctor-patient connection. The central communication module was built upon a TV-connected Android-powered device. ",
+      'The developers reviewed and analyzed available approaches and frameworks and picked WebRTC technology as the best one for platform-independent voice and video communication. Several Android-powered hardware devices were selected to implement central communication module or Sensor Network Appliances (SNAs). The development process was split into 2 major parts: the development of apps for Android and iOS devices and Web dashboard implementation. \n 1) HexTech’s team delivered apps for both patients and medical staff. Gradle flavors were used to build the apps’ variations fully compatible with different screen sizes: wide screen (for doctors), tablet (for nurses) and smartphone (for healthcare services consumers). Patients could smoothly access numerous sensors in order to monitor data and synchronize it with the server. Medical staff members could diagnose and treat patient remotely and receive automated alerts and notifications, when, for example patient state suddenly changes. \n 2) A Web Dashboard assisted medical professionals in monitoring the overall status of patients drilling down on personal medical data. It sent alerts on poor health indicators and maintains the doctor-patient connection. The central communication module was built upon a TV-connected Android-powered device. ',
     teamsTitle: 'IoT Department',
     personName: '',
     personJob: '',
@@ -1635,15 +1679,14 @@ async function insertRealData() {
   })
   await IoT.addCasestudy(iotC10.id)
   await Healthcare.addCasestudy(iotC10.id)
-  
+
   const iotC11 = await CaseStudy.create({
     title: 'Image analysis software for automated optical inspections',
     subTitle:
       'HexTech’s team has successfully developed image analysis software for automated optical inspection of printed circuit assemblies. The application offers considerable opportunities for the SMT manufacturing industry, providing a fast and reliable solution for PCA quality control.',
-    banner:
-      '',
+    banner: '',
     descriptiveText:
-      'ScienceSoft has developed an application for the electronics industry aimed at ensuring the quality of printed circuit assemblies (PCAs) by means of machine vision.',
+      'HexTech has developed an application for the electronics industry aimed at ensuring the quality of printed circuit assemblies (PCAs) by means of machine vision.',
     challengeTitle: 'Faster and more efficient inspection',
     challengeDescription:
       'The application was to perform fast and efficient quality inspection of printed circuit assemblies right on the conveyor belt and detect if any of the PCA components were missing.',
@@ -1663,11 +1706,11 @@ async function insertRealData() {
     title: 'Control Unit for Automotive Tier-I Supplier',
     subTitle:
       'We were able to successfully deliver a robust telematics solution within the desired timeframe.he customer was able to deliver the proof of concept (PoC) within 6 months. This helped them initiate demos with the OEMs and Suppliers earlier than expected.',
-    banner:
-      '',
+    banner: '',
     descriptiveText:
       'Our customer is a leading Tier-I Supplier of Infotainment Systems, Head-up Display (HUD) Solutions, Digital Instrument Clusters and Battery Management Systems (BMS) for Electric Vehicles.',
-    challengeTitle: 'Integrate Hextech features in their Digital Instrument Cluster product.',
+    challengeTitle:
+      'Integrate Hextech features in their Digital Instrument Cluster product.',
     challengeDescription:
       'Business Challenge:\n-The customer desired to integrate Telematics features in their Digital Instrument Cluster product.\n-This Instrument Cluster solution has been designed for passenger vehicles (four-wheelers, two-wheelers, auto rickshaws and electric vehicles).\n-In order to launch this product along with the integrated Telematics Features, the support of Subject Matter Experts (SME) was required in areas of Cloud, Firmware, Device Drivers, and end-to end IoT Technology Stack.\n-The customer decided that their in-house teams should focus on the core product development activities and the telematics feature integration activity should be outsourced.\n-This made the role of the Product Engineering Services partner very critical.',
     solutionTitle: ' IoT Sensor Network design and Cloud Interface development',
@@ -1843,12 +1886,12 @@ async function insertRealData() {
       'https://media.gettyimages.com/photos/portrait-of-senior-businessman-smiling-picture-id985138660?s=2048x2048',
     teamImage: '',
   })
-  
+
   IoT.addTeammember(iotP5)
   iotC8.addTeammember(iotP5)
   iotC12.addTeammember(iotP5)
 
-  const iotP6= await TeamMember.create({
+  const iotP6 = await TeamMember.create({
     memberNameAndOccupation: 'Donald Leen',
     personalQuote: 'Lorem ipsum dolor sit amet',
     personalDescription:
@@ -1881,7 +1924,6 @@ async function insertRealData() {
   IoT.addTeammember(iotP7)
   iotC10.addTeammember(iotP7)
 
-
   const iotP8 = await TeamMember.create({
     memberNameAndOccupation: 'Michelle Tore',
     personalQuote: 'Lorem ipsum dolor sit amet',
@@ -1900,13 +1942,12 @@ async function insertRealData() {
 
   /** END OF IOT TEAM MEMBER */
 
-
   /** CLOUD COMPUTING TEAM MEMBER */
   const ccP1 = await TeamMember.create({
     memberNameAndOccupation: 'Sarah Anderson',
     personalQuote: 'Lorem ipsum dolor sit amet',
     personalDescription:
-      'A corporate strategy, business unit strategy, customer-led category management and micro-battles specialist, Sarah has recently focused on the e-invoice sectors. Her case portfolio includes various diligences for both corporate clients and private. Beyond her client work, she is the leader of our London Diversity and Inclusion efforts and a member of our global D&I Committee. She is also a senior manager peer group leader and founded our London office\'s Social Impact Ringfence. ',
+      "A corporate strategy, business unit strategy, customer-led category management and micro-battles specialist, Sarah has recently focused on the e-invoice sectors. Her case portfolio includes various diligences for both corporate clients and private. Beyond her client work, she is the leader of our London Diversity and Inclusion efforts and a member of our global D&I Committee. She is also a senior manager peer group leader and founded our London office's Social Impact Ringfence. ",
     workField: 'Cloud Computing',
     teamsTitle: 'E-Invoice Departement',
     personName: 'Sarah Anderson',
@@ -1935,7 +1976,6 @@ async function insertRealData() {
   ccC2.addTeammember(ccP2)
 
   /** END OF CLOUD COMPUTING TEAM MEMBER */
-
 
   //**BiG DATA ANALYTICS TEAM MEMBER */
 
