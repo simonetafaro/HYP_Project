@@ -28,9 +28,7 @@ function defineDBStructure() {
         type: DataTypes.STRING,
         allowNull: true,
       },
-      serviceTitle: DataTypes.STRING,
       serviceDescription: DataTypes.TEXT,
-      partnerTitle: DataTypes.STRING,
       partnerDescription: DataTypes.TEXT,
       s1Name: DataTypes.STRING,
       s1Description: DataTypes.STRING(1000),
@@ -65,8 +63,6 @@ function defineDBStructure() {
         type: DataTypes.STRING,
         allowNull: true,
       },
-      caseStudyTitle: DataTypes.STRING,
-      realtedServiceTitle: DataTypes.STRING,
     },
     {
       timestamps: false,
@@ -294,11 +290,8 @@ async function insertRealData() {
     subTitle:
       'offers a variety of services from information security consulting to assessing, testing and improving the protection of applications and networks for companies operating in healthcare, manufacturing, banking, retail, telecommunications, and other industries.',
     banner: 'https://www.comarch.com/files-com/file_545/c1.png',
-    evocativePhoto: '',
-    serviceTitle: '',
     serviceDescription:
       'Protect your business from the most common attack: fraud',
-    partnerTitle: 'Alliances and partners',
     partnerDescription: '',
     p1Name: 'Coca-Cola',
     p1Logo: 'https://i.ibb.co/njhmnqv/coca-cola.png',
@@ -306,8 +299,6 @@ async function insertRealData() {
     p2Logo: 'https://i.ibb.co/fpWF6WP/adobe.png',
     p3Name: '',
     p3Logo: '',
-    caseStudyTitle: '',
-    realtedServiceTitle: '',
   })
   await Security.addService(ModernFraudProtection.id)
 
@@ -316,8 +307,6 @@ async function insertRealData() {
     subTitle:
       'Helping clients rapidly scale security and compliance operations through innovative technology, as-a-Service capabilities and cybersecurity  services.',
     banner: 'https://www.comarch.com/files-com/file_545/c1.png',
-    evocativePhoto: '',
-    serviceTitle: '',
     serviceDescription:
       'Achieve more-secure applications, compliant environments and safer systems development with industrialized and repeatable processes.',
     partnerTitle: 'Alliances and partners',
@@ -328,8 +317,6 @@ async function insertRealData() {
     p2Logo: '',
     p3Name: '',
     p3Logo: '',
-    caseStudyTitle: '',
-    realtedServiceTitle: '',
   })
 
   const NetworkProtection = await Service.create({
@@ -337,8 +324,6 @@ async function insertRealData() {
     subTitle:
       'HexTech offers a variety of services from information security consulting to assessing, testing and improving the protection of applications and networks for companies operating in healthcare, manufacturing, banking, retail, telecommunications, and other industries.',
     banner: 'https://www.comarch.com/files-com/file_545/c1.png',
-    evocativePhoto: '',
-    serviceTitle: '',
     serviceDescription:
       'We apply multiple defense layers to protect your corporate network and the sensitive data stored within it. Our security engineers know various ways to keep your proprietary information safe and reduce the probability that you will have to experience successful attack attempts against your network.',
     partnerTitle: 'Alliances and partners',
@@ -349,8 +334,6 @@ async function insertRealData() {
     p2Logo: '',
     p3Name: '',
     p3Logo: '',
-    caseStudyTitle: '',
-    realtedServiceTitle: '',
   })
 
   const DataSecurity = await Service.create({
@@ -358,8 +341,6 @@ async function insertRealData() {
     subTitle:
       'Our security experts develop a personal approach to each customer based on best practices and enriched with our own experience. We are ready to  support our clients at all project stages.',
     banner: 'https://www.comarch.com/files-com/file_545/c1.png',
-    evocativePhoto: '',
-    serviceTitle: '',
     serviceDescription:
       "Our custom data security services help you incorporate a risk-balanced strategy with leading data protection technology to safeguard your organization's critical data. With both consulting and integration services, we help you optimize control over data using market-leading loss prevention and encryption technologies.",
     partnerTitle: 'Alliances and partners',
@@ -370,16 +351,12 @@ async function insertRealData() {
     p2Logo: '',
     p3Name: '',
     p3Logo: '',
-    caseStudyTitle: '',
-    realtedServiceTitle: '',
   })
 
   const IdentityAccessManagement = await Service.create({
     title: 'Identity access management',
     subTitle: '',
     banner: 'https://www.comarch.com/files-com/file_545/c1.png',
-    evocativePhoto: '',
-    serviceTitle: '',
     serviceDescription:
       'Our Identity & Access Management comes with world-class methods for authentication, authorization, identity lifecycle and accountability. Its modular architecture makes it easy to adapt to specific types of organizations across hierarchies and geographies.',
     partnerTitle: 'Alliances and partners',
@@ -390,16 +367,12 @@ async function insertRealData() {
     p2Logo: '',
     p3Name: '',
     p3Logo: '',
-    caseStudyTitle: '',
-    realtedServiceTitle: '',
   })
 
   const SecurityAssessmentAndPlanning = await Service.create({
     title: 'Security assessment and planning',
     subTitle: '',
     banner: 'https://www.comarch.com/files-com/file_545/c1.png',
-    evocativePhoto: '',
-    serviceTitle: '',
     serviceDescription:
       'We deliver full-scale security assessment and planning services for the components of IT infrastructures such as web, mobile and desktop applications, employee behaviour and remote access software.',
     partnerTitle: 'Alliances and partners',
@@ -410,8 +383,6 @@ async function insertRealData() {
     p2Logo: '',
     p3Name: '',
     p3Logo: '',
-    caseStudyTitle: '',
-    realtedServiceTitle: '',
   })
 
   await Security.addService(ModernFraudProtection.id)
@@ -431,8 +402,6 @@ async function insertRealData() {
       'Municipalities of all sizes around the world are adopting smart city concepts based on Internet of Things (IoT) systems to optimize the efficient management of community assets, resources, operations and services. Smart cities foster service-oriented, sustainable local governance equipped to improve transportation systems, build energy-efficient infrastructure, decrease environmental pressures, maintain effective disaster response, and provide state-of-the-art security in public spaces. We work to serve each community with the appropriate smart city services and solutions according to its individual needs and unique vision.',
     banner:
       'https://kritikalsolutions.com/wp-content/uploads/2019/10/smart-cities-banner.jpg',
-    evocativePhoto: '',
-    serviceTitle: '',
     serviceDescription:
       'Our services have been developed to ensure that wireless technology used in smart city strategies complies with established interoperability, cyber security, data privacy, operational safety, and performance reliability standards. We provide you the expertise you need in supplying, planning, building, and sustaining a connected and effective smart city. We serve you with comprehensive smart city services from a single source to save you time and money.',
     s1Name: 'Road Traffic',
@@ -456,8 +425,6 @@ async function insertRealData() {
     p2Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
     p3Name: '......',
     p3Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
-    caseStudyTitle: '',
-    realtedServiceTitle: '',
   })
   await IoT.addService(SmartCities.id)
 
@@ -469,8 +436,6 @@ async function insertRealData() {
       'Illumination systems are an essential part of urban infrastructure. They contribute to the sense of security in public areas and highlight the architectural beauty of cities around the world. Today we can go one step further by embracing a combination of modern IoT solutions and illumination systems. This combination creates smart city technology and  is used as innovative smart street lighting system.',
     banner:
       'https://statetechmagazine.com/sites/statetechmagazine.com/files/styles/cdw_hero/public/articles/StateTech/201710/ST_Smart_Street_Lights_GettyImages-173553089.jpg?itok=rktclHwy',
-    evocativePhoto: '',
-    serviceTitle: '',
     serviceDescription:
       'Organizations and government agencies across the world are facing increased pressure to find ways to become more energy efficient while reducing costs. Outdoor lighting is a great place to start as public and commercial lighting infrastructure is expensive and one of the greatest contributors to energy waste. The Internet of Things (IoT) makes it easy for public and private organizations to conserve more energy with smart lighting systems.',
     partnerTitle: '',
@@ -493,8 +458,6 @@ async function insertRealData() {
     p2Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
     p3Name: '.........',
     p3Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
-    caseStudyTitle: '',
-    realtedServiceTitle: '',
   })
   await IoT.addService(SmartLighting.id)
 
@@ -506,8 +469,6 @@ async function insertRealData() {
       'Cars have become one of the fastest-growing mobile device category, with every vehicle turning into a node in a much larger network and ecosystems. The ongoing (re)evolution in terms of connectivity, electric, autonomous and mobility trends is full of great opportunities to achieve new revenue streams and improve quality of life in the near future. Yet, as with all new opportunities, challenges, disruptions and risks arise.',
     banner:
       'https://www.consorziosicurezza.com/wp-content/uploads/2018/10/smart-car-resized.jpg',
-    evocativePhoto: '',
-    serviceTitle: '',
     serviceDescription:
       'The potential for connected vehicles during the interim, however, is an exciting, multi-faceted and high-growth area in the IoT’s development – enabling enhanced road safety, smart traffic management, advanced navigation assistance, passenger entertainment and much more.',
     partnerTitle: '',
@@ -530,8 +491,6 @@ async function insertRealData() {
     p2Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
     p3Name: '.....',
     p3Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
-    caseStudyTitle: '',
-    realtedServiceTitle: '',
   })
   await IoT.addService(Automotive.id)
 
@@ -543,8 +502,6 @@ async function insertRealData() {
       'The increasing number of connected devices will lead to the emergence of a so-called connected ecosystem as a new paradigm of the interaction among manufacturers, sellers, and consumers, offering totally new opportunities and challenges to all the parties involved.',
     banner:
       'https://www.zerynth.com/wp-content/uploads/2020/02/smart-retail.jpg',
-    evocativePhoto: '',
-    serviceTitle: '',
     serviceDescription:
       'Retail was among the first industries to adopt IoT. According to a research, in the coming years, retailers will further increase their spend on IoT, which is expected to reach $2.5 billion. Below, we list the trends that will drive a new, consumer-centric retail model enabled by IoT technology.',
     partnerTitle: '',
@@ -570,8 +527,6 @@ async function insertRealData() {
     p3Name: 'Arm Intel',
     p3Logo:
       'https://internetofbusiness.com/wp-content/uploads/2018/10/Intel-ARM-Licensing-Deal-640x400.png',
-    caseStudyTitle: '',
-    realtedServiceTitle: '',
   })
   await IoT.addService(SmartRetail.id)
 
@@ -583,8 +538,6 @@ async function insertRealData() {
       'The health industry has been an early adopter of the internet of things (IoT). Nearly half (46%) of executives who participated in the survey said their organization is actively using IoT, and another 21% stated they have IoT projects in development. Their main ambition is efficiency: 54% already use IoT to improve operations, and another 21% plan to do so in the next two years. Overall, health industry execs are optimistic, with 90% believing that IoT’s benefits outweigh its risks. In addition, 79% believe that IoT will help them grow revenue or increase profits.',
     banner:
       'https://iotbusinessnews.com/WordPress/wp-content/uploads/digital-health.jpg',
-    evocativePhoto: '',
-    serviceTitle: '',
     serviceDescription:
       'What we are approaching is a world where basic healthcare would become out of reach to most people, a large section of society would go unproductive owing to old age and people would be more prone to chronic disease. While technology can’t stop the population from ageing or eradicate chronic diseases at once, it can at least make healthcare easier on a pocket and in term of accessibility. Technology can move the routines of medical checks from a hospital (hospital-centric) to the patient’s home (home-centric).',
     partnerTitle: '',
@@ -607,8 +560,6 @@ async function insertRealData() {
     p2Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
     p3Name: '........',
     p3Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
-    caseStudyTitle: '',
-    realtedServiceTitle: '',
   })
   await IoT.addService(Healthcare.id)
 
@@ -620,8 +571,6 @@ async function insertRealData() {
       'Industrial manufacturing firms are addressing these concerns by improving the tech infrastructure, deploying better data management methods and addressing workforce culture and change management. They also are taking steps to mitigate IoT’s challenges. For example, 60% are addressing AI bias, ethics and responsibility, 58% are working with partners to better manage ecosystems and 44% are developing more robust policies to address the impact of AI and IoT on data privacy.',
     banner:
       'https://www.sensrtrx.com/wp-content/uploads/2019/06/IoT-Manufacturing-Future.png',
-    evocativePhoto: '',
-    serviceTitle: 'Making operations self-sufficient',
     serviceDescription:
       'Most (81%) industrial manufacturers surveyed reported that they are making operations more efficient through the use of IoT. Forty-three percent have already benefited from using IoT-based asset management, and 41% expect to do so within two years. Many use sensors to monitor and access everything—from the operational state of machinery to getting alerts when storage tanks, trash dumpsters, exit signs and smoke alarms need to be serviced.',
     partnerTitle: '',
@@ -644,8 +593,6 @@ async function insertRealData() {
     p2Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
     p3Name: '....',
     p3Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
-    caseStudyTitle: '',
-    realtedServiceTitle: '',
   })
   await IoT.addService(IndustrialManufacturing.id)
   //**END OF IOT SERVICES */
@@ -658,8 +605,6 @@ async function insertRealData() {
     description:
       'In order to grow your enterprise, you need to do more than keep your existing customers happy — you need to find new business. Big data can help you find new audiences and determine which groups are more likely to buy.    ',
     banner: 'https://i.imgur.com/1ZKpYyo.png',
-    evocativePhoto: '',
-    serviceTitle: '',
     serviceDescription:
       'We put in practise all the experience we gained during all the life of this company in order to give our clients a very good customer experience. Moreover, all our experts are very professional on the service we provide to clients.',
     s1Name: 'Optimize SEO',
@@ -686,8 +631,6 @@ async function insertRealData() {
     p3Name: 'Eclincher',
     p3Logo:
       'https://media-exp1.licdn.com/dms/image/C4E0BAQE_8uje7Spe1g/company-logo_200_200/0/1578120960890?e=2159024400&v=beta&t=0pLs4HfyleatwiUUZHOGsVSLhyOEVMuQ4qgEdUeEtWs',
-    caseStudyTitle: '',
-    realtedServiceTitle: '',
   })
   await BigDataAnalysis.addService(OptimizeDigitalMarketing.id)
 
@@ -699,8 +642,6 @@ async function insertRealData() {
       'Health care has a long track record of evidence-based clinical practice and ethical standards in research. However, the extension of this into new technologies such as the use of predictive analytics, the algorithms behind them, and the point where a machine process should be replaced by a human mental process is not clearly regulated or controlled by industry standards. Government health agencies, doctors, and primary health givers need to be aware of the risks emerging and agree on levels of assurance as society continues to move into a new era of decision-making supplemented, and at times replaced, by evidence from digital technologies. More specifically, this paper will look at the various ethical issues and moral hazards that need to be navigated following the adoption and use of predictive analytics in the health care sector with an emphasis on accountable algorithms.',
     banner:
       'https://images.techhive.com/images/article/2015/07/health-analytics-ts-100599204-large.jpg',
-    evocativePhoto: '',
-    serviceTitle: '',
     serviceDescription:
       'We put in practise all the experience we gained during all the life of this company in order to give our clients a very good customer experience. Moreover, all our experts are very professional on the service we provide to clients.',
     s1Name: 'Efficiencies for operational management',
@@ -727,8 +668,6 @@ async function insertRealData() {
     p3Name: 'Intel',
     p3Logo:
       'https://www.tomshw.it/images/images/2020/06/intel-logo-97706.1200x675.jpg',
-    caseStudyTitle: '',
-    realtedServiceTitle: '',
   })
   await BigDataAnalysis.addService(PredictiveAnalyticsInHealthcare.id)
 
@@ -739,8 +678,6 @@ async function insertRealData() {
       'We analyze datasets through classification, clustering, and pattern recognition techniques to move from a historical static description of the past to a forward-looking actionable projection in the future. We implement this solution in predictive maintenance, incident analysis, early-warning, customer satisfaction, churn prediction, production planning, risk assessment, attribution modeling and more.',
     banner:
       'https://image.shutterstock.com/image-photo/predictive-analytics-big-data-analysis-260nw-1348992500.jpg',
-    evocativePhoto: '',
-    serviceTitle: '',
     serviceDescription:
       'We put in practise all the experience we gained during all the life of this company in order to give our clients a very good customer experience. Moreover, all our experts are very professional on the service we provide to clients.',
     s1Name: 'Real time prediction',
@@ -767,8 +704,6 @@ async function insertRealData() {
     p3Name: 'River Logic',
     p3Logo:
       'https://awsmp-logos.s3.amazonaws.com/e981e56c-9504-4acd-a441-81c99483b239/9801997f62aa29e763040bf44e7b2485.png',
-    caseStudyTitle: '',
-    realtedServiceTitle: '',
   })
   await BigDataAnalysis.addService(PredictionScenarioAnalysis.id)
 
@@ -779,8 +714,6 @@ async function insertRealData() {
     description:
       'Big data automation is growing as a need for almost every organization, with the IoT driving the stream velocity of data. While users require fast availability of data for analysis, the true value of data can only be extracted and managed via intelligent and advanced data automation.',
     banner: 'https://www.sygmatechnology.com/hubfs/shutterstock_1133982038.jpg',
-    evocativePhoto: '',
-    serviceTitle: '',
     serviceDescription:
       'We put in practise all the experience we gained during all the life of this company in order to give our clients a very good customer experience. Moreover, all our experts are very professional on the service we provide to clients.',
     s1Name: 'Automation Expertise',
@@ -807,8 +740,6 @@ async function insertRealData() {
     p3Name: 'LuTech',
     p3Logo:
       'https://abieventi-statics-external.s3-eu-west-1.amazonaws.com/url_59edc98ae011a96693a21dec.jpg',
-    caseStudyTitle: '',
-    realtedServiceTitle: '',
   })
   await BigDataAnalysis.addService(BigDataAutomation.id)
 
@@ -820,8 +751,6 @@ async function insertRealData() {
       'We provide analytics consulting services for our customers to benefit from integrated solutions that rely on the optimal technology stack, allowing companies to save their costs, improve performance and grow their business.',
     banner:
       'https://www.smartdatacollective.com/wp-content/uploads/2020/11/business-intelligence-future-in-coming-years.jpg',
-    evocativePhoto: '',
-    serviceTitle: '',
     serviceDescription:
       'We put in practise all the experience we gained during all the life of this company in order to give our clients a very good customer experience. Moreover, all our experts are very professional on the service we provide to clients.',
     s1Name: 'Business intelligence consulting',
@@ -847,8 +776,6 @@ async function insertRealData() {
       'https://www.intelligencepartner.com/wp-content/themes/intelligencepartner/img/intelligencepartner_logo.svg',
     p3Name: 'SB Italia',
     p3Logo: 'https://www.sbitalia.com/wp-content/uploads/2015/11/logo.png',
-    caseStudyTitle: '',
-    realtedServiceTitle: '',
   })
   await BigDataAnalysis.addService(BIDWHConsulting.id)
 
@@ -860,7 +787,6 @@ async function insertRealData() {
       "Pricing can boost profits far more than increasing sales or cutting costs. And the results of a smarter pricing strategy can fall to the bottom line very quickly.  Yet at least half of all companies leave money on the table because they don't charge the right price or make sure customers actually pay it.   ",
     banner:
       'https://associationsnow.com/wp-content/uploads/2018/12/GettyImages-940692576_hrvcc-600x360.jpg',
-    serviceTitle: '',
     serviceDescription:
       'We put in practise all the experience we gained during all the life of this company in order to give our clients a very good customer experience. Moreover, all our experts are very professional on the service we provide to clients.',
     s1Name: 'B2B pricing',
@@ -886,8 +812,6 @@ async function insertRealData() {
     p3Name: 'Price Fx',
     p3Logo:
       'https://www.pricefx.com/wp-content/uploads/2020/04/Pricefx_logo_2019_White.png',
-    caseStudyTitle: '',
-    realtedServiceTitle: '',
   })
   await BigDataAnalysis.addService(PricingOptimization.id)
   //**END OF BIG DATA ANALYSIS SERVICES */
@@ -901,8 +825,6 @@ async function insertRealData() {
       'In the light of the current national and EU legislation, Comarch e-Invoicing Cloud stands out as a simple and affordable tool that enables global, legally-compliant exchange of invoice documents with business partners and public administration entities. No matter your industry or product, our platform was designed to help you create, process, and store e-invoices, thus significantly improve your business efficiency. Plus, being a cloud-based solution, it does not require a long and cost-intensive implementation process. Instead, it gives you instant access to a virtual environment that is easy to navigate.',
     banner:
       'https://www.extrasys.it/hs-fs/hubfs/E-invoice%20benefits.png?width=800&name=E-invoice%20benefits.png',
-    evocativePhoto: '',
-    serviceTitle: 'E-Invoicing Service',
     serviceDescription:
       'Companies active in many countries or worldwide need to support and process a large number of different E-Invoicing standards. With HexTech you are on the safe side. We support E-Invoicing compliance in more than 55 countries. In recent years, E-Invoicing initiatives have been started in many countries to simplify the exchange of invoicing data between companies („B2B“), and between companies and authorities („B2G“), and to increase tax revenues. The defined standards within the scope of these initiatives are already widespread. Some are already regulated by national governments.',
     s1Name: 'Service Variants',
@@ -925,8 +847,6 @@ async function insertRealData() {
     p2Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
     p3Name: '',
     p3Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
-    caseStudyTitle: '',
-    realtedServiceTitle: '',
   })
   await CloudComputing.addService(EInvoice.id)
 
@@ -937,8 +857,6 @@ async function insertRealData() {
     description:
       '94% of companies already use cloud services reducing IT costs, granting their users reliability and availability and refocusing from routine maintenance to more strategic initiatives. Let us help you get cloud applications designed for high security, performance efficiency, and operational excellence while ensuring the optimal resource consumption.',
     banner: 'https://4.imimg.com/data4/WT/LG/GLADMIN-22150665/0-500x500.jpg',
-    evocativePhoto: '',
-    serviceTitle: 'Application modernization services',
     serviceDescription: '',
     s1Name: 'Cloud consulting',
     s1Description: 'Plan a cloud app to meet your business needs.',
@@ -960,8 +878,6 @@ async function insertRealData() {
     p2Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
     p3Name: '',
     p3Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
-    caseStudyTitle: '',
-    realtedServiceTitle: '',
   })
   await CloudComputing.addService(CloudAppDevelopServices.id)
 
@@ -972,8 +888,6 @@ async function insertRealData() {
       'Live streaming is one of the best ways to connect in a meaningful and authentic way with your community. Every day around the world, in offices, fitness studios, stadiums, houses of worship,and our own houses, moments are made. A livestream platform connects you instantly to your employees, customers, subscribers, or followers when a virtual event or series is your best option.',
     banner:
       'https://res.cloudinary.com/practicaldev/image/fetch/s--UpbEnajb--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://dev-to-uploads.s3.amazonaws.com/i/ah8zju0kmh6br3w69cgq.jpg',
-    evocativePhoto: '',
-    serviceTitle: '',
     serviceDescription:
       'We put in practise all the experience we gained during all the life of this company in order to give our clients a very good customer experience. Moreover, all our experts are very professional on the service we provide to clients.',
     s1Name: 'Maximise quality video',
@@ -999,8 +913,6 @@ async function insertRealData() {
     p3Name: 'Netflix',
     p3Logo:
       'https://www.mediagol.it/wp-content/uploads/sites/27/2020/07/maxresdefault.jpg',
-    caseStudyTitle: '',
-    realtedServiceTitle: '',
   })
   await CloudComputing.addService(LiveVideoBroadcasting.id)
 
@@ -1011,8 +923,6 @@ async function insertRealData() {
       'With live streaming you can sell products during a live stream in which the characteristics of the item for sale are recognized. This allows you to share more information, offer product demonstrations, satisfy viewers questions and respond to their reactions. It is an interactive system for both brands and stores, and for viewers who can purchase in real time, during the live broadcast. What is now fast becoming a profitable online sales channel for many luxury brands, actually originated in China as a form of entertainment: singers, comedians and other performers broadcast live for their fans in exchange for virtual gifts. In 2016, Chinese authorities started dozens of these live streaming platforms, sanctioning thousands of artists: this attempt to appease the phenomenon actually turned into an opportunity for more forward-thinking apps, such as Taobao, which they were the first to recognize its potential by investing in this new mode of commercial communication.',
     banner:
       'https://www.robvanlinda.de/wp-content/uploads/2020/08/Live-stream-banner.jpg',
-    evocativePhoto: '',
-    serviceTitle: '',
     serviceDescription:
       'We put in practise all the experience we gained during all the life of this company in order to give our clients a very good customer experience. Moreover, all our experts are very professional on the service we provide to clients.',
     s1Name: 'Fast shipping',
@@ -1037,8 +947,6 @@ async function insertRealData() {
       'https://img.alicdn.com/tfs/TB1giluwEY1gK0jSZFMXXaWcVXa-1280-1280.png',
     p3Name: 'Alibaba',
     p3Logo: 'https://images-eu.ssl-images-amazon.com/images/I/71IxKvGqiWL.png',
-    caseStudyTitle: '',
-    realtedServiceTitle: '',
   })
   await CloudComputing.addService(LiveECommerce.id)
 
@@ -1054,8 +962,6 @@ async function insertRealData() {
     description:
       'What’s the future of customer experience? It’s multi-dimensional. As the boundaries between the digital and the physical continue to blur, new kinds of immersive interactions become possible. Augmented reality, virtual reality, mixed reality—it all comes together in creative experiences that flow freely across real and virtual spaces. The Immersive and Innovative Experiences practice helps clients transform experiences for this world of unlimited possibility. We blend cutting-edge immersive technology with human creativity and strong ethical governance. We break down barriers between brands and their customers. We help visualize and understand products in new ways. And we bring people together in new virtual environments.',
     banner: 'https://images.unsplash.com/photo-1502185372788-6ff455aa92ff?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80',
-    evocativePhoto: 'https://images.unsplash.com/photo-1556740758-90de374c12ad?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80',
-    serviceTitle: 'Immersive Technologies solutions',
     serviceDescription:
       'We help brands tell stories and craft experiences in innovative and immersive ways, opening up new kinds of interaction, new ways to work and learn, and new revenue streams. It’s an emerging space for all to play in. Let us help you take a lead in next-generation experience.',
     //detailTitle1: 'Spatial storytelling',
@@ -1075,8 +981,6 @@ async function insertRealData() {
     p2Logo: '',
     p3Name: '',
     p3Logo: '',
-    caseStudyTitle: 'Read about our case studies',
-    realtedServiceTitle: 'You might be interested also to these services.',
   })
   await CustomerExperience.addService(Immersive.id)
 
@@ -1088,8 +992,6 @@ async function insertRealData() {
     description:
       'Design a new way to communicate. User interface (or UI) design has grown substantially over the past few years, and has blossomed into one of the most creative, innovative and exciting fields in tech. Our service it is here to help you to create a brand new costumer’s experiences with the latest trend of user interfaces. An interface is the link between the corporate and the user, it must respond to customers’ new, often unmet and frequently changing needs and enable them to achieve their desired outcomes.',
     banner: 'https://images.unsplash.com/photo-1618788372246-79faff0c3742?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=882&q=80',
-    evocativePhoto: 'https://images.unsplash.com/photo-1560461396-ec0ef7bb29dd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80',
-    serviceTitle: 'User Interfaces solutions',
     serviceDescription: 'User interface elements are the parts we use to build interactive websites or apps. They provide touchpoints for the user as they navigate their way around; from buttons to scrollbars, to menu items and checkboxes. Every single detail matter!',
     //detailTitle1: 'Design accessibility',
     //detailDescription1: 'We can not fogot the crucial role of accessibility and inclusion. From designing a suite of UI elements, such as buttons, icons, and scrollbars, choosing colors and typefaces, to regularly testing their designs through prototyping, UI designers carefully weigh up what each design choice means for the end user.',
@@ -1106,8 +1008,6 @@ async function insertRealData() {
     p2Logo: '',
     p3Name: 'Sketch',
     p3Logo: '',
-    caseStudyTitle: 'Read about our case studies',
-    realtedServiceTitle: 'You might be interested also to these services.',
   })
   await CustomerExperience.addService(UserInterfaces.id)
 
@@ -1118,8 +1018,6 @@ async function insertRealData() {
       'Your customers are always connected. Shouldn’t their experiences be too?',
     description: 'Most customer experiences are created from a hodge-podge of systems. But customers don’t care about those systems. They expect a convenient, continuous and meaningful experience on the website, in the mobile app and in the store. The Customer Experience Engine powers an ongoing experience in which your brand stands out by disappearing into the fabric of customers’ lives. It’s the connective tissue across your systems that lets you focus on what you care about: delivering an unforgettable and impactful customer experience now and protecting that experience in the future.',
     banner: 'https://images.unsplash.com/photo-1556745753-b2904692b3cd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1866&q=80',
-    evocativePhoto: 'https://images.unsplash.com/photo-1550071593-fd1bdaf1f93c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80',
-    serviceTitle: 'Customer Experience Engine solutions',
     serviceDescription:
       'Our experience-led approach helps ensure that organizations have the right experience architecture to allow customers to create their own journey on their own terms. We view technology as the enabler of the customer experience, not the driver.',
     partnerTitle: 'Alliances and partners',
@@ -1137,8 +1035,6 @@ async function insertRealData() {
     p2Logo: '',
     p3Name: '',
     p3Logo: '',
-    caseStudyTitle: 'Read about our case studies',
-    realtedServiceTitle: 'You might be interested also to these services.',
   })
   await CustomerExperience.addService(DigitalCustomer.id)
 
@@ -1148,8 +1044,6 @@ async function insertRealData() {
     subTitle: 'Communicate marketing messages at speed and scale to acquire and retain customers, driving sustainable growth.',
     description: 'We all know communication is critical, but knowing what to say and when to say it—and whom to say it to—can make or break the message. That is why Accenture Interactive Marketing Engagement Services team specializes in solutions to help clients understand their customers, define the experience, and deliver relevant, compelling messages. We understand the new digital landscape and evolving customer expectations. Connections need to be made throughout the customer journey, constantly and across channels. "Always-on" campaigns are designed to capture attention and amplify demand, leads and revenue generation.',
     banner: 'https://images.unsplash.com/photo-1552664730-d307ca884978?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80',
-    evocativePhoto: 'https://images.unsplash.com/photo-1557425529-b1ae9c141e7d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80',
-    serviceTitle: 'Campaign management solutions',
     serviceDescription: 'We design and build creative campaigns that target customers with the right message to drive engagement. Our insights into new and evolving digital technologies mean we understand how to deliver personalized messages at the right time, helping acquire new customers, grow wallet share with existing customers, and retain the most profitable customers.',
     partnerTitle: 'Alliances and partners',
     partnerDescription:
@@ -1166,8 +1060,6 @@ async function insertRealData() {
     p2Logo: '',
     p3Name: '',
     p3Logo: '',
-    caseStudyTitle: 'Read about our case studies',
-    realtedServiceTitle: 'You might be interested also to these services.',
   })
   await CustomerExperience.addService(Campaign.id)
 
@@ -1179,8 +1071,6 @@ async function insertRealData() {
     description:
       'Solutions.AI for Customer Engagement is built for putting AI at the frontline of every interaction streamlines service, better equips agents, and enhances the overall experience with personalized, precise, and empathetic care. It helps brands quickly and responsibly use data to understand and predict customer needs and arm agents behind the screen with the right message and offers. And it improves the original product and service by analyzing and incorporating insights from customer interactions through a constant feedback loop.',
     banner: 'https://images.unsplash.com/photo-1519558260268-cde7e03a0152?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80',
-    evocativePhoto: 'https://images.unsplash.com/photo-1531747118685-ca8fa6e08806?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1842&q=80',
-    serviceTitle: 'Customer Service AI solutions',
     serviceDescription:
       'With our range of pre-built AI modules and ecosystem of technology partners, we are able to quickly scale hyper-personalized experiences to help clients anticipate and address their customers needs.',
     //detailTitle1: 'Patented conversational AI platform',
@@ -1198,8 +1088,6 @@ async function insertRealData() {
     p2Logo: '',
     p3Name: '',
     p3Logo: '',
-    caseStudyTitle: 'Read about our case studies',
-    realtedServiceTitle: 'You might be interested also to these services.',
   })
   await CustomerExperience.addService(AICustomer.id)
 
@@ -1211,8 +1099,6 @@ async function insertRealData() {
     description:
       'We take a holistic approach that combines creative, content, data and technological expertise to translate brand vision and business goals into customer engagement strategies and business results. With our help, you wll delight your customers with relevant, elegant, and intuitive experiences. Our insights into audiences and markets help us create effective brand strategies that drive real engagement for every customer across every channel.',
     banner: 'https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=993&q=80',
-    evocativePhoto: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80',
-    serviceTitle: 'Creative Marketing Services solutions',
     serviceDescription:
       'What does it mean to build a brand? We take it from the ground up—from strategy and content to activation.',
     //detailTitle1: 'Intent discovery and analytics',
@@ -1230,8 +1116,6 @@ async function insertRealData() {
     p2Logo: '',
     p3Name: '',
     p3Logo: '',
-    caseStudyTitle: 'Read about our case studies',
-    realtedServiceTitle: 'You might be interested also to these services.',
   })
   await CustomerExperience.addService(CreativeMarketingServices.id)
 
