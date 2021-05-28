@@ -1049,9 +1049,9 @@ async function insertRealData() {
     subTitle:
       'Learn how immersive technology can increase revenue and streamline the event planning process.',
     description:
-      'The Immersive and Innovative Experiences practice helps clients transform experiences for this world of unlimited possibility. We blend cutting-edge immersive technology with human creativity and strong ethical governance. We break down barriers between brands and their customers.',
-    banner: '',
-    evocativePhoto: '',
+      'What’s the future of customer experience? It’s multi-dimensional. As the boundaries between the digital and the physical continue to blur, new kinds of immersive interactions become possible. Augmented reality, virtual reality, mixed reality—it all comes together in creative experiences that flow freely across real and virtual spaces. The Immersive and Innovative Experiences practice helps clients transform experiences for this world of unlimited possibility. We blend cutting-edge immersive technology with human creativity and strong ethical governance. We break down barriers between brands and their customers. We help visualize and understand products in new ways. And we bring people together in new virtual environments.',
+    banner: 'https://images.unsplash.com/photo-1502185372788-6ff455aa92ff?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80',
+    evocativePhoto: 'https://images.unsplash.com/photo-1556740758-90de374c12ad?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80',
     serviceTitle: 'Immersive Technologies solutions',
     serviceDescription:
       'We help brands tell stories and craft experiences in innovative and immersive ways, opening up new kinds of interaction, new ways to work and learn, and new revenue streams. It’s an emerging space for all to play in. Let us help you take a lead in next-generation experience.',
@@ -1065,7 +1065,7 @@ async function insertRealData() {
     //detailDescription4: 'Building new ways to process information, master skills and improve performance through virtually simulated environments and situations.',
     partnerTitle: 'Alliances and partners',
     partnerDescription:
-      'At ?company name?, together with our Partners, we are re-imagining the business Deliver with unforgettable customer experiences',
+      'At HexTech, together with our Partners, we are re-imagining the business Deliver with unforgettable customer experiences',
     p1Name: 'Adobe',
     p1Logo: '',
     p2Name: '',
@@ -1083,19 +1083,25 @@ async function insertRealData() {
     subTitle:
       'Leading creative, business analysis, and advanced technology in user research',
     description:
-      'Design a new way to communicate. How to create brand new costumer’s experiences with the latest trend of user interfaces. An interface is the link between the corporate and the user, it must respond to customers’ new, often unmet and frequently changing needs and enable them to achieve their desired outcomes.',
-    banner: '',
-    evocativePhoto: '',
-    serviceTitle: '',
-    serviceDescription: '',
+      'Design a new way to communicate. User interface (or UI) design has grown substantially over the past few years, and has blossomed into one of the most creative, innovative and exciting fields in tech. Our service it is here to help you to create a brand new costumer’s experiences with the latest trend of user interfaces. An interface is the link between the corporate and the user, it must respond to customers’ new, often unmet and frequently changing needs and enable them to achieve their desired outcomes.',
+    banner: 'https://images.unsplash.com/photo-1618788372246-79faff0c3742?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=882&q=80',
+    evocativePhoto: 'https://images.unsplash.com/photo-1560461396-ec0ef7bb29dd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80',
+    serviceTitle: 'User Interfaces solutions',
+    serviceDescription: 'User interface elements are the parts we use to build interactive websites or apps. They provide touchpoints for the user as they navigate their way around; from buttons to scrollbars, to menu items and checkboxes. Every single detail matter!',
+    //detailTitle1: 'Design accessibility',
+    //detailDescription1: 'We can not fogot the crucial role of accessibility and inclusion. From designing a suite of UI elements, such as buttons, icons, and scrollbars, choosing colors and typefaces, to regularly testing their designs through prototyping, UI designers carefully weigh up what each design choice means for the end user.',
+    //detailTitle2: 'Trustwothy apps',
+    //detailDescription2: 'We know that users like to feel in control of themselves and their environment. With our help your interface to avoid having unplanned interactions, confusing pathways, and surprising outcomes, giving the customers insight into what to expect at every turn.',
+    //detailTitle3: '',
+    //detailDescription3: '',
     partnerTitle: 'Alliances and partners',
     partnerDescription:
-      'At ?company name?, together with our Partners, we are re-imagining the business Deliver with unforgettable customer experiences',
+      'We use the latest services in terms of technological design, we refer to the best partners and create with softwares that allows us to achieve extremely intuitive layouts for ours ideas.',
     p1Name: 'Adobe',
     p1Logo: '',
-    p2Name: '',
+    p2Name: 'Figma',
     p2Logo: '',
-    p3Name: '',
+    p3Name: 'Sketch',
     p3Logo: '',
     caseStudyTitle: 'Read about our case studies',
     realtedServiceTitle: 'You might be interested also to these services.',
@@ -1106,16 +1112,16 @@ async function insertRealData() {
   const DigitalCustomer = await Service.create({
     title: 'Customer Experience Engine',
     subTitle:
-      'Your customers are always connected. Shouldn’t their experiences be too? The Customer Experience Engine turns touchpoints into a story: unify the moments. Own the experience.',
-    description: '',
-    banner: '',
-    evocativePhoto: '',
+      'Your customers are always connected. Shouldn’t their experiences be too?',
+    description: 'Most customer experiences are created from a hodge-podge of systems. But customers don’t care about those systems. They expect a convenient, continuous and meaningful experience on the website, in the mobile app and in the store. The Customer Experience Engine powers an ongoing experience in which your brand stands out by disappearing into the fabric of customers’ lives. It’s the connective tissue across your systems that lets you focus on what you care about: delivering an unforgettable and impactful customer experience now and protecting that experience in the future.',
+    banner: 'https://images.unsplash.com/photo-1556745753-b2904692b3cd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1866&q=80',
+    evocativePhoto: 'https://images.unsplash.com/photo-1550071593-fd1bdaf1f93c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80',
     serviceTitle: 'Customer Experience Engine solutions',
     serviceDescription:
       'Our experience-led approach helps ensure that organizations have the right experience architecture to allow customers to create their own journey on their own terms. We view technology as the enabler of the customer experience, not the driver.',
     partnerTitle: 'Alliances and partners',
     partnerDescription:
-      'At ?company name?, together with our Partners, we are re-imagining the business Deliver with unforgettable customer experiences',
+      'The Customer Experience Engine turns touchpoints into a story: unify the moments. Own the experience. Together with the best Partners we are going to achieve this.',
     //detailTitle1: 'Single view of the customer',
     //detailDescription1: 'Lines of business and stakeholder groups have the visibility into how the business is interacting with customers to drive connected experiences.',
     //detailTitle2: 'Seamless plug and play with the latest tech',
@@ -1136,15 +1142,21 @@ async function insertRealData() {
   //4
   const Campaign = await Service.create({
     title: 'Campaign Management',
-    subTitle: '...',
-    description: '',
-    banner: '',
-    evocativePhoto: '',
-    serviceTitle: '',
-    serviceDescription: '',
+    subTitle: 'Communicate marketing messages at speed and scale to acquire and retain customers, driving sustainable growth.',
+    description: 'We all know communication is critical, but knowing what to say and when to say it—and whom to say it to—can make or break the message. That is why Accenture Interactive Marketing Engagement Services team specializes in solutions to help clients understand their customers, define the experience, and deliver relevant, compelling messages. We understand the new digital landscape and evolving customer expectations. Connections need to be made throughout the customer journey, constantly and across channels. "Always-on" campaigns are designed to capture attention and amplify demand, leads and revenue generation.',
+    banner: 'https://images.unsplash.com/photo-1552664730-d307ca884978?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80',
+    evocativePhoto: 'https://images.unsplash.com/photo-1557425529-b1ae9c141e7d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80',
+    serviceTitle: 'Campaign management solutions',
+    serviceDescription: 'We design and build creative campaigns that target customers with the right message to drive engagement. Our insights into new and evolving digital technologies mean we understand how to deliver personalized messages at the right time, helping acquire new customers, grow wallet share with existing customers, and retain the most profitable customers.',
     partnerTitle: 'Alliances and partners',
     partnerDescription:
-      'At ?company name?, together with our Partners, we are re-imagining the business Deliver with unforgettable customer experiences',
+      'How to deliver the right message at the right time? With the best Partners our company will grant you success.',
+    //detailTitle1: 'Campaign planning',
+    //detailDescription1: 'Create a consistent experience throughout the customer journey and across the channels.',
+    //detailTitle2: 'Campaign management and optimization',
+    //detailDescription2: 'Enable a high-performing campaign management solution that utilizes the capabilities of the new digital marketing ecosystem.',
+    //detailTitle3: 'Lead generation',
+    //detailDescription3: 'Fuel your funnel by driving demand from qualified leads.',
     p1Name: '',
     p1Logo: '',
     p2Name: '',
@@ -1163,8 +1175,8 @@ async function insertRealData() {
       'Make every customer feel like the only customer: Change the customer experience with conversational AI.',
     description:
       'Solutions.AI for Customer Engagement is built for putting AI at the frontline of every interaction streamlines service, better equips agents, and enhances the overall experience with personalized, precise, and empathetic care. It helps brands quickly and responsibly use data to understand and predict customer needs and arm agents behind the screen with the right message and offers. And it improves the original product and service by analyzing and incorporating insights from customer interactions through a constant feedback loop.',
-    banner: '',
-    evocativePhoto: '',
+    banner: 'https://images.unsplash.com/photo-1519558260268-cde7e03a0152?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80',
+    evocativePhoto: 'https://images.unsplash.com/photo-1531747118685-ca8fa6e08806?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1842&q=80',
     serviceTitle: 'Customer Service AI solutions',
     serviceDescription:
       'With our range of pre-built AI modules and ecosystem of technology partners, we are able to quickly scale hyper-personalized experiences to help clients anticipate and address their customers needs.',
@@ -1176,7 +1188,7 @@ async function insertRealData() {
     //detailDescription3: 'Responsibly establish a strong foundation of customer and journey data to generate insights around specific business inefficiencies that unlock value.',
     partnerTitle: 'Alliances and partners',
     partnerDescription:
-      'At ?company name?, together with our Partners, we are re-imagining the business Deliver with unforgettable customer experiences',
+      'HexTech, with the best Partners, will make your customers to have higher expectations than ever before. They crave a consistent experience no matter the time or channel.',
     p1Name: '',
     p1Logo: '',
     p2Name: '',
@@ -1195,8 +1207,8 @@ async function insertRealData() {
       'Build your brand and drive demand through high-impact, creative customer experiences. Discover the transformative power of a story.',
     description:
       'We take a holistic approach that combines creative, content, data and technological expertise to translate brand vision and business goals into customer engagement strategies and business results. With our help, you wll delight your customers with relevant, elegant, and intuitive experiences. Our insights into audiences and markets help us create effective brand strategies that drive real engagement for every customer across every channel.',
-    banner: '',
-    evocativePhoto: '',
+    banner: 'https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=993&q=80',
+    evocativePhoto: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80',
     serviceTitle: 'Creative Marketing Services solutions',
     serviceDescription:
       'What does it mean to build a brand? We take it from the ground up—from strategy and content to activation.',
@@ -1208,7 +1220,7 @@ async function insertRealData() {
     //detailDescription3: 'We activate and optimize programs that deliver high engagement and return on investment.',
     partnerTitle: 'Alliances and partners',
     partnerDescription:
-      'At ?company name?, together with our Partners, we are re-imagining the business Deliver with unforgettable customer experiences',
+      'With HexTech and its best Partners, you will delight your customers with relevant, elegant, and intuitive experiences.',
     p1Name: '',
     p1Logo: '',
     p2Name: '',
@@ -1512,7 +1524,7 @@ async function insertRealData() {
     title: 'Reimagining guest experiences on the high seas',
     subTitle:
       'Carnival Corporation connects high-touch technology and the human touch to create hyper-relevant experiences for thousands of guests at a time.',
-    banner: '',
+    banner: 'https://images.unsplash.com/photo-1558923240-2672e219374b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1867&q=80',
     descriptiveText:
       'Carnival Corp.’s CEO Arnold Donald has dubbed today “the golden age of cruising.” With growth in guest numbers, fleet sizes, ticket prices and a sea of new competitors, the description certainly fits. However, as dynamic as the industry is, the cruise travel category remains under penetrated. The company’s leadership knew to expand the market for cruise vacations, the cruise model itself had to change. The focus needed to go beyond building and marketing new ships to leveraging the company’s scale to create a new and sustainable competitive advantage. With the world’s largest fleet spanning nine distinct brands, Carnival Corp. envisioned a new model that elevated guest experience enablement above the physical ship platform. ',
     challengeTitle:
@@ -1535,10 +1547,10 @@ async function insertRealData() {
   //2
   const ceC2 = await CaseStudy.create({
     title:
-      'illycaffè - Finding the perfect blend for the digital customer experience',
+      'Finding the perfect blend for the digital customer experience',
     subTitle:
       'illycaffè, the premium Italian coffee brand, offers a unique taste and aroma that’s recognized by coffee lovers around the world, the company sells its products and services to consumers and trade customers in 140 different countries.',
-    banner: '',
+    banner: 'https://images.unsplash.com/photo-1442512595331-e89e73853f31?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80',
     descriptiveText:
       'Our data-driven, comprehensive and consistent social media strategy is optimizing the creative effort, ensuring premium content with that unique “illycaffè” blend reaches the right audience at the right time on the right channel. Social media activities have increased engagement and reach by 15 percent.',
     challengeTitle: 'Our challenge - Business approach reimagination',
@@ -1559,10 +1571,10 @@ async function insertRealData() {
 
   //3
   const ceC3 = await CaseStudy.create({
-    title: 'Subway - A data-driven recipe for delighting customers',
+    title: 'A data-driven recipe for delighting customers',
     subTitle:
       'Reinventing experiences: Subway CDO on personalization. Delivering meaningful insights that are helping them delight customers every day.',
-    banner: '',
+    banner: 'https://images.unsplash.com/photo-1604908554025-e477d54e85e0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2389&q=80',
     descriptiveText:
       'For today’s fast-food consumers, mobile and online ordering are must-haves. But delivering them effectively can be a tall order even for hugely successful brands. As part of a broader digital transformation, we helped Subway® restaurants make sure all their customer touchpoints were hitting the mark by creating a new data-driven experience optimization operating model.',
     challengeTitle:
@@ -1572,7 +1584,7 @@ async function insertRealData() {
     solutionTitle:
       'The solution we provided - Building up a new operating model, layer by layer',
     solutionDescription:
-      '"Using our deep experience of both organizational design and personalization, we helped Subway devise a completely new recipe for success – an operating model that would continuously optimize customer experiences through a dedication to scientific experimentation Leveraging the technologies of Adobe Analytics and Target, the new model enables Subway to run vast numbers of user experience tests across digital channels – everything from changing the color of a single button to revising homepage promotional messaging – and see the results instantly. That’s providing statistically meaningful insights into how design changes affect customer behavior – and company revenue.',
+      'Using our deep experience of both organizational design and personalization, we helped Subway devise a completely new recipe for success – an operating model that would continuously optimize customer experiences through a dedication to scientific experimentation Leveraging the technologies of Adobe Analytics and Target, the new model enables Subway to run vast numbers of user experience tests across digital channels – everything from changing the color of a single button to revising homepage promotional messaging – and see the results instantly. That’s providing statistically meaningful insights into how design changes affect customer behavior – and company revenue.',
     teamsTitle: 'Meet our team',
     personName: 'Sean Green',
     personJob: 'Lead – Interactive Technology',
@@ -1584,10 +1596,10 @@ async function insertRealData() {
 
   //4
   const ceC4 = await CaseStudy.create({
-    title: 'Dutch Flowers - Bouquet of innovation, personalization and service',
+    title: 'Bouquet of innovation, personalization and service',
     subTitle:
       'A digital platform with exceptional, personalized customer experience so business continues to bloom.',
-    banner: '',
+    banner: 'https://images.unsplash.com/photo-1459662784036-fb86bbf1104f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80',
     descriptiveText:
       'Webshops, much like floral arrangements, can be delicate: one faulty order or misplaced orchid is all it takes to keep a customer from returning. So, when an opportunity sprouted up for Dutch Flowers to fortify their online channel’s technical capabilities, they acted quickly.',
     challengeTitle:
@@ -1606,6 +1618,103 @@ async function insertRealData() {
       'From novelty to utility. Excelling in digital commerce requires engaging product and service expertise that give confidence to consumer buying.',
   })
   await CustomerExperience.addCasestudy(ceC4.id)
+
+  //5
+  const ceC5 = await CaseStudy.create({
+    title: 'Building the in-store experience that everyone desires',
+    subTitle:
+      'How to provide a custom and tailored experience each time a customer walks into their store.',
+    banner:'https://images.unsplash.com/photo-1515165244752-2465b61f0441?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1889&q=80',
+    descriptiveText:
+      'If you have ever wondered what’s behind the happy customers and packed stores it’s several factors including a focus on personalization, innovation and a loyalty program that is so good that it has 25 million members. All of these factors and several more make LoveMakeup one of the most successful beauty retailers in the world.',
+    challengeTitle:
+      'Our challenge - Every customer has to be unique',
+    challengeDescription: 
+      'The beauty industry as a whole faces a multitude of problems mainly around transparency, accuracy and trust of products. For these reasons, online shopping poses key challenges in purchasing beauty products while retail stores pose their own challenge in having the capabilities and manpower to assist every customer in finding the right products.',
+    solutionTitle:
+      'The solution we provided - Personalization at the next level',
+    solutionDescription:
+      'Customers are increasingly demanding customization as part of their shopping experience, especially if they’re shelling out for luxuries like makeup. Whether it’s primer for oily skin or moisturizer for dry, LoveMakeup recognizes that their customers require a unique and personalized approach, and they offer this through in-store swatch samplings and makeup demonstrations that allow shoppers to test different brands to be sure they’re buying the right product at the right place. But LoveMakeup doesn’t stop there: their personalized shopping experience extends to the web, which has been a major key to their success in keeping customers loyal to their brand.',
+    teamsTitle: 'Meet our team',
+    personName: 'Sean Green',
+    personJob: 'Lead – Interactive Technology',
+    serviceTitle: 'Immersive technologies',
+    serviceHeading:
+      'From novelty to utility. Excelling in digital commerce requires engaging product and service expertise that give confidence to consumer buying.',
+  })
+  await CustomerExperience.addCasestudy(ceC5.id)
+
+  //6  
+  const ceC6 = await CaseStudy.create({
+    title: 'A magical experience deserves a magical app',
+    subTitle: 'A personalized experience comes from valuing each customer and taking the time to make their visit amazing.',
+    banner: 'https://images.unsplash.com/photo-1534450539339-6d1c81ad18e2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1019&q=80',
+    descriptiveText: 'Guests of all ages can appreciate Disney’s magical approach to customer experience. Disney provides lessons for brands in all industries on creating unique, detailed experiences that will stick with customers for a lifetime. We helped a brand excellence to improve their local customer service',
+    challengeTitle: 'Our challenge - Provide an experience organizer',
+    challengeDescription: 'Mobile devices continually redefine how people communicate and organizations must have a mobile-first mindset to retain their share of market. More than half of online traffic now comes from smartphones and tablets and that number is continuing to rise. Organizations must have a mobile-first mindset and continually think about the human on the other side of the screen.',
+    solutionTitle: 'The solution we provided - The ultimate planning app',
+    solutionDescription: 'The app we designed for Disney contains most of the information on the website but it’s not just the website shoved into app-form. It’s laid out well and even has GPS-enabled walking directions between attractions. I can easily find park hours, showtimes, wait times for rides, and order food so you don’t need to wait in line anymore. All of the tickets, dining reservations, and photos are in the app, along with a personalized schedule that I can create to make sure I don’t miss the biggest rides and attractions.',
+    teamsTitle: 'Meet our team',
+    personName: 'John Daisy',
+    personJob: 'Digital Technical Architect',
+    serviceTitle: 'User Interfaces',
+    serviceHeading: 'Leading creative, business analysis, and advanced technology in user research.',
+  })
+  await CustomerExperience.addCasestudy(ceC6.id)
+
+  //7  
+  const ceC7 = await CaseStudy.create({
+    title: 'Bringing clothing to life directly in-store',
+    subTitle: 'How Zara is now leading the mid-market tech fashion pack.',
+    banner: 'https://www.mind-mag.com/wp-content/uploads/2018/04/IMG2645.jpg',
+    descriptiveText: '',
+    challengeTitle: 'Our challenge - ',
+    challengeDescription: '',
+    solutionTitle: 'The solution we provided - ',
+    solutionDescription: '',
+    teamsTitle: 'Meet our team',
+    personName: 'John Daisy',
+    personJob: 'Digital Technical Architect',
+    serviceTitle: 'User Interfaces',
+    serviceHeading: 'Leading creative, business analysis, and advanced technology in user research.',
+  })
+  await CustomerExperience.addCasestudy(ceC7.id)
+
+   //8  
+   const ceC8 = await CaseStudy.create({
+    title: 'A smooth checkout-free shop',
+    subTitle: 'Reimagine the In-store Customer Experience with Frictionless Shopping.',
+    banner: 'https://images.unsplash.com/photo-1590599145008-e4ec48682067?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80',
+    descriptiveText: 'Innovative retailers realize they need to create smart stores to enhance their customer experiences.  Recent advances in point-of-sale technologies are making it possible for retailers to reimagine the shopper in-store journey. With new retail technologies, long retail checkout lines and other in-store bottlenecks could soon be a thing of the past.',
+    challengeTitle: 'Our challenge - Realizing a bridge between offline and online shopping',
+    challengeDescription: 'We want to create a whole new shopping style with some characteristics. When you shop at one of these stores, you never have to wait in line. The store works with an Amazon Go app for iOS or Android: You enter, take the products you want and, thanks to the app, just leave again. The app is linked to your Amazon account for billing. Our goal is making the customer feeling fascinated by picking things up and putting them back, just like from your own cupboard.',
+    solutionTitle: 'The solution we provided - The ultimate frictionless shopping experience',
+    solutionDescription: 'We developed a unique system that allows to enter the store with the Amazon Go app open on your phone, fill your shopping bags with whatever you want, and then leave the store. Amazon Go stores use cameras and sensors to know what’s been taken off the shelves, so items can be charged to your credit card, which is stored in the Amazon Go app. No cashiers, no long lines, no paper receipts. Amazon Go showcases the convergence of technology and traditional retail shopping in a convenience store format.',
+    teamsTitle: 'Meet our team',
+    personName: 'John Daisy',
+    personJob: 'Digital Technical Architect',
+    serviceTitle: 'User Interfaces',
+    serviceHeading: 'Leading creative, business analysis, and advanced technology in user research.',
+  })
+  await CustomerExperience.addCasestudy(ceC8.id)
+
+   //9  
+   const ceC9 = await CaseStudy.create({
+    title: 'Delivering value to customer Service',
+    subTitle: 'Increase the brand-loyality of the number one coffee company.',
+    banner: 'https://images.unsplash.com/photo-1570526427067-b456f83a4de4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80',
+    descriptiveText: 'Starbucks is a major specialty-coffee brand in the North. Recent market research has indicated that the service level of the company is currently not meeting the expectations of customers. Thus, the company is discussing a plan to increase customer satisfaction by increasing the amount of labor in each coffee store and, as a consequence, increase the speed-of-service.',
+    challengeTitle: 'Our challenge - Increase loyalty',
+    challengeDescription: 'One of the core issues the company is facing is that its services are not meeting customer expectations. It is mainly due to changes in target customers, decreasing age and income groups, and customer’s poor perception of the company.',
+    solutionTitle: 'The solution we provided - Leveraging technological and experiential methods',
+    solutionDescription: 'We wanted to start from store design, or brand localization. This is just one of the creative ways Starbucks can connects with its customers, integrating local aesthetics into each of its stores. The company’s design studios are strategically located so that designers can better understand their communities. Furthermore, we developed the "tech-side", creating an Amazon Alexa platform and the My Starbucks Barista chatbot debuted, letting users order their favorite coffees using simple voice commands.',
+    teamsTitle: 'Meet our team',
+    personName: 'John Daisy',
+    personJob: 'Digital Technical Architect',
+    serviceTitle: 'User Interfaces',
+    serviceHeading: 'Leading creative, business analysis, and advanced technology in user research.',
+  })
+  await CustomerExperience.addCasestudy(ceC9.id)
 
   //**END OF CUSTOMER EXPERIENCE CASE STUDIES */
 
@@ -2281,43 +2390,43 @@ async function insertRealData() {
     name: 'CocaCola',
     description: 'Taste the feeling',
     image:
-      'https://www.radiosenisecentrale.it/wp-content/uploads/2019/12/a8c15493781667d05e628e2f76d65b3a.jpg',
+      'https://i.ibb.co/SBqydD8/coca-cola.png',
     website: 'https://www.coca-cola.com/',
   })
-  const p1 = await Partner.create({
-    name: 'P1',
-    description: 'Test partner',
+  const Figma = await Partner.create({
+    name: 'Figma',
+    description: 'The collaborative interface design tool',
     image:
-      'https://www.radiosenisecentrale.it/wp-content/uploads/2019/12/a8c15493781667d05e628e2f76d65b3a.jpg',
-    website: 'https://www.coca-cola.com/',
+      'https://i.ibb.co/W25yZ0m/figma.png',
+    website: 'https://www.figma.com/',
   })
-  const p2 = await Partner.create({
-    name: 'P2',
-    description: 'Test partner',
+  const Adobe = await Partner.create({
+    name: 'Adobe',
+    description: 'Creatività per tutti',
     image:
-      'https://www.radiosenisecentrale.it/wp-content/uploads/2019/12/a8c15493781667d05e628e2f76d65b3a.jpg',
-    website: 'https://www.coca-cola.com/',
+      'https://i.ibb.co/sw4Rx4M/adobe.png',
+    website: 'https://www.adobe.com/',
   })
-  const p3 = await Partner.create({
-    name: 'P3',
-    description: 'Test partner',
+  const Sketch = await Partner.create({
+    name: 'Sketch',
+    description: 'It all starts here',
     image:
-      'https://www.radiosenisecentrale.it/wp-content/uploads/2019/12/a8c15493781667d05e628e2f76d65b3a.jpg',
-    website: 'https://www.coca-cola.com/',
+      'https://i.ibb.co/QdHXCx7/sketch-01.png',
+    website: 'https://www.sketch.com/',
   })
-  const p4 = await Partner.create({
-    name: 'P4',
-    description: 'Test partner',
+  const Arduino = await Partner.create({
+    name: 'Arduino',
+    description: 'So easy, my granny can use it',
     image:
-      'https://www.radiosenisecentrale.it/wp-content/uploads/2019/12/a8c15493781667d05e628e2f76d65b3a.jpg',
-    website: 'https://www.coca-cola.com/',
+      'https://i.ibb.co/KDcLxdy/arduino.png',
+    website: 'https://www.arduino.cc/',
   })
-  const p5 = await Partner.create({
-    name: 'P5',
-    description: 'Test partner',
+  const GoogleCloud = await Partner.create({
+    name: 'Google Cloud',
+    description: 'Cloud Computing Services',
     image:
-      'https://www.radiosenisecentrale.it/wp-content/uploads/2019/12/a8c15493781667d05e628e2f76d65b3a.jpg',
-    website: 'https://www.coca-cola.com/',
+      'https://i.ibb.co/SsctBTT/cloud.png',
+    website: 'https://cloud.google.com/',
   })
 }
 
