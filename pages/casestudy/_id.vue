@@ -7,7 +7,7 @@
             <h4 class="area-title">{{ casestudy.area.title }}</h4>
             <h1 class="title-case">{{ casestudy.title }}</h1>
             <h5 class="sub-title">
-              {{ casestudy.author }}Author's name | April 2, 2020 | 2 Comments
+              {{ casestudy.teammembers[0].personName }} | April 2, 2020
             </h5>
             <div class="column">
               <div class="single-column">
