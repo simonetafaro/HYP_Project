@@ -212,9 +212,11 @@ async function insertRealData() {
     servicesDescription:
       'We are unique among IT security consulting firms. We combine security technology engineering, intelligence expertise and our data science DNA to help companies manage digital risk end-to-end.',
     caseStudyTitle: 'Read about our case studies',
-    caseStudyDescription: 'TODO',
+    caseStudyDescription:
+      'Not only words. We put ourselves in everything we do to help you to protect your company',
     teamTitle: 'Meet our team',
-    teamDescription: 'TODO',
+    teamDescription:
+      'Meet the experts that make our security services great for your business',
   })
   const IoT = await Area.create({
     title: 'Internet Of Things',
@@ -294,13 +296,14 @@ async function insertRealData() {
     banner: 'https://www.comarch.com/files-com/file_545/c1.png',
     evocativePhoto: '',
     serviceTitle: '',
-    serviceDescription: '',
-    partnerTitle: '',
+    serviceDescription:
+      'Protect your business from the most common attack: fraud',
+    partnerTitle: 'Alliances and partners',
     partnerDescription: '',
-    p1Name: '',
-    p1Logo: '',
-    p2Name: '',
-    p2Logo: '',
+    p1Name: 'Coca-Cola',
+    p1Logo: 'https://i.ibb.co/njhmnqv/coca-cola.png',
+    p2Name: 'Adobe',
+    p2Logo: 'https://i.ibb.co/fpWF6WP/adobe.png',
     p3Name: '',
     p3Logo: '',
     caseStudyTitle: '',
@@ -317,10 +320,10 @@ async function insertRealData() {
     serviceTitle: '',
     serviceDescription:
       'Achieve more-secure applications, compliant environments and safer systems development with industrialized and repeatable processes.',
-    partnerTitle: '',
+    partnerTitle: 'Alliances and partners',
     partnerDescription: '',
-    p1Name: '',
-    p1Logo: '',
+    p1Name: 'Figma',
+    p1Logo: 'https://i.ibb.co/W25yZ0m/figma.png',
     p2Name: '',
     p2Logo: '',
     p3Name: '',
@@ -332,16 +335,16 @@ async function insertRealData() {
   const NetworkProtection = await Service.create({
     title: 'Network protection',
     subTitle:
-      '"COMPANY NAME" offers a variety of services from information security consulting to assessing, testing and improving the protection of applications and networks for companies operating in healthcare, manufacturing, banking, retail, telecommunications, and other industries.',
+      'HexTech offers a variety of services from information security consulting to assessing, testing and improving the protection of applications and networks for companies operating in healthcare, manufacturing, banking, retail, telecommunications, and other industries.',
     banner: 'https://www.comarch.com/files-com/file_545/c1.png',
     evocativePhoto: '',
     serviceTitle: '',
     serviceDescription:
       'We apply multiple defense layers to protect your corporate network and the sensitive data stored within it. Our security engineers know various ways to keep your proprietary information safe and reduce the probability that you will have to experience successful attack attempts against your network.',
-    partnerTitle: '',
+    partnerTitle: 'Alliances and partners',
     partnerDescription: '',
-    p1Name: '',
-    p1Logo: '',
+    p1Name: 'Adobe',
+    p1Logo: 'https://i.ibb.co/fpWF6WP/adobe.png',
     p2Name: '',
     p2Logo: '',
     p3Name: '',
@@ -359,10 +362,10 @@ async function insertRealData() {
     serviceTitle: '',
     serviceDescription:
       "Our custom data security services help you incorporate a risk-balanced strategy with leading data protection technology to safeguard your organization's critical data. With both consulting and integration services, we help you optimize control over data using market-leading loss prevention and encryption technologies.",
-    partnerTitle: '',
+    partnerTitle: 'Alliances and partners',
     partnerDescription: '',
-    p1Name: '',
-    p1Logo: '',
+    p1Name: 'Arduino',
+    p1Logo: 'https://i.ibb.co/KDcLxdy/arduino.png',
     p2Name: '',
     p2Logo: '',
     p3Name: '',
@@ -379,10 +382,10 @@ async function insertRealData() {
     serviceTitle: '',
     serviceDescription:
       'Our Identity & Access Management comes with world-class methods for authentication, authorization, identity lifecycle and accountability. Its modular architecture makes it easy to adapt to specific types of organizations across hierarchies and geographies.',
-    partnerTitle: '',
+    partnerTitle: 'Alliances and partners',
     partnerDescription: '',
-    p1Name: '',
-    p1Logo: '',
+    p1Name: 'Adobe',
+    p1Logo: 'https://i.ibb.co/fpWF6WP/adobe.png',
     p2Name: '',
     p2Logo: '',
     p3Name: '',
@@ -399,10 +402,10 @@ async function insertRealData() {
     serviceTitle: '',
     serviceDescription:
       'We deliver full-scale security assessment and planning services for the components of IT infrastructures such as web, mobile and desktop applications, employee behaviour and remote access software.',
-    partnerTitle: '',
+    partnerTitle: 'Alliances and partners',
     partnerDescription: '',
-    p1Name: '',
-    p1Logo: '',
+    p1Name: 'Figma',
+    p1Logo: 'https://i.ibb.co/W25yZ0m/figma.png',
     p2Name: '',
     p2Logo: '',
     p3Name: '',
@@ -1240,7 +1243,7 @@ async function insertRealData() {
   const OnlineFraudDetection = await CaseStudy.create({
     title: 'Next generation online fraud detection for banks',
     subTitle: 'A new generation bank',
-    teamsTitle: 'Team a caso',
+    teamsTitle: 'Fraud prevention team',
     banner:
       'https://www.creativemotions.it/wp-content/uploads/2020/06/Il-segreto-per-scrivere-un-case-study-che-converte.png',
     descriptiveText:
@@ -1250,22 +1253,89 @@ async function insertRealData() {
       'The need for the Bank to deliver a new paradigm in user experience for online banking provided several challenges to their security team, as they were requested to minimize customer friction while supporting instant payment and open banking initiatives, andensure regulatory compliance (PSD2). In particular, the anti-fraud team had to select and implement the best fraud detection solution to ensure the Bank would quickly gain an excellent reputation in the market by delivering the best customer satisfaction in terms of protection against online frauds.',
     solutionTitle: 'application-transparent approach',
     solutionDescription:
-      'Our application-transparent approach does not require instrumenting or even touching applications. "COMPANY NAME" passive and dynamic delivery of controls allows security to be decoupled from application development & deployment, and is a critical functionality that can be independently delivered and managed by the security team.',
+      'Our application-transparent approach does not require instrumenting or even touching applications. HexTech passive and dynamic delivery of controls allows security to be decoupled from application development & deployment, and is a critical functionality that can be independently delivered and managed by the security team.',
     teamsTitle: 'Security departement',
     personName: '',
     personJob: '',
-    serviceTitle: '',
+    serviceTitle: 'Managed Security',
     serviceHeading: '',
   })
   await Security.addCasestudy(OnlineFraudDetection.id)
   await ManagedSecurity.addCasestudy(OnlineFraudDetection.id)
 
   const cs1 = await CaseStudy.create({
-    title: 'cs1 title',
-    subTitle: 'cs1 subtitle',
+    title: 'Network protection for worldwide companies',
+    subTitle: 'A secure connection',
     banner:
       'https://www.creativemotions.it/wp-content/uploads/2020/06/Il-segreto-per-scrivere-un-case-study-che-converte.png',
-    teamsTitle: 'Team a caso',
+    teamsTitle: 'Network protection team',
+    descriptiveText:
+      "The Customer asked HexTech to protect it's network against undesired connection or network attacks",
+    challengeTitle: 'Smart and transparent network protection',
+    challengeDescription: 'A zero time loss solution',
+    solutionTitle: 'Implented system',
+    solutionDescription:
+      'To develop a syestem as transparent as possible our team implemented a network protection layer that features AI capabilities to detect undesired connections',
+    personJob: '',
+    serviceTitle: 'Network protection',
+    serviceHeading: '',
+  })
+
+  const cs2 = await CaseStudy.create({
+    title: 'Company access with secure credentials',
+    subTitle: 'Access guaranteed only to the ones you trust',
+    banner:
+      'https://e7.pngegg.com/pngimages/183/248/png-clipart-access-control-radio-frequency-identification-television-pensiunea-mioval-technology-rfid-card-logo-transmitter.png',
+    teamsTitle: 'Network protection team',
+    descriptiveText:
+      'The Customer commissioned HexTech to develop a system to ensure that certain sections of the company could be accessed only to qualified people.',
+    challengeTitle: 'important data have to be secured',
+    challengeDescription:
+      'The Customer commissioned HexTech implement a system that guarantees access only to the allowed personnel',
+    solutionTitle: 'Implented system',
+    solutionDescription:
+      '"To ensure scalability and short query response time, HexTech’s BI implementation team built an analytical Microsoft SQL Server data warehouse which would use a Transact-SQL script to load data from the relational database. The latter was consolidated from 200 databases during the application development process and totaled 12GB."',
+    personJob: '',
+    serviceTitle: 'Network protection',
+    serviceHeading: '',
+  })
+
+  const cs3 = await CaseStudy.create({
+    title: 'Network protection for worldwide companies',
+    subTitle: 'A secure connection',
+    banner:
+      'https://www.creativemotions.it/wp-content/uploads/2020/06/Il-segreto-per-scrivere-un-case-study-che-converte.png',
+    teamsTitle: 'Network protection team',
+    descriptiveText:
+      'The Customer commissioned HexTech to rewrite the software – a Java application used by the healthcare centers for management and reporting of data on medication inventory, clinical services, patient data, marketing activities and others. Within the project, the Customer also wanted the tool to allow its users to enable quality population health analytics with prompt reports.',
+    challengeTitle: 'BI IMPLEMENTATION',
+    challengeDescription:
+      'The Customer commissioned HexTech to rewrite the software – a Java application used by the healthcare centers for management and reporting of data on medication inventory, clinical services, patient data, marketing activities and others. Within the project, the Customer also wanted the tool to allow its users to enable quality population health analytics with prompt reports.',
+    solutionTitle: 'Implented system',
+    solutionDescription:
+      '"To ensure scalability and short query response time, HexTech’s BI implementation team built an analytical Microsoft SQL Server data warehouse which would use a Transact-SQL script to load data from the relational database. The latter was consolidated from 200 databases during the application development process and totaled 12GB."',
+    personJob: '',
+    serviceTitle: 'Network protection',
+    serviceHeading: '',
+  })
+
+  const cs4 = await CaseStudy.create({
+    title: 'Network protection for worldwide companies',
+    subTitle: 'A secure connection',
+    banner:
+      'https://www.creativemotions.it/wp-content/uploads/2020/06/Il-segreto-per-scrivere-un-case-study-che-converte.png',
+    teamsTitle: 'Network protection team',
+    descriptiveText:
+      'The Customer commissioned HexTech to rewrite the software – a Java application used by the healthcare centers for management and reporting of data on medication inventory, clinical services, patient data, marketing activities and others. Within the project, the Customer also wanted the tool to allow its users to enable quality population health analytics with prompt reports.',
+    challengeTitle: 'BI IMPLEMENTATION',
+    challengeDescription:
+      'The Customer commissioned HexTech to rewrite the software – a Java application used by the healthcare centers for management and reporting of data on medication inventory, clinical services, patient data, marketing activities and others. Within the project, the Customer also wanted the tool to allow its users to enable quality population health analytics with prompt reports.',
+    solutionTitle: 'Implented system',
+    solutionDescription:
+      '"To ensure scalability and short query response time, HexTech’s BI implementation team built an analytical Microsoft SQL Server data warehouse which would use a Transact-SQL script to load data from the relational database. The latter was consolidated from 200 databases during the application development process and totaled 12GB."',
+    personJob: '',
+    serviceTitle: 'Network protection',
+    serviceHeading: '',
   })
   await Security.addCasestudy(cs1.id)
   await ManagedSecurity.addCasestudy(cs1.id)
@@ -1279,13 +1349,13 @@ async function insertRealData() {
     banner:
       'https://www.scnsoft.com/boss/images/02d65838-eb3a-4d54-b7aa-b6b7aa0c1d47bi_healthcare.png',
     descriptiveText:
-      'The Customer commissioned ScienceSoft to rewrite the software – a Java application used by the healthcare centers for management and reporting of data on medication inventory, clinical services, patient data, marketing activities and others. Within the project, the Customer also wanted the tool to allow its users to enable quality population health analytics with prompt reports.',
+      'The Customer commissioned HexTech to rewrite the software – a Java application used by the healthcare centers for management and reporting of data on medication inventory, clinical services, patient data, marketing activities and others. Within the project, the Customer also wanted the tool to allow its users to enable quality population health analytics with prompt reports.',
     challengeTitle: 'BI IMPLEMENTATION',
     challengeDescription:
-      'The Customer commissioned ScienceSoft to rewrite the software – a Java application used by the healthcare centers for management and reporting of data on medication inventory, clinical services, patient data, marketing activities and others. Within the project, the Customer also wanted the tool to allow its users to enable quality population health analytics with prompt reports.',
+      'The Customer commissioned HexTech to rewrite the software – a Java application used by the healthcare centers for management and reporting of data on medication inventory, clinical services, patient data, marketing activities and others. Within the project, the Customer also wanted the tool to allow its users to enable quality population health analytics with prompt reports.',
     solutionTitle: 'Implented system',
     solutionDescription:
-      '"To ensure scalability and short query response time, ScienceSoft’s BI implementation team built an analytical Microsoft SQL Server data warehouse which would use a Transact-SQL script to load data from the relational database. The latter was consolidated from 200 databases during the application development process and totaled 12GB."',
+      '"To ensure scalability and short query response time, HexTech’s BI implementation team built an analytical Microsoft SQL Server data warehouse which would use a Transact-SQL script to load data from the relational database. The latter was consolidated from 200 databases during the application development process and totaled 12GB."',
     teamsTitle: 'Team a caso',
     personName: '',
     personJob: '',
@@ -1447,7 +1517,7 @@ async function insertRealData() {
   const ccC2 = await CaseStudy.create({
     title: 'JAVA BACKEND DEVELOPMENT FOR AN INNOVATIVE HOTEL SELF-SERVICE APP',
     subTitle:
-      'To date, the demo version of the application has been successfully presented to future end users and received their endorsement. Satisfied with the results, the Customer continues cooperation with ScienceSoft as new features and integrations are continuously added. In the nearest future, the app should be adopted by about 100 hotels around the globe.',
+      'To date, the demo version of the application has been successfully presented to future end users and received their endorsement. Satisfied with the results, the Customer continues cooperation with HexTech as new features and integrations are continuously added. In the nearest future, the app should be adopted by about 100 hotels around the globe.',
     banner:
       'https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/5000741/original/fca44be5f9f214b2c4937d99e292951b0a19c2f8/write-any-c-plus-plus-java-or-python-program.png',
     descriptiveText:
@@ -1915,7 +1985,7 @@ async function insertRealData() {
       'In order to provide a continuous and efficient technical control and thus increased security of constructions and complex engineering objects, the Customer decided to develop a smart construction monitoring system for collecting and processing data through sensors installed on the key elements of a building. The solution was designed to automate regular data collection and processing.',
     solutionTitle: 'Procesing and calculations on sensor data',
     solutionDescription:
-      'HexTech development team designed and developed a smart solution to collect sensor data and aggregate it on a central server for processing and further calculations of a building’s state. Data processing and averaging make it possible to boost system performance and reduce data volumes. The user-friendly interface presents the data from connected through intuitive color coding – the green, yellow and red lights indicate the state of a building. Additionally, the system allows a flexible configuration of threshold values to regulate the transition from one status to another. To aggregate the data – suppose, for calculating a construction deformation, ScienceSoft developed a system of virtual sensors collecting information from several physical sensors. It allows users to monitor specific parameters which can be used only in the aggregate.',
+    'HexTech development team designed and developed a smart solution to collect sensor data and aggregate it on a central server for processing and further calculations of a building’s state. Data processing and averaging make it possible to boost system performance and reduce data volumes. The user-friendly interface presents the data from connected through intuitive color coding – the green, yellow and red lights indicate the state of a building. Additionally, the system allows a flexible configuration of threshold values to regulate the transition from one status to another. To aggregate the data – suppose, for calculating a construction deformation, ScienceSoft developed a system of virtual sensors collecting information from several physical sensors. It allows users to monitor specific parameters which can be used only in the aggregate.',
     teamsTitle: 'IoT Department',
     personName: '',
     personJob: '',
@@ -1936,8 +2006,8 @@ async function insertRealData() {
     challengeDescription:
       'The Customer wanted to deliver a sophisticated remote patient monitoring solution for clinics of North America. The solution should help to improve medical staff performance, avoid routine visits, and increase the quality of care. For that reason, the Customer needed a team of savvy professionals in R&D and healthcare IT.',
     solutionTitle: 'App and Web Dashboard',
-    solutionDescription:
-      'The developers reviewed and analyzed available approaches and frameworks and picked WebRTC technology as the best one for platform-independent voice and video communication. Several Android-powered hardware devices were selected to implement central communication module or Sensor Network Appliances (SNAs). The development process was split into 2 major parts: the development of apps for Android and iOS devices and Web dashboard implementation. \n 1) ScienceSoft’s team delivered apps for both patients and medical staff. Gradle flavors were used to build the apps’ variations fully compatible with different screen sizes: wide screen (for doctors), tablet (for nurses) and smartphone (for healthcare services consumers). Patients could smoothly access numerous sensors in order to monitor data and synchronize it with the server. Medical staff members could diagnose and treat patient remotely and receive automated alerts and notifications, when, for example patient state suddenly changes. \n 2) A Web Dashboard assisted medical professionals in monitoring the overall status of patients drilling down on personal medical data. It sent alerts on poor health indicators and maintains the doctor-patient connection. The central communication module was built upon a TV-connected Android-powered device. ',
+    solutionDescription: 'The developers reviewed and analyzed available approaches and frameworks and picked WebRTC technology as the best one for platform-independent voice and video communication. Several Android-powered hardware devices were selected to implement central communication module or Sensor Network Appliances (SNAs). The development process was split into 2 major parts: the development of apps for Android and iOS devices and Web dashboard implementation. \n 1) HexTech’s team delivered apps for both patients and medical staff. Gradle flavors were used to build the apps’ variations fully compatible with different screen sizes: wide screen (for doctors), tablet (for nurses) and smartphone (for healthcare services consumers). Patients could smoothly access numerous sensors in order to monitor data and synchronize it with the server. Medical staff members could diagnose and treat patient remotely and receive automated alerts and notifications, when, for example patient state suddenly changes. \n 2) A Web Dashboard assisted medical professionals in monitoring the overall status of patients drilling down on personal medical data. It sent alerts on poor health indicators and maintains the doctor-patient connection. The central communication module was built upon a TV-connected Android-powered device. ',
+
     teamsTitle: 'IoT Department',
     personName: '',
     personJob: '',
@@ -1953,7 +2023,7 @@ async function insertRealData() {
       'HexTech’s team has successfully developed image analysis software for automated optical inspection of printed circuit assemblies. The application offers considerable opportunities for the SMT manufacturing industry, providing a fast and reliable solution for PCA quality control.',
     banner: '',
     descriptiveText:
-      'ScienceSoft has developed an application for the electronics industry aimed at ensuring the quality of printed circuit assemblies (PCAs) by means of machine vision.',
+      'HexTech has developed an application for the electronics industry aimed at ensuring the quality of printed circuit assemblies (PCAs) by means of machine vision.',
     challengeTitle: 'Faster and more efficient inspection',
     challengeDescription:
       'The application was to perform fast and efficient quality inspection of printed circuit assemblies right on the conveyor belt and detect if any of the PCA components were missing.',
