@@ -1132,6 +1132,8 @@ async function insertRealData() {
       'To develop a syestem as transparent as possible our team implemented a network protection layer that features AI capabilities to detect undesired connections',
     createdData: 'March 22, 2021',  
   })
+  await Security.addCasestudy(cs1.id)
+  await ModernFraudProtection.addCasestudy(cs1.id)
 
   const cs2 = await CaseStudy.create({
     title: 'Company access with secure credentials',
@@ -1148,6 +1150,8 @@ async function insertRealData() {
       '"To ensure scalability and short query response time, HexTech’s BI implementation team built an analytical Microsoft SQL Server data warehouse which would use a Transact-SQL script to load data from the relational database. The latter was consolidated from 200 databases during the application development process and totaled 12GB."',
     createdData: 'January 24, 2021',
   })
+  await Security.addCasestudy(cs2.id)
+  await NetworkProtection.addCasestudy(cs2.id)
 
   const cs3 = await CaseStudy.create({
     title: 'Network protection for worldwide companies',
@@ -1164,6 +1168,8 @@ async function insertRealData() {
       '"To ensure scalability and short query response time, HexTech’s BI implementation team built an analytical Microsoft SQL Server data warehouse which would use a Transact-SQL script to load data from the relational database. The latter was consolidated from 200 databases during the application development process and totaled 12GB."',
     createdData: 'January 2, 2021',
   })
+  await Security.addCasestudy(cs3.id)
+  await DataSecurity.addCasestudy(cs3.id)
 
   const cs4 = await CaseStudy.create({
     title: 'Network protection for worldwide companies',
@@ -1180,8 +1186,9 @@ async function insertRealData() {
       '"To ensure scalability and short query response time, HexTech’s BI implementation team built an analytical Microsoft SQL Server data warehouse which would use a Transact-SQL script to load data from the relational database. The latter was consolidated from 200 databases during the application development process and totaled 12GB."',
     createdData: 'December 2, 2020',
   })
-  await Security.addCasestudy(cs1.id)
-  await ManagedSecurity.addCasestudy(cs1.id)
+  await Security.addCasestudy(cs4.id)
+  await IdentityAccessManagement.addCasestudy(cs4.id)
+
   //**END OF SECURITY CASE STUDIES */
 
   //**BIG DATA ANALYSIS CASE STUDIES */
