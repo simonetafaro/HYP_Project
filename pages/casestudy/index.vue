@@ -724,6 +724,13 @@ export default {
       })
     },
   },
+  mounted() {
+    this.resizeCaseCard()
+    window.addEventListener('resize', this.resizeCaseCard)
+  },
+  destroyed() {
+    window.removeEventListener('resize', this.resizeCaseCard)
+  },
 }
 </script>
 

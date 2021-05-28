@@ -55,5 +55,32 @@ export default {
         }
       )
     },
+    resizeCaseCard() {
+      //  resize case img height
+      Array.from(document.getElementsByClassName('casestudycontainer')).forEach(
+        function (caseCard) {
+          caseCard.style.height = caseCard.width + 'px'
+        }
+      )
+      //  check highest title
+      let serviceCardTitleMaxHeight = 0
+      Array.from(document.getElementsByClassName('service_title')).forEach(
+        function (card) {
+          card.style.height = ''
+          if (card.clientHeight > serviceCardTitleMaxHeight)
+            serviceCardTitleMaxHeight = card.clientHeight
+        }
+      )
+      //  set the same height to all the title
+      Array.from(document.getElementsByClassName('service_title')).forEach(
+        function (card) {
+          if (card.clientHeight < serviceCardTitleMaxHeight) {
+            card.style.height = serviceCardTitleMaxHeight + 'px'
+            card.style.display = 'grid'
+            card.style.alignContent = 'center'
+          }
+        }
+      )
+    },
   },
 }
