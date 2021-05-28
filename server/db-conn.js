@@ -133,13 +133,8 @@ function defineDBStructure() {
         allowNull: true,
       },
       description: DataTypes.TEXT,
-      servicesTitle: DataTypes.STRING,
       servicesDescription: DataTypes.TEXT,
-      //nome e descrizione dei servizi li prendiamo dalla tabella Area
-      caseStudyTitle: DataTypes.STRING,
       caseStudyDescription: DataTypes.TEXT,
-
-      teamTitle: DataTypes.STRING,
       teamDescription: DataTypes.TEXT,
       //nome e job dei team member li prendiamo dalla tabella dei teamMember
     },
@@ -204,15 +199,13 @@ async function insertRealData() {
       'Anytime. Anywhere. We create cybersecurity tailored to your specific business needs. We defend against cyberattacks with proactive, focused,  industry-relevant threat intelligence to give you the confidence that  comes from knowing your business is secure.',
     banner: 'https://i.ibb.co/X5FrLTP/Frame-6.png',
     evocativeImage: 'https://i.ibb.co/Ny7F40s/security.png',
-    servicesTitle: 'Discover our Security services',
     servicesDescription:
       'We are unique among IT security consulting firms. We combine security technology engineering, intelligence expertise and our data science DNA to help companies manage digital risk end-to-end.',
-    caseStudyTitle: 'Read about our case studies',
-    caseStudyDescription:
-      'Not only words. We put ourselves in everything we do to help you to protect your company',
-    teamTitle: 'Meet our team',
+      caseStudyDescription:
+      'Reimagining business through experience. The following case studies demonstrate how our company is an expert in the business of creating comprehensive experiences from start to finish.',
     teamDescription:
-      'Meet the experts that make our security services great for your business',
+      'Ideate, innovate, change the world, repeat. Meet our team of talented people using design thinking to create experiences that win awards and make headlines.',
+  
   })
   const IoT = await Area.create({
     title: 'Internet Of Things',
@@ -222,13 +215,13 @@ async function insertRealData() {
       'We help clients effectively capitalize on IoT technology and solutions, linking technology, vendors and customers through a holistic business model. IoT describes the connection of devices to the internet using embedded software and sensors to communicate, collect and exchange data with one another. IoT combines connectivity with sensors, devices and people, enabling a form of free-flowing conversation between man and machine, software and hardware. With IoT, the world is wide open, offering a virtually endless array of opportunities and connections at home, at work or at play.',
     banner: 'https://i.ibb.co/Pwt4Z5J/Frame-5.png',
     evocativeImage: 'https://i.ibb.co/zRPbmf1/iot.png',
-    servicesTitle: 'Discover our IoT services ',
     servicesDescription:
       'The growth of IoT is paving the path for new business avenues. The pertinent question for enterprises is no longer if their business benefits from IoT adoption - but rather what IoT functionalities can be best used to their advantage.',
-    caseStudyTitle: 'Read about our case studies',
-    caseStudyDescription: 'TODO',
-    teamTitle: 'Meet our team',
-    teamDescription: 'TODO',
+      caseStudyDescription:
+      'Reimagining business through experience. The following case studies demonstrate how our company is an expert in the business of creating comprehensive experiences from start to finish.',
+    teamDescription:
+      'Ideate, innovate, change the world, repeat. Meet our team of talented people using design thinking to create experiences that win awards and make headlines.',
+  
   })
   const CloudComputing = await Area.create({
     title: 'Cloud Computing',
@@ -237,13 +230,13 @@ async function insertRealData() {
       'Having been a major driving force of the ongoing digital revolution, the Cloud has completely changed the way enterprises run their operations - from IT infrastructure management, through financial administration, to data exchange. At HexTech, we can move your existing IT environment to the Cloud, as well as provide a wide range of cloud-driven applications to help your company gain a competitive advantage. Scroll through this space to learn more.',
     banner: 'https://i.ibb.co/crjyD7n/Frame-7.png',
     evocativeImage: 'https://i.ibb.co/hf3LHBb/cloud.png',
-    servicesTitle: 'Discover our Cloud Computing services ',
     servicesDescription:
       "As a result of the on-going digital revolution, the Cloud and business environment have become inseparable. Providing a foundation strong enough to support millions of operations at the same time, cloud computing has played a major role in the development of today's information-driven enterprises. Join them to: - Accelerate your company's digital transformation - Reduce workload and operational costs - Improve the performance of your systems and applications",
-    caseStudyTitle: 'Read about our case studies',
-    caseStudyDescription: 'TODO',
-    teamTitle: 'Meet our team',
-    teamDescription: 'TODO',
+      caseStudyDescription:
+      'Reimagining business through experience. The following case studies demonstrate how our company is an expert in the business of creating comprehensive experiences from start to finish.',
+    teamDescription:
+      'Ideate, innovate, change the world, repeat. Meet our team of talented people using design thinking to create experiences that win awards and make headlines.',
+  
   })
   // isi
   const CustomerExperience = await Area.create({
@@ -254,13 +247,10 @@ async function insertRealData() {
       'The way we interact with brands and companies has changed. We typically associate the customer experience with a traditional and interaction directly found inside a store with a specific aesthetic. he world has changed, and so has the business model: digitalisation had an huge impact on our existence, leading companies to shape a whole new entrepreneurial perspective. But it’s not just because of this. Many customer behaviour patterns have evolved and the company must be able to understand their needs and needs, possibly anticipating and surprising them.',
     banner: 'https://i.ibb.co/XpSgKYj/ce-grande.png',
     evocativeImage: 'https://i.ibb.co/pxH7fJ1/customer-experience.png',
-    servicesTitle: 'Explore our tailor-made services about Customer Experience',
     servicesDescription:
       'Hear how businesses have transformed how they work: Great experiences are no longer only a business accessory, they are of vital importance.',
-    caseStudyTitle: 'Experience our clients’ success',
     caseStudyDescription:
       'Reimagining business through experience. The following case studies demonstrate how our company is an expert in the business of creating comprehensive experiences from start to finish.',
-    teamTitle: 'Meet our team',
     teamDescription:
       'Ideate, innovate, change the world, repeat. Meet our team of talented people using design thinking to create experiences that win awards and make headlines.',
   })
@@ -272,13 +262,13 @@ async function insertRealData() {
       'The science of analyzing raw data in order to make conclusions about that information, revealing reveal trends and metrics. Through our specialist your company will be more efficient in taking decisions. This process of analysis allows to operate a predictive analysis, that is, it allows to know in advance what will happen: this becomes possible because if we have a model and we have enough historical data we can determine what will happen in the near future with bases or statistical foundations.',
     banner: 'https://i.ibb.co/F3W2W73/Frame-8.png',
     evocativeImage: 'https://i.ibb.co/KDhJdh0/data.png',
-    servicesTitle: 'Discover our services ',
     servicesDescription:
       'AI is only as smart as the insights that fuel it. We can help you unlock powerful analytics insights by tapping into data you did not even know you had.',
-    caseStudyTitle: 'Read about our case studies',
-    caseStudyDescription: 'TODO',
-    teamTitle: 'Meet our team',
-    teamDescription: 'TODO',
+      caseStudyDescription:
+      'Reimagining business through experience. The following case studies demonstrate how our company is an expert in the business of creating comprehensive experiences from start to finish.',
+    teamDescription:
+      'Ideate, innovate, change the world, repeat. Meet our team of talented people using design thinking to create experiences that win awards and make headlines.',
+  
   })
   //**END OF AREAS */
 
