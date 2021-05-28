@@ -93,22 +93,10 @@ function defineDBStructure() {
   const TeamMember = db.define(
     'teammember',
     {
-      memberNameAndOccupation: DataTypes.STRING,
-      personalQuote: DataTypes.STRING,
-      personalDescription: DataTypes.TEXT,
-      workField: DataTypes.STRING,
+      occupation: DataTypes.STRING,
       teamsTitle: DataTypes.STRING,
       personName: DataTypes.STRING,
-      personJob: DataTypes.TEXT,
       personPhoto: {
-        type: DataTypes.STRING,
-        allowNull: true,
-      },
-      caseStudyImage: {
-        type: DataTypes.STRING,
-        allowNull: true,
-      },
-      teamImage: {
         type: DataTypes.STRING,
         allowNull: true,
       },
@@ -1795,71 +1783,36 @@ async function insertRealData() {
 
   //**SECURITY TEAM MEMBER */
   const person1 = await TeamMember.create({
-    memberNameAndOccupation: 'Alex Yasol - Lead security',
-    personalQuote: 'Lorem ipsum dolor sit amet',
-    personalDescription:
-      ' Jane Goodall had long been an idol of mine before I had the opportunity to meet her personally. I have been a member of one of her international Jane-Goodall-Institutes (JGI) for a couple of years now. I have read some of her books and like her idea of teaching children all over the world about environmental conservation and wild animal care so much that I hope to do it personally one day, too. As the greatest and most popular scientist of chimpanzees in the world and today also an active member of the UN Security Council and close friend of Kofi Anan, she is very busy and always travelling, so the chance to see her is quite rare. ',
-    workField: 'Security',
+    occupation: 'Lead security',
     teamsTitle: 'IoT Department',
     personName: 'Alex Yasol',
-    personJob: '',
     personPhoto:
       'https://image.freepik.com/free-photo/funny-man-looking-camera_23-2147799042.jpg',
-    teamImage: '',
-    areaID: '1',
-    serviceID: '1',
   })
 
   const person2 = await TeamMember.create({
-    memberNameAndOccupation: 'Luke Cobezzo - Lead security',
-    personalQuote: 'Lorem ipsum dolor sit amet',
-    personalDescription:
-      'Mary is as beautiful as a Hollywood star. Her thick, wavy, long black hair gracefully falls down to her shoulders and encircles her diamond-shaped face. A golden suntan usually brings out her smooth, clear complexion and high cheek bones. Her slightly arched chestnut brown eyebrows highlight her emotions by moving up and down as she reacts to her world around her. Her large deep blue eyes, remind me of a lake on a stormy day. Her curved nose gives her a little girl look that makes me want to smile when she talks. And her mouth is a small mouth outlined by puffy lips that she often accentuates with glossy pink lipstick. When she smiles, which is often, her well formed and even, white teeth brighten up her whole face. I guess you can tell that I am head over heals in love with Mary.',
-
-    workField: 'Security',
-    teamsTitle: 'Security Departement',
+    occupation: 'Lead security',
+    teamsTitle: 'IoT Department',
     personName: 'Luke Cobezzo',
-    personJob: '',
     personPhoto:
       'https://img.freepik.com/free-photo/portrait-white-man-isolated_53876-40306.jpg?size=626&ext=jpg',
-    teamImage: '',
-    areaID: '1',
-    serviceID: '1',
   })
 
   const person3 = await TeamMember.create({
-    memberNameAndOccupation: 'Rori Duboff - Security Engineer',
-    personalQuote: 'Lorem ipsum dolor sit amet',
-    personalDescription:
-      'Mary is as beautiful as a Hollywood star. Her thick, wavy, long black hair gracefully falls down to her shoulders and encircles her diamond-shaped face. A golden suntan usually brings out her smooth, clear complexion and high cheek bones. Her slightly arched chestnut brown eyebrows highlight her emotions by moving up and down as she reacts to her world around her. Her large deep blue eyes, remind me of a lake on a stormy day. Her curved nose gives her a little girl look that makes me want to smile when she talks. And her mouth is a small mouth outlined by puffy lips that she often accentuates with glossy pink lipstick. When she smiles, which is often, her well formed and even, white teeth brighten up her whole face. I guess you can tell that I am head over heals in love with Mary.',
-
-    workField: 'Security',
+    occupation: 'Rori Duboff - Security Engineer',
     teamsTitle: 'Security Departement',
     personName: 'Rori Duboff',
-    personJob: '',
     personPhoto:
       'https://healthix.org/wp-content/uploads/2019/05/Todd-Rogow-High-Resolution-717x1024.jpg',
-    teamImage: '',
-    areaID: '1',
-    serviceID: '1',
-  })
+    })
 
   const person4 = await TeamMember.create({
-    memberNameAndOccupation: 'John Molton - Security Engineer',
-    personalQuote: 'Lorem ipsum dolor sit amet',
-    personalDescription:
-      'Mary is as beautiful as a Hollywood star. Her thick, wavy, long black hair gracefully falls down to her shoulders and encircles her diamond-shaped face. A golden suntan usually brings out her smooth, clear complexion and high cheek bones. Her slightly arched chestnut brown eyebrows highlight her emotions by moving up and down as she reacts to her world around her. Her large deep blue eyes, remind me of a lake on a stormy day. Her curved nose gives her a little girl look that makes me want to smile when she talks. And her mouth is a small mouth outlined by puffy lips that she often accentuates with glossy pink lipstick. When she smiles, which is often, her well formed and even, white teeth brighten up her whole face. I guess you can tell that I am head over heals in love with Mary.',
-
-    workField: 'Security',
+    occupation: 'John Molton - Security Engineer',
     teamsTitle: 'Security Departement',
     personName: 'John Molton',
-    personJob: '',
     personPhoto:
       'https://t3.ftcdn.net/jpg/02/22/85/16/360_F_222851624_jfoMGbJxwRi5AWGdPgXKSABMnzCQo9RN.jpg',
-    teamImage: '',
-    areaID: '1',
-    serviceID: '1',
-  })
+   })
 
   Security.addTeammember(person1)
   Security.addTeammember(person2)
@@ -1869,51 +1822,33 @@ async function insertRealData() {
 
   //**IOT TEAM MEMBER */
   const iotP1 = await TeamMember.create({
-    memberNameAndOccupation: 'Olivier Haren - Chair of the IoT Board',
-    personalQuote: 'Lorem ipsum dolor sit amet',
-    personalDescription:
-      'Olivier joined us as an RF engineer in 1997. Since 2016, Olivier is the R&D manager for the IoT Business Unit. Previously Olivier spent 11 years as the manager of the Electronic and Software Department of the Legrand Group’s Radio Frequency & Voice, Data and Image Competencies Center and 10 years in the wired and RF telecommunication field in various R&D positions as electronic designer or project leader. \n Olivier holds a master’s degree in electronic embedded systems from the Institut National Polytechnique de Grenoble, France.',
-    workField: 'Internet of things',
+    occupation: 'Chair of the IoT Board',
     teamsTitle: 'IoT Department',
     personName: 'Olivier Haren',
-    personJob: 'Chair of the IoT Board',
     personPhoto:
       'https://media.gettyimages.com/photos/portrait-of-welldressed-mature-businessman-picture-id1141508234?s=612x612',
-    teamImage: '',
   })
   IoT.addTeammember(iotP1)
   iotC1.addTeammember(iotP1)
   iotC7.addTeammember(iotP1)
 
   const iotP2 = await TeamMember.create({
-    memberNameAndOccupation: 'Jean Orsaten | Chief of Smart Cities department ',
-    personalQuote: 'Lorem ipsum dolor sit amet',
-    personalDescription:
-      'He has over 30 years of experience in the home automation industry, within industry alliances and EU regulatory bodies. He is Director of the Smart Cities Department at HexTech, overseeing technology partnerships, connectivity and wireless networking technologies and overall system architectures. With a strong focus on Interoperability, he has been deeply involved in the development of protocols with other leading home equipment manufacturers. The department he is heading deals with wireless protocols developments, focusing io-homecontrol, Thread, Zigbee and other open standard solutions for the Somfy Group.',
-    workField: 'Internet of things',
+    occupation: 'Chief of Smart Cities department ',
     teamsTitle: 'IoT Department',
     personName: 'Jean Orsaten',
-    personJob: 'Chief of Smart Cities department',
     personPhoto:
       'https://media.gettyimages.com/photos/closeup-smiling-male-leader-wearing-eyeglasses-picture-id1179627340?s=612x612',
-    teamImage: '',
   })
   IoT.addTeammember(iotP2)
   iotC2.addTeammember(iotP2)
   iotC3.addTeammember(iotP2)
 
   const iotP3 = await TeamMember.create({
-    memberNameAndOccupation: 'Kristen DiCerba',
-    personalQuote: 'Lorem ipsum dolor sit amet',
-    personalDescription:
-      'Kristen DiCerbo, Ph.D. is the head of Smart Retail department. In this role, she is responsible for driving and communicating our marketingstrategy for Khan HexTech’s services, content, and product to improve clients, partners engagement and outcomes. She ensures pedagogical coherence of our overall offering and ensures a research-informed design across product, content, and solutions.',
-    workField: 'Internet of things',
+    occupation: 'Expert in Smart Retail',
     teamsTitle: 'IoT Smart Retail Department',
     personName: 'Kristen DiCerba',
-    personJob: '',
     personPhoto:
       'https://media.gettyimages.com/photos/mature-female-ceo-with-arms-crossed-picture-id1179627362?s=612x612',
-    teamImage: '',
   })
   IoT.addTeammember(iotP3)
   iotC3.addTeammember(iotP3)
@@ -1921,34 +1856,22 @@ async function insertRealData() {
   iotC5.addTeammember(iotP3)
 
   const iotP4 = await TeamMember.create({
-    memberNameAndOccupation: 'Michael Johnson',
-    personalQuote: 'Lorem ipsum dolor sit amet',
-    personalDescription:
-      'Michael Johnson is the employer of the year at HexTech. He brings his teoretichal and operational experience to lead a cross-functional team of Business & Product Analytics. He looks across the organization to bring strategic insights and help drive critical business decision to help accelerate developing outcomes while ensuring compliance.',
-    workField: 'Chief',
+    occupation: 'Automotion Expert',
     teamsTitle: 'IoT Automotive Departement',
     personName: 'Michael Johnson',
-    personJob: '',
     personPhoto:
       'https://media.gettyimages.com/photos/bearded-businessman-against-gray-background-picture-id1179627332?s=612x612',
-    teamImage: '',
   })
   IoT.addTeammember(iotP4)
   iotC6.addTeammember(iotP4)
   iotC7.addTeammember(iotP1)
 
   const iotP5 = await TeamMember.create({
-    memberNameAndOccupation: 'Peter Glynn',
-    personalQuote: 'Lorem ipsum dolor sit amet',
-    personalDescription:
-      'Peter has a degree in Computer Engineering from Dublin’s Trinity College and has 18 years’ experience in the TMT industry. Peter has helped large scale enterprises deliver on sales and market making activities across a number of large scale system integration, application services and outsourcing projects that had significant transformational business cases. Peter also has extensive experience with software and platform clients; managing and growing them from the ground up resulting in them becoming major accounts.',
-    workField: 'Internet of things',
+    occupation: 'Industrial Manufacturing Partner',
     teamsTitle: 'Industrial Manufacturing Departement',
     personName: 'Peter Glynn',
-    personJob: '',
     personPhoto:
       'https://media.gettyimages.com/photos/portrait-of-senior-businessman-smiling-picture-id985138660?s=2048x2048',
-    teamImage: '',
   })
 
   IoT.addTeammember(iotP5)
@@ -1956,50 +1879,32 @@ async function insertRealData() {
   iotC12.addTeammember(iotP5)
 
   const iotP6 = await TeamMember.create({
-    memberNameAndOccupation: 'Donald Leen',
-    personalQuote: 'Lorem ipsum dolor sit amet',
-    personalDescription:
-      ' Donal has over 8 years of experience in providing advisory and consulting services with a particular focus on large scale transformation programmes within the healtcare services industry. Prior to working in consulting, Donal was a finance manager for six magazines at Conde Nast Publications in New York, and held a number of finance and accounting positions at Aer Lingus in both New York and Dublin. Donal received his MBA (Finance) qualification from Fordham University, New York.',
-    workField: 'Internet of things',
+    occupation: 'Healtcare Analyst',
     teamsTitle: 'Healtcare Departement',
     personName: 'Donald Leen',
-    personJob: '',
     personPhoto:
       'https://media.gettyimages.com/photos/smiling-man-outdoors-in-the-city-picture-id1179420343?s=612x612',
-    teamImage: '',
   })
   IoT.addTeammember(iotP6)
   iotC9.addTeammember(iotP6)
   iotC10.addTeammember(iotP6)
 
   const iotP7 = await TeamMember.create({
-    memberNameAndOccupation: 'Adam Jentzsch',
-    personalQuote: 'Lorem ipsum dolor sit amet',
-    personalDescription:
-      'Adam is a Full-Stack Developer experienced in building content management solutions, mobile applications, POS systems, and reporting engines. During his career, he has accumulated deep expertise developing in .NET, C#, and Angular. Prior to Fresh, Adam worked as both a freelance mobile app developer and as a full-stack developer at a multi-level marketing company. As a full-stack developer, he provided content management software solutions for large clients, as well as wrote their reporting engine.',
-    workField: 'Internet of things',
+    occupation: 'Environmental Engineer',
     teamsTitle: 'Smart Cities Departement',
     personName: 'Adam Jentzsch',
-    personJob: '',
     personPhoto:
       'https://media.gettyimages.com/photos/young-man-standing-confidently-picture-id973481352?s=612x612',
-    teamImage: '',
   })
   IoT.addTeammember(iotP7)
   iotC10.addTeammember(iotP7)
 
   const iotP8 = await TeamMember.create({
-    memberNameAndOccupation: 'Michelle Tore',
-    personalQuote: 'Lorem ipsum dolor sit amet',
-    personalDescription:
-      'Michelle is a Certified LabVIEW developer working as a Controls System Engineer at Fresh. Having recently completed her master’s degree in Mechanical Engineering at the University of Washington, Michelle focuses on control system theory and design. Her previous engineering experience includes a start-up developing a ventilation/monitoring system to detect and prevent manhole explosions.',
-    workField: 'Internet of things',
+    occupation: 'Electrical engineer',
     teamsTitle: 'Smart Lighting Departement',
     personName: 'Michelle Tore',
-    personJob: '',
     personPhoto:
       'https://media.gettyimages.com/photos/businesswoman-with-blond-hair-on-white-background-picture-id1053401356?s=612x612',
-    teamImage: '',
   })
   IoT.addTeammember(iotP8)
   iotC11.addTeammember(iotP8)
@@ -2008,33 +1913,21 @@ async function insertRealData() {
 
   /** CLOUD COMPUTING TEAM MEMBER */
   const ccP1 = await TeamMember.create({
-    memberNameAndOccupation: 'Sarah Anderson',
-    personalQuote: 'Lorem ipsum dolor sit amet',
-    personalDescription:
-      "A corporate strategy, business unit strategy, customer-led category management and micro-battles specialist, Sarah has recently focused on the e-invoice sectors. Her case portfolio includes various diligences for both corporate clients and private. Beyond her client work, she is the leader of our London Diversity and Inclusion efforts and a member of our global D&I Committee. She is also a senior manager peer group leader and founded our London office's Social Impact Ringfence. ",
-    workField: 'Cloud Computing',
+    occupation: 'E-invoice expert',
     teamsTitle: 'E-Invoice Departement',
     personName: 'Sarah Anderson',
-    personJob: '',
     personPhoto:
       'https://media.gettyimages.com/photos/happy-female-brunette-ceo-wearing-blue-denim-shirt-picture-id1179627283?s=612x612',
-    teamImage: '',
   })
   CloudComputing.addTeammember(ccP1)
   ccC1.addTeammember(ccP1)
 
   const ccP2 = await TeamMember.create({
-    memberNameAndOccupation: 'Giancarlo Andes',
-    personalQuote: 'Lorem ipsum dolor sit amet',
-    personalDescription:
-      'Giancarlo advises clients on market launch strategies, sales, pricing and commercial excellence programs. Since joining the firm in 2009, he has also worked in our São Paulo and Milan offices. He studied international business in both Rome and Shanghai.',
-    workField: 'Cloud Computing',
+    occupation: 'Full Stack Developer',
     teamsTitle: 'Cloud App Development Departement',
     personName: 'Giancarlo Andes',
-    personJob: '',
     personPhoto:
       'https://media.gettyimages.com/photos/smart-mature-businessman-in-city-picture-id157591367?s=612x612',
-    teamImage: '',
   })
   CloudComputing.addTeammember(ccP2)
   ccC2.addTeammember(ccP2)
@@ -2044,18 +1937,12 @@ async function insertRealData() {
   //**BiG DATA ANALYTICS TEAM MEMBER */
 
   const bdaP1 = await TeamMember.create({
-    memberNameAndOccupation:
-      'Haru Nayaki - Chief Executive Officer of Analytics',
-    personalQuote: 'Lorem ipsum dolor sit amet',
-    personalDescription: '',
-
-    workField: 'Big Data Analytics',
+    occupation:
+      'Chief Executive Officer of Analytics',
     teamsTitle: 'Analytics Departement',
     personName: 'Haru Nayaki',
-    personJob: '',
     personPhoto:
       'https://media.gettyimages.com/photos/m-happy-with-where-my-career-is-heading-picture-id1138617116?s=612x612',
-    teamImage: '',
   })
   BigDataAnalysis.addTeammember(bdaP1)
   bdaC4.addTeammember(bdaP1)
@@ -2063,118 +1950,76 @@ async function insertRealData() {
   bdaC6.addTeammember(bdaP1)
 
   const bdaP2 = await TeamMember.create({
-    memberNameAndOccupation: 'Juliè Harmon - Expert in Data Science',
-    personalQuote: 'Lorem ipsum dolor sit amet',
-    personalDescription: '',
-
-    workField: 'Big Data Analytics',
+    occupation: 'Expert in Data Science',
     teamsTitle: 'Analytics Departement',
     personName: 'Juliè Harmon',
-    personJob: '',
     personPhoto:
       'https://media.gettyimages.com/photos/portrait-of-woman-smiling-on-white-background-picture-id1092658874?s=612x612',
-    teamImage: '',
   })
   BigDataAnalysis.addTeammember(bdaP2)
   bdaC2.addTeammember(bdaP2)
   bdaC3.addTeammember(bdaP2)
 
   const bdaP3 = await TeamMember.create({
-    memberNameAndOccupation: 'Raùl Sirte - Expert in business intelligence',
-    personalQuote: 'Lorem ipsum dolor sit amet',
-    personalDescription: '',
-
-    workField: 'Big Data Analytics',
+    occupation: 'Expert in business intelligence',
     teamsTitle: 'Analytics Departement',
     personName: 'Raùl Sirte',
-    personJob: '',
     personPhoto:
       'https://media.gettyimages.com/photos/nigel-farage-leader-of-the-uk-independence-party-leaves-the-northern-picture-id470057490?s=612x612',
-    teamImage: '',
   })
   BigDataAnalysis.addTeammember(bdaP3)
   bdaC1.addTeammember(bdaP3)
   bdaC4.addTeammember(bdaP3)
 
   const bdaP4 = await TeamMember.create({
-    memberNameAndOccupation: 'Francesca Rizzo - Manager of the department',
-    personalQuote: 'Lorem ipsum dolor sit amet',
-    personalDescription: '',
-
-    workField: 'Big Data Analytics',
+    occupation: 'Manager of the department',
     teamsTitle: 'Analytics Departement',
     personName: 'Francesca Rizzo',
-    personJob: '',
     personPhoto:
       'https://media.gettyimages.com/photos/confident-mature-businesswoman-on-white-background-picture-id1132314350?s=612x612',
-    teamImage: '',
-  })
+ })
   BigDataAnalysis.addTeammember(bdaP4)
   bdaC6.addTeammember(bdaP4)
   bdaC3.addTeammember(bdaP4)
 
   const bdaP5 = await TeamMember.create({
-    memberNameAndOccupation: 'Jeff Peterson - Chair of Big Data department',
-    personalQuote: 'Lorem ipsum dolor sit amet',
-    personalDescription: '',
-
-    workField: 'Big Data Analytics',
+    occupation: 'Chair of Big Data department',
     teamsTitle: 'Analytics Departement',
     personName: 'Jeff Peterson',
-    personJob: '',
     personPhoto:
       'https://media.gettyimages.com/photos/man-looking-at-camera-on-street-picture-id1197870409?s=612x612',
-    teamImage: '',
   })
   BigDataAnalysis.addTeammember(bdaP5)
   bdaC3.addTeammember(bdaP5)
 
   const bdaP6 = await TeamMember.create({
-    memberNameAndOccupation: 'Nina Morkov - Expert in Marketing',
-    personalQuote: 'Lorem ipsum dolor sit amet',
-    personalDescription: '',
-
-    workField: 'Big Data Analytics',
+    occupation: 'Nina Morkov - Expert in Marketing',
     teamsTitle: 'Analytics Departement',
     personName: 'Nina Morkov',
-    personJob: '',
     personPhoto:
       'https://media.istockphoto.com/photos/young-longhaired-smiling-woman-in-white-shirt-picture-id965523228?k=6&m=965523228&s=612x612&w=0&h=qeVmQfjRq1QWxaLdxLdF_IaXahI-dqt9UYcunaHUqA4=',
-    teamImage: '',
-  })
+ })
   BigDataAnalysis.addTeammember(bdaP6)
   bdaC2.addTeammember(bdaP6)
   bdaC5.addTeammember(bdaP6)
 
   const bdaP7 = await TeamMember.create({
-    memberNameAndOccupation: 'Isi ホイップポップ - Designer of the group',
-    personalQuote: 'Lorem ipsum dolor sit amet',
-    personalDescription: '',
-
-    workField: 'Big Data Analytics',
+    occupation: 'Designer of the group',
     teamsTitle: 'Analytics Departement',
-    personName: 'Isi ホイップポップ',
-    personJob: '',
+    personName: 'Maria Yen',
     personPhoto:
       'https://media.gettyimages.com/photos/mature-female-ceo-with-arms-crossed-picture-id1179627362?s=612x612',
-    teamImage: '',
   })
   BigDataAnalysis.addTeammember(bdaP7)
   bdaC2.addTeammember(bdaP7)
   bdaC4.addTeammember(bdaP7)
 
   const bdaP8 = await TeamMember.create({
-    memberNameAndOccupation: 'Omar Zizou - Expert in Communication',
-    personalQuote: 'Lorem ipsum dolor sit amet',
-    personalDescription: '',
-
-    workField: 'Big Data Analytics',
+    occupation: 'Expert in Communication',
     teamsTitle: 'Analytics Departement',
     personName: 'Omar Zizou',
-    personJob: '',
     personPhoto:
       'https://media.gettyimages.com/photos/beautiful-italian-man-picture-id489171250?s=612x612',
-    teamImage: '',
   })
   BigDataAnalysis.addTeammember(bdaP8)
   bdaC5.addTeammember(bdaP8)
