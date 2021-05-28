@@ -2051,7 +2051,7 @@ async function insertRealData() {
   })
   const Adobe = await Partner.create({
     name: 'Adobe',
-    description: 'Creatività per tutti',
+    description: 'Creativity for everyone',
     image:
       'https://i.ibb.co/sw4Rx4M/adobe.png',
     website: 'https://www.adobe.com/',
