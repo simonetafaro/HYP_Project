@@ -539,7 +539,7 @@
           >
             <member-mini
               :personName="person.personName"
-              :summary="person.personalQuote"
+              :occupation="person.occupation"
               :image="person.personPhoto"
               :index="personIndex"
             ></member-mini>

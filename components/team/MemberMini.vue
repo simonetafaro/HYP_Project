@@ -33,7 +33,7 @@
         />
       </svg>
       <br />
-      <p class="occupation">Chief Operating Officer</p>
+      <p class="occupation">{{ occupation }}</p>
       <h2 class="personName">{{ personName }}</h2>
     </div>
   </div>
@@ -44,7 +44,7 @@ export default {
   props: {
     personName: { type: String, default: () => '' },
     image: { type: String, default: () => '' },
-    summary: { type: String, default: () => '' },
+    occupation: { type: String, default: () => '' },
     index: { type: Number, default: () => 0 },
   },
 }

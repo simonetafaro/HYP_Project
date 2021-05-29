@@ -704,7 +704,7 @@
         >
           <member-mini
             :personName="person.personName"
-            :summary="person.workField"
+            :occupation="person.occupation"
             :image="person.personPhoto"
             @click="overlay = false"
             :index="personIndex"
@@ -768,7 +768,7 @@
             <member-mini
               class="image-and-texts"
               :personName="member.personName"
-              :summary="member.workField"
+              :occupation="member.occupation"
               :image="member.personPhoto"
               @click="overlay = false"
               :index="memberIndex"
