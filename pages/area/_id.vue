@@ -74,7 +74,7 @@
         <section class="casestudies-grid">
           <h4 v-if="area.casestudies === 0">There are no cs</h4>
           <div
-            v-for="(casestudy, casestudyIndex) of area.casestudies"
+            v-for="(casestudy, casestudyIndex) of area.casestudies.slice(0, 6)"
             :key="'casestudy-' + casestudyIndex"
             class="casestudy"
           >
@@ -107,7 +107,7 @@
 
         <div class="member-grid">
           <div
-            v-for="(person, personIndex) of people"
+            v-for="(person, personIndex) of people.slice(0, 6)"
             :key="'person-' + personIndex"
             class="person"
             @click="goTo(`/team/${person.id}`)"
@@ -120,6 +120,10 @@
             ></member-mini>
           </div>
         </div>
+        <discover-button
+          :buttonLabel="'MEET THE TEAM'"
+          :path="'/team'"
+        ></discover-button>
       </div>
     </div>
   </section>
