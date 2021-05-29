@@ -178,7 +178,7 @@ async function insertRealData() {
 
   //**INSERT AREAS */
   const Security = await Area.create({
-    title: 'Security Area',
+    title: 'Security',
     subTitle:
       'Wherever your business goes, whoever it works with, you need cybersecurity that covers it all.',
     description:
@@ -223,7 +223,7 @@ async function insertRealData() {
   })
   // isi
   const CustomerExperience = await Area.create({
-    title: 'CustomerExperience Area',
+    title: 'Customer Experience',
     subTitle:
       'Understanding what customer experience is and why it’s no longer enough. We are reinventing business through this.',
     description:
@@ -2198,7 +2198,7 @@ async function insertRealData() {
   bdaC3.addTeammember(bdaP5)
 
   const bdaP6 = await TeamMember.create({
-    occupation: 'Nina Morkov - Expert in Marketing',
+    occupation: 'Expert in Marketing',
     teamsTitle: 'Analytics Departement',
     personName: 'Nina Morkov',
     personPhoto:

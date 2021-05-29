@@ -2,14 +2,9 @@
   <section class="container">
     <header>
       <h1>{{ person.personName }}</h1>
-      <h4>{{ person.workField }}</h4>
-      <img :src="person.personPhoto" :alt="person.memberNameAndOccupation" />
+      <h4>{{ person.teamsTitle }}</h4>
+      <img :src="person.personPhoto" :alt="person.occupation" />
     </header>
-    <article>
-      <p>
-        {{ person.personalDescription }}
-      </p>
-    </article>
     <h3>Related Case Studies</h3>
     <section class="casestudies-grid">
       <h4 v-if="relCasestudies === 0">There are no related Case Studies</h4>
