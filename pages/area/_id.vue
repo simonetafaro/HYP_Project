@@ -159,9 +159,12 @@ export default {
   mounted() {
     this.resizeServiceCard()
     window.addEventListener('resize', this.resizeServiceCard)
+    this.resizeCaseCard()
+    window.addEventListener('resize', this.resizeCaseCard)
   },
   destroyed() {
     window.removeEventListener('resize', this.resizeServiceCard)
+    window.removeEventListener('resize', this.resizeCaseCard)
   },
 }
 </script>

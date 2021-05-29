@@ -7,7 +7,8 @@
             <h4 class="area-title">{{ casestudy.area.title }}</h4>
             <h1 class="title-case">{{ casestudy.title }}</h1>
             <h5 class="sub-title">
-              {{ casestudy.teammembers[0].personName }} | April 2, 2020
+              By {{ casestudy.teammembers[0].personName }} |
+              {{ casestudy.createdData }}
             </h5>
             <div class="column">
               <div class="single-column">
@@ -77,7 +78,9 @@
                           {{ casestudy.descriptiveText }}
                         </h4>
                       </div>
-                      <h5 class="related-case-study-date">April 2, 2020</h5>
+                      <h5 class="related-case-study-date">
+                        {{ casestudy.createdData }}
+                      </h5>
                       <button class="case-button">FIND OUT MORE ></button>
                     </div>
                   </div>
@@ -716,7 +719,6 @@ h1 {
   text-decoration: underline;
 }
 .description {
-  font-family: Rubik;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -751,7 +753,7 @@ p {
   margin: 20px 0;
 }
 .other-cases-container {
-  padding: 20px 0;
+  padding-bottom: 20px;
 }
 .padding {
   padding: 30px 0;
