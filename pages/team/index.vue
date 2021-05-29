@@ -1185,10 +1185,13 @@ h4 {
 }
 
 .filter-bar {
-  display: inline-flex;
-  margin-top: 30px;
-  width: 1110px;
-  z-index: 10;
+  display: flex;
+  margin-top: 15px;
+  text-align: center;
+  margin: auto;
+  justify-content: space-between;
+  padding: 0 20px;
+  max-width: 1110px;
 }
 
 .filter-title {
@@ -1203,10 +1206,12 @@ h4 {
   line-height: 24px;
   text-transform: uppercase;
   list-style: none;
-  color: var(--cc-base1);
+  color: #4d41c9;
 }
 .active-filter {
-  color: var(--cc-red);
+  color: var(--cc-base1);
+  border-bottom: 2px solid var(--cc-base1);
+  padding-bottom: 2px;
 }
 
 .header-image {
