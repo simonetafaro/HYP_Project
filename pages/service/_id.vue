@@ -507,9 +507,12 @@ export default {
         'px'
       arrow.style.display = 'block'
     }
+    this.resizeCaseCard()
+    window.addEventListener('resize', this.resizeCaseCard)
   },
   destroyed() {
     window.removeEventListener('resize', this.resizeServiceCard)
+    window.removeEventListener('resize', this.resizeCaseCard)
   },
   mixins: [GoToMixins],
   async asyncData({ $axios, route }) {

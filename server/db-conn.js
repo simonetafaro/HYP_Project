@@ -2116,6 +2116,28 @@ async function insertRealData() {
   CloudComputing.addTeammember(ccP2)
   ccC2.addTeammember(ccP2)
 
+  const ccP3 = await TeamMember.create({
+    occupation: 'Front End Developer',
+    teamsTitle: 'Live Streaming Departement',
+    personName: 'Amhed Srinda',
+    personPhoto:
+      'https://media.gettyimages.com/photos/positivity-produces-success-picture-id1132793417?s=612x612',
+  })
+  CloudComputing.addTeammember(ccP3)
+  ccC3.addTeammember(ccP3)
+  ccC4.addTeammember(ccP3)
+
+  const ccP4 = await TeamMember.create({
+    occupation: 'Expert in LVB',
+    teamsTitle: 'Live Streaming Departement',
+    personName: 'Reda Asten',
+    personPhoto:
+      'https://media.istockphoto.com/photos/portrait-concept-picture-id1016761216?k=6&m=1016761216&s=612x612&w=0&h=j-DyZTSqmnhoHKsJdGmiMPnungpHiq9UTrvx4UylMQI=',
+  })
+  CloudComputing.addTeammember(ccP4)
+  ccC4.addTeammember(ccP4)
+  ccC4.addTeammember(ccP4)
+
   /** END OF CLOUD COMPUTING TEAM MEMBER */
 
   //**BiG DATA ANALYTICS TEAM MEMBER */

@@ -50,7 +50,6 @@ export default {
   position: relative;
   border: 2px solid #cdc9ff; /* manca il colore nella palette*/
   border-radius: 30px;
-  min-height: 350px;
   text-align: left;
   width: 350px;
   margin: auto;
@@ -109,6 +108,7 @@ export default {
   background: none;
   cursor: pointer;
   padding: 10px;
+  padding-left: 0;
 }
 .case-button:hover {
   text-decoration: underline;
@@ -120,9 +120,8 @@ export default {
 
 @media screen and (max-width: 1200px) {
   .casestudycontainer {
-    width: 300px;
-    min-height: 300px;
-    cursor: pointer;
+    max-width: 350px;
+    width: 100%;
   }
   .case-button {
     display: none;
@@ -133,9 +132,7 @@ export default {
 }
 @media screen and (max-width: 768px) {
   .casestudycontainer {
-    width: 150px;
-    min-height: 150px;
-    cursor: pointer;
+    max-width: 270px;
   }
   .case-button {
     display: none;
@@ -148,7 +145,6 @@ export default {
   .casestudytitle {
     font-size: 14px;
     line-height: 17px;
-    padding: 0;
   }
   .casestudycontent {
     padding: 13px;
