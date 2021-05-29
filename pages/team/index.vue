@@ -676,7 +676,7 @@
       <div
         id="Null"
         class="filter active-filter"
-        @click="findAllTeamMembers($event), DropdownArea()"
+        @click="findAllTeamMembers($event), DropdownArea(), (overlay = false)"
       >
         All
       </div>
@@ -685,7 +685,11 @@
         :key="'area-' + areaIndex"
         v-bind:id="area.id"
         class="filter"
-        @click="filterTeamMemberByArea($event, area.id), DropdownArea()"
+        @click="
+          filterTeamMemberByArea($event, area.id),
+            DropdownArea(),
+            (overlay = false)
+        "
       >
         {{ area.title }}
       </div>
@@ -696,7 +700,7 @@
           v-for="(person, personIndex) of people"
           :key="'person-' + personIndex"
           class="person"
-          @click="showOverlay(person.id)"
+          @click="showOverlay(person.id, personIndex)"
         >
           <member-mini
             :personName="person.personName"
@@ -760,18 +764,16 @@
                 />
               </svg>
             </div>
-            <div class="image-and-texts">
-              <img
-                :src="member.personPhoto"
-                :alt="member.memberNameAndOccupation"
-                class="overlay-photo"
-              />
-              <div class="overlay-texts">
-                <span class="overlay-name">{{ member.personName }}</span>
-                <span class="overlay-workfield">{{ member.workField }}</span>
-                <span class="overlay-discover">Discover his projects</span>
-              </div>
-            </div>
+
+            <member-mini
+              class="image-and-texts"
+              :personName="member.personName"
+              :summary="member.workField"
+              :image="member.personPhoto"
+              @click="overlay = false"
+              :index="memberIndex"
+            ></member-mini>
+
             <div class="casestudies-container">
               <section class="casestudies-grid">
                 <h4 v-if="relCasestudies === 0">
@@ -830,6 +832,7 @@ export default {
       selectedArea: null,
       overlay: false,
       member: {},
+      memberIndex: null,
       relCasestudies: {},
       carouselList: [],
       areaMenuHidden: true,
@@ -863,7 +866,8 @@ export default {
       element.classList.add('active-filter')
       this.selectedArea = null
     },
-    async showOverlay(id) {
+    async showOverlay(id, personIndex) {
+      this.memberIndex = personIndex
       let area = document.getElementsByClassName('filter active-filter')[0]
       area = area.id
       if (area === 'Null') {
@@ -907,11 +911,11 @@ export default {
     },
 
     scrollRight(memberID) {
-      this.showOverlay(memberID + 1)
+      this.showOverlay(memberID + 1, this.memberIndex + 1)
     },
 
     scrollLeft(memberID) {
-      this.showOverlay(memberID - 1)
+      this.showOverlay(memberID - 1, this.memberIndex - 1)
     },
 
     DropdownArea() {
@@ -950,11 +954,10 @@ export default {
 .overlay-container {
   display: block;
   width: 100%;
-  height: 100%;
+  height: 110%;
+  position: absolute;
   max-height: max-content;
-  position: fixed;
-  overflow: scroll;
-  top: 70px;
+  top: 0;
   background: rgba(113, 126, 238, 0.3);
   backdrop-filter: blur(8px);
   padding: 50px;
@@ -965,7 +968,7 @@ export default {
   width: 90%;
   display: flex;
   height: max-content;
-  border-radius: 10px;
+  border-radius: 30px;
   position: relative;
   margin: auto;
   padding: 25px;
@@ -996,7 +999,7 @@ export default {
 .image-and-texts {
   position: relative;
   left: 0;
-  margin-top: 20px;
+  margin: auto !important;
   top: 0;
   width: 300px;
 }
@@ -1057,23 +1060,22 @@ export default {
   position: relative;
   right: 0;
   top: 0;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 20px;
   margin: auto;
-  width: 750px;
+  width: 100%;
 }
 
 .casestudies-grid {
   display: grid;
-  grid-template-columns: repeat(2, calc(100% / 2));
-  grid-gap: 20px;
+  grid-template-columns: repeat(2, calc((100%-300px) / 2));
   margin-top: 40px;
   margin-bottom: 40px;
-  margin-right: 20px;
 }
 .casestudy {
   cursor: pointer;
   margin-bottom: 20px;
-  width: 30px !important;
 }
 
 .close-button {
@@ -1095,6 +1097,7 @@ export default {
 }
 
 .lower-section {
+  min-height: 550px;
   position: relative;
 }
 
@@ -1208,10 +1211,10 @@ h4 {
 
 .header-image {
   position: absolute;
-  width: 100%;
+  max-width: 100%;
   height: auto;
   top: -100px;
-  right: -160px;
+  left: 0;
   z-index: -1;
 }
 
@@ -1230,6 +1233,152 @@ h4 {
 }
 
 @media screen and (max-width: 1200px) {
+  .overlay-container {
+    display: block;
+    width: 100%;
+    height: 101%;
+    position: absolute;
+    max-height: max-content;
+    top: 0;
+    background: rgba(113, 126, 238, 0.3);
+    backdrop-filter: blur(8px);
+    padding: 50px;
+  }
+
+  .overlay-tab {
+    background: #f9f9ff;
+    width: 90%;
+    display: flex;
+    height: max-content;
+    border-radius: 30px;
+    position: relative;
+    margin: auto;
+    padding: 25px;
+  }
+
+  .right-arrow {
+    position: absolute;
+    top: 200px;
+    right: 5%;
+    cursor: pointer;
+  }
+
+  .right-arrow:hover {
+    transform: scale(1.1);
+  }
+
+  .left-arrow {
+    position: absolute;
+    left: 5%;
+    top: 200px;
+    cursor: pointer;
+  }
+
+  .left-arrow:hover {
+    transform: scale(1.1);
+  }
+
+  .image-and-texts {
+    position: relative;
+    left: 0;
+    margin: auto;
+    top: 0;
+    min-width: min-content;
+  }
+
+  .area-dropdown-arrow {
+    display: none;
+  }
+
+  .overlay-photo {
+    height: auto;
+    width: 300px;
+    border-radius: 10px;
+  }
+
+  .overlay-texts {
+    left: 2%;
+  }
+
+  .overlay-name {
+    display: block;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 38px;
+    color: #424272;
+    padding: 20px;
+  }
+
+  .overlay-workfield {
+    display: block;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 24px;
+    padding: 17px;
+
+    /* identical to box height, or 100% */
+    text-align: center;
+
+    color: #464a52;
+
+    mix-blend-mode: normal;
+    opacity: 0.6;
+  }
+
+  .overlay-discover {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    /* identical to box height */
+    text-align: center;
+    text-transform: uppercase;
+    color: #424272;
+  }
+
+  .casestudies-container {
+    position: relative;
+    right: 0;
+    top: 0;
+    margin-top: 20px;
+    margin-right: 40px;
+    margin: auto;
+    width: 750px;
+  }
+
+  .casestudies-grid {
+    display: grid;
+    grid-template-rows: inherit;
+    grid-template-columns: unset;
+    grid-gap: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .casestudy {
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+
+  .close-button {
+    position: absolute;
+    right: 0%;
+    top: 3%;
+    transform: scale(0.5);
+  }
+
+  .close-button:hover {
+    cursor: pointer;
+    transform: scale(0.6);
+  }
+
+  .container {
+    max-width: 100%;
+    padding: 0px;
+    margin-top: 0px;
+  }
+
   .container {
     max-width: 100%;
     margin-top: 0;
@@ -1290,14 +1439,13 @@ h4 {
   }
 
   .lower-section {
-    width: 550px;
+    width: 100%;
     margin: auto;
   }
 
   .member-grid {
     width: 580px;
-    grid-template-columns: repeat(2, calc(550px / 2));
-    grid-auto-rows: 400px;
+    grid-template-columns: repeat(2, calc(100% / 2));
     grid-gap: 25px;
     margin: auto;
     margin-top: 50px;
@@ -1361,6 +1509,15 @@ h4 {
     margin-top: 0;
   }
 
+  .image-and-texts {
+    position: relative;
+    left: 0;
+    margin: auto;
+    top: 0;
+
+    width: 100%;
+  }
+
   .top-image {
     display: initial;
   }
@@ -1412,14 +1569,36 @@ h4 {
   }
 
   .lower-section {
-    width: 272px;
+    width: 100%;
     margin: auto;
+  }
+
+  .overlay-tab {
+    display: inherit;
+  }
+
+  .casestudies-container {
+    position: relative;
+    right: 0;
+    top: 0;
+    margin-top: 20px;
+    margin-right: 40px;
+    margin: auto;
+    width: 100%;
+  }
+
+  .casestudies-grid {
+    display: grid;
+    grid-template-rows: inherit;
+    grid-template-columns: unset;
+    grid-gap: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
   }
 
   .member-grid {
     width: 282px;
-    grid-template-columns: repeat(2, calc(252px / 2));
-    grid-auto-rows: 200px;
+    grid-template-columns: unset;
     grid-gap: 25px;
     margin: auto;
     margin-top: 50px;
