@@ -18,7 +18,9 @@
                 </p>
 
                 <div class="partner-container">
-                  <a class="partner" href="#">PARTNER WEBSITE</a>
+                  <a class="partner" :href="casestudy.partnerWebsite"
+                    >PARTNER WEBSITE</a
+                  >
                 </div>
                 <space-divider class="space-divider" />
                 <div class="padding"><h3>CHALLENGE</h3></div>

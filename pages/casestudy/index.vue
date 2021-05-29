@@ -1389,7 +1389,7 @@ export default {
   .description {
     font-size: 12px;
     line-height: 14px;
-    padding: 0px 50px;
+    padding: 0px 8%;
   }
   .filter-bar {
     display: none;
@@ -1400,7 +1400,7 @@ export default {
   }
   .container_description {
     padding-bottom: 0px;
-    width: 80%;
+    width: 100%;
   }
 }
 </style>
