@@ -258,103 +258,193 @@ async function insertRealData() {
 
   //**SECURITY SERVICES */
   const ModernFraudProtection = await Service.create({
-    title: 'Modern fraud protection software',
-    subTitle:
-      'offers a variety of services from information security consulting to assessing, testing and improving the protection of applications and networks for companies operating in healthcare, manufacturing, banking, retail, telecommunications, and other industries.',
-    banner: 'https://www.comarch.com/files-com/file_545/c1.png',
+    title: 'Modern Fraud Protection Software',
+    subTitle: 'Detect and combat fraud more efficiently with AI',
+    description:
+      'Enterprises lose billions of dollars a year due to fraud. Bogus payments, money laundering, loyalty program fraud and cyber security incidents, just to name a few. Enterprises have explored a wide variety of ways to combat fraud, including hiring additional staff which has proven ineffective. It’s time-consuming, and nearly impossible to investigate every claim. The perpetrators of fraud are highly sophisticated, and their techniques evolve quickly, often making solutions obsolete just as soon as they’re implemented.',
+    banner: 'https://www.researchdive.com/blogImages/FrALRKwcsi.jpeg',
     serviceDescription:
-      'Protect your business from the most common attack: fraud',
-    partnerDescription: '',
-    p1Name: 'Coca-Cola',
-    p1Logo: 'https://i.ibb.co/njhmnqv/coca-cola.png',
-    p2Name: 'Adobe',
-    p2Logo: 'https://i.ibb.co/fpWF6WP/adobe.png',
-    p3Name: '',
-    p3Logo: '',
+      'HexTech Fraud Protection software is a platform which significantly increases the efficiency of suspicious event detection compared to rule-based methods. The solution is based on machine learning, which is a state-of-the-art approach where Artificial Intelligence (AI) is used for creating models that, based on historical data, can determine the occurrence of suspicious events with high accuracy.',
+    s1Name: 'Detect anomalies and classify events',
+    s1Description:
+      'Our fraud detection software recognizes relationships and similarities between data and can detect anomalies – events that do not conform to an expected pattern in a data set.',
+    s1Logo: 'https://i.ibb.co/Rczq8Pv/sol-1.png',
+    s2Name: 'Act in real time',
+    s2Description:
+      'Once an anomaly is detected, immediate action can be taken to prevent fraudulent activities. Our software works in real-time.',
+    s2Logo: 'https://i.ibb.co/KwskLjv/sol-2.png',
+    s3Name: 'Monitor and analyze',
+    s3Description:
+      'You can easily analyze fraudulent events, extract insights, and improve your security. Reporting modules allow for an effective investigation of abusive activities. Our AI is transparent and generates explanations for its decisions.',
+    s3Logo: 'https://i.ibb.co/b77D3Fm/sol-3.png',
+    partnerTitle: '',
+    partnerDescription:
+      'Since security is an integral part of a great company, we offer 24h consulting and all of our know how to help you protect your business.',
+    p1Name: 'AWS',
+    p1Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
+    p2Name: 'Xiaomi',
+    p2Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
+    p3Name: 'Coca-Cola',
+    p3Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
   })
   await Security.addService(ModernFraudProtection.id)
 
   const ManagedSecurity = await Service.create({
-    title: 'Managed security',
+    title: 'Managed Security',
     subTitle:
-      'Helping clients rapidly scale security and compliance operations through innovative technology, as-a-Service capabilities and cybersecurity  services.',
-    banner: 'https://www.comarch.com/files-com/file_545/c1.png',
+      "Explore the latest managed security services for today's hybrid cloud world",
+    description:
+      'Providing superior monitored and managed security services to your expanding network perimeter 24x7',
+    banner:
+      'https://dnewpydm90vfx.cloudfront.net/wp-content/uploads/2018/11/Cyber-security-e-managed-services.jpg',
     serviceDescription:
-      'Achieve more-secure applications, compliant environments and safer systems development with industrialized and repeatable processes.',
-    partnerTitle: 'Alliances and partners',
+      'HexTech Managed Security Services (MSS) helps security leaders obtain prescriptive actions, contextual insights, and transparent reporting so they can make more informed decisions for their organization. Our MSS capabilities help reduce the time spent on low value alerts so you can focus on the right priorities.',
+    s1Name: 'Fully managed security',
+    s1Description:
+      'As your trusted advisors, HexTech specialists help you address your security needs, from the simplest to the most complex, monitoring and managing security incidents 24x7x365. Our people, technology, facilities and processes are among the best in the world.',
+    s1Logo: 'https://i.ibb.co/Rczq8Pv/sol-1.png',
+    s2Name: 'An extended-team approach',
+    s2Description:
+      'Your organization may have working tools and processes but could benefit from trusted security advisors. HexTech Managed Security Services can augment your security program with tailored services, including threat, cloud, infrastructure, data, identity and response management.',
+    s2Logo: 'https://i.ibb.co/KwskLjv/sol-2.png',
+    s3Name: 'Transformational initiatives',
+    s3Description:
+      'Some organizations require help with developing a continuous improvement process to protect their enterprise during multi-year projects. HexTech MSS specialists can help optimize, fine-tune, and improve security program efficiency for the long-term.',
+    s3Logo: 'https://i.ibb.co/b77D3Fm/sol-3.png',
+    partnerTitle: '',
     partnerDescription: '',
-    p1Name: 'Figma',
-    p1Logo: 'https://i.ibb.co/W25yZ0m/figma.png',
-    p2Name: '',
-    p2Logo: '',
-    p3Name: '',
-    p3Logo: '',
+    p1Name: '......',
+    p1Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
+    p2Name: '......',
+    p2Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
+    p3Name: '......',
+    p3Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
   })
 
   const NetworkProtection = await Service.create({
-    title: 'Network protection',
-    subTitle:
-      'HexTech offers a variety of services from information security consulting to assessing, testing and improving the protection of applications and networks for companies operating in healthcare, manufacturing, banking, retail, telecommunications, and other industries.',
-    banner: 'https://www.comarch.com/files-com/file_545/c1.png',
+    title: 'Network Protection',
+    subTitle: 'Keep online fraudsters at bay.',
+    description:
+      'Cyber Network Protection is a powerful monitoring solution designed to guard firms and institutions against online frauds. The solution tracks both user and device activity to calculate a unique scoring for authentication, authorization, and more.',
+    banner:
+      'https://www.cellusys.com/wp-content/uploads/2019/12/roaming-steering-of-roaming-logo-blue.svg',
     serviceDescription:
-      'We apply multiple defense layers to protect your corporate network and the sensitive data stored within it. Our security engineers know various ways to keep your proprietary information safe and reduce the probability that you will have to experience successful attack attempts against your network.',
-    partnerTitle: 'Alliances and partners',
+      'HexTech Cyber Threat Protection (CTP) is a transparent anti-fraud system that can work on both user workstations and mobile devices. Based on the analysis of user work environment, the system returns a scoring that serves as a basis for further decisions, such as introducing 2FA, terminating operations, or making a telephone verification. HexTech Cyber Threat Protection has a modular structure, so you can order only those modules that suit you best.',
+    s1Name: 'Comprehensiveness',
+    s1Description: 'Compatibility with both workstations and mobiles.',
+    s1Logo: 'https://i.ibb.co/Rczq8Pv/sol-1.png',
+    s2Name: 'User-friendliness',
+    s2Description: 'No need for any extra software.',
+    s2Logo: 'https://i.ibb.co/KwskLjv/sol-2.png',
+    s3Name: 'Usability',
+    s3Description: 'Frictionless identification/authorization steps.',
+    s3Logo: 'https://i.ibb.co/b77D3Fm/sol-3.png',
+    partnerTitle: '',
     partnerDescription: '',
-    p1Name: 'Adobe',
-    p1Logo: 'https://i.ibb.co/fpWF6WP/adobe.png',
-    p2Name: '',
-    p2Logo: '',
-    p3Name: '',
-    p3Logo: '',
+    p1Name: '......',
+    p1Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
+    p2Name: '......',
+    p2Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
+    p3Name: '......',
+    p3Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
   })
 
   const DataSecurity = await Service.create({
-    title: 'Data security',
+    title: 'Data Security',
     subTitle:
-      'Our security experts develop a personal approach to each customer based on best practices and enriched with our own experience. We are ready to  support our clients at all project stages.',
-    banner: 'https://www.comarch.com/files-com/file_545/c1.png',
+      'Comprehensive data protection for the most critical enterprise data',
+    description:
+      'Workload migration to hybrid cloud environments increases the attack surface, which can result in a host of new data security and compliance challenges.',
+    banner:
+      'https://bestarion.com/wp-content/uploads/2020/08/what-is-data-security-pillar-top-illustration-featured.png',
     serviceDescription:
-      "Our custom data security services help you incorporate a risk-balanced strategy with leading data protection technology to safeguard your organization's critical data. With both consulting and integration services, we help you optimize control over data using market-leading loss prevention and encryption technologies.",
-    partnerTitle: 'Alliances and partners',
-    partnerDescription: '',
-    p1Name: 'Arduino',
-    p1Logo: 'https://i.ibb.co/KDcLxdy/arduino.png',
-    p2Name: '',
-    p2Logo: '',
-    p3Name: '',
-    p3Logo: '',
+      'A robust data-centric cybersecurity program can provide you comprehensive data protection, centralized visibility and monitoring against unauthorized access, exposure, or data theft across your enterprise data landscape.',
+    s1Name: 'Backup & Recovery',
+    s1Description:
+      'An essential part of any business continuity plan is a robust backup & recovery strategy. In case of uncertain events, companies need to protect their prime asset, which is data. We apply the latest backup & recovery techniques to ensure complete data protection.',
+    s1Logo: 'https://i.ibb.co/Rczq8Pv/sol-1.png',
+    s2Name: 'Data protection & Security',
+    s2Description:
+      'We ensure the confidentiality, integrity, and availability of your data by protecting it against any unauthorized access.',
+    s2Logo: 'https://i.ibb.co/KwskLjv/sol-2.png',
+    s3Name: 'Compliance Assessment',
+    s3Description:
+      'We assist in identifying gaps between the existing control environment and the required one. The compliance risk assessment is implemented to identify potential risks in the system. We also help with compliance testing and the remediation process to ensure the integrity of your data.',
+    s3Logo: 'https://i.ibb.co/b77D3Fm/sol-3.png',
+    partnerTitle: '',
+    partnerDescription:
+      'Since user apps are an integral part of a smart city, we offer mobile consulting, UI/UX design, native (iOS, Android) and cross-platform (Cordova/PhoneGap, Xamarin, React Native) development, as well as mobile testing.',
+    p1Name: 'Flutter',
+    p1Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
+    p2Name: 'Salesforce',
+    p2Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
+    p3Name: '......',
+    p3Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
   })
 
   const IdentityAccessManagement = await Service.create({
-    title: 'Identity access management',
-    subTitle: '',
-    banner: 'https://www.comarch.com/files-com/file_545/c1.png',
+    title: 'Identity Access Management',
+    subTitle:
+      'Get your workforce and consumer IAM program on the road to success.',
+    description:
+      'Identity and access management (IAM) is essential for security and regulatory compliance. It can also be a significant undertaking without the right skills, strategy and support from identity and security experts to help you architect and manage solutions across hybrid cloud environments and leading IAM products and platforms.',
+    banner:
+      'https://www.cisco.com/c/dam/assets/swa/img/anchor-info/what-is-iam-banner-628x353.png',
     serviceDescription:
-      'Our Identity & Access Management comes with world-class methods for authentication, authorization, identity lifecycle and accountability. Its modular architecture makes it easy to adapt to specific types of organizations across hierarchies and geographies.',
-    partnerTitle: 'Alliances and partners',
-    partnerDescription: '',
-    p1Name: 'Adobe',
-    p1Logo: 'https://i.ibb.co/fpWF6WP/adobe.png',
-    p2Name: '',
-    p2Logo: '',
-    p3Name: '',
-    p3Logo: '',
+      'It’s a tricky balance: facilitate near-ubiquitous access to the apps and tools your users need to help grow the business, but also protect sensitive information from security threats. You need a solid IAM design to enable more cost-efficient and effective access management, authentication, identity management and governance across your enterprise to help prevent security risks.',
+    s1Name: 'Custom solution design',
+    s1Description:
+      'Align IAM with your business priorities to help manage regulatory compliance, strengthen security posture or enable better user access.',
+    s1Logo: 'https://i.ibb.co/Rczq8Pv/sol-1.png',
+    s2Name: 'Integration',
+    s2Description:
+      'Use existing assets and automation within an integrated technology framework, to integrate IAM with business and human resources functions.',
+    s2Logo: 'https://i.ibb.co/KwskLjv/sol-2.png',
+    s3Name: 'Scalable for future requirements',
+    s3Description:
+      'Look beyond your immediate IAM project to architect, design and implement a solution for your current and future business requirements.',
+    s3Logo: 'https://i.ibb.co/b77D3Fm/sol-3.png',
+    partnerTitle: '',
+    partnerDescription:
+      'Plan and execute a cloud identity and access management (IAM) program transformation.',
+    p1Name: 'Philips',
+    p1Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
+    p2Name: 'Cisco',
+    p2Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
+    p3Name: '......',
+    p3Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
   })
 
   const SecurityAssessmentAndPlanning = await Service.create({
-    title: 'Security assessment and planning',
-    subTitle: '',
-    banner: 'https://www.comarch.com/files-com/file_545/c1.png',
+    title: 'Security Assessment and Planning',
+    subTitle:
+      'Making your organization the best it can be starts with a plan; security is no different. ',
+    description:
+      'HexTech uses our proven assessment and planning tools to clearly identify your security risks and plan for the appropriate short and long term actions designed to keep your organization secure.',
+    banner: 'http://jwhightech.com/asset/images/assesment.jpg',
     serviceDescription:
-      'We deliver full-scale security assessment and planning services for the components of IT infrastructures such as web, mobile and desktop applications, employee behaviour and remote access software.',
-    partnerTitle: 'Alliances and partners',
-    partnerDescription: '',
-    p1Name: 'Figma',
-    p1Logo: 'https://i.ibb.co/W25yZ0m/figma.png',
-    p2Name: '',
-    p2Logo: '',
-    p3Name: '',
-    p3Logo: '',
+      'Risk is a compilation of threats and vulnerabilities as they relate to specific assets. Sentinel’s unique risk assessment methodology uses information collected in the field and through our data partners to identify threats, vulnerabilities and security concerns, so that appropriate and cost effective mitigation efforts can be designed and deployed.',
+    s1Name: 'Threat Assessments',
+    s1Description:
+      'Understanding your security threats will help you define how to organize and prepare your security planning.',
+    s1Logo: 'https://i.ibb.co/Rczq8Pv/sol-1.png',
+    s2Name: 'Gap Analisys',
+    s2Description:
+      'This analysis of security systems and operations is both qualitative and quantitative, reporting on the delta between the actual conditions vs. required level of performance.',
+    s2Logo: 'https://i.ibb.co/KwskLjv/sol-2.png',
+    s3Name: 'Security Master Planning',
+    s3Description:
+      ' We understand the complexities of rolling out an enterprise approach to security while justifying costs and key economization factors.',
+    s3Logo: 'https://i.ibb.co/b77D3Fm/sol-3.png',
+    partnerTitle: '',
+    partnerDescription:
+      'Since user apps are an integral part of a smart city, we offer mobile consulting, UI/UX design, native (iOS, Android) and cross-platform (Cordova/PhoneGap, Xamarin, React Native) development, as well as mobile testing.',
+    p1Name: 'Flutter',
+    p1Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
+    p2Name: 'Salesforce',
+    p2Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
+    p3Name: '......',
+    p3Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
   })
 
   await Security.addService(ModernFraudProtection.id)
@@ -794,7 +884,7 @@ async function insertRealData() {
     subTitle:
       'The easiest way to electronic invoicing is through the Cloud. Send e-invoices to your business partners & public administration entities in no time - wherever they are.',
     description:
-      'In the light of the current national and EU legislation, Comarch e-Invoicing Cloud stands out as a simple and affordable tool that enables global, legally-compliant exchange of invoice documents with business partners and public administration entities. No matter your industry or product, our platform was designed to help you create, process, and store e-invoices, thus significantly improve your business efficiency. Plus, being a cloud-based solution, it does not require a long and cost-intensive implementation process. Instead, it gives you instant access to a virtual environment that is easy to navigate.',
+      'In the light of the current national and EU legislation, HexTech e-Invoicing Cloud stands out as a simple and affordable tool that enables global, legally-compliant exchange of invoice documents with business partners and public administration entities. No matter your industry or product, our platform was designed to help you create, process, and store e-invoices, thus significantly improve your business efficiency. Plus, being a cloud-based solution, it does not require a long and cost-intensive implementation process. Instead, it gives you instant access to a virtual environment that is easy to navigate.',
     banner:
       'https://www.extrasys.it/hs-fs/hubfs/E-invoice%20benefits.png?width=800&name=E-invoice%20benefits.png',
     serviceDescription:
@@ -1124,6 +1214,7 @@ async function insertRealData() {
   })
   await Security.addCasestudy(OnlineFraudDetection.id)
   await ManagedSecurity.addCasestudy(OnlineFraudDetection.id)
+  await ModernFraudProtection.addCasestudy(OnlineFraudDetection.id)
 
   const cs1 = await CaseStudy.create({
     title: 'Network protection for worldwide companies',
@@ -1141,6 +1232,7 @@ async function insertRealData() {
   })
   await Security.addCasestudy(cs1.id)
   await ModernFraudProtection.addCasestudy(cs1.id)
+  await NetworkProtection.addCasestudy(cs1.id)
 
   const cs2 = await CaseStudy.create({
     title: 'Company access with secure credentials',
@@ -1159,42 +1251,47 @@ async function insertRealData() {
   })
   await Security.addCasestudy(cs2.id)
   await NetworkProtection.addCasestudy(cs2.id)
+  await IdentityAccessManagement.addCasestudy(cs2.id)
 
   const cs3 = await CaseStudy.create({
-    title: 'Network protection for worldwide companies',
+    title: 'Factoring data migration from Raiffeisen to BNP',
     subTitle: 'A secure connection',
     banner:
       'https://www.creativemotions.it/wp-content/uploads/2020/06/Il-segreto-per-scrivere-un-case-study-che-converte.png',
     descriptiveText:
-      'The Customer commissioned HexTech to rewrite the software – a Java application used by the healthcare centers for management and reporting of data on medication inventory, clinical services, patient data, marketing activities and others. Within the project, the Customer also wanted the tool to allow its users to enable quality population health analytics with prompt reports.',
-    challengeTitle: 'BI IMPLEMENTATION',
+      'In 2019, HexTech was selected as a provider of data migration services from a factoring platform used by Raiffeisen to another platform working at BNP Paribas. The amount of data to be migrated was so substantial that it nearly doubled the business volume of BNP in Poland.',
+    challengeTitle:
+      'We had to find a workaround tool which converted the available data into files and then processed them for migration purposes.',
     challengeDescription:
-      'The Customer commissioned HexTech to rewrite the software – a Java application used by the healthcare centers for management and reporting of data on medication inventory, clinical services, patient data, marketing activities and others. Within the project, the Customer also wanted the tool to allow its users to enable quality population health analytics with prompt reports.',
+      'After few months of preparation, we have developed and deployed a multi-threaded migration tool, which was ready to run over a weekend. The new BNP-Raiffeisen entity became second largest in the country  in terms of factoring turnover after only 1 quarter.',
     solutionTitle: 'Implented system',
     solutionDescription:
-      '"To ensure scalability and short query response time, HexTech’s BI implementation team built an analytical Microsoft SQL Server data warehouse which would use a Transact-SQL script to load data from the relational database. The latter was consolidated from 200 databases during the application development process and totaled 12GB."',
+      'We have identified various discrepancies and workarounds in the ex Raiffeisen’s platform, which had to be taken into account to avoid shaking up BNP’s operations and preventing customer churn. For this purpose, we came up with a mechanism which detected potentially erroneous data. ',
     createdData: 'January 2, 2021',
   })
   await Security.addCasestudy(cs3.id)
   await DataSecurity.addCasestudy(cs3.id)
+  await NetworkProtection.addCasestudy(cs3.id)
 
   const cs4 = await CaseStudy.create({
-    title: 'Network protection for worldwide companies',
+    title: 'Implementation of HexTech Loyalty Management at Livelo',
     subTitle: 'A secure connection',
     banner:
       'https://www.creativemotions.it/wp-content/uploads/2020/06/Il-segreto-per-scrivere-un-case-study-che-converte.png',
     descriptiveText:
-      'The Customer commissioned HexTech to rewrite the software – a Java application used by the healthcare centers for management and reporting of data on medication inventory, clinical services, patient data, marketing activities and others. Within the project, the Customer also wanted the tool to allow its users to enable quality population health analytics with prompt reports.',
-    challengeTitle: 'BI IMPLEMENTATION',
+      'One of the main challenges for customer-oriented enterprises is to create a strong bond between customers and the brand.',
+    challengeTitle:
+      'work integrated with Agile method and selected vendor of Livelo’s blueprint systems',
     challengeDescription:
-      'The Customer commissioned HexTech to rewrite the software – a Java application used by the healthcare centers for management and reporting of data on medication inventory, clinical services, patient data, marketing activities and others. Within the project, the Customer also wanted the tool to allow its users to enable quality population health analytics with prompt reports.',
+      'Livelo was looking for an innovative IT platform that would help the company in becoming the most dynamic redemption option and leading coalition in Brazil. The goal was to manage all aspects of their members´transactions and profile information, as well as the complex billing with accrual and redemption partners.',
     solutionTitle: 'Implented system',
     solutionDescription:
-      '"To ensure scalability and short query response time, HexTech’s BI implementation team built an analytical Microsoft SQL Server data warehouse which would use a Transact-SQL script to load data from the relational database. The latter was consolidated from 200 databases during the application development process and totaled 12GB."',
+      'The project was started in November 2014. Thanks to the strong cooperation and flexibility of HexTech project team, the implementation went as Livelo expected and finished according to schedule. Project was finished within nine months. HexTech ensured integration with existing client systems including: campaign management system (IBM UNIQA), e-commerce (ORACLE ATG), third-party Mobile App, SAP Finance, Livelo Taxa Online, Fast Shop S.A. The HexTech team also migrated over 16 million customer accounts. HexTech provided on-site support and maintenance services, dedicated program manager and on-site trainings.',
     createdData: 'December 2, 2020',
   })
   await Security.addCasestudy(cs4.id)
   await IdentityAccessManagement.addCasestudy(cs4.id)
+  await ManagedSecurity.addCasestudy(cs4.id)
 
   //**END OF SECURITY CASE STUDIES */
 
@@ -1819,40 +1916,92 @@ async function insertRealData() {
   //**SECURITY TEAM MEMBER */
   const person1 = await TeamMember.create({
     occupation: 'Lead security',
-    teamsTitle: 'IoT Department',
+    teamsTitle: 'Security Department',
     personName: 'Alex Yasol',
     personPhoto:
-      'https://image.freepik.com/free-photo/funny-man-looking-camera_23-2147799042.jpg',
+      'https://media.gettyimages.com/photos/portrait-of-smiling-young-man-wearing-eyeglasses-picture-id985138634?k=6&m=985138634&s=612x612&w=0&h=6i0LAXpNR_tcBc7VQ1ahbOoV1TKN-vbp1yPpW3s0cLw=',
   })
 
   const person2 = await TeamMember.create({
     occupation: 'Lead security',
-    teamsTitle: 'IoT Department',
+    teamsTitle: 'Security Department',
     personName: 'Luke Cobezzo',
     personPhoto:
-      'https://img.freepik.com/free-photo/portrait-white-man-isolated_53876-40306.jpg?size=626&ext=jpg',
+      'https://media.gettyimages.com/photos/portrait-of-smiling-bald-businessman-in-pink-shirt-picture-id1179627287?k=6&m=1179627287&s=612x612&w=0&h=v26UaTH8SCanGtFTz3sO2osCiDpyplI7zG_W-WVHmgc=',
   })
 
   const person3 = await TeamMember.create({
-    occupation: 'Rori Duboff - Security Engineer',
+    occupation: 'Security Engineer',
     teamsTitle: 'Security Departement',
     personName: 'Rori Duboff',
     personPhoto:
-      'https://healthix.org/wp-content/uploads/2019/05/Todd-Rogow-High-Resolution-717x1024.jpg',
+      'https://media.gettyimages.com/photos/mature-businessman-smiling-over-white-background-picture-id685132245?k=6&m=685132245&s=612x612&w=0&h=KO9YNXHtaYV4NGqoGQcTd5Aq8zD0Dl06knQQGP0BrwM=',
   })
 
   const person4 = await TeamMember.create({
-    occupation: 'John Molton - Security Engineer',
-    teamsTitle: 'Security Departement',
+    occupation: 'Security Engineer',
+    teamsTitle: 'Network Security Departement',
     personName: 'John Molton',
     personPhoto:
-      'https://t3.ftcdn.net/jpg/02/22/85/16/360_F_222851624_jfoMGbJxwRi5AWGdPgXKSABMnzCQo9RN.jpg',
+      'https://media.gettyimages.com/photos/portrait-of-mature-man-smiling-against-white-picture-id1092658940?k=6&m=1092658940&s=612x612&w=0&h=SBXVcqfIk1JzidfgMgS3dzVZwc9OX0H8jApYHnFVhNc=',
   })
 
+  const person5 = await TeamMember.create({
+    occupation: 'Lead security',
+    teamsTitle: 'Communications Department',
+    personName: 'Albert Gituff',
+    personPhoto:
+      'https://media.gettyimages.com/photos/portrait-of-senior-businessman-wearing-shirt-picture-id1250238643?k=6&m=1250238643&s=612x612&w=0&h=ja0b_WcisaXXqDfHmKCGw-YBU55ZKHRwkuLujwMEPLI=',
+  })
+  const person6 = await TeamMember.create({
+    occupation: 'Network security Engineer',
+    teamsTitle: 'Communications Department',
+    personName: 'Tina Niere',
+    personPhoto:
+      'https://media.gettyimages.com/photos/confident-mature-businesswoman-on-white-background-picture-id1132314350?k=6&m=1132314350&s=612x612&w=0&h=WwPaInvvkxiIEHCBPTsSaWZRtc-ZT2lc-8conkFaQtk=',
+  })
+  const person7 = await TeamMember.create({
+    occupation: 'Network security Engineer',
+    teamsTitle: 'Anti Fraud Department',
+    personName: 'Samuel Corsly',
+    personPhoto:
+      'https://media.gettyimages.com/photos/portrait-of-senior-businessman-smiling-picture-id985138660?k=6&m=985138660&s=612x612&w=0&h=xpSNW4A8wTwNE4yYLLX7BQnV_YYy_fV5kiE6cjpY43A=',
+  })
+  const person8 = await TeamMember.create({
+    occupation: 'Lead security',
+    teamsTitle: 'Anti Fraud Department',
+    personName: 'Daniel Ferton',
+    personPhoto:
+      'https://media.gettyimages.com/photos/closeup-smiling-male-leader-wearing-eyeglasses-picture-id1179627340?k=6&m=1179627340&s=612x612&w=0&h=GTRsydUj5lqB7q3EFvgKHJJS9K2vjjnW_F1jYq7SddU=',
+  })
   Security.addTeammember(person1)
   Security.addTeammember(person2)
   Security.addTeammember(person3)
   Security.addTeammember(person4)
+  Security.addTeammember(person5)
+  Security.addTeammember(person6)
+  Security.addTeammember(person7)
+  Security.addTeammember(person8)
+
+  OnlineFraudDetection.addTeammember(person8)
+  OnlineFraudDetection.addTeammember(person7)
+  OnlineFraudDetection.addTeammember(person6)
+
+  cs1.addTeammember(person6)
+  cs1.addTeammember(person4)
+  cs1.addTeammember(person1)
+
+  cs2.addTeammember(person2)
+  cs2.addTeammember(person3)
+  cs2.addTeammember(person1)
+
+  cs3.addTeammember(person5)
+  cs3.addTeammember(person2)
+  cs3.addTeammember(person8)
+
+  cs4.addTeammember(person2)
+  cs4.addTeammember(person4)
+  cs4.addTeammember(person5)
   /** END OF SECURITY TEAM MEMBER */
 
   //**IOT TEAM MEMBER */
@@ -2098,7 +2247,7 @@ async function insertRealData() {
   })
   const Adobe = await Partner.create({
     name: 'Adobe',
-    description: 'Creatività per tutti',
+    description: 'Creativity for everyone',
     image: 'https://i.ibb.co/sw4Rx4M/adobe.png',
     website: 'https://www.adobe.com/',
   })
