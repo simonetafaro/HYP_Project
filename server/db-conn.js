@@ -1015,11 +1015,11 @@ async function insertRealData() {
 
   //**END OF CLOUD COMPUTING SERVICES */
 
-  //**CUSTOMER EXPERIENCE SERVICES */
+  //**CUSTOMER EXPERIENCE SERVICES - isi*/
 
   //1
   const Immersive = await Service.create({
-    title: 'Immersive Technologies',
+    title: 'Immersive Tech',
     subTitle:
       'Learn how immersive technology can increase revenue and streamline the event planning process.',
     description:
@@ -1080,7 +1080,7 @@ async function insertRealData() {
   await CustomerExperience.addService(UserInterfaces.id)
 
   //3
-  const DigitalCustomer = await Service.create({
+  const CEE = await Service.create({
     title: 'Customer Experience Engine',
     subTitle:
       'Your customers are always connected. Shouldn’t their experiences be too?',
@@ -1109,7 +1109,7 @@ async function insertRealData() {
     p3Name: 'Sketch',
     p3Logo: 'https://i.ibb.co/QdHXCx7/sketch-01.png',
   })
-  await CustomerExperience.addService(DigitalCustomer.id)
+  await CustomerExperience.addService(CEE.id)
 
   //4
   const Campaign = await Service.create({
@@ -1531,7 +1531,7 @@ async function insertRealData() {
   await LiveECommerce.addCasestudy(ccC4.id)
   //**END OF CLOUD COMPUTING CASE STUDIES */
 
-  //**CUSTOMER EXPERIENCE CASE STUDIES */
+  //**CUSTOMER EXPERIENCE CASE STUDIES - isi*/
   //1
   const ceC1 = await CaseStudy.create({
     title: 'Reimagining guest experiences on the high seas',
@@ -1553,6 +1553,9 @@ async function insertRealData() {
     partnerWebsite: '',
   })
   await CustomerExperience.addCasestudy(ceC1.id)
+  await CreativeMarketingServices.addCasestudy(ceC1.it)
+  await AICustomer.addCasestudy(ceC1.it)
+  await UserInterfaces.addCasestudy(ceC1.it)
 
   //2
   const ceC2 = await CaseStudy.create({
@@ -1574,6 +1577,9 @@ async function insertRealData() {
     partnerWebsite: '',
   })
   await CustomerExperience.addCasestudy(ceC2.id)
+  await Campaign.addCasestudy(ceC2.it)
+  await CreativeMarketingServices.addCasestudy(ceC2.it)
+  await CEE.addCasestudy(ceC2.it)
 
   //3
   const ceC3 = await CaseStudy.create({
@@ -1596,6 +1602,9 @@ async function insertRealData() {
     partnerWebsite: '',
   })
   await CustomerExperience.addCasestudy(ceC3.id)
+  await Campaign.addCasestudy(ceC3.it)
+  await CEE.addCasestudy(ceC3.it)
+  await UserInterfaces.addCasestudy(ceC3.it)
 
   //4
   const ceC4 = await CaseStudy.create({
@@ -1618,6 +1627,9 @@ async function insertRealData() {
     partnerWebsite: '',
   })
   await CustomerExperience.addCasestudy(ceC4.id)
+  await Campaign.addCasestudy(ceC4.it)
+  await CreativeMarketingServices.addCasestudy(ceC4.it)
+  await Immersive.addCasestudy(ceC4.id)
 
   //5
   const ceC5 = await CaseStudy.create({
@@ -1639,6 +1651,9 @@ async function insertRealData() {
     partnerWebsite: '',
   })
   await CustomerExperience.addCasestudy(ceC5.id)
+  await AICustomer.addCasestudy(ceC5.it)
+  await Campaign.addCasestudy(ceC5.it)
+  await UserInterfaces.addCasestudy(ceC5.it)
 
   //6
   const ceC6 = await CaseStudy.create({
@@ -1659,6 +1674,9 @@ async function insertRealData() {
     partnerWebsite: '',
   })
   await CustomerExperience.addCasestudy(ceC6.id)
+  await CreativeMarketingServices.addCasestudy(ceC6.it)
+  await Immersive.addCasestudy(ceC6.it)
+  await CEE.addCasestudy(ceC6.it)
 
   //7
   const ceC7 = await CaseStudy.create({
@@ -1674,6 +1692,8 @@ async function insertRealData() {
     partnerWebsite: '',
   })
   await CustomerExperience.addCasestudy(ceC7.id)
+  await Campaign.addCasestudy(ceC7.it)
+  await Immersive.addCasestudy(ceC7.id)
 
   //8
   const ceC8 = await CaseStudy.create({
@@ -1696,6 +1716,9 @@ async function insertRealData() {
     partnerWebsite: '',
   })
   await CustomerExperience.addCasestudy(ceC8.id)
+  await AICustomer.addCasestudy(ceC8.it)
+  await Campaign.addCasestudy(ceC8.it)
+  await UserInterfaces.addCasestudy(ceC8.it)
 
   //9
   const ceC9 = await CaseStudy.create({
@@ -1716,6 +1739,9 @@ async function insertRealData() {
     partnerWebsite: '',
   })
   await CustomerExperience.addCasestudy(ceC9.id)
+  await UserInterfaces.addCasestudy(ceC9.id)
+  await Immersive.addCasestudy(ceC9.id)
+  await Campaign.addCasestudy(ceC9.it)
 
   //**END OF CUSTOMER EXPERIENCE CASE STUDIES */
 
