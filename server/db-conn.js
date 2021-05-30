@@ -1762,7 +1762,7 @@ async function insertRealData() {
     solutionDescription:
       'The system records not only when the item has been sold, but also what items have been touched and tried on. In addition, as well as being fully informed about their stocks, store staff gain a better understanding of customer traffic and local demand. The retailer is able to identify premium traffic areas, learn how customers interact with specific items, and learn which products are abandoned and which are preferred. McKinsey estimates that optimising store layouts can increase productivity by 5 percent',
     createdData: 'January 17, 2021',
-    partnerWebsite: '',
+    partnerWebsite: 'https://www.levistrauss.com/',
   })
   await IoT.addCasestudy(iotC1.id)
   await SmartRetail.addCasestudy(iotC1.id)
@@ -1782,7 +1782,7 @@ async function insertRealData() {
     solutionDescription:
       '7-Eleven has come to gain a ‘No. 1 Convenience Store’ status in many countries and regions around the world. Such remarkable result was achieved by adapting the concept of Retailer Initiative supported by highly sophisticated IT and network technologies in order to adjust to the specific conditions and situations of each region. In the US, the average sales figures for franchise stores incorporating this advanced business model have soared by 43 percent.',
     createdData: 'December 17, 2020',
-    partnerWebsite: '',
+    partnerWebsite: 'https://www.7-eleven.com/',
   })
   await IoT.addCasestudy(iotC2.id)
   await SmartRetail.addCasestudy(iotC2.id)
@@ -1792,7 +1792,7 @@ async function insertRealData() {
     subTitle:
       'Capture data, improve customer service quality, and reduce costs by using space and resources more effectively.',
     banner:
-      'https://simplecore.intel.com/insight-tech/wp-content/uploads/sites/45/2020/05/retail-data-computer-vision-0.jpg',
+      'https://www.finoit.com/wp-content/uploads/2016/12/restaurant-iot-featured-2.jpg',
     descriptiveText:
       'With an IoT smart retail package, building operators can map scenarios such as space or comfort monitoring in their entirety or in a modular way. Retail building operators can now seamlessly capture data, improve customer service quality, and reduce costs by using space and resources more effectively.',
     challengeTitle: 'Reduce energy consumption',
@@ -1802,7 +1802,7 @@ async function insertRealData() {
     solutionDescription:
       'Energy sensors were installed on A/Cs, refrigerators and lighting. After one month, the branches displayed different energy consumption patterns. Researching this further, they discovered that the refrigeration equipment in one of the branches was faulty and the compressors were overworked. The customer installed door sensors in the refrigerators to send an alert if doors weren’t fully closed after a set time interval. Often times, employees push the door closed without the door actually sealing, and the refrigerator needs to work harder to keep food cool. Leaving the door open overnight often results in food wastage. The goal was to develop a guest ‘comfort score.’ Sensors were installed to monitor noise, smell, air quality, and restaurant temperature. Data from each sensor were given a score and all scores were tallied up to create a guest comfort score that could be proactively monitored across locations. Alerts were sent if guest comfort scores dropped below an acceptable level. This system integrator is currently working on an extension to improve guest satisfaction. They are researching technology to track the time it takes guests to get their meal from the moment they enter the restaurant.',
     createdData: 'March 17, 2020',
-    partnerWebsite: '',
+    partnerWebsite: 'https://www.mcdonalds.it/',
   })
   await IoT.addCasestudy(iotC3.id)
   await SmartRetail.addCasestudy(iotC3.id)
@@ -1822,7 +1822,7 @@ async function insertRealData() {
     solutionDescription:
       'The idea was to understand the client’s needs and obtain feedback to effectively move from proof of concept to the final product. For this purpose, we adopted an iterative agile approach. With many years of experience using this methodology, we have established a dedicated scrum team, consisting not only of developers, but also of user experience/ interface designers. Their involvement allowed the creation of an intuitive voice user interface. As a result, we delivered a Skill, which allows the end-user to manage their car remotely.',
     createdData: 'November 17, 2019',
-    partnerWebsite: '',
+    partnerWebsite: 'https://www.skoda-auto.com/',
   })
   await IoT.addCasestudy(iotC4.id)
   await Automotive.addCasestudy(iotC4.id)
@@ -1842,7 +1842,7 @@ async function insertRealData() {
     solutionDescription:
       'The solution was based on dedicated industrial displays which were connected to the LAN network already existing in the plant. The displays present assembly instructions for, employees, to ensure that no steps of the process are missed. The digitization of manufacturing made possible by IoT and ERP reduced the problem of delegating tasks at workstations, made the production processes more efficient, and brought better communication between the machines, systems and employees.',
     createdData: 'October 17, 2019',
-    partnerWebsite: '',
+    partnerWebsite: 'https://www.abnox.com/en/',
   })
   await IoT.addCasestudy(iotC5.id)
   await IndustrialManufacturing.addCasestudy(iotC5.id)
@@ -1862,7 +1862,7 @@ async function insertRealData() {
     solutionDescription:
       'Today there are nearly nine billion phones, most of them cell phones. Patel’s team developed an algorithm that measures lung health by analyzing the sound of someone blowing on a phone’s microphone. This replicates a spirometer without the expense and hospital visit. All a COPD sufferer has to do is call a toll-free number and blow on their phone. Networked computers take care of the rest by performing complex calculations, then delivering the results a few seconds later via a voice or text message. The early versions of the algorithm only worked on expensive smart phones, but Patel and his team refined it over time until it could work on any phone. Diagnosing and treating COPD provides a glimpse of how the Internet of Things will improve healthcare in the future.',
     createdData: 'September 17, 2019',
-    partnerWebsite: '',
+    partnerWebsite: 'https://www.childrenshospital.org/',
   })
   await IoT.addCasestudy(iotC6.id)
   await Healthcare.addCasestudy(iotC6.id)
@@ -1901,7 +1901,7 @@ async function insertRealData() {
     solutionDescription:
       'Enabled by the underlying Low Power Wide Area Network (LPWAN) based on Semtech’s LoRa® devices and wireless radio frequency technology (LoRa Technology) that is developed to support multiple smart city use cases at scale, Tata Communications and its device partners deployed smart sensors on the street lights of Jamshedpur. The solution tracked and optimised energy consumption with the automated switching of street lights, along with the capability to control light intensity based on the external lighting conditions. JUSCO realised the power of IoT byc transferring complete control of smart lights to its command centre. It also enjoys the assurance of enterprise-grade SLAs from Tata Communications. The command centre could centrally operate, monitor and optimise all of its smart lights through a web-based application. This integrated view allowed JUSCO to significantly improve their response time and minimise disruption in service and safety. The command centre could accurately identify the smart lights that must be promptly serviced, delivering a better quality of life to the residents of Jamshedpur. All of this is achieved at lower cost and effort.',
     createdData: 'January 19, 2019',
-    partnerWebsite: '',
+    partnerWebsite: 'https://it.wikipedia.org/wiki/Jamshedpur',
   })
   await IoT.addCasestudy(iotC8.id)
   await SmartLighting.addCasestudy(iotC8.id)
@@ -1911,7 +1911,7 @@ async function insertRealData() {
     title: 'Building health monitoring',
     subTitle:
       'The Customer received an easy-to-use IoT solution to monitor the state of a construction in real time. The tool automatically notifies the operator about a sensor failure or a construction defect and can be integrated with external systems',
-    banner: '',
+    banner: 'https://www.oki.com/en/iot/point/infrastructure/img/sp/img_infra01.jpg',
     descriptiveText:
       'The Customer is a large company that provides construction sites with complex automation and security systems. The company offers design solutions and performs supply, installation and commissioning for various types of construction projects.',
     challengeTitle: 'Continuous and efficient technical control',
@@ -1921,7 +1921,7 @@ async function insertRealData() {
     solutionDescription:
       'HexTech development team designed and developed a smart solution to collect sensor data and aggregate it on a central server for processing and further calculations of a building’s state. Data processing and averaging make it possible to boost system performance and reduce data volumes. The user-friendly interface presents the data from connected through intuitive color coding – the green, yellow and red lights indicate the state of a building. Additionally, the system allows a flexible configuration of threshold values to regulate the transition from one status to another. To aggregate the data – suppose, for calculating a construction deformation, ScienceSoft developed a system of virtual sensors collecting information from several physical sensors. It allows users to monitor specific parameters which can be used only in the aggregate.',
     createdData: 'November 5, 2018',
-    partnerWebsite: '',
+    partnerWebsite: 'https://www.hbm.com/en/5530/structural-health-monitoring/',
   })
   await IoT.addCasestudy(iotC9.id)
   await SmartCities.addCasestudy(iotC9.id)
@@ -1930,7 +1930,7 @@ async function insertRealData() {
     title: 'Remote patient monitoring software',
     subTitle:
       'The development team optimized the measurement API server and decreased the load on the system by introducing the following features: aggregation of requests, grouping of data, NGINX server settings, optimization of queries and MySQL. The solution for remote software deployment to SNA devices enabled the distribution order of install, delete and update commands as per specifics of Android OS by building a queue of commands and sending them to the devices.',
-    banner: '',
+    banner: 'https://s15543.pcdn.co/wp-content/uploads/2020/01/galaxy_watch_active_healthcare_a.jpg',
     descriptiveText:
       'The Customer is a US-based provider of healthcare solutions with development centers in Israel and Belarus.',
     challengeTitle: 'Remote patient monitoring solution',
@@ -1940,7 +1940,7 @@ async function insertRealData() {
     solutionDescription:
       'The developers reviewed and analyzed available approaches and frameworks and picked WebRTC technology as the best one for platform-independent voice and video communication. Several Android-powered hardware devices were selected to implement central communication module or Sensor Network Appliances (SNAs). The development process was split into 2 major parts: the development of apps for Android and iOS devices and Web dashboard implementation. \n 1) HexTech’s team delivered apps for both patients and medical staff. Gradle flavors were used to build the apps’ variations fully compatible with different screen sizes: wide screen (for doctors), tablet (for nurses) and smartphone (for healthcare services consumers). Patients could smoothly access numerous sensors in order to monitor data and synchronize it with the server. Medical staff members could diagnose and treat patient remotely and receive automated alerts and notifications, when, for example patient state suddenly changes. \n 2) A Web Dashboard assisted medical professionals in monitoring the overall status of patients drilling down on personal medical data. It sent alerts on poor health indicators and maintains the doctor-patient connection. The central communication module was built upon a TV-connected Android-powered device. ',
     createdData: 'June 17, 2018',
-    partnerWebsite: '',
+    partnerWebsite: 'https://europe.medtronic.com/xd-en/index.html',
   })
   await IoT.addCasestudy(iotC10.id)
   await Healthcare.addCasestudy(iotC10.id)
@@ -1949,7 +1949,7 @@ async function insertRealData() {
     title: 'Image analysis software for automated optical inspections',
     subTitle:
       'HexTech’s team has successfully developed image analysis software for automated optical inspection of printed circuit assemblies. The application offers considerable opportunities for the SMT manufacturing industry, providing a fast and reliable solution for PCA quality control.',
-    banner: '',
+    banner: 'https://geospacemfg.com/wp-content/uploads/GS_Blog_April-1.jpg',
     descriptiveText:
       'HexTech has developed an application for the electronics industry aimed at ensuring the quality of printed circuit assemblies (PCAs) by means of machine vision.',
     challengeTitle: 'Faster and more efficient inspection',
@@ -1959,7 +1959,7 @@ async function insertRealData() {
     solutionDescription:
       'A team of a project manager, a business analyst, 3 senior С++ developers, a senior UI designer, and a software testing engineer have delivered a desktop application based on image analysis algorithms, complemented with a simple and intuitive GUI. In particular, ORB algorithm has been used for feature detection, and a combination of algorithms (perceptual hash algorithm, PSNR and histograms comparing) have been employed to compare regions of interest in the reference template and in the image under inspection. The user provides a reference board template, putting on all the elements to be inspected with a tool that allows marking objects of three main shapes: \n-Elements with a round cross-section (mainly capacitors) \n-Rectangular elements (chips, diodes, transistors) \n-Dumbbell-shaped elements (resistors) \n After preparing the reference template with all the elements located, the user can proceed to the analysis of printed circuit assemblies of the same type as the reference PCA. Comparing these images with the reference assembly, the application defines defected ones and shows the locations of missing components in detail.',
     createdData: 'April 17, 2018',
-    partnerWebsite: '',
+    partnerWebsite: 'https://geospacemfg.com/blog/3d-automated-optical-inspection/',
   })
   await IoT.addCasestudy(iotC11.id)
   await IndustrialManufacturing.addCasestudy(iotC11.id)
@@ -1968,7 +1968,7 @@ async function insertRealData() {
     title: 'Control Unit for Automotive Tier-I Supplier',
     subTitle:
       'We were able to successfully deliver a robust telematics solution within the desired timeframe.he customer was able to deliver the proof of concept (PoC) within 6 months. This helped them initiate demos with the OEMs and Suppliers earlier than expected.',
-    banner: '',
+    banner: 'Control Unit for Automotive Tier-I Supplier',
     descriptiveText:
       'Our customer is a leading Tier-I Supplier of Infotainment Systems, Head-up Display (HUD) Solutions, Digital Instrument Clusters and Battery Management Systems (BMS) for Electric Vehicles.',
     challengeTitle:
@@ -1979,7 +1979,7 @@ async function insertRealData() {
     solutionDescription:
       'Our more than a decade long expertise in the Automotive domain along with proven production grade Cloud-Telematics reference designs encouraged the customer to partner with us for this project. We leveraged our expertise in IoT Sensor Network design and Cloud Interface development, in order to enable the collection of data like speed, GPS location and more. This was facilitated with the help of MQTT protocol based communication interface. Our expertise in the automotive domain ensured that we achieve compliance with all the necessary standards while selecting components for hardware design. Additionally, we have leveraged our expertise in firmware, SPI, I2C and CAN protocols.',
     createdData: 'January 5, 2018',
-    partnerWebsite: '',
+    partnerWebsite: 'https://www.bosch-mobility-solutions.com/en/mobility-topics/connected-mobility/',
   })
   await IoT.addCasestudy(iotC12.id)
   await Automotive.addCasestudy(iotC12.id)
