@@ -1015,11 +1015,11 @@ async function insertRealData() {
 
   //**END OF CLOUD COMPUTING SERVICES */
 
-  //**CUSTOMER EXPERIENCE SERVICES */
+  //**CUSTOMER EXPERIENCE SERVICES - isi*/
 
   //1
   const Immersive = await Service.create({
-    title: 'Immersive Technologies',
+    title: 'Immersive Tech',
     subTitle:
       'Learn how immersive technology can increase revenue and streamline the event planning process.',
     description:
@@ -1028,23 +1028,24 @@ async function insertRealData() {
       'https://images.unsplash.com/photo-1502185372788-6ff455aa92ff?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80',
     serviceDescription:
       'We help brands tell stories and craft experiences in innovative and immersive ways, opening up new kinds of interaction, new ways to work and learn, and new revenue streams. It’s an emerging space for all to play in. Let us help you take a lead in next-generation experience.',
-    //detailTitle1: 'Spatial storytelling',
-    //detailDescription1: 'Designing 360o story worlds, including non-linear narrative and character development.',
-    //detailTitle2: 'Experiential marketing',
-    //detailDescription2: 'Creating interactive brand engagement through immersive content, shared experiences and location-based activations.',
-    //detailTitle3: 'Immersive Commerce',
-    //detailDescription3: 'Bringing products to life in 3D through digital twin models, augmenting the commerce experience with virtual ways to shop and buy.',
-    //detailTitle4: 'Immersive Learning and Training',
-    //detailDescription4: 'Building new ways to process information, master skills and improve performance through virtually simulated environments and situations.',
+    s1Name: 'Spatial storytelling',
+    s1Description: 'Designing 360o story worlds, including non linear narrative and character development.',
+    s1Logo: 'https://i.ibb.co/Rczq8Pv/sol-1.png',
+    s2Name: 'Experiential marketing',
+    s2Description: 'Creating interactive brand engagement through immersive content.',
+    s2Logo: 'https://i.ibb.co/KwskLjv/sol-2.png',
+    s3Name: 'Immersive Commerce',
+    s3Description: 'Bringing products to life in 3D through digital twin models, augmenting the experience.',
+    s3Logo: 'https://i.ibb.co/b77D3Fm/sol-3.png',
     partnerTitle: 'Alliances and partners',
     partnerDescription:
       'At HexTech, together with our Partners, we are re-imagining the business Deliver with unforgettable customer experiences',
     p1Name: 'Adobe',
-    p1Logo: '',
-    p2Name: '',
-    p2Logo: '',
-    p3Name: '',
-    p3Logo: '',
+    p1Logo: 'https://i.ibb.co/sw4Rx4M/adobe.png',
+    p2Name: 'Figma',
+    p2Logo: 'https://i.ibb.co/vjqPph0/figma.png',
+    p3Name: 'Sketch',
+    p3Logo: 'https://i.ibb.co/QdHXCx7/sketch-01.png',
   })
   await CustomerExperience.addService(Immersive.id)
 
@@ -1055,30 +1056,31 @@ async function insertRealData() {
       'Leading creative, business analysis, and advanced technology in user research',
     description:
       'Design a new way to communicate. User interface (or UI) design has grown substantially over the past few years, and has blossomed into one of the most creative, innovative and exciting fields in tech. Our service it is here to help you to create a brand new costumer’s experiences with the latest trend of user interfaces. An interface is the link between the corporate and the user, it must respond to customers’ new, often unmet and frequently changing needs and enable them to achieve their desired outcomes.',
-    banner:
-      'https://images.unsplash.com/photo-1618788372246-79faff0c3742?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=882&q=80',
-    serviceDescription:
-      'User interface elements are the parts we use to build interactive websites or apps. They provide touchpoints for the user as they navigate their way around; from buttons to scrollbars, to menu items and checkboxes. Every single detail matter!',
-    //detailTitle1: 'Design accessibility',
-    //detailDescription1: 'We can not fogot the crucial role of accessibility and inclusion. From designing a suite of UI elements, such as buttons, icons, and scrollbars, choosing colors and typefaces, to regularly testing their designs through prototyping, UI designers carefully weigh up what each design choice means for the end user.',
-    //detailTitle2: 'Trustwothy apps',
-    //detailDescription2: 'We know that users like to feel in control of themselves and their environment. With our help your interface to avoid having unplanned interactions, confusing pathways, and surprising outcomes, giving the customers insight into what to expect at every turn.',
-    //detailTitle3: '',
-    //detailDescription3: '',
+    banner: 'https://images.unsplash.com/photo-1618788372246-79faff0c3742?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=882&q=80',
+    serviceDescription: 'User interface elements are the parts we use to build interactive websites or apps. They provide touchpoints for the user as they navigate their way around; from buttons to scrollbars, to menu items and checkboxes. Every single detail matter!',
+    s1Name: 'Trustworthy apps',
+    s1Description: 'Avoiding unplanned interactions, giving the customers insight into what to expect.',
+    s1Logo: 'https://i.ibb.co/Rczq8Pv/sol-1.png',
+    s2Name: 'Design accessibility',
+    s2Description: 'Keep in mind accessibility and inclusion. Every design choice matters for us.',
+    s2Logo: 'https://i.ibb.co/KwskLjv/sol-2.png',
+    s3Name: 'Endlessly adaptivity',
+    s3Description: 'An optimized model to deliver insights and facilitate decision-making.',
+    s3Logo: 'https://i.ibb.co/b77D3Fm/sol-3.png',
     partnerTitle: 'Alliances and partners',
     partnerDescription:
       'We use the latest services in terms of technological design, we refer to the best partners and create with softwares that allows us to achieve extremely intuitive layouts for ours ideas.',
     p1Name: 'Adobe',
-    p1Logo: '',
+    p1Logo: 'https://i.ibb.co/sw4Rx4M/adobe.png',
     p2Name: 'Figma',
-    p2Logo: '',
+    p2Logo: 'https://i.ibb.co/vjqPph0/figma.png',
     p3Name: 'Sketch',
-    p3Logo: '',
+    p3Logo: 'https://i.ibb.co/QdHXCx7/sketch-01.png',
   })
   await CustomerExperience.addService(UserInterfaces.id)
 
   //3
-  const DigitalCustomer = await Service.create({
+  const CEE = await Service.create({
     title: 'Customer Experience Engine',
     subTitle:
       'Your customers are always connected. Shouldn’t their experiences be too?',
@@ -1088,50 +1090,52 @@ async function insertRealData() {
       'https://images.unsplash.com/photo-1556745753-b2904692b3cd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1866&q=80',
     serviceDescription:
       'Our experience-led approach helps ensure that organizations have the right experience architecture to allow customers to create their own journey on their own terms. We view technology as the enabler of the customer experience, not the driver.',
+    s1Name: 'Single view',
+    s1Description:'A business that is interacting with customers to drive connected experiences.',
+    s1Logo: 'https://i.ibb.co/Rczq8Pv/sol-1.png',
+    s2Name: 'Seamless plug and play',
+    s2Description: 'CXE solves the technology impediment to allow organizations to focus on impact.',
+    s2Logo: 'https://i.ibb.co/KwskLjv/sol-2.png',
+    s3Name: 'Omnichannel power',
+    s3Description: 'CXE unifies your applications across marketing, turning touchpoints into a story.',
+    s3Logo: 'https://i.ibb.co/b77D3Fm/sol-3.png',
     partnerTitle: 'Alliances and partners',
     partnerDescription:
       'The Customer Experience Engine turns touchpoints into a story: unify the moments. Own the experience. Together with the best Partners we are going to achieve this.',
-    //detailTitle1: 'Single view of the customer',
-    //detailDescription1: 'Lines of business and stakeholder groups have the visibility into how the business is interacting with customers to drive connected experiences.',
-    //detailTitle2: 'Seamless plug and play with the latest tech',
-    //detailDescription2: 'CXE solves the technology impediment to allow organizations to focus on delivering unforgettable and impactful experiences.',
-    //detailTitle3: 'Omnichannel power across platforms',
-    //detailDescription3: 'CXE unifies your applications across marketing, commerce, sales and service, turning touchpoints into a story.',
-    p1Name: '',
-    p1Logo: '',
-    p2Name: '',
-    p2Logo: '',
-    p3Name: '',
-    p3Logo: '',
+    p1Name: 'Adobe',
+    p1Logo: 'https://i.ibb.co/sw4Rx4M/adobe.png',
+    p2Name: 'Figma',
+    p2Logo: 'https://i.ibb.co/vjqPph0/figma.png',
+    p3Name: 'Sketch',
+    p3Logo: 'https://i.ibb.co/QdHXCx7/sketch-01.png',
   })
-  await CustomerExperience.addService(DigitalCustomer.id)
+  await CustomerExperience.addService(CEE.id)
 
   //4
   const Campaign = await Service.create({
     title: 'Campaign Management',
-    subTitle:
-      'Communicate marketing messages at speed and scale to acquire and retain customers, driving sustainable growth.',
-    description:
-      'We all know communication is critical, but knowing what to say and when to say it—and whom to say it to—can make or break the message. That is why Accenture Interactive Marketing Engagement Services team specializes in solutions to help clients understand their customers, define the experience, and deliver relevant, compelling messages. We understand the new digital landscape and evolving customer expectations. Connections need to be made throughout the customer journey, constantly and across channels. "Always-on" campaigns are designed to capture attention and amplify demand, leads and revenue generation.',
-    banner:
-      'https://images.unsplash.com/photo-1552664730-d307ca884978?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80',
-    serviceDescription:
-      'We design and build creative campaigns that target customers with the right message to drive engagement. Our insights into new and evolving digital technologies mean we understand how to deliver personalized messages at the right time, helping acquire new customers, grow wallet share with existing customers, and retain the most profitable customers.',
+    subTitle: 'Communicate marketing messages at speed and scale to acquire and retain customers, driving sustainable growth.',
+    description: 'We all know communication is critical, but knowing what to say and when to say it—and whom to say it to—can make or break the message. That is why Accenture Interactive Marketing Engagement Services team specializes in solutions to help clients understand their customers, define the experience, and deliver relevant, compelling messages. We understand the new digital landscape and evolving customer expectations. Connections need to be made throughout the customer journey, constantly and across channels. "Always-on" campaigns are designed to capture attention and amplify demand, leads and revenue generation.',
+    banner: 'https://images.unsplash.com/photo-1552664730-d307ca884978?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80',
+    serviceDescription: 'We design and build creative campaigns that target customers with the right message to drive engagement. Our insights into new and evolving digital technologies mean we understand how to deliver personalized messages at the right time, helping acquire new customers, grow wallet share with existing customers, and retain the most profitable customers.',
+    s1Name: 'Campaign planning',
+    s1Description: 'Create a consistent experience throughout the customer journey.',
+    s1Logo: 'https://i.ibb.co/Rczq8Pv/sol-1.png',
+    s2Name: 'Management and optimization',
+    s2Description: 'Enable a campaign management solution with digital marketing ecosystem.',
+    s2Logo: 'https://i.ibb.co/KwskLjv/sol-2.png',
+    s3Name: 'Lead generation',
+    s3Description: 'Fuel your funnel by driving demand from qualified leads.',
+    s3Logo: 'https://i.ibb.co/b77D3Fm/sol-3.png',
     partnerTitle: 'Alliances and partners',
     partnerDescription:
       'How to deliver the right message at the right time? With the best Partners our company will grant you success.',
-    //detailTitle1: 'Campaign planning',
-    //detailDescription1: 'Create a consistent experience throughout the customer journey and across the channels.',
-    //detailTitle2: 'Campaign management and optimization',
-    //detailDescription2: 'Enable a high-performing campaign management solution that utilizes the capabilities of the new digital marketing ecosystem.',
-    //detailTitle3: 'Lead generation',
-    //detailDescription3: 'Fuel your funnel by driving demand from qualified leads.',
-    p1Name: '',
-    p1Logo: '',
-    p2Name: '',
-    p2Logo: '',
-    p3Name: '',
-    p3Logo: '',
+    p1Name: 'Adobe',
+    p1Logo: 'https://i.ibb.co/sw4Rx4M/adobe.png',
+    p2Name: 'Figma',
+    p2Logo: 'https://i.ibb.co/vjqPph0/figma.png',
+    p3Name: 'Sketch',
+    p3Logo: 'https://i.ibb.co/QdHXCx7/sketch-01.png',
   })
   await CustomerExperience.addService(Campaign.id)
 
@@ -1146,21 +1150,24 @@ async function insertRealData() {
       'https://images.unsplash.com/photo-1519558260268-cde7e03a0152?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80',
     serviceDescription:
       'With our range of pre-built AI modules and ecosystem of technology partners, we are able to quickly scale hyper-personalized experiences to help clients anticipate and address their customers needs.',
-    //detailTitle1: 'Patented conversational AI platform',
-    //detailDescription1: 'Rapidly design and execute automated conversations, compatible with any existing technology partner.',
-    //detailTitle2: 'Intent discovery and analytics',
-    //detailDescription2: 'Apply a data-driven approach to identify and prioritize customer intents for automation.',
-    //detailTitle3: 'Customer and journey analytics',
-    //detailDescription3: 'Responsibly establish a strong foundation of customer and journey data to generate insights around specific business inefficiencies that unlock value.',
+    s1Name: 'Patented conversational AI',
+    s1Description: 'Rapidly design and execute automated conversations, compatible with technology.',
+    s1Logo: 'https://i.ibb.co/Rczq8Pv/sol-1.png',
+    s2Name: 'Intent discovery and analytics',
+    s2Description: 'Apply a data-driven approach to identify customer intents for automation.',
+    s2Logo: 'https://i.ibb.co/KwskLjv/sol-2.png',
+    s3Name:  'Customer and journey analytics',
+    s3Description:  'Responsibly establish a strong foundation to generate insights that unlock value.',
+    s3Logo: 'https://i.ibb.co/b77D3Fm/sol-3.png',
     partnerTitle: 'Alliances and partners',
     partnerDescription:
       'HexTech, with the best Partners, will make your customers to have higher expectations than ever before. They crave a consistent experience no matter the time or channel.',
-    p1Name: '',
-    p1Logo: '',
-    p2Name: '',
-    p2Logo: '',
-    p3Name: '',
-    p3Logo: '',
+    p1Name: 'Adobe',
+    p1Logo: 'https://i.ibb.co/sw4Rx4M/adobe.png',
+    p2Name: 'Figma',
+    p2Logo: 'https://i.ibb.co/vjqPph0/figma.png',
+    p3Name: 'Sketch',
+    p3Logo: 'https://i.ibb.co/QdHXCx7/sketch-01.png',
   })
   await CustomerExperience.addService(AICustomer.id)
 
@@ -1175,21 +1182,24 @@ async function insertRealData() {
       'https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=993&q=80',
     serviceDescription:
       'What does it mean to build a brand? We take it from the ground up—from strategy and content to activation.',
-    //detailTitle1: 'Intent discovery and analytics',
-    //detailDescription1: 'We deliver strategy for new client brands and develop creative assets and identities.',
-    //detailTitle2: 'Content strategy and activation';
-    //detailDescription2: 'We develop creative content across channels to drive consumer experiences.',
-    //detailTitle3: 'Omnichannel strategy and activation';
-    //detailDescription3: 'We activate and optimize programs that deliver high engagement and return on investment.',
+    s1Name:'Intent discovery and analytics',
+    s1Description: 'We deliver strategy for new client brands and develop creative assets and identities.',
+    s1Logo: 'https://i.ibb.co/Rczq8Pv/sol-1.png',
+    s2Name: 'Content activation',
+    s2Description: 'We develop creative content across channels to drive consumer experiences.',
+    s2Logo: 'https://i.ibb.co/KwskLjv/sol-2.png',
+    s3Name: 'Omnichannel strategy',
+    s3Description: 'We activate and optimize programs that deliver high engagement and investment.',
+    s3Logo: 'https://i.ibb.co/b77D3Fm/sol-3.png',
     partnerTitle: 'Alliances and partners',
     partnerDescription:
       'With HexTech and its best Partners, you will delight your customers with relevant, elegant, and intuitive experiences.',
-    p1Name: '',
-    p1Logo: '',
-    p2Name: '',
-    p2Logo: '',
-    p3Name: '',
-    p3Logo: '',
+    p1Name: 'Adobe',
+    p1Logo: 'https://i.ibb.co/sw4Rx4M/adobe.png',
+    p2Name: 'Figma',
+    p2Logo: 'https://i.ibb.co/vjqPph0/figma.png',
+    p3Name: 'Sketch',
+    p3Logo: 'https://i.ibb.co/QdHXCx7/sketch-01.png',
   })
   await CustomerExperience.addService(CreativeMarketingServices.id)
 
@@ -1521,7 +1531,7 @@ async function insertRealData() {
   await LiveECommerce.addCasestudy(ccC4.id)
   //**END OF CLOUD COMPUTING CASE STUDIES */
 
-  //**CUSTOMER EXPERIENCE CASE STUDIES */
+  //**CUSTOMER EXPERIENCE CASE STUDIES - isi*/
   //1
   const ceC1 = await CaseStudy.create({
     title: 'Reimagining guest experiences on the high seas',
@@ -1540,9 +1550,12 @@ async function insertRealData() {
     solutionDescription:
       'Each guest receives a free Medallion. The light, quarter-sized disc enables frictionless payment, keyless stateroom access, accelerated embarkation and much more.',
     createdData: 'March 17, 2021',
-    partnerWebsite: '',
+    partnerWebsite: 'https://www.illy.com/',
   })
   await CustomerExperience.addCasestudy(ceC1.id)
+  await CreativeMarketingServices.addCasestudy(ceC1.id)
+  await AICustomer.addCasestudy(ceC1.id)
+  await UserInterfaces.addCasestudy(ceC1.id)
 
   //2
   const ceC2 = await CaseStudy.create({
@@ -1564,6 +1577,9 @@ async function insertRealData() {
     partnerWebsite: '',
   })
   await CustomerExperience.addCasestudy(ceC2.id)
+  await Campaign.addCasestudy(ceC2.id)
+  await CreativeMarketingServices.addCasestudy(ceC2.id)
+  await CEE.addCasestudy(ceC2.id)
 
   //3
   const ceC3 = await CaseStudy.create({
@@ -1583,9 +1599,12 @@ async function insertRealData() {
     solutionDescription:
       'Using our deep experience of both organizational design and personalization, we helped Subway devise a completely new recipe for success – an operating model that would continuously optimize customer experiences through a dedication to scientific experimentation Leveraging the technologies of Adobe Analytics and Target, the new model enables Subway to run vast numbers of user experience tests across digital channels – everything from changing the color of a single button to revising homepage promotional messaging – and see the results instantly. That’s providing statistically meaningful insights into how design changes affect customer behavior – and company revenue.',
     createdData: 'December 25, 2020',
-    partnerWebsite: '',
+    partnerWebsite: 'https://www.subway.com/',
   })
   await CustomerExperience.addCasestudy(ceC3.id)
+  await Campaign.addCasestudy(ceC3.id)
+  await CEE.addCasestudy(ceC3.id)
+  await UserInterfaces.addCasestudy(ceC3.id)
 
   //4
   const ceC4 = await CaseStudy.create({
@@ -1605,9 +1624,12 @@ async function insertRealData() {
     solutionDescription:
       'Working with us, Dutch Flowers kicked things off by leveraging design thinking and agile delivery methods, like user research and story mapping, to determine how the ideal customer journey would look as they peruse and purchase flowers online. Together, we developed a minimal viable product (MVP) based on the latest SAP Commerce Cloud Version 2.',
     createdData: 'November 7, 2020',
-    partnerWebsite: '',
+    partnerWebsite: 'https://dfg.nl/en/',
   })
   await CustomerExperience.addCasestudy(ceC4.id)
+  await Campaign.addCasestudy(ceC4.id)
+  await CreativeMarketingServices.addCasestudy(ceC4.id)
+  await Immersive.addCasestudy(ceC4.id)
 
   //5
   const ceC5 = await CaseStudy.create({
@@ -1617,18 +1639,21 @@ async function insertRealData() {
     banner:
       'https://images.unsplash.com/photo-1515165244752-2465b61f0441?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1889&q=80',
     descriptiveText:
-      'If you have ever wondered what’s behind the happy customers and packed stores it’s several factors including a focus on personalization, innovation and a loyalty program that is so good that it has 25 million members. All of these factors and several more make LoveMakeup one of the most successful beauty retailers in the world.',
+      'If you have ever wondered what’s behind the happy customers and packed stores it’s several factors including a focus on personalization, innovation and a loyalty program that is so good that it has 25 million members. All of these factors and several more make Sephora one of the most successful beauty retailers in the world.',
     challengeTitle: 'Our challenge - Every customer has to be unique',
     challengeDescription:
       'The beauty industry as a whole faces a multitude of problems mainly around transparency, accuracy and trust of products. For these reasons, online shopping poses key challenges in purchasing beauty products while retail stores pose their own challenge in having the capabilities and manpower to assist every customer in finding the right products.',
     solutionTitle:
       'The solution we provided - Personalization at the next level',
     solutionDescription:
-      'Customers are increasingly demanding customization as part of their shopping experience, especially if they’re shelling out for luxuries like makeup. Whether it’s primer for oily skin or moisturizer for dry, LoveMakeup recognizes that their customers require a unique and personalized approach, and they offer this through in-store swatch samplings and makeup demonstrations that allow shoppers to test different brands to be sure they’re buying the right product at the right place. But LoveMakeup doesn’t stop there: their personalized shopping experience extends to the web, which has been a major key to their success in keeping customers loyal to their brand.',
+      'Customers are increasingly demanding customization as part of their shopping experience, especially if they’re shelling out for luxuries like makeup. Whether it’s primer for oily skin or moisturizer for dry, Sephora recognizes that their customers require a unique and personalized approach, and they offer this through in-store swatch samplings and makeup demonstrations that allow shoppers to test different brands to be sure they’re buying the right product at the right place. But Sephora doesn’t stop there: their personalized shopping experience extends to the web, which has been a major key to their success in keeping customers loyal to their brand.',
     createdData: 'August 28, 2020',
-    partnerWebsite: '',
+    partnerWebsite: 'https://www.sephora.com/',
   })
   await CustomerExperience.addCasestudy(ceC5.id)
+  await AICustomer.addCasestudy(ceC5.id)
+  await Campaign.addCasestudy(ceC5.id)
+  await UserInterfaces.addCasestudy(ceC5.id)
 
   //6
   const ceC6 = await CaseStudy.create({
@@ -1646,24 +1671,30 @@ async function insertRealData() {
     solutionDescription:
       'The app we designed for Disney contains most of the information on the website but it’s not just the website shoved into app-form. It’s laid out well and even has GPS-enabled walking directions between attractions. I can easily find park hours, showtimes, wait times for rides, and order food so you don’t need to wait in line anymore. All of the tickets, dining reservations, and photos are in the app, along with a personalized schedule that I can create to make sure I don’t miss the biggest rides and attractions.',
     createdData: 'July 17, 2020',
-    partnerWebsite: '',
+    partnerWebsite: 'https://www.disneyworld.eu/',
   })
   await CustomerExperience.addCasestudy(ceC6.id)
+  await CreativeMarketingServices.addCasestudy(ceC6.id)
+  await Immersive.addCasestudy(ceC6.id)
+  await CEE.addCasestudy(ceC6.id)
 
   //7
   const ceC7 = await CaseStudy.create({
     title: 'Bringing clothing to life directly in-store',
     subTitle: 'How Zara is now leading the mid-market tech fashion pack.',
     banner: 'https://www.mind-mag.com/wp-content/uploads/2018/04/IMG2645.jpg',
-    descriptiveText: '',
-    challengeTitle: 'Our challenge - ',
-    challengeDescription: '',
-    solutionTitle: 'The solution we provided - ',
-    solutionDescription: '',
+    descriptiveText: 'Zara is one of the world’s most successful fashion retail brands, if not the most successful. Not only is Zara a clear leader in the fashion industry, but is also a large tech firm. The key of Zara’s success is that its business model leans heavily on technological innovation and customer experience.',
+    challengeTitle: 'Our challenge - Finding an engaging technology ',
+    challengeDescription: 'In essence, thanks to a pioneering technological strategy, Zara holds the title for market leader. By adopting new tools including big data, augmented reality and artificial intelligence, the Spanish clothing retailer has managed to outpace its direct competitors. Zara ask Hextech to design a unique high quality and innovative customer experience, involving AR. Zara is looking at for a means of enhancing the in-store experience, trialing this on a meaningful scale',
+    solutionTitle: 'The solution we provided - Augmented reality ',
+    solutionDescription: 'By pointing cameras at sensors installed in windows, users of the app can see virtual fashion models strutting their stuff. Other AR imagery includes mannequins moving around and showcasing the brand’s new Studio Collection. Once users have lived the experience, there is also the option to buy the featured clothes directly through the app by simply clicking on “shop the look” button or in the store itself. This is a great solution to attract millennial shoppers to its brick and mortar store locations.',
     createdData: 'April 7, 2020',
-    partnerWebsite: '',
+    partnerWebsite: 'https://www.zara.com/', 
   })
   await CustomerExperience.addCasestudy(ceC7.id)
+  await Campaign.addCasestudy(ceC7.id)
+  await Immersive.addCasestudy(ceC7.id)
+  await CreativeMarketingServices.addCasestudy(ceC7.id)
 
   //8
   const ceC8 = await CaseStudy.create({
@@ -1683,9 +1714,12 @@ async function insertRealData() {
     solutionDescription:
       'We developed a unique system that allows to enter the store with the Amazon Go app open on your phone, fill your shopping bags with whatever you want, and then leave the store. Amazon Go stores use cameras and sensors to know what’s been taken off the shelves, so items can be charged to your credit card, which is stored in the Amazon Go app. No cashiers, no long lines, no paper receipts. Amazon Go showcases the convergence of technology and traditional retail shopping in a convenience store format.',
     createdData: 'March 27, 2019',
-    partnerWebsite: '',
+    partnerWebsite: 'https://www.amazon.com/b?ie=UTF8&node=16008589011',
   })
   await CustomerExperience.addCasestudy(ceC8.id)
+  await AICustomer.addCasestudy(ceC8.id)
+  await Campaign.addCasestudy(ceC8.id)
+  await UserInterfaces.addCasestudy(ceC8.id)
 
   //9
   const ceC9 = await CaseStudy.create({
@@ -1703,9 +1737,12 @@ async function insertRealData() {
     solutionDescription:
       'We wanted to start from store design, or brand localization. This is just one of the creative ways Starbucks can connects with its customers, integrating local aesthetics into each of its stores. The company’s design studios are strategically located so that designers can better understand their communities. Furthermore, we developed the "tech-side", creating an Amazon Alexa platform and the My Starbucks Barista chatbot debuted, letting users order their favorite coffees using simple voice commands.',
     createdData: 'January 17, 2019',
-    partnerWebsite: '',
+    partnerWebsite: 'https://www.starbucks.com/',
   })
   await CustomerExperience.addCasestudy(ceC9.id)
+  await UserInterfaces.addCasestudy(ceC9.id)
+  await Immersive.addCasestudy(ceC9.id)
+  await Campaign.addCasestudy(ceC9.id)
 
   //**END OF CUSTOMER EXPERIENCE CASE STUDIES */
 
@@ -1725,7 +1762,7 @@ async function insertRealData() {
     solutionDescription:
       'The system records not only when the item has been sold, but also what items have been touched and tried on. In addition, as well as being fully informed about their stocks, store staff gain a better understanding of customer traffic and local demand. The retailer is able to identify premium traffic areas, learn how customers interact with specific items, and learn which products are abandoned and which are preferred. McKinsey estimates that optimising store layouts can increase productivity by 5 percent',
     createdData: 'January 17, 2021',
-    partnerWebsite: '',
+    partnerWebsite: 'https://www.levistrauss.com/',
   })
   await IoT.addCasestudy(iotC1.id)
   await SmartRetail.addCasestudy(iotC1.id)
@@ -1745,7 +1782,7 @@ async function insertRealData() {
     solutionDescription:
       '7-Eleven has come to gain a ‘No. 1 Convenience Store’ status in many countries and regions around the world. Such remarkable result was achieved by adapting the concept of Retailer Initiative supported by highly sophisticated IT and network technologies in order to adjust to the specific conditions and situations of each region. In the US, the average sales figures for franchise stores incorporating this advanced business model have soared by 43 percent.',
     createdData: 'December 17, 2020',
-    partnerWebsite: '',
+    partnerWebsite: 'https://www.7-eleven.com/',
   })
   await IoT.addCasestudy(iotC2.id)
   await SmartRetail.addCasestudy(iotC2.id)
@@ -1755,7 +1792,7 @@ async function insertRealData() {
     subTitle:
       'Capture data, improve customer service quality, and reduce costs by using space and resources more effectively.',
     banner:
-      'https://simplecore.intel.com/insight-tech/wp-content/uploads/sites/45/2020/05/retail-data-computer-vision-0.jpg',
+      'https://www.finoit.com/wp-content/uploads/2016/12/restaurant-iot-featured-2.jpg',
     descriptiveText:
       'With an IoT smart retail package, building operators can map scenarios such as space or comfort monitoring in their entirety or in a modular way. Retail building operators can now seamlessly capture data, improve customer service quality, and reduce costs by using space and resources more effectively.',
     challengeTitle: 'Reduce energy consumption',
@@ -1765,7 +1802,7 @@ async function insertRealData() {
     solutionDescription:
       'Energy sensors were installed on A/Cs, refrigerators and lighting. After one month, the branches displayed different energy consumption patterns. Researching this further, they discovered that the refrigeration equipment in one of the branches was faulty and the compressors were overworked. The customer installed door sensors in the refrigerators to send an alert if doors weren’t fully closed after a set time interval. Often times, employees push the door closed without the door actually sealing, and the refrigerator needs to work harder to keep food cool. Leaving the door open overnight often results in food wastage. The goal was to develop a guest ‘comfort score.’ Sensors were installed to monitor noise, smell, air quality, and restaurant temperature. Data from each sensor were given a score and all scores were tallied up to create a guest comfort score that could be proactively monitored across locations. Alerts were sent if guest comfort scores dropped below an acceptable level. This system integrator is currently working on an extension to improve guest satisfaction. They are researching technology to track the time it takes guests to get their meal from the moment they enter the restaurant.',
     createdData: 'March 17, 2020',
-    partnerWebsite: '',
+    partnerWebsite: 'https://www.mcdonalds.it/',
   })
   await IoT.addCasestudy(iotC3.id)
   await SmartRetail.addCasestudy(iotC3.id)
@@ -1785,7 +1822,7 @@ async function insertRealData() {
     solutionDescription:
       'The idea was to understand the client’s needs and obtain feedback to effectively move from proof of concept to the final product. For this purpose, we adopted an iterative agile approach. With many years of experience using this methodology, we have established a dedicated scrum team, consisting not only of developers, but also of user experience/ interface designers. Their involvement allowed the creation of an intuitive voice user interface. As a result, we delivered a Skill, which allows the end-user to manage their car remotely.',
     createdData: 'November 17, 2019',
-    partnerWebsite: '',
+    partnerWebsite: 'https://www.skoda-auto.com/',
   })
   await IoT.addCasestudy(iotC4.id)
   await Automotive.addCasestudy(iotC4.id)
@@ -1805,7 +1842,7 @@ async function insertRealData() {
     solutionDescription:
       'The solution was based on dedicated industrial displays which were connected to the LAN network already existing in the plant. The displays present assembly instructions for, employees, to ensure that no steps of the process are missed. The digitization of manufacturing made possible by IoT and ERP reduced the problem of delegating tasks at workstations, made the production processes more efficient, and brought better communication between the machines, systems and employees.',
     createdData: 'October 17, 2019',
-    partnerWebsite: '',
+    partnerWebsite: 'https://www.abnox.com/en/',
   })
   await IoT.addCasestudy(iotC5.id)
   await IndustrialManufacturing.addCasestudy(iotC5.id)
@@ -1825,7 +1862,7 @@ async function insertRealData() {
     solutionDescription:
       'Today there are nearly nine billion phones, most of them cell phones. Patel’s team developed an algorithm that measures lung health by analyzing the sound of someone blowing on a phone’s microphone. This replicates a spirometer without the expense and hospital visit. All a COPD sufferer has to do is call a toll-free number and blow on their phone. Networked computers take care of the rest by performing complex calculations, then delivering the results a few seconds later via a voice or text message. The early versions of the algorithm only worked on expensive smart phones, but Patel and his team refined it over time until it could work on any phone. Diagnosing and treating COPD provides a glimpse of how the Internet of Things will improve healthcare in the future.',
     createdData: 'September 17, 2019',
-    partnerWebsite: '',
+    partnerWebsite: 'https://www.childrenshospital.org/',
   })
   await IoT.addCasestudy(iotC6.id)
   await Healthcare.addCasestudy(iotC6.id)
@@ -1864,7 +1901,7 @@ async function insertRealData() {
     solutionDescription:
       'Enabled by the underlying Low Power Wide Area Network (LPWAN) based on Semtech’s LoRa® devices and wireless radio frequency technology (LoRa Technology) that is developed to support multiple smart city use cases at scale, Tata Communications and its device partners deployed smart sensors on the street lights of Jamshedpur. The solution tracked and optimised energy consumption with the automated switching of street lights, along with the capability to control light intensity based on the external lighting conditions. JUSCO realised the power of IoT byc transferring complete control of smart lights to its command centre. It also enjoys the assurance of enterprise-grade SLAs from Tata Communications. The command centre could centrally operate, monitor and optimise all of its smart lights through a web-based application. This integrated view allowed JUSCO to significantly improve their response time and minimise disruption in service and safety. The command centre could accurately identify the smart lights that must be promptly serviced, delivering a better quality of life to the residents of Jamshedpur. All of this is achieved at lower cost and effort.',
     createdData: 'January 19, 2019',
-    partnerWebsite: '',
+    partnerWebsite: 'https://it.wikipedia.org/wiki/Jamshedpur',
   })
   await IoT.addCasestudy(iotC8.id)
   await SmartLighting.addCasestudy(iotC8.id)
@@ -1874,7 +1911,7 @@ async function insertRealData() {
     title: 'Building health monitoring',
     subTitle:
       'The Customer received an easy-to-use IoT solution to monitor the state of a construction in real time. The tool automatically notifies the operator about a sensor failure or a construction defect and can be integrated with external systems',
-    banner: '',
+    banner: 'https://www.oki.com/en/iot/point/infrastructure/img/sp/img_infra01.jpg',
     descriptiveText:
       'The Customer is a large company that provides construction sites with complex automation and security systems. The company offers design solutions and performs supply, installation and commissioning for various types of construction projects.',
     challengeTitle: 'Continuous and efficient technical control',
@@ -1884,7 +1921,7 @@ async function insertRealData() {
     solutionDescription:
       'HexTech development team designed and developed a smart solution to collect sensor data and aggregate it on a central server for processing and further calculations of a building’s state. Data processing and averaging make it possible to boost system performance and reduce data volumes. The user-friendly interface presents the data from connected through intuitive color coding – the green, yellow and red lights indicate the state of a building. Additionally, the system allows a flexible configuration of threshold values to regulate the transition from one status to another. To aggregate the data – suppose, for calculating a construction deformation, ScienceSoft developed a system of virtual sensors collecting information from several physical sensors. It allows users to monitor specific parameters which can be used only in the aggregate.',
     createdData: 'November 5, 2018',
-    partnerWebsite: '',
+    partnerWebsite: 'https://www.hbm.com/en/5530/structural-health-monitoring/',
   })
   await IoT.addCasestudy(iotC9.id)
   await SmartCities.addCasestudy(iotC9.id)
@@ -1893,7 +1930,7 @@ async function insertRealData() {
     title: 'Remote patient monitoring software',
     subTitle:
       'The development team optimized the measurement API server and decreased the load on the system by introducing the following features: aggregation of requests, grouping of data, NGINX server settings, optimization of queries and MySQL. The solution for remote software deployment to SNA devices enabled the distribution order of install, delete and update commands as per specifics of Android OS by building a queue of commands and sending them to the devices.',
-    banner: '',
+    banner: 'https://s15543.pcdn.co/wp-content/uploads/2020/01/galaxy_watch_active_healthcare_a.jpg',
     descriptiveText:
       'The Customer is a US-based provider of healthcare solutions with development centers in Israel and Belarus.',
     challengeTitle: 'Remote patient monitoring solution',
@@ -1903,7 +1940,7 @@ async function insertRealData() {
     solutionDescription:
       'The developers reviewed and analyzed available approaches and frameworks and picked WebRTC technology as the best one for platform-independent voice and video communication. Several Android-powered hardware devices were selected to implement central communication module or Sensor Network Appliances (SNAs). The development process was split into 2 major parts: the development of apps for Android and iOS devices and Web dashboard implementation. \n 1) HexTech’s team delivered apps for both patients and medical staff. Gradle flavors were used to build the apps’ variations fully compatible with different screen sizes: wide screen (for doctors), tablet (for nurses) and smartphone (for healthcare services consumers). Patients could smoothly access numerous sensors in order to monitor data and synchronize it with the server. Medical staff members could diagnose and treat patient remotely and receive automated alerts and notifications, when, for example patient state suddenly changes. \n 2) A Web Dashboard assisted medical professionals in monitoring the overall status of patients drilling down on personal medical data. It sent alerts on poor health indicators and maintains the doctor-patient connection. The central communication module was built upon a TV-connected Android-powered device. ',
     createdData: 'June 17, 2018',
-    partnerWebsite: '',
+    partnerWebsite: 'https://europe.medtronic.com/xd-en/index.html',
   })
   await IoT.addCasestudy(iotC10.id)
   await Healthcare.addCasestudy(iotC10.id)
@@ -1912,7 +1949,7 @@ async function insertRealData() {
     title: 'Image analysis software for automated optical inspections',
     subTitle:
       'HexTech’s team has successfully developed image analysis software for automated optical inspection of printed circuit assemblies. The application offers considerable opportunities for the SMT manufacturing industry, providing a fast and reliable solution for PCA quality control.',
-    banner: '',
+    banner: 'https://geospacemfg.com/wp-content/uploads/GS_Blog_April-1.jpg',
     descriptiveText:
       'HexTech has developed an application for the electronics industry aimed at ensuring the quality of printed circuit assemblies (PCAs) by means of machine vision.',
     challengeTitle: 'Faster and more efficient inspection',
@@ -1922,7 +1959,7 @@ async function insertRealData() {
     solutionDescription:
       'A team of a project manager, a business analyst, 3 senior С++ developers, a senior UI designer, and a software testing engineer have delivered a desktop application based on image analysis algorithms, complemented with a simple and intuitive GUI. In particular, ORB algorithm has been used for feature detection, and a combination of algorithms (perceptual hash algorithm, PSNR and histograms comparing) have been employed to compare regions of interest in the reference template and in the image under inspection. The user provides a reference board template, putting on all the elements to be inspected with a tool that allows marking objects of three main shapes: \n-Elements with a round cross-section (mainly capacitors) \n-Rectangular elements (chips, diodes, transistors) \n-Dumbbell-shaped elements (resistors) \n After preparing the reference template with all the elements located, the user can proceed to the analysis of printed circuit assemblies of the same type as the reference PCA. Comparing these images with the reference assembly, the application defines defected ones and shows the locations of missing components in detail.',
     createdData: 'April 17, 2018',
-    partnerWebsite: '',
+    partnerWebsite: 'https://geospacemfg.com/blog/3d-automated-optical-inspection/',
   })
   await IoT.addCasestudy(iotC11.id)
   await IndustrialManufacturing.addCasestudy(iotC11.id)
@@ -1931,7 +1968,7 @@ async function insertRealData() {
     title: 'Control Unit for Automotive Tier-I Supplier',
     subTitle:
       'We were able to successfully deliver a robust telematics solution within the desired timeframe.he customer was able to deliver the proof of concept (PoC) within 6 months. This helped them initiate demos with the OEMs and Suppliers earlier than expected.',
-    banner: '',
+    banner: 'Control Unit for Automotive Tier-I Supplier',
     descriptiveText:
       'Our customer is a leading Tier-I Supplier of Infotainment Systems, Head-up Display (HUD) Solutions, Digital Instrument Clusters and Battery Management Systems (BMS) for Electric Vehicles.',
     challengeTitle:
@@ -1942,7 +1979,7 @@ async function insertRealData() {
     solutionDescription:
       'Our more than a decade long expertise in the Automotive domain along with proven production grade Cloud-Telematics reference designs encouraged the customer to partner with us for this project. We leveraged our expertise in IoT Sensor Network design and Cloud Interface development, in order to enable the collection of data like speed, GPS location and more. This was facilitated with the help of MQTT protocol based communication interface. Our expertise in the automotive domain ensured that we achieve compliance with all the necessary standards while selecting components for hardware design. Additionally, we have leveraged our expertise in firmware, SPI, I2C and CAN protocols.',
     createdData: 'January 5, 2018',
-    partnerWebsite: '',
+    partnerWebsite: 'https://www.bosch-mobility-solutions.com/en/mobility-topics/connected-mobility/',
   })
   await IoT.addCasestudy(iotC12.id)
   await Automotive.addCasestudy(iotC12.id)
@@ -2177,6 +2214,119 @@ async function insertRealData() {
   ccC4.addTeammember(ccP4)
 
   /** END OF CLOUD COMPUTING TEAM MEMBER */
+
+  //**CUSTOMER EXPERIENCE TEAM MEMBER - isi */
+
+  const caP1 = await TeamMember.create({
+    occupation: 'Europe Tech Innovation',
+    teamsTitle: 'Customer Experience Departement',
+    personName: 'Joleen Green',
+    personPhoto:
+      'https://i.ibb.co/zb03Whq/Risorsa-1.png',
+  })
+  CustomerExperience.addTeammember(caP1)
+  ceC4.addTeammember(caP1)
+  ceC8.addTeammember(caP1)
+  ceC5.addTeammember(caP1)
+
+  const caP2 = await TeamMember.create({
+    occupation: 'Interactive Senior Designer',
+    teamsTitle: 'Customer Experience Departement',
+    personName: 'Koen Fidele',
+    personPhoto:
+      'https://images.unsplash.com/photo-1547037579-f0fc020ac3be?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80',
+  })
+  CustomerExperience.addTeammember(caP2)
+  ceC3.addTeammember(caP2)
+  ceC1.addTeammember(caP2)
+  ceC9.addTeammember(caP2)
+
+  const caP3 = await TeamMember.create({
+    occupation: 'Interactive Marketing Manager',
+    teamsTitle: 'Customer Experience Departement',
+    personName: 'Harry Bennett',
+    personPhoto:
+      'https://images.unsplash.com/photo-1567515004624-219c11d31f2e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80',
+  })
+  CustomerExperience.addTeammember(caP3)
+  ceC2.addTeammember(caP3)
+  ceC6.addTeammember(caP3)
+  ceC9.addTeammember(caP3)
+
+  const caP4 = await TeamMember.create({
+    occupation: 'Digital Project Senior Manager',
+    teamsTitle: 'Customer Experience Departement',
+    personName: 'Christine Todd',
+    personPhoto:
+      'https://i.ibb.co/S68RrCn/Risorsa-2.png',
+  })
+  CustomerExperience.addTeammember(caP4)
+  ceC3.addTeammember(caP4)
+  ceC5.addTeammember(caP4)
+  ceC6.addTeammember(caP4)
+
+  const caP5 = await TeamMember.create({
+    occupation: 'Product Experience Optimization Manager',
+    teamsTitle: 'Customer Experience Departement',
+    personName: 'Chalo Garcia',
+    personPhoto:
+      'https://i.ibb.co/HXtPtDL/Risorsa-3.png',
+  })
+  CustomerExperience.addTeammember(caP5)
+  ceC8.addTeammember(caP5)
+  ceC9.addTeammember(caP5)
+  ceC4.addTeammember(caP5)
+
+  const caP6 = await TeamMember.create({
+    occupation: 'Marketing Automation Consultant',
+    teamsTitle: 'Customer Experience Departement',
+    personName: 'Jorge Palos',
+    personPhoto:
+      'https://images.unsplash.com/photo-1569779213435-ba3167dde7cc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80',
+  })
+  CustomerExperience.addTeammember(caP6)
+  ceC1.addTeammember(caP6)
+  ceC2.addTeammember(caP6)
+  ceC7.addTeammember(caP6)
+
+  const caP7 = await TeamMember.create({
+    occupation: 'Media Programmatic Consultant',
+    teamsTitle: 'Customer Experience Departement',
+    personName: 'Martha Oasis',
+    personPhoto:
+      'https://images.unsplash.com/photo-1607990283143-e81e7a2c9349?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1925&q=80',
+  })
+  CustomerExperience.addTeammember(caP7)
+  ceC7.addTeammember(caP7)
+  ceC2.addTeammember(caP7)
+  ceC6.addTeammember(caP7)
+
+  const caP8 = await TeamMember.create({
+    occupation: 'Project Test Manager',
+    teamsTitle: 'Customer Experience Departement',
+    personName: 'Ivano Cajina',
+    personPhoto:
+      'https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1951&q=80',
+  })
+  CustomerExperience.addTeammember(caP8)
+  ceC1.addTeammember(caP8)
+  ceC3.addTeammember(caP8)
+  ceC7.addTeammember(caP8)
+
+  const caP9 = await TeamMember.create({
+    occupation: 'Digital Identity Functional Delivery',
+    teamsTitle: 'Customer Experience Departement',
+    personName: 'Summer Bush',
+    personPhoto:
+      'https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80',
+  })
+  CustomerExperience.addTeammember(caP9)
+  ceC8.addTeammember(caP9)
+  ceC5.addTeammember(caP9)
+  ceC4.addTeammember(caP9)
+  
+
+  /** END OF USTOMER EXPERIENCE TEAM MEMBER */
 
   //**BiG DATA ANALYTICS TEAM MEMBER */
 

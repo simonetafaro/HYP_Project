@@ -277,7 +277,10 @@
           class="menu-item-mobile"
         >
           <div v-if="item.name == 'Areas'" class="menu-item-mobile-dropdown">
-            <div class="left-side-mobile-menu">
+            <div
+              class="left-side-mobile-menu"
+              @click="openAreaDropdownMobile()"
+            >
               {{ item.name }}
             </div>
             <div

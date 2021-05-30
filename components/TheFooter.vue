@@ -1615,7 +1615,7 @@ a {
 
   .single-column:last-child {
     display: block;
-    margin-right: 31px;
+    margin-right: 0px;
     text-align: center;
     margin-left: auto;
   }

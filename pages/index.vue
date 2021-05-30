@@ -1080,6 +1080,7 @@ export default {
 .single-area-section {
   display: table;
   margin: auto;
+  scroll-margin-top: 70px;
 }
 .show-only-tablet-mobile {
   display: none;

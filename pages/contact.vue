@@ -700,7 +700,10 @@
           </div>
           <div class="contact-method-title">Email</div>
           <div class="contact-method-text">
-            info@dvant.com<br />contact@dvant.com
+            <a href="mailto:info@hextech.com">info@hextech.com</a><br /><a
+              href="mailto:contact@hextech.com"
+              >contact@hextech.com</a
+            >
           </div>
         </div>
         <div class="contact-method">
@@ -725,7 +728,10 @@
           </div>
           <div class="contact-method-title">Call</div>
           <div class="contact-method-text">
-            +00 123 456 78<br />+00 345 678 90
+            <a href="tel:+00 123 456 78">+00 123 456 78</a><br /><a
+              href="tel:+00 345 678 90"
+              >+00 345 678 90</a
+            >
           </div>
         </div>
       </div>
@@ -759,7 +765,10 @@
             <div class="location-city">Milano</div>
             <div class="location-office-num">FIRST OFFICE</div>
             <div class="contact-method-text">
-              231 Gotham Square -<br />89 GM Metropolis city
+              <a
+                href="http://maps.google.com/?q=1200 Pennsylvania Ave SE, Washington, District of Columbia, 20003"
+                >231 Gotham Square -<br />89 GM Metropolis city</a
+              >
             </div>
           </div>
         </div>
@@ -786,7 +795,10 @@
             <div class="location-city">Bilbao</div>
             <div class="location-office-num">SECOND OFFICE</div>
             <div class="contact-method-text">
-              231 Gotham Square -<br />89 GM Metropolis city
+              <a
+                href="http://maps.google.com/?q=1200 Pennsylvania Ave SE, Washington, District of Columbia, 20003"
+                >231 Gotham Square -<br />89 GM Metropolis city</a
+              >
             </div>
           </div>
         </div>
@@ -813,7 +825,10 @@
             <div class="location-city">London</div>
             <div class="location-office-num">THIRD OFFICE</div>
             <div class="contact-method-text">
-              231 Gotham Square -<br />89 GM Metropolis city
+              <a
+                href="http://maps.google.com/?q=1200 Pennsylvania Ave SE, Washington, District of Columbia, 20003"
+                >231 Gotham Square -<br />89 GM Metropolis city</a
+              >
             </div>
           </div>
         </div>
@@ -827,8 +842,16 @@
     </section>
     <space-divider></space-divider>
     <section class="contact-form-container">
+      <div class="message-feedback-container">
+        <div class="message-feedback"></div>
+        <div class="message-feedback-text">
+          Thank you for contatting us. <br />
+          We will reply you as soon as possible!
+        </div>
+      </div>
       <div class="left-column">
         <img
+          id="img-form"
           src="https://i.ibb.co/Fqvhj73/Contact-us-immagine.png"
           alt="Contact Us Image"
         />
@@ -838,9 +861,18 @@
         <div class="page-subtitle">
           FILL THE<br /><span class="page-subtitle-light">CONTACT FORM</span>
         </div>
-        <form class="contact-form" action="">
+        <form id="contact-us-form" class="contact-form" action="">
           <input type="text" placeholder="Name" required />
-          <input type="email" placeholder="Email" required />
+          <input
+            @focusout="valiadateEmail()"
+            v-model="emailValue"
+            type="email"
+            placeholder="Email"
+            required
+          />
+          <p v-if="validatedEmail">
+            Please insert a valid e-mail: name@example.com
+          </p>
           <input type="text" placeholder="Subject" required />
           <input
             class="message-box"
@@ -858,6 +890,12 @@
 <script>
 import SpaceDivider from '~/components/utils/SpaceDivider.vue'
 export default {
+  data() {
+    return {
+      validatedEmail: false,
+      emailValue: '',
+    }
+  },
   components: {
     SpaceDivider,
   },
@@ -866,10 +904,58 @@ export default {
       title: 'Company Name - Contact Us',
     }
   },
+  mounted() {
+    document
+      .getElementById('contact-us-form')
+      .addEventListener('submit', this.sendEmail)
+  },
+  methods: {
+    valiadateEmail() {
+      const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+      this.validatedEmail = !re.test(String(this.emailValue).toLowerCase())
+    },
+    sendEmail(event) {
+      event.preventDefault()
+      document.getElementsByClassName(
+        'message-feedback-container'
+      )[0].style.display = 'block'
+      setTimeout(function () {
+        document.getElementsByClassName(
+          'message-feedback-container'
+        )[0].style.display = 'none'
+        document.getElementById('contact-us-form').submit()
+      }, 3000)
+    },
+  },
 }
 </script>
 
 <style scoped>
+.message-feedback-container {
+  display: none;
+}
+.message-feedback {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  position: absolute;
+  text-align: center;
+  filter: blur(8px);
+  background: #e8e6ff;
+  opacity: 0.3;
+  -webkit-filter: blur(8px);
+  padding-top: 50px;
+}
+.message-feedback-text {
+  position: absolute;
+  top: 250px;
+  right: 0;
+  left: 0;
+  font-size: 55px;
+  color: #424272;
+  font-weight: 700;
+}
 .container {
   max-width: 100%;
   margin: 0;
@@ -1027,9 +1113,13 @@ export default {
   color: #424272;
   margin-bottom: 30px;
 }
+.location-info-wrapper > .contact-method-text {
+  text-decoration: underline;
+}
 .contact-form-container {
   max-width: 1110px;
   display: inline-flex;
+  position: relative;
 }
 .left-column {
   width: 50%;
@@ -1050,12 +1140,19 @@ export default {
   margin-top: 55px;
   display: block;
 }
+.contact-form > p {
+  margin-bottom: 20px;
+  padding-left: 20px;
+  color: var(--cc-red);
+  font-size: 16px;
+}
 .contact-form input {
   display: block;
   background: #f9f9ff;
   border: 1px solid #e8e6ff;
   border-radius: 35px;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
+  margin-top: 15px;
   padding: 25px 40px;
   width: 100%;
   height: 70px;
@@ -1064,6 +1161,12 @@ export default {
   font-size: 16px;
   line-height: 19px;
   color: #464a52;
+}
+.contact-form input:last-child {
+  margin-bottom: 0px;
+}
+.contact-form input:first-child {
+  margin-top: 0px;
 }
 .message-box {
   height: 180px !important;
@@ -1096,6 +1199,10 @@ export default {
 }
 
 @media screen and (max-width: 1200px) {
+  .message-feedback-text {
+    top: 200px;
+    font-size: 45px;
+  }
   .container {
     padding-bottom: 0;
   }
@@ -1172,6 +1279,10 @@ export default {
 }
 
 @media screen and (max-width: 768px) {
+  .message-feedback-text {
+    top: 150px;
+    font-size: 35px;
+  }
   .contact-header {
     padding-top: 88px;
     padding-bottom: 25px;
