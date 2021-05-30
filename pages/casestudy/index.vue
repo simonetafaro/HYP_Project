@@ -1094,14 +1094,45 @@
       <div class="container">
         <div class="inner-container">
           <div class="filter-bar">
-            <div class="filter active-filter" @click="findAllCaseStudy($event)">
+            <div class="filter-title" @click="DropdownArea()">
+              Filter by Area
+              <span v-if="selectedArea" class="area-name">{{
+                selectedArea
+              }}</span>
+              <svg
+                @click="DropdownArea()"
+                class="area-dropdown-arrow"
+                width="12"
+                height="8"
+                viewBox="0 0 12 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11.334 1.16699L6.0835 6.41748L0.833007 1.16699"
+                  stroke="#63639F"
+                  stroke-width="1.5"
+                />
+              </svg>
+            </div>
+            <div
+              id="Null"
+              class="filter active-filter"
+              @click="
+                findAllCaseStudy($event), DropdownArea(), (overlay = false)
+              "
+            >
               All
             </div>
             <div
               v-for="(area, areaIndex) of areas"
               :key="'area-' + areaIndex"
               class="filter"
-              @click="filterCaseStudyByArea($event, area.id)"
+              @click="
+                filterCaseStudyByArea($event, area.id),
+                  DropdownArea(),
+                  (overlay = false)
+              "
             >
               {{ area.title }}
             </div>
@@ -1145,6 +1176,14 @@ export default {
       areas,
     }
   },
+
+  data() {
+    return {
+      selectedArea: null,
+      overlay: false,
+      areaMenuHidden: true,
+    }
+  },
   mixins: [GoToMixins],
   methods: {
     async filterCaseStudyByArea(e, areaID) {
@@ -1157,6 +1196,10 @@ export default {
       })
       const element = e.target
       element.classList.add('active-filter')
+      this.selectedArea = await this.$axios.$get(
+        `${process.env.BASE_URL}/api/area/${areaID}`
+      )
+      this.selectedArea = this.selectedArea.title
     },
     async findAllCaseStudy(e) {
       this.casestudies = await this.$axios.$get(
@@ -1168,11 +1211,37 @@ export default {
       })
       const element = e.target
       element.classList.add('active-filter')
+      this.selectedArea = null
     },
     getCaseStudyByArea(areaID) {
       return this.casestudies.filter((casestudy) => {
         return casestudy.areaID === areaID
       })
+    },
+
+    DropdownArea() {
+      const width =
+        window.innerWidth ||
+        document.documentElement.clientWidth ||
+        document.body.clientWidth
+      console.log(width)
+      if (width < 1200) {
+        const areaFilters = document.getElementsByClassName('filter')
+        const areaArrow = document.getElementsByClassName('area-dropdown-arrow')
+        if (this.areaMenuHidden) {
+          for (let i = 0; i < areaFilters.length; i++) {
+            areaFilters[i].style.display = 'list-item'
+          }
+          areaArrow[0].style.transform = 'initial'
+          this.areaMenuHidden = false
+        } else {
+          for (let i = 0; i < areaFilters.length; i++) {
+            areaFilters[i].style.display = 'none'
+          }
+          areaArrow[0].style.transform = 'rotate(-90deg)'
+          this.areaMenuHidden = true
+        }
+      }
     },
   },
   mounted() {
@@ -1341,7 +1410,7 @@ export default {
     text-align: center;
   }
   .filter-bar {
-    padding-bottom: 35px;
+    margin-bottom: 35px;
   }
   .filter {
     font-size: 12px;
@@ -1368,6 +1437,58 @@ export default {
     margin-right: 92px;
     margin-left: 92px;
   }
+
+  .filter-bar {
+    cursor: pointer;
+    width: 100%;
+    max-width: 100%;
+    min-height: 49px;
+    margin-top: 50px;
+    background: #fbfbff;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 50px;
+    display: inline-block;
+    z-index: 1;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    list-style: none;
+  }
+
+  .filter-bar:first-child {
+    border-top: solid 1px rgb(209, 207, 207);
+  }
+
+  .area-dropdown-arrow {
+    display: initial;
+    margin-left: 10px;
+    transform: rotate(-90deg);
+  }
+
+  .area-name {
+    min-width: max-content;
+    margin-left: 15px;
+    color: orchid;
+  }
+
+  .filter-title {
+    display: list-item;
+    margin: auto;
+    width: fit-content;
+    font-style: normal;
+    font-weight: 600;
+    height: 49px;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    padding: 15px;
+  }
+
+  .filter {
+    min-width: 160px;
+    padding: 12px 16px;
+    display: none;
+    margin-right: 0;
+  }
 }
 @media screen and (max-width: 768px) {
   .intro-text {
@@ -1391,9 +1512,6 @@ export default {
     line-height: 14px;
     padding: 0px 8%;
   }
-  .filter-bar {
-    display: none;
-  }
   .casestudies-grid {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 12px;
@@ -1401,6 +1519,44 @@ export default {
   .container_description {
     padding-bottom: 0px;
     width: 100%;
+  }
+
+  .filter-bar {
+    cursor: pointer;
+    max-width: 100%;
+    min-height: 49px;
+    margin-top: 50px;
+    padding: 15px;
+    background: #fbfbff;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 50px;
+    z-index: 1;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    list-style: none;
+  }
+
+  .area-dropdown-arrow {
+    display: initial;
+    transform: rotate(-90deg);
+  }
+
+  .filter-title {
+    display: initial;
+    min-width: 160px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    margin: 15px;
+  }
+
+  .filter {
+    min-width: 160px;
+    padding: 12px 16px;
+    display: none;
+    margin-right: 0;
   }
 }
 </style>

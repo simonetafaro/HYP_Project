@@ -1458,6 +1458,7 @@ h4 {
 
   .filter-bar {
     cursor: pointer;
+    width: 100%;
     max-width: 100%;
     min-height: 49px;
     margin-top: 50px;
@@ -1603,7 +1604,6 @@ h4 {
 
   .member-grid {
     width: 282px;
-    grid-template-columns: unset;
     grid-gap: 25px;
     margin: auto;
     margin-top: 50px;
