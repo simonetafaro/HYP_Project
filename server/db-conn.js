@@ -1015,11 +1015,11 @@ async function insertRealData() {
 
   //**END OF CLOUD COMPUTING SERVICES */
 
-  //**CUSTOMER EXPERIENCE SERVICES */
+  //**CUSTOMER EXPERIENCE SERVICES - isi*/
 
   //1
   const Immersive = await Service.create({
-    title: 'Immersive Technologies',
+    title: 'Immersive Tech',
     subTitle:
       'Learn how immersive technology can increase revenue and streamline the event planning process.',
     description:
@@ -1028,23 +1028,24 @@ async function insertRealData() {
       'https://images.unsplash.com/photo-1502185372788-6ff455aa92ff?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80',
     serviceDescription:
       'We help brands tell stories and craft experiences in innovative and immersive ways, opening up new kinds of interaction, new ways to work and learn, and new revenue streams. It’s an emerging space for all to play in. Let us help you take a lead in next-generation experience.',
-    //detailTitle1: 'Spatial storytelling',
-    //detailDescription1: 'Designing 360o story worlds, including non-linear narrative and character development.',
-    //detailTitle2: 'Experiential marketing',
-    //detailDescription2: 'Creating interactive brand engagement through immersive content, shared experiences and location-based activations.',
-    //detailTitle3: 'Immersive Commerce',
-    //detailDescription3: 'Bringing products to life in 3D through digital twin models, augmenting the commerce experience with virtual ways to shop and buy.',
-    //detailTitle4: 'Immersive Learning and Training',
-    //detailDescription4: 'Building new ways to process information, master skills and improve performance through virtually simulated environments and situations.',
+    s1Name: 'Spatial storytelling',
+    s1Description: 'Designing 360o story worlds, including non linear narrative and character development.',
+    s1Logo: 'https://i.ibb.co/Rczq8Pv/sol-1.png',
+    s2Name: 'Experiential marketing',
+    s2Description: 'Creating interactive brand engagement through immersive content.',
+    s2Logo: 'https://i.ibb.co/KwskLjv/sol-2.png',
+    s3Name: 'Immersive Commerce',
+    s3Description: 'Bringing products to life in 3D through digital twin models, augmenting the experience.',
+    s3Logo: 'https://i.ibb.co/b77D3Fm/sol-3.png',
     partnerTitle: 'Alliances and partners',
     partnerDescription:
       'At HexTech, together with our Partners, we are re-imagining the business Deliver with unforgettable customer experiences',
     p1Name: 'Adobe',
-    p1Logo: '',
-    p2Name: '',
-    p2Logo: '',
-    p3Name: '',
-    p3Logo: '',
+    p1Logo: 'https://i.ibb.co/sw4Rx4M/adobe.png',
+    p2Name: 'Figma',
+    p2Logo: 'https://i.ibb.co/vjqPph0/figma.png',
+    p3Name: 'Sketch',
+    p3Logo: 'https://i.ibb.co/QdHXCx7/sketch-01.png',
   })
   await CustomerExperience.addService(Immersive.id)
 
@@ -1055,30 +1056,31 @@ async function insertRealData() {
       'Leading creative, business analysis, and advanced technology in user research',
     description:
       'Design a new way to communicate. User interface (or UI) design has grown substantially over the past few years, and has blossomed into one of the most creative, innovative and exciting fields in tech. Our service it is here to help you to create a brand new costumer’s experiences with the latest trend of user interfaces. An interface is the link between the corporate and the user, it must respond to customers’ new, often unmet and frequently changing needs and enable them to achieve their desired outcomes.',
-    banner:
-      'https://images.unsplash.com/photo-1618788372246-79faff0c3742?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=882&q=80',
-    serviceDescription:
-      'User interface elements are the parts we use to build interactive websites or apps. They provide touchpoints for the user as they navigate their way around; from buttons to scrollbars, to menu items and checkboxes. Every single detail matter!',
-    //detailTitle1: 'Design accessibility',
-    //detailDescription1: 'We can not fogot the crucial role of accessibility and inclusion. From designing a suite of UI elements, such as buttons, icons, and scrollbars, choosing colors and typefaces, to regularly testing their designs through prototyping, UI designers carefully weigh up what each design choice means for the end user.',
-    //detailTitle2: 'Trustwothy apps',
-    //detailDescription2: 'We know that users like to feel in control of themselves and their environment. With our help your interface to avoid having unplanned interactions, confusing pathways, and surprising outcomes, giving the customers insight into what to expect at every turn.',
-    //detailTitle3: '',
-    //detailDescription3: '',
+    banner: 'https://images.unsplash.com/photo-1618788372246-79faff0c3742?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=882&q=80',
+    serviceDescription: 'User interface elements are the parts we use to build interactive websites or apps. They provide touchpoints for the user as they navigate their way around; from buttons to scrollbars, to menu items and checkboxes. Every single detail matter!',
+    s1Name: 'Trustworthy apps',
+    s1Description: 'Avoiding unplanned interactions, giving the customers insight into what to expect.',
+    s1Logo: 'https://i.ibb.co/Rczq8Pv/sol-1.png',
+    s2Name: 'Design accessibility',
+    s2Description: 'Keep in mind accessibility and inclusion. Every design choice matters for us.',
+    s2Logo: 'https://i.ibb.co/KwskLjv/sol-2.png',
+    s3Name: 'Endlessly adaptivity',
+    s3Description: 'An optimized model to deliver insights and facilitate decision-making.',
+    s3Logo: 'https://i.ibb.co/b77D3Fm/sol-3.png',
     partnerTitle: 'Alliances and partners',
     partnerDescription:
       'We use the latest services in terms of technological design, we refer to the best partners and create with softwares that allows us to achieve extremely intuitive layouts for ours ideas.',
     p1Name: 'Adobe',
-    p1Logo: '',
+    p1Logo: 'https://i.ibb.co/sw4Rx4M/adobe.png',
     p2Name: 'Figma',
-    p2Logo: '',
+    p2Logo: 'https://i.ibb.co/vjqPph0/figma.png',
     p3Name: 'Sketch',
-    p3Logo: '',
+    p3Logo: 'https://i.ibb.co/QdHXCx7/sketch-01.png',
   })
   await CustomerExperience.addService(UserInterfaces.id)
 
   //3
-  const DigitalCustomer = await Service.create({
+  const CEE = await Service.create({
     title: 'Customer Experience Engine',
     subTitle:
       'Your customers are always connected. Shouldn’t their experiences be too?',
@@ -1088,50 +1090,52 @@ async function insertRealData() {
       'https://images.unsplash.com/photo-1556745753-b2904692b3cd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1866&q=80',
     serviceDescription:
       'Our experience-led approach helps ensure that organizations have the right experience architecture to allow customers to create their own journey on their own terms. We view technology as the enabler of the customer experience, not the driver.',
+    s1Name: 'Single view',
+    s1Description:'A business that is interacting with customers to drive connected experiences.',
+    s1Logo: 'https://i.ibb.co/Rczq8Pv/sol-1.png',
+    s2Name: 'Seamless plug and play',
+    s2Description: 'CXE solves the technology impediment to allow organizations to focus on impact.',
+    s2Logo: 'https://i.ibb.co/KwskLjv/sol-2.png',
+    s3Name: 'Omnichannel power',
+    s3Description: 'CXE unifies your applications across marketing, turning touchpoints into a story.',
+    s3Logo: 'https://i.ibb.co/b77D3Fm/sol-3.png',
     partnerTitle: 'Alliances and partners',
     partnerDescription:
       'The Customer Experience Engine turns touchpoints into a story: unify the moments. Own the experience. Together with the best Partners we are going to achieve this.',
-    //detailTitle1: 'Single view of the customer',
-    //detailDescription1: 'Lines of business and stakeholder groups have the visibility into how the business is interacting with customers to drive connected experiences.',
-    //detailTitle2: 'Seamless plug and play with the latest tech',
-    //detailDescription2: 'CXE solves the technology impediment to allow organizations to focus on delivering unforgettable and impactful experiences.',
-    //detailTitle3: 'Omnichannel power across platforms',
-    //detailDescription3: 'CXE unifies your applications across marketing, commerce, sales and service, turning touchpoints into a story.',
-    p1Name: '',
-    p1Logo: '',
-    p2Name: '',
-    p2Logo: '',
-    p3Name: '',
-    p3Logo: '',
+    p1Name: 'Adobe',
+    p1Logo: 'https://i.ibb.co/sw4Rx4M/adobe.png',
+    p2Name: 'Figma',
+    p2Logo: 'https://i.ibb.co/vjqPph0/figma.png',
+    p3Name: 'Sketch',
+    p3Logo: 'https://i.ibb.co/QdHXCx7/sketch-01.png',
   })
-  await CustomerExperience.addService(DigitalCustomer.id)
+  await CustomerExperience.addService(CEE.id)
 
   //4
   const Campaign = await Service.create({
     title: 'Campaign Management',
-    subTitle:
-      'Communicate marketing messages at speed and scale to acquire and retain customers, driving sustainable growth.',
-    description:
-      'We all know communication is critical, but knowing what to say and when to say it—and whom to say it to—can make or break the message. That is why Accenture Interactive Marketing Engagement Services team specializes in solutions to help clients understand their customers, define the experience, and deliver relevant, compelling messages. We understand the new digital landscape and evolving customer expectations. Connections need to be made throughout the customer journey, constantly and across channels. "Always-on" campaigns are designed to capture attention and amplify demand, leads and revenue generation.',
-    banner:
-      'https://images.unsplash.com/photo-1552664730-d307ca884978?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80',
-    serviceDescription:
-      'We design and build creative campaigns that target customers with the right message to drive engagement. Our insights into new and evolving digital technologies mean we understand how to deliver personalized messages at the right time, helping acquire new customers, grow wallet share with existing customers, and retain the most profitable customers.',
+    subTitle: 'Communicate marketing messages at speed and scale to acquire and retain customers, driving sustainable growth.',
+    description: 'We all know communication is critical, but knowing what to say and when to say it—and whom to say it to—can make or break the message. That is why Accenture Interactive Marketing Engagement Services team specializes in solutions to help clients understand their customers, define the experience, and deliver relevant, compelling messages. We understand the new digital landscape and evolving customer expectations. Connections need to be made throughout the customer journey, constantly and across channels. "Always-on" campaigns are designed to capture attention and amplify demand, leads and revenue generation.',
+    banner: 'https://images.unsplash.com/photo-1552664730-d307ca884978?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80',
+    serviceDescription: 'We design and build creative campaigns that target customers with the right message to drive engagement. Our insights into new and evolving digital technologies mean we understand how to deliver personalized messages at the right time, helping acquire new customers, grow wallet share with existing customers, and retain the most profitable customers.',
+    s1Name: 'Campaign planning',
+    s1Description: 'Create a consistent experience throughout the customer journey.',
+    s1Logo: 'https://i.ibb.co/Rczq8Pv/sol-1.png',
+    s2Name: 'Management and optimization',
+    s2Description: 'Enable a campaign management solution with digital marketing ecosystem.',
+    s2Logo: 'https://i.ibb.co/KwskLjv/sol-2.png',
+    s3Name: 'Lead generation',
+    s3Description: 'Fuel your funnel by driving demand from qualified leads.',
+    s3Logo: 'https://i.ibb.co/b77D3Fm/sol-3.png',
     partnerTitle: 'Alliances and partners',
     partnerDescription:
       'How to deliver the right message at the right time? With the best Partners our company will grant you success.',
-    //detailTitle1: 'Campaign planning',
-    //detailDescription1: 'Create a consistent experience throughout the customer journey and across the channels.',
-    //detailTitle2: 'Campaign management and optimization',
-    //detailDescription2: 'Enable a high-performing campaign management solution that utilizes the capabilities of the new digital marketing ecosystem.',
-    //detailTitle3: 'Lead generation',
-    //detailDescription3: 'Fuel your funnel by driving demand from qualified leads.',
-    p1Name: '',
-    p1Logo: '',
-    p2Name: '',
-    p2Logo: '',
-    p3Name: '',
-    p3Logo: '',
+    p1Name: 'Adobe',
+    p1Logo: 'https://i.ibb.co/sw4Rx4M/adobe.png',
+    p2Name: 'Figma',
+    p2Logo: 'https://i.ibb.co/vjqPph0/figma.png',
+    p3Name: 'Sketch',
+    p3Logo: 'https://i.ibb.co/QdHXCx7/sketch-01.png',
   })
   await CustomerExperience.addService(Campaign.id)
 
@@ -1146,21 +1150,24 @@ async function insertRealData() {
       'https://images.unsplash.com/photo-1519558260268-cde7e03a0152?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80',
     serviceDescription:
       'With our range of pre-built AI modules and ecosystem of technology partners, we are able to quickly scale hyper-personalized experiences to help clients anticipate and address their customers needs.',
-    //detailTitle1: 'Patented conversational AI platform',
-    //detailDescription1: 'Rapidly design and execute automated conversations, compatible with any existing technology partner.',
-    //detailTitle2: 'Intent discovery and analytics',
-    //detailDescription2: 'Apply a data-driven approach to identify and prioritize customer intents for automation.',
-    //detailTitle3: 'Customer and journey analytics',
-    //detailDescription3: 'Responsibly establish a strong foundation of customer and journey data to generate insights around specific business inefficiencies that unlock value.',
+    s1Name: 'Patented conversational AI',
+    s1Description: 'Rapidly design and execute automated conversations, compatible with technology.',
+    s1Logo: 'https://i.ibb.co/Rczq8Pv/sol-1.png',
+    s2Name: 'Intent discovery and analytics',
+    s2Description: 'Apply a data-driven approach to identify customer intents for automation.',
+    s2Logo: 'https://i.ibb.co/KwskLjv/sol-2.png',
+    s3Name:  'Customer and journey analytics',
+    s3Description:  'Responsibly establish a strong foundation to generate insights that unlock value.',
+    s3Logo: 'https://i.ibb.co/b77D3Fm/sol-3.png',
     partnerTitle: 'Alliances and partners',
     partnerDescription:
       'HexTech, with the best Partners, will make your customers to have higher expectations than ever before. They crave a consistent experience no matter the time or channel.',
-    p1Name: '',
-    p1Logo: '',
-    p2Name: '',
-    p2Logo: '',
-    p3Name: '',
-    p3Logo: '',
+    p1Name: 'Adobe',
+    p1Logo: 'https://i.ibb.co/sw4Rx4M/adobe.png',
+    p2Name: 'Figma',
+    p2Logo: 'https://i.ibb.co/vjqPph0/figma.png',
+    p3Name: 'Sketch',
+    p3Logo: 'https://i.ibb.co/QdHXCx7/sketch-01.png',
   })
   await CustomerExperience.addService(AICustomer.id)
 
@@ -1175,21 +1182,24 @@ async function insertRealData() {
       'https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=993&q=80',
     serviceDescription:
       'What does it mean to build a brand? We take it from the ground up—from strategy and content to activation.',
-    //detailTitle1: 'Intent discovery and analytics',
-    //detailDescription1: 'We deliver strategy for new client brands and develop creative assets and identities.',
-    //detailTitle2: 'Content strategy and activation';
-    //detailDescription2: 'We develop creative content across channels to drive consumer experiences.',
-    //detailTitle3: 'Omnichannel strategy and activation';
-    //detailDescription3: 'We activate and optimize programs that deliver high engagement and return on investment.',
+    s1Name:'Intent discovery and analytics',
+    s1Description: 'We deliver strategy for new client brands and develop creative assets and identities.',
+    s1Logo: 'https://i.ibb.co/Rczq8Pv/sol-1.png',
+    s2Name: 'Content activation',
+    s2Description: 'We develop creative content across channels to drive consumer experiences.',
+    s2Logo: 'https://i.ibb.co/KwskLjv/sol-2.png',
+    s3Name: 'Omnichannel strategy',
+    s3Description: 'We activate and optimize programs that deliver high engagement and investment.',
+    s3Logo: 'https://i.ibb.co/b77D3Fm/sol-3.png',
     partnerTitle: 'Alliances and partners',
     partnerDescription:
       'With HexTech and its best Partners, you will delight your customers with relevant, elegant, and intuitive experiences.',
-    p1Name: '',
-    p1Logo: '',
-    p2Name: '',
-    p2Logo: '',
-    p3Name: '',
-    p3Logo: '',
+    p1Name: 'Adobe',
+    p1Logo: 'https://i.ibb.co/sw4Rx4M/adobe.png',
+    p2Name: 'Figma',
+    p2Logo: 'https://i.ibb.co/vjqPph0/figma.png',
+    p3Name: 'Sketch',
+    p3Logo: 'https://i.ibb.co/QdHXCx7/sketch-01.png',
   })
   await CustomerExperience.addService(CreativeMarketingServices.id)
 
@@ -1521,7 +1531,7 @@ async function insertRealData() {
   await LiveECommerce.addCasestudy(ccC4.id)
   //**END OF CLOUD COMPUTING CASE STUDIES */
 
-  //**CUSTOMER EXPERIENCE CASE STUDIES */
+  //**CUSTOMER EXPERIENCE CASE STUDIES - isi*/
   //1
   const ceC1 = await CaseStudy.create({
     title: 'Reimagining guest experiences on the high seas',
@@ -1540,9 +1550,12 @@ async function insertRealData() {
     solutionDescription:
       'Each guest receives a free Medallion. The light, quarter-sized disc enables frictionless payment, keyless stateroom access, accelerated embarkation and much more.',
     createdData: 'March 17, 2021',
-    partnerWebsite: '',
+    partnerWebsite: 'https://www.illy.com/',
   })
   await CustomerExperience.addCasestudy(ceC1.id)
+  await CreativeMarketingServices.addCasestudy(ceC1.id)
+  await AICustomer.addCasestudy(ceC1.id)
+  await UserInterfaces.addCasestudy(ceC1.id)
 
   //2
   const ceC2 = await CaseStudy.create({
@@ -1564,6 +1577,9 @@ async function insertRealData() {
     partnerWebsite: '',
   })
   await CustomerExperience.addCasestudy(ceC2.id)
+  await Campaign.addCasestudy(ceC2.id)
+  await CreativeMarketingServices.addCasestudy(ceC2.id)
+  await CEE.addCasestudy(ceC2.id)
 
   //3
   const ceC3 = await CaseStudy.create({
@@ -1583,9 +1599,12 @@ async function insertRealData() {
     solutionDescription:
       'Using our deep experience of both organizational design and personalization, we helped Subway devise a completely new recipe for success – an operating model that would continuously optimize customer experiences through a dedication to scientific experimentation Leveraging the technologies of Adobe Analytics and Target, the new model enables Subway to run vast numbers of user experience tests across digital channels – everything from changing the color of a single button to revising homepage promotional messaging – and see the results instantly. That’s providing statistically meaningful insights into how design changes affect customer behavior – and company revenue.',
     createdData: 'December 25, 2020',
-    partnerWebsite: '',
+    partnerWebsite: 'https://www.subway.com/',
   })
   await CustomerExperience.addCasestudy(ceC3.id)
+  await Campaign.addCasestudy(ceC3.id)
+  await CEE.addCasestudy(ceC3.id)
+  await UserInterfaces.addCasestudy(ceC3.id)
 
   //4
   const ceC4 = await CaseStudy.create({
@@ -1605,9 +1624,12 @@ async function insertRealData() {
     solutionDescription:
       'Working with us, Dutch Flowers kicked things off by leveraging design thinking and agile delivery methods, like user research and story mapping, to determine how the ideal customer journey would look as they peruse and purchase flowers online. Together, we developed a minimal viable product (MVP) based on the latest SAP Commerce Cloud Version 2.',
     createdData: 'November 7, 2020',
-    partnerWebsite: '',
+    partnerWebsite: 'https://dfg.nl/en/',
   })
   await CustomerExperience.addCasestudy(ceC4.id)
+  await Campaign.addCasestudy(ceC4.id)
+  await CreativeMarketingServices.addCasestudy(ceC4.id)
+  await Immersive.addCasestudy(ceC4.id)
 
   //5
   const ceC5 = await CaseStudy.create({
@@ -1617,18 +1639,21 @@ async function insertRealData() {
     banner:
       'https://images.unsplash.com/photo-1515165244752-2465b61f0441?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1889&q=80',
     descriptiveText:
-      'If you have ever wondered what’s behind the happy customers and packed stores it’s several factors including a focus on personalization, innovation and a loyalty program that is so good that it has 25 million members. All of these factors and several more make LoveMakeup one of the most successful beauty retailers in the world.',
+      'If you have ever wondered what’s behind the happy customers and packed stores it’s several factors including a focus on personalization, innovation and a loyalty program that is so good that it has 25 million members. All of these factors and several more make Sephora one of the most successful beauty retailers in the world.',
     challengeTitle: 'Our challenge - Every customer has to be unique',
     challengeDescription:
       'The beauty industry as a whole faces a multitude of problems mainly around transparency, accuracy and trust of products. For these reasons, online shopping poses key challenges in purchasing beauty products while retail stores pose their own challenge in having the capabilities and manpower to assist every customer in finding the right products.',
     solutionTitle:
       'The solution we provided - Personalization at the next level',
     solutionDescription:
-      'Customers are increasingly demanding customization as part of their shopping experience, especially if they’re shelling out for luxuries like makeup. Whether it’s primer for oily skin or moisturizer for dry, LoveMakeup recognizes that their customers require a unique and personalized approach, and they offer this through in-store swatch samplings and makeup demonstrations that allow shoppers to test different brands to be sure they’re buying the right product at the right place. But LoveMakeup doesn’t stop there: their personalized shopping experience extends to the web, which has been a major key to their success in keeping customers loyal to their brand.',
+      'Customers are increasingly demanding customization as part of their shopping experience, especially if they’re shelling out for luxuries like makeup. Whether it’s primer for oily skin or moisturizer for dry, Sephora recognizes that their customers require a unique and personalized approach, and they offer this through in-store swatch samplings and makeup demonstrations that allow shoppers to test different brands to be sure they’re buying the right product at the right place. But Sephora doesn’t stop there: their personalized shopping experience extends to the web, which has been a major key to their success in keeping customers loyal to their brand.',
     createdData: 'August 28, 2020',
-    partnerWebsite: '',
+    partnerWebsite: 'https://www.sephora.com/',
   })
   await CustomerExperience.addCasestudy(ceC5.id)
+  await AICustomer.addCasestudy(ceC5.id)
+  await Campaign.addCasestudy(ceC5.id)
+  await UserInterfaces.addCasestudy(ceC5.id)
 
   //6
   const ceC6 = await CaseStudy.create({
@@ -1646,24 +1671,30 @@ async function insertRealData() {
     solutionDescription:
       'The app we designed for Disney contains most of the information on the website but it’s not just the website shoved into app-form. It’s laid out well and even has GPS-enabled walking directions between attractions. I can easily find park hours, showtimes, wait times for rides, and order food so you don’t need to wait in line anymore. All of the tickets, dining reservations, and photos are in the app, along with a personalized schedule that I can create to make sure I don’t miss the biggest rides and attractions.',
     createdData: 'July 17, 2020',
-    partnerWebsite: '',
+    partnerWebsite: 'https://www.disneyworld.eu/',
   })
   await CustomerExperience.addCasestudy(ceC6.id)
+  await CreativeMarketingServices.addCasestudy(ceC6.id)
+  await Immersive.addCasestudy(ceC6.id)
+  await CEE.addCasestudy(ceC6.id)
 
   //7
   const ceC7 = await CaseStudy.create({
     title: 'Bringing clothing to life directly in-store',
     subTitle: 'How Zara is now leading the mid-market tech fashion pack.',
     banner: 'https://www.mind-mag.com/wp-content/uploads/2018/04/IMG2645.jpg',
-    descriptiveText: '',
-    challengeTitle: 'Our challenge - ',
-    challengeDescription: '',
-    solutionTitle: 'The solution we provided - ',
-    solutionDescription: '',
+    descriptiveText: 'Zara is one of the world’s most successful fashion retail brands, if not the most successful. Not only is Zara a clear leader in the fashion industry, but is also a large tech firm. The key of Zara’s success is that its business model leans heavily on technological innovation and customer experience.',
+    challengeTitle: 'Our challenge - Finding an engaging technology ',
+    challengeDescription: 'In essence, thanks to a pioneering technological strategy, Zara holds the title for market leader. By adopting new tools including big data, augmented reality and artificial intelligence, the Spanish clothing retailer has managed to outpace its direct competitors. Zara ask Hextech to design a unique high quality and innovative customer experience, involving AR. Zara is looking at for a means of enhancing the in-store experience, trialing this on a meaningful scale',
+    solutionTitle: 'The solution we provided - Augmented reality ',
+    solutionDescription: 'By pointing cameras at sensors installed in windows, users of the app can see virtual fashion models strutting their stuff. Other AR imagery includes mannequins moving around and showcasing the brand’s new Studio Collection. Once users have lived the experience, there is also the option to buy the featured clothes directly through the app by simply clicking on “shop the look” button or in the store itself. This is a great solution to attract millennial shoppers to its brick and mortar store locations.',
     createdData: 'April 7, 2020',
-    partnerWebsite: '',
+    partnerWebsite: 'https://www.zara.com/', 
   })
   await CustomerExperience.addCasestudy(ceC7.id)
+  await Campaign.addCasestudy(ceC7.id)
+  await Immersive.addCasestudy(ceC7.id)
+  await CreativeMarketingServices.addCasestudy(ceC7.id)
 
   //8
   const ceC8 = await CaseStudy.create({
@@ -1683,9 +1714,12 @@ async function insertRealData() {
     solutionDescription:
       'We developed a unique system that allows to enter the store with the Amazon Go app open on your phone, fill your shopping bags with whatever you want, and then leave the store. Amazon Go stores use cameras and sensors to know what’s been taken off the shelves, so items can be charged to your credit card, which is stored in the Amazon Go app. No cashiers, no long lines, no paper receipts. Amazon Go showcases the convergence of technology and traditional retail shopping in a convenience store format.',
     createdData: 'March 27, 2019',
-    partnerWebsite: '',
+    partnerWebsite: 'https://www.amazon.com/b?ie=UTF8&node=16008589011',
   })
   await CustomerExperience.addCasestudy(ceC8.id)
+  await AICustomer.addCasestudy(ceC8.id)
+  await Campaign.addCasestudy(ceC8.id)
+  await UserInterfaces.addCasestudy(ceC8.id)
 
   //9
   const ceC9 = await CaseStudy.create({
@@ -1703,9 +1737,12 @@ async function insertRealData() {
     solutionDescription:
       'We wanted to start from store design, or brand localization. This is just one of the creative ways Starbucks can connects with its customers, integrating local aesthetics into each of its stores. The company’s design studios are strategically located so that designers can better understand their communities. Furthermore, we developed the "tech-side", creating an Amazon Alexa platform and the My Starbucks Barista chatbot debuted, letting users order their favorite coffees using simple voice commands.',
     createdData: 'January 17, 2019',
-    partnerWebsite: '',
+    partnerWebsite: 'https://www.starbucks.com/',
   })
   await CustomerExperience.addCasestudy(ceC9.id)
+  await UserInterfaces.addCasestudy(ceC9.id)
+  await Immersive.addCasestudy(ceC9.id)
+  await Campaign.addCasestudy(ceC9.id)
 
   //**END OF CUSTOMER EXPERIENCE CASE STUDIES */
 
@@ -2177,6 +2214,119 @@ async function insertRealData() {
   ccC4.addTeammember(ccP4)
 
   /** END OF CLOUD COMPUTING TEAM MEMBER */
+
+  //**CUSTOMER EXPERIENCE TEAM MEMBER - isi */
+
+  const caP1 = await TeamMember.create({
+    occupation: 'Europe Tech Innovation',
+    teamsTitle: 'Customer Experience Departement',
+    personName: 'Joleen Green',
+    personPhoto:
+      'https://i.ibb.co/zb03Whq/Risorsa-1.png',
+  })
+  CustomerExperience.addTeammember(caP1)
+  ceC4.addTeammember(caP1)
+  ceC8.addTeammember(caP1)
+  ceC5.addTeammember(caP1)
+
+  const caP2 = await TeamMember.create({
+    occupation: 'Interactive Senior Designer',
+    teamsTitle: 'Customer Experience Departement',
+    personName: 'Koen Fidele',
+    personPhoto:
+      'https://images.unsplash.com/photo-1547037579-f0fc020ac3be?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80',
+  })
+  CustomerExperience.addTeammember(caP2)
+  ceC3.addTeammember(caP2)
+  ceC1.addTeammember(caP2)
+  ceC9.addTeammember(caP2)
+
+  const caP3 = await TeamMember.create({
+    occupation: 'Interactive Marketing Manager',
+    teamsTitle: 'Customer Experience Departement',
+    personName: 'Harry Bennett',
+    personPhoto:
+      'https://images.unsplash.com/photo-1567515004624-219c11d31f2e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80',
+  })
+  CustomerExperience.addTeammember(caP3)
+  ceC2.addTeammember(caP3)
+  ceC6.addTeammember(caP3)
+  ceC9.addTeammember(caP3)
+
+  const caP4 = await TeamMember.create({
+    occupation: 'Digital Project Senior Manager',
+    teamsTitle: 'Customer Experience Departement',
+    personName: 'Christine Todd',
+    personPhoto:
+      'https://i.ibb.co/S68RrCn/Risorsa-2.png',
+  })
+  CustomerExperience.addTeammember(caP4)
+  ceC3.addTeammember(caP4)
+  ceC5.addTeammember(caP4)
+  ceC6.addTeammember(caP4)
+
+  const caP5 = await TeamMember.create({
+    occupation: 'Product Experience Optimization Manager',
+    teamsTitle: 'Customer Experience Departement',
+    personName: 'Chalo Garcia',
+    personPhoto:
+      'https://i.ibb.co/HXtPtDL/Risorsa-3.png',
+  })
+  CustomerExperience.addTeammember(caP5)
+  ceC8.addTeammember(caP5)
+  ceC9.addTeammember(caP5)
+  ceC4.addTeammember(caP5)
+
+  const caP6 = await TeamMember.create({
+    occupation: 'Marketing Automation Consultant',
+    teamsTitle: 'Customer Experience Departement',
+    personName: 'Jorge Palos',
+    personPhoto:
+      'https://images.unsplash.com/photo-1569779213435-ba3167dde7cc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80',
+  })
+  CustomerExperience.addTeammember(caP6)
+  ceC1.addTeammember(caP6)
+  ceC2.addTeammember(caP6)
+  ceC7.addTeammember(caP6)
+
+  const caP7 = await TeamMember.create({
+    occupation: 'Media Programmatic Consultant',
+    teamsTitle: 'Customer Experience Departement',
+    personName: 'Martha Oasis',
+    personPhoto:
+      'https://images.unsplash.com/photo-1607990283143-e81e7a2c9349?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1925&q=80',
+  })
+  CustomerExperience.addTeammember(caP7)
+  ceC7.addTeammember(caP7)
+  ceC2.addTeammember(caP7)
+  ceC6.addTeammember(caP7)
+
+  const caP8 = await TeamMember.create({
+    occupation: 'Project Test Manager',
+    teamsTitle: 'Customer Experience Departement',
+    personName: 'Ivano Cajina',
+    personPhoto:
+      'https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1951&q=80',
+  })
+  CustomerExperience.addTeammember(caP8)
+  ceC1.addTeammember(caP8)
+  ceC3.addTeammember(caP8)
+  ceC7.addTeammember(caP8)
+
+  const caP9 = await TeamMember.create({
+    occupation: 'Digital Identity Functional Delivery',
+    teamsTitle: 'Customer Experience Departement',
+    personName: 'Summer Bush',
+    personPhoto:
+      'https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80',
+  })
+  CustomerExperience.addTeammember(caP9)
+  ceC8.addTeammember(caP9)
+  ceC5.addTeammember(caP9)
+  ceC4.addTeammember(caP9)
+  
+
+  /** END OF USTOMER EXPERIENCE TEAM MEMBER */
 
   //**BiG DATA ANALYTICS TEAM MEMBER */
 
