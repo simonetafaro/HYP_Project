@@ -842,8 +842,16 @@
     </section>
     <space-divider></space-divider>
     <section class="contact-form-container">
+      <div class="message-feedback-container">
+        <div class="message-feedback"></div>
+        <div class="message-feedback-text">
+          Thank you for contatting us. <br />
+          We will reply you as soon as possible!
+        </div>
+      </div>
       <div class="left-column">
         <img
+          id="img-form"
           src="https://i.ibb.co/Fqvhj73/Contact-us-immagine.png"
           alt="Contact Us Image"
         />
@@ -853,7 +861,7 @@
         <div class="page-subtitle">
           FILL THE<br /><span class="page-subtitle-light">CONTACT FORM</span>
         </div>
-        <form class="contact-form" action="">
+        <form id="contact-us-form" class="contact-form" action="">
           <input type="text" placeholder="Name" required />
           <input
             @focusout="valiadateEmail()"
@@ -896,16 +904,58 @@ export default {
       title: 'Company Name - Contact Us',
     }
   },
+  mounted() {
+    document
+      .getElementById('contact-us-form')
+      .addEventListener('submit', this.sendEmail)
+  },
   methods: {
     valiadateEmail() {
       const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
       this.validatedEmail = !re.test(String(this.emailValue).toLowerCase())
+    },
+    sendEmail(event) {
+      event.preventDefault()
+      document.getElementsByClassName(
+        'message-feedback-container'
+      )[0].style.display = 'block'
+      setTimeout(function () {
+        document.getElementsByClassName(
+          'message-feedback-container'
+        )[0].style.display = 'none'
+        document.getElementById('contact-us-form').submit()
+      }, 3000)
     },
   },
 }
 </script>
 
 <style scoped>
+.message-feedback-container {
+  display: none;
+}
+.message-feedback {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  position: absolute;
+  text-align: center;
+  filter: blur(8px);
+  background: #e8e6ff;
+  opacity: 0.3;
+  -webkit-filter: blur(8px);
+  padding-top: 50px;
+}
+.message-feedback-text {
+  position: absolute;
+  top: 250px;
+  right: 0;
+  left: 0;
+  font-size: 55px;
+  color: #424272;
+  font-weight: 700;
+}
 .container {
   max-width: 100%;
   margin: 0;
@@ -1069,6 +1119,7 @@ export default {
 .contact-form-container {
   max-width: 1110px;
   display: inline-flex;
+  position: relative;
 }
 .left-column {
   width: 50%;
