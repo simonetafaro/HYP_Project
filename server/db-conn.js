@@ -2188,6 +2188,119 @@ async function insertRealData() {
 
   /** END OF CLOUD COMPUTING TEAM MEMBER */
 
+  //**CUSTOMER EXPERIENCE TEAM MEMBER - isi */
+
+  const caP1 = await TeamMember.create({
+    occupation: 'Europe Tech Innovation',
+    teamsTitle: 'Customer Experience Departement',
+    personName: 'Joleen Green',
+    personPhoto:
+      'https://i.ibb.co/zb03Whq/Risorsa-1.png',
+  })
+  CustomerExperience.addTeammember(caP1)
+  ceC4.addTeammember(caP1)
+  ceC8.addTeammember(caP1)
+  ceC5.addTeammember(caP1)
+
+  const caP2 = await TeamMember.create({
+    occupation: 'Interactive Senior Designer',
+    teamsTitle: 'Customer Experience Departement',
+    personName: 'Koen Fidele',
+    personPhoto:
+      'https://images.unsplash.com/photo-1547037579-f0fc020ac3be?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80',
+  })
+  CustomerExperience.addTeammember(caP2)
+  ceC3.addTeammember(caP2)
+  ceC1.addTeammember(caP2)
+  ceC9.addTeammember(caP2)
+
+  const caP3 = await TeamMember.create({
+    occupation: 'Interactive Marketing Manager',
+    teamsTitle: 'Customer Experience Departement',
+    personName: 'Harry Bennett',
+    personPhoto:
+      'https://images.unsplash.com/photo-1567515004624-219c11d31f2e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80',
+  })
+  CustomerExperience.addTeammember(caP3)
+  ceC7.addTeammember(caP3)
+  ceC2.addTeammember(caP3)
+  ceC6.addTeammember(caP3)
+
+  const caP4 = await TeamMember.create({
+    occupation: 'Digital Project Senior Manager',
+    teamsTitle: 'Customer Experience Departement',
+    personName: 'Christine Todd',
+    personPhoto:
+      'https://i.ibb.co/S68RrCn/Risorsa-2.png',
+  })
+  CustomerExperience.addTeammember(caP4)
+  ceC3.addTeammember(caP4)
+  ceC5.addTeammember(caP4)
+  ceC6.addTeammember(caP4)
+
+  const caP5 = await TeamMember.create({
+    occupation: 'Product Experience Optimization Manager',
+    teamsTitle: 'Customer Experience Departement',
+    personName: 'Chalo Garcia',
+    personPhoto:
+      'https://i.ibb.co/HXtPtDL/Risorsa-3.png',
+  })
+  CustomerExperience.addTeammember(caP5)
+  ceC8.addTeammember(caP5)
+  ceC9.addTeammember(caP5)
+  ceC4.addTeammember(caP5)
+
+  const caP6 = await TeamMember.create({
+    occupation: 'Marketing Automation Consultant',
+    teamsTitle: 'Customer Experience Departement',
+    personName: 'Jorge Palos',
+    personPhoto:
+      'https://images.unsplash.com/photo-1569779213435-ba3167dde7cc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80',
+  })
+  CustomerExperience.addTeammember(caP6)
+  ceC1.addTeammember(caP6)
+  ceC2.addTeammember(caP6)
+  ceC7.addTeammember(caP6)
+
+  const caP7 = await TeamMember.create({
+    occupation: 'Media Programmatic Consultant',
+    teamsTitle: 'Customer Experience Departement',
+    personName: 'Martha Oasis',
+    personPhoto:
+      'https://images.unsplash.com/photo-1607990283143-e81e7a2c9349?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1925&q=80',
+  })
+  CustomerExperience.addTeammember(caP7)
+  ceC7.addTeammember(caP7)
+  ceC2.addTeammember(caP7)
+  ceC6.addTeammember(caP7)
+
+  const caP8 = await TeamMember.create({
+    occupation: 'Project Test Manager',
+    teamsTitle: 'Customer Experience Departement',
+    personName: 'Ivano Cajina',
+    personPhoto:
+      'https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1951&q=80',
+  })
+  CustomerExperience.addTeammember(caP8)
+  ceC1.addTeammember(caP8)
+  ceC3.addTeammember(caP8)
+  ceC7.addTeammember(caP8)
+
+  const caP9 = await TeamMember.create({
+    occupation: 'Digital Identity Functional Delivery',
+    teamsTitle: 'Customer Experience Departement',
+    personName: 'Summer Bush',
+    personPhoto:
+      'https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80',
+  })
+  CustomerExperience.addTeammember(caP9)
+  ceC8.addTeammember(caP9)
+  ceC9.addTeammember(caP9)
+  ceC4.addTeammember(caP9)
+  
+
+  /** END OF USTOMER EXPERIENCE TEAM MEMBER */
+
   //**BiG DATA ANALYTICS TEAM MEMBER */
 
   const bdaP1 = await TeamMember.create({
