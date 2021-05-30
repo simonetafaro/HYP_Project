@@ -1550,12 +1550,12 @@ async function insertRealData() {
     solutionDescription:
       'Each guest receives a free Medallion. The light, quarter-sized disc enables frictionless payment, keyless stateroom access, accelerated embarkation and much more.',
     createdData: 'March 17, 2021',
-    partnerWebsite: '',
+    partnerWebsite: 'https://www.illy.com/',
   })
   await CustomerExperience.addCasestudy(ceC1.id)
-  await CreativeMarketingServices.addCasestudy(ceC1.it)
-  await AICustomer.addCasestudy(ceC1.it)
-  await UserInterfaces.addCasestudy(ceC1.it)
+  await CreativeMarketingServices.addCasestudy(ceC1.id)
+  await AICustomer.addCasestudy(ceC1.id)
+  await UserInterfaces.addCasestudy(ceC1.id)
 
   //2
   const ceC2 = await CaseStudy.create({
@@ -1577,9 +1577,9 @@ async function insertRealData() {
     partnerWebsite: '',
   })
   await CustomerExperience.addCasestudy(ceC2.id)
-  await Campaign.addCasestudy(ceC2.it)
-  await CreativeMarketingServices.addCasestudy(ceC2.it)
-  await CEE.addCasestudy(ceC2.it)
+  await Campaign.addCasestudy(ceC2.id)
+  await CreativeMarketingServices.addCasestudy(ceC2.id)
+  await CEE.addCasestudy(ceC2.id)
 
   //3
   const ceC3 = await CaseStudy.create({
@@ -1599,12 +1599,12 @@ async function insertRealData() {
     solutionDescription:
       'Using our deep experience of both organizational design and personalization, we helped Subway devise a completely new recipe for success – an operating model that would continuously optimize customer experiences through a dedication to scientific experimentation Leveraging the technologies of Adobe Analytics and Target, the new model enables Subway to run vast numbers of user experience tests across digital channels – everything from changing the color of a single button to revising homepage promotional messaging – and see the results instantly. That’s providing statistically meaningful insights into how design changes affect customer behavior – and company revenue.',
     createdData: 'December 25, 2020',
-    partnerWebsite: '',
+    partnerWebsite: 'https://www.subway.com/',
   })
   await CustomerExperience.addCasestudy(ceC3.id)
-  await Campaign.addCasestudy(ceC3.it)
-  await CEE.addCasestudy(ceC3.it)
-  await UserInterfaces.addCasestudy(ceC3.it)
+  await Campaign.addCasestudy(ceC3.id)
+  await CEE.addCasestudy(ceC3.id)
+  await UserInterfaces.addCasestudy(ceC3.id)
 
   //4
   const ceC4 = await CaseStudy.create({
@@ -1624,11 +1624,11 @@ async function insertRealData() {
     solutionDescription:
       'Working with us, Dutch Flowers kicked things off by leveraging design thinking and agile delivery methods, like user research and story mapping, to determine how the ideal customer journey would look as they peruse and purchase flowers online. Together, we developed a minimal viable product (MVP) based on the latest SAP Commerce Cloud Version 2.',
     createdData: 'November 7, 2020',
-    partnerWebsite: '',
+    partnerWebsite: 'https://dfg.nl/en/',
   })
   await CustomerExperience.addCasestudy(ceC4.id)
-  await Campaign.addCasestudy(ceC4.it)
-  await CreativeMarketingServices.addCasestudy(ceC4.it)
+  await Campaign.addCasestudy(ceC4.id)
+  await CreativeMarketingServices.addCasestudy(ceC4.id)
   await Immersive.addCasestudy(ceC4.id)
 
   //5
@@ -1639,21 +1639,21 @@ async function insertRealData() {
     banner:
       'https://images.unsplash.com/photo-1515165244752-2465b61f0441?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1889&q=80',
     descriptiveText:
-      'If you have ever wondered what’s behind the happy customers and packed stores it’s several factors including a focus on personalization, innovation and a loyalty program that is so good that it has 25 million members. All of these factors and several more make LoveMakeup one of the most successful beauty retailers in the world.',
+      'If you have ever wondered what’s behind the happy customers and packed stores it’s several factors including a focus on personalization, innovation and a loyalty program that is so good that it has 25 million members. All of these factors and several more make Sephora one of the most successful beauty retailers in the world.',
     challengeTitle: 'Our challenge - Every customer has to be unique',
     challengeDescription:
       'The beauty industry as a whole faces a multitude of problems mainly around transparency, accuracy and trust of products. For these reasons, online shopping poses key challenges in purchasing beauty products while retail stores pose their own challenge in having the capabilities and manpower to assist every customer in finding the right products.',
     solutionTitle:
       'The solution we provided - Personalization at the next level',
     solutionDescription:
-      'Customers are increasingly demanding customization as part of their shopping experience, especially if they’re shelling out for luxuries like makeup. Whether it’s primer for oily skin or moisturizer for dry, LoveMakeup recognizes that their customers require a unique and personalized approach, and they offer this through in-store swatch samplings and makeup demonstrations that allow shoppers to test different brands to be sure they’re buying the right product at the right place. But LoveMakeup doesn’t stop there: their personalized shopping experience extends to the web, which has been a major key to their success in keeping customers loyal to their brand.',
+      'Customers are increasingly demanding customization as part of their shopping experience, especially if they’re shelling out for luxuries like makeup. Whether it’s primer for oily skin or moisturizer for dry, Sephora recognizes that their customers require a unique and personalized approach, and they offer this through in-store swatch samplings and makeup demonstrations that allow shoppers to test different brands to be sure they’re buying the right product at the right place. But Sephora doesn’t stop there: their personalized shopping experience extends to the web, which has been a major key to their success in keeping customers loyal to their brand.',
     createdData: 'August 28, 2020',
-    partnerWebsite: '',
+    partnerWebsite: 'https://www.sephora.com/',
   })
   await CustomerExperience.addCasestudy(ceC5.id)
-  await AICustomer.addCasestudy(ceC5.it)
-  await Campaign.addCasestudy(ceC5.it)
-  await UserInterfaces.addCasestudy(ceC5.it)
+  await AICustomer.addCasestudy(ceC5.id)
+  await Campaign.addCasestudy(ceC5.id)
+  await UserInterfaces.addCasestudy(ceC5.id)
 
   //6
   const ceC6 = await CaseStudy.create({
@@ -1671,29 +1671,30 @@ async function insertRealData() {
     solutionDescription:
       'The app we designed for Disney contains most of the information on the website but it’s not just the website shoved into app-form. It’s laid out well and even has GPS-enabled walking directions between attractions. I can easily find park hours, showtimes, wait times for rides, and order food so you don’t need to wait in line anymore. All of the tickets, dining reservations, and photos are in the app, along with a personalized schedule that I can create to make sure I don’t miss the biggest rides and attractions.',
     createdData: 'July 17, 2020',
-    partnerWebsite: '',
+    partnerWebsite: 'https://www.disneyworld.eu/',
   })
   await CustomerExperience.addCasestudy(ceC6.id)
-  await CreativeMarketingServices.addCasestudy(ceC6.it)
-  await Immersive.addCasestudy(ceC6.it)
-  await CEE.addCasestudy(ceC6.it)
+  await CreativeMarketingServices.addCasestudy(ceC6.id)
+  await Immersive.addCasestudy(ceC6.id)
+  await CEE.addCasestudy(ceC6.id)
 
   //7
   const ceC7 = await CaseStudy.create({
     title: 'Bringing clothing to life directly in-store',
     subTitle: 'How Zara is now leading the mid-market tech fashion pack.',
     banner: 'https://www.mind-mag.com/wp-content/uploads/2018/04/IMG2645.jpg',
-    descriptiveText: '',
-    challengeTitle: 'Our challenge - ',
-    challengeDescription: '',
-    solutionTitle: 'The solution we provided - ',
-    solutionDescription: '',
+    descriptiveText: 'Zara is one of the world’s most successful fashion retail brands, if not the most successful. Not only is Zara a clear leader in the fashion industry, but is also a large tech firm. The key of Zara’s success is that its business model leans heavily on technological innovation and customer experience.',
+    challengeTitle: 'Our challenge - Finding an engaging technology ',
+    challengeDescription: 'In essence, thanks to a pioneering technological strategy, Zara holds the title for market leader. By adopting new tools including big data, augmented reality and artificial intelligence, the Spanish clothing retailer has managed to outpace its direct competitors. Zara ask Hextech to design a unique high quality and innovative customer experience, involving AR. Zara is looking at for a means of enhancing the in-store experience, trialing this on a meaningful scale',
+    solutionTitle: 'The solution we provided - Augmented reality ',
+    solutionDescription: 'By pointing cameras at sensors installed in windows, users of the app can see virtual fashion models strutting their stuff. Other AR imagery includes mannequins moving around and showcasing the brand’s new Studio Collection. Once users have lived the experience, there is also the option to buy the featured clothes directly through the app by simply clicking on “shop the look” button or in the store itself. This is a great solution to attract millennial shoppers to its brick and mortar store locations.',
     createdData: 'April 7, 2020',
-    partnerWebsite: '',
+    partnerWebsite: 'https://www.zara.com/', 
   })
   await CustomerExperience.addCasestudy(ceC7.id)
-  await Campaign.addCasestudy(ceC7.it)
+  await Campaign.addCasestudy(ceC7.id)
   await Immersive.addCasestudy(ceC7.id)
+  await CreativeMarketingServices.addCasestudy(ceC7.id)
 
   //8
   const ceC8 = await CaseStudy.create({
@@ -1713,12 +1714,12 @@ async function insertRealData() {
     solutionDescription:
       'We developed a unique system that allows to enter the store with the Amazon Go app open on your phone, fill your shopping bags with whatever you want, and then leave the store. Amazon Go stores use cameras and sensors to know what’s been taken off the shelves, so items can be charged to your credit card, which is stored in the Amazon Go app. No cashiers, no long lines, no paper receipts. Amazon Go showcases the convergence of technology and traditional retail shopping in a convenience store format.',
     createdData: 'March 27, 2019',
-    partnerWebsite: '',
+    partnerWebsite: 'https://www.amazon.com/b?ie=UTF8&node=16008589011',
   })
   await CustomerExperience.addCasestudy(ceC8.id)
-  await AICustomer.addCasestudy(ceC8.it)
-  await Campaign.addCasestudy(ceC8.it)
-  await UserInterfaces.addCasestudy(ceC8.it)
+  await AICustomer.addCasestudy(ceC8.id)
+  await Campaign.addCasestudy(ceC8.id)
+  await UserInterfaces.addCasestudy(ceC8.id)
 
   //9
   const ceC9 = await CaseStudy.create({
@@ -1736,12 +1737,12 @@ async function insertRealData() {
     solutionDescription:
       'We wanted to start from store design, or brand localization. This is just one of the creative ways Starbucks can connects with its customers, integrating local aesthetics into each of its stores. The company’s design studios are strategically located so that designers can better understand their communities. Furthermore, we developed the "tech-side", creating an Amazon Alexa platform and the My Starbucks Barista chatbot debuted, letting users order their favorite coffees using simple voice commands.',
     createdData: 'January 17, 2019',
-    partnerWebsite: '',
+    partnerWebsite: 'https://www.starbucks.com/',
   })
   await CustomerExperience.addCasestudy(ceC9.id)
   await UserInterfaces.addCasestudy(ceC9.id)
   await Immersive.addCasestudy(ceC9.id)
-  await Campaign.addCasestudy(ceC9.it)
+  await Campaign.addCasestudy(ceC9.id)
 
   //**END OF CUSTOMER EXPERIENCE CASE STUDIES */
 
@@ -2248,9 +2249,9 @@ async function insertRealData() {
       'https://images.unsplash.com/photo-1567515004624-219c11d31f2e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80',
   })
   CustomerExperience.addTeammember(caP3)
-  ceC7.addTeammember(caP3)
   ceC2.addTeammember(caP3)
   ceC6.addTeammember(caP3)
+  ceC9.addTeammember(caP3)
 
   const caP4 = await TeamMember.create({
     occupation: 'Digital Project Senior Manager',
@@ -2321,7 +2322,7 @@ async function insertRealData() {
   })
   CustomerExperience.addTeammember(caP9)
   ceC8.addTeammember(caP9)
-  ceC9.addTeammember(caP9)
+  ceC5.addTeammember(caP9)
   ceC4.addTeammember(caP9)
   
 
