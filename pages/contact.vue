@@ -1199,6 +1199,10 @@ export default {
 }
 
 @media screen and (max-width: 1200px) {
+  .message-feedback-text {
+    top: 200px;
+    font-size: 45px;
+  }
   .container {
     padding-bottom: 0;
   }
@@ -1275,6 +1279,10 @@ export default {
 }
 
 @media screen and (max-width: 768px) {
+  .message-feedback-text {
+    top: 150px;
+    font-size: 35px;
+  }
   .contact-header {
     padding-top: 88px;
     padding-bottom: 25px;
