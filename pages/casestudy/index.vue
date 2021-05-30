@@ -1255,6 +1255,9 @@ export default {
 </script>
 
 <style scoped>
+.filter-title {
+  display: none;
+}
 .casestudies-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
