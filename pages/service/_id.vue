@@ -407,9 +407,9 @@
           </div>
         </div>
         <div class="partner">
-          <img :src="service.p2Logo" class="partner-img" />
+          <img :src="service.p3Logo" class="partner-img" />
           <div class="partner-name">
-            {{ service.p2Name }}
+            {{ service.p3Name }}
           </div>
         </div>
       </section>
