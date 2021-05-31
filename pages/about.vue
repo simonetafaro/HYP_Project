@@ -1144,6 +1144,9 @@ export default {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+.member-grid-container::-webkit-scrollbar {
+  display: none;
+}
 
 .member-grid {
   display: grid;
