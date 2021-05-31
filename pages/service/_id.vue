@@ -516,11 +516,17 @@ export default {
     window.removeEventListener('resize', this.resizeCaseCard)
   },
   mixins: [GoToMixins],
-  async asyncData({ $axios, route }) {
+  async asyncData({ error, $axios, route }) {
     const { id } = route.params
     const { data } = await $axios.get(
       `${process.env.BASE_URL}/api/service/${id}`
     )
+    if (data === null) {
+      return error({
+        statusCode: 404,
+        message: 'Service not found!',
+      })
+    }
     const service = data
     let relServices = await $axios.get(
       `${process.env.BASE_URL}/api/relatedServices/${data.areaID}/${id}`
