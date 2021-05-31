@@ -441,6 +441,7 @@
               :image="casestudy.banner"
               :area="casestudy.area.title"
               :path="casestudy.id"
+              :caseIndex="caseIndex + 1"
             ></case-study-mini>
           </div>
         </section>
@@ -772,7 +773,7 @@ export default {
     grid-gap: 44px;
     margin: auto;
   }
-
+  .casestudies-grid,
   .service-grid {
     margin-right: 58px;
     margin-left: 58px;
@@ -887,10 +888,22 @@ export default {
   .service_card {
     max-width: 350px !important;
   }
+  .casestudy {
+    max-width: 350px !important;
+  }
+  .case-left {
+    margin-right: 12px !important;
+  }
+  .case-right {
+    margin-left: 12px !important;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .service_card {
+    max-width: 270px !important;
+  }
+  .casestudy {
     max-width: 270px !important;
   }
 }
