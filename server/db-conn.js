@@ -439,6 +439,38 @@ async function insertRealData() {
     s3Logo: 'https://i.ibb.co/b77D3Fm/sol-3.png',
     partnerTitle: '',
     partnerDescription:
+      'Use a root key to encrypt and decrypt the keys that protect your data.',
+    p1Name: 'Flutter',
+    p1Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
+    p2Name: 'Salesforce',
+    p2Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
+    p3Name: '......',
+    p3Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
+  })
+
+  const KeyProtect = await Service.create({
+    title: 'IBM Key Protect for IBM Cloud',
+    subTitle:
+      'Get visibility and control of encryption keys throughout the key lifecycle, from a single location',
+    description:
+      'You’re using key protection for data security and compliance. But full encryption visibility and control are essential.',
+    banner: 'http://jwhightech.com/asset/images/assesment.jpg',
+    serviceDescription:
+      'The IBM® Key Protect for IBM Cloud® service helps you provision and store encrypted keys for apps across IBM Cloud services, so you can see and manage data encryption and the entire key lifecycle from one central location.',
+    s1Name: 'Robust security',
+    s1Description:
+      'Provision and store keys using FIPS 140-2 Level 3 certified HSMs.',
+    s1Logo: 'https://i.ibb.co/Rczq8Pv/sol-1.png',
+    s2Name: 'Control and Visiblity',
+    s2Description:
+      'Use the Activity Tracker to monitor user and app activities.',
+    s2Logo: 'https://i.ibb.co/KwskLjv/sol-2.png',
+    s3Name: 'Usage costs insights',
+    s3Description:
+      ' View usage by account or by resource type to see where your money is going.',
+    s3Logo: 'https://i.ibb.co/b77D3Fm/sol-3.png',
+    partnerTitle: '',
+    partnerDescription:
       'Since user apps are an integral part of a smart city, we offer mobile consulting, UI/UX design, native (iOS, Android) and cross-platform (Cordova/PhoneGap, Xamarin, React Native) development, as well as mobile testing.',
     p1Name: 'Flutter',
     p1Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
@@ -1013,6 +1045,76 @@ async function insertRealData() {
   })
   await CloudComputing.addService(LiveECommerce.id)
 
+  const HybridCloud = await Service.create({
+    title: 'Hybrid Cloud',
+    subTitle: 'A smarter strategy to drive real business transformation',
+    description:
+      'The new generation of hybrid cloud provides a common platform across all of your cloud, on-premises and edge environments. That means you can skill once, build once and manage from a single pane of glass. HexTech provides you with the most comprehensive and consistent approach to development, security and operations across hybrid environments.      ',
+    banner:
+      'http://techbusiness.it/wp-content/uploads/2019/12/Hybrid-Cloud-Experience-main.jpg',
+    serviceDescription:
+      'ur hybrid cloud approach can offer up to 2.5x more value than a public cloud-only approach. With our hybrid cloud value calculator, you can determine the value that a hybrid cloud approach can bring to your business.',
+    s1Name: 'Build and run anywhere',
+    s1Description:
+      'With Red Hat OpenShift, you can develop and consume cloud services anywhere.',
+    s1Logo: 'https://i.ibb.co/Rczq8Pv/sol-1.png',
+    s2Name: 'Automate and modernize',
+    s2Description:
+      'HexTech automation capabilities can help you implement intelligent workflows.',
+    s2Logo: 'https://i.ibb.co/KwskLjv/sol-2.png',
+    s3Name: 'Leverage innovations',
+    s3Description:
+      'With hybrid, you can access innovations to help achieve your goals.',
+    s3Logo: 'https://i.ibb.co/b77D3Fm/sol-3.png',
+    partnerTitle: '',
+    partnerDescription:
+      'On all the case studies we worked on we had gained experience from our partners. Although some of them are very big companies, we had an equal exchange of expertise since we have really professional experts wprking on many industries.',
+    p1Name: 'Tencent',
+    p1Logo:
+      'https://www.thegamesmachine.it/wp-content/uploads/2020/05/tencent-logo-min.jpg',
+    p2Name: 'TaoBao',
+    p2Logo:
+      'https://img.alicdn.com/tfs/TB1giluwEY1gK0jSZFMXXaWcVXa-1280-1280.png',
+    p3Name: 'Alibaba',
+    p3Logo: 'https://images-eu.ssl-images-amazon.com/images/I/71IxKvGqiWL.png',
+  })
+  await CloudComputing.addService(HybridCloud.id)
+
+  const InfraspaceCloud = await Service.create({
+    title: 'Infraspace Cloud',
+    subTitle: 'Reduce operational costs by stepping into the cloud',
+    description:
+      'HexTech Infraspace Cloud is a powerful, constantly developed cloud computing service that helps you build, manage, upgrade, and maintain your business applications thanks to a dedicated set of advanced tools and frameworks.',
+    banner:
+      'https://www.comarch.it/files-it/file_84/Managed-Multi-Cloud-Cloud-Migration.jpg',
+    serviceDescription:
+      "Modernizing your company's IT environment, the family of HexTech Infraspace Cloud products enables you to accelerate digital transformation, optimize costs, and drive better business results with ease.",
+    s1Name: 'Full product scalability',
+    s1Description:
+      "Giving you instant access to its advanced functionalities, HexTech Infraspace Cloud can be easily configured to meet your company's needs and requirements.",
+    s1Logo: 'https://i.ibb.co/Rczq8Pv/sol-1.png',
+    s2Name: 'Reduced operational costs',
+    s2Description:
+      'We enable companies of all sizes and industries to reduce their operational costs by 50 to 80 percent, depending on their business profile.',
+    s2Logo: 'https://i.ibb.co/KwskLjv/sol-2.png',
+    s3Name: 'Zero investment costs',
+    s3Description:
+      'No additional hardware and more payment flexibility. The result? No office downtime, zero investment costs, and prices chared only for the features in use.',
+    s3Logo: 'https://i.ibb.co/b77D3Fm/sol-3.png',
+    partnerTitle: '',
+    partnerDescription:
+      'On all the case studies we worked on we had gained experience from our partners. Although some of them are very big companies, we had an equal exchange of expertise since we have really professional experts wprking on many industries.',
+    p1Name: 'Tencent',
+    p1Logo:
+      'https://www.thegamesmachine.it/wp-content/uploads/2020/05/tencent-logo-min.jpg',
+    p2Name: 'TaoBao',
+    p2Logo:
+      'https://img.alicdn.com/tfs/TB1giluwEY1gK0jSZFMXXaWcVXa-1280-1280.png',
+    p3Name: 'Alibaba',
+    p3Logo: 'https://images-eu.ssl-images-amazon.com/images/I/71IxKvGqiWL.png',
+  })
+  await CloudComputing.addService(InfraspaceCloud.id)
+
   //**END OF CLOUD COMPUTING SERVICES */
 
   //**CUSTOMER EXPERIENCE SERVICES - isi*/
@@ -1029,13 +1131,16 @@ async function insertRealData() {
     serviceDescription:
       'We help brands tell stories and craft experiences in innovative and immersive ways, opening up new kinds of interaction, new ways to work and learn, and new revenue streams. It’s an emerging space for all to play in. Let us help you take a lead in next-generation experience.',
     s1Name: 'Spatial storytelling',
-    s1Description: 'Designing 360o story worlds, including non linear narrative and character development.',
+    s1Description:
+      'Designing 360o story worlds, including non linear narrative and character development.',
     s1Logo: 'https://i.ibb.co/Rczq8Pv/sol-1.png',
     s2Name: 'Experiential marketing',
-    s2Description: 'Creating interactive brand engagement through immersive content.',
+    s2Description:
+      'Creating interactive brand engagement through immersive content.',
     s2Logo: 'https://i.ibb.co/KwskLjv/sol-2.png',
     s3Name: 'Immersive Commerce',
-    s3Description: 'Bringing products to life in 3D through digital twin models, augmenting the experience.',
+    s3Description:
+      'Bringing products to life in 3D through digital twin models, augmenting the experience.',
     s3Logo: 'https://i.ibb.co/b77D3Fm/sol-3.png',
     partnerTitle: 'Alliances and partners',
     partnerDescription:
@@ -1056,16 +1161,21 @@ async function insertRealData() {
       'Leading creative, business analysis, and advanced technology in user research',
     description:
       'Design a new way to communicate. User interface (or UI) design has grown substantially over the past few years, and has blossomed into one of the most creative, innovative and exciting fields in tech. Our service it is here to help you to create a brand new costumer’s experiences with the latest trend of user interfaces. An interface is the link between the corporate and the user, it must respond to customers’ new, often unmet and frequently changing needs and enable them to achieve their desired outcomes.',
-    banner: 'https://images.unsplash.com/photo-1618788372246-79faff0c3742?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=882&q=80',
-    serviceDescription: 'User interface elements are the parts we use to build interactive websites or apps. They provide touchpoints for the user as they navigate their way around; from buttons to scrollbars, to menu items and checkboxes. Every single detail matter!',
+    banner:
+      'https://images.unsplash.com/photo-1618788372246-79faff0c3742?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=882&q=80',
+    serviceDescription:
+      'User interface elements are the parts we use to build interactive websites or apps. They provide touchpoints for the user as they navigate their way around; from buttons to scrollbars, to menu items and checkboxes. Every single detail matter!',
     s1Name: 'Trustworthy apps',
-    s1Description: 'Avoiding unplanned interactions, giving the customers insight into what to expect.',
+    s1Description:
+      'Avoiding unplanned interactions, giving the customers insight into what to expect.',
     s1Logo: 'https://i.ibb.co/Rczq8Pv/sol-1.png',
     s2Name: 'Design accessibility',
-    s2Description: 'Keep in mind accessibility and inclusion. Every design choice matters for us.',
+    s2Description:
+      'Keep in mind accessibility and inclusion. Every design choice matters for us.',
     s2Logo: 'https://i.ibb.co/KwskLjv/sol-2.png',
     s3Name: 'Endlessly adaptivity',
-    s3Description: 'An optimized model to deliver insights and facilitate decision-making.',
+    s3Description:
+      'An optimized model to deliver insights and facilitate decision-making.',
     s3Logo: 'https://i.ibb.co/b77D3Fm/sol-3.png',
     partnerTitle: 'Alliances and partners',
     partnerDescription:
@@ -1091,13 +1201,16 @@ async function insertRealData() {
     serviceDescription:
       'Our experience-led approach helps ensure that organizations have the right experience architecture to allow customers to create their own journey on their own terms. We view technology as the enabler of the customer experience, not the driver.',
     s1Name: 'Single view',
-    s1Description:'A business that is interacting with customers to drive connected experiences.',
+    s1Description:
+      'A business that is interacting with customers to drive connected experiences.',
     s1Logo: 'https://i.ibb.co/Rczq8Pv/sol-1.png',
     s2Name: 'Seamless plug and play',
-    s2Description: 'CXE solves the technology impediment to allow organizations to focus on impact.',
+    s2Description:
+      'CXE solves the technology impediment to allow organizations to focus on impact.',
     s2Logo: 'https://i.ibb.co/KwskLjv/sol-2.png',
     s3Name: 'Omnichannel power',
-    s3Description: 'CXE unifies your applications across marketing, turning touchpoints into a story.',
+    s3Description:
+      'CXE unifies your applications across marketing, turning touchpoints into a story.',
     s3Logo: 'https://i.ibb.co/b77D3Fm/sol-3.png',
     partnerTitle: 'Alliances and partners',
     partnerDescription:
@@ -1114,15 +1227,21 @@ async function insertRealData() {
   //4
   const Campaign = await Service.create({
     title: 'Campaign Management',
-    subTitle: 'Communicate marketing messages at speed and scale to acquire and retain customers, driving sustainable growth.',
-    description: 'We all know communication is critical, but knowing what to say and when to say it—and whom to say it to—can make or break the message. That is why Accenture Interactive Marketing Engagement Services team specializes in solutions to help clients understand their customers, define the experience, and deliver relevant, compelling messages. We understand the new digital landscape and evolving customer expectations. Connections need to be made throughout the customer journey, constantly and across channels. "Always-on" campaigns are designed to capture attention and amplify demand, leads and revenue generation.',
-    banner: 'https://images.unsplash.com/photo-1552664730-d307ca884978?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80',
-    serviceDescription: 'We design and build creative campaigns that target customers with the right message to drive engagement. Our insights into new and evolving digital technologies mean we understand how to deliver personalized messages at the right time, helping acquire new customers, grow wallet share with existing customers, and retain the most profitable customers.',
+    subTitle:
+      'Communicate marketing messages at speed and scale to acquire and retain customers, driving sustainable growth.',
+    description:
+      'We all know communication is critical, but knowing what to say and when to say it—and whom to say it to—can make or break the message. That is why Accenture Interactive Marketing Engagement Services team specializes in solutions to help clients understand their customers, define the experience, and deliver relevant, compelling messages. We understand the new digital landscape and evolving customer expectations. Connections need to be made throughout the customer journey, constantly and across channels. "Always-on" campaigns are designed to capture attention and amplify demand, leads and revenue generation.',
+    banner:
+      'https://images.unsplash.com/photo-1552664730-d307ca884978?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80',
+    serviceDescription:
+      'We design and build creative campaigns that target customers with the right message to drive engagement. Our insights into new and evolving digital technologies mean we understand how to deliver personalized messages at the right time, helping acquire new customers, grow wallet share with existing customers, and retain the most profitable customers.',
     s1Name: 'Campaign planning',
-    s1Description: 'Create a consistent experience throughout the customer journey.',
+    s1Description:
+      'Create a consistent experience throughout the customer journey.',
     s1Logo: 'https://i.ibb.co/Rczq8Pv/sol-1.png',
     s2Name: 'Management and optimization',
-    s2Description: 'Enable a campaign management solution with digital marketing ecosystem.',
+    s2Description:
+      'Enable a campaign management solution with digital marketing ecosystem.',
     s2Logo: 'https://i.ibb.co/KwskLjv/sol-2.png',
     s3Name: 'Lead generation',
     s3Description: 'Fuel your funnel by driving demand from qualified leads.',
@@ -1151,13 +1270,16 @@ async function insertRealData() {
     serviceDescription:
       'With our range of pre-built AI modules and ecosystem of technology partners, we are able to quickly scale hyper-personalized experiences to help clients anticipate and address their customers needs.',
     s1Name: 'Patented conversational AI',
-    s1Description: 'Rapidly design and execute automated conversations, compatible with technology.',
+    s1Description:
+      'Rapidly design and execute automated conversations, compatible with technology.',
     s1Logo: 'https://i.ibb.co/Rczq8Pv/sol-1.png',
     s2Name: 'Intent discovery and analytics',
-    s2Description: 'Apply a data-driven approach to identify customer intents for automation.',
+    s2Description:
+      'Apply a data-driven approach to identify customer intents for automation.',
     s2Logo: 'https://i.ibb.co/KwskLjv/sol-2.png',
-    s3Name:  'Customer and journey analytics',
-    s3Description:  'Responsibly establish a strong foundation to generate insights that unlock value.',
+    s3Name: 'Customer and journey analytics',
+    s3Description:
+      'Responsibly establish a strong foundation to generate insights that unlock value.',
     s3Logo: 'https://i.ibb.co/b77D3Fm/sol-3.png',
     partnerTitle: 'Alliances and partners',
     partnerDescription:
@@ -1182,14 +1304,17 @@ async function insertRealData() {
       'https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=993&q=80',
     serviceDescription:
       'What does it mean to build a brand? We take it from the ground up—from strategy and content to activation.',
-    s1Name:'Intent discovery and analytics',
-    s1Description: 'We deliver strategy for new client brands and develop creative assets and identities.',
+    s1Name: 'Intent discovery and analytics',
+    s1Description:
+      'We deliver strategy for new client brands and develop creative assets and identities.',
     s1Logo: 'https://i.ibb.co/Rczq8Pv/sol-1.png',
     s2Name: 'Content activation',
-    s2Description: 'We develop creative content across channels to drive consumer experiences.',
+    s2Description:
+      'We develop creative content across channels to drive consumer experiences.',
     s2Logo: 'https://i.ibb.co/KwskLjv/sol-2.png',
     s3Name: 'Omnichannel strategy',
-    s3Description: 'We activate and optimize programs that deliver high engagement and investment.',
+    s3Description:
+      'We activate and optimize programs that deliver high engagement and investment.',
     s3Logo: 'https://i.ibb.co/b77D3Fm/sol-3.png',
     partnerTitle: 'Alliances and partners',
     partnerDescription:
@@ -1212,7 +1337,7 @@ async function insertRealData() {
     title: 'Next generation online fraud detection for banks',
     subTitle: 'A new generation bank',
     banner:
-      'https://www.creativemotions.it/wp-content/uploads/2020/06/Il-segreto-per-scrivere-un-case-study-che-converte.png',
+      'https://img.etimg.com/thumb/msid-77849867,width-640,resizemode-4,imgsize-584328/know-from-the-experts.jpg',
     descriptiveText:
       'Customers Bank is one of the fast-growing “new-generation” European banks. The Bank’s mission was set to offer a wide range of financial products and services for individuals, families and businesses with a strong focus on delivering new levels of quality, service and efficiency, while also providing the best possible user experience “without losing the human connection,”as articulated in their mission statement.',
     challengeTitle: 'Effective and convenient fraud detection solution',
@@ -1232,7 +1357,7 @@ async function insertRealData() {
     title: 'Network protection for worldwide companies',
     subTitle: 'A secure connection',
     banner:
-      'https://www.creativemotions.it/wp-content/uploads/2020/06/Il-segreto-per-scrivere-un-case-study-che-converte.png',
+      'https://previews.123rf.com/images/arthead/arthead1907/arthead190700026/128279197-data-security-system-information-or-network-protection-cyber-security-and-data-protection-shield-ico.jpg',
     descriptiveText:
       "The Customer asked HexTech to protect it's network against undesired connection or network attacks",
     challengeTitle: 'Smart and transparent network protection',
@@ -1251,7 +1376,7 @@ async function insertRealData() {
     title: 'Company access with secure credentials',
     subTitle: 'Access guaranteed only to the ones you trust',
     banner:
-      'https://e7.pngegg.com/pngimages/183/248/png-clipart-access-control-radio-frequency-identification-television-pensiunea-mioval-technology-rfid-card-logo-transmitter.png',
+      'https://www.ecmag.com/sites/default/files/Security-shutterstock_794406721.jpg',
     descriptiveText:
       'The Customer commissioned HexTech to develop a system to ensure that certain sections of the company could be accessed only to qualified people.',
     challengeTitle: 'important data have to be secured',
@@ -1271,7 +1396,7 @@ async function insertRealData() {
     title: 'Factoring data migration from Raiffeisen to BNP',
     subTitle: 'A secure connection',
     banner:
-      'https://www.creativemotions.it/wp-content/uploads/2020/06/Il-segreto-per-scrivere-un-case-study-che-converte.png',
+      'https://www.octivdigital.com/wp-content/uploads/2019/08/migrate-wordpress-blog-new-host.png',
     descriptiveText:
       'In 2019, HexTech was selected as a provider of data migration services from a factoring platform used by Raiffeisen to another platform working at BNP Paribas. The amount of data to be migrated was so substantial that it nearly doubled the business volume of BNP in Poland.',
     challengeTitle:
@@ -1292,7 +1417,7 @@ async function insertRealData() {
     title: 'Implementation of HexTech Loyalty Management at Livelo',
     subTitle: 'A secure connection',
     banner:
-      'https://www.creativemotions.it/wp-content/uploads/2020/06/Il-segreto-per-scrivere-un-case-study-che-converte.png',
+      'https://www.mccourier.com/wp-content/uploads/2021/03/S731856250_g.jpg',
     descriptiveText:
       'One of the main challenges for customer-oriented enterprises is to create a strong bond between customers and the brand.',
     challengeTitle:
@@ -1301,13 +1426,35 @@ async function insertRealData() {
       'Livelo was looking for an innovative IT platform that would help the company in becoming the most dynamic redemption option and leading coalition in Brazil. The goal was to manage all aspects of their members´transactions and profile information, as well as the complex billing with accrual and redemption partners.',
     solutionTitle: 'Implented system',
     solutionDescription:
-      'The project was started in November 2014. Thanks to the strong cooperation and flexibility of HexTech project team, the implementation went as Livelo expected and finished according to schedule. Project was finished within nine months. HexTech ensured integration with existing client systems including: campaign management system (IBM UNIQA), e-commerce (ORACLE ATG), third-party Mobile App, SAP Finance, Livelo Taxa Online, Fast Shop S.A. The HexTech team also migrated over 16 million customer accounts. HexTech provided on-site support and maintenance services, dedicated program manager and on-site trainings.',
+      'The project was started in November 2014. Thanks to the strong cooperation and flexibility of HexTech project team, the implementation went as Livelo expected and finished according to schedule. Project was finished within nine months. HexTech ensured integration with existing client systems including: campaign management system (HexTech UNIQA), e-commerce (ORACLE ATG), third-party Mobile App, SAP Finance, Livelo Taxa Online, Fast Shop S.A. The HexTech team also migrated over 16 million customer accounts. HexTech provided on-site support and maintenance services, dedicated program manager and on-site trainings.',
     createdData: 'December 2, 2020',
     partnerWebsite: '',
   })
   await Security.addCasestudy(cs4.id)
   await IdentityAccessManagement.addCasestudy(cs4.id)
   await ManagedSecurity.addCasestudy(cs4.id)
+
+  const cs5 = await CaseStudy.create({
+    title: 'Eurobits Technologies',
+    subTitle:
+      'Transforming the financial landscape with robust, security-rich services',
+    banner:
+      'https://openbanking.world/wp-content/uploads/ultimatemember/57/profile_photo.jpeg?1615620971',
+    descriptiveText:
+      'Under pressure from regulators, the banking industry is opening up to allow new competitors to handle payments and account aggregation. For Eurobits – which helps banks give trusted third-parties access to account information – this change represents a significant growth opportunity. To preserve its first-mover advantage, Eurobits migrated to HexTech® Cloud™, gaining the flexibility, scale and resilience it needed to serve a rapidly growing client base.',
+    challengeTitle:
+      'To capitalize on international growth opportunities, Eurobits wanted a more flexible and scalable platform for its open banking services, with the ability to keep client data in defined jurisdictions.',
+    challengeDescription:
+      'Eurobits migrated to VMware vSphere on HexTech Cloud in two data centers. The company uses HexTech API Connect® to industrialize API management, and HexTech Cloud Kubernetes Service to containerize applications.',
+    solutionTitle: 'Implented system',
+    solutionDescription:
+      'Running on the HexTech Cloud gives Eurobits the performance, availability, scalability, flexibility and security it needs to stay ahead of competitors in the fast growing and increasingly international market for open banking services. VMware vSphere on HexTech Cloud bare metal servers gives Eurobits dedicated computing power to speed through transactions without the potential security risks inherent in a multi-tenant landscape. What’s more, the company can rapidly extend its core systems onto new bare metal servers, enabling it to meet emerging client demand “One of our major clients is about to run a big marketing campaign that will multiply their user numbers by a factor of 10 or 20 within the space of a month or two,” says Arturo Gonzalez. “VMware vSphere on HexTech Cloud gives us the extreme flexibility we need for this kind of scenario. Running on the HexTech Cloud also supports our ongoing international expansion, enabling us to scale seamlessly in size and geography.” Highly secure and compliant Where local regulations require personal and financial data to remain in-country, HexTech’s global network of cloud data centers will make it easier for Eurobits to comply by simply firing up local instances of the required services. Both VMware virtualization and Kubernetes containerization are ideally suited to support the rapid redeployment of existing functionality in new locations. Architecting applications as microservices and deploying them on HexTech Cloud Kubernetes Service also improves horizontal scalability and overall application uptime. Finally, there is a security benefit in the isolation of services. In summary, Eurobits clients are mostly banks and FinTechs that require compliant, security-rich, high-performance solutions with proven recovery capabilities to support business continuity. By meeting these requirements, HexTech Cloud enables Eurobits and its clients to comply with stringent regulations in multiple geographies. In particular, the use of bare metal servers keeps data and transactions physically isolated from other environments on the cloud, giving confidence to Eurobits’ risk-averse clients. Always open for business The use of VMware High Availability technology within the production cloud center helps keep vital account information and payment services available at all times. And with a full DR solution on the HexTech Cloud, Eurobits can rapidly and reliably restore services in the event of an unexpected outage, and at lower cost of ownership than in its previous hosted landscape. “If a service goes down, it is now much easier to automatically bring it back up,” says Arturo Gonzalez. “In practice, this means less downtime and faster recovery, and we expect these metrics to improve once we complete our migration to a reactive architecture with Kubernetes – the biggest benefits are yet to come.” He concludes: “The fact that Eurobits works with HexTech gives our clients in the financial services industry a high level of comfort and trust. We needed to accomplish this migration in order to succeed in a market that is growing extremely fast, and that places heavy regulatory challenges and restrictions on us. With the backing of the HexTech Cloud, we face these challenges with confidence.”',
+    createdData: 'December 2, 2020',
+    partnerWebsite: 'https://tink.com/',
+  })
+  await Security.addCasestudy(cs5.id)
+  await IdentityAccessManagement.addCasestudy(cs5.id)
+  await ManagedSecurity.addCasestudy(cs5.id)
 
   //**END OF SECURITY CASE STUDIES */
 
@@ -1529,6 +1676,44 @@ async function insertRealData() {
   await CloudComputing.addCasestudy(ccC4.id)
   await LiveVideoBroadcasting.addCasestudy(ccC4.id)
   await LiveECommerce.addCasestudy(ccC4.id)
+
+  const ccC5 = await CaseStudy.create({
+    title: 'ProDeploy Client Suite',
+    subTitle: 'Minimizes end-user downtime',
+    banner:
+      'https://www.routech.ro/wp-content/uploads/Cum-sa-va-configurati-propriul-computer-Cloud.jpg',
+    descriptiveText: 'Deploy PCs with greater speed and less effort.',
+    challengeTitle: 'Deliver pc to your clients rapidly and effectively',
+    challengeDescription:
+      'Trust Dell EMC pc deployment experts and partners to lead deployments from project management through planning, configuration and integration. We deploy new technology every day so in addition to being fast and thorough, we avoid common mistakes that can cost time and money. And by using the TechDirect portal to define the scope of your project, configure systems and check status, execution will be faster, more consistent and efficient.',
+    solutionTitle: 'Helps to avoid common, expensive mistakes',
+    solutionDescription:
+      'ProDeploy Plus is a comprehensive service providing seamless deployment of new technology. You get a single point of contact for project management including up-front planning, configuration, data migration and knowledge transfer. You will even  be able to use system management software3 such as Microsoft Endpoint Manager or MDT to control configuration of new systems. ',
+    createdData: 'August 21, 2018',
+    partnerWebsite: 'www.ibm.com',
+  })
+  await CloudComputing.addCasestudy(ccC5.id)
+  await HybridCloud.addCasestudy(ccC5.id)
+
+  const ccC6 = await CaseStudy.create({
+    title: 'American Airlines',
+    subTitle:
+      'The route to customer experience transformation is through the cloud.',
+    banner:
+      'https://www.americanairlines.it/content/images/homepage/mobile-hero/en_US/Tail.png',
+    descriptiveText:
+      'To become more responsive to customer needs, American Airlines needed a new technology platform and a new approach to development that would help it deliver digital self-service tools and customer value more rapidly across its enterprise. HexTech is helping the airline migrate some of its critical applications to the HexTech Cloud while using new methodology to create innovative applications quickly while improving the customer experience.',
+    challengeTitle: 'Taking to the digital skies',
+    challengeDescription:
+      'In the highly competitive airline industry, customer experience is a major point of differentiation – and digital channels are increasingly important. American Airlines wanted to provide convenient digital services for customers and understood there was an opportunity to remove the constraints of the existing legacy architecture, platform, organization, development and operations approaches. Customer-facing applications were based on monolithic code, duplicated and managed in silos. Every change required the same work in up to three places, each managed by different teams.',
+    solutionTitle: 'Migrate, transform, operate',
+    solutionDescription:
+      'Migrate: HexTech’s comprehensive proposal addressed American’s immediate and long term operational concerns through a seamless migration of on-premise servers to HexTech Cloud’s Infrastructure as a Service with VMware Cloud Foundation solution. Transform: HexTech also proposed to accelerate the transformation of American’s application development, organization and skills, based on its HexTech Garage Method. As HexTech and American jointly developed the new cloud-native apps in Cloud Foundry on HexTech Public Cloud Platform as a Service, the old components would be retired. Operate: The solution brings operations into the development squads, and leverages HexTech’s Cloud Solutions Operations Center to provide 24-hour application support and management services, with the HexTech team located both onsite at American’s location and at an HexTech off-shore location.',
+    createdData: 'May 23, 2020',
+    partnerWebsite: 'https://www.americanairlines.it/',
+  })
+  await CloudComputing.addCasestudy(ccC6.id)
+  await InfraspaceCloud.addCasestudy(ccC6.id)
   //**END OF CLOUD COMPUTING CASE STUDIES */
 
   //**CUSTOMER EXPERIENCE CASE STUDIES - isi*/
@@ -1683,13 +1868,16 @@ async function insertRealData() {
     title: 'Bringing clothing to life directly in-store',
     subTitle: 'How Zara is now leading the mid-market tech fashion pack.',
     banner: 'https://www.mind-mag.com/wp-content/uploads/2018/04/IMG2645.jpg',
-    descriptiveText: 'Zara is one of the world’s most successful fashion retail brands, if not the most successful. Not only is Zara a clear leader in the fashion industry, but is also a large tech firm. The key of Zara’s success is that its business model leans heavily on technological innovation and customer experience.',
+    descriptiveText:
+      'Zara is one of the world’s most successful fashion retail brands, if not the most successful. Not only is Zara a clear leader in the fashion industry, but is also a large tech firm. The key of Zara’s success is that its business model leans heavily on technological innovation and customer experience.',
     challengeTitle: 'Our challenge - Finding an engaging technology ',
-    challengeDescription: 'In essence, thanks to a pioneering technological strategy, Zara holds the title for market leader. By adopting new tools including big data, augmented reality and artificial intelligence, the Spanish clothing retailer has managed to outpace its direct competitors. Zara ask Hextech to design a unique high quality and innovative customer experience, involving AR. Zara is looking at for a means of enhancing the in-store experience, trialing this on a meaningful scale',
+    challengeDescription:
+      'In essence, thanks to a pioneering technological strategy, Zara holds the title for market leader. By adopting new tools including big data, augmented reality and artificial intelligence, the Spanish clothing retailer has managed to outpace its direct competitors. Zara ask Hextech to design a unique high quality and innovative customer experience, involving AR. Zara is looking at for a means of enhancing the in-store experience, trialing this on a meaningful scale',
     solutionTitle: 'The solution we provided - Augmented reality ',
-    solutionDescription: 'By pointing cameras at sensors installed in windows, users of the app can see virtual fashion models strutting their stuff. Other AR imagery includes mannequins moving around and showcasing the brand’s new Studio Collection. Once users have lived the experience, there is also the option to buy the featured clothes directly through the app by simply clicking on “shop the look” button or in the store itself. This is a great solution to attract millennial shoppers to its brick and mortar store locations.',
+    solutionDescription:
+      'By pointing cameras at sensors installed in windows, users of the app can see virtual fashion models strutting their stuff. Other AR imagery includes mannequins moving around and showcasing the brand’s new Studio Collection. Once users have lived the experience, there is also the option to buy the featured clothes directly through the app by simply clicking on “shop the look” button or in the store itself. This is a great solution to attract millennial shoppers to its brick and mortar store locations.',
     createdData: 'April 7, 2020',
-    partnerWebsite: 'https://www.zara.com/', 
+    partnerWebsite: 'https://www.zara.com/',
   })
   await CustomerExperience.addCasestudy(ceC7.id)
   await Campaign.addCasestudy(ceC7.id)
@@ -1911,7 +2099,8 @@ async function insertRealData() {
     title: 'Building health monitoring',
     subTitle:
       'The Customer received an easy-to-use IoT solution to monitor the state of a construction in real time. The tool automatically notifies the operator about a sensor failure or a construction defect and can be integrated with external systems',
-    banner: 'https://www.oki.com/en/iot/point/infrastructure/img/sp/img_infra01.jpg',
+    banner:
+      'https://www.oki.com/en/iot/point/infrastructure/img/sp/img_infra01.jpg',
     descriptiveText:
       'The Customer is a large company that provides construction sites with complex automation and security systems. The company offers design solutions and performs supply, installation and commissioning for various types of construction projects.',
     challengeTitle: 'Continuous and efficient technical control',
@@ -1930,7 +2119,8 @@ async function insertRealData() {
     title: 'Remote patient monitoring software',
     subTitle:
       'The development team optimized the measurement API server and decreased the load on the system by introducing the following features: aggregation of requests, grouping of data, NGINX server settings, optimization of queries and MySQL. The solution for remote software deployment to SNA devices enabled the distribution order of install, delete and update commands as per specifics of Android OS by building a queue of commands and sending them to the devices.',
-    banner: 'https://s15543.pcdn.co/wp-content/uploads/2020/01/galaxy_watch_active_healthcare_a.jpg',
+    banner:
+      'https://s15543.pcdn.co/wp-content/uploads/2020/01/galaxy_watch_active_healthcare_a.jpg',
     descriptiveText:
       'The Customer is a US-based provider of healthcare solutions with development centers in Israel and Belarus.',
     challengeTitle: 'Remote patient monitoring solution',
@@ -1959,7 +2149,8 @@ async function insertRealData() {
     solutionDescription:
       'A team of a project manager, a business analyst, 3 senior С++ developers, a senior UI designer, and a software testing engineer have delivered a desktop application based on image analysis algorithms, complemented with a simple and intuitive GUI. In particular, ORB algorithm has been used for feature detection, and a combination of algorithms (perceptual hash algorithm, PSNR and histograms comparing) have been employed to compare regions of interest in the reference template and in the image under inspection. The user provides a reference board template, putting on all the elements to be inspected with a tool that allows marking objects of three main shapes: \n-Elements with a round cross-section (mainly capacitors) \n-Rectangular elements (chips, diodes, transistors) \n-Dumbbell-shaped elements (resistors) \n After preparing the reference template with all the elements located, the user can proceed to the analysis of printed circuit assemblies of the same type as the reference PCA. Comparing these images with the reference assembly, the application defines defected ones and shows the locations of missing components in detail.',
     createdData: 'April 17, 2018',
-    partnerWebsite: 'https://geospacemfg.com/blog/3d-automated-optical-inspection/',
+    partnerWebsite:
+      'https://geospacemfg.com/blog/3d-automated-optical-inspection/',
   })
   await IoT.addCasestudy(iotC11.id)
   await IndustrialManufacturing.addCasestudy(iotC11.id)
@@ -1979,7 +2170,8 @@ async function insertRealData() {
     solutionDescription:
       'Our more than a decade long expertise in the Automotive domain along with proven production grade Cloud-Telematics reference designs encouraged the customer to partner with us for this project. We leveraged our expertise in IoT Sensor Network design and Cloud Interface development, in order to enable the collection of data like speed, GPS location and more. This was facilitated with the help of MQTT protocol based communication interface. Our expertise in the automotive domain ensured that we achieve compliance with all the necessary standards while selecting components for hardware design. Additionally, we have leveraged our expertise in firmware, SPI, I2C and CAN protocols.',
     createdData: 'January 5, 2018',
-    partnerWebsite: 'https://www.bosch-mobility-solutions.com/en/mobility-topics/connected-mobility/',
+    partnerWebsite:
+      'https://www.bosch-mobility-solutions.com/en/mobility-topics/connected-mobility/',
   })
   await IoT.addCasestudy(iotC12.id)
   await Automotive.addCasestudy(iotC12.id)
@@ -2030,24 +2222,24 @@ async function insertRealData() {
   })
   const person6 = await TeamMember.create({
     occupation: 'Network security Engineer',
-    teamsTitle: 'Communications Department',
+    teamsTitle: 'Communications Expert',
     personName: 'Tina Niere',
     personPhoto:
-      'https://media.gettyimages.com/photos/confident-mature-businesswoman-on-white-background-picture-id1132314350?k=6&m=1132314350&s=612x612&w=0&h=WwPaInvvkxiIEHCBPTsSaWZRtc-ZT2lc-8conkFaQtk=',
+      'https://media.gettyimages.com/photos/portrait-of-confident-young-woman-picture-id1171147266?k=6&m=1171147266&s=612x612&w=0&h=F-m_b7aUATKlM_x05zIHeRcH5zKQUiO3Npo4iNN5AEM=',
   })
   const person7 = await TeamMember.create({
     occupation: 'Network security Engineer',
     teamsTitle: 'Anti Fraud Department',
     personName: 'Samuel Corsly',
     personPhoto:
-      'https://media.gettyimages.com/photos/portrait-of-senior-businessman-smiling-picture-id985138660?k=6&m=985138660&s=612x612&w=0&h=xpSNW4A8wTwNE4yYLLX7BQnV_YYy_fV5kiE6cjpY43A=',
+      'https://media.gettyimages.com/photos/senior-owner-wearing-eyeglasses-and-smart-casuals-picture-id1171689564?k=6&m=1171689564&s=612x612&w=0&h=atxfJ5c0k1VD8rm_9kyBznqJVvaP8L9QAnCUkCyDScY=',
   })
   const person8 = await TeamMember.create({
-    occupation: 'Lead security',
+    occupation: 'Chief security departement',
     teamsTitle: 'Anti Fraud Department',
     personName: 'Daniel Ferton',
     personPhoto:
-      'https://media.gettyimages.com/photos/closeup-smiling-male-leader-wearing-eyeglasses-picture-id1179627340?k=6&m=1179627340&s=612x612&w=0&h=GTRsydUj5lqB7q3EFvgKHJJS9K2vjjnW_F1jYq7SddU=',
+      'https://media.gettyimages.com/photos/handsome-young-adult-businessman-with-stubble-picture-id1250238624?k=6&m=1250238624&s=612x612&w=0&h=OFktjPw6iXim1Apu2Io_aYx9eWiIcKQSumLGSfeADLo=',
   })
   Security.addTeammember(person1)
   Security.addTeammember(person2)
@@ -2077,6 +2269,10 @@ async function insertRealData() {
   cs4.addTeammember(person2)
   cs4.addTeammember(person4)
   cs4.addTeammember(person5)
+
+  cs5.addTeammember(person3)
+  cs5.addTeammember(person7)
+  cs5.addTeammember(person6)
   /** END OF SECURITY TEAM MEMBER */
 
   //**IOT TEAM MEMBER */
@@ -2213,6 +2409,28 @@ async function insertRealData() {
   ccC4.addTeammember(ccP4)
   ccC4.addTeammember(ccP4)
 
+  const ccP5 = await TeamMember.create({
+    occupation: 'Back End developer',
+    teamsTitle: 'Live Streaming Departement',
+    personName: 'Claudia Gielsen',
+    personPhoto:
+      'https://media.gettyimages.com/photos/portrait-of-smiling-mature-businesswoman-picture-id1092659092?k=6&m=1092659092&s=612x612&w=0&h=59RIcAZiQ5kgDkK1hCwT3R3TMN9UOrpfLK9nleAKd94=',
+  })
+  CloudComputing.addTeammember(ccP5)
+  ccC5.addTeammember(ccP5)
+  ccC6.addTeammember(ccP5)
+
+  const ccP6 = await TeamMember.create({
+    occupation: 'Expert in Web Services',
+    teamsTitle: 'E-Invoice Departement',
+    personName: 'Timothy Rittler',
+    personPhoto:
+      'https://media.gettyimages.com/photos/middleaged-man-with-glasses-on-pink-background-picture-id1129841459?k=6&m=1129841459&s=612x612&w=0&h=Ddqtt2_S0o-5ZX6hy70E5uARd581_Gfdg8mvNqKqRJ4=',
+  })
+  CloudComputing.addTeammember(ccP6)
+  ccC5.addTeammember(ccP5)
+  ccC6.addTeammember(ccP5)
+
   /** END OF CLOUD COMPUTING TEAM MEMBER */
 
   //**CUSTOMER EXPERIENCE TEAM MEMBER - isi */
@@ -2221,8 +2439,7 @@ async function insertRealData() {
     occupation: 'Europe Tech Innovation',
     teamsTitle: 'Customer Experience Departement',
     personName: 'Joleen Green',
-    personPhoto:
-      'https://i.ibb.co/zb03Whq/Risorsa-1.png',
+    personPhoto: 'https://i.ibb.co/zb03Whq/Risorsa-1.png',
   })
   CustomerExperience.addTeammember(caP1)
   ceC4.addTeammember(caP1)
@@ -2257,8 +2474,7 @@ async function insertRealData() {
     occupation: 'Digital Project Senior Manager',
     teamsTitle: 'Customer Experience Departement',
     personName: 'Christine Todd',
-    personPhoto:
-      'https://i.ibb.co/S68RrCn/Risorsa-2.png',
+    personPhoto: 'https://i.ibb.co/S68RrCn/Risorsa-2.png',
   })
   CustomerExperience.addTeammember(caP4)
   ceC3.addTeammember(caP4)
@@ -2269,8 +2485,7 @@ async function insertRealData() {
     occupation: 'Product Experience Optimization Manager',
     teamsTitle: 'Customer Experience Departement',
     personName: 'Chalo Garcia',
-    personPhoto:
-      'https://i.ibb.co/HXtPtDL/Risorsa-3.png',
+    personPhoto: 'https://i.ibb.co/HXtPtDL/Risorsa-3.png',
   })
   CustomerExperience.addTeammember(caP5)
   ceC8.addTeammember(caP5)
@@ -2324,7 +2539,6 @@ async function insertRealData() {
   ceC8.addTeammember(caP9)
   ceC5.addTeammember(caP9)
   ceC4.addTeammember(caP9)
-  
 
   /** END OF USTOMER EXPERIENCE TEAM MEMBER */
 
