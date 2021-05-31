@@ -943,6 +943,14 @@ export default {
       }
     },
   },
+  mounted() {
+    this.resizeCaseCard()
+    window.addEventListener('resize', this.resizeCaseCard)
+  },
+  destroyed() {
+    window.removeEventListener('resize', this.resizeServiceCard)
+    window.removeEventListener('resize', this.resizeCaseCard)
+  },
 }
 </script>
 
@@ -1069,7 +1077,7 @@ export default {
 
 .casestudies-grid {
   display: grid;
-  grid-template-columns: repeat(2, calc((100%-300px) / 2));
+  grid-template-columns: repeat(2, 1fr);
   margin-top: 40px;
   margin-bottom: 40px;
 }

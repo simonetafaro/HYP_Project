@@ -1029,13 +1029,16 @@ async function insertRealData() {
     serviceDescription:
       'We help brands tell stories and craft experiences in innovative and immersive ways, opening up new kinds of interaction, new ways to work and learn, and new revenue streams. It’s an emerging space for all to play in. Let us help you take a lead in next-generation experience.',
     s1Name: 'Spatial storytelling',
-    s1Description: 'Designing 360o story worlds, including non linear narrative and character development.',
+    s1Description:
+      'Designing 360o story worlds, including non linear narrative and character development.',
     s1Logo: 'https://i.ibb.co/Rczq8Pv/sol-1.png',
     s2Name: 'Experiential marketing',
-    s2Description: 'Creating interactive brand engagement through immersive content.',
+    s2Description:
+      'Creating interactive brand engagement through immersive content.',
     s2Logo: 'https://i.ibb.co/KwskLjv/sol-2.png',
     s3Name: 'Immersive Commerce',
-    s3Description: 'Bringing products to life in 3D through digital twin models, augmenting the experience.',
+    s3Description:
+      'Bringing products to life in 3D through digital twin models, augmenting the experience.',
     s3Logo: 'https://i.ibb.co/b77D3Fm/sol-3.png',
     partnerTitle: 'Alliances and partners',
     partnerDescription:
@@ -1056,16 +1059,21 @@ async function insertRealData() {
       'Leading creative, business analysis, and advanced technology in user research',
     description:
       'Design a new way to communicate. User interface (or UI) design has grown substantially over the past few years, and has blossomed into one of the most creative, innovative and exciting fields in tech. Our service it is here to help you to create a brand new costumer’s experiences with the latest trend of user interfaces. An interface is the link between the corporate and the user, it must respond to customers’ new, often unmet and frequently changing needs and enable them to achieve their desired outcomes.',
-    banner: 'https://images.unsplash.com/photo-1618788372246-79faff0c3742?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=882&q=80',
-    serviceDescription: 'User interface elements are the parts we use to build interactive websites or apps. They provide touchpoints for the user as they navigate their way around; from buttons to scrollbars, to menu items and checkboxes. Every single detail matter!',
+    banner:
+      'https://images.unsplash.com/photo-1618788372246-79faff0c3742?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=882&q=80',
+    serviceDescription:
+      'User interface elements are the parts we use to build interactive websites or apps. They provide touchpoints for the user as they navigate their way around; from buttons to scrollbars, to menu items and checkboxes. Every single detail matter!',
     s1Name: 'Trustworthy apps',
-    s1Description: 'Avoiding unplanned interactions, giving the customers insight into what to expect.',
+    s1Description:
+      'Avoiding unplanned interactions, giving the customers insight into what to expect.',
     s1Logo: 'https://i.ibb.co/Rczq8Pv/sol-1.png',
     s2Name: 'Design accessibility',
-    s2Description: 'Keep in mind accessibility and inclusion. Every design choice matters for us.',
+    s2Description:
+      'Keep in mind accessibility and inclusion. Every design choice matters for us.',
     s2Logo: 'https://i.ibb.co/KwskLjv/sol-2.png',
     s3Name: 'Endlessly adaptivity',
-    s3Description: 'An optimized model to deliver insights and facilitate decision-making.',
+    s3Description:
+      'An optimized model to deliver insights and facilitate decision-making.',
     s3Logo: 'https://i.ibb.co/b77D3Fm/sol-3.png',
     partnerTitle: 'Alliances and partners',
     partnerDescription:
@@ -1091,13 +1099,16 @@ async function insertRealData() {
     serviceDescription:
       'Our experience-led approach helps ensure that organizations have the right experience architecture to allow customers to create their own journey on their own terms. We view technology as the enabler of the customer experience, not the driver.',
     s1Name: 'Single view',
-    s1Description:'A business that is interacting with customers to drive connected experiences.',
+    s1Description:
+      'A business that is interacting with customers to drive connected experiences.',
     s1Logo: 'https://i.ibb.co/Rczq8Pv/sol-1.png',
     s2Name: 'Seamless plug and play',
-    s2Description: 'CXE solves the technology impediment to allow organizations to focus on impact.',
+    s2Description:
+      'CXE solves the technology impediment to allow organizations to focus on impact.',
     s2Logo: 'https://i.ibb.co/KwskLjv/sol-2.png',
     s3Name: 'Omnichannel power',
-    s3Description: 'CXE unifies your applications across marketing, turning touchpoints into a story.',
+    s3Description:
+      'CXE unifies your applications across marketing, turning touchpoints into a story.',
     s3Logo: 'https://i.ibb.co/b77D3Fm/sol-3.png',
     partnerTitle: 'Alliances and partners',
     partnerDescription:
@@ -1114,15 +1125,21 @@ async function insertRealData() {
   //4
   const Campaign = await Service.create({
     title: 'Campaign Management',
-    subTitle: 'Communicate marketing messages at speed and scale to acquire and retain customers, driving sustainable growth.',
-    description: 'We all know communication is critical, but knowing what to say and when to say it—and whom to say it to—can make or break the message. That is why Accenture Interactive Marketing Engagement Services team specializes in solutions to help clients understand their customers, define the experience, and deliver relevant, compelling messages. We understand the new digital landscape and evolving customer expectations. Connections need to be made throughout the customer journey, constantly and across channels. "Always-on" campaigns are designed to capture attention and amplify demand, leads and revenue generation.',
-    banner: 'https://images.unsplash.com/photo-1552664730-d307ca884978?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80',
-    serviceDescription: 'We design and build creative campaigns that target customers with the right message to drive engagement. Our insights into new and evolving digital technologies mean we understand how to deliver personalized messages at the right time, helping acquire new customers, grow wallet share with existing customers, and retain the most profitable customers.',
+    subTitle:
+      'Communicate marketing messages at speed and scale to acquire and retain customers, driving sustainable growth.',
+    description:
+      'We all know communication is critical, but knowing what to say and when to say it—and whom to say it to—can make or break the message. That is why Accenture Interactive Marketing Engagement Services team specializes in solutions to help clients understand their customers, define the experience, and deliver relevant, compelling messages. We understand the new digital landscape and evolving customer expectations. Connections need to be made throughout the customer journey, constantly and across channels. "Always-on" campaigns are designed to capture attention and amplify demand, leads and revenue generation.',
+    banner:
+      'https://images.unsplash.com/photo-1552664730-d307ca884978?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80',
+    serviceDescription:
+      'We design and build creative campaigns that target customers with the right message to drive engagement. Our insights into new and evolving digital technologies mean we understand how to deliver personalized messages at the right time, helping acquire new customers, grow wallet share with existing customers, and retain the most profitable customers.',
     s1Name: 'Campaign planning',
-    s1Description: 'Create a consistent experience throughout the customer journey.',
+    s1Description:
+      'Create a consistent experience throughout the customer journey.',
     s1Logo: 'https://i.ibb.co/Rczq8Pv/sol-1.png',
     s2Name: 'Management and optimization',
-    s2Description: 'Enable a campaign management solution with digital marketing ecosystem.',
+    s2Description:
+      'Enable a campaign management solution with digital marketing ecosystem.',
     s2Logo: 'https://i.ibb.co/KwskLjv/sol-2.png',
     s3Name: 'Lead generation',
     s3Description: 'Fuel your funnel by driving demand from qualified leads.',
@@ -1151,13 +1168,16 @@ async function insertRealData() {
     serviceDescription:
       'With our range of pre-built AI modules and ecosystem of technology partners, we are able to quickly scale hyper-personalized experiences to help clients anticipate and address their customers needs.',
     s1Name: 'Patented conversational AI',
-    s1Description: 'Rapidly design and execute automated conversations, compatible with technology.',
+    s1Description:
+      'Rapidly design and execute automated conversations, compatible with technology.',
     s1Logo: 'https://i.ibb.co/Rczq8Pv/sol-1.png',
     s2Name: 'Intent discovery and analytics',
-    s2Description: 'Apply a data-driven approach to identify customer intents for automation.',
+    s2Description:
+      'Apply a data-driven approach to identify customer intents for automation.',
     s2Logo: 'https://i.ibb.co/KwskLjv/sol-2.png',
-    s3Name:  'Customer and journey analytics',
-    s3Description:  'Responsibly establish a strong foundation to generate insights that unlock value.',
+    s3Name: 'Customer and journey analytics',
+    s3Description:
+      'Responsibly establish a strong foundation to generate insights that unlock value.',
     s3Logo: 'https://i.ibb.co/b77D3Fm/sol-3.png',
     partnerTitle: 'Alliances and partners',
     partnerDescription:
@@ -1182,14 +1202,17 @@ async function insertRealData() {
       'https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=993&q=80',
     serviceDescription:
       'What does it mean to build a brand? We take it from the ground up—from strategy and content to activation.',
-    s1Name:'Intent discovery and analytics',
-    s1Description: 'We deliver strategy for new client brands and develop creative assets and identities.',
+    s1Name: 'Intent discovery and analytics',
+    s1Description:
+      'We deliver strategy for new client brands and develop creative assets and identities.',
     s1Logo: 'https://i.ibb.co/Rczq8Pv/sol-1.png',
     s2Name: 'Content activation',
-    s2Description: 'We develop creative content across channels to drive consumer experiences.',
+    s2Description:
+      'We develop creative content across channels to drive consumer experiences.',
     s2Logo: 'https://i.ibb.co/KwskLjv/sol-2.png',
     s3Name: 'Omnichannel strategy',
-    s3Description: 'We activate and optimize programs that deliver high engagement and investment.',
+    s3Description:
+      'We activate and optimize programs that deliver high engagement and investment.',
     s3Logo: 'https://i.ibb.co/b77D3Fm/sol-3.png',
     partnerTitle: 'Alliances and partners',
     partnerDescription:
@@ -1683,13 +1706,16 @@ async function insertRealData() {
     title: 'Bringing clothing to life directly in-store',
     subTitle: 'How Zara is now leading the mid-market tech fashion pack.',
     banner: 'https://www.mind-mag.com/wp-content/uploads/2018/04/IMG2645.jpg',
-    descriptiveText: 'Zara is one of the world’s most successful fashion retail brands, if not the most successful. Not only is Zara a clear leader in the fashion industry, but is also a large tech firm. The key of Zara’s success is that its business model leans heavily on technological innovation and customer experience.',
+    descriptiveText:
+      'Zara is one of the world’s most successful fashion retail brands, if not the most successful. Not only is Zara a clear leader in the fashion industry, but is also a large tech firm. The key of Zara’s success is that its business model leans heavily on technological innovation and customer experience.',
     challengeTitle: 'Our challenge - Finding an engaging technology ',
-    challengeDescription: 'In essence, thanks to a pioneering technological strategy, Zara holds the title for market leader. By adopting new tools including big data, augmented reality and artificial intelligence, the Spanish clothing retailer has managed to outpace its direct competitors. Zara ask Hextech to design a unique high quality and innovative customer experience, involving AR. Zara is looking at for a means of enhancing the in-store experience, trialing this on a meaningful scale',
+    challengeDescription:
+      'In essence, thanks to a pioneering technological strategy, Zara holds the title for market leader. By adopting new tools including big data, augmented reality and artificial intelligence, the Spanish clothing retailer has managed to outpace its direct competitors. Zara ask Hextech to design a unique high quality and innovative customer experience, involving AR. Zara is looking at for a means of enhancing the in-store experience, trialing this on a meaningful scale',
     solutionTitle: 'The solution we provided - Augmented reality ',
-    solutionDescription: 'By pointing cameras at sensors installed in windows, users of the app can see virtual fashion models strutting their stuff. Other AR imagery includes mannequins moving around and showcasing the brand’s new Studio Collection. Once users have lived the experience, there is also the option to buy the featured clothes directly through the app by simply clicking on “shop the look” button or in the store itself. This is a great solution to attract millennial shoppers to its brick and mortar store locations.',
+    solutionDescription:
+      'By pointing cameras at sensors installed in windows, users of the app can see virtual fashion models strutting their stuff. Other AR imagery includes mannequins moving around and showcasing the brand’s new Studio Collection. Once users have lived the experience, there is also the option to buy the featured clothes directly through the app by simply clicking on “shop the look” button or in the store itself. This is a great solution to attract millennial shoppers to its brick and mortar store locations.',
     createdData: 'April 7, 2020',
-    partnerWebsite: 'https://www.zara.com/', 
+    partnerWebsite: 'https://www.zara.com/',
   })
   await CustomerExperience.addCasestudy(ceC7.id)
   await Campaign.addCasestudy(ceC7.id)
@@ -1911,7 +1937,8 @@ async function insertRealData() {
     title: 'Building health monitoring',
     subTitle:
       'The Customer received an easy-to-use IoT solution to monitor the state of a construction in real time. The tool automatically notifies the operator about a sensor failure or a construction defect and can be integrated with external systems',
-    banner: 'https://www.oki.com/en/iot/point/infrastructure/img/sp/img_infra01.jpg',
+    banner:
+      'https://www.oki.com/en/iot/point/infrastructure/img/sp/img_infra01.jpg',
     descriptiveText:
       'The Customer is a large company that provides construction sites with complex automation and security systems. The company offers design solutions and performs supply, installation and commissioning for various types of construction projects.',
     challengeTitle: 'Continuous and efficient technical control',
@@ -1930,7 +1957,8 @@ async function insertRealData() {
     title: 'Remote patient monitoring software',
     subTitle:
       'The development team optimized the measurement API server and decreased the load on the system by introducing the following features: aggregation of requests, grouping of data, NGINX server settings, optimization of queries and MySQL. The solution for remote software deployment to SNA devices enabled the distribution order of install, delete and update commands as per specifics of Android OS by building a queue of commands and sending them to the devices.',
-    banner: 'https://s15543.pcdn.co/wp-content/uploads/2020/01/galaxy_watch_active_healthcare_a.jpg',
+    banner:
+      'https://s15543.pcdn.co/wp-content/uploads/2020/01/galaxy_watch_active_healthcare_a.jpg',
     descriptiveText:
       'The Customer is a US-based provider of healthcare solutions with development centers in Israel and Belarus.',
     challengeTitle: 'Remote patient monitoring solution',
@@ -1959,7 +1987,8 @@ async function insertRealData() {
     solutionDescription:
       'A team of a project manager, a business analyst, 3 senior С++ developers, a senior UI designer, and a software testing engineer have delivered a desktop application based on image analysis algorithms, complemented with a simple and intuitive GUI. In particular, ORB algorithm has been used for feature detection, and a combination of algorithms (perceptual hash algorithm, PSNR and histograms comparing) have been employed to compare regions of interest in the reference template and in the image under inspection. The user provides a reference board template, putting on all the elements to be inspected with a tool that allows marking objects of three main shapes: \n-Elements with a round cross-section (mainly capacitors) \n-Rectangular elements (chips, diodes, transistors) \n-Dumbbell-shaped elements (resistors) \n After preparing the reference template with all the elements located, the user can proceed to the analysis of printed circuit assemblies of the same type as the reference PCA. Comparing these images with the reference assembly, the application defines defected ones and shows the locations of missing components in detail.',
     createdData: 'April 17, 2018',
-    partnerWebsite: 'https://geospacemfg.com/blog/3d-automated-optical-inspection/',
+    partnerWebsite:
+      'https://geospacemfg.com/blog/3d-automated-optical-inspection/',
   })
   await IoT.addCasestudy(iotC11.id)
   await IndustrialManufacturing.addCasestudy(iotC11.id)
@@ -1979,7 +2008,8 @@ async function insertRealData() {
     solutionDescription:
       'Our more than a decade long expertise in the Automotive domain along with proven production grade Cloud-Telematics reference designs encouraged the customer to partner with us for this project. We leveraged our expertise in IoT Sensor Network design and Cloud Interface development, in order to enable the collection of data like speed, GPS location and more. This was facilitated with the help of MQTT protocol based communication interface. Our expertise in the automotive domain ensured that we achieve compliance with all the necessary standards while selecting components for hardware design. Additionally, we have leveraged our expertise in firmware, SPI, I2C and CAN protocols.',
     createdData: 'January 5, 2018',
-    partnerWebsite: 'https://www.bosch-mobility-solutions.com/en/mobility-topics/connected-mobility/',
+    partnerWebsite:
+      'https://www.bosch-mobility-solutions.com/en/mobility-topics/connected-mobility/',
   })
   await IoT.addCasestudy(iotC12.id)
   await Automotive.addCasestudy(iotC12.id)
@@ -2221,8 +2251,7 @@ async function insertRealData() {
     occupation: 'Europe Tech Innovation',
     teamsTitle: 'Customer Experience Departement',
     personName: 'Joleen Green',
-    personPhoto:
-      'https://i.ibb.co/zb03Whq/Risorsa-1.png',
+    personPhoto: 'https://i.ibb.co/zb03Whq/Risorsa-1.png',
   })
   CustomerExperience.addTeammember(caP1)
   ceC4.addTeammember(caP1)
@@ -2257,8 +2286,7 @@ async function insertRealData() {
     occupation: 'Digital Project Senior Manager',
     teamsTitle: 'Customer Experience Departement',
     personName: 'Christine Todd',
-    personPhoto:
-      'https://i.ibb.co/S68RrCn/Risorsa-2.png',
+    personPhoto: 'https://i.ibb.co/S68RrCn/Risorsa-2.png',
   })
   CustomerExperience.addTeammember(caP4)
   ceC3.addTeammember(caP4)
@@ -2269,8 +2297,7 @@ async function insertRealData() {
     occupation: 'Product Experience Optimization Manager',
     teamsTitle: 'Customer Experience Departement',
     personName: 'Chalo Garcia',
-    personPhoto:
-      'https://i.ibb.co/HXtPtDL/Risorsa-3.png',
+    personPhoto: 'https://i.ibb.co/HXtPtDL/Risorsa-3.png',
   })
   CustomerExperience.addTeammember(caP5)
   ceC8.addTeammember(caP5)
@@ -2324,7 +2351,6 @@ async function insertRealData() {
   ceC8.addTeammember(caP9)
   ceC5.addTeammember(caP9)
   ceC4.addTeammember(caP9)
-  
 
   /** END OF USTOMER EXPERIENCE TEAM MEMBER */
 
@@ -2335,7 +2361,7 @@ async function insertRealData() {
     teamsTitle: 'Analytics Departement',
     personName: 'Haru Nayaki',
     personPhoto:
-      'https://media.gettyimages.com/photos/m-happy-with-where-my-career-is-heading-picture-id1138617116?s=612x612',
+      'https://media.gettyimages.com/photos/portrait-of-businessman-in-formalwear-smiling-picture-id985138772?k=6&m=985138772&s=612x612&w=0&h=NnXh0mIQvTCZcF6DH_C4EWqeQ6lUUGDC-2XEN1VM5TM=',
   })
   BigDataAnalysis.addTeammember(bdaP1)
   bdaC4.addTeammember(bdaP1)
@@ -2347,7 +2373,7 @@ async function insertRealData() {
     teamsTitle: 'Analytics Departement',
     personName: 'Juliè Harmon',
     personPhoto:
-      'https://media.gettyimages.com/photos/portrait-of-woman-smiling-on-white-background-picture-id1092658874?s=612x612',
+      'https://media.gettyimages.com/photos/mid-adult-woman-smiling-over-white-background-picture-id985137694?k=6&m=985137694&s=612x612&w=0&h=vmjkCbox_MN_wHO14X6lZ5XDrEUssgf1Ayh-5YSmSgM=',
   })
   BigDataAnalysis.addTeammember(bdaP2)
   bdaC2.addTeammember(bdaP2)
@@ -2358,7 +2384,7 @@ async function insertRealData() {
     teamsTitle: 'Analytics Departement',
     personName: 'Raùl Sirte',
     personPhoto:
-      'https://media.gettyimages.com/photos/nigel-farage-leader-of-the-uk-independence-party-leaves-the-northern-picture-id470057490?s=612x612',
+      'https://media.gettyimages.com/photos/portrait-of-smiling-young-man-wearing-tshirt-picture-id1092658882?k=6&m=1092658882&s=612x612&w=0&h=H5UC7rY59rm9qqu5VLVBaNZw79XgmJ_YQM3-i11Z6-U=',
   })
   BigDataAnalysis.addTeammember(bdaP3)
   bdaC1.addTeammember(bdaP3)
@@ -2369,7 +2395,7 @@ async function insertRealData() {
     teamsTitle: 'Analytics Departement',
     personName: 'Francesca Rizzo',
     personPhoto:
-      'https://media.gettyimages.com/photos/confident-mature-businesswoman-on-white-background-picture-id1132314350?s=612x612',
+      'https://media.gettyimages.com/photos/confident-mature-businesswoman-on-white-background-picture-id1132314350?k=6&m=1132314350&s=612x612&w=0&h=WwPaInvvkxiIEHCBPTsSaWZRtc-ZT2lc-8conkFaQtk=',
   })
   BigDataAnalysis.addTeammember(bdaP4)
   bdaC6.addTeammember(bdaP4)
@@ -2380,7 +2406,7 @@ async function insertRealData() {
     teamsTitle: 'Analytics Departement',
     personName: 'Jeff Peterson',
     personPhoto:
-      'https://media.gettyimages.com/photos/man-looking-at-camera-on-street-picture-id1197870409?s=612x612',
+      'https://media.gettyimages.com/photos/confident-young-man-wearing-purple-tshirt-picture-id1092658864?k=6&m=1092658864&s=612x612&w=0&h=sU5p04nJS0EGbixMaX1kl7QCrDFSMX2r2MMJbd5gdDQ=',
   })
   BigDataAnalysis.addTeammember(bdaP5)
   bdaC3.addTeammember(bdaP5)
@@ -2401,7 +2427,7 @@ async function insertRealData() {
     teamsTitle: 'Analytics Departement',
     personName: 'Maria Yen',
     personPhoto:
-      'https://media.gettyimages.com/photos/mature-female-ceo-with-arms-crossed-picture-id1179627362?s=612x612',
+      'https://media.gettyimages.com/photos/portrait-of-businesswoman-with-long-blond-hair-picture-id985138672?k=6&m=985138672&s=612x612&w=0&h=btXtkSbeeJnJGG3Z1ss8kab29t_E-88cgPJguvL7cNA=',
   })
   BigDataAnalysis.addTeammember(bdaP7)
   bdaC2.addTeammember(bdaP7)
@@ -2412,7 +2438,7 @@ async function insertRealData() {
     teamsTitle: 'Analytics Departement',
     personName: 'Omar Zizou',
     personPhoto:
-      'https://media.gettyimages.com/photos/beautiful-italian-man-picture-id489171250?s=612x612',
+      'https://media.gettyimages.com/photos/portrait-of-smiling-tattooed-man-with-arms-crossed-picture-id1141508304?k=6&m=1141508304&s=612x612&w=0&h=5vR-TvBk_YWUhXaEeboxVw28-taKhE78ftqHcO91GhQ=',
   })
   BigDataAnalysis.addTeammember(bdaP8)
   bdaC5.addTeammember(bdaP8)
