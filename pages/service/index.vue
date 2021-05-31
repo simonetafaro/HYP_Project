@@ -552,6 +552,9 @@ export default {
 </style>
 
 <style>
+.service_card {
+  max-width: 310px !important;
+}
 @media screen and (min-width: 769px) and (max-width: 1200px) {
   .service-left {
     margin-right: 0px !important;

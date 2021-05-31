@@ -1087,3 +1087,25 @@ p {
   }
 }
 </style>
+
+<style>
+.service_card {
+  max-width: 350px !important;
+}
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  .service-left {
+    margin-right: 12px !important;
+  }
+  .service-right {
+    margin-left: 12px !important;
+  }
+  .service_card {
+    max-width: 350px !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .service_card {
+    max-width: 146px !important;
+  }
+}
+</style>
