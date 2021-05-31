@@ -600,12 +600,15 @@ export default {
     SpaceDivider,
     DiscoverButton,
   },
-  async asyncData({ $axios, route }) {
+  async asyncData({ error, $axios, route }) {
     const { id } = route.params
     const { data } = await $axios.get(
       `${process.env.BASE_URL}/api/casestudy/${id}`
     )
     const casestudy = data
+    if (casestudy == null) {
+      return error({ statusCode: 404, message: 'Case study not found!' })
+    }
     let relCases = await $axios.get(
       `${process.env.BASE_URL}/api/relatedCaseStudies/${data.areaID}/${id}`
     )

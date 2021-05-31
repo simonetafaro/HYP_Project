@@ -667,13 +667,15 @@ export default {
 
   mixins: [GoToMixins],
 
-  async asyncData({ $axios, route }) {
+  async asyncData({ error, $axios, route }) {
     const { id } = route.params
     const { data } = await $axios.get(
       `${process.env.BASE_URL}/api/teammembers/${id}`
     )
     const person = data
-
+    if (person == null) {
+      return error({ statusCode: 404, message: 'Person not found!' })
+    }
     let relCasestudies = await $axios.get(
       `${process.env.BASE_URL}/api/casestudiesbyteammember/${id}`
     )
