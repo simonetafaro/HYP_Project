@@ -804,8 +804,6 @@ export default {
     const people = data
     let partners = await $axios.get(`${process.env.BASE_URL}/api/partners`)
     partners = partners.data
-    console.log(partners)
-    console.log(people)
     return { people, partners }
   },
 
