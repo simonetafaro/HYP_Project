@@ -652,12 +652,11 @@
         mollit anim id est laborum.
       </h3>
     </header>
-    <div class="filter-bar">
-      <div class="filter-title" @click="DropdownArea()">
+    <div class="filter-bar" @click="DropdownArea()">
+      <div class="filter-title">
         Filter by Area
         <span v-if="selectedArea" class="area-name">{{ selectedArea }}</span>
         <svg
-          @click="DropdownArea()"
           class="area-dropdown-arrow"
           width="12"
           height="8"

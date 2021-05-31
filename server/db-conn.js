@@ -449,14 +449,15 @@ async function insertRealData() {
   })
 
   const KeyProtect = await Service.create({
-    title: 'IBM Key Protect for IBM Cloud',
+    title: 'HexTech Key Protect for HexTech Cloud',
     subTitle:
       'Get visibility and control of encryption keys throughout the key lifecycle, from a single location',
     description:
       'You’re using key protection for data security and compliance. But full encryption visibility and control are essential.',
-    banner: 'http://jwhightech.com/asset/images/assesment.jpg',
+    banner:
+      'https://cdn3.iconfinder.com/data/icons/security-and-protection-31/53/46-512.png',
     serviceDescription:
-      'The IBM® Key Protect for IBM Cloud® service helps you provision and store encrypted keys for apps across IBM Cloud services, so you can see and manage data encryption and the entire key lifecycle from one central location.',
+      'The HexTech® Key Protect for HexTech Cloud® service helps you provision and store encrypted keys for apps across HexTech Cloud services, so you can see and manage data encryption and the entire key lifecycle from one central location.',
     s1Name: 'Robust security',
     s1Description:
       'Provision and store keys using FIPS 140-2 Level 3 certified HSMs.',
@@ -485,6 +486,7 @@ async function insertRealData() {
   await Security.addService(DataSecurity.id)
   await Security.addService(IdentityAccessManagement.id)
   await Security.addService(SecurityAssessmentAndPlanning.id)
+  await Security.addService(KeyProtect.id)
 
   //**END OF SECURITY SERVICES */
 

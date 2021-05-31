@@ -1139,6 +1139,8 @@ export default {
 
 .member-grid-container {
   overflow: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 .member-grid {
