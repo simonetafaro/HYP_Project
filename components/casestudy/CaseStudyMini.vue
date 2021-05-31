@@ -1,7 +1,11 @@
 <template>
   <div class="casestudy-mini">
     <div
-      class="casestudycontainer"
+      :class="
+        caseIndex % 2 === 0
+          ? 'case-right casestudycontainer'
+          : 'case-left casestudycontainer'
+      "
       v-on:click="goTo('/casestudy/' + path)"
       :style="{
         'background-image': `url(${image})`,
@@ -120,7 +124,6 @@ export default {
 
 @media screen and (max-width: 1200px) {
   .casestudycontainer {
-    width: 100%;
     max-width: 350px;
   }
   .case-button {
@@ -128,6 +131,12 @@ export default {
   }
   .case-info {
     max-height: 80%;
+  }
+  .case-left {
+    margin-right: 0;
+  }
+  .case-right {
+    margin-left: 0;
   }
 }
 @media screen and (max-width: 768px) {
