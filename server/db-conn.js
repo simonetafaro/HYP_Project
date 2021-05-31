@@ -2424,25 +2424,25 @@ async function insertRealData() {
   const CocaCola = await Partner.create({
     name: 'CocaCola',
     description: 'Taste the feeling',
-    image: 'https://i.ibb.co/SBqydD8/coca-cola.png',
+    image: 'https://i.ibb.co/pywcrhj/coca-cola-200.png',
     website: 'https://www.coca-cola.com/',
   })
   const Figma = await Partner.create({
     name: 'Figma',
     description: 'The collaborative interface design tool',
-    image: 'https://i.ibb.co/W25yZ0m/figma.png',
+    image: 'https://i.ibb.co/3W81YKV/figma-200.png',
     website: 'https://www.figma.com/',
   })
   const Adobe = await Partner.create({
     name: 'Adobe',
     description: 'Creativity for everyone',
-    image: 'https://i.ibb.co/sw4Rx4M/adobe.png',
+    image: 'https://i.ibb.co/VQSW0Zx/adobe-200.png',
     website: 'https://www.adobe.com/',
   })
   const Sketch = await Partner.create({
     name: 'Sketch',
     description: 'It all starts here',
-    image: 'https://i.ibb.co/QdHXCx7/sketch-01.png',
+    image: 'https://i.ibb.co/YR24qHc/sketch-200.png',
     website: 'https://www.sketch.com/',
   })
   const Arduino = await Partner.create({
@@ -2454,8 +2454,20 @@ async function insertRealData() {
   const GoogleCloud = await Partner.create({
     name: 'Google Cloud',
     description: 'Cloud Computing Services',
-    image: 'https://i.ibb.co/SsctBTT/cloud.png',
+    image: 'https://i.ibb.co/JqkrKTp/cloud-200.png',
     website: 'https://cloud.google.com/',
+  })
+  const Node = await Partner.create({
+    name: 'Node.js',
+    description: 'JavaScript everywhere',
+    image: 'https://i.ibb.co/VvpxKnR/nodejs-200.png',
+    website: 'https://nodejs.org/',
+  })
+  const Node = await Partner.create({
+    name: 'Amazon Web Services',
+    description: 'Work Hard. Have Fun.',
+    image: 'https://i.ibb.co/gzDM3yG/amazon-200.png',
+    website: 'https://aws.amazon.com/',
   })
 }
 
