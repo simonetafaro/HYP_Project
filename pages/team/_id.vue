@@ -669,7 +669,6 @@ export default {
 
   async asyncData({ $axios, route }) {
     const { id } = route.params
-    // console.log('this url', process.env.BASE_URL)
     const { data } = await $axios.get(
       `${process.env.BASE_URL}/api/teammembers/${id}`
     )

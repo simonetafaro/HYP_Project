@@ -148,7 +148,6 @@ export default {
   mixins: [GoToMixins],
   async asyncData({ $axios, route }) {
     const { id } = route.params
-    // console.log('this url', process.env.BASE_URL)
     const { data } = await $axios.get(`${process.env.BASE_URL}/api/area/${id}`)
     const area = data
     const teammembers = await $axios.get(
