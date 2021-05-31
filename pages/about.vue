@@ -708,9 +708,8 @@
             </div>
           </section>
         </div>
-        <button class="team-button" @click="goTo(`/team`)">
-          Meet all the team
-        </button>
+        <discover-button :buttonLabel="'Meet all the team'" :path="'/team'">
+        </discover-button>
       </section>
     </div>
     <section class="collaborations">
@@ -789,12 +788,14 @@ import MemberMini from '~/components/team/MemberMini.vue'
 import GoToMixins from '~/mixins/goTo-mixins.js'
 import DoubleColorTitle from '~/components/utils/DoubleColorTitle.vue'
 import SpaceDivider from '~/components/utils/SpaceDivider.vue'
+import DiscoverButton from '~/components/utils/DiscoverButton.vue'
 
 export default {
   components: {
     MemberMini,
     DoubleColorTitle,
     SpaceDivider,
+    DiscoverButton,
   },
 
   mixins: [GoToMixins],
@@ -1671,6 +1672,8 @@ p {
     width: 375px;
     grid-template-columns: repeat(2, calc(100% / 2));
     grid-gap: 10px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
   }
 
   .partner-carousel {
