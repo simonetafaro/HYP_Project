@@ -703,6 +703,7 @@
                 :summary="person.workField"
                 :image="person.personPhoto"
                 :index="personIndex"
+                :id="person.id"
               ></member-mini>
             </div>
           </section>

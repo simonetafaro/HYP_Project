@@ -537,13 +537,13 @@
             v-for="(person, personIndex) of casestudy.teammembers"
             :key="'person-' + personIndex"
             class="person"
-            @click="goTo(`/team/${person.id}`)"
           >
             <member-mini
               :personName="person.personName"
               :occupation="person.occupation"
               :image="person.personPhoto"
               :index="personIndex"
+              :id="person.id"
             ></member-mini>
           </div>
         </section>
@@ -734,6 +734,7 @@ img {
   width: 90%;
   object-fit: cover;
   max-height: 375px;
+  border-radius: 10px;
 }
 p {
   text-align: left;
@@ -1084,6 +1085,28 @@ p {
   .pre-section {
     font-size: 12px;
     line-height: 14px;
+  }
+}
+</style>
+
+<style>
+.service_card {
+  max-width: 350px !important;
+}
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  .service-left {
+    margin-right: 12px !important;
+  }
+  .service-right {
+    margin-left: 12px !important;
+  }
+  .service_card {
+    max-width: 350px !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .service_card {
+    max-width: 146px !important;
   }
 }
 </style>
