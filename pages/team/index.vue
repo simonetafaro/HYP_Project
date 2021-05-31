@@ -811,6 +811,14 @@ export default {
       }
     },
   },
+  mounted() {
+    this.resizeCaseCard()
+    window.addEventListener('resize', this.resizeCaseCard)
+  },
+  destroyed() {
+    window.removeEventListener('resize', this.resizeServiceCard)
+    window.removeEventListener('resize', this.resizeCaseCard)
+  },
 }
 </script>
 
@@ -998,6 +1006,10 @@ h4 {
   .top-image {
     width: 100%;
     display: initial;
+
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 
   .header-image {
@@ -1015,7 +1027,7 @@ h4 {
     font-size: 20px;
     line-height: 24px;
     margin-bottom: 17px;
-    margin-top: 29px;
+    margin-top: 80px;
   }
 
   .title {
@@ -1130,7 +1142,7 @@ h4 {
   }
 
   .upper-section {
-    width: 375px;
+    width: 100%;
     margin-top: 0px;
   }
 

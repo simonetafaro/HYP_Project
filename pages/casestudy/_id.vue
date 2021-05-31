@@ -734,6 +734,7 @@ img {
   width: 90%;
   object-fit: cover;
   max-height: 375px;
+  border-radius: 10px;
 }
 p {
   text-align: left;

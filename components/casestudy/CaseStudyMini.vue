@@ -51,7 +51,7 @@ export default {
   border: 2px solid #cdc9ff; /* manca il colore nella palette*/
   border-radius: 30px;
   text-align: left;
-  width: 350px;
+  max-width: 350px;
   margin: auto;
   background-size: cover;
   background-position: center;
@@ -120,8 +120,8 @@ export default {
 
 @media screen and (max-width: 1200px) {
   .casestudycontainer {
-    max-width: 350px;
     width: 100%;
+    max-width: 350px;
   }
   .case-button {
     display: none;

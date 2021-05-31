@@ -778,7 +778,7 @@ export default {
     margin-left: 58px;
   }
   .casestudy {
-    width: min-content;
+    width: 100%;
   }
   .casestudy:nth-child(2n + 1),
   .service:nth-child(2n + 1) {

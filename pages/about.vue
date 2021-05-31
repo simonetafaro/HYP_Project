@@ -1294,6 +1294,9 @@ p {
 @media screen and (max-width: 1200px) {
   .head-image {
     display: initial;
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 
   .first-paragraph {
@@ -1308,6 +1311,7 @@ p {
     text-align: center;
     font-size: 20px;
     line-height: 24px;
+    margin-top: 80px;
   }
 
   .title {
@@ -1502,7 +1506,7 @@ p {
 
   .partner-img {
     width: 200px;
-    height: 200px;
+    height: auto;
     margin: auto;
   }
 }
