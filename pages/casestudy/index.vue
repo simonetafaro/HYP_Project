@@ -1092,8 +1092,8 @@
         </section>
       </div>
       <div class="container">
-        <div class="filter-bar">
-          <div class="filter-title" @click="DropdownArea()">
+        <div class="filter-bar" @click="DropdownArea()">
+          <div class="filter-title">
             Filter by Area
             <span v-if="selectedArea" class="area-name">{{
               selectedArea
