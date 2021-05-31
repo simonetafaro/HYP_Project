@@ -125,7 +125,6 @@ export default {
         const elem = document.getElementById(
           'service-box-' + this.$router.history.current.hash.substring(1)
         )
-        console.log(elem)
         elem.scrollIntoView({
           behavior: 'smooth',
           block: 'center',
@@ -552,6 +551,9 @@ export default {
 </style>
 
 <style>
+.service_card {
+  max-width: 310px !important;
+}
 @media screen and (min-width: 769px) and (max-width: 1200px) {
   .service-left {
     margin-right: 0px !important;

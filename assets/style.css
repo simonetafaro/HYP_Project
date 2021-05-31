@@ -39,3 +39,17 @@ body {
   background: #4d41c9;
   box-shadow: inset 0px 4px 6px rgba(66, 66, 114, 0.16);
 }
+
+h1 {
+  margin: 0;
+}
+
+h2,
+h3 {
+  font-weight: normal;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}

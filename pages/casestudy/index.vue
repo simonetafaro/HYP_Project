@@ -1092,52 +1092,49 @@
         </section>
       </div>
       <div class="container">
-        <div class="inner-container">
-          <div class="filter-bar">
-            <div class="filter-title" @click="DropdownArea()">
-              Filter by Area
-              <span v-if="selectedArea" class="area-name">{{
-                selectedArea
-              }}</span>
-              <svg
-                @click="DropdownArea()"
-                class="area-dropdown-arrow"
-                width="12"
-                height="8"
-                viewBox="0 0 12 8"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M11.334 1.16699L6.0835 6.41748L0.833007 1.16699"
-                  stroke="#63639F"
-                  stroke-width="1.5"
-                />
-              </svg>
-            </div>
-            <div
-              id="Null"
-              class="filter active-filter"
-              @click="
-                findAllCaseStudy($event), DropdownArea(), (overlay = false)
-              "
+        <div class="filter-bar" @click="DropdownArea()">
+          <div class="filter-title">
+            Filter by Area
+            <span v-if="selectedArea" class="area-name">{{
+              selectedArea
+            }}</span>
+            <svg
+              @click="DropdownArea()"
+              class="area-dropdown-arrow"
+              width="12"
+              height="8"
+              viewBox="0 0 12 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              All
-            </div>
-            <div
-              v-for="(area, areaIndex) of areas"
-              :key="'area-' + areaIndex"
-              class="filter"
-              @click="
-                filterCaseStudyByArea($event, area.id),
-                  DropdownArea(),
-                  (overlay = false)
-              "
-            >
-              {{ area.title }}
-            </div>
+              <path
+                d="M11.334 1.16699L6.0835 6.41748L0.833007 1.16699"
+                stroke="#63639F"
+                stroke-width="1.5"
+              />
+            </svg>
           </div>
-
+          <div
+            id="Null"
+            class="filter active-filter"
+            @click="findAllCaseStudy($event), DropdownArea(), (overlay = false)"
+          >
+            All
+          </div>
+          <div
+            v-for="(area, areaIndex) of areas"
+            :key="'area-' + areaIndex"
+            class="filter"
+            @click="
+              filterCaseStudyByArea($event, area.id),
+                DropdownArea(),
+                (overlay = false)
+            "
+          >
+            {{ area.title }}
+          </div>
+        </div>
+        <div class="inner-container">
           <section class="casestudies-grid">
             <div
               v-for="(casestudy, casestudyIndex) of casestudies"
@@ -1224,7 +1221,6 @@ export default {
         window.innerWidth ||
         document.documentElement.clientWidth ||
         document.body.clientWidth
-      console.log(width)
       if (width < 1200) {
         const areaFilters = document.getElementsByClassName('filter')
         const areaArrow = document.getElementsByClassName('area-dropdown-arrow')

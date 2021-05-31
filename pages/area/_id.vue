@@ -110,13 +110,13 @@
             v-for="(person, personIndex) of people.slice(0, 6)"
             :key="'person-' + personIndex"
             class="person"
-            @click="goTo(`/team/${person.id}`)"
           >
             <member-mini
               :personName="person.personName"
               :occupation="person.occupation"
               :image="person.personPhoto"
               :index="personIndex"
+              :id="person.id"
             ></member-mini>
           </div>
         </div>
@@ -146,11 +146,13 @@ export default {
     MemberMini,
   },
   mixins: [GoToMixins],
-  async asyncData({ $axios, route }) {
+  async asyncData({ error, $axios, route }) {
     const { id } = route.params
-    // console.log('this url', process.env.BASE_URL)
     const { data } = await $axios.get(`${process.env.BASE_URL}/api/area/${id}`)
     const area = data
+    if (area == null) {
+      return error({ statusCode: 404, message: 'Area not found!' })
+    }
     const teammembers = await $axios.get(
       `${process.env.BASE_URL}/api/teammembersbyarea/${id}`
     )
@@ -469,6 +471,9 @@ export default {
 </style>
 
 <style>
+.service_card {
+  max-width: 350px !important;
+}
 @media screen and (min-width: 769px) and (max-width: 1200px) {
   .service-left {
     margin-right: 12px !important;

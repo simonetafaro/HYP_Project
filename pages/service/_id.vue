@@ -407,9 +407,9 @@
           </div>
         </div>
         <div class="partner">
-          <img :src="service.p2Logo" class="partner-img" />
+          <img :src="service.p3Logo" class="partner-img" />
           <div class="partner-name">
-            {{ service.p2Name }}
+            {{ service.p3Name }}
           </div>
         </div>
       </section>
@@ -441,6 +441,7 @@
               :image="casestudy.banner"
               :area="casestudy.area.title"
               :path="casestudy.id"
+              :caseIndex="caseIndex + 1"
             ></case-study-mini>
           </div>
         </section>
@@ -515,11 +516,17 @@ export default {
     window.removeEventListener('resize', this.resizeCaseCard)
   },
   mixins: [GoToMixins],
-  async asyncData({ $axios, route }) {
+  async asyncData({ error, $axios, route }) {
     const { id } = route.params
     const { data } = await $axios.get(
       `${process.env.BASE_URL}/api/service/${id}`
     )
+    if (data === null) {
+      return error({
+        statusCode: 404,
+        message: 'Service not found!',
+      })
+    }
     const service = data
     let relServices = await $axios.get(
       `${process.env.BASE_URL}/api/relatedServices/${data.areaID}/${id}`
@@ -772,13 +779,13 @@ export default {
     grid-gap: 44px;
     margin: auto;
   }
-
+  .casestudies-grid,
   .service-grid {
     margin-right: 58px;
     margin-left: 58px;
   }
   .casestudy {
-    width: min-content;
+    width: 100%;
   }
   .casestudy:nth-child(2n + 1),
   .service:nth-child(2n + 1) {
@@ -874,6 +881,9 @@ export default {
 </style>
 
 <style>
+.service_card {
+  max-width: 350px !important;
+}
 @media screen and (min-width: 769px) and (max-width: 1200px) {
   .service-left {
     margin-right: 12px !important;
@@ -884,10 +894,22 @@ export default {
   .service_card {
     max-width: 350px !important;
   }
+  .casestudy {
+    max-width: 350px !important;
+  }
+  .case-left {
+    margin-right: 12px !important;
+  }
+  .case-right {
+    margin-left: 12px !important;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .service_card {
+    max-width: 270px !important;
+  }
+  .casestudy {
     max-width: 270px !important;
   }
 }
