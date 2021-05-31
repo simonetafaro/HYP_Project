@@ -700,103 +700,17 @@
           v-for="(person, personIndex) of people"
           :key="'person-' + personIndex"
           class="person"
-          @click="showOverlay(person.id, personIndex)"
         >
           <member-mini
             :personName="person.personName"
             :occupation="person.occupation"
             :image="person.personPhoto"
-            @click="overlay = false"
+            :id="person.id"
             :index="personIndex"
           ></member-mini>
         </div>
       </section>
-      <div v-if="overlay">
-        <section class="overlay-container">
-          <div class="right-arrow" @click="scrollRight(member.id)">
-            <svg
-              width="31"
-              height="49"
-              viewBox="0 0 31 49"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M3.33203 3L24.665 24.333L3.33203 45.666"
-                stroke="#424272"
-                stroke-width="8"
-              />
-            </svg>
-          </div>
-          <div class="left-arrow" @click="scrollLeft(member.id)">
-            <svg
-              width="31"
-              height="49"
-              viewBox="0 0 31 49"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M27.332 45.666L5.99902 24.333L27.332 2.99999"
-                stroke="#424272"
-                stroke-width="8"
-              />
-            </svg>
-          </div>
-          <div class="overlay-tab">
-            <div class="close-button" @click="overlay = false">
-              <svg
-                width="71"
-                height="41"
-                viewBox="0 0 71 41"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M17.5 3L35 20.5L17.5 38"
-                  stroke="#424272"
-                  stroke-width="7"
-                />
-                <path
-                  d="M52.7715 3L35.2715 20.5L52.7715 38"
-                  stroke="#424272"
-                  stroke-width="7"
-                />
-              </svg>
-            </div>
-
-            <member-mini
-              class="image-and-texts"
-              :personName="member.personName"
-              :occupation="member.occupation"
-              :image="member.personPhoto"
-              @click="overlay = false"
-              :index="memberIndex"
-            ></member-mini>
-
-            <div class="casestudies-container">
-              <section class="casestudies-grid">
-                <h4 v-if="relCasestudies === 0">
-                  There are no related Case Studies
-                </h4>
-                <div
-                  v-for="(casestudy, casestudyIndex) of relCasestudies"
-                  :key="'casestudy-' + casestudyIndex"
-                  class="casestudy"
-                  @click="findCS(id)"
-                >
-                  <case-study-mini
-                    :title="casestudy.title"
-                    :description="casestudy.subTitle"
-                    :image="casestudy.banner"
-                    :path="casestudy.id"
-                  ></case-study-mini>
-                </div>
-              </section>
-            </div>
-          </div>
-        </section>
-      </div>
+      <div class="team-counter">{{ people.length }} people in this team</div>
     </div>
   </main>
 </template>
@@ -805,13 +719,11 @@
 // import axios from 'axios'
 import MemberMini from '~/components/team/MemberMini.vue'
 import GoToMixins from '~/mixins/goTo-mixins.js'
-import CaseStudyMini from '~/components/casestudy/CaseStudyMini.vue'
 import DoubleColorTitle from '~/components/utils/DoubleColorTitle.vue'
 
 export default {
   components: {
     MemberMini,
-    CaseStudyMini,
     DoubleColorTitle,
   },
 
@@ -830,7 +742,6 @@ export default {
   data() {
     return {
       selectedArea: null,
-      overlay: false,
       member: {},
       memberIndex: null,
       relCasestudies: {},
@@ -865,49 +776,6 @@ export default {
       const element = e.target
       element.classList.add('active-filter')
       this.selectedArea = null
-    },
-    async showOverlay(id, personIndex) {
-      this.memberIndex = personIndex
-      let area = document.getElementsByClassName('filter active-filter')[0]
-      area = area.id
-      if (area === 'Null') {
-        let member = await this.$axios.get(
-          `${process.env.BASE_URL}/api/teammembers/${id}`
-        )
-
-        member = member.data
-        if (member === null) {
-          return
-        }
-        let relCasestudies = await this.$axios.get(
-          `${process.env.BASE_URL}/api/casestudiesbyteammember/${id}`
-        )
-        relCasestudies = relCasestudies.data
-
-        this.overlay = true
-        this.member = member
-        this.relCasestudies = relCasestudies
-      } else {
-        this.people = await this.$axios.$get(
-          `${process.env.BASE_URL}/api/teammembersbyarea/${area}`
-        )
-
-        for (let i = 0; i < this.people.length; i++) {
-          if (this.people[i].id === id) {
-            const member = this.people[i]
-            id = member.id
-            let relCasestudies = await this.$axios.get(
-              `${process.env.BASE_URL}/api/casestudiesbyteammember/${id}`
-            )
-            relCasestudies = relCasestudies.data
-
-            this.overlay = true
-            this.member = member
-            this.relCasestudies = relCasestudies
-            return
-          }
-        }
-      }
     },
 
     scrollRight(memberID) {
@@ -951,143 +819,8 @@ export default {
   display: none;
 }
 
-.overlay-container {
-  display: block;
-  width: 100%;
-  height: 110%;
-  position: absolute;
-  max-height: max-content;
-  top: 0;
-  background: rgba(113, 126, 238, 0.3);
-  backdrop-filter: blur(8px);
-  padding: 50px;
-}
-
-.overlay-tab {
-  background: #f9f9ff;
-  width: 90%;
-  display: flex;
-  height: max-content;
-  border-radius: 30px;
-  position: relative;
-  margin: auto;
-  padding: 25px;
-}
-
-.right-arrow {
-  position: absolute;
-  top: 200px;
-  right: 5%;
-  cursor: pointer;
-}
-
-.right-arrow:hover {
-  transform: scale(1.1);
-}
-
-.left-arrow {
-  position: absolute;
-  left: 5%;
-  top: 200px;
-  cursor: pointer;
-}
-
-.left-arrow:hover {
-  transform: scale(1.1);
-}
-
-.image-and-texts {
-  position: relative;
-  left: 0;
-  margin: auto !important;
-  top: 0;
-  width: 300px;
-}
-
 .area-dropdown-arrow {
   display: none;
-}
-
-.overlay-photo {
-  height: auto;
-  width: 300px;
-  border-radius: 10px;
-}
-
-.overlay-texts {
-  left: 2%;
-}
-
-.overlay-name {
-  display: block;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 32px;
-  line-height: 38px;
-  color: #424272;
-  padding: 20px;
-}
-
-.overlay-workfield {
-  display: block;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 24px;
-  padding: 17px;
-
-  /* identical to box height, or 100% */
-  text-align: center;
-
-  color: #464a52;
-
-  mix-blend-mode: normal;
-  opacity: 0.6;
-}
-
-.overlay-discover {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 24px;
-  /* identical to box height */
-  text-align: center;
-  text-transform: uppercase;
-  color: #424272;
-}
-
-.casestudies-container {
-  position: relative;
-  right: 0;
-  top: 0;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 20px;
-  margin: auto;
-  width: 100%;
-}
-
-.casestudies-grid {
-  display: grid;
-  grid-template-columns: repeat(2, calc((100%-300px) / 2));
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
-.casestudy {
-  cursor: pointer;
-  margin-bottom: 20px;
-}
-
-.close-button {
-  position: absolute;
-  right: 0%;
-  top: 3%;
-  transform: scale(0.5);
-}
-
-.close-button:hover {
-  cursor: pointer;
-  transform: scale(0.6);
 }
 
 .container {
@@ -1133,6 +866,15 @@ h2 {
   height: 337px;
   width: 730px;
   margin-top: 22px;
+  color: #464a52;
+}
+
+.team-counter {
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
   color: #464a52;
 }
 h4 {
@@ -1238,144 +980,8 @@ h4 {
 }
 
 @media screen and (max-width: 1200px) {
-  .overlay-container {
-    display: block;
-    width: 100%;
-    height: 101%;
-    position: absolute;
-    max-height: max-content;
-    top: 0;
-    background: rgba(113, 126, 238, 0.3);
-    backdrop-filter: blur(8px);
-    padding: 50px;
-  }
-
-  .overlay-tab {
-    background: #f9f9ff;
-    width: 90%;
-    display: flex;
-    height: max-content;
-    border-radius: 30px;
-    position: relative;
-    margin: auto;
-    padding: 25px;
-  }
-
-  .right-arrow {
-    position: absolute;
-    top: 200px;
-    right: 5%;
-    cursor: pointer;
-  }
-
-  .right-arrow:hover {
-    transform: scale(1.1);
-  }
-
-  .left-arrow {
-    position: absolute;
-    left: 5%;
-    top: 200px;
-    cursor: pointer;
-  }
-
-  .left-arrow:hover {
-    transform: scale(1.1);
-  }
-
-  .image-and-texts {
-    position: relative;
-    left: 0;
-    margin: auto;
-    top: 0;
-    min-width: min-content;
-  }
-
   .area-dropdown-arrow {
     display: none;
-  }
-
-  .overlay-photo {
-    height: auto;
-    width: 300px;
-    border-radius: 10px;
-  }
-
-  .overlay-texts {
-    left: 2%;
-  }
-
-  .overlay-name {
-    display: block;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 32px;
-    line-height: 38px;
-    color: #424272;
-    padding: 20px;
-  }
-
-  .overlay-workfield {
-    display: block;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 24px;
-    padding: 17px;
-
-    /* identical to box height, or 100% */
-    text-align: center;
-
-    color: #464a52;
-
-    mix-blend-mode: normal;
-    opacity: 0.6;
-  }
-
-  .overlay-discover {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 24px;
-    /* identical to box height */
-    text-align: center;
-    text-transform: uppercase;
-    color: #424272;
-  }
-
-  .casestudies-container {
-    position: relative;
-    right: 0;
-    top: 0;
-    margin-top: 20px;
-    margin-right: 40px;
-    margin: auto;
-    width: 750px;
-  }
-
-  .casestudies-grid {
-    display: grid;
-    grid-template-rows: inherit;
-    grid-template-columns: unset;
-    grid-gap: 20px;
-    margin-top: 40px;
-    margin-bottom: 40px;
-  }
-  .casestudy {
-    cursor: pointer;
-    margin-bottom: 20px;
-  }
-
-  .close-button {
-    position: absolute;
-    right: 0%;
-    top: 3%;
-    transform: scale(0.5);
-  }
-
-  .close-button:hover {
-    cursor: pointer;
-    transform: scale(0.6);
   }
 
   .container {
@@ -1515,15 +1121,6 @@ h4 {
     margin-top: 0;
   }
 
-  .image-and-texts {
-    position: relative;
-    left: 0;
-    margin: auto;
-    top: 0;
-
-    width: 100%;
-  }
-
   .top-image {
     display: initial;
   }
@@ -1577,29 +1174,6 @@ h4 {
   .lower-section {
     width: 100%;
     margin: auto;
-  }
-
-  .overlay-tab {
-    display: inherit;
-  }
-
-  .casestudies-container {
-    position: relative;
-    right: 0;
-    top: 0;
-    margin-top: 20px;
-    margin-right: 40px;
-    margin: auto;
-    width: 100%;
-  }
-
-  .casestudies-grid {
-    display: grid;
-    grid-template-rows: inherit;
-    grid-template-columns: unset;
-    grid-gap: 20px;
-    margin-top: 40px;
-    margin-bottom: 40px;
   }
 
   .member-grid {
