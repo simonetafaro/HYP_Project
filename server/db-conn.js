@@ -2281,7 +2281,7 @@ async function insertRealData() {
     teamsTitle: 'IoT Department',
     personName: 'Olivier Haren',
     personPhoto:
-      'https://media.gettyimages.com/photos/portrait-of-welldressed-mature-businessman-picture-id1141508234?s=612x612',
+      'https://media.gettyimages.com/photos/portrait-of-welldressed-mature-businessman-picture-id1141508234?k=6&m=1141508234&s=612x612&w=0&h=8N7A46EwXJh6WmHwPRzNpqzhpN-LOHhp3CuRi_Y6M30=',
   })
   IoT.addTeammember(iotP1)
   iotC1.addTeammember(iotP1)
@@ -2292,7 +2292,7 @@ async function insertRealData() {
     teamsTitle: 'IoT Department',
     personName: 'Jean Orsaten',
     personPhoto:
-      'https://media.gettyimages.com/photos/closeup-smiling-male-leader-wearing-eyeglasses-picture-id1179627340?s=612x612',
+      'https://media.gettyimages.com/photos/closeup-smiling-male-leader-wearing-eyeglasses-picture-id1179627340?k=6&m=1179627340&s=612x612&w=0&h=GTRsydUj5lqB7q3EFvgKHJJS9K2vjjnW_F1jYq7SddU=',
   })
   IoT.addTeammember(iotP2)
   iotC2.addTeammember(iotP2)
@@ -2303,7 +2303,7 @@ async function insertRealData() {
     teamsTitle: 'IoT Smart Retail Department',
     personName: 'Kristen DiCerba',
     personPhoto:
-      'https://media.gettyimages.com/photos/mature-female-ceo-with-arms-crossed-picture-id1179627362?s=612x612',
+      'https://media.gettyimages.com/photos/mature-female-ceo-with-arms-crossed-picture-id1179627362?k=6&m=1179627362&s=612x612&w=0&h=9Z1lhb7r_tmmt7BafB-FLEQyRmt6iJF1vwy1IIYBp4I=',
   })
   IoT.addTeammember(iotP3)
   iotC3.addTeammember(iotP3)
@@ -2315,7 +2315,7 @@ async function insertRealData() {
     teamsTitle: 'IoT Automotive Departement',
     personName: 'Michael Johnson',
     personPhoto:
-      'https://media.gettyimages.com/photos/bearded-businessman-against-gray-background-picture-id1179627332?s=612x612',
+      'https://media.gettyimages.com/photos/bearded-businessman-against-gray-background-picture-id1179627332?k=6&m=1179627332&s=612x612&w=0&h=0cOAOyXCNaBay4Q6aCD7xRuWLE32B4aSl0lz2V1MHnw=',
   })
   IoT.addTeammember(iotP4)
   iotC6.addTeammember(iotP4)
@@ -2326,7 +2326,7 @@ async function insertRealData() {
     teamsTitle: 'Industrial Manufacturing Departement',
     personName: 'Peter Glynn',
     personPhoto:
-      'https://media.gettyimages.com/photos/portrait-of-senior-businessman-smiling-picture-id985138660?s=2048x2048',
+      'https://media.gettyimages.com/photos/portrait-of-senior-businessman-smiling-picture-id985138660?k=6&m=985138660&s=612x612&w=0&h=xpSNW4A8wTwNE4yYLLX7BQnV_YYy_fV5kiE6cjpY43A=',
   })
 
   IoT.addTeammember(iotP5)
@@ -2338,7 +2338,7 @@ async function insertRealData() {
     teamsTitle: 'Healtcare Departement',
     personName: 'Donald Leen',
     personPhoto:
-      'https://media.gettyimages.com/photos/smiling-man-outdoors-in-the-city-picture-id1179420343?s=612x612',
+      'https://media.gettyimages.com/photos/portrait-of-young-businessman-wearing-blue-shirt-picture-id1065402062?k=6&m=1065402062&s=612x612&w=0&h=zgPNjcxl9l8m_XrH_otqPeD7uRi2BToO3ZiiWn9sCds=',
   })
   IoT.addTeammember(iotP6)
   iotC9.addTeammember(iotP6)
@@ -2349,7 +2349,7 @@ async function insertRealData() {
     teamsTitle: 'Smart Cities Departement',
     personName: 'Adam Jentzsch',
     personPhoto:
-      'https://media.gettyimages.com/photos/young-man-standing-confidently-picture-id973481352?s=612x612',
+      'https://media.gettyimages.com/photos/welcome-to-my-pub-picture-id488000179?k=6&m=488000179&s=612x612&w=0&h=SD7YLy2SypRZQsaAdGuRQdIp_0mFNoveM0SIOiybNPc=',
   })
   IoT.addTeammember(iotP7)
   iotC10.addTeammember(iotP7)
@@ -2359,7 +2359,7 @@ async function insertRealData() {
     teamsTitle: 'Smart Lighting Departement',
     personName: 'Michelle Tore',
     personPhoto:
-      'https://media.gettyimages.com/photos/businesswoman-with-blond-hair-on-white-background-picture-id1053401356?s=612x612',
+      'https://media.gettyimages.com/photos/young-african-american-female-entrepreneur-with-arms-crossed-picture-id1277527368?k=6&m=1277527368&s=612x612&w=0&h=yPjmntSrk1YJuEYJPnAO26pdBgwg1DnqI6nReyHU7FQ=',
   })
   IoT.addTeammember(iotP8)
   iotC11.addTeammember(iotP8)
@@ -2372,7 +2372,7 @@ async function insertRealData() {
     teamsTitle: 'E-Invoice Departement',
     personName: 'Sarah Anderson',
     personPhoto:
-      'https://media.gettyimages.com/photos/happy-female-brunette-ceo-wearing-blue-denim-shirt-picture-id1179627283?s=612x612',
+      'https://media.gettyimages.com/photos/smiling-businesswoman-in-discussion-with-colleagues-during-meeting-in-picture-id1129489589?k=6&m=1129489589&s=612x612&w=0&h=MQZSYL4iK5vYtXt7R_QVafb80p8YSxlt__ZRBO9s2KQ=',
   })
   CloudComputing.addTeammember(ccP1)
   ccC1.addTeammember(ccP1)
@@ -2382,7 +2382,7 @@ async function insertRealData() {
     teamsTitle: 'Cloud App Development Departement',
     personName: 'Giancarlo Andes',
     personPhoto:
-      'https://media.gettyimages.com/photos/smart-mature-businessman-in-city-picture-id157591367?s=612x612',
+      'https://media.gettyimages.com/photos/charming-businessman-sitting-in-office-picture-id1137332142?k=6&m=1137332142&s=612x612&w=0&h=TKQXMjXsj3eqmeCNWYWi0rYo2iMdD2_qGXOp3pJLhzI=',
   })
   CloudComputing.addTeammember(ccP2)
   ccC2.addTeammember(ccP2)
@@ -2392,7 +2392,7 @@ async function insertRealData() {
     teamsTitle: 'Live Streaming Departement',
     personName: 'Amhed Srinda',
     personPhoto:
-      'https://media.gettyimages.com/photos/positivity-produces-success-picture-id1132793417?s=612x612',
+      'https://media.gettyimages.com/photos/businessman-wearing-eyeglasses-on-white-background-picture-id1272629259?k=6&m=1272629259&s=612x612&w=0&h=BPTNFuadNYGcOcdL8d1UEn1_wRKtUAGa0-tffam9ZL4=',
   })
   CloudComputing.addTeammember(ccP3)
   ccC3.addTeammember(ccP3)
@@ -2403,7 +2403,7 @@ async function insertRealData() {
     teamsTitle: 'Live Streaming Departement',
     personName: 'Reda Asten',
     personPhoto:
-      'https://media.istockphoto.com/photos/portrait-concept-picture-id1016761216?k=6&m=1016761216&s=612x612&w=0&h=j-DyZTSqmnhoHKsJdGmiMPnungpHiq9UTrvx4UylMQI=',
+      'https://media.gettyimages.com/photos/welldressed-businessman-against-white-background-picture-id1171689747?k=6&m=1171689747&s=612x612&w=0&h=AlYkP-q5zInKbjRVAiJwr94mS195pHCKbMmqkH6vdVk=',
   })
   CloudComputing.addTeammember(ccP4)
   ccC4.addTeammember(ccP4)

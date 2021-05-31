@@ -110,13 +110,13 @@
             v-for="(person, personIndex) of people.slice(0, 6)"
             :key="'person-' + personIndex"
             class="person"
-            @click="goTo(`/team/${person.id}`)"
           >
             <member-mini
               :personName="person.personName"
               :occupation="person.occupation"
               :image="person.personPhoto"
               :index="personIndex"
+              :id="person.id"
             ></member-mini>
           </div>
         </div>
