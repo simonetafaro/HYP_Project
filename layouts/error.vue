@@ -49,22 +49,26 @@ export default {
 .error-right-side {
   padding-top: 150px;
   padding-left: 35px;
+  text-align: center;
 }
 .error-title {
   font-size: 52px;
-  font-family: cursive;
+  font-weight: 700;
+  color: var(--cc-base1);
   margin-bottom: 16px;
+  text-transform: uppercase;
 }
 .error-subtitle {
   font-size: 24px;
   margin-bottom: 16px;
 }
 .error-subtitle-text {
-  color: red;
+  color: var(--cc-base2);
 }
 .error-message {
   font-size: 12px;
   margin-bottom: 8px;
+  color: var(--c-grey1);
 }
 
 @media screen and (max-width: 1200px) {
