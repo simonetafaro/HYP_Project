@@ -1307,7 +1307,7 @@ p {
     position: relative;
     margin: auto;
     margin-top: 28px;
-    height: 1116px;
+    height: 1216px;
     width: 550px;
   }
 
@@ -1346,10 +1346,7 @@ p {
   }
 
   .description-flower {
-    display: initial;
-    left: 0;
-    margin-top: 14px;
-    margin-bottom: 14px;
+    display: block;
   }
 
   .description-2 {
@@ -1525,7 +1522,7 @@ p {
     position: relative;
     margin: auto;
     margin-top: 28px;
-    height: 756px;
+    height: 816px;
     width: 272px;
   }
 
@@ -1563,10 +1560,7 @@ p {
   }
 
   .description-flower {
-    display: initial;
-    left: 0;
-    margin-top: 14px;
-    margin-bottom: 14px;
+    display: block;
   }
 
   .description-2 {
