@@ -353,7 +353,11 @@
         </div>
         <section class="solution-section">
           <div class="solution">
-            <img :src="service.s1Logo" class="solution-img" alt="solution" />
+            <img
+              :src="service.s1Logo"
+              class="solution-img"
+              alt="image contains an icon for a solution detail"
+            />
             <div class="solution-name">
               {{ service.s1Name }}
             </div>
@@ -362,7 +366,11 @@
             </div>
           </div>
           <div class="solution">
-            <img :src="service.s2Logo" class="solution-img" alt="solution" />
+            <img
+              :src="service.s2Logo"
+              class="solution-img"
+              alt="image contains an icon for a solution detail"
+            />
             <div class="solution-name">
               {{ service.s2Name }}
             </div>
@@ -371,7 +379,11 @@
             </div>
           </div>
           <div class="solution">
-            <img :src="service.s3Logo" class="solution-img" alt="solution" />
+            <img
+              :src="service.s3Logo"
+              class="solution-img"
+              alt="image contains an icon for a solution detail"
+            />
             <div class="solution-name">
               {{ service.s3Name }}
             </div>
@@ -395,19 +407,19 @@
       </div>
       <section class="partner-section">
         <div class="partner">
-          <img :src="service.p1Logo" class="partner-img" alt="partner" />
+          <img :src="service.p1Logo" class="partner-img" :alt="service.altP1" />
           <div class="partner-name">
             {{ service.p1Name }}
           </div>
         </div>
         <div class="partner">
-          <img :src="service.p2Logo" class="partner-img" alt="partner" />
+          <img :src="service.p2Logo" class="partner-img" :alt="service.altP2" />
           <div class="partner-name">
             {{ service.p2Name }}
           </div>
         </div>
         <div class="partner">
-          <img :src="service.p3Logo" class="partner-img" alt="partner" />
+          <img :src="service.p3Logo" class="partner-img" :alt="service.altP3" />
           <div class="partner-name">
             {{ service.p3Name }}
           </div>
