@@ -12,7 +12,7 @@
             </h5>
             <div class="column">
               <div class="single-column">
-                <img :src="casestudy.banner" :alt="casestudy.altBanner" />
+                <img :src="casestudy.banner" :alt="casestudy.title" />
                 <p class="description">
                   {{ casestudy.descriptiveText }}
                 </p>
@@ -68,7 +68,6 @@
                     <div class="related-image">
                       <img
                         :src="casestudy.banner"
-                        :alt="casesudy.altBanner"
                         class="related-case-study-image"
                       />
                     </div>

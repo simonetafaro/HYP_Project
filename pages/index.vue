@@ -849,7 +849,6 @@
             :summary="area.subTitle"
             :image="area.evocativeImage"
             :index="areaIndex + 1"
-            :altEvocativeImage="area.altEvocativeImage"
           ></area-home-mini>
           <div class="show-only-tablet-mobile">
             <space-divider></space-divider>

@@ -706,7 +706,6 @@
             :image="person.personPhoto"
             :id="person.id"
             :index="personIndex"
-            :altImage="person.altImage"
           ></member-mini>
         </div>
       </section>
