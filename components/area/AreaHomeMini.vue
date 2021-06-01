@@ -6,7 +6,7 @@
     }"
   >
     <div class="area-image-column">
-      <img class="service_img" :src="image" />
+      <img class="service_img" :src="image" :alt="altEvocativeImage" />
     </div>
     <div class="area-description-column">
       <div class="area-description-text">{{ summary }}</div>
@@ -24,6 +24,7 @@ export default {
     },
     summary: { type: String, default: () => '' },
     index: { type: Number, default: () => 0 },
+    altEvocativeImage: { type: String, default: () => '' },
   },
   methods: {
     isEven(index) {

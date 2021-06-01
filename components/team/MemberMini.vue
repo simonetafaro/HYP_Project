@@ -54,6 +54,7 @@ export default {
     occupation: { type: String, default: () => '' },
     index: { type: Number, default: () => 0 },
     id: { type: Number, default: () => 0 },
+    altImage: { type: String, default: () => 'team Person ' },
   },
   mixins: [GoToMixins],
 }

@@ -10,7 +10,7 @@
     >
       <div class="service_title">{{ title }}</div>
       <div class="service_img_container">
-        <img class="service_img" :src="image" />
+        <img class="service_img" :src="image" :alt="altBanner" />
       </div>
       <button v-on:click="goTo('/service/' + path)" class="more_button">
         LEARN MORE
@@ -28,6 +28,7 @@ export default {
     image: { type: String, default: () => '' },
     path: { type: Number, default: () => 0 },
     serviceIndex: { type: Number, default: () => 0 },
+    altBanner: { type: String, default: () => '' },
   },
   mixins: [GoToMixins],
   methods: {

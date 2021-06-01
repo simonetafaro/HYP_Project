@@ -626,7 +626,7 @@
       </svg>
       <div class="header-inner-container">
         <div class="photo-column">
-          <img :src="person.personPhoto" :alt="person.occupation" />
+          <img :src="person.personPhoto" alt="team person" />
         </div>
         <div class="info-column">
           <h1>{{ person.personName }}</h1>
