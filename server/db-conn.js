@@ -2679,7 +2679,7 @@ async function insertRealData() {
     image: 'https://i.ibb.co/VvpxKnR/nodejs-200.png',
     website: 'https://nodejs.org/',
   })
-  const Node = await Partner.create({
+  const Aws = await Partner.create({
     name: 'Amazon Web Services',
     description: 'Work Hard. Have Fun.',
     image: 'https://i.ibb.co/gzDM3yG/amazon-200.png',
