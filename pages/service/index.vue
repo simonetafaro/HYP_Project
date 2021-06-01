@@ -125,7 +125,6 @@ export default {
         const elem = document.getElementById(
           'service-box-' + this.$router.history.current.hash.substring(1)
         )
-        console.log(elem)
         elem.scrollIntoView({
           behavior: 'smooth',
           block: 'center',

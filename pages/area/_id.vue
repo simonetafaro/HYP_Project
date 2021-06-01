@@ -147,11 +147,13 @@ export default {
     MemberMini,
   },
   mixins: [GoToMixins],
-  async asyncData({ $axios, route }) {
+  async asyncData({ error, $axios, route }) {
     const { id } = route.params
-    // console.log('this url', process.env.BASE_URL)
     const { data } = await $axios.get(`${process.env.BASE_URL}/api/area/${id}`)
     const area = data
+    if (area == null) {
+      return error({ statusCode: 404, message: 'Area not found!' })
+    }
     const teammembers = await $axios.get(
       `${process.env.BASE_URL}/api/teammembersbyarea/${id}`
     )

@@ -59,7 +59,6 @@ export default {
       //  resize case img height
       Array.from(document.getElementsByClassName('casestudycontainer')).forEach(
         function (caseCard) {
-          console.log(caseCard.style)
           caseCard.style.height = caseCard.clientWidth + 'px'
         }
       )

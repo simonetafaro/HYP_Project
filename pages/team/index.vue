@@ -790,7 +790,6 @@ export default {
         window.innerWidth ||
         document.documentElement.clientWidth ||
         document.body.clientWidth
-      console.log(width)
       if (width < 1200) {
         const areaFilters = document.getElementsByClassName('filter')
         const areaArrow = document.getElementsByClassName('area-dropdown-arrow')
