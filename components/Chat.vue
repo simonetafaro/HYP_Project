@@ -61,7 +61,7 @@
             <div class="bot-online">online</div>
           </div>
         </div>
-        <div class="close-chat-container">
+        <div class="close-chat-container" @click="isOpen = !isOpen">
           <svg
             width="17"
             height="17"
@@ -106,11 +106,26 @@
             @keypress.enter="sendMessage"
             placeholder="Write here ..."
           />
+          <div class="send-message-button">
+            <svg
+              width="23"
+              height="23"
+              viewBox="0 0 23 23"
+              fill="none"
+              @click="sendMessage"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M14.9785 22.9401C14.6339 22.9401 14.3141 22.7507 14.1527 22.4403L9.4588 13.4777L0.499388 8.78383C0.167213 8.60998 -0.0252628 8.25607 0.00267718 7.88354C0.0306171 7.51101 0.282077 7.19125 0.635983 7.07328L21.7089 0.0479373C22.0442 -0.0638225 22.4136 0.023102 22.662 0.274562C22.9103 0.522917 22.9973 0.892345 22.8855 1.22762L15.8633 22.3037C15.7453 22.6576 15.4255 22.909 15.0561 22.937C15.0282 22.9401 15.0033 22.9401 14.9785 22.9401ZM3.3027 8.15052L10.5826 11.9628C10.7502 12.0497 10.8868 12.1863 10.9769 12.357L14.7891 19.6369L20.5323 2.40731L3.3027 8.15052Z"
+                fill="#424272"
+              />
+            </svg>
+          </div>
         </div>
       </div>
     </div>
-    <div class="button" @click="isOpen = !isOpen">
-      <img src="https://img.icons8.com/ios-filled/452/chat--v1.png" alt="" />
+    <div class="chatBot-button" @click="isOpen = !isOpen">
+      <img src="https://i.ibb.co/Yj5P5bb/logo-chatbot.png" alt="" />
     </div>
   </div>
 </template>
@@ -131,43 +146,49 @@ export default {
   },
   methods: {
     sendMessage() {
-      const { WebSocketEventBus } = require('mmcc/WebSocketEventBus')
-      this.$store.commit('addMessage', {
-        sender: false,
-        content: this.messageToSend,
-      })
-      const packet = {
-        message: { type: 'data', payload: { data: this.messageToSend } },
-        configurationId: process.env.configurationId,
+      if (this.messageToSend !== '') {
+        const { WebSocketEventBus } = require('mmcc/WebSocketEventBus')
+        this.$store.commit('addMessage', {
+          sender: false,
+          content: this.messageToSend,
+        })
+        const packet = {
+          message: { type: 'data', payload: { data: this.messageToSend } },
+          configurationId: process.env.configurationId,
+        }
+        WebSocketEventBus.$emit('send', packet)
+        this.messageToSend = ''
       }
-      WebSocketEventBus.$emit('send', packet)
-      this.messageToSend = ''
     },
+  },
+  updated() {
+    if (document.getElementById('chat-window') != null)
+      document.getElementById(
+        'chat-window'
+      ).scrollTop = document.getElementById('chat-window').scrollHeight
   },
 }
 </script>
 
-<style>
-.button {
-  height: 60px;
-  width: 60px;
-  border: 1px solid black;
-  border-radius: 100%;
-  padding: 10px;
+<style scoped>
+.chatBot-button {
+  height: 95px;
+  width: 95px;
   float: right;
   position: fixed;
   bottom: 50px;
   right: 42px;
   z-index: 99;
 }
-.button img {
+.chatBot-button img {
   width: 100%;
 }
 .chat-container {
   width: 300px;
   height: 400px;
   position: fixed;
-  bottom: 120px;
+  z-index: 99;
+  bottom: 140px;
   right: 22px;
   background: #fbfbff;
   box-shadow: 0px 3px 25px rgba(205, 201, 255, 0.3);
@@ -185,12 +206,12 @@ export default {
 .footer-chat-container {
   width: 100%;
   height: 57px;
-  display: flex;
+  position: relative;
   background: #ffffff;
   box-shadow: 0px 3px 25px rgba(205, 201, 255, 0.3);
   border-radius: 0px 0px 25px 25px;
 }
-.chat-input-container > input {
+.chat-input-container {
   outline: none;
   background: #ffffff;
   border: 1px solid #f3f2ff;
@@ -198,6 +219,12 @@ export default {
   border-right: none;
   box-sizing: border-box;
   height: 38px;
+}
+.chat-input-container > input {
+  outline: none;
+  background: #ffffff;
+  border: none;
+  height: 36px;
   font-family: 'Barlow';
   font-style: normal;
   font-weight: normal;
@@ -207,6 +234,19 @@ export default {
   padding-left: 20px;
 }
 
+.send-message-button {
+  z-index: 20;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 38px;
+  position: absolute;
+  right: 20px;
+}
+
+.send-message-button > svg {
+  cursor: pointer;
+}
 .bot-logo-container {
   display: flex;
   margin-right: auto;
@@ -251,10 +291,12 @@ export default {
   margin-right: 26px;
   align-items: center;
   display: flex;
+  cursor: pointer;
 }
 
 .chat-window {
-  padding-top: 34px;
+  padding-left: 5px;
+  padding-top: 24px;
   overflow-y: scroll;
   height: calc(100% - 114px);
 }
@@ -262,30 +304,55 @@ export default {
 .chat-window::-webkit-scrollbar {
   display: none;
 }
+
 .message {
   width: calc(100% - 8px);
+  max-width: calc(100% - 8px);
   display: flex;
   justify-content: flex-end;
 }
 .message.sender {
   justify-content: flex-start;
+  width: calc(100% - 40px);
+}
+
+.message.sender::before {
+  display: inline-table;
+  content: '';
+  background-image: url('https://i.ibb.co/LQgDNqb/bot-profile.png');
+  background-size: 28px 28px;
+  height: 28px;
+  width: 28px;
+}
+
+.message:not(.sender)::after {
+  display: block;
+  content: '';
+  background-image: url('https://i.ibb.co/CBKWhfF/user-profile.png');
+  background-size: 28px 28px;
+  height: 28px;
+  width: 28px;
 }
 .message-content {
-  padding: 5px 10px;
+  padding: 12px 20px;
   margin: 4px;
   width: auto;
-  background: var(--cc-base3);
-  color: black;
-  border: 1px solid black;
-  border-radius: 4px;
+  background: #e6e3ff;
+  border-radius: 24px 0px 24px 24px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #424272;
+  max-width: calc(100% - 64px);
+  overflow-wrap: anywhere;
 }
 .message-content.sender {
-  background: var(--cc-base1);
-  color: white;
-  border: 1px solid var(--cc-base1);
+  background: #f3f2ff;
+  border-radius: 0px 24px 24px 24px;
 }
 input {
-  width: 100%;
+  width: calc(100% - 50px);
   position: absolute;
   z-index: 20;
 }
