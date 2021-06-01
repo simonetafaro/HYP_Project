@@ -125,7 +125,7 @@
       </div>
     </div>
     <div class="chatBot-button" @click="isOpen = !isOpen">
-      <img src="https://i.ibb.co/rytybdx/logo.png" alt="" />
+      <img src="https://i.ibb.co/Yj5P5bb/logo-chatbot.png" alt="" />
     </div>
   </div>
 </template>
@@ -172,9 +172,8 @@ export default {
 
 <style scoped>
 .chatBot-button {
-  height: 60px;
-  width: 60px;
-  border-radius: 100%;
+  height: 95px;
+  width: 95px;
   float: right;
   position: fixed;
   bottom: 50px;
@@ -189,7 +188,7 @@ export default {
   height: 400px;
   position: fixed;
   z-index: 99;
-  bottom: 120px;
+  bottom: 140px;
   right: 22px;
   background: #fbfbff;
   box-shadow: 0px 3px 25px rgba(205, 201, 255, 0.3);
@@ -296,6 +295,7 @@ export default {
 }
 
 .chat-window {
+  padding-left: 5px;
   padding-top: 24px;
   overflow-y: scroll;
   height: calc(100% - 114px);
@@ -319,7 +319,7 @@ export default {
 .message.sender::before {
   display: inline-table;
   content: '';
-  background-image: url('https://i.ibb.co/vsSqSdP/Partner.png');
+  background-image: url('https://i.ibb.co/LQgDNqb/bot-profile.png');
   background-size: 28px 28px;
   height: 28px;
   width: 28px;
@@ -328,7 +328,7 @@ export default {
 .message:not(.sender)::after {
   display: block;
   content: '';
-  background-image: url('https://i.ibb.co/vsSqSdP/Partner.png');
+  background-image: url('https://i.ibb.co/CBKWhfF/user-profile.png');
   background-size: 28px 28px;
   height: 28px;
   width: 28px;
