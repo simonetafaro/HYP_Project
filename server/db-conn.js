@@ -21,6 +21,7 @@ function defineDBStructure() {
         type: DataTypes.STRING,
         allowNull: true,
       },
+      altBanner: DataTypes.TEXT,
       title: DataTypes.STRING,
       subTitle: DataTypes.TEXT,
       description: DataTypes.TEXT,
@@ -28,6 +29,7 @@ function defineDBStructure() {
         type: DataTypes.STRING,
         allowNull: true,
       },
+      altEvocativePhoto: DataTypes.TEXT,
       serviceDescription: DataTypes.TEXT,
       partnerDescription: DataTypes.TEXT,
       s1Name: DataTypes.STRING,
@@ -53,16 +55,19 @@ function defineDBStructure() {
         type: DataTypes.STRING,
         allowNull: true,
       },
+      altP1: DataTypes.TEXT,
       p2Name: DataTypes.STRING,
       p2Logo: {
         type: DataTypes.STRING,
         allowNull: true,
       },
+      altP2: DataTypes.TEXT,
       p3Name: DataTypes.STRING,
       p3Logo: {
         type: DataTypes.STRING,
         allowNull: true,
       },
+      altP3: DataTypes.TEXT,
     },
     {
       timestamps: false,
@@ -77,6 +82,7 @@ function defineDBStructure() {
         type: DataTypes.STRING,
         allowNull: true,
       },
+      altBanner: DataTypes.TEXT,
       descriptiveText: DataTypes.STRING(800),
       challengeTitle: DataTypes.STRING,
       challengeDescription: DataTypes.TEXT,
@@ -123,6 +129,8 @@ function defineDBStructure() {
       servicesDescription: DataTypes.TEXT,
       caseStudyDescription: DataTypes.TEXT,
       teamDescription: DataTypes.TEXT,
+      altBanner: DataTypes.TEXT,
+      altEvocativeImage: DataTypes.TEXT,
       //nome e job dei team member li prendiamo dalla tabella dei teamMember
     },
     {
@@ -138,6 +146,7 @@ function defineDBStructure() {
         type: DataTypes.STRING,
         allowNull: true,
       },
+      altImage: DataTypes.STRING,
       website: DataTypes.STRING,
     },
     {
@@ -154,7 +163,6 @@ function defineDBStructure() {
   Area.hasMany(TeamMember, { foreignKey: 'areaID' })
 
   Service.belongsToMany(CaseStudy, { through: ServiceCaseStudy })
-  Service.hasMany(TeamMember, { foreignKey: 'serviceID' })
 
   CaseStudy.belongsToMany(Service, { through: ServiceCaseStudy })
   CaseStudy.belongsToMany(TeamMember, { through: PersonCaseStudy })
@@ -192,6 +200,8 @@ async function insertRealData() {
       'Reimagining business through experience. The following case studies demonstrate how our company is an expert in the business of creating comprehensive experiences from start to finish.',
     teamDescription:
       'Ideate, innovate, change the world, repeat. Meet our team of talented people using design thinking to create experiences that win awards and make headlines.',
+    altBanner: 'Image representing Security Area',
+    altEvocativeImage: 'Image evocative of Security Area',
   })
   const IoT = await Area.create({
     title: 'Internet Of Things',
@@ -207,6 +217,8 @@ async function insertRealData() {
       'Reimagining business through experience. The following case studies demonstrate how our company is an expert in the business of creating comprehensive experiences from start to finish.',
     teamDescription:
       'Ideate, innovate, change the world, repeat. Meet our team of talented people using design thinking to create experiences that win awards and make headlines.',
+    altBanner: 'Image representing Interner of Things Area',
+    altEvocativeImage: 'Image evocative of Interner of Things Area',
   })
   const CloudComputing = await Area.create({
     title: 'Cloud Computing',
@@ -221,6 +233,8 @@ async function insertRealData() {
       'Reimagining business through experience. The following case studies demonstrate how our company is an expert in the business of creating comprehensive experiences from start to finish.',
     teamDescription:
       'Ideate, innovate, change the world, repeat. Meet our team of talented people using design thinking to create experiences that win awards and make headlines.',
+    altBanner: 'Image representing Cloud Computing Area',
+    altEvocativeImage: 'Image evocative of Cloud Computing Area',
   })
   // isi
   const CustomerExperience = await Area.create({
@@ -237,6 +251,8 @@ async function insertRealData() {
       'Reimagining business through experience. The following case studies demonstrate how our company is an expert in the business of creating comprehensive experiences from start to finish.',
     teamDescription:
       'Ideate, innovate, change the world, repeat. Meet our team of talented people using design thinking to create experiences that win awards and make headlines.',
+    altBanner: 'Image representing Customer Experience Area',
+    altEvocativeImage: 'Image evocative of Customer Experience Area',
   })
   const BigDataAnalysis = await Area.create({
     title: 'Big Data Analytics',
@@ -252,6 +268,8 @@ async function insertRealData() {
       'Reimagining business through experience. The following case studies demonstrate how our company is an expert in the business of creating comprehensive experiences from start to finish.',
     teamDescription:
       'Ideate, innovate, change the world, repeat. Meet our team of talented people using design thinking to create experiences that win awards and make headlines.',
+    altBanner: 'Image representing Big Data Analytics Area',
+    altEvocativeImage: 'Image evocative of Big Data Analytics Area',
   })
   //**END OF AREAS */
 
@@ -287,6 +305,10 @@ async function insertRealData() {
     p2Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
     p3Name: 'Coca-Cola',
     p3Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
+    altBanner: 'Evocative image of Modern Fraud Protection Software service',
+    altP1: 'evocative image of AWS partner',
+    altP2: 'evocative image of Xiaomi partner',
+    altP3: 'evocative image of Coca-Cola partner',
   })
   await Security.addService(ModernFraudProtection.id)
 
@@ -320,6 +342,10 @@ async function insertRealData() {
     p2Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
     p3Name: '......',
     p3Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
+    altBanner: 'Evocative image of Managed Security service',
+    altP1: 'Evocative image of ... partner',
+    altP2: 'Evocative image of ... partner',
+    altP3: 'Evocative image of ... partner',
   })
 
   const NetworkProtection = await Service.create({
@@ -348,6 +374,10 @@ async function insertRealData() {
     p2Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
     p3Name: '......',
     p3Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
+    altBanner: 'Evocative image of Network Protection service',
+    altP1: 'Evocative image of ... partner',
+    altP2: 'Evocative image of ... partner',
+    altP3: 'Evocative image of ... partner',
   })
 
   const DataSecurity = await Service.create({
@@ -381,6 +411,10 @@ async function insertRealData() {
     p2Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
     p3Name: '......',
     p3Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
+    altBanner: 'Evocative image of Data Security service',
+    altP1: 'Evocative image of Flutter partner',
+    altP2: 'Evocative image of Salesforce partner',
+    altP3: 'Evocative image of ... partner',
   })
 
   const IdentityAccessManagement = await Service.create({
@@ -414,6 +448,10 @@ async function insertRealData() {
     p2Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
     p3Name: '......',
     p3Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
+    altBanner: 'Evocative image of Identity Access Management service',
+    altP1: 'Evocative image of Philips partner',
+    altP2: 'Evocative image of Cisco partner',
+    altP3: 'Evocative image of ... partner',
   })
 
   const SecurityAssessmentAndPlanning = await Service.create({
@@ -446,10 +484,14 @@ async function insertRealData() {
     p2Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
     p3Name: '......',
     p3Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
+    altBanner: 'Evocative image of Security Assessment and Planning service',
+    altP1: 'Evocative image of ... partner',
+    altP2: 'Evocative image of ... partner',
+    altP3: 'Evocative image of ... partner',
   })
 
   const KeyProtect = await Service.create({
-    title: 'HexTech Key Protect for HexTech Cloud',
+    title: 'Key Protect',
     subTitle:
       'Get visibility and control of encryption keys throughout the key lifecycle, from a single location',
     description:
@@ -479,6 +521,10 @@ async function insertRealData() {
     p2Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
     p3Name: '......',
     p3Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
+    altBanner: 'Evocative image of Key Protect service',
+    altP1: 'Evocative image of ... partner',
+    altP2: 'Evocative image of ... partner',
+    altP3: 'Evocative image of ... partner',
   })
 
   await Security.addService(ModernFraudProtection.id)
@@ -522,6 +568,10 @@ async function insertRealData() {
     p2Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
     p3Name: '......',
     p3Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
+    altBanner: 'Evocative image of Smart Cities service',
+    altP1: 'Evocative image of Flutter partner',
+    altP2: 'Evocative image of Salesforce partner',
+    altP3: 'Evocative image of ... partner',
   })
   await IoT.addService(SmartCities.id)
 
@@ -535,7 +585,6 @@ async function insertRealData() {
       'https://statetechmagazine.com/sites/statetechmagazine.com/files/styles/cdw_hero/public/articles/StateTech/201710/ST_Smart_Street_Lights_GettyImages-173553089.jpg?itok=rktclHwy',
     serviceDescription:
       'Organizations and government agencies across the world are facing increased pressure to find ways to become more energy efficient while reducing costs. Outdoor lighting is a great place to start as public and commercial lighting infrastructure is expensive and one of the greatest contributors to energy waste. The Internet of Things (IoT) makes it easy for public and private organizations to conserve more energy with smart lighting systems.',
-    partnerTitle: '',
     partnerDescription: '',
     s1Name: 'Reduce energy costs',
     s1Description:
@@ -555,6 +604,10 @@ async function insertRealData() {
     p2Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
     p3Name: '.........',
     p3Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
+    altBanner: 'Evocative image of Smart-lighting service',
+    altP1: 'Evocative image of ... partner',
+    altP2: 'Evocative image of ... partner',
+    altP3: 'Evocative image of ... partner',
   })
   await IoT.addService(SmartLighting.id)
 
@@ -588,6 +641,10 @@ async function insertRealData() {
     p2Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
     p3Name: '.....',
     p3Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
+    altBanner: 'Evocative image of Automotive service',
+    altP1: 'Evocative image of ... partner',
+    altP2: 'Evocative image of ... partner',
+    altP3: 'Evocative image of ... partner',
   })
   await IoT.addService(Automotive.id)
 
@@ -624,6 +681,11 @@ async function insertRealData() {
     p3Name: 'Arm Intel',
     p3Logo:
       'https://internetofbusiness.com/wp-content/uploads/2018/10/Intel-ARM-Licensing-Deal-640x400.png',
+    altBanner: '',
+    altEvocativePhoto: '',
+    altP1: '',
+    altP2: '',
+    altP3: '',
   })
   await IoT.addService(SmartRetail.id)
 
@@ -657,6 +719,11 @@ async function insertRealData() {
     p2Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
     p3Name: '........',
     p3Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
+    altBanner: '',
+    altEvocativePhoto: '',
+    altP1: '',
+    altP2: '',
+    altP3: '',
   })
   await IoT.addService(Healthcare.id)
 
@@ -690,6 +757,11 @@ async function insertRealData() {
     p2Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
     p3Name: '....',
     p3Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
+    altBanner: '',
+    altEvocativePhoto: '',
+    altP1: '',
+    altP2: '',
+    altP3: '',
   })
   await IoT.addService(IndustrialManufacturing.id)
   //**END OF IOT SERVICES */
@@ -728,6 +800,11 @@ async function insertRealData() {
     p3Name: 'Eclincher',
     p3Logo:
       'https://media-exp1.licdn.com/dms/image/C4E0BAQE_8uje7Spe1g/company-logo_200_200/0/1578120960890?e=2159024400&v=beta&t=0pLs4HfyleatwiUUZHOGsVSLhyOEVMuQ4qgEdUeEtWs',
+    altBanner: '',
+    altEvocativePhoto: '',
+    altP1: '',
+    altP2: '',
+    altP3: '',
   })
   await BigDataAnalysis.addService(OptimizeDigitalMarketing.id)
 
@@ -765,6 +842,11 @@ async function insertRealData() {
     p3Name: 'Intel',
     p3Logo:
       'https://www.tomshw.it/images/images/2020/06/intel-logo-97706.1200x675.jpg',
+    altBanner: '',
+    altEvocativePhoto: '',
+    altP1: '',
+    altP2: '',
+    altP3: '',
   })
   await BigDataAnalysis.addService(PredictiveAnalyticsInHealthcare.id)
 
@@ -801,6 +883,11 @@ async function insertRealData() {
     p3Name: 'River Logic',
     p3Logo:
       'https://awsmp-logos.s3.amazonaws.com/e981e56c-9504-4acd-a441-81c99483b239/9801997f62aa29e763040bf44e7b2485.png',
+    altBanner: '',
+    altEvocativePhoto: '',
+    altP1: '',
+    altP2: '',
+    altP3: '',
   })
   await BigDataAnalysis.addService(PredictionScenarioAnalysis.id)
 
@@ -837,6 +924,11 @@ async function insertRealData() {
     p3Name: 'LuTech',
     p3Logo:
       'https://abieventi-statics-external.s3-eu-west-1.amazonaws.com/url_59edc98ae011a96693a21dec.jpg',
+    altBanner: '',
+    altEvocativePhoto: '',
+    altP1: '',
+    altP2: '',
+    altP3: '',
   })
   await BigDataAnalysis.addService(BigDataAutomation.id)
 
@@ -873,6 +965,11 @@ async function insertRealData() {
       'https://www.intelligencepartner.com/wp-content/themes/intelligencepartner/img/intelligencepartner_logo.svg',
     p3Name: 'SB Italia',
     p3Logo: 'https://www.sbitalia.com/wp-content/uploads/2015/11/logo.png',
+    altBanner: '',
+    altEvocativePhoto: '',
+    altP1: '',
+    altP2: '',
+    altP3: '',
   })
   await BigDataAnalysis.addService(BIDWHConsulting.id)
 
@@ -909,6 +1006,11 @@ async function insertRealData() {
     p3Name: 'Price Fx',
     p3Logo:
       'https://www.pricefx.com/wp-content/uploads/2020/04/Pricefx_logo_2019_White.png',
+    altBanner: '',
+    altEvocativePhoto: '',
+    altP1: '',
+    altP2: '',
+    altP3: '',
   })
   await BigDataAnalysis.addService(PricingOptimization.id)
   //**END OF BIG DATA ANALYSIS SERVICES */
@@ -944,6 +1046,11 @@ async function insertRealData() {
     p2Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
     p3Name: '',
     p3Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
+    altBanner: '',
+    altEvocativePhoto: '',
+    altP1: '',
+    altP2: '',
+    altP3: '',
   })
   await CloudComputing.addService(EInvoice.id)
 
@@ -975,6 +1082,11 @@ async function insertRealData() {
     p2Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
     p3Name: '',
     p3Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
+    altBanner: '',
+    altEvocativePhoto: '',
+    altP1: '',
+    altP2: '',
+    altP3: '',
   })
   await CloudComputing.addService(CloudAppDevelopServices.id)
 
@@ -1010,6 +1122,11 @@ async function insertRealData() {
     p3Name: 'Netflix',
     p3Logo:
       'https://www.mediagol.it/wp-content/uploads/sites/27/2020/07/maxresdefault.jpg',
+    altBanner: '',
+    altEvocativePhoto: '',
+    altP1: '',
+    altP2: '',
+    altP3: '',
   })
   await CloudComputing.addService(LiveVideoBroadcasting.id)
 
@@ -1044,6 +1161,11 @@ async function insertRealData() {
       'https://img.alicdn.com/tfs/TB1giluwEY1gK0jSZFMXXaWcVXa-1280-1280.png',
     p3Name: 'Alibaba',
     p3Logo: 'https://images-eu.ssl-images-amazon.com/images/I/71IxKvGqiWL.png',
+    altBanner: '',
+    altEvocativePhoto: '',
+    altP1: '',
+    altP2: '',
+    altP3: '',
   })
   await CloudComputing.addService(LiveECommerce.id)
 
@@ -1079,6 +1201,11 @@ async function insertRealData() {
       'https://img.alicdn.com/tfs/TB1giluwEY1gK0jSZFMXXaWcVXa-1280-1280.png',
     p3Name: 'Alibaba',
     p3Logo: 'https://images-eu.ssl-images-amazon.com/images/I/71IxKvGqiWL.png',
+    altBanner: '',
+    altEvocativePhoto: '',
+    altP1: '',
+    altP2: '',
+    altP3: '',
   })
   await CloudComputing.addService(HybridCloud.id)
 
@@ -1114,6 +1241,11 @@ async function insertRealData() {
       'https://img.alicdn.com/tfs/TB1giluwEY1gK0jSZFMXXaWcVXa-1280-1280.png',
     p3Name: 'Alibaba',
     p3Logo: 'https://images-eu.ssl-images-amazon.com/images/I/71IxKvGqiWL.png',
+    altBanner: '',
+    altEvocativePhoto: '',
+    altP1: '',
+    altP2: '',
+    altP3: '',
   })
   await CloudComputing.addService(InfraspaceCloud.id)
 
@@ -1153,6 +1285,11 @@ async function insertRealData() {
     p2Logo: 'https://i.ibb.co/vjqPph0/figma.png',
     p3Name: 'Sketch',
     p3Logo: 'https://i.ibb.co/QdHXCx7/sketch-01.png',
+    altBanner: '',
+    altEvocativePhoto: '',
+    altP1: '',
+    altP2: '',
+    altP3: '',
   })
   await CustomerExperience.addService(Immersive.id)
 
@@ -1188,6 +1325,11 @@ async function insertRealData() {
     p2Logo: 'https://i.ibb.co/vjqPph0/figma.png',
     p3Name: 'Sketch',
     p3Logo: 'https://i.ibb.co/QdHXCx7/sketch-01.png',
+    altBanner: '',
+    altEvocativePhoto: '',
+    altP1: '',
+    altP2: '',
+    altP3: '',
   })
   await CustomerExperience.addService(UserInterfaces.id)
 
@@ -1223,6 +1365,11 @@ async function insertRealData() {
     p2Logo: 'https://i.ibb.co/vjqPph0/figma.png',
     p3Name: 'Sketch',
     p3Logo: 'https://i.ibb.co/QdHXCx7/sketch-01.png',
+    altBanner: '',
+    altEvocativePhoto: '',
+    altP1: '',
+    altP2: '',
+    altP3: '',
   })
   await CustomerExperience.addService(CEE.id)
 
@@ -1257,6 +1404,11 @@ async function insertRealData() {
     p2Logo: 'https://i.ibb.co/vjqPph0/figma.png',
     p3Name: 'Sketch',
     p3Logo: 'https://i.ibb.co/QdHXCx7/sketch-01.png',
+    altBanner: '',
+    altEvocativePhoto: '',
+    altP1: '',
+    altP2: '',
+    altP3: '',
   })
   await CustomerExperience.addService(Campaign.id)
 
@@ -1292,6 +1444,11 @@ async function insertRealData() {
     p2Logo: 'https://i.ibb.co/vjqPph0/figma.png',
     p3Name: 'Sketch',
     p3Logo: 'https://i.ibb.co/QdHXCx7/sketch-01.png',
+    altBanner: '',
+    altEvocativePhoto: '',
+    altP1: '',
+    altP2: '',
+    altP3: '',
   })
   await CustomerExperience.addService(AICustomer.id)
 
@@ -1327,6 +1484,11 @@ async function insertRealData() {
     p2Logo: 'https://i.ibb.co/vjqPph0/figma.png',
     p3Name: 'Sketch',
     p3Logo: 'https://i.ibb.co/QdHXCx7/sketch-01.png',
+    altBanner: '',
+    altEvocativePhoto: '',
+    altP1: '',
+    altP2: '',
+    altP3: '',
   })
   await CustomerExperience.addService(CreativeMarketingServices.id)
 
@@ -1350,6 +1512,7 @@ async function insertRealData() {
       'Our application-transparent approach does not require instrumenting or even touching applications. HexTech passive and dynamic delivery of controls allows security to be decoupled from application development & deployment, and is a critical functionality that can be independently delivered and managed by the security team.',
     createdData: 'April 2, 2021',
     partnerWebsite: '',
+    altBanner: '',
   })
   await Security.addCasestudy(OnlineFraudDetection.id)
   await ManagedSecurity.addCasestudy(OnlineFraudDetection.id)
@@ -1369,6 +1532,7 @@ async function insertRealData() {
       'To develop a syestem as transparent as possible our team implemented a network protection layer that features AI capabilities to detect undesired connections',
     createdData: 'March 22, 2021',
     partnerWebsite: '',
+    altBanner: '',
   })
   await Security.addCasestudy(cs1.id)
   await ModernFraudProtection.addCasestudy(cs1.id)
@@ -1389,6 +1553,7 @@ async function insertRealData() {
       '"To ensure scalability and short query response time, HexTech’s BI implementation team built an analytical Microsoft SQL Server data warehouse which would use a Transact-SQL script to load data from the relational database. The latter was consolidated from 200 databases during the application development process and totaled 12GB."',
     createdData: 'January 24, 2021',
     partnerWebsite: '',
+    altBanner: '',
   })
   await Security.addCasestudy(cs2.id)
   await NetworkProtection.addCasestudy(cs2.id)
@@ -1410,6 +1575,7 @@ async function insertRealData() {
       'We have identified various discrepancies and workarounds in the ex Raiffeisen’s platform, which had to be taken into account to avoid shaking up BNP’s operations and preventing customer churn. For this purpose, we came up with a mechanism which detected potentially erroneous data. ',
     createdData: 'January 2, 2021',
     partnerWebsite: '',
+    altBanner: '',
   })
   await Security.addCasestudy(cs3.id)
   await DataSecurity.addCasestudy(cs3.id)
@@ -1431,6 +1597,7 @@ async function insertRealData() {
       'The project was started in November 2014. Thanks to the strong cooperation and flexibility of HexTech project team, the implementation went as Livelo expected and finished according to schedule. Project was finished within nine months. HexTech ensured integration with existing client systems including: campaign management system (HexTech UNIQA), e-commerce (ORACLE ATG), third-party Mobile App, SAP Finance, Livelo Taxa Online, Fast Shop S.A. The HexTech team also migrated over 16 million customer accounts. HexTech provided on-site support and maintenance services, dedicated program manager and on-site trainings.',
     createdData: 'December 2, 2020',
     partnerWebsite: '',
+    altBanner: '',
   })
   await Security.addCasestudy(cs4.id)
   await IdentityAccessManagement.addCasestudy(cs4.id)
@@ -1453,6 +1620,7 @@ async function insertRealData() {
       'Running on the HexTech Cloud gives Eurobits the performance, availability, scalability, flexibility and security it needs to stay ahead of competitors in the fast growing and increasingly international market for open banking services. VMware vSphere on HexTech Cloud bare metal servers gives Eurobits dedicated computing power to speed through transactions without the potential security risks inherent in a multi-tenant landscape. What’s more, the company can rapidly extend its core systems onto new bare metal servers, enabling it to meet emerging client demand “One of our major clients is about to run a big marketing campaign that will multiply their user numbers by a factor of 10 or 20 within the space of a month or two,” says Arturo Gonzalez. “VMware vSphere on HexTech Cloud gives us the extreme flexibility we need for this kind of scenario. Running on the HexTech Cloud also supports our ongoing international expansion, enabling us to scale seamlessly in size and geography.” Highly secure and compliant Where local regulations require personal and financial data to remain in-country, HexTech’s global network of cloud data centers will make it easier for Eurobits to comply by simply firing up local instances of the required services. Both VMware virtualization and Kubernetes containerization are ideally suited to support the rapid redeployment of existing functionality in new locations. Architecting applications as microservices and deploying them on HexTech Cloud Kubernetes Service also improves horizontal scalability and overall application uptime. Finally, there is a security benefit in the isolation of services. In summary, Eurobits clients are mostly banks and FinTechs that require compliant, security-rich, high-performance solutions with proven recovery capabilities to support business continuity. By meeting these requirements, HexTech Cloud enables Eurobits and its clients to comply with stringent regulations in multiple geographies. In particular, the use of bare metal servers keeps data and transactions physically isolated from other environments on the cloud, giving confidence to Eurobits’ risk-averse clients. Always open for business The use of VMware High Availability technology within the production cloud center helps keep vital account information and payment services available at all times. And with a full DR solution on the HexTech Cloud, Eurobits can rapidly and reliably restore services in the event of an unexpected outage, and at lower cost of ownership than in its previous hosted landscape. “If a service goes down, it is now much easier to automatically bring it back up,” says Arturo Gonzalez. “In practice, this means less downtime and faster recovery, and we expect these metrics to improve once we complete our migration to a reactive architecture with Kubernetes – the biggest benefits are yet to come.” He concludes: “The fact that Eurobits works with HexTech gives our clients in the financial services industry a high level of comfort and trust. We needed to accomplish this migration in order to succeed in a market that is growing extremely fast, and that places heavy regulatory challenges and restrictions on us. With the backing of the HexTech Cloud, we face these challenges with confidence.”',
     createdData: 'December 2, 2020',
     partnerWebsite: 'https://tink.com/',
+    altBanner: '',
   })
   await Security.addCasestudy(cs5.id)
   await IdentityAccessManagement.addCasestudy(cs5.id)
@@ -1477,6 +1645,7 @@ async function insertRealData() {
       '"To ensure scalability and short query response time, HexTech’s BI implementation team built an analytical Microsoft SQL Server data warehouse which would use a Transact-SQL script to load data from the relational database. The latter was consolidated from 200 databases during the application development process and totaled 12GB."',
     createdData: 'March 12, 2021',
     partnerWebsite: 'https://www.intelligencepartner.com/',
+    altBanner: '',
   })
   await BigDataAnalysis.addCasestudy(bdaC1.id)
   await BIDWHConsulting.addCasestudy(bdaC1.id)
@@ -1499,6 +1668,7 @@ async function insertRealData() {
       '"Combining their available dataset and other publicly available information, such as holidays/events data and macroeconomic series, we have been able to estimate demand curves for a subset of the items which would allow them to take optimal pricing decisions. The remaining items should undergo an exploration phase where new prices would be tried in order to be able to estimate their demand curves accurately. The exploration strategy is generally decided jointly with the client. For this example, given the data available and our past experience, we would suggest performing weekly price changes during the exploration phase. Furthermore, we have shown that there is plenty of room for inventory management improvement since there seems to be an important amount of revenue lost due to understock."',
     createdData: 'February 15, 2021',
     partnerWebsite: 'https://www.accenture.com/',
+    altBanner: '',
   })
   await BigDataAnalysis.addCasestudy(bdaC2.id)
   await PricingOptimization.addCasestudy(bdaC2.id)
@@ -1520,6 +1690,7 @@ async function insertRealData() {
       'We embrace  the very behaviors that got commercial IT organizations into such difficulties in enterprise data warehousing, by encouraging the broad-based, large-scale use of hand-coding techniques, in proprietary languages, using complex, poorly integrated tool chains, with little or no support for operations and management of production big data infrastructure, and no understanding of the essential role that rich, well-managed metadata plays into the effective operation, and modification, of production-grade analytics environments.',
     createdData: 'January 17, 2021',
     partnerWebsite: 'https://www.reply.com/it/',
+    altBanner: '',
   })
   await BigDataAnalysis.addCasestudy(bdaC3.id)
   await BigDataAutomation.addCasestudy(bdaC3.id)
@@ -1541,6 +1712,7 @@ async function insertRealData() {
       'Predictive analytics can combine data from multiple sources – including hospital-based electronic medical records, fall detection pendants, and historical use of medical alert services – to identify seniors who are at risk of emergency transport in the next 30 days. This allows healthcare providers to reach out to a senior person even before a fall or other medical complication occurs, preventing unnecessary hospital readmissions and reducing costs of transportation, acute care, and rehabilitation. In a similar vein, one medical home network in the US reported using machine learning to identify individuals with a heightened risk of developing severe complications from COVID-19. Rather than calling all 122,000 of their members to check in on their well-being, the home network took a more targeted, data-driven approach to focus their initial outreach on the 4.4 percent at-risk patients. By educating this group on when and where they should seek medical care, providers sought to proactively help at-risk patients while managing strain on healthcare organizations"',
     createdData: 'November 2, 2020',
     partnerWebsite: 'https://siemens.com/it/',
+    altBanner: '',
   })
   await BigDataAnalysis.addCasestudy(bdaC4.id)
   await PredictiveAnalyticsInHealthcare.addCasestudy(bdaC4.id)
@@ -1562,6 +1734,7 @@ async function insertRealData() {
       'When you’re starting a business, it’s all about hustling. You’re just trying to generate revenue however you can. But as you grow, you must develop more documentation and processes around your workflows. For example, you might need to have documentation for how to run a PR, social media, or paid advertising campaign.',
     createdData: 'October 27, 2020',
     partnerWebsite: 'https://www.mckinsey.it/',
+    altBanner: '',
   })
   await BigDataAnalysis.addCasestudy(bdaC5.id)
   await OptimizeDigitalMarketing.addCasestudy(bdaC5.id)
@@ -1586,6 +1759,7 @@ async function insertRealData() {
     createdData: 'September 23, 2020',
     partnerWebsite:
       'https://ipg-automotive.com/products-services/simulation-software/carmaker/',
+    altBanner: '',
   })
   await BigDataAnalysis.addCasestudy(bdaC6.id)
   await PredictionScenarioAnalysis.addCasestudy(bdaC6.id)
@@ -1609,6 +1783,7 @@ async function insertRealData() {
       'Getting e-Invoicing to take off in amarket requires cooperation amongthe multiple e-Invoicing serviceproviders. The service providersneed to create a stable environmentfor customers, so that customerswill dare to make the switch to ‘true’e-Invoicing. If the e-Invoicing serviceproviders don’t work together,companies in the Netherlandswill stick to invoicing via directconnections or an e-mail with PDF.” In the Netherlands, the e-Invoicingmarket has been stagnant for afew years. For that reason, KPN isworking with Basware to encouragecooperation throughout the entireindustry. Once there is greatertransparency as to which companyis connected to which communityand information can be exchanged,e-Invoicing can be stimulated.',
     createdData: 'January 17, 2021',
     partnerWebsite: '',
+    altBanner: '',
   })
   await CloudComputing.addCasestudy(ccC1.id)
   await EInvoice.addCasestudy(ccC1.id)
@@ -1630,6 +1805,7 @@ async function insertRealData() {
     teamsTitle: 'Cloud App Development Departement',
     createdData: 'October 1, 2020',
     partnerWebsite: '',
+    altBanner: '',
   })
   await CloudComputing.addCasestudy(ccC2.id)
   await CloudAppDevelopServices.addCasestudy(ccC2.id)
@@ -1651,6 +1827,7 @@ async function insertRealData() {
       "The product owner team took the baton of ideating the requirements with the client via regular documented brainstorming sessions. The requirements were then converted into a visual representation via wireframes which represented the probable user flow on the platform. We then assigned relative priorities to the features in order to identify the Minimum Viable Product ( MVP ) and kept the 'extra' features out of the first release. This helped us keep the costs down and ensure greater value.",
     createdData: 'June 27, 2020',
     partnerWebsite: 'https://intl.cloud.tencent.com/',
+    altBanner: '',
   })
   await CloudComputing.addCasestudy(ccC3.id)
   await LiveVideoBroadcasting.addCasestudy(ccC3.id)
@@ -1674,6 +1851,7 @@ async function insertRealData() {
     teamsTitle: 'Live Broadcasting Department',
     createdData: 'March 17, 2020',
     partnerWebsite: 'https://www.maybelline.it/',
+    altBanner: '',
   })
   await CloudComputing.addCasestudy(ccC4.id)
   await LiveVideoBroadcasting.addCasestudy(ccC4.id)
@@ -1693,6 +1871,7 @@ async function insertRealData() {
       'ProDeploy Plus is a comprehensive service providing seamless deployment of new technology. You get a single point of contact for project management including up-front planning, configuration, data migration and knowledge transfer. You will even  be able to use system management software3 such as Microsoft Endpoint Manager or MDT to control configuration of new systems. ',
     createdData: 'August 21, 2018',
     partnerWebsite: 'www.ibm.com',
+    altBanner: '',
   })
   await CloudComputing.addCasestudy(ccC5.id)
   await HybridCloud.addCasestudy(ccC5.id)
@@ -1713,6 +1892,7 @@ async function insertRealData() {
       'Migrate: HexTech’s comprehensive proposal addressed American’s immediate and long term operational concerns through a seamless migration of on-premise servers to HexTech Cloud’s Infrastructure as a Service with VMware Cloud Foundation solution. Transform: HexTech also proposed to accelerate the transformation of American’s application development, organization and skills, based on its HexTech Garage Method. As HexTech and American jointly developed the new cloud-native apps in Cloud Foundry on HexTech Public Cloud Platform as a Service, the old components would be retired. Operate: The solution brings operations into the development squads, and leverages HexTech’s Cloud Solutions Operations Center to provide 24-hour application support and management services, with the HexTech team located both onsite at American’s location and at an HexTech off-shore location.',
     createdData: 'May 23, 2020',
     partnerWebsite: 'https://www.americanairlines.it/',
+    altBanner: '',
   })
   await CloudComputing.addCasestudy(ccC6.id)
   await InfraspaceCloud.addCasestudy(ccC6.id)
@@ -1738,6 +1918,7 @@ async function insertRealData() {
       'Each guest receives a free Medallion. The light, quarter-sized disc enables frictionless payment, keyless stateroom access, accelerated embarkation and much more.',
     createdData: 'March 17, 2021',
     partnerWebsite: 'https://www.illy.com/',
+    altBanner: '',
   })
   await CustomerExperience.addCasestudy(ceC1.id)
   await CreativeMarketingServices.addCasestudy(ceC1.id)
@@ -1762,6 +1943,7 @@ async function insertRealData() {
       'Leveraging knowledge from across Interactive design and beyond—in strategy, technology, digital experiences and more—we’re helping illycaffè every step of the way as it drives its transformation forward. Beginning with a digital transformation roadmap, we’re setting the business on a path to transform customer experience in everything from the website to the contact center, putting a customer-centric mindset at the core',
     createdData: 'January 27, 2021',
     partnerWebsite: '',
+    altBanner: '',
   })
   await CustomerExperience.addCasestudy(ceC2.id)
   await Campaign.addCasestudy(ceC2.id)
@@ -1787,6 +1969,7 @@ async function insertRealData() {
       'Using our deep experience of both organizational design and personalization, we helped Subway devise a completely new recipe for success – an operating model that would continuously optimize customer experiences through a dedication to scientific experimentation Leveraging the technologies of Adobe Analytics and Target, the new model enables Subway to run vast numbers of user experience tests across digital channels – everything from changing the color of a single button to revising homepage promotional messaging – and see the results instantly. That’s providing statistically meaningful insights into how design changes affect customer behavior – and company revenue.',
     createdData: 'December 25, 2020',
     partnerWebsite: 'https://www.subway.com/',
+    altBanner: '',
   })
   await CustomerExperience.addCasestudy(ceC3.id)
   await Campaign.addCasestudy(ceC3.id)
@@ -1812,6 +1995,7 @@ async function insertRealData() {
       'Working with us, Dutch Flowers kicked things off by leveraging design thinking and agile delivery methods, like user research and story mapping, to determine how the ideal customer journey would look as they peruse and purchase flowers online. Together, we developed a minimal viable product (MVP) based on the latest SAP Commerce Cloud Version 2.',
     createdData: 'November 7, 2020',
     partnerWebsite: 'https://dfg.nl/en/',
+    altBanner: '',
   })
   await CustomerExperience.addCasestudy(ceC4.id)
   await Campaign.addCasestudy(ceC4.id)
@@ -1836,6 +2020,7 @@ async function insertRealData() {
       'Customers are increasingly demanding customization as part of their shopping experience, especially if they’re shelling out for luxuries like makeup. Whether it’s primer for oily skin or moisturizer for dry, Sephora recognizes that their customers require a unique and personalized approach, and they offer this through in-store swatch samplings and makeup demonstrations that allow shoppers to test different brands to be sure they’re buying the right product at the right place. But Sephora doesn’t stop there: their personalized shopping experience extends to the web, which has been a major key to their success in keeping customers loyal to their brand.',
     createdData: 'August 28, 2020',
     partnerWebsite: 'https://www.sephora.com/',
+    altBanner: '',
   })
   await CustomerExperience.addCasestudy(ceC5.id)
   await AICustomer.addCasestudy(ceC5.id)
@@ -1859,6 +2044,7 @@ async function insertRealData() {
       'The app we designed for Disney contains most of the information on the website but it’s not just the website shoved into app-form. It’s laid out well and even has GPS-enabled walking directions between attractions. I can easily find park hours, showtimes, wait times for rides, and order food so you don’t need to wait in line anymore. All of the tickets, dining reservations, and photos are in the app, along with a personalized schedule that I can create to make sure I don’t miss the biggest rides and attractions.',
     createdData: 'July 17, 2020',
     partnerWebsite: 'https://www.disneyworld.eu/',
+    altBanner: '',
   })
   await CustomerExperience.addCasestudy(ceC6.id)
   await CreativeMarketingServices.addCasestudy(ceC6.id)
@@ -1880,6 +2066,7 @@ async function insertRealData() {
       'By pointing cameras at sensors installed in windows, users of the app can see virtual fashion models strutting their stuff. Other AR imagery includes mannequins moving around and showcasing the brand’s new Studio Collection. Once users have lived the experience, there is also the option to buy the featured clothes directly through the app by simply clicking on “shop the look” button or in the store itself. This is a great solution to attract millennial shoppers to its brick and mortar store locations.',
     createdData: 'April 7, 2020',
     partnerWebsite: 'https://www.zara.com/',
+    altBanner: '',
   })
   await CustomerExperience.addCasestudy(ceC7.id)
   await Campaign.addCasestudy(ceC7.id)
@@ -1905,6 +2092,7 @@ async function insertRealData() {
       'We developed a unique system that allows to enter the store with the Amazon Go app open on your phone, fill your shopping bags with whatever you want, and then leave the store. Amazon Go stores use cameras and sensors to know what’s been taken off the shelves, so items can be charged to your credit card, which is stored in the Amazon Go app. No cashiers, no long lines, no paper receipts. Amazon Go showcases the convergence of technology and traditional retail shopping in a convenience store format.',
     createdData: 'March 27, 2019',
     partnerWebsite: 'https://www.amazon.com/b?ie=UTF8&node=16008589011',
+    altBanner: '',
   })
   await CustomerExperience.addCasestudy(ceC8.id)
   await AICustomer.addCasestudy(ceC8.id)
@@ -1928,6 +2116,7 @@ async function insertRealData() {
       'We wanted to start from store design, or brand localization. This is just one of the creative ways Starbucks can connects with its customers, integrating local aesthetics into each of its stores. The company’s design studios are strategically located so that designers can better understand their communities. Furthermore, we developed the "tech-side", creating an Amazon Alexa platform and the My Starbucks Barista chatbot debuted, letting users order their favorite coffees using simple voice commands.',
     createdData: 'January 17, 2019',
     partnerWebsite: 'https://www.starbucks.com/',
+    altBanner: '',
   })
   await CustomerExperience.addCasestudy(ceC9.id)
   await UserInterfaces.addCasestudy(ceC9.id)
@@ -1953,6 +2142,7 @@ async function insertRealData() {
       'The system records not only when the item has been sold, but also what items have been touched and tried on. In addition, as well as being fully informed about their stocks, store staff gain a better understanding of customer traffic and local demand. The retailer is able to identify premium traffic areas, learn how customers interact with specific items, and learn which products are abandoned and which are preferred. McKinsey estimates that optimising store layouts can increase productivity by 5 percent',
     createdData: 'January 17, 2021',
     partnerWebsite: 'https://www.levistrauss.com/',
+    altBanner: '',
   })
   await IoT.addCasestudy(iotC1.id)
   await SmartRetail.addCasestudy(iotC1.id)
@@ -1973,6 +2163,7 @@ async function insertRealData() {
       '7-Eleven has come to gain a ‘No. 1 Convenience Store’ status in many countries and regions around the world. Such remarkable result was achieved by adapting the concept of Retailer Initiative supported by highly sophisticated IT and network technologies in order to adjust to the specific conditions and situations of each region. In the US, the average sales figures for franchise stores incorporating this advanced business model have soared by 43 percent.',
     createdData: 'December 17, 2020',
     partnerWebsite: 'https://www.7-eleven.com/',
+    altBanner: '',
   })
   await IoT.addCasestudy(iotC2.id)
   await SmartRetail.addCasestudy(iotC2.id)
@@ -1993,6 +2184,7 @@ async function insertRealData() {
       'Energy sensors were installed on A/Cs, refrigerators and lighting. After one month, the branches displayed different energy consumption patterns. Researching this further, they discovered that the refrigeration equipment in one of the branches was faulty and the compressors were overworked. The customer installed door sensors in the refrigerators to send an alert if doors weren’t fully closed after a set time interval. Often times, employees push the door closed without the door actually sealing, and the refrigerator needs to work harder to keep food cool. Leaving the door open overnight often results in food wastage. The goal was to develop a guest ‘comfort score.’ Sensors were installed to monitor noise, smell, air quality, and restaurant temperature. Data from each sensor were given a score and all scores were tallied up to create a guest comfort score that could be proactively monitored across locations. Alerts were sent if guest comfort scores dropped below an acceptable level. This system integrator is currently working on an extension to improve guest satisfaction. They are researching technology to track the time it takes guests to get their meal from the moment they enter the restaurant.',
     createdData: 'March 17, 2020',
     partnerWebsite: 'https://www.mcdonalds.it/',
+    altBanner: '',
   })
   await IoT.addCasestudy(iotC3.id)
   await SmartRetail.addCasestudy(iotC3.id)
@@ -2013,6 +2205,7 @@ async function insertRealData() {
       'The idea was to understand the client’s needs and obtain feedback to effectively move from proof of concept to the final product. For this purpose, we adopted an iterative agile approach. With many years of experience using this methodology, we have established a dedicated scrum team, consisting not only of developers, but also of user experience/ interface designers. Their involvement allowed the creation of an intuitive voice user interface. As a result, we delivered a Skill, which allows the end-user to manage their car remotely.',
     createdData: 'November 17, 2019',
     partnerWebsite: 'https://www.skoda-auto.com/',
+    altBanner: '',
   })
   await IoT.addCasestudy(iotC4.id)
   await Automotive.addCasestudy(iotC4.id)
@@ -2033,6 +2226,7 @@ async function insertRealData() {
       'The solution was based on dedicated industrial displays which were connected to the LAN network already existing in the plant. The displays present assembly instructions for, employees, to ensure that no steps of the process are missed. The digitization of manufacturing made possible by IoT and ERP reduced the problem of delegating tasks at workstations, made the production processes more efficient, and brought better communication between the machines, systems and employees.',
     createdData: 'October 17, 2019',
     partnerWebsite: 'https://www.abnox.com/en/',
+    altBanner: '',
   })
   await IoT.addCasestudy(iotC5.id)
   await IndustrialManufacturing.addCasestudy(iotC5.id)
@@ -2053,6 +2247,7 @@ async function insertRealData() {
       'Today there are nearly nine billion phones, most of them cell phones. Patel’s team developed an algorithm that measures lung health by analyzing the sound of someone blowing on a phone’s microphone. This replicates a spirometer without the expense and hospital visit. All a COPD sufferer has to do is call a toll-free number and blow on their phone. Networked computers take care of the rest by performing complex calculations, then delivering the results a few seconds later via a voice or text message. The early versions of the algorithm only worked on expensive smart phones, but Patel and his team refined it over time until it could work on any phone. Diagnosing and treating COPD provides a glimpse of how the Internet of Things will improve healthcare in the future.',
     createdData: 'September 17, 2019',
     partnerWebsite: 'https://www.childrenshospital.org/',
+    altBanner: '',
   })
   await IoT.addCasestudy(iotC6.id)
   await Healthcare.addCasestudy(iotC6.id)
@@ -2072,6 +2267,7 @@ async function insertRealData() {
       "Manage and analyze your IoMT data where, when and how it works best for your patient. Deliver the best patient experience – in real-time. Understand which data is relevant and private, so you'll know what to store and what to protect. SAS delivers trusted, automated IoT analytics solutions that can help you: - Maximize value from IoMT data. Identify and leverage data sources that provide tangible insights into enhancing patient care, streamlining processes and delivering cost optimization strategies. - Drive innovation in patient care and operations. Develop new business models and opportunities for data sharing and monetization with a more dynamic, open and agile platform. - Embed IoMT analytics within decision support systems. Reduce alarm fatigue, improve patient safety, optimize staff and patient flow, and accelerate the adoption of value-based health care and personalized medicine.",
     createdData: 'July 17, 2019',
     partnerWebsite: '',
+    altBanner: '',
   })
   await IoT.addCasestudy(iotC7.id)
   await Healthcare.addCasestudy(iotC7.id)
@@ -2092,6 +2288,7 @@ async function insertRealData() {
       'Enabled by the underlying Low Power Wide Area Network (LPWAN) based on Semtech’s LoRa® devices and wireless radio frequency technology (LoRa Technology) that is developed to support multiple smart city use cases at scale, Tata Communications and its device partners deployed smart sensors on the street lights of Jamshedpur. The solution tracked and optimised energy consumption with the automated switching of street lights, along with the capability to control light intensity based on the external lighting conditions. JUSCO realised the power of IoT byc transferring complete control of smart lights to its command centre. It also enjoys the assurance of enterprise-grade SLAs from Tata Communications. The command centre could centrally operate, monitor and optimise all of its smart lights through a web-based application. This integrated view allowed JUSCO to significantly improve their response time and minimise disruption in service and safety. The command centre could accurately identify the smart lights that must be promptly serviced, delivering a better quality of life to the residents of Jamshedpur. All of this is achieved at lower cost and effort.',
     createdData: 'January 19, 2019',
     partnerWebsite: 'https://it.wikipedia.org/wiki/Jamshedpur',
+    altBanner: '',
   })
   await IoT.addCasestudy(iotC8.id)
   await SmartLighting.addCasestudy(iotC8.id)
@@ -2113,6 +2310,7 @@ async function insertRealData() {
       'HexTech development team designed and developed a smart solution to collect sensor data and aggregate it on a central server for processing and further calculations of a building’s state. Data processing and averaging make it possible to boost system performance and reduce data volumes. The user-friendly interface presents the data from connected through intuitive color coding – the green, yellow and red lights indicate the state of a building. Additionally, the system allows a flexible configuration of threshold values to regulate the transition from one status to another. To aggregate the data – suppose, for calculating a construction deformation, ScienceSoft developed a system of virtual sensors collecting information from several physical sensors. It allows users to monitor specific parameters which can be used only in the aggregate.',
     createdData: 'November 5, 2018',
     partnerWebsite: 'https://www.hbm.com/en/5530/structural-health-monitoring/',
+    altBanner: '',
   })
   await IoT.addCasestudy(iotC9.id)
   await SmartCities.addCasestudy(iotC9.id)
@@ -2133,6 +2331,7 @@ async function insertRealData() {
       'The developers reviewed and analyzed available approaches and frameworks and picked WebRTC technology as the best one for platform-independent voice and video communication. Several Android-powered hardware devices were selected to implement central communication module or Sensor Network Appliances (SNAs). The development process was split into 2 major parts: the development of apps for Android and iOS devices and Web dashboard implementation. \n 1) HexTech’s team delivered apps for both patients and medical staff. Gradle flavors were used to build the apps’ variations fully compatible with different screen sizes: wide screen (for doctors), tablet (for nurses) and smartphone (for healthcare services consumers). Patients could smoothly access numerous sensors in order to monitor data and synchronize it with the server. Medical staff members could diagnose and treat patient remotely and receive automated alerts and notifications, when, for example patient state suddenly changes. \n 2) A Web Dashboard assisted medical professionals in monitoring the overall status of patients drilling down on personal medical data. It sent alerts on poor health indicators and maintains the doctor-patient connection. The central communication module was built upon a TV-connected Android-powered device. ',
     createdData: 'June 17, 2018',
     partnerWebsite: 'https://europe.medtronic.com/xd-en/index.html',
+    altBanner: '',
   })
   await IoT.addCasestudy(iotC10.id)
   await Healthcare.addCasestudy(iotC10.id)
@@ -2153,6 +2352,7 @@ async function insertRealData() {
     createdData: 'April 17, 2018',
     partnerWebsite:
       'https://geospacemfg.com/blog/3d-automated-optical-inspection/',
+    altBanner: '',
   })
   await IoT.addCasestudy(iotC11.id)
   await IndustrialManufacturing.addCasestudy(iotC11.id)
@@ -2174,6 +2374,7 @@ async function insertRealData() {
     createdData: 'January 5, 2018',
     partnerWebsite:
       'https://www.bosch-mobility-solutions.com/en/mobility-topics/connected-mobility/',
+    altBanner: '',
   })
   await IoT.addCasestudy(iotC12.id)
   await Automotive.addCasestudy(iotC12.id)
@@ -2251,10 +2452,6 @@ async function insertRealData() {
   Security.addTeammember(person6)
   Security.addTeammember(person7)
   Security.addTeammember(person8)
-
-  OnlineFraudDetection.addTeammember(person8)
-  OnlineFraudDetection.addTeammember(person7)
-  OnlineFraudDetection.addTeammember(person6)
 
   cs1.addTeammember(person6)
   cs1.addTeammember(person4)
@@ -2642,36 +2839,42 @@ async function insertRealData() {
     description: 'Taste the feeling',
     image: 'https://i.ibb.co/SBqydD8/coca-cola.png',
     website: 'https://www.coca-cola.com/',
+    altImage: '',
   })
   const Figma = await Partner.create({
     name: 'Figma',
     description: 'The collaborative interface design tool',
     image: 'https://i.ibb.co/W25yZ0m/figma.png',
     website: 'https://www.figma.com/',
+    altImage: '',
   })
   const Adobe = await Partner.create({
     name: 'Adobe',
     description: 'Creativity for everyone',
     image: 'https://i.ibb.co/sw4Rx4M/adobe.png',
     website: 'https://www.adobe.com/',
+    altImage: '',
   })
   const Sketch = await Partner.create({
     name: 'Sketch',
     description: 'It all starts here',
     image: 'https://i.ibb.co/QdHXCx7/sketch-01.png',
     website: 'https://www.sketch.com/',
+    altImage: '',
   })
   const Arduino = await Partner.create({
     name: 'Arduino',
     description: 'So easy, my granny can use it',
     image: 'https://i.ibb.co/KDcLxdy/arduino.png',
     website: 'https://www.arduino.cc/',
+    altImage: '',
   })
   const GoogleCloud = await Partner.create({
     name: 'Google Cloud',
     description: 'Cloud Computing Services',
     image: 'https://i.ibb.co/SsctBTT/cloud.png',
     website: 'https://cloud.google.com/',
+    altImage: '',
   })
 }
 
