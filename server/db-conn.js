@@ -2408,7 +2408,7 @@ async function insertRealData() {
       'https://media.gettyimages.com/photos/welldressed-businessman-against-white-background-picture-id1171689747?k=6&m=1171689747&s=612x612&w=0&h=AlYkP-q5zInKbjRVAiJwr94mS195pHCKbMmqkH6vdVk=',
   })
   CloudComputing.addTeammember(ccP4)
-  ccC4.addTeammember(ccP4)
+  ccC3.addTeammember(ccP4)
   ccC4.addTeammember(ccP4)
 
   const ccP5 = await TeamMember.create({
@@ -2430,8 +2430,8 @@ async function insertRealData() {
       'https://media.gettyimages.com/photos/middleaged-man-with-glasses-on-pink-background-picture-id1129841459?k=6&m=1129841459&s=612x612&w=0&h=Ddqtt2_S0o-5ZX6hy70E5uARd581_Gfdg8mvNqKqRJ4=',
   })
   CloudComputing.addTeammember(ccP6)
-  ccC5.addTeammember(ccP5)
-  ccC6.addTeammember(ccP5)
+  ccC5.addTeammember(ccP6)
+  ccC6.addTeammember(ccP6)
 
   /** END OF CLOUD COMPUTING TEAM MEMBER */
 
