@@ -10,7 +10,7 @@
       </div>
 
       <div class="header-background">
-        <img :src="area.banner" :alt="area.title" />
+        <img :src="area.banner" :alt="area.altBanner" />
       </div>
       <div class="header-content-bottom">
         <div class="header-inner-content">
@@ -47,6 +47,7 @@
               :image="service.banner"
               :path="service.id"
               :serviceIndex="serviceIndex + 1"
+              :altBanner="service.altBanner"
             ></service-mini>
           </div>
         </div>

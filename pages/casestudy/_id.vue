@@ -12,7 +12,7 @@
             </h5>
             <div class="column">
               <div class="single-column">
-                <img :src="casestudy.banner" :alt="casestudy.title" />
+                <img :src="casestudy.banner" :alt="casestudy.altBanner" />
                 <p class="description">
                   {{ casestudy.descriptiveText }}
                 </p>
@@ -68,6 +68,7 @@
                     <div class="related-image">
                       <img
                         :src="casestudy.banner"
+                        :alt="casestudy.altBanner"
                         class="related-case-study-image"
                       />
                     </div>
@@ -567,6 +568,7 @@
               :title="service.title"
               :image="service.banner"
               :path="service.id"
+              :altBanner="service.altBanner"
             ></service-mini>
           </div>
         </section>
