@@ -311,4 +311,29 @@ input {
   position: absolute;
   z-index: 20;
 }
+
+@media screen and (max-width: 1200px) {
+  .chatBot-button {
+    height: 85px;
+    width: 85px;
+    bottom: 110px;
+    right: 33px;
+  }
+  .chat-container {
+    bottom: 200px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .chatBot-button {
+    height: 55px;
+    width: 55px;
+    bottom: 90px;
+    right: 6px;
+  }
+  .chat-container {
+    bottom: 150px;
+    right: 10px;
+  }
+}
 </style>
