@@ -356,7 +356,9 @@
             <img
               :src="service.s1Logo"
               class="solution-img"
-              alt="image contains an icon for a solution detail"
+              :alt="
+                'Placeholder image for our ' + service.s1Name + ' solution.'
+              "
             />
             <div class="solution-name">
               {{ service.s1Name }}
@@ -369,7 +371,9 @@
             <img
               :src="service.s2Logo"
               class="solution-img"
-              alt="image contains an icon for a solution detail"
+              :alt="
+                'Placeholder image for our ' + service.s2Name + ' solution.'
+              "
             />
             <div class="solution-name">
               {{ service.s2Name }}
@@ -382,7 +386,9 @@
             <img
               :src="service.s3Logo"
               class="solution-img"
-              alt="image contains an icon for a solution detail"
+              :alt="
+                'Placeholder image for our ' + service.s3Name + ' solution.'
+              "
             />
             <div class="solution-name">
               {{ service.s3Name }}

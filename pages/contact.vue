@@ -1,6 +1,6 @@
 <template>
   <main class="container">
-    <header class="contact-header">
+    <div class="contact-header">
       <div class="header-image">
         <svg
           viewBox="0 0 1920 450"
@@ -448,7 +448,7 @@
           </defs>
         </svg>
       </div>
-      <div class="page-title">CONTACT US</div>
+      <h1 class="page-title">CONTACT US</h1>
       <div class="page-subtitle">
         GET IN<br /><span class="page-subtitle-light">TOUCH</span>
       </div>
@@ -564,7 +564,7 @@
           </div>
         </div>
       </div>
-    </header>
+    </div>
     <section class="location-section">
       <div class="page-title">OUR OFFICES</div>
       <div class="page-subtitle">
@@ -594,9 +594,8 @@
             <div class="location-city">Milano</div>
             <div class="location-office-num">FIRST OFFICE</div>
             <div class="contact-method-text">
-              <a
-                href="http://maps.google.com/?q=1200 Pennsylvania Ave SE, Washington, District of Columbia, 20003"
-                >231 Gotham Square -<br />89 GM Metropolis city</a
+              <a href="https://goo.gl/maps/ZNVvMCPcd7dSE1WF7"
+                >Via Camillo Golgi, 20 -<br />20133 Milano IT</a
               >
             </div>
           </div>
@@ -654,9 +653,8 @@
             <div class="location-city">London</div>
             <div class="location-office-num">THIRD OFFICE</div>
             <div class="contact-method-text">
-              <a
-                href="http://maps.google.com/?q=1200 Pennsylvania Ave SE, Washington, District of Columbia, 20003"
-                >231 Gotham Square -<br />89 GM Metropolis city</a
+              <a href="https://goo.gl/maps/CacosxM7FVzTmwoy9"
+                >42-49 St Martin's Ln -<br />London WC2N 4EJ, UK</a
               >
             </div>
           </div>
@@ -665,7 +663,7 @@
       <div class="location-banner">
         <img
           src="https://i.ibb.co/mGC86xF/location.png"
-          alt="location section image"
+          alt="Location section image: woman with computer"
         />
       </div>
     </section>
@@ -682,7 +680,7 @@
         <img
           id="img-form"
           src="https://i.ibb.co/Fqvhj73/Contact-us-immagine.png"
-          alt="Contact Us Image"
+          alt="Contact Us Image beside form"
         />
       </div>
       <div class="right-column">
@@ -691,8 +689,9 @@
           FILL THE<br /><span class="page-subtitle-light">CONTACT FORM</span>
         </div>
         <form id="contact-us-form" class="contact-form" action="">
-          <input type="text" placeholder="Name" required />
+          <input type="text" placeholder="Name" required aria-label="Name" />
           <input
+            aria-label="Email"
             @focusout="valiadateEmail()"
             v-model="emailValue"
             type="email"
@@ -702,8 +701,14 @@
           <p v-if="validatedEmail">
             Please insert a valid e-mail: name@example.com
           </p>
-          <input type="text" placeholder="Subject" required />
           <input
+            aria-label="Subject"
+            type="text"
+            placeholder="Subject"
+            required
+          />
+          <input
+            aria-label="Message"
             class="message-box"
             type="text"
             placeholder="Message"
@@ -730,7 +735,7 @@ export default {
   },
   head() {
     return {
-      title: 'Company Name - Contact Us',
+      title: 'HexTech - Contact Us',
     }
   },
   mounted() {

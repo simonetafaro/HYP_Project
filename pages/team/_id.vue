@@ -792,6 +792,6 @@ h3 {
   font-weight: normal;
   font-size: 18px;
   text-align: center;
-  color: #828282;
+  color: var(--c-grey1);
 }
 </style>

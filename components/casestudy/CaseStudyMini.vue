@@ -14,7 +14,7 @@
       <div class="casestudycontent">
         <p class="referenceArea">{{ area }}</p>
         <div class="case-info">
-          <p class="casestudytitle">{{ title }}</p>
+          <h2 class="casestudytitle">{{ title }}</h2>
           <p class="casestudydescription">{{ description }}</p>
         </div>
 

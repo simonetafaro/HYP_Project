@@ -62,6 +62,7 @@
                 <service-mini
                   :title="service.title"
                   :image="service.banner"
+                  :altBanner="service.altBanner"
                   :path="service.id"
                 ></service-mini>
               </li>
