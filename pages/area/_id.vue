@@ -47,6 +47,7 @@
               :image="service.banner"
               :path="service.id"
               :serviceIndex="serviceIndex + 1"
+              :altBanner="service.altBanner"
             ></service-mini>
           </div>
         </div>

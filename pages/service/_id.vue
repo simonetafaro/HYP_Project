@@ -356,7 +356,7 @@
             <img
               :src="service.s1Logo"
               class="solution-img"
-              alt="Question mark image for solution 1"
+              alt="image contains an icon for a solution detail"
             />
             <div class="solution-name">
               {{ service.s1Name }}
@@ -369,7 +369,7 @@
             <img
               :src="service.s2Logo"
               class="solution-img"
-              alt="Question mark image for solution 2"
+              alt="image contains an icon for a solution detail"
             />
             <div class="solution-name">
               {{ service.s2Name }}
@@ -382,7 +382,7 @@
             <img
               :src="service.s3Logo"
               class="solution-img"
-              alt="Question mark image for solution 3"
+              alt="image contains an icon for a solution detail"
             />
             <div class="solution-name">
               {{ service.s3Name }}
@@ -407,19 +407,19 @@
       </div>
       <section class="partner-section">
         <div class="partner">
-          <img :src="service.p1Logo" class="partner-img" />
+          <img :src="service.p1Logo" class="partner-img" :alt="service.altP1" />
           <div class="partner-name">
             {{ service.p1Name }}
           </div>
         </div>
         <div class="partner">
-          <img :src="service.p2Logo" class="partner-img" />
+          <img :src="service.p2Logo" class="partner-img" :alt="service.altP2" />
           <div class="partner-name">
             {{ service.p2Name }}
           </div>
         </div>
         <div class="partner">
-          <img :src="service.p3Logo" class="partner-img" />
+          <img :src="service.p3Logo" class="partner-img" :alt="service.altP3" />
           <div class="partner-name">
             {{ service.p3Name }}
           </div>
@@ -467,7 +467,7 @@
 
     <div class="inner-container">
       <div class="section-title related-services-title">
-        YOU MAY BE INTERESTED IN <br />OUR RELATED SERVICES
+        YOU MAY BE INTERESTED IN <span>OUR RELATED SERVICES </span>
       </div>
       <br />
       <section class="service-grid">
@@ -482,6 +482,7 @@
             :image="service.banner"
             :path="service.id"
             :serviceIndex="serviceIndex + 1"
+            :altBanner="service.altBanner"
           ></service-mini>
         </div>
       </section>
