@@ -235,7 +235,7 @@ export default {
   text-align: left;
   color: var(--c-grey1);
   mix-blend-mode: normal;
-  opacity: 0.6;
+  opacity: 0.8;
   column-count: 2;
   column-gap: 30px;
 }
@@ -274,7 +274,7 @@ export default {
   text-align: center;
   color: var(--c-grey1);
   mix-blend-mode: normal;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 
 .section-title {

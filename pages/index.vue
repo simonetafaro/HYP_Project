@@ -1017,7 +1017,7 @@ export default {
   text-align: center;
   color: var(--c-grey1);
   mix-blend-mode: normal;
-  opacity: 0.6;
+  opacity: 0.8;
   max-width: 769px;
   margin: auto;
   margin-top: 86px;

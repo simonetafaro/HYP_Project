@@ -891,7 +891,7 @@ h4 {
   text-align: center;
   color: var();
   mix-blend-mode: normal;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 
 .title {
@@ -1056,7 +1056,7 @@ h4 {
     color: #464a52;
 
     mix-blend-mode: normal;
-    opacity: 0.6;
+    opacity: 0.8;
   }
 
   .lower-section {
@@ -1178,7 +1178,7 @@ h4 {
     color: #464a52;
 
     mix-blend-mode: normal;
-    opacity: 0.6;
+    opacity: 0.8;
   }
 
   .lower-section {

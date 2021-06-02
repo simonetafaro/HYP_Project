@@ -1521,7 +1521,7 @@ export default {
   line-height: 30px;
   color: #000000 !important;
   mix-blend-mode: normal;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 .group-name-list {
   list-style: none;

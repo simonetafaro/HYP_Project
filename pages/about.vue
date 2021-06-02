@@ -962,7 +962,7 @@ export default {
   color: #464a52;
 
   mix-blend-mode: normal;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 
 .description-flower {
@@ -984,7 +984,7 @@ export default {
   left: 40%;
 
   mix-blend-mode: normal;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 
 .omino {
@@ -1059,7 +1059,7 @@ export default {
   width: 350px;
   height: 610px;
   mix-blend-mode: normal;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 
 .description-2-2 {
@@ -1076,7 +1076,7 @@ export default {
   width: 350px;
   height: 610px;
   mix-blend-mode: normal;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 
 .image {
@@ -1146,7 +1146,7 @@ export default {
   width: 769px;
   height: 123px;
   mix-blend-mode: normal;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 
 .member-grid-container {
@@ -1239,7 +1239,7 @@ export default {
   text-decoration-line: underline;
   color: #4d41c9 !important;
   mix-blend-mode: normal;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 
 .partner-list-wrapper {
@@ -1417,7 +1417,7 @@ p {
     width: 550px;
     height: 123px;
     mix-blend-mode: normal;
-    opacity: 0.6;
+    opacity: 0.8;
   }
 
   .description-2-2 {
@@ -1432,7 +1432,7 @@ p {
     width: 550px;
     height: 123px;
     mix-blend-mode: normal;
-    opacity: 0.6;
+    opacity: 0.8;
   }
 
   .image {
@@ -1628,7 +1628,7 @@ p {
     width: 272px;
     height: 123px;
     mix-blend-mode: normal;
-    opacity: 0.6;
+    opacity: 0.8;
   }
 
   .description-2-2 {
@@ -1643,7 +1643,7 @@ p {
     width: 272px;
     height: 123px;
     mix-blend-mode: normal;
-    opacity: 0.6;
+    opacity: 0.8;
   }
 
   .image {

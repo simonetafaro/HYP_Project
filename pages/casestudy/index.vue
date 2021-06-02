@@ -1374,7 +1374,7 @@ export default {
   color: var(--c-grey1);
   text-align: left;
   mix-blend-mode: normal;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 .container_description {
   max-width: 600px;
