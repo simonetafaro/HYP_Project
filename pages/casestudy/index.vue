@@ -1071,7 +1071,7 @@
       <div class="inner-case">
         <section class="case-container">
           <header>
-            <h3 class="intro-text">WE PUT IT IN PRACTICE</h3>
+            <div class="intro-text">WE PUT IT IN PRACTICE</div>
             <h1 class="title_case">
               OUR CASE
               <br />
@@ -1079,14 +1079,14 @@
             </h1>
 
             <div class="container_description">
-              <h4 class="description">
+              <div class="description">
                 Nulla ante risus, condimentum eu consectetur vel, facilisis ac
                 nulla. Sed blandit nulla diam, in mattis nibh porta quis. Donec
                 accumsan, erat in suscipit viverra, massa purus dignissim
                 sapien, interdum convallis leo magna vel quam. In massa felis,
                 gravida in eros in, ultricies vehicula ex. Praesent luctus non
                 metus ac iaculis. Fusce quis rutrum diam.
-              </h4>
+              </div>
             </div>
           </header>
         </section>

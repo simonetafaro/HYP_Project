@@ -1,5 +1,10 @@
 <template>
-  <button v-on:click="goToTopFunction()" class="go-up-button" id="goUpButton">
+  <button
+    aria-label="UP button"
+    v-on:click="goToTopFunction()"
+    class="go-up-button"
+    id="goUpButton"
+  >
     <div class="arrow-up-container">
       <svg
         width="10"

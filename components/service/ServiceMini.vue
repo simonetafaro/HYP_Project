@@ -8,7 +8,7 @@
       "
       @click="clickOnCardOnlyTabletAndMobile(path)"
     >
-      <div class="service_title">{{ title }}</div>
+      <h2 class="service_title">{{ title }}</h2>
       <div class="service_img_container">
         <img class="service_img" :src="image" :alt="altBanner" />
       </div>

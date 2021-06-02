@@ -4,12 +4,12 @@
       <div class="inner_caseMini">
         <section class="case-container">
           <header>
-            <h4 class="area-title">{{ casestudy.area.title }}</h4>
-            <h1 class="title-case">{{ casestudy.title }}</h1>
-            <h5 class="sub-title">
+            <h1 class="area-title">{{ casestudy.area.title }}</h1>
+            <h2 class="title-case">{{ casestudy.title }}</h2>
+            <div class="sub-title">
               By {{ casestudy.teammembers[0].personName }} |
               {{ casestudy.createdData }}
-            </h5>
+            </div>
             <div class="column">
               <div class="single-column">
                 <img :src="casestudy.banner" :alt="casestudy.altBanner" />
@@ -23,8 +23,8 @@
                   >
                 </div>
                 <space-divider class="space-divider" />
-                <div class="padding"><h3>CHALLENGE</h3></div>
-                <h2 class="title-challenge">{{ casestudy.challengeTitle }}</h2>
+                <h2 class="padding">CHALLENGE</h2>
+                <h3 class="title-challenge">{{ casestudy.challengeTitle }}</h3>
 
                 <div class="padding">
                   <div class="challenge-box">
@@ -35,8 +35,8 @@
                     </div>
                   </div>
                 </div>
-                <div class="padding"><h3>SOLUTION</h3></div>
-                <h2 class="title-challenge">{{ casestudy.solutionTitle }}</h2>
+                <h2 class="padding">SOLUTION</h2>
+                <h3 class="title-challenge">{{ casestudy.solutionTitle }}</h3>
                 <div class="padding">
                   <p class="description">
                     {{ casestudy.solutionDescription }}
@@ -57,7 +57,7 @@
               </div>
               <space-divider class="space-divider" />
               <div class="cases-column">
-                <h3 class="other-cases-container">Other Case Studies</h3>
+                <div class="other-cases-container">Other Case Studies</div>
                 <div class="relatedCases-grid">
                   <div
                     v-for="(casestudy, caseStudyIndex) of relCases"
@@ -73,17 +73,17 @@
                       />
                     </div>
                     <div class="related-case-study-info">
-                      <h4 class="related-case-study-title">
+                      <h2 class="related-case-study-title">
                         {{ casestudy.title }}
-                      </h4>
+                      </h2>
                       <div class="description-container">
-                        <h4 class="related-case-study-description">
+                        <h3 class="related-case-study-description">
                           {{ casestudy.descriptiveText }}
-                        </h4>
+                        </h3>
                       </div>
-                      <h5 class="related-case-study-date">
+                      <div class="related-case-study-date">
                         {{ casestudy.createdData }}
-                      </h5>
+                      </div>
                       <button class="case-button">FIND OUT MORE ></button>
                     </div>
                   </div>
@@ -530,7 +530,7 @@
     <section>
       <div class="box-members">
         <div class="inner-member">
-          <h3 class="pre-section">TEAM WORKING ON THIS PROJECT</h3>
+          <h2 class="pre-section">TEAM WORKING ON THIS PROJECT</h2>
         </div>
 
         <section class="member-grid">
@@ -552,13 +552,15 @@
       <space-divider />
 
       <div class="other-cases-container">
-        <h3 class="pre-section">YOU MAY BE INTERESTED IN</h3>
-        <h3 class="pre-section">OUR RELATED SERVICES</h3>
+        <div class="pre-section">YOU MAY BE INTERESTED IN</div>
+        <div class="pre-section">OUR RELATED SERVICES</div>
       </div>
 
       <div class="service-box">
         <section class="service-grid">
-          <h4 v-if="casestudy.services === 0">There are no related Services</h4>
+          <div v-if="casestudy.services === 0">
+            There are no related Services
+          </div>
           <div
             v-for="(service, serviceIndex) of casestudy.services"
             :key="'service-' + serviceIndex"

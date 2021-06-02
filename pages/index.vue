@@ -814,15 +814,15 @@
 
     <section class="areas-container">
       <div class="text1">WHAT WE DO</div>
-      <div class="section-title">
+      <h1 class="section-title">
         OUR WORKING<br /><span class="section-title-2">BUSINESS FIELDS</span>
-      </div>
-      <div class="section-description">
+      </h1>
+      <h2 class="section-description">
         Nulla ante risus, condimentum eu consectetur vel, facilisis ac nulla.
         Sed blandit nulla diam, in mattis nibh porta quis. Mauris consectetur
         sodales volutpat. Suspendisse potenti. Sed dapibus est ut magna egestas
         tincidunt.
-      </div>
+      </h2>
       <div class="button-container">
         <div class="scroll-text-compare">WHAT WE DO</div>
         <div class="button-inner-container">

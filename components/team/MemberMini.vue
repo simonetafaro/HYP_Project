@@ -40,7 +40,7 @@
         </div>
       </div>
       <p class="occupation">{{ occupation }}</p>
-      <h2 class="personName">{{ personName }}</h2>
+      <h3 class="personName">{{ personName }}</h3>
     </div>
   </div>
 </template>

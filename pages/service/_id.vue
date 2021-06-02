@@ -3,7 +3,7 @@
     <div class="service-header">
       <div class="header-content">
         <div class="header-inner-content">
-          <div class="service-title">
+          <h1 class="service-title">
             <div class="back-to-arrow">
               <svg
                 @click="goTo('/area/' + service.areaID)"
@@ -21,8 +21,8 @@
               </svg>
             </div>
             {{ service.title }}
-          </div>
-          <div class="service-subtitle">{{ service.subTitle }}</div>
+          </h1>
+          <h2 class="service-subtitle">{{ service.subTitle }}</h2>
           <div class="service-description-text">
             {{ service.description }}
           </div>
@@ -348,15 +348,17 @@
           :textp1="service.title"
           :textp2="'SOLUTIONS'"
         ></double-color-title>
-        <div class="section-intro-text">
+        <h3 class="section-intro-text">
           {{ service.serviceDescription }}
-        </div>
+        </h3>
         <section class="solution-section">
           <div class="solution">
             <img
               :src="service.s1Logo"
               class="solution-img"
-              alt="image contains an icon for a solution detail"
+              :alt="
+                'Placeholder image for our ' + service.s1Name + ' solution.'
+              "
             />
             <div class="solution-name">
               {{ service.s1Name }}
@@ -369,7 +371,9 @@
             <img
               :src="service.s2Logo"
               class="solution-img"
-              alt="image contains an icon for a solution detail"
+              :alt="
+                'Placeholder image for our ' + service.s2Name + ' solution.'
+              "
             />
             <div class="solution-name">
               {{ service.s2Name }}
@@ -382,7 +386,9 @@
             <img
               :src="service.s3Logo"
               class="solution-img"
-              alt="image contains an icon for a solution detail"
+              :alt="
+                'Placeholder image for our ' + service.s3Name + ' solution.'
+              "
             />
             <div class="solution-name">
               {{ service.s3Name }}

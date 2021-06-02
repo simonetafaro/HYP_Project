@@ -512,7 +512,7 @@ async function insertRealData() {
     p2Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
     p3Name: '......',
     p3Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
-    altBanner: 'Evocative image of Security Assessment and Planning service',
+    altBanner: 'Evocative image of key protection service',
     altP1: 'Evocative image of ... partner',
     altP2: 'Evocative image of ... partner',
     altP3: 'Evocative image of ... partner',
@@ -556,12 +556,12 @@ async function insertRealData() {
     p1Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
     p2Name: 'Salesforce',
     p2Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
-    p3Name: '......',
-    p3Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
+    p3Name: 'Google Cloud',
+    p3Logo: 'https://i.ibb.co/JqkrKTp/cloud-200.png',
     altBanner: 'Evocative image of Smart Cities service',
     altP1: 'Evocative image of Flutter partner',
     altP2: 'Evocative image of Salesforce partner',
-    altP3: 'Evocative image of ... partner',
+    altP3: 'Evocative image of Google Cloud partner',
   })
   await IoT.addService(SmartCities.id)
 
@@ -589,16 +589,16 @@ async function insertRealData() {
     s3Description:
       'HexTech Smart Lighting Solution allows secure and reliable short distance communication, distributed control and remote smartlights management',
     s3Logo: 'https://i.ibb.co/b77D3Fm/sol-3.png',
-    p1Name: '......',
-    p1Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
-    p2Name: '..........',
-    p2Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
-    p3Name: '.........',
-    p3Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
+    p1Name: 'Google Cloud',
+    p1Logo: 'https://i.ibb.co/JqkrKTp/cloud-200.png',
+    p2Name: 'Arduino',
+    p2Logo: 'https://i.ibb.co/KDcLxdy/arduino.png',
+    p3Name: 'Amazon Web Services',
+    p3Logo: 'https://i.ibb.co/gzDM3yG/amazon-200.png',
     altBanner: 'Evocative image of Smart-lighting service',
-    altP1: 'Evocative image of ... partner',
-    altP2: 'Evocative image of ... partner',
-    altP3: 'Evocative image of ... partner',
+    altP1: 'Evocative image of Google Cloud partner',
+    altP2: 'Evocative image of Arduino partner',
+    altP3: 'Evocative image of Amazon Web Services partner',
   })
   await IoT.addService(SmartLighting.id)
 
@@ -626,16 +626,16 @@ async function insertRealData() {
     s3Description:
       'Modern customers must have smarter, ‘connected’ cars, and appreciate innovative marketing as much as they like innovations with their vehicles.',
     s3Logo: 'https://i.ibb.co/b77D3Fm/sol-3.png',
-    p1Name: '........',
-    p1Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
-    p2Name: '......',
-    p2Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
-    p3Name: '.....',
-    p3Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
+    p1Name: 'Google Cloud',
+    p1Logo: 'https://i.ibb.co/JqkrKTp/cloud-200.png',
+    p2Name: 'Arduino',
+    p2Logo: 'https://i.ibb.co/KDcLxdy/arduino.png',
+    p3Name: 'Amazon Web Services',
+    p3Logo: 'https://i.ibb.co/gzDM3yG/amazon-200.png',
     altBanner: 'Evocative image of Automotive service',
-    altP1: 'Evocative image of ... partner',
-    altP2: 'Evocative image of ... partner',
-    altP3: 'Evocative image of ... partner',
+    altP1: 'Evocative image of Google Cloud partner',
+    altP2: 'Evocative image of Arduino partner',
+    altP3: 'Evocative image of Amazon Web Services partner',
   })
   await IoT.addService(Automotive.id)
 
@@ -664,10 +664,10 @@ async function insertRealData() {
       'In the retail industry, connectivity platforms may take multiple forms: from large marketplaces, such as Amazon and Alibaba, to online payment systems and device communication hubs.',
     s3Logo: 'https://i.ibb.co/b77D3Fm/sol-3.png',
     p1Name: 'Amazon Web Services',
-    p1Logo: 'https://www.channelfutures.com/files/2015/05/aws_0.jpg',
+    p1Logo: 'https://i.ibb.co/gzDM3yG/amazon-200.png',
     p2Name: 'Arduino',
     p2Logo:
-      'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/ArduinoLogo_%C2%AE.svg/1200px-ArduinoLogo_%C2%AE.svg.png',
+      'https://i.ibb.co/KDcLxdy/arduino.png',
     p3Name: 'Arm Intel',
     p3Logo:
       'https://internetofbusiness.com/wp-content/uploads/2018/10/Intel-ARM-Licensing-Deal-640x400.png',
@@ -702,16 +702,16 @@ async function insertRealData() {
     s3Description:
       'Medical teams can track the location of patients wearing wristbands with sensors and deliver relevant information to families via their smartphones.',
     s3Logo: 'https://i.ibb.co/b77D3Fm/sol-3.png',
-    p1Name: '....',
-    p1Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
-    p2Name: '.....',
-    p2Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
-    p3Name: '........',
-    p3Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
+    p1Name: 'Google Cloud',
+    p1Logo: 'https://i.ibb.co/JqkrKTp/cloud-200.png',
+    p2Name: 'Arduino',
+    p2Logo: 'https://i.ibb.co/KDcLxdy/arduino.png',
+    p3Name: 'Amazon Web Services',
+    p3Logo: 'https://i.ibb.co/gzDM3yG/amazon-200.png',
     altBanner: 'Evocative image of IoT Solutions for Healthcare service',
-    altP1: 'Evocative image of ... partner',
-    altP2: 'Evocative image of ... partner',
-    altP3: 'Evocative image of ... partner',
+    altP1: 'Evocative image of Google Cloud partner',
+    altP2: 'Evocative image of Arduino partner',
+    altP3: 'Evocative image of Amazon Web Services partner',
   })
   await IoT.addService(Healthcare.id)
 
@@ -739,16 +739,16 @@ async function insertRealData() {
     s3Description:
       'IoT solutions can monitor the condition of products from when they are made in a factory (or grown on a farm) to the arrival at their final destination.',
     s3Logo: 'https://i.ibb.co/b77D3Fm/sol-3.png',
-    p1Name: '.....',
-    p1Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
-    p2Name: '.....',
-    p2Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
-    p3Name: '....',
-    p3Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
+    p1Name: 'Google Cloud',
+    p1Logo: 'https://i.ibb.co/JqkrKTp/cloud-200.png',
+    p2Name: 'Arduino',
+    p2Logo: 'https://i.ibb.co/KDcLxdy/arduino.png',
+    p3Name: 'Amazon Web Services',
+    p3Logo: 'https://i.ibb.co/gzDM3yG/amazon-200.png',
     altBanner: 'Evocative image of Industrial Manufacturing service',
-    altP1: 'Evocative image of ... partner',
-    altP2: 'Evocative image of ... partner',
-    altP3: 'Evocative image of ... partner',
+    altP1: 'Evocative image of Google Cloud partner',
+    altP2: 'Evocative image of Arduino partner',
+    altP3: 'Evocative image of Amazon Web Services partner',
   })
   await IoT.addService(IndustrialManufacturing.id)
   //**END OF IOT SERVICES */
@@ -1016,16 +1016,16 @@ async function insertRealData() {
     s3Logo: 'https://i.ibb.co/b77D3Fm/sol-3.png',
     partnerDescription:
       'On all the case studies we worked on we had gained experience from our partners. Although some of them are very big companies, we had an equal exchange of expertise since we have really professional experts working on many industries.',
-    p1Name: '',
-    p1Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
-    p2Name: '',
-    p2Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
-    p3Name: '',
-    p3Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
+    p1Name: 'Google Cloud',
+    p1Logo: 'https://i.ibb.co/JqkrKTp/cloud-200.png',
+    p2Name: 'Adobe',
+    p2Logo: 'https://i.ibb.co/VQSW0Zx/adobe-200.png',
+    p3Name: 'Amazon Web Services',
+    p3Logo: 'https://i.ibb.co/gzDM3yG/amazon-200.png',
     altBanner: 'Evocative image of e-Invoice service',
-    altP1: 'Evocative image of ... partner',
-    altP2: 'Evocative image of ... partner',
-    altP3: 'Evocative image of ... partner',
+    altP1: 'Evocative image of Google Cloud partner',
+    altP2: 'Evocative image of Adobe partner',
+    altP3: 'Evocative image of Amazon Web Services partner',
   })
   await CloudComputing.addService(EInvoice.id)
 
@@ -1050,16 +1050,16 @@ async function insertRealData() {
     s3Logo: 'https://i.ibb.co/b77D3Fm/sol-3.png',
     partnerDescription:
       'On all the case studies we worked on we had gained experience from our partners. Although some of them are very big companies, we had an equal exchange of expertise since we have really professional experts working on many industries.',
-    p1Name: '',
-    p1Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
-    p2Name: '',
-    p2Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
-    p3Name: '',
-    p3Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
+    p1Name: 'Node.js',
+    p1Logo: 'https://i.ibb.co/VvpxKnR/nodejs-200.png',
+    p2Name: 'Amazon Web Services',
+    p2Logo: 'https://i.ibb.co/gzDM3yG/amazon-200.png',
+    p3Name: 'Figma',
+    p3Logo: 'https://i.ibb.co/3W81YKV/figma-200.png',
     altBanner: 'Evocative image of Cloud App Development Services ',
-    altP1: 'Evocative image of ... partner',
-    altP2: 'Evocative image of ... partner',
-    altP3: 'Evocative image of ... partner',
+    altP1: 'Evocative image of Node.js partner',
+    altP2: 'Evocative image of Amazon Web Services partner',
+    altP3: 'Evocative image of Figma partner',
   })
   await CloudComputing.addService(CloudAppDevelopServices.id)
 
@@ -1509,7 +1509,7 @@ async function insertRealData() {
     createdData: 'January 24, 2021',
     partnerWebsite: '',
     altBanner:
-      'There are two hands handling a watch and a smart phone and a central device. All these devide communuicate between the NFC tag',
+      'Two hands handling a watch and a smartphone that are communuicating using NFC tag',
   })
   await Security.addCasestudy(cs2.id)
   await NetworkProtection.addCasestudy(cs2.id)
@@ -1626,7 +1626,7 @@ async function insertRealData() {
     createdData: 'February 15, 2021',
     partnerWebsite: 'https://www.accenture.com/',
     altBanner:
-      'There are lines that goes accross a price icon and then exit as graphs to represent an optimized price',
+      'There are lines that represent an optimized price accross a price icon.',
   })
   await BigDataAnalysis.addCasestudy(bdaC2.id)
   await PricingOptimization.addCasestudy(bdaC2.id)
@@ -1649,7 +1649,7 @@ async function insertRealData() {
     createdData: 'January 17, 2021',
     partnerWebsite: 'https://www.reply.com/it/',
     altBanner:
-      'There are multiple icon representing technological process all linked with lines to represent the need od Big data platforms',
+      'Multiple icon representing technological processa and the need of Big data platforms',
   })
   await BigDataAnalysis.addCasestudy(bdaC3.id)
   await BigDataAutomation.addCasestudy(bdaC3.id)
@@ -1721,7 +1721,7 @@ async function insertRealData() {
     partnerWebsite:
       'https://ipg-automotive.com/products-services/simulation-software/carmaker/',
     altBanner:
-      'There is a car which has many sensors to communicate with the road on which it is to predicte traffic',
+      'Car suited with many sensors used to predicte traffic',
   })
   await BigDataAnalysis.addCasestudy(bdaC6.id)
   await PredictionScenarioAnalysis.addCasestudy(bdaC6.id)
@@ -2283,7 +2283,7 @@ async function insertRealData() {
     createdData: 'November 5, 2018',
     partnerWebsite: 'https://www.hbm.com/en/5530/structural-health-monitoring/',
     altBanner:
-      'There is a bridge and sensors at the start and at the end of it which communicate about the safety of it',
+      'Bridge with sensors both at the start and the end of it which check its status',
   })
   await IoT.addCasestudy(iotC9.id)
   await SmartCities.addCasestudy(iotC9.id)

@@ -2,10 +2,10 @@
   <main class="container">
     <header class="services-header">
       <div class="service-l1">WHY CHOOSING US</div>
-      <div class="service-l2">
+      <h1 class="service-l2">
         DISCOVER OUR <br />
         <span class="service-l2-light">SERVICES SELECTION</span>
-      </div>
+      </h1>
       <div class="service-l3">
         Nulla ante risus, condimentum eu consectetur vel, facilisis ac nulla.
         Sed blandit nulla diam, in mattis nibh porta quis. Donec accumsan, erat
@@ -47,7 +47,7 @@
           </svg>
         </div>
         <div class="service-list-wrapper">
-          <div class="service-section-title">{{ area.title }}</div>
+          <h2 class="service-section-title">{{ area.title }}</h2>
           <ul
             v-bind:id="area.id"
             class="service-carousel"
@@ -62,6 +62,7 @@
                 <service-mini
                   :title="service.title"
                   :image="service.banner"
+                  :altBanner="service.altBanner"
                   :path="service.id"
                 ></service-mini>
               </li>

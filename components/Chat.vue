@@ -4,57 +4,10 @@
       <div class="header-chat-container">
         <div class="bot-logo-container">
           <div class="bot-logo">
-            <svg
-              width="69"
-              height="69"
-              viewBox="0 0 69 69"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g filter="url(#filter0_d)">
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M29.37 39.497C30.8497 40.4482 32.6104 41 34.5 41C39.7601 41 44.0345 36.696 43.9998 31.436C43.9655 26.2452 39.7683 22.0428 34.5795 22.0003C29.3331 21.9574 25.0238 26.2098 25.0001 31.4564C24.9918 33.3281 25.5253 35.0745 26.4519 36.5486L25.4435 39.638C25.2611 40.1967 25.7958 40.7234 26.3517 40.5327L29.37 39.497Z"
-                  fill="#63639F"
-                />
-              </g>
-              <defs>
-                <filter
-                  id="filter0_d"
-                  x="0"
-                  y="0"
-                  width="69"
-                  height="69"
-                  filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
-                >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                  <feColorMatrix
-                    in="SourceAlpha"
-                    type="matrix"
-                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                  />
-                  <feOffset dy="3" />
-                  <feGaussianBlur stdDeviation="12.5" />
-                  <feColorMatrix
-                    type="matrix"
-                    values="0 0 0 0 0.803922 0 0 0 0 0.788235 0 0 0 0 1 0 0 0 0.3 0"
-                  />
-                  <feBlend
-                    mode="normal"
-                    in2="BackgroundImageFix"
-                    result="effect1_dropShadow"
-                  />
-                  <feBlend
-                    mode="normal"
-                    in="SourceGraphic"
-                    in2="effect1_dropShadow"
-                    result="shape"
-                  />
-                </filter>
-              </defs>
-            </svg>
+            <img
+              src="https://i.ibb.co/LQgDNqb/bot-profile.png"
+              alt="Chat bot logo. White circle shape with purple message icon in the middile"
+            />
           </div>
           <div class="bot-info">
             <div class="bot-name">HexBot</div>
@@ -125,7 +78,10 @@
       </div>
     </div>
     <div class="chatBot-button" @click="isOpen = !isOpen">
-      <img src="https://i.ibb.co/Yj5P5bb/logo-chatbot.png" alt="" />
+      <img
+        src="https://i.ibb.co/Yj5P5bb/logo-chatbot.png"
+        alt="Chat bot button. Multiple messages icon."
+      />
     </div>
   </div>
 </template>
@@ -265,10 +221,9 @@ export default {
   justify-content: center;
   align-items: center;
 }
-.bot-logo > svg {
+.bot-logo > img {
   width: 100%;
   height: 100%;
-  margin: auto;
 }
 .bot-name {
   font-style: normal;
