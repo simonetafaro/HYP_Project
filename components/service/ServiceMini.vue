@@ -3,14 +3,18 @@
     <div
       :class="
         serviceIndex % 2 === 0
-          ? 'service-right service_card'
+          ? carouselCard
+            ? 'service_card service_card_carousel'
+            : 'service-right service_card'
+          : carouselCard
+          ? 'service_card service_card_carousel'
           : 'service-left service_card'
       "
       @click="clickOnCardOnlyTabletAndMobile(path)"
     >
-      <div class="service_title">{{ title }}</div>
+      <h2 class="service_title">{{ title }}</h2>
       <div class="service_img_container">
-        <img class="service_img" :src="image" />
+        <img class="service_img" :src="image" :alt="altBanner" />
       </div>
       <button v-on:click="goTo('/service/' + path)" class="more_button">
         LEARN MORE
@@ -28,6 +32,8 @@ export default {
     image: { type: String, default: () => '' },
     path: { type: Number, default: () => 0 },
     serviceIndex: { type: Number, default: () => 0 },
+    altBanner: { type: String, default: () => '' },
+    carouselCard: { type: Boolean, default: () => false },
   },
   mixins: [GoToMixins],
   methods: {
@@ -46,6 +52,9 @@ export default {
   background: #ffffff;
   box-shadow: 0px 3px 25px rgba(205, 201, 255, 0.3);
   border-radius: 50px;
+  max-width: 350px;
+}
+.service_card_carousel {
   max-width: 310px;
 }
 .service_title {
@@ -79,11 +88,14 @@ export default {
     margin: auto;
     max-width: 350px;
   }
+  .service_card_carousel {
+    max-width: 200px;
+  }
   .service-left {
-    margin-right: 0;
+    margin-right: 12px;
   }
   .service-right {
-    margin-left: 0;
+    margin-left: 12px;
   }
   .service_title {
     font-size: 14px;
@@ -105,6 +117,15 @@ export default {
     width: 100%;
     max-width: 270px;
     padding-top: 10px;
+  }
+  .service_card_carousel {
+    max-width: 146px;
+  }
+  .service-left {
+    margin-right: 0px;
+  }
+  .service-right {
+    margin-left: 0px;
   }
   .service_title {
     font-size: 12px;

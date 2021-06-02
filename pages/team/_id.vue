@@ -635,7 +635,7 @@
         </div>
       </div>
     </header>
-    <h3>Related Case Studies</h3>
+    <div class="case-study-intro-text">DISCOVER THE PROJECTS</div>
     <section class="casestudies-grid">
       <h4 v-if="relCasestudies === 0">There are no related Case Studies</h4>
       <div
@@ -699,24 +699,25 @@ export default {
 header {
   width: 100%;
   position: relative;
-  padding-top: 100px;
-  box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
+  padding-top: 150px;
 }
 .header-inner-container {
   max-width: 1110px;
   margin: auto;
-  display: flex;
+  text-align: center;
 }
 .photo-column {
-  width: 50%;
+  width: 100%;
+  border-radius: 100%;
+  margin-bottom: 60px;
 }
 .info-column {
-  width: 50%;
-  text-align: left;
+  width: 100%;
 }
 .container {
   max-width: 100%;
   margin: 0;
+  padding-bottom: 50px;
 }
 .top-image {
   max-width: 100%;
@@ -725,11 +726,23 @@ header {
   right: 0;
   z-index: -1;
 }
+.case-study-intro-text {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #424272;
+  margin-bottom: 58px;
+}
 .casestudies-grid {
   display: grid;
-  grid-template-columns: repeat(3, calc(100% / 3));
-  grid-gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 95px;
   margin-top: 40px;
+  max-width: 795px;
+  margin: auto;
 }
 .casestudy {
   cursor: pointer;
@@ -746,22 +759,39 @@ header {
   margin-bottom: 20px;
 }
 img {
-  max-width: 300px;
+  width: 240px;
+  height: 240px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  border-radius: 30px;
-  margin-bottom: 30px;
+  border-radius: 100%;
+  object-fit: cover;
 }
 
 h1 {
-  margin-bottom: 30px;
+  margin-bottom: 8px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #424272;
 }
 
 h2 {
   margin-bottom: 15px;
-  font-weight: normal;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #424272;
 }
 h3 {
   margin-bottom: 20px;
   padding-bottom: 40px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  text-align: center;
+  color: var(--c-grey1);
 }
 </style>

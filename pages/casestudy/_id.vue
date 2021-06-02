@@ -4,15 +4,15 @@
       <div class="inner_caseMini">
         <section class="case-container">
           <header>
-            <h4 class="area-title">{{ casestudy.area.title }}</h4>
-            <h1 class="title-case">{{ casestudy.title }}</h1>
-            <h5 class="sub-title">
+            <h1 class="area-title">{{ casestudy.area.title }}</h1>
+            <h2 class="title-case">{{ casestudy.title }}</h2>
+            <div class="sub-title">
               By {{ casestudy.teammembers[0].personName }} |
               {{ casestudy.createdData }}
-            </h5>
+            </div>
             <div class="column">
               <div class="single-column">
-                <img :src="casestudy.banner" :alt="casestudy.title" />
+                <img :src="casestudy.banner" :alt="casestudy.altBanner" />
                 <p class="description">
                   {{ casestudy.descriptiveText }}
                 </p>
@@ -23,8 +23,8 @@
                   >
                 </div>
                 <space-divider class="space-divider" />
-                <div class="padding"><h3>CHALLENGE</h3></div>
-                <h2 class="title-challenge">{{ casestudy.challengeTitle }}</h2>
+                <h2 class="padding">CHALLENGE</h2>
+                <h3 class="title-challenge">{{ casestudy.challengeTitle }}</h3>
 
                 <div class="padding">
                   <div class="challenge-box">
@@ -35,8 +35,8 @@
                     </div>
                   </div>
                 </div>
-                <div class="padding"><h3>SOLUTION</h3></div>
-                <h2 class="title-challenge">{{ casestudy.solutionTitle }}</h2>
+                <h2 class="padding">SOLUTION</h2>
+                <h3 class="title-challenge">{{ casestudy.solutionTitle }}</h3>
                 <div class="padding">
                   <p class="description">
                     {{ casestudy.solutionDescription }}
@@ -57,7 +57,7 @@
               </div>
               <space-divider class="space-divider" />
               <div class="cases-column">
-                <h3 class="other-cases-container">Other Case Studies</h3>
+                <div class="other-cases-container">Other Case Studies</div>
                 <div class="relatedCases-grid">
                   <div
                     v-for="(casestudy, caseStudyIndex) of relCases"
@@ -68,21 +68,22 @@
                     <div class="related-image">
                       <img
                         :src="casestudy.banner"
+                        :alt="casestudy.altBanner"
                         class="related-case-study-image"
                       />
                     </div>
                     <div class="related-case-study-info">
-                      <h4 class="related-case-study-title">
+                      <h2 class="related-case-study-title">
                         {{ casestudy.title }}
-                      </h4>
+                      </h2>
                       <div class="description-container">
-                        <h4 class="related-case-study-description">
+                        <h3 class="related-case-study-description">
                           {{ casestudy.descriptiveText }}
-                        </h4>
+                        </h3>
                       </div>
-                      <h5 class="related-case-study-date">
+                      <div class="related-case-study-date">
                         {{ casestudy.createdData }}
-                      </h5>
+                      </div>
                       <button class="case-button">FIND OUT MORE ></button>
                     </div>
                   </div>
@@ -529,7 +530,7 @@
     <section>
       <div class="box-members">
         <div class="inner-member">
-          <h3 class="pre-section">TEAM WORKING ON THIS PROJECT</h3>
+          <h2 class="pre-section">TEAM WORKING ON THIS PROJECT</h2>
         </div>
 
         <section class="member-grid">
@@ -551,13 +552,15 @@
       <space-divider />
 
       <div class="other-cases-container">
-        <h3 class="pre-section">YOU MAY BE INTERESTED IN</h3>
-        <h3 class="pre-section">OUR RELATED SERVICES</h3>
+        <div class="pre-section">YOU MAY BE INTERESTED IN</div>
+        <div class="pre-section">OUR RELATED SERVICES</div>
       </div>
 
       <div class="service-box">
         <section class="service-grid">
-          <h4 v-if="casestudy.services === 0">There are no related Services</h4>
+          <div v-if="casestudy.services === 0">
+            There are no related Services
+          </div>
           <div
             v-for="(service, serviceIndex) of casestudy.services"
             :key="'service-' + serviceIndex"
@@ -567,6 +570,8 @@
               :title="service.title"
               :image="service.banner"
               :path="service.id"
+              :altBanner="service.altBanner"
+              :serviceIndex="serviceIndex + 1"
             ></service-mini>
           </div>
         </section>
@@ -730,7 +735,7 @@ h1 {
   line-height: 32px;
   color: var(--c-grey1);
   mix-blend-mode: normal;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 img {
   align-content: left;
@@ -857,7 +862,7 @@ p {
   color: var(--cc-base1);
   mix-blend-mode: normal;
 
-  opacity: 0.6;
+  opacity: 0.8;
 }
 .related-case-study-description {
   padding: 0 30px;
@@ -992,12 +997,19 @@ p {
     margin-top: 85px;
     margin: auto;
   }
+  .service-box {
+    margin: auto;
+    margin-right: 92px;
+    margin-left: 92px;
+  }
   .service-grid {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 40px;
     padding-top: 85px;
     display: grid;
     margin: auto;
+    margin-right: 58px;
+    margin-left: 58px;
   }
   .pre-section {
     font-size: 20px;
@@ -1078,38 +1090,23 @@ p {
     margin-top: 25px;
     margin: auto;
   }
+  .service-box {
+    margin: auto;
+    margin-right: 35px;
+    margin-left: 35px;
+  }
   .service-grid {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 13px;
     padding-top: 20px;
     display: grid;
     margin: auto;
+    margin-right: 0;
+    margin-left: 0;
   }
   .pre-section {
     font-size: 12px;
     line-height: 14px;
-  }
-}
-</style>
-
-<style>
-.service_card {
-  max-width: 350px !important;
-}
-@media screen and (min-width: 769px) and (max-width: 1200px) {
-  .service-left {
-    margin-right: 12px !important;
-  }
-  .service-right {
-    margin-left: 12px !important;
-  }
-  .service_card {
-    max-width: 350px !important;
-  }
-}
-@media screen and (max-width: 768px) {
-  .service_card {
-    max-width: 146px !important;
   }
 }
 </style>

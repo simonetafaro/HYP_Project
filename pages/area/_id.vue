@@ -3,18 +3,18 @@
     <div class="area-header">
       <div class="header-content-top">
         <div class="header-inner-content">
-          <div class="area-title">
+          <h1 class="area-title">
             {{ area.title }}
-          </div>
+          </h1>
         </div>
       </div>
 
       <div class="header-background">
-        <img :src="area.banner" :alt="area.title" />
+        <img :src="area.banner" :alt="area.altBanner" />
       </div>
       <div class="header-content-bottom">
         <div class="header-inner-content">
-          <div class="area-subtitle">{{ area.subTitle }}</div>
+          <h2 class="area-subtitle">{{ area.subTitle }}</h2>
           <div class="area-description-text">
             {{ area.description }}
           </div>
@@ -32,9 +32,9 @@
           :textp1="'OUR SERVICES'"
           :textp2="'SUCCESS BUSINESS'"
         ></double-color-title>
-        <div class="section-intro-text">
+        <h3 class="section-intro-text">
           {{ area.servicesDescription }}
-        </div>
+        </h3>
 
         <div class="service-grid">
           <h4 v-if="area.services.length === 0">There are no services</h4>
@@ -47,6 +47,7 @@
               :image="service.banner"
               :path="service.id"
               :serviceIndex="serviceIndex + 1"
+              :altBanner="service.altBanner"
             ></service-mini>
           </div>
         </div>
@@ -67,9 +68,9 @@
           :textp1="'DISCOVER OUR'"
           :textp2="'CLIENTS CASE STUDIES'"
         ></double-color-title>
-        <div class="section-intro-text">
+        <h3 class="section-intro-text">
           {{ area.caseStudyDescription }}
-        </div>
+        </h3>
 
         <section class="casestudies-grid">
           <h4 v-if="area.casestudies === 0">There are no cs</h4>
@@ -101,9 +102,9 @@
           :textp1="'MEET OUR'"
           :textp2="'PROFESSIONAL TEAM'"
         ></double-color-title>
-        <div class="section-intro-text">
+        <h3 class="section-intro-text">
           {{ area.teamDescription }}
-        </div>
+        </h3>
 
         <div class="member-grid">
           <div
@@ -234,7 +235,7 @@ export default {
   text-align: left;
   color: var(--c-grey1);
   mix-blend-mode: normal;
-  opacity: 0.6;
+  opacity: 0.8;
   column-count: 2;
   column-gap: 30px;
 }
@@ -273,7 +274,7 @@ export default {
   text-align: center;
   color: var(--c-grey1);
   mix-blend-mode: normal;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 
 .section-title {
@@ -470,24 +471,3 @@ export default {
 }
 </style>
 
-<style>
-.service_card {
-  max-width: 350px !important;
-}
-@media screen and (min-width: 769px) and (max-width: 1200px) {
-  .service-left {
-    margin-right: 12px !important;
-  }
-  .service-right {
-    margin-left: 12px !important;
-  }
-  .service_card {
-    max-width: 350px !important;
-  }
-}
-@media screen and (max-width: 768px) {
-  .service_card {
-    max-width: 270px !important;
-  }
-}
-</style>

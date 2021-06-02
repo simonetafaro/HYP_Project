@@ -3,7 +3,7 @@
     <div class="service-header">
       <div class="header-content">
         <div class="header-inner-content">
-          <div class="service-title">
+          <h1 class="service-title">
             <div class="back-to-arrow">
               <svg
                 @click="goTo('/area/' + service.areaID)"
@@ -21,8 +21,8 @@
               </svg>
             </div>
             {{ service.title }}
-          </div>
-          <div class="service-subtitle">{{ service.subTitle }}</div>
+          </h1>
+          <h2 class="service-subtitle">{{ service.subTitle }}</h2>
           <div class="service-description-text">
             {{ service.description }}
           </div>
@@ -348,12 +348,18 @@
           :textp1="service.title"
           :textp2="'SOLUTIONS'"
         ></double-color-title>
-        <div class="section-intro-text">
+        <h3 class="section-intro-text">
           {{ service.serviceDescription }}
-        </div>
+        </h3>
         <section class="solution-section">
           <div class="solution">
-            <img :src="service.s1Logo" class="solution-img" />
+            <img
+              :src="service.s1Logo"
+              class="solution-img"
+              :alt="
+                'Placeholder image for our ' + service.s1Name + ' solution.'
+              "
+            />
             <div class="solution-name">
               {{ service.s1Name }}
             </div>
@@ -362,7 +368,13 @@
             </div>
           </div>
           <div class="solution">
-            <img :src="service.s2Logo" class="solution-img" />
+            <img
+              :src="service.s2Logo"
+              class="solution-img"
+              :alt="
+                'Placeholder image for our ' + service.s2Name + ' solution.'
+              "
+            />
             <div class="solution-name">
               {{ service.s2Name }}
             </div>
@@ -371,7 +383,13 @@
             </div>
           </div>
           <div class="solution">
-            <img :src="service.s3Logo" class="solution-img" />
+            <img
+              :src="service.s3Logo"
+              class="solution-img"
+              :alt="
+                'Placeholder image for our ' + service.s3Name + ' solution.'
+              "
+            />
             <div class="solution-name">
               {{ service.s3Name }}
             </div>
@@ -395,19 +413,19 @@
       </div>
       <section class="partner-section">
         <div class="partner">
-          <img :src="service.p1Logo" class="partner-img" />
+          <img :src="service.p1Logo" class="partner-img" :alt="service.altP1" />
           <div class="partner-name">
             {{ service.p1Name }}
           </div>
         </div>
         <div class="partner">
-          <img :src="service.p2Logo" class="partner-img" />
+          <img :src="service.p2Logo" class="partner-img" :alt="service.altP2" />
           <div class="partner-name">
             {{ service.p2Name }}
           </div>
         </div>
         <div class="partner">
-          <img :src="service.p3Logo" class="partner-img" />
+          <img :src="service.p3Logo" class="partner-img" :alt="service.altP3" />
           <div class="partner-name">
             {{ service.p3Name }}
           </div>
@@ -455,7 +473,7 @@
 
     <div class="inner-container">
       <div class="section-title related-services-title">
-        YOU MAY BE INTERESTED IN <br />OUR RELATED SERVICES
+        YOU MAY BE INTERESTED IN <span>OUR RELATED SERVICES </span>
       </div>
       <br />
       <section class="service-grid">
@@ -470,6 +488,7 @@
             :image="service.banner"
             :path="service.id"
             :serviceIndex="serviceIndex + 1"
+            :altBanner="service.altBanner"
           ></service-mini>
         </div>
       </section>
@@ -597,7 +616,7 @@ export default {
   text-align: left;
   color: var(--c-grey1);
   mix-blend-mode: normal;
-  opacity: 0.6;
+  opacity: 0.8;
   column-count: 2;
   column-gap: 30px;
 }
@@ -695,7 +714,7 @@ export default {
   text-align: center;
   color: var(--c-grey1);
   mix-blend-mode: normal;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 
 .section-title {
@@ -881,19 +900,7 @@ export default {
 </style>
 
 <style>
-.service_card {
-  max-width: 350px !important;
-}
 @media screen and (min-width: 769px) and (max-width: 1200px) {
-  .service-left {
-    margin-right: 12px !important;
-  }
-  .service-right {
-    margin-left: 12px !important;
-  }
-  .service_card {
-    max-width: 350px !important;
-  }
   .casestudy {
     max-width: 350px !important;
   }
@@ -906,9 +913,6 @@ export default {
 }
 
 @media screen and (max-width: 768px) {
-  .service_card {
-    max-width: 270px !important;
-  }
   .casestudy {
     max-width: 270px !important;
   }

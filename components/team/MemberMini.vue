@@ -40,7 +40,7 @@
         </div>
       </div>
       <p class="occupation">{{ occupation }}</p>
-      <h2 class="personName">{{ personName }}</h2>
+      <h3 class="personName">{{ personName }}</h3>
     </div>
   </div>
 </template>
@@ -103,7 +103,7 @@ export default {
   color: #000000;
 
   mix-blend-mode: normal;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 .personName {
   font-style: normal;

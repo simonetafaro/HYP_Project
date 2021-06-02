@@ -625,14 +625,14 @@
         </defs>
       </svg>
 
-      <header class="first-paragraph">
-        <p class="pre_title">Our mission</p>
+      <div class="first-paragraph">
+        <h1 class="pre_title">Our mission</h1>
         <double-color-title
           textp1="our mission"
           textp2="success business"
         ></double-color-title>
         <div class="descriptions">
-          <h3 class="description-1">
+          <div class="description-1">
             Nulla ante risus, condimentum eu consectetur vel, facilisis ac
             nulla. Sed blandit nulla diam, in mattis nibh porta quis. Donec
             accumsan, erat in suscipit viverra, massa purus dignissim sapien,
@@ -643,53 +643,61 @@
             tincidunt. Vivamus a ligula vitae lacus venenatis mollis vitae vitae
             augue. Praesent quis nisi malesuada, rutrum ante vitae, tempus quam.
             Cras egestas urna non egestas vestibulum.
-          </h3>
+          </div>
           <space-divider class="description-flower"></space-divider>
 
-          <h3 class="description-2">
+          <div class="description-2">
             Donec accumsan, erat in suscipit viverra, massa purus dignissim
             sapien, interdum convallis leo magna vel quam. In massa felis,
             gravida in eros in, ultricies vehicula ex.
-          </h3>
+          </div>
         </div>
-        <img class="omino" src="https://i.ibb.co/gjBxtG6/about-us-1.png" />
-      </header>
+        <img
+          class="omino"
+          src="https://i.ibb.co/gjBxtG6/about-us-1.png"
+          alt="Placeholder image mission section"
+        />
+      </div>
     </div>
     <section class="second-paragraph">
       <div class="second-paragraph-contents">
-        <p class="pre_title-2">Our history</p>
-        <p class="title-2">our successful</p>
-        <p class="subtitle-2">path</p>
+        <div class="pre_title-2">Our history</div>
+        <div class="title-2">our successful</div>
+        <div class="subtitle-2">path</div>
 
-        <h3 class="description-2-1">
+        <div class="description-2-1">
           Nulla ante risus, condimentum eu consectetur vel, facilisis ac nulla.
           Sed blandit nulla diam, in mattis nibh porta quis. Donec accumsan,
           erat in suscipit viverra, massa purus dignissim sapien, interdum
           convallis leo magna vel quam. In massa felis, gravida in eros in,
           ultricies vehicula ex. Praesent luctus non metus ac iaculis. Fusce
           quis rutrum diam.
-        </h3>
+        </div>
         <space-divider class="description-flower"> </space-divider>
-        <h3 class="description-2-2">
+        <div class="description-2-2">
           Mauris consectetur sodales volutpat. Suspendisse potenti. Sed dapibus
           est ut magna egestas tincidunt. Vivamus a ligula vitae lacus venenatis
           mollis vitae vitae augue. Praesent quis nisi malesuada, rutrum ante
           vitae, tempus quam. Cras egestas urna non egestas vestibulum.
-        </h3>
+        </div>
       </div>
-      <img class="image" src="https://i.ibb.co/pWVH4hX/about-us-2.png" />
+      <img
+        class="image"
+        src="https://i.ibb.co/pWVH4hX/about-us-2.png"
+        alt="Placeholder image history section"
+      />
     </section>
     <div class="background-3">
       <section class="third-paragraph">
         <div class="third-paragraph-contents">
-          <div class="pre_title-3">The people</div>
+          <h1 class="pre_title-3">The people</h1>
           <div class="title-3">meet our</div>
           <div class="subtitle-3">professional team</div>
-          <div class="description-3">
+          <h2 class="description-3">
             Ideate, innovate, change the world, repeat. Meet our team of
             talented people using design thinking to create experiences that win
             awards and make headlines.
-          </div>
+          </h2>
         </div>
         <div class="member-grid-container">
           <section class="member-grid">
@@ -744,7 +752,11 @@
             >
               <li class="partner-card" data-target="card">
                 <div class="partner">
-                  <img :src="partner.image" class="partner-img" />
+                  <img
+                    :src="partner.image"
+                    class="partner-img"
+                    :alt="partner.name + ' logo'"
+                  />
                   <div class="partner-name">
                     {{ partner.name }}
                   </div>
@@ -950,7 +962,7 @@ export default {
   color: #464a52;
 
   mix-blend-mode: normal;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 
 .description-flower {
@@ -972,7 +984,7 @@ export default {
   left: 40%;
 
   mix-blend-mode: normal;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 
 .omino {
@@ -1047,7 +1059,7 @@ export default {
   width: 350px;
   height: 610px;
   mix-blend-mode: normal;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 
 .description-2-2 {
@@ -1064,7 +1076,7 @@ export default {
   width: 350px;
   height: 610px;
   mix-blend-mode: normal;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 
 .image {
@@ -1134,7 +1146,7 @@ export default {
   width: 769px;
   height: 123px;
   mix-blend-mode: normal;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 
 .member-grid-container {
@@ -1227,7 +1239,7 @@ export default {
   text-decoration-line: underline;
   color: #4d41c9 !important;
   mix-blend-mode: normal;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 
 .partner-list-wrapper {
@@ -1272,7 +1284,7 @@ export default {
   left: -5px;
   top: 100px;
   cursor: pointer;
-  z-index: 10;
+  z-index: 1;
 }
 
 .carousel-arrow-right {
@@ -1307,7 +1319,7 @@ p {
     position: relative;
     margin: auto;
     margin-top: 28px;
-    height: 1116px;
+    height: 1216px;
     width: 550px;
   }
 
@@ -1346,10 +1358,7 @@ p {
   }
 
   .description-flower {
-    display: initial;
-    left: 0;
-    margin-top: 14px;
-    margin-bottom: 14px;
+    display: block;
   }
 
   .description-2 {
@@ -1408,7 +1417,7 @@ p {
     width: 550px;
     height: 123px;
     mix-blend-mode: normal;
-    opacity: 0.6;
+    opacity: 0.8;
   }
 
   .description-2-2 {
@@ -1423,7 +1432,7 @@ p {
     width: 550px;
     height: 123px;
     mix-blend-mode: normal;
-    opacity: 0.6;
+    opacity: 0.8;
   }
 
   .image {
@@ -1525,7 +1534,7 @@ p {
     position: relative;
     margin: auto;
     margin-top: 28px;
-    height: 756px;
+    height: 816px;
     width: 272px;
   }
 
@@ -1563,10 +1572,7 @@ p {
   }
 
   .description-flower {
-    display: initial;
-    left: 0;
-    margin-top: 14px;
-    margin-bottom: 14px;
+    display: block;
   }
 
   .description-2 {
@@ -1622,7 +1628,7 @@ p {
     width: 272px;
     height: 123px;
     mix-blend-mode: normal;
-    opacity: 0.6;
+    opacity: 0.8;
   }
 
   .description-2-2 {
@@ -1637,7 +1643,7 @@ p {
     width: 272px;
     height: 123px;
     mix-blend-mode: normal;
-    opacity: 0.6;
+    opacity: 0.8;
   }
 
   .image {
