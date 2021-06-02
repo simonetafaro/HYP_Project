@@ -841,7 +841,7 @@ export default {
   text-align: center;
   color: #000000;
   mix-blend-mode: normal;
-  opacity: 0.6;
+  opacity: 0.8;
   max-width: 730px;
   margin: auto;
   margin-top: 69px;
@@ -935,7 +935,7 @@ export default {
   line-height: 24px;
   color: #464a52;
   mix-blend-mode: normal;
-  opacity: 0.6;
+  opacity: 0.8;
   margin-bottom: 11px;
 }
 .location-office-num {

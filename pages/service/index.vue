@@ -397,7 +397,7 @@ export default {
   }
   20% {
     transform: scale(1.2);
-    opacity: 0.6;
+    opacity: 0.8;
   }
   30% {
     transform: scale(1.3);
@@ -406,7 +406,7 @@ export default {
 
   40% {
     transform: scale(1.2);
-    opacity: 0.6;
+    opacity: 0.8;
   }
   50% {
     transform: scale(1.1);
@@ -422,7 +422,7 @@ export default {
   }
   80% {
     transform: scale(1.2);
-    opacity: 0.6;
+    opacity: 0.8;
   }
   90% {
     transform: scale(1.1);

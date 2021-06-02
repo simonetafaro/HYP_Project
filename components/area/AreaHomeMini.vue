@@ -75,7 +75,7 @@ export default {
   line-height: 32px;
   color: var(--c-grey1);
   mix-blend-mode: normal;
-  opacity: 0.6;
+  opacity: 0.8;
   margin-bottom: 22px;
 }
 

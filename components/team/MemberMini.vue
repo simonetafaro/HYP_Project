@@ -103,7 +103,7 @@ export default {
   color: #000000;
 
   mix-blend-mode: normal;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 .personName {
   font-style: normal;

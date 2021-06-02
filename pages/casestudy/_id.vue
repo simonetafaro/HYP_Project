@@ -734,7 +734,7 @@ h1 {
   line-height: 32px;
   color: var(--c-grey1);
   mix-blend-mode: normal;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 img {
   align-content: left;
@@ -861,7 +861,7 @@ p {
   color: var(--cc-base1);
   mix-blend-mode: normal;
 
-  opacity: 0.6;
+  opacity: 0.8;
 }
 .related-case-study-description {
   padding: 0 30px;
