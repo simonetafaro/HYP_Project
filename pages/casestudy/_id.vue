@@ -571,6 +571,7 @@
               :image="service.banner"
               :path="service.id"
               :altBanner="service.altBanner"
+              :serviceIndex="serviceIndex + 1"
             ></service-mini>
           </div>
         </section>
@@ -996,12 +997,19 @@ p {
     margin-top: 85px;
     margin: auto;
   }
+  .service-box {
+    margin: auto;
+    margin-right: 92px;
+    margin-left: 92px;
+  }
   .service-grid {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 40px;
     padding-top: 85px;
     display: grid;
     margin: auto;
+    margin-right: 58px;
+    margin-left: 58px;
   }
   .pre-section {
     font-size: 20px;
@@ -1082,38 +1090,23 @@ p {
     margin-top: 25px;
     margin: auto;
   }
+  .service-box {
+    margin: auto;
+    margin-right: 35px;
+    margin-left: 35px;
+  }
   .service-grid {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 13px;
     padding-top: 20px;
     display: grid;
     margin: auto;
+    margin-right: 0;
+    margin-left: 0;
   }
   .pre-section {
     font-size: 12px;
     line-height: 14px;
-  }
-}
-</style>
-
-<style>
-.service_card {
-  max-width: 350px !important;
-}
-@media screen and (min-width: 769px) and (max-width: 1200px) {
-  .service-left {
-    margin-right: 12px !important;
-  }
-  .service-right {
-    margin-left: 12px !important;
-  }
-  .service_card {
-    max-width: 350px !important;
-  }
-}
-@media screen and (max-width: 768px) {
-  .service_card {
-    max-width: 146px !important;
   }
 }
 </style>
