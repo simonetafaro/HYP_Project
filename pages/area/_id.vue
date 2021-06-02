@@ -84,6 +84,7 @@
               :description="casestudy.subTitle"
               :image="casestudy.banner"
               :path="casestudy.id"
+              :area="area.title"
             ></case-study-mini>
           </div>
         </section>
@@ -470,4 +471,3 @@ export default {
   }
 }
 </style>
-

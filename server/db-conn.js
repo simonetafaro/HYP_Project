@@ -340,6 +340,7 @@ async function insertRealData() {
     altP2: 'Evocative image of ... partner',
     altP3: 'Evocative image of ... partner',
   })
+  await Security.addService(ManagedSecurity.id)
 
   const NetworkProtection = await Service.create({
     title: 'Network Protection',
@@ -372,6 +373,7 @@ async function insertRealData() {
     altP2: 'Evocative image of ... partner',
     altP3: 'Evocative image of ... partner',
   })
+  await Security.addService(NetworkProtection.id)
 
   const DataSecurity = await Service.create({
     title: 'Data Security',
@@ -408,6 +410,7 @@ async function insertRealData() {
     altP2: 'Evocative image of Salesforce partner',
     altP3: 'Evocative image of ... partner',
   })
+  await Security.addService(DataSecurity.id)
 
   const IdentityAccessManagement = await Service.create({
     title: 'Identity Access Management',
@@ -444,6 +447,7 @@ async function insertRealData() {
     altP2: 'Evocative image of Cisco partner',
     altP3: 'Evocative image of ... partner',
   })
+  await Security.addService(IdentityAccessManagement.id)
 
   const SecurityAssessmentAndPlanning = await Service.create({
     title: 'Security Assessment and Planning',
@@ -480,51 +484,9 @@ async function insertRealData() {
     altP2: 'Evocative image of ... partner',
     altP3: 'Evocative image of ... partner',
   })
-
-  const KeyProtect = await Service.create({
-    title: 'Key Protect',
-    subTitle:
-      'Get visibility and control of encryption keys throughout the key lifecycle, from a single location',
-    description:
-      'You’re using key protection for data security and compliance. But full encryption visibility and control are essential.',
-    banner:
-      'https://cdn3.iconfinder.com/data/icons/security-and-protection-31/53/46-512.png',
-    serviceDescription:
-      'The HexTech® Key Protect for HexTech Cloud® service helps you provision and store encrypted keys for apps across HexTech Cloud services, so you can see and manage data encryption and the entire key lifecycle from one central location.',
-    s1Name: 'Robust security',
-    s1Description:
-      'Provision and store keys using FIPS 140-2 Level 3 certified HSMs.',
-    s1Logo: 'https://i.ibb.co/Rczq8Pv/sol-1.png',
-    s2Name: 'Control and Visiblity',
-    s2Description:
-      'Use the Activity Tracker to monitor user and app activities.',
-    s2Logo: 'https://i.ibb.co/KwskLjv/sol-2.png',
-    s3Name: 'Usage costs insights',
-    s3Description:
-      ' View usage by account or by resource type to see where your money is going.',
-    s3Logo: 'https://i.ibb.co/b77D3Fm/sol-3.png',
-    partnerTitle: '',
-    partnerDescription:
-      'Since user apps are an integral part of a smart city, we offer mobile consulting, UI/UX design, native (iOS, Android) and cross-platform (Cordova/PhoneGap, Xamarin, React Native) development, as well as mobile testing.',
-    p1Name: 'Flutter',
-    p1Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
-    p2Name: 'Salesforce',
-    p2Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
-    p3Name: '......',
-    p3Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
-    altBanner: 'Evocative image of key protection service',
-    altP1: 'Evocative image of ... partner',
-    altP2: 'Evocative image of ... partner',
-    altP3: 'Evocative image of ... partner',
-  })
-
-  await Security.addService(ModernFraudProtection.id)
-  await Security.addService(NetworkProtection.id)
-  await Security.addService(DataSecurity.id)
-  await Security.addService(IdentityAccessManagement.id)
   await Security.addService(SecurityAssessmentAndPlanning.id)
-  await Security.addService(KeyProtect.id)
 
+  
   //**END OF SECURITY SERVICES */
 
   //**IOT SERVICES */
@@ -1460,7 +1422,7 @@ async function insertRealData() {
     challengeTitle: 'Effective and convenient fraud detection solution',
     challengeDescription:
       'The need for the Bank to deliver a new paradigm in user experience for online banking provided several challenges to their security team, as they were requested to minimize customer friction while supporting instant payment and open banking initiatives, andensure regulatory compliance (PSD2). In particular, the anti-fraud team had to select and implement the best fraud detection solution to ensure the Bank would quickly gain an excellent reputation in the market by delivering the best customer satisfaction in terms of protection against online frauds.',
-    solutionTitle: 'application-transparent approach',
+    solutionTitle: 'Application-transparent approach',
     solutionDescription:
       'Our application-transparent approach does not require instrumenting or even touching applications. HexTech passive and dynamic delivery of controls allows security to be decoupled from application development & deployment, and is a critical functionality that can be independently delivered and managed by the security team.',
     createdData: 'April 2, 2021',
