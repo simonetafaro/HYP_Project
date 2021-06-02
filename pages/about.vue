@@ -931,7 +931,7 @@ export default {
   line-height: 84px;
   text-transform: uppercase;
 
-  color: #424272;
+  color: #3d3d3d;
 }
 
 .subtitle {

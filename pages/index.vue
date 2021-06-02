@@ -956,7 +956,7 @@ export default {
   font-weight: 800;
   font-size: 96px;
   text-transform: uppercase;
-  color: #000000;
+  color: #3d3d3d;
   margin: auto;
   line-height: 100px;
   width: 100%;
@@ -1004,10 +1004,10 @@ export default {
   line-height: 84px;
   text-align: center;
   text-transform: uppercase;
-  color: var(--cc-base1);
+  color: #3d3d3d;
 }
 .section-title-2 {
-  color: #e8e6ff;
+  color: var(--cc-violet);
 }
 .section-description {
   font-style: normal;
@@ -1056,7 +1056,7 @@ export default {
 }
 
 .go-to-area-button:hover {
-  background: var(--cc-base1);
+  background: var(--cc-base2);
   color: white;
   cursor: pointer;
   opacity: 1;

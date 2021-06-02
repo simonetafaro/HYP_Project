@@ -1351,7 +1351,7 @@ export default {
 .active-filter {
   color: var(--cc-base1);
   border-bottom: 2px solid var(--cc-base1);
-  padding-bottom: 2px;
+  padding-bottom: 1px;
 }
 .title_case {
   font-style: normal;
@@ -1360,11 +1360,11 @@ export default {
   line-height: 84px;
   text-transform: uppercase;
   text-align: left;
-  color: var(--cc-base1);
+  color: #3d3d3d;
   margin: 0;
 }
 .title-section-purple {
-  color: var(--cc-base3);
+  color: var(--cc-violet);
 }
 .description {
   font-style: normal;

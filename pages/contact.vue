@@ -826,12 +826,12 @@ export default {
   font-size: 70px;
   line-height: 84px;
   text-transform: uppercase;
-  color: #424272;
+  color: #3d3d3d;
   margin: auto;
   width: max-content;
 }
 .page-subtitle-light {
-  color: #e8e6ff;
+  color: var(--cc-violet);
 }
 .page-description {
   font-style: normal;

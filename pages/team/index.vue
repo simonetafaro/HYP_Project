@@ -946,20 +946,22 @@ h4 {
   display: none;
 }
 .filter {
-  margin-right: 30px;
-  cursor: pointer;
-  font-style: normal;
+  /* margin-right: 30px;
   font-weight: bold;
   font-size: 13px;
+  list-style: none;*/
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
   line-height: 24px;
   text-transform: uppercase;
-  list-style: none;
   color: #4d41c9;
 }
 .active-filter {
   color: var(--cc-base1);
   border-bottom: 2px solid var(--cc-base1);
-  padding-bottom: 2px;
+  padding-bottom: 1px;
 }
 
 .header-image {
