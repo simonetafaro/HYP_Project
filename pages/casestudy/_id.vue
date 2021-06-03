@@ -23,7 +23,9 @@
                   >
                 </div>
                 <space-divider class="space-divider" />
-                <h2 class="padding">CHALLENGE</h2>
+                <h2 class="padding">
+                  <h2 class="intro-container">CHALLENGE</h2>
+                </h2>
                 <h3 class="title-challenge">{{ casestudy.challengeTitle }}</h3>
 
                 <div class="padding">
@@ -35,7 +37,9 @@
                     </div>
                   </div>
                 </div>
-                <h2 class="padding">SOLUTION</h2>
+                <h2 class="padding">
+                  <h2 class="intro-container">SOLUTION</h2>
+                </h2>
                 <h3 class="title-challenge">{{ casestudy.solutionTitle }}</h3>
                 <div class="padding">
                   <p class="description">
@@ -657,6 +661,13 @@ h1 {
   color: #464a52;
   margin-bottom: 15px;
 }
+.intro-container {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 26px;
+  color: var(--cc-base1);
+}
 .pre-section {
   text-align: center;
   font-style: normal;
@@ -904,6 +915,13 @@ p {
     color: #464a52;
     padding-bottom: 0px;
   }
+  .intro-container {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+  }
   .column {
     display: block;
   }
@@ -1039,6 +1057,12 @@ p {
     line-height: 12px;
     color: #464a52;
     padding-bottom: 0px;
+  }
+  .intro-container {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
   }
   .cases-column {
     display: none;
