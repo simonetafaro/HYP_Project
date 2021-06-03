@@ -204,7 +204,11 @@
           <div
             @click="openAreaDropdownMobile()"
             v-if="item.name === 'Areas'"
-            class="menu-item headerContent area-arrow-after"
+            :class="
+              isAreaPageOpened()
+                ? 'menu-item headerContent area-arrow-after title-purple'
+                : 'menu-item headerContent area-arrow-after'
+            "
           >
             {{ item.name }}
           </div>
@@ -835,6 +839,13 @@ export default {
         }
       }
     },
+    isAreaPageOpened() {
+      if (this.$route.path.includes('/area/')) {
+        return true
+      } else {
+        return false
+      }
+    },
   },
 }
 </script>
@@ -1071,6 +1082,7 @@ div #icon {
   .area-arrow-after {
     width: 100%;
     padding-right: 30px;
+    align-items: center;
   }
   .area-arrow-after::after {
     display: block;
