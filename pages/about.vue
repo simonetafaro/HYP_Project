@@ -1439,6 +1439,10 @@ p {
     display: none;
   }
 
+  .background-3 {
+    margin-top: 75px;
+  }
+
   .pre-title-3 {
     line-height: 29px;
     font-size: 20px;
@@ -1648,6 +1652,10 @@ p {
 
   .image {
     display: none;
+  }
+
+  .background-3 {
+    margin-top: 0px;
   }
 
   .title-3 {
