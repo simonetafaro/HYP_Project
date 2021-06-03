@@ -196,7 +196,7 @@
           <nuxt-link
             v-if="item.name !== 'Areas'"
             :to="item.path"
-            @click.native="openMobileMenu()"
+            @click.native="closeMobileMenu()"
             class="menu-item headerContent"
           >
             {{ item.name }}
@@ -217,7 +217,7 @@
               >
                 <nuxt-link
                   :to="'/area/' + area.id"
-                  @click.native="openMobileMenu()"
+                  @click.native="closeMobileMenu()"
                 >
                   {{ area.title }}
                 </nuxt-link>
@@ -228,7 +228,7 @@
         <li>
           <button
             class="contact-button"
-            @click="openMobileMenu(), goTo('/contact')"
+            @click="closeMobileMenu(), goTo('/contact')"
           >
             CONTACT US
           </button>
@@ -752,7 +752,7 @@ export default {
     this.areas = this.$store.state.menuList
     document
       .getElementById('icon')
-      .addEventListener('click', this.openMobileMenu)
+      .addEventListener('click', this.closeMobileMenu)
 
     document
       .getElementById('area-menu-element')
@@ -767,9 +767,20 @@ export default {
         if (mobileMenu.classList.contains('show')) {
           mobileMenu.classList.remove('show')
         }
+        document
+          .getElementById('area-menu-element')
+          .removeEventListener('mouseenter', this.alignDropdown)
+        document
+          .getElementById('area-menu-element')
+          .addEventListener('mouseenter', this.alignDropdown)
+      }
+      if (window.innerWidth < 1200) {
+        document
+          .getElementById('area-menu-element')
+          .removeEventListener('mouseenter', this.alignDropdown)
       }
     },
-    openMobileMenu() {
+    closeMobileMenu() {
       if (window.innerWidth < 1200) {
         const mobileMenu = document.getElementById('menu-list')
         mobileMenu.classList.toggle('show')
@@ -777,6 +788,9 @@ export default {
         if (mobileMenuAreas.style.display === 'block') {
           mobileMenuAreas.style.display = 'none'
         }
+        document
+          .getElementsByClassName('area-arrow-after')[0]
+          .classList.remove('opened')
       }
       this.showGoUpButton()
     },
@@ -1004,6 +1018,7 @@ div #icon {
     text-align: center;
     margin-right: 0px;
     transition: all 0.5s;
+    z-index: 100;
   }
   nav li {
     display: block;
