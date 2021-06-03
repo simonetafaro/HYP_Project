@@ -1,325 +1,213 @@
 <template>
   <header class="header-container">
-    <div class="header">
-      <div class="header-left-column">
-        <div class="title-header" @click="goTo('/home')">
-          <svg
-            class="logo-style"
-            viewBox="0 0 100 100"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <g filter="url(#filter0_d)">
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M35.1739 87C29.5783 87 25 82.4217 25 76.8261V32.1739C25 26.5783 29.5783 22 35.1739 22H79.8261C85.4217 22 90 26.5783 90 32.1739V76.8261C90 82.4217 85.4217 87 79.8261 87H35.1739Z"
-                fill="#FBFBFF"
-              />
-              <path
-                d="M35.1739 86.75C29.7163 86.75 25.25 82.2837 25.25 76.8261V32.1739C25.25 26.7163 29.7163 22.25 35.1739 22.25H79.8261C85.2837 22.25 89.75 26.7163 89.75 32.1739V76.8261C89.75 82.2837 85.2837 86.75 79.8261 86.75H35.1739Z"
-                stroke="#E6E3FF"
-                stroke-width="0.5"
-              />
-            </g>
-            <g filter="url(#filter1_d)">
-              <path
-                d="M74.6049 51.3962C77.5638 43.0615 73.2398 33.8386 64.9157 30.8835C56.5916 27.9284 47.4195 32.3601 44.4606 40.6948C43.2896 43.9935 43.5258 48.8752 45.2187 53.0136C46.8983 57.115 45.831 62.637 44.3475 66.8159L43.7658 68.4543L57.6411 73.3802L58.2179 71.7554C59.7014 67.5765 62.3514 62.6276 66.2304 60.4883C70.1746 58.3147 73.5748 54.2977 74.6049 51.3962Z"
-                fill="#CDC9FF"
-              />
-            </g>
+    <nav>
+      <div class="title-header logo" @click="goTo('/home')">
+        <svg
+          class="logo-style"
+          viewBox="0 0 100 100"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g filter="url(#filter0_d)">
             <path
-              d="M72.1388 50.4745C74.6102 43.5129 70.9996 35.808 64.0439 33.3387C57.0883 30.8694 49.4291 34.5727 46.9574 41.535C45.9783 44.2929 46.1755 48.3692 47.5903 51.8265C48.9931 55.2529 49.1661 60.2438 47.9268 63.7345L47.4414 65.102L56.9024 68.4607L57.3837 67.1051C58.6231 63.6137 61.9015 59.8572 65.1425 58.0702C68.4375 56.2549 71.278 52.8993 72.1386 50.4751L72.1388 50.4745Z"
-              fill="#E6E3FF"
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M35.1739 87C29.5783 87 25 82.4217 25 76.8261V32.1739C25 26.5783 29.5783 22 35.1739 22H79.8261C85.4217 22 90 26.5783 90 32.1739V76.8261C90 82.4217 85.4217 87 79.8261 87H35.1739Z"
+              fill="#FBFBFF"
             />
-            <g filter="url(#filter2_d)">
-              <path
-                d="M51.8145 79.9207L44.1638 77.2046C43.8963 77.1096 43.7142 76.849 43.6705 76.5115L43.5872 73.4451L54.6338 77.3667L52.6356 79.6942C52.3883 79.9284 52.0832 80.0161 51.8157 79.9211L51.8145 79.9207Z"
-                fill="#424272"
-              />
-            </g>
-            <g filter="url(#filter3_d)">
-              <path
-                d="M58.5989 66.7015L47.233 62.6666C46.3882 62.3667 45.4602 62.8084 45.1603 63.6531L42.028 72.4766C41.7281 73.3214 42.1698 74.2493 43.0145 74.5492L54.3805 78.5842C55.2253 78.8841 56.1532 78.4424 56.4531 77.5976L59.5855 68.7742C59.8854 67.9294 59.4437 67.0014 58.5989 66.7015Z"
-                fill="#63639F"
-              />
-            </g>
             <path
-              d="M62.7242 40.3167L53.9655 46.9676C53.493 47.329 53.6167 48.0236 54.1674 48.2191L56.7125 49.1226L51.4816 53.9318C51.0784 54.3277 51.5223 54.9854 52.0256 54.7378L63.5757 49.196C64.1681 48.9044 64.1301 48.0338 63.5156 47.8157L59.6671 46.4494L63.4187 40.9889C63.7273 40.5187 63.1662 39.9793 62.7242 40.3167Z"
+              d="M35.1739 86.75C29.7163 86.75 25.25 82.2837 25.25 76.8261V32.1739C25.25 26.7163 29.7163 22.25 35.1739 22.25H79.8261C85.2837 22.25 89.75 26.7163 89.75 32.1739V76.8261C89.75 82.2837 85.2837 86.75 79.8261 86.75H35.1739Z"
+              stroke="#E6E3FF"
+              stroke-width="0.5"
+            />
+          </g>
+          <g filter="url(#filter1_d)">
+            <path
+              d="M74.6049 51.3962C77.5638 43.0615 73.2398 33.8386 64.9157 30.8835C56.5916 27.9284 47.4195 32.3601 44.4606 40.6948C43.2896 43.9935 43.5258 48.8752 45.2187 53.0136C46.8983 57.115 45.831 62.637 44.3475 66.8159L43.7658 68.4543L57.6411 73.3802L58.2179 71.7554C59.7014 67.5765 62.3514 62.6276 66.2304 60.4883C70.1746 58.3147 73.5748 54.2977 74.6049 51.3962Z"
               fill="#CDC9FF"
             />
-            <defs>
-              <filter
-                id="filter0_d"
-                x="0"
-                y="0"
-                width="115"
-                height="115"
-                filterUnits="userSpaceOnUse"
-                color-interpolation-filters="sRGB"
-              >
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                <feColorMatrix
-                  in="SourceAlpha"
-                  type="matrix"
-                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                />
-                <feOffset dy="3" />
-                <feGaussianBlur stdDeviation="12.5" />
-                <feColorMatrix
-                  type="matrix"
-                  values="0 0 0 0 0.803922 0 0 0 0 0.788235 0 0 0 0 1 0 0 0 0.3 0"
-                />
-                <feBlend
-                  mode="normal"
-                  in2="BackgroundImageFix"
-                  result="effect1_dropShadow"
-                />
-                <feBlend
-                  mode="normal"
-                  in="SourceGraphic"
-                  in2="effect1_dropShadow"
-                  result="shape"
-                />
-              </filter>
-              <filter
-                id="filter1_d"
-                x="10.6311"
-                y="3.53271"
-                width="94.3565"
-                height="100.735"
-                filterUnits="userSpaceOnUse"
-                color-interpolation-filters="sRGB"
-              >
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                <feColorMatrix
-                  in="SourceAlpha"
-                  type="matrix"
-                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                />
-                <feOffset dy="3" />
-                <feGaussianBlur stdDeviation="12.5" />
-                <feColorMatrix
-                  type="matrix"
-                  values="0 0 0 0 0.803922 0 0 0 0 0.788235 0 0 0 0 1 0 0 0 0.3 0"
-                />
-                <feBlend
-                  mode="normal"
-                  in2="BackgroundImageFix"
-                  result="effect1_dropShadow"
-                />
-                <feBlend
-                  mode="normal"
-                  in="SourceGraphic"
-                  in2="effect1_dropShadow"
-                  result="shape"
-                />
-              </filter>
-              <filter
-                id="filter2_d"
-                x="17.4663"
-                y="51.4451"
-                width="62.1674"
-                height="57.0786"
-                filterUnits="userSpaceOnUse"
-                color-interpolation-filters="sRGB"
-              >
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                <feColorMatrix
-                  in="SourceAlpha"
-                  type="matrix"
-                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                />
-                <feOffset dy="3" />
-                <feGaussianBlur stdDeviation="12.5" />
-                <feColorMatrix
-                  type="matrix"
-                  values="0 0 0 0 0.803922 0 0 0 0 0.788235 0 0 0 0 1 0 0 0 0.3 0"
-                />
-                <feBlend
-                  mode="normal"
-                  in2="BackgroundImageFix"
-                  result="effect1_dropShadow"
-                />
-                <feBlend
-                  mode="normal"
-                  in="SourceGraphic"
-                  in2="effect1_dropShadow"
-                  result="shape"
-                />
-              </filter>
-              <filter
-                id="filter3_d"
-                x="16.4849"
-                y="40.1235"
-                width="68.6436"
-                height="67.0037"
-                filterUnits="userSpaceOnUse"
-                color-interpolation-filters="sRGB"
-              >
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                <feColorMatrix
-                  in="SourceAlpha"
-                  type="matrix"
-                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                />
-                <feOffset dy="3" />
-                <feGaussianBlur stdDeviation="12.5" />
-                <feColorMatrix
-                  type="matrix"
-                  values="0 0 0 0 0.803922 0 0 0 0 0.788235 0 0 0 0 1 0 0 0 0.3 0"
-                />
-                <feBlend
-                  mode="normal"
-                  in2="BackgroundImageFix"
-                  result="effect1_dropShadow"
-                />
-                <feBlend
-                  mode="normal"
-                  in="SourceGraphic"
-                  in2="effect1_dropShadow"
-                  result="shape"
-                />
-              </filter>
-            </defs>
-          </svg>
-
-          HEX
-          <span class="title-purple"> TECH. </span>
-        </div>
-        <div class="hamburger-menu" @click="openMenuMobile()">
-          <svg
-            width="16"
-            height="15"
-            viewBox="0 0 16 15"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <line
-              y1="1.75"
-              x2="16"
-              y2="1.75"
-              stroke="#424272"
-              stroke-width="2.5"
+          </g>
+          <path
+            d="M72.1388 50.4745C74.6102 43.5129 70.9996 35.808 64.0439 33.3387C57.0883 30.8694 49.4291 34.5727 46.9574 41.535C45.9783 44.2929 46.1755 48.3692 47.5903 51.8265C48.9931 55.2529 49.1661 60.2438 47.9268 63.7345L47.4414 65.102L56.9024 68.4607L57.3837 67.1051C58.6231 63.6137 61.9015 59.8572 65.1425 58.0702C68.4375 56.2549 71.278 52.8993 72.1386 50.4751L72.1388 50.4745Z"
+            fill="#E6E3FF"
+          />
+          <g filter="url(#filter2_d)">
+            <path
+              d="M51.8145 79.9207L44.1638 77.2046C43.8963 77.1096 43.7142 76.849 43.6705 76.5115L43.5872 73.4451L54.6338 77.3667L52.6356 79.6942C52.3883 79.9284 52.0832 80.0161 51.8157 79.9211L51.8145 79.9207Z"
+              fill="#424272"
             />
-            <line
-              y1="7.75"
-              x2="16"
-              y2="7.75"
-              stroke="#424272"
-              stroke-width="2.5"
+          </g>
+          <g filter="url(#filter3_d)">
+            <path
+              d="M58.5989 66.7015L47.233 62.6666C46.3882 62.3667 45.4602 62.8084 45.1603 63.6531L42.028 72.4766C41.7281 73.3214 42.1698 74.2493 43.0145 74.5492L54.3805 78.5842C55.2253 78.8841 56.1532 78.4424 56.4531 77.5976L59.5855 68.7742C59.8854 67.9294 59.4437 67.0014 58.5989 66.7015Z"
+              fill="#63639F"
             />
-            <line
-              y1="13.75"
-              x2="16"
-              y2="13.75"
-              stroke="#424272"
-              stroke-width="2.5"
-            />
-          </svg>
-        </div>
-      </div>
-
-      <div class="header-right-column">
-        <nav>
-          <div
-            v-for="(item, itemIndex) of menuOptions"
-            :key="'menu-item-' + itemIndex"
-            class="menu-item"
-          >
-            <ul v-if="item.name == 'Areas'" class="menu-item-dropdown">
-              <li @mouseover="areasList = true" @mouseleave="areasList = false">
-                <div class="headerContent headerContent-area">
-                  {{ item.name }}
-                </div>
-                <transition name="fade">
-                  <ul v-if="areasList" @click="areasList = false">
-                    <div class="elements-block">
-                      <li
-                        v-for="(area, areaIndex) of areas"
-                        :key="'menu-area-' + areaIndex"
-                        class="areas-element"
-                      >
-                        <nuxt-link
-                          :to="'/area/' + area.id"
-                          class="area-element-text"
-                        >
-                          {{ area.title }}
-                        </nuxt-link>
-                      </li>
-                    </div>
-                  </ul>
-                </transition>
-              </li>
-            </ul>
-            <nuxt-link
-              v-if="item.name != 'Areas'"
-              :to="item.path"
-              class="headerContent"
+          </g>
+          <path
+            d="M62.7242 40.3167L53.9655 46.9676C53.493 47.329 53.6167 48.0236 54.1674 48.2191L56.7125 49.1226L51.4816 53.9318C51.0784 54.3277 51.5223 54.9854 52.0256 54.7378L63.5757 49.196C64.1681 48.9044 64.1301 48.0338 63.5156 47.8157L59.6671 46.4494L63.4187 40.9889C63.7273 40.5187 63.1662 39.9793 62.7242 40.3167Z"
+            fill="#CDC9FF"
+          />
+          <defs>
+            <filter
+              id="filter0_d"
+              x="0"
+              y="0"
+              width="115"
+              height="115"
+              filterUnits="userSpaceOnUse"
+              color-interpolation-filters="sRGB"
             >
-              {{ item.name }}
-            </nuxt-link>
-          </div>
-        </nav>
-        <div>
-          <button class="contact-button" @click="goTo('/contact')">
-            CONTACT US
-          </button>
-        </div>
+              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feColorMatrix
+                in="SourceAlpha"
+                type="matrix"
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+              />
+              <feOffset dy="3" />
+              <feGaussianBlur stdDeviation="12.5" />
+              <feColorMatrix
+                type="matrix"
+                values="0 0 0 0 0.803922 0 0 0 0 0.788235 0 0 0 0 1 0 0 0 0.3 0"
+              />
+              <feBlend
+                mode="normal"
+                in2="BackgroundImageFix"
+                result="effect1_dropShadow"
+              />
+              <feBlend
+                mode="normal"
+                in="SourceGraphic"
+                in2="effect1_dropShadow"
+                result="shape"
+              />
+            </filter>
+            <filter
+              id="filter1_d"
+              x="10.6311"
+              y="3.53271"
+              width="94.3565"
+              height="100.735"
+              filterUnits="userSpaceOnUse"
+              color-interpolation-filters="sRGB"
+            >
+              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feColorMatrix
+                in="SourceAlpha"
+                type="matrix"
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+              />
+              <feOffset dy="3" />
+              <feGaussianBlur stdDeviation="12.5" />
+              <feColorMatrix
+                type="matrix"
+                values="0 0 0 0 0.803922 0 0 0 0 0.788235 0 0 0 0 1 0 0 0 0.3 0"
+              />
+              <feBlend
+                mode="normal"
+                in2="BackgroundImageFix"
+                result="effect1_dropShadow"
+              />
+              <feBlend
+                mode="normal"
+                in="SourceGraphic"
+                in2="effect1_dropShadow"
+                result="shape"
+              />
+            </filter>
+            <filter
+              id="filter2_d"
+              x="17.4663"
+              y="51.4451"
+              width="62.1674"
+              height="57.0786"
+              filterUnits="userSpaceOnUse"
+              color-interpolation-filters="sRGB"
+            >
+              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feColorMatrix
+                in="SourceAlpha"
+                type="matrix"
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+              />
+              <feOffset dy="3" />
+              <feGaussianBlur stdDeviation="12.5" />
+              <feColorMatrix
+                type="matrix"
+                values="0 0 0 0 0.803922 0 0 0 0 0.788235 0 0 0 0 1 0 0 0 0.3 0"
+              />
+              <feBlend
+                mode="normal"
+                in2="BackgroundImageFix"
+                result="effect1_dropShadow"
+              />
+              <feBlend
+                mode="normal"
+                in="SourceGraphic"
+                in2="effect1_dropShadow"
+                result="shape"
+              />
+            </filter>
+            <filter
+              id="filter3_d"
+              x="16.4849"
+              y="40.1235"
+              width="68.6436"
+              height="67.0037"
+              filterUnits="userSpaceOnUse"
+              color-interpolation-filters="sRGB"
+            >
+              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feColorMatrix
+                in="SourceAlpha"
+                type="matrix"
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+              />
+              <feOffset dy="3" />
+              <feGaussianBlur stdDeviation="12.5" />
+              <feColorMatrix
+                type="matrix"
+                values="0 0 0 0 0.803922 0 0 0 0 0.788235 0 0 0 0 1 0 0 0 0.3 0"
+              />
+              <feBlend
+                mode="normal"
+                in2="BackgroundImageFix"
+                result="effect1_dropShadow"
+              />
+              <feBlend
+                mode="normal"
+                in="SourceGraphic"
+                in2="effect1_dropShadow"
+                result="shape"
+              />
+            </filter>
+          </defs>
+        </svg>
+        HEX
+        <span class="title-purple"> TECH. </span>
       </div>
-    </div>
-
-    <div class="mobile-menu" id="mobile-menu-box">
-      <div class="mobile-menu-inner">
-        <div
+      <ul id="menu-list">
+        <li
           v-for="(item, itemIndex) of menuOptions"
           :key="'menu-item-' + itemIndex"
-          class="menu-item-mobile"
+          :id="item.name === 'Areas' ? 'area-menu-element' : ''"
+          @mouseover="item.name === 'Areas' ? (areasList = true) : ''"
+          @mouseleave="item.name === 'Areas' ? (areasList = false) : ''"
         >
-          <div v-if="item.name == 'Areas'" class="menu-item-mobile-dropdown">
-            <div
-              class="left-side-mobile-menu"
-              @click="openAreaDropdownMobile()"
-            >
-              {{ item.name }}
-            </div>
-            <div
-              class="right-side-mobile-menu"
-              @click="openAreaDropdownMobile()"
-            >
-              <span id="open-area-list">
-                <svg
-                  width="16"
-                  height="16"
-                  viewBox="0 0 16 16"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M7.16699 1L14.334 8.167L7.16699 15.334"
-                    stroke="#63639F"
-                    stroke-width="1.5"
-                  />
-                </svg>
-              </span>
-              <span hidden id="close-area-list">
-                <svg
-                  width="16"
-                  height="16"
-                  viewBox="0 0 16 16"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M15.334 7.16699L8.16699 14.334L0.999991 7.16699"
-                    stroke="#63639F"
-                    stroke-width="1.5"
-                  />
-                </svg>
-              </span>
-            </div>
+          <nuxt-link
+            v-if="item.name !== 'Areas'"
+            :to="item.path"
+            @click.native="closeMobileMenu()"
+            class="menu-item headerContent"
+          >
+            {{ item.name }}
+          </nuxt-link>
+          <div
+            @click="openAreaDropdownMobile()"
+            v-if="item.name === 'Areas'"
+            class="menu-item headerContent area-arrow-after"
+          >
+            {{ item.name }}
           </div>
-
           <span v-if="item.name == 'Areas'">
             <div id="mobile-menu-area-box" class="hidden-dropdown-areas">
               <div
@@ -329,31 +217,22 @@
               >
                 <nuxt-link
                   :to="'/area/' + area.id"
-                  @click.native="openMenuMobile()"
+                  @click.native="closeMobileMenu()"
                 >
                   {{ area.title }}
                 </nuxt-link>
               </div>
             </div>
           </span>
-
-          <nuxt-link
-            v-if="item.name != 'Areas'"
-            :to="item.path"
-            @click.native="openMenuMobile()"
-            class="headerContent"
-          >
-            {{ item.name }}
-          </nuxt-link>
-        </div>
-        <div class="contact-button-container">
+        </li>
+        <li>
           <button
             class="contact-button"
-            @click="openMenuMobile(), goTo('/contact')"
+            @click="closeMobileMenu(), goTo('/contact')"
           >
             CONTACT US
           </button>
-        </div>
+        </li>
         <div class="menu-mobile-bottom">
           <svg
             viewBox="0 0 375 235"
@@ -776,8 +655,55 @@
             />
           </svg>
         </div>
+      </ul>
+      <div id="icon">
+        <svg
+          width="16"
+          height="15"
+          viewBox="0 0 16 15"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <line
+            y1="1.75"
+            x2="16"
+            y2="1.75"
+            stroke="#424272"
+            stroke-width="2.5"
+          />
+          <line
+            y1="7.75"
+            x2="16"
+            y2="7.75"
+            stroke="#424272"
+            stroke-width="2.5"
+          />
+          <line
+            y1="13.75"
+            x2="16"
+            y2="13.75"
+            stroke="#424272"
+            stroke-width="2.5"
+          />
+        </svg>
       </div>
-    </div>
+    </nav>
+    <ul
+      id="area-list-dropdown"
+      class="elements-block area-element-dropdown"
+      :style="{ visibility: areasList ? 'visible' : 'hidden' }"
+    >
+      <li
+        v-for="(area, areaIndex) of areas"
+        :key="'menu-area-' + areaIndex"
+        class="areas-element"
+        @click="closeAreaDropdown()"
+      >
+        <nuxt-link :to="'/area/' + area.id" class="area-element-text">
+          {{ area.title }}
+        </nuxt-link>
+      </li>
+    </ul>
   </header>
 </template>
 
@@ -824,42 +750,96 @@ export default {
     // retrive area dinamically from store
     this.$store.dispatch('nuxtServerInit')
     this.areas = this.$store.state.menuList
+    document
+      .getElementById('icon')
+      .addEventListener('click', this.closeMobileMenu)
+
+    document
+      .getElementById('area-menu-element')
+      .addEventListener('mouseenter', this.alignDropdown)
+    window.addEventListener('resize', this.resizingAction)
   },
   methods: {
-    openMenuMobile() {
-      const mobileMenu = document.getElementById('mobile-menu-box')
-      if (mobileMenu.style.display === 'block') {
-        mobileMenu.style.display = 'none'
-        this.showGoUpButton()
-      } else {
-        mobileMenu.style.display = 'block'
-        document.getElementById('goUpButton').style.display = 'none'
+    resizingAction() {
+      if (window.innerWidth > 1200) {
+        document.getElementById('mobile-menu-area-box').style.display = 'none'
+        const mobileMenu = document.getElementById('menu-list')
+        if (mobileMenu.classList.contains('show')) {
+          mobileMenu.classList.remove('show')
+        }
+        document
+          .getElementById('area-menu-element')
+          .removeEventListener('mouseenter', this.alignDropdown)
+        document
+          .getElementById('area-menu-element')
+          .addEventListener('mouseenter', this.alignDropdown)
+      }
+      if (window.innerWidth < 1200) {
+        document
+          .getElementById('area-menu-element')
+          .removeEventListener('mouseenter', this.alignDropdown)
       }
     },
+    closeMobileMenu() {
+      if (window.innerWidth < 1200) {
+        const mobileMenu = document.getElementById('menu-list')
+        mobileMenu.classList.toggle('show')
+        const mobileMenuAreas = document.getElementById('mobile-menu-area-box')
+        if (mobileMenuAreas.style.display === 'block') {
+          mobileMenuAreas.style.display = 'none'
+        }
+        document
+          .getElementsByClassName('area-arrow-after')[0]
+          .classList.remove('opened')
+      }
+      this.showGoUpButton()
+    },
+    alignDropdown() {
+      const menuAreaItem = document
+        .getElementById('area-menu-element')
+        .getBoundingClientRect()
+      document.getElementById('area-list-dropdown').style.left =
+        menuAreaItem.left + 'px'
+      document
+        .getElementById('area-list-dropdown')
+        .addEventListener('mouseenter', this.openAreaDropdown)
+      document
+        .getElementById('area-list-dropdown')
+        .addEventListener('mouseleave', this.openAreaDropdown)
+    },
+    closeAreaDropdown() {
+      document
+        .getElementById('area-list-dropdown')
+        .removeEventListener('mouseenter', this.openAreaDropdown)
+      document
+        .getElementById('area-list-dropdown')
+        .removeEventListener('mouseleave', this.openAreaDropdown)
+      this.areasList = false
+    },
+    openAreaDropdown() {
+      this.areasList = !this.areasList
+    },
     openAreaDropdownMobile() {
-      const mobileMenuAreas = document.getElementById('mobile-menu-area-box')
-      if (mobileMenuAreas.style.display === 'block') {
-        mobileMenuAreas.style.display = 'none'
-        document.getElementById('close-area-list').hidden = true
-        document.getElementById('open-area-list').hidden = false
-      } else {
-        document.getElementById('open-area-list').hidden = true
-        document.getElementById('close-area-list').hidden = false
-        mobileMenuAreas.style.display = 'block'
+      if (window.innerWidth < 1200) {
+        const mobileMenuAreas = document.getElementById('mobile-menu-area-box')
+        if (mobileMenuAreas.style.display === 'block') {
+          mobileMenuAreas.style.display = 'none'
+          document
+            .getElementsByClassName('area-arrow-after')[0]
+            .classList.remove('opened')
+        } else {
+          mobileMenuAreas.style.display = 'block'
+          document
+            .getElementsByClassName('area-arrow-after')[0]
+            .classList.add('opened')
+        }
       }
     },
   },
 }
 </script>
 
-<style>
-.logo-style {
-  width: 85px;
-  height: 85px;
-}
-.hamburger-menu {
-  display: none;
-}
+<style scoped>
 .header-container {
   position: sticky;
   z-index: 2;
@@ -870,20 +850,20 @@ export default {
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: 0 0 8px 0 #dedede;
 }
-.header {
-  display: flex;
+nav {
+  width: 100%;
+  display: inline-flex;
 }
-a {
-  color: black !important;
-  text-decoration: none;
-}
-.header-left-column {
+.logo {
+  line-height: 90px;
   margin-left: auto;
   margin-right: auto;
-  display: flex;
-  align-items: center;
+  font-size: 35px;
 }
-
+.logo-style {
+  width: 85px;
+  height: 85px;
+}
 .title-header {
   cursor: pointer;
   font-family: 'Poppins', sans-serif;
@@ -895,18 +875,41 @@ a {
   color: #cdc9ff;
   align-items: center;
 }
-
 .title-purple,
 .nuxt-link-active {
   color: #4d41c9 !important;
 }
-
-.header-right-column {
+nav ul {
+  float: right;
   margin-right: auto;
-  display: flex;
-  align-items: center;
+  margin-left: 0;
+  padding-left: 0;
 }
-
+nav li {
+  display: inline-block;
+  margin: 0;
+  line-height: 90px;
+}
+.menu-item {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #000000;
+  margin-left: 45px;
+  display: inline-flex;
+}
+a {
+  color: black !important;
+  text-decoration: none;
+}
+div #icon {
+  display: none;
+  margin-right: 40px;
+  margin-left: auto;
+  line-height: 50px;
+}
 .contact-button {
   font-style: normal;
   font-weight: bold;
@@ -928,192 +931,122 @@ a {
   background: #63639f;
   color: white;
 }
-
-.menu-item {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
-  text-transform: uppercase;
-  color: #000000;
-  margin-left: 45px;
-  display: inline-flex;
-}
-.headerContent-area {
-  cursor: default;
-}
-.menu-item:first-child {
-  margin-left: auto;
-}
-
-.menu-item ul {
-  list-style: none;
-}
-
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.2s;
-}
-.fade-enter,
-.fade-leave-active {
-  opacity: 0;
-}
-
-.menu-item-dropdown li {
-  float: left;
-  position: relative;
-  text-decoration: none;
-  top: 3px;
-}
-
-.menu-item-dropdown {
-  padding-left: 0;
-}
-
 .elements-block {
-  height: 320px;
   width: 200px;
-  left: -55px;
-  top: 23px;
+  left: 1050px;
+  top: 90px;
   display: block;
-  position: relative;
+  position: absolute;
   background: white;
   box-shadow: 0px 3px 25px rgba(205, 201, 255, 0.3);
   padding-left: 0;
   border-radius: 16px;
 }
-
-.menu-item-dropdown li ul li {
+.area-element-dropdown {
+  list-style: none;
+}
+.area-element-text {
+  color: black;
+  text-decoration: none;
   padding: 20px;
   display: block;
-  background: #ffffff;
   transition: background 0.3s;
   font-weight: 800;
   text-transform: none;
   width: 200px;
 }
-.area-element-text {
-  color: black;
-  text-decoration: none;
+.areas-element:hover {
+  background: #fafaff;
+}
+
+.areas-element:first-child {
+  border-radius: 16px 16px 0px 0px;
+}
+
+.areas-element:last-child {
+  border-radius: 0px 0px 16px 16px;
+}
+
+.areas-element:first-child:hover {
+  background: #fafaff;
+  border-radius: 16px 16px 0px 0px;
+}
+
+.areas-element:last-child:hover {
+  background: #fafaff;
+  border-radius: 0px 0px 16px 16px;
 }
 
 .area-element-text:hover {
   color: #4d41c9 !important;
 }
-
-.menu-item li ul li:first-child {
-  border-radius: 16px 16px 0px 0px;
+.hidden-dropdown-areas {
+  display: none;
+  width: 100%;
+  border-top: 0.5px solid #cdc9ff;
+  margin-top: 15px;
 }
-
-.menu-item li ul li:last-child {
-  border-radius: 0px 0px 16px 16px;
-}
-
-.menu-item li ul li:first-child:hover {
-  background: #fafaff;
-  border-radius: 16px 16px 0px 0px;
-}
-
-.menu-item li ul li:last-child:hover {
-  background: #fafaff;
-  border-radius: 0px 0px 16px 16px;
-}
-
-.menu-item li ul li:hover {
-  background: #fafaff;
-}
-
-.menu-item li ul {
-  position: absolute;
-  left: 0;
-  top: 42px;
-  margin: 0;
-  color: white;
-}
-.mobile-menu {
+.menu-mobile-bottom {
   display: none;
 }
 @media screen and (max-width: 1200px) {
-  .hamburger-menu {
-    display: block;
-    margin-left: auto;
-  }
-  .title-header {
-    font-size: 13px;
-    line-height: 19px;
-  }
   .logo-style {
     width: 21px;
     height: 21px;
   }
-  .header-right-column {
-    display: none;
-  }
-  .header-left-column {
+  .title-header {
+    font-size: 13px;
+    line-height: 19px;
     margin-left: 26px;
-    margin-right: 26px;
-    display: flex;
-    align-items: center;
-    width: 100%;
   }
   .header-container {
     height: 50px;
   }
-  .header {
-    display: inline-flex;
-    width: 100%;
-
-    height: inherit;
+  label.logo {
+    line-height: 50px;
   }
-  .mobile-menu {
-    width: 100%;
-    background: linear-gradient(
-      180deg,
-      #f9f9ff 100%,
-      rgba(251, 251, 255, 0) 100%
-    );
+  div #icon {
+    display: block;
+  }
+  nav ul {
     position: fixed;
-    height: 100%;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(180deg, #f9f9ff 100%, rgba(251, 251, 255, 0) 0);
     top: 50px;
-    right: 0;
-    transition: visibility 0s, opacity 0.5s linear;
-    z-index: 1;
+    left: -100%;
+    text-align: center;
+    margin-right: 0px;
+    transition: all 0.5s;
+    z-index: 100;
   }
-  .menu-item-mobile {
-    font-style: normal;
-    font-weight: 600;
+  nav li {
+    display: block;
     font-size: 16px;
     line-height: 19px;
-    text-transform: uppercase;
     text-align: left;
     padding-top: 15px;
     padding-bottom: 15px;
-    color: #000000;
-    border: 0.5px solid #cdc9ff;
-  }
-  .menu-item-mobile a {
-    margin-left: 30px;
-  }
-  .menu-item-mobile-dropdown {
-    display: inline-flex;
-    width: 100%;
-  }
-
-  .right-side-mobile-menu {
-    text-align: right;
-    margin-left: auto;
-    margin-right: 30px;
-  }
-  .left-side-mobile-menu {
-    text-align: left;
-    margin-right: auto;
-    margin-left: 30px;
-  }
-  .hidden-dropdown-areas {
-    display: none;
-    width: 100%;
     border-top: 0.5px solid #cdc9ff;
-    margin-top: 15px;
+    border-bottom: 0.5px solid #cdc9ff;
+  }
+  nav li:nth-last-of-type(1) {
+    text-align: center;
+    border: none;
+  }
+  .menu-item {
+    margin-left: 30px;
+    cursor: pointer;
+  }
+  nav ul.show {
+    left: 0;
+  }
+  .contact-button {
+    margin: auto;
+    margin-top: 50px;
+  }
+  .elements-block {
+    display: none;
   }
   .menu-area-item-mobile a {
     font-style: normal;
@@ -1122,28 +1055,38 @@ a {
     line-height: 17px;
     text-transform: capitalize;
     color: #4d41c9 !important;
+    margin-left: 30px;
   }
   .menu-area-item-mobile {
     padding-top: 16px;
   }
-  .contact-button {
-    margin: auto;
-    margin-top: 50px;
-  }
-  .contact-button-container {
-    text-align: center;
-  }
-  .menu-mobile-inner-container {
-    position: relative;
-    width: 100%;
-    height: 100%;
-  }
   .menu-mobile-bottom {
+    display: block;
     position: absolute;
     bottom: 0;
     text-align: center;
     z-index: -1;
     width: 100%;
   }
+  .area-arrow-after {
+    width: 100%;
+    padding-right: 30px;
+  }
+  .area-arrow-after::after {
+    display: block;
+    content: '';
+    background-image: url('https://i.ibb.co/CsmcDCn/Rectangle-2.png');
+    background-size: 16px 16px;
+    margin-left: auto;
+    margin-right: 30px;
+    height: 16px;
+    width: 16px;
+  }
+  .area-arrow-after.opened::after {
+    background-image: url('https://i.ibb.co/HXKJF2X/Rectangle-3.png');
+  }
+}
+
+@media screen and (max-width: 768px) {
 }
 </style>
