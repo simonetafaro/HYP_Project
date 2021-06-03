@@ -150,6 +150,7 @@ export default {
     font-size: 10px;
     line-height: 14px;
     padding: 0;
+    display: none;
   }
   .casestudytitle {
     font-size: 14px;
@@ -161,9 +162,10 @@ export default {
   .casestudydescription {
     font-size: 12px;
     line-height: 14px;
+    display: none;
   }
   .case-info {
-    max-height: 80%;
+    max-height: 88%;
   }
 }
 </style>

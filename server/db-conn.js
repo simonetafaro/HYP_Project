@@ -715,7 +715,7 @@ async function insertRealData() {
 
   //**BIG DATA ANALYSIS SERVICES */
   const OptimizeDigitalMarketing = await Service.create({
-    title: 'Optimize digital marketing',
+    title: 'Optimize marketing',
     subTitle:
       'Give users what they are searching just when they land on your page in order to maximize sales.',
     description:
@@ -754,7 +754,7 @@ async function insertRealData() {
   await BigDataAnalysis.addService(OptimizeDigitalMarketing.id)
 
   const PredictiveAnalyticsInHealthcare = await Service.create({
-    title: 'Predictive analytics in healthcare',
+    title: 'Predictive healthcare',
     subTitle:
       'As the health care industry begins to use new technologies such as predictive analytics, government health agencies, doctors, and primary health providers must be aware of risks and agree on standards.',
     description:
@@ -794,7 +794,7 @@ async function insertRealData() {
   await BigDataAnalysis.addService(PredictiveAnalyticsInHealthcare.id)
 
   const PredictionScenarioAnalysis = await Service.create({
-    title: 'Prediction & Scenario Analysis',
+    title: 'Prediction Analysis',
     subTitle: 'From rear-view analysis to forward-looking projection.',
     description:
       'We analyze datasets through classification, clustering, and pattern recognition techniques to move from a historical static description of the past to a forward-looking actionable projection in the future. We implement this solution in predictive maintenance, incident analysis, early-warning, customer satisfaction, churn prediction, production planning, risk assessment, attribution modeling and more.',
@@ -872,7 +872,7 @@ async function insertRealData() {
   await BigDataAnalysis.addService(BigDataAutomation.id)
 
   const BIDWHConsulting = await Service.create({
-    title: 'BI and DWH consulting',
+    title: 'BI consulting',
     subTitle:
       'We analyze your particular business needs and give recommendations on designing, developing, implementing or upgrading your analytics solution.',
     description:
@@ -1024,7 +1024,7 @@ async function insertRealData() {
   await CloudComputing.addService(CloudAppDevelopServices.id)
 
   const LiveVideoBroadcasting = await Service.create({
-    title: 'Live Video Broadcasting',
+    title: 'Live Broadcasting',
     subTitle: 'Moving towards future always looking ahead of the technology',
     description:
       'Live streaming is one of the best ways to connect in a meaningful and authentic way with your community. Every day around the world, in offices, fitness studios, stadiums, houses of worship,and our own houses, moments are made. A livestream platform connects you instantly to your employees, customers, subscribers, or followers when a virtual event or series is your best option.',
@@ -1062,7 +1062,7 @@ async function insertRealData() {
   await CloudComputing.addService(LiveVideoBroadcasting.id)
 
   const LiveECommerce = await Service.create({
-    title: 'Live streaming E-Commerce',
+    title: 'Live E-Commerce',
     subTitle: 'Moving towards future always looking ahead of the technology',
     description:
       'With live streaming you can sell products during a live stream in which the characteristics of the item for sale are recognized. This allows you to share more information, offer product demonstrations, satisfy viewers questions and respond to their reactions. It is an interactive system for both brands and stores, and for viewers who can purchase in real time, during the live broadcast. What is now fast becoming a profitable online sales channel for many luxury brands, actually originated in China as a form of entertainment: singers, comedians and other performers broadcast live for their fans in exchange for virtual gifts. In 2016, Chinese authorities started dozens of these live streaming platforms, sanctioning thousands of artists: this attempt to appease the phenomenon actually turned into an opportunity for more forward-thinking apps, such as Taobao, which they were the first to recognize its potential by investing in this new mode of commercial communication.',
@@ -1545,7 +1545,7 @@ async function insertRealData() {
 
   //**BIG DATA ANALYSIS CASE STUDIES */
   const bdaC1 = await CaseStudy.create({
-    title: 'BI implementation for 200 healthcare centers',
+    title: 'BI for 200 healthcare centers',
     subTitle:
       'The Customer is an American company that offers software to help 200 healthcare centers and retirement homes to process data related to patients and medication as well as build various types of reports.',
     banner:
@@ -1661,8 +1661,7 @@ async function insertRealData() {
   await PredictiveAnalyticsInHealthcare.addCasestudy(bdaC5.id)
 
   const bdaC6 = await CaseStudy.create({
-    title:
-      'Real-time traffic prediction via highly automated fleet communication',
+    title: 'Real-time traffic prediction',
     subTitle:
       'Providing drivers and highly automated vehicles with a view of the road ahead that is as comprehensive as possible is the main idea of the project. ',
     banner:
@@ -1731,7 +1730,7 @@ async function insertRealData() {
   await CloudAppDevelopServices.addCasestudy(ccC2.id)
 
   const ccC3 = await CaseStudy.create({
-    title: 'Live Event Broadcasting Video Platform',
+    title: 'Live Event Broadcasting Platform',
     subTitle:
       'Present Communications provides audio-visuals, video conferencing equipments, webcasting, video productions, and other technical services to the live event industry.',
     banner:
@@ -1754,7 +1753,7 @@ async function insertRealData() {
   await LiveECommerce.addCasestudy(ccC3.id)
 
   const ccC4 = await CaseStudy.create({
-    title: 'Maybelline Proves sintony between E-Commerce and Live-Streaming',
+    title: 'Sintony between E-Commerce and Live-Streaming',
     subTitle:
       'Maybelline New York faces the same challenge as many other brands: building an authentic connection with young women that drives sales. ',
     banner:
