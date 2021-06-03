@@ -1072,7 +1072,6 @@ div #icon {
     width: 100%;
     padding-right: 30px;
     align-items: center;
-}
   }
   .area-arrow-after::after {
     display: block;
