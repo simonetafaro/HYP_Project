@@ -1076,14 +1076,18 @@ div #icon {
     display: block;
     content: '';
     background-image: url('https://i.ibb.co/CsmcDCn/Rectangle-2.png');
-    background-size: 16px 16px;
+    background-size: 10px 16px;
     margin-left: auto;
     margin-right: 30px;
     height: 16px;
-    width: 16px;
+    width: 10px;
+    background-repeat: no-repeat;
   }
   .area-arrow-after.opened::after {
     background-image: url('https://i.ibb.co/HXKJF2X/Rectangle-3.png');
+    background-size: 16px 10px;
+    height: 10px;
+    width: 16px;
   }
 }
 
