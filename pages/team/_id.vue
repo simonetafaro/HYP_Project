@@ -650,6 +650,7 @@
           :image="casestudy.banner"
           :area="casestudy.area.title"
           :path="casestudy.id"
+          :caseIndex="casestudyIndex + 1"
         ></case-study-mini>
       </div>
     </section>
@@ -795,5 +796,24 @@ h3 {
   font-size: 18px;
   text-align: center;
   color: var(--c-grey1);
+}
+
+@media screen and (max-width: 1200px) {
+  .casestudies-grid {
+    grid-gap: 66px;
+    margin-top: 40px;
+    max-width: 100%;
+    margin-left: 92px;
+    margin-right: 92px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .casestudies-grid {
+    grid-gap: 13px;
+    margin-top: 40px;
+    max-width: 100%;
+    margin-left: 35px;
+    margin-right: 35px;
+  }
 }
 </style>

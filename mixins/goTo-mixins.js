@@ -2,6 +2,9 @@ export default {
   methods: {
     goTo(path) {
       this.$router.push({ path })
+      if (document.getElementById('menu-list').classList.contains('show')) {
+        document.getElementById('menu-list').classList.toggle('show')
+      }
     },
     goToTopFunction() {
       document.body.scrollTop = 0
@@ -15,8 +18,9 @@ export default {
       const footerVisible =
         footer.top <
         (window.innerHeight || document.documentElement.clientHeight)
-      const mobileMenuOpen =
-        document.getElementById('mobile-menu-box').style.display === 'block'
+      const mobileMenuOpen = document
+        .getElementById('menu-list')
+        .classList.contains('show')
       if (
         (document.body.scrollTop > 50 ||
           document.documentElement.scrollTop > 50) &&

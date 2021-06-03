@@ -1355,6 +1355,7 @@ p {
     line-height: 22px;
     height: 210px;
     width: 550px;
+    text-align: center;
   }
 
   .description-flower {
@@ -1367,6 +1368,7 @@ p {
     width: 550px;
     position: initial;
     margin-top: 14px;
+    text-align: center;
   }
 
   .omino {
@@ -1412,7 +1414,7 @@ p {
     font-weight: normal;
     font-size: 18px;
     line-height: 22px;
-    text-align: right;
+    text-align: center;
     color: #464a52;
     width: 550px;
     height: 123px;
@@ -1427,7 +1429,7 @@ p {
     font-weight: normal;
     font-size: 18px;
     line-height: 22px;
-    text-align: right;
+    text-align: center;
     color: #464a52;
     width: 550px;
     height: 123px;
@@ -1627,7 +1629,6 @@ p {
     font-weight: normal;
     font-size: 12px;
     line-height: 14px;
-    text-align: right;
     color: #464a52;
     width: 272px;
     height: 123px;
@@ -1642,7 +1643,6 @@ p {
     font-weight: normal;
     font-size: 12px;
     line-height: 14px;
-    text-align: right;
     color: #464a52;
     width: 272px;
     height: 123px;
