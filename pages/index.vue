@@ -818,10 +818,11 @@
         OUR WORKING<br /><span class="section-title-2">BUSINESS FIELDS</span>
       </h1>
       <h2 class="section-description">
-        Nulla ante risus, condimentum eu consectetur vel, facilisis ac nulla.
-        Sed blandit nulla diam, in mattis nibh porta quis. Mauris consectetur
-        sodales volutpat. Suspendisse potenti. Sed dapibus est ut magna egestas
-        tincidunt.
+        Welcome to HexTech, your number one source for company development.
+        We're working to turn our passion for taking care of our clients
+        companies into a fine services selection. We are dedicated to provide
+        you the best products, with a focus on security, reliability, and
+        functionality.
       </h2>
       <div class="button-container">
         <div class="scroll-text-compare">WHAT WE DO</div>

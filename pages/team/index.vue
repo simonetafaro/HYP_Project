@@ -643,13 +643,12 @@
         textp2="people"
       ></double-color-title>
       <h2 class="description">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum.
+        Ideate, innovate, change the world, repeat. Meet our team of talented
+        people using design thinking to create experiences that win awards and
+        make headlines. This is our powerful community, come and see how we
+        embrace change to drive innovative solutions for our clients and
+        companies. HexTech is made up of extraordinarily talented individuals
+        who share a passion for achieving the very best in everything they do.
       </h2>
     </header>
     <div class="filter-bar" @click="DropdownArea()">
