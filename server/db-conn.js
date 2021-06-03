@@ -1572,7 +1572,7 @@ async function insertRealData() {
     subTitle:
       'This will be a glimpse of what you can achieve by sharing your sales data with us. We could perform an opportunity summary report in line with this use case, and uncover your own opportunities regarding price optimization. So, fasten your seatbelt and get ready for the take-off.',
     banner:
-      'https://tryolabs.com/blog/images/blog/social/2018-09-24-price-optimization-machine-learning.d59ca712.jpg',
+      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVZvKJYV5VCsJKlFWEpWjHUZYr41OtCRFE5hilgxFLy8hvGHanrXKtT4VrNXwVeZziANo&usqp=CAU',
     descriptiveText:
       'We have discussed how a data-driven price optimization is no longer an option for retailers, but a question of how and when to do it. With a world that’s moving towards changing prices more and more dynamically, static pricing strategies can’t keep up, and data-driven approaches have arrived to stay. In this post, we’ll be focusing on how to perform data-driven price optimization, using a case study to showcase what can be done using sales data to predict demand and optimize prices.',
     challengeTitle: 'Analyzing an E-Commerce Sales Data',
@@ -1583,8 +1583,7 @@ async function insertRealData() {
       '"Combining their available dataset and other publicly available information, such as holidays/events data and macroeconomic series, we have been able to estimate demand curves for a subset of the items which would allow them to take optimal pricing decisions. The remaining items should undergo an exploration phase where new prices would be tried in order to be able to estimate their demand curves accurately. The exploration strategy is generally decided jointly with the client. For this example, given the data available and our past experience, we would suggest performing weekly price changes during the exploration phase. Furthermore, we have shown that there is plenty of room for inventory management improvement since there seems to be an important amount of revenue lost due to understock."',
     createdData: 'February 15, 2021',
     partnerWebsite: 'https://www.accenture.com/',
-    altBanner:
-      'There are lines that represent an optimized price accross a price icon.',
+    altBanner: 'There are some coin and an arrow pointing up.',
   })
   await BigDataAnalysis.addCasestudy(bdaC2.id)
   await PricingOptimization.addCasestudy(bdaC2.id)
