@@ -897,7 +897,7 @@ async function insertRealData() {
       'On all the case studies we worked on we had gained experience from our partners. Although some of them are very big companies, we had an equal exchange of expertise since we have really professional experts wprking on many industries.',
     p1Name: 'Microsoft',
     p1Logo:
-      'https://lh3.googleusercontent.com/proxy/WYX7gll105oAtJPvW5B8LUnxR57mBUmNyzZQoINC7_VDOXBNx2MqJAISdf6Pwq6s1jxgWenxPGZnjPGvo6-Oc1KA7vly5i3o7TnGf00bqFak1Jf4Q1A',
+      'https://www.staynerd.com/wp-content/uploads/Microsoft-Logo-2012.jpg',
     p2Name: 'Intelligence partner',
     p2Logo:
       'https://www.intelligencepartner.com/wp-content/themes/intelligencepartner/img/intelligencepartner_logo.svg',
