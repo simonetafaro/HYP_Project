@@ -132,7 +132,7 @@ export default {
   width: 95px;
   float: right;
   position: fixed;
-  bottom: 50px;
+  bottom: 30px;
   right: 42px;
   z-index: 99;
 }
@@ -144,7 +144,7 @@ export default {
   height: 400px;
   position: fixed;
   z-index: 99;
-  bottom: 140px;
+  bottom: 120px;
   right: 22px;
   background: #fbfbff;
   box-shadow: 0px 3px 25px rgba(205, 201, 255, 0.3);
@@ -186,7 +186,6 @@ export default {
   font-weight: normal;
   font-size: 14px;
   line-height: 20px;
-  color: #e6e3ff;
   padding-left: 20px;
 }
 
@@ -239,7 +238,6 @@ export default {
   font-size: 10px;
   line-height: 18px;
   letter-spacing: 0.75px;
-  color: #e6e3ff;
 }
 .close-chat-container {
   margin-left: auto;

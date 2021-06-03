@@ -1116,7 +1116,7 @@
           <div
             id="Null"
             class="filter active-filter"
-            @click="findAllCaseStudy($event), DropdownArea(), (overlay = false)"
+            @click="findAllCaseStudy($event)"
           >
             All
           </div>
@@ -1124,11 +1124,7 @@
             v-for="(area, areaIndex) of areas"
             :key="'area-' + areaIndex"
             class="filter"
-            @click="
-              filterCaseStudyByArea($event, area.id),
-                DropdownArea(),
-                (overlay = false)
-            "
+            @click="filterCaseStudyByArea($event, area.id)"
           >
             {{ area.title }}
           </div>
@@ -1236,6 +1232,7 @@ export default {
           areaArrow[0].style.transform = 'rotate(-90deg)'
           this.areaMenuHidden = true
         }
+        console.log(this.areaMenuHidden)
       }
     },
   },

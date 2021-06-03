@@ -674,7 +674,7 @@
       <div
         id="Null"
         class="filter active-filter"
-        @click="findAllTeamMembers($event), DropdownArea(), (overlay = false)"
+        @click="findAllTeamMembers($event)"
       >
         All
       </div>
@@ -683,11 +683,7 @@
         :key="'area-' + areaIndex"
         v-bind:id="area.id"
         class="filter"
-        @click="
-          filterTeamMemberByArea($event, area.id),
-            DropdownArea(),
-            (overlay = false)
-        "
+        @click="filterTeamMemberByArea($event, area.id)"
       >
         {{ area.title }}
       </div>

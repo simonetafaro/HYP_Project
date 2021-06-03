@@ -932,7 +932,7 @@ a {
 
 .menu-item {
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 16px;
   line-height: 19px;
   text-transform: uppercase;

@@ -271,7 +271,7 @@ async function insertRealData() {
 
   //**SECURITY SERVICES */
   const ModernFraudProtection = await Service.create({
-    title: 'Modern Fraud Protection Software',
+    title: 'Fraud Protection',
     subTitle: 'Detect and combat fraud more efficiently with AI',
     description:
       'Enterprises lose billions of dollars a year due to fraud. Bogus payments, money laundering, loyalty program fraud and cyber security incidents, just to name a few. Enterprises have explored a wide variety of ways to combat fraud, including hiring additional staff which has proven ineffective. It’s time-consuming, and nearly impossible to investigate every claim. The perpetrators of fraud are highly sophisticated, and their techniques evolve quickly, often making solutions obsolete just as soon as they’re implemented.',
@@ -292,16 +292,16 @@ async function insertRealData() {
     s3Logo: 'https://i.ibb.co/b77D3Fm/sol-3.png',
     partnerDescription:
       'Since security is an integral part of a great company, we offer 24h consulting and all of our know how to help you protect your business.',
-    p1Name: 'AWS',
-    p1Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
-    p2Name: 'Xiaomi',
-    p2Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
-    p3Name: 'Coca-Cola',
-    p3Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
+    p1Name: 'Amazon Web Services',
+    p1Logo: 'https://i.ibb.co/gzDM3yG/amazon-200.png',
+    p2Name: 'Google Cloud',
+    p2Logo: 'https://i.ibb.co/JqkrKTp/cloud-200.png',
+    p3Name: 'Sketch',
+    p3Logo: 'https://i.ibb.co/YR24qHc/sketch-200.png',
     altBanner: 'Evocative image of Modern Fraud Protection Software service',
-    altP1: 'evocative image of AWS partner',
-    altP2: 'evocative image of Xiaomi partner',
-    altP3: 'evocative image of Coca-Cola partner',
+    altP1: 'evocative image of Amazon Web Services partner',
+    altP2: 'evocative image of Google Cloud partner',
+    altP3: 'evocative image of Sketch partner',
   })
   await Security.addService(ModernFraudProtection.id)
 
@@ -329,17 +329,18 @@ async function insertRealData() {
     s3Logo: 'https://i.ibb.co/b77D3Fm/sol-3.png',
     partnerDescription:
       'On all the case studies we worked on we had gained experience from our partners. Although some of them are very big companies, we had an equal exchange of expertise since we have really professional experts working on many industries.',
-    p1Name: '......',
-    p1Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
-    p2Name: '......',
-    p2Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
-    p3Name: '......',
-    p3Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
+    p1Name: 'Arduino',
+    p1Logo: 'https://i.ibb.co/KDcLxdy/arduino.png',
+    p2Name: 'Node.js',
+    p2Logo: 'https://i.ibb.co/VvpxKnR/nodejs-200.png',
+    p3Name: 'Adobe',
+    p3Logo: 'https://i.ibb.co/VQSW0Zx/adobe-200.png',
     altBanner: 'Evocative image of Managed Security service',
-    altP1: 'Evocative image of ... partner',
-    altP2: 'Evocative image of ... partner',
-    altP3: 'Evocative image of ... partner',
+    altP1: 'Evocative image of Arduino partner',
+    altP2: 'Evocative image of Node.js partner',
+    altP3: 'Evocative image of Adobe partner',
   })
+  await Security.addService(ManagedSecurity.id)
 
   const NetworkProtection = await Service.create({
     title: 'Network Protection',
@@ -361,17 +362,18 @@ async function insertRealData() {
     s3Logo: 'https://i.ibb.co/b77D3Fm/sol-3.png',
     partnerDescription:
       'On all the case studies we worked on we had gained experience from our partners. Although some of them are very big companies, we had an equal exchange of expertise since we have really professional experts working on many industries.',
-    p1Name: '......',
-    p1Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
-    p2Name: '......',
-    p2Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
-    p3Name: '......',
-    p3Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
+    p1Name: 'Adobe',
+    p1Logo: 'https://i.ibb.co/VQSW0Zx/adobe-200.png',
+    p2Name: 'Google Cloud',
+    p2Logo: 'https://i.ibb.co/JqkrKTp/cloud-200.png',
+    p3Name: 'Coca Cola',
+    p3Logo: 'https://i.ibb.co/pywcrhj/coca-cola-200.png',
     altBanner: 'Evocative image of Network Protection service',
-    altP1: 'Evocative image of ... partner',
-    altP2: 'Evocative image of ... partner',
-    altP3: 'Evocative image of ... partner',
+    altP1: 'Evocative image of Adobe partner',
+    altP2: 'Evocative image of Google Cloud partner',
+    altP3: 'Evocative image of Coca Cola partner',
   })
+  await Security.addService(NetworkProtection.id)
 
   const DataSecurity = await Service.create({
     title: 'Data Security',
@@ -397,20 +399,21 @@ async function insertRealData() {
     s3Logo: 'https://i.ibb.co/b77D3Fm/sol-3.png',
     partnerDescription:
       'Since user apps are an integral part of a smart city, we offer mobile consulting, UI/UX design, native (iOS, Android) and cross-platform (Cordova/PhoneGap, Xamarin, React Native) development, as well as mobile testing.',
-    p1Name: 'Flutter',
-    p1Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
-    p2Name: 'Salesforce',
-    p2Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
-    p3Name: '......',
-    p3Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
+    p1Name: 'Figma',
+    p1Logo: 'https://i.ibb.co/3W81YKV/figma-200.png',
+    p2Name: 'Sketch',
+    p2Logo: 'https://i.ibb.co/YR24qHc/sketch-200.png',
+    p3Name: 'Google Cloud',
+    p3Logo: 'https://i.ibb.co/JqkrKTp/cloud-200.png',
     altBanner: 'Evocative image of Data Security service',
-    altP1: 'Evocative image of Flutter partner',
-    altP2: 'Evocative image of Salesforce partner',
-    altP3: 'Evocative image of ... partner',
+    altP1: 'Evocative image of Figma partner',
+    altP2: 'Evocative image of Sketch partner',
+    altP3: 'Evocative image of Google Cloud partner',
   })
+  await Security.addService(DataSecurity.id)
 
   const IdentityAccessManagement = await Service.create({
-    title: 'Identity Access Management',
+    title: 'Access Management',
     subTitle:
       'Get your workforce and consumer IAM program on the road to success.',
     description:
@@ -433,20 +436,21 @@ async function insertRealData() {
     s3Logo: 'https://i.ibb.co/b77D3Fm/sol-3.png',
     partnerDescription:
       'Plan and execute a cloud identity and access management (IAM) program transformation.',
-    p1Name: 'Philips',
-    p1Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
-    p2Name: 'Cisco',
-    p2Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
-    p3Name: '......',
-    p3Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
+    p1Name: 'Amazon Web services',
+    p1Logo: 'https://i.ibb.co/gzDM3yG/amazon-200.png',
+    p2Name: 'Arduino',
+    p2Logo: 'https://i.ibb.co/KDcLxdy/arduino.png',
+    p3Name: 'Adobe',
+    p3Logo: 'https://i.ibb.co/VQSW0Zx/adobe-200.png',
     altBanner: 'Evocative image of Identity Access Management service',
-    altP1: 'Evocative image of Philips partner',
-    altP2: 'Evocative image of Cisco partner',
-    altP3: 'Evocative image of ... partner',
+    altP1: 'Evocative image of Amazon Web Services partner',
+    altP2: 'Evocative image of Arduino partner',
+    altP3: 'Evocative image of Adobe partner',
   })
+  await Security.addService(IdentityAccessManagement.id)
 
   const SecurityAssessmentAndPlanning = await Service.create({
-    title: 'Security Assessment and Planning',
+    title: 'Security Planning',
     subTitle:
       'Making your organization the best it can be starts with a plan; security is no different. ',
     description:
@@ -469,61 +473,18 @@ async function insertRealData() {
     partnerTitle: '',
     partnerDescription:
       'Use a root key to encrypt and decrypt the keys that protect your data.',
-    p1Name: 'Flutter',
-    p1Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
-    p2Name: 'Salesforce',
-    p2Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
-    p3Name: '......',
-    p3Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
+    p1Name: 'Sketch',
+    p1Logo: 'https://i.ibb.co/YR24qHc/sketch-200.png',
+    p2Name: 'Node.js',
+    p2Logo: 'https://i.ibb.co/VvpxKnR/nodejs-200.png',
+    p3Name: 'CocaCola',
+    p3Logo: 'https://i.ibb.co/pywcrhj/coca-cola-200.png',
     altBanner: 'Evocative image of Security Assessment and Planning service',
-    altP1: 'Evocative image of ... partner',
-    altP2: 'Evocative image of ... partner',
-    altP3: 'Evocative image of ... partner',
+    altP1: 'Evocative image of sketch partner',
+    altP2: 'Evocative image of Node.js partner',
+    altP3: 'Evocative image of Coca Cola partner',
   })
-
-  const KeyProtect = await Service.create({
-    title: 'Key Protect',
-    subTitle:
-      'Get visibility and control of encryption keys throughout the key lifecycle, from a single location',
-    description:
-      'You’re using key protection for data security and compliance. But full encryption visibility and control are essential.',
-    banner:
-      'https://cdn3.iconfinder.com/data/icons/security-and-protection-31/53/46-512.png',
-    serviceDescription:
-      'The HexTech® Key Protect for HexTech Cloud® service helps you provision and store encrypted keys for apps across HexTech Cloud services, so you can see and manage data encryption and the entire key lifecycle from one central location.',
-    s1Name: 'Robust security',
-    s1Description:
-      'Provision and store keys using FIPS 140-2 Level 3 certified HSMs.',
-    s1Logo: 'https://i.ibb.co/Rczq8Pv/sol-1.png',
-    s2Name: 'Control and Visiblity',
-    s2Description:
-      'Use the Activity Tracker to monitor user and app activities.',
-    s2Logo: 'https://i.ibb.co/KwskLjv/sol-2.png',
-    s3Name: 'Usage costs insights',
-    s3Description:
-      ' View usage by account or by resource type to see where your money is going.',
-    s3Logo: 'https://i.ibb.co/b77D3Fm/sol-3.png',
-    partnerTitle: '',
-    partnerDescription:
-      'Since user apps are an integral part of a smart city, we offer mobile consulting, UI/UX design, native (iOS, Android) and cross-platform (Cordova/PhoneGap, Xamarin, React Native) development, as well as mobile testing.',
-    p1Name: 'Flutter',
-    p1Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
-    p2Name: 'Salesforce',
-    p2Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
-    p3Name: '......',
-    p3Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
-    altBanner: 'Evocative image of key protection service',
-    altP1: 'Evocative image of ... partner',
-    altP2: 'Evocative image of ... partner',
-    altP3: 'Evocative image of ... partner',
-  })
-
-  await Security.addService(ModernFraudProtection.id)
-  await Security.addService(NetworkProtection.id)
-  await Security.addService(DataSecurity.id)
-  await Security.addService(IdentityAccessManagement.id)
   await Security.addService(SecurityAssessmentAndPlanning.id)
-  await Security.addService(KeyProtect.id)
 
   //**END OF SECURITY SERVICES */
 
@@ -666,8 +627,7 @@ async function insertRealData() {
     p1Name: 'Amazon Web Services',
     p1Logo: 'https://i.ibb.co/gzDM3yG/amazon-200.png',
     p2Name: 'Arduino',
-    p2Logo:
-      'https://i.ibb.co/KDcLxdy/arduino.png',
+    p2Logo: 'https://i.ibb.co/KDcLxdy/arduino.png',
     p3Name: 'Arm Intel',
     p3Logo:
       'https://internetofbusiness.com/wp-content/uploads/2018/10/Intel-ARM-Licensing-Deal-640x400.png',
@@ -1460,7 +1420,7 @@ async function insertRealData() {
     challengeTitle: 'Effective and convenient fraud detection solution',
     challengeDescription:
       'The need for the Bank to deliver a new paradigm in user experience for online banking provided several challenges to their security team, as they were requested to minimize customer friction while supporting instant payment and open banking initiatives, andensure regulatory compliance (PSD2). In particular, the anti-fraud team had to select and implement the best fraud detection solution to ensure the Bank would quickly gain an excellent reputation in the market by delivering the best customer satisfaction in terms of protection against online frauds.',
-    solutionTitle: 'application-transparent approach',
+    solutionTitle: 'Application-transparent approach',
     solutionDescription:
       'Our application-transparent approach does not require instrumenting or even touching applications. HexTech passive and dynamic delivery of controls allows security to be decoupled from application development & deployment, and is a critical functionality that can be independently delivered and managed by the security team.',
     createdData: 'April 2, 2021',
@@ -1517,7 +1477,7 @@ async function insertRealData() {
 
   const cs3 = await CaseStudy.create({
     title: 'Factoring data migration from Raiffeisen to BNP',
-    subTitle: 'A secure connection',
+    subTitle: 'Avoid data losses',
     banner:
       'https://www.octivdigital.com/wp-content/uploads/2019/08/migrate-wordpress-blog-new-host.png',
     descriptiveText:
@@ -1539,10 +1499,9 @@ async function insertRealData() {
   await NetworkProtection.addCasestudy(cs3.id)
 
   const cs4 = await CaseStudy.create({
-    title: 'Implementation of HexTech Loyalty Management at Livelo',
-    subTitle: 'A secure connection',
-    banner:
-      'https://www.mccourier.com/wp-content/uploads/2021/03/S731856250_g.jpg',
+    title: 'Loyalty Management at Livelo',
+    subTitle: 'Bringing value to your customers',
+    banner: 'https://miro.medium.com/max/5600/1*1ZRCjS1wPdSLWRPwse6hkA.png',
     descriptiveText:
       'One of the main challenges for customer-oriented enterprises is to create a strong bond between customers and the brand.',
     challengeTitle:
@@ -1564,8 +1523,7 @@ async function insertRealData() {
     title: 'Eurobits Technologies',
     subTitle:
       'Transforming the financial landscape with robust, security-rich services',
-    banner:
-      'https://openbanking.world/wp-content/uploads/ultimatemember/57/profile_photo.jpeg?1615620971',
+    banner: 'https://i.ytimg.com/vi/cCiEDjAaMJw/maxresdefault.jpg',
     descriptiveText:
       'Under pressure from regulators, the banking industry is opening up to allow new competitors to handle payments and account aggregation. For Eurobits – which helps banks give trusted third-parties access to account information – this change represents a significant growth opportunity. To preserve its first-mover advantage, Eurobits migrated to HexTech® Cloud™, gaining the flexibility, scale and resilience it needed to serve a rapidly growing client base.',
     challengeTitle:
@@ -1720,8 +1678,7 @@ async function insertRealData() {
     createdData: 'September 23, 2020',
     partnerWebsite:
       'https://ipg-automotive.com/products-services/simulation-software/carmaker/',
-    altBanner:
-      'Car suited with many sensors used to predicte traffic',
+    altBanner: 'Car suited with many sensors used to predicte traffic',
   })
   await BigDataAnalysis.addCasestudy(bdaC6.id)
   await PredictionScenarioAnalysis.addCasestudy(bdaC6.id)
