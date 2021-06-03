@@ -990,7 +990,7 @@ async function insertRealData() {
   await CloudComputing.addService(EInvoice.id)
 
   const CloudAppDevelopServices = await Service.create({
-    title: 'Cloud App Development Services',
+    title: 'Cloud App Development',
     subTitle:
       'With cloud application development services, businesses can build applications that are technically and architecturally adapted to being smoothly hosted and maintained by the cloud infrastructure and take advantage of the capabilities and services offered by PaaS (platform-as-a-service) and IaaS (infrastructure-as-a-service) providers.',
     description:
