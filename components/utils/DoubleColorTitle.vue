@@ -28,11 +28,11 @@ export default {
   line-height: 84px;
   text-align: center;
   text-transform: uppercase;
-  color: var(--cc-base1);
+  color: #3d3d3d;
 }
 
 .title-color {
-  color: var(--cc-red);
+  color: var(--cc-violet);
 }
 @media screen and (max-width: 1200px) {
   .title {

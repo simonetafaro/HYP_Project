@@ -19,10 +19,11 @@
   --cc-base4: #e6e3ff;
   --cc-base5: #f3f2ff;
   --cc-base6: #fbfbff;
-
+  --cc-violet: #4d41c9;
   /**GREY TEXT**/
-  --c-grey1: #464a52;
-  --c-grey2: #909297;
+  --cc-grey1: #464a52;
+  --cc-grey2: #909297;
+  --cc-grey3: #3d3d3d;
 
   /**TEXT SIZE*/
 

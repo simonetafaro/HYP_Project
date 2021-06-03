@@ -883,7 +883,7 @@ nav {
   font-size: 40px;
   line-height: 60px;
   display: inline-flex;
-  color: #cdc9ff;
+  color: #3d3d3d;
   align-items: center;
 }
 .title-purple,
@@ -907,12 +907,12 @@ nav li {
   font-size: 16px;
   line-height: 19px;
   text-transform: uppercase;
-  color: #000000;
+  color: #3d3d3d;
   margin-left: 45px;
   display: inline-flex;
 }
 a {
-  color: black !important;
+  color: #3d3d3d !important;
   text-decoration: none;
 }
 div #icon {

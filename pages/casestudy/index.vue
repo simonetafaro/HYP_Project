@@ -1080,12 +1080,11 @@
 
             <div class="container_description">
               <div class="description">
-                Nulla ante risus, condimentum eu consectetur vel, facilisis ac
-                nulla. Sed blandit nulla diam, in mattis nibh porta quis. Donec
-                accumsan, erat in suscipit viverra, massa purus dignissim
-                sapien, interdum convallis leo magna vel quam. In massa felis,
-                gravida in eros in, ultricies vehicula ex. Praesent luctus non
-                metus ac iaculis. Fusce quis rutrum diam.
+                See how we bring the new to life with our clients in every
+                industry, in every country, each and every day. The following
+                case studies demonstrate how HexTech is in the business of
+                creating comprehensive and hyper personalized solutions from
+                start to finish.
               </div>
             </div>
           </header>
@@ -1317,7 +1316,7 @@ export default {
 
   text-transform: uppercase;
 
-  color: var(--cc-base1);
+  color: #3d3d3d;
   text-align: left;
 }
 .casestudy {
@@ -1361,7 +1360,7 @@ export default {
   margin: 0;
 }
 .title-section-purple {
-  color: var(--cc-base3);
+  color: var(--cc-violet);
 }
 .description {
   font-style: normal;
