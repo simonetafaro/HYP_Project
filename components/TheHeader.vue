@@ -204,7 +204,11 @@
           <div
             @click="openAreaDropdownMobile()"
             v-if="item.name === 'Areas'"
-            class="menu-item headerContent area-arrow-after"
+            :class="
+              isAreaPageOpened()
+                ? 'menu-item headerContent area-arrow-after title-purple'
+                : 'menu-item headerContent area-arrow-after'
+            "
           >
             {{ item.name }}
           </div>
@@ -833,6 +837,13 @@ export default {
             .getElementsByClassName('area-arrow-after')[0]
             .classList.add('opened')
         }
+      }
+    },
+    isAreaPageOpened() {
+      if (this.$route.path.includes('/area/')) {
+        return true
+      } else {
+        return false
       }
     },
   },

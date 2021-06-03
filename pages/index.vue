@@ -883,6 +883,9 @@ export default {
     }
   },
   mixins: [GoToMixins],
+  created() {
+    this.$router.push('/home')
+  },
   mounted() {
     document.addEventListener('scroll', this.handleScroll)
   },
