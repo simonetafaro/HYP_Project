@@ -825,7 +825,7 @@
         functionality.
       </h2>
       <div class="button-container">
-        <div class="scroll-text-compare">WHAT WE DO</div>
+        <div class="scroll-text-compare">AREAS</div>
         <div class="button-inner-container">
           <button
             v-for="(area, areaIndex) of areas"
@@ -904,15 +904,14 @@ export default {
     },
     handleScroll() {
       const buttonBar = document.getElementsByClassName('button-container')[0]
-      const hiddenText = document.getElementsByClassName(
-        'scroll-text-compare'
-      )[0]
       this.areas.forEach(function (area) {
         if (
           document.getElementById('area-box-' + area.id).getBoundingClientRect()
-            .top < 180 &&
+            .top <
+            window.innerHeight / 2 &&
           document.getElementById('area-box-' + area.id).getBoundingClientRect()
-            .top > 0
+            .bottom >
+            window.innerHeight / 2
         ) {
           document
             .getElementById('button-area-' + area.id)
@@ -924,13 +923,11 @@ export default {
         }
       })
       if (buttonBar.getBoundingClientRect().top < 90 && !this.isPositionFixed) {
-        hiddenText.style.display = 'block'
         buttonBar.style.position = 'sticky'
         buttonBar.style.top = '90px'
         this.isPositionFixed = true
       }
       if (buttonBar.getBoundingClientRect().top > 90 && this.isPositionFixed) {
-        hiddenText.style.display = 'none'
         buttonBar.style.position = 'static'
         buttonBar.style.top = 0
         this.isPositionFixed = false
@@ -996,7 +993,6 @@ export default {
   line-height: 24px;
   text-transform: uppercase;
   color: var(--cc-base1);
-  display: none;
   margin: auto;
   padding: 25px 15px;
 }
@@ -1025,7 +1021,7 @@ export default {
   max-width: 769px;
   margin: auto;
   margin-top: 86px;
-  margin-bottom: 162px;
+  margin-bottom: 86px;
 }
 
 .button-container {

@@ -27,7 +27,7 @@
 
     <div class="services-container">
       <div class="inner-container">
-        <div class="section-title">WHY CHOOSING US</div>
+        <div class="section-title">{{ area.title }}</div>
         <double-color-title
           :textp1="'OUR SERVICES'"
           :textp2="'SUCCESS BUSINESS'"
@@ -63,7 +63,7 @@
 
     <div class="case-studies-container">
       <div class="inner-container">
-        <div class="section-title">WHAT WE DO</div>
+        <div class="section-title">{{ area.title }}</div>
         <double-color-title
           :textp1="'DISCOVER OUR'"
           :textp2="'CLIENTS CASE STUDIES'"
@@ -73,7 +73,7 @@
         </h3>
 
         <section class="casestudies-grid">
-          <h4 v-if="area.casestudies === 0">There are no cs</h4>
+          <h4 v-if="area.casestudies === 0">There are no cases studies</h4>
           <div
             v-for="(casestudy, casestudyIndex) of area.casestudies.slice(0, 6)"
             :key="'casestudy-' + casestudyIndex"
@@ -89,7 +89,7 @@
           </div>
         </section>
         <discover-button
-          :buttonLabel="'DISCOVER ALL CASES'"
+          :buttonLabel="'DISCOVER ALL CASE STUDIES'"
           :path="'/casestudy'"
         ></discover-button>
         <space-divider />
@@ -98,7 +98,7 @@
 
     <div class="teams-container">
       <div class="inner-container">
-        <div class="section-title">THE PEOPLE</div>
+        <div class="section-title">{{ area.title }}</div>
         <double-color-title
           :textp1="'MEET OUR'"
           :textp2="'PROFESSIONAL TEAM'"
@@ -183,6 +183,7 @@ export default {
   padding-top: 0px;
   margin-top: 0px;
   padding: 0;
+  margin-bottom: 0px;
 }
 .area-header {
   height: 916px;
@@ -284,6 +285,7 @@ export default {
   line-height: 24px;
   color: var(--cc-base1);
   margin-bottom: 0;
+  text-transform: uppercase;
 }
 
 .service-grid,
@@ -294,12 +296,13 @@ export default {
   grid-gap: 30px;
 }
 
-.teams.container {
+.teams-container {
   background: linear-gradient(
     360deg,
     #fcfcff 72.4%,
     rgba(252, 252, 255, 0) 100%
   );
+  padding-bottom: 40px;
 }
 
 .person {

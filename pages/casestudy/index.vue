@@ -1146,6 +1146,9 @@
             </div>
           </section>
         </div>
+        <div class="casestudies-counter">
+          {{ casestudies.length }} case studies
+        </div>
       </div>
     </div>
   </main>
@@ -1292,6 +1295,15 @@ export default {
   overflow: hidden;
 }
 
+.casestudies-counter {
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+  color: #464a52;
+  margin-top: 20px;
+}
 .inner-container {
   max-width: 1110px;
   margin: auto;
@@ -1299,7 +1311,7 @@ export default {
 .case-container {
   text-align: left;
   max-width: 1110px;
-  margin: 40px 8%;
+  margin: 50px auto;
 }
 .inner-case {
   margin: auto;
@@ -1343,6 +1355,9 @@ export default {
   line-height: 24px;
   text-transform: uppercase;
   color: #4d41c9;
+}
+.filter:hover:not(.active-filter) {
+  border-bottom: 2px solid #4d41c9;
 }
 .active-filter {
   color: var(--cc-base1);
