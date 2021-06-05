@@ -853,6 +853,7 @@ export default {
 <style scoped>
 .header-container {
   position: sticky;
+  position: -webkit-sticky;
   z-index: 2;
   height: 90px;
   width: 100%;
