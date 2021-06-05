@@ -622,14 +622,6 @@ export default {
   column-count: 2;
   column-gap: 30px;
 }
-.header-inner-content::after {
-  display: block;
-  content: '';
-  background-image: url('https://i.ibb.co/CBKWhfF/user-profile.png');
-  background-size: 108px 108px;
-  height: 108px;
-  width: 108px;
-}
 .header-background {
   text-align: end;
   position: absolute;
