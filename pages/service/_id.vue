@@ -403,7 +403,7 @@
     </div>
 
     <div class="inner-container">
-      <div class="section-title">WE PUT IT INTO PRATICE</div>
+      <div class="section-title">{{ service.title }}</div>
       <double-color-title
         :textp1="'ALLIANCES'"
         :textp2="'AND PARTNERS'"
@@ -438,9 +438,11 @@
       <space-divider />
     </div>
 
-    <div class="case-study-container">
+    <div v-if="service.casestudies !== 0" class="case-study-container">
       <div class="inner-container">
-        <div class="section-title">WHAT WE DO</div>
+        <div class="section-title">
+          {{ service.title }}
+        </div>
         <double-color-title
           :textp1="'DISCOVER OUR'"
           :textp2="'CLIENTS CASE STUDIES'"
@@ -464,7 +466,7 @@
           </div>
         </section>
         <discover-button
-          :buttonLabel="'DISCOVER ALL CASES'"
+          :buttonLabel="'DISCOVER ALL CASE STUDIES'"
           :path="'/casestudy'"
         ></discover-button>
         <space-divider />
@@ -620,6 +622,14 @@ export default {
   column-count: 2;
   column-gap: 30px;
 }
+.header-inner-content::after {
+  display: block;
+  content: '';
+  background-image: url('https://i.ibb.co/CBKWhfF/user-profile.png');
+  background-size: 108px 108px;
+  height: 108px;
+  width: 108px;
+}
 .header-background {
   text-align: end;
   position: absolute;
@@ -723,6 +733,7 @@ export default {
   line-height: 24px;
   color: var(--cc-base1);
   margin-bottom: 0;
+  text-transform: uppercase;
 }
 .related-services-title {
   margin-bottom: 73px;

@@ -951,6 +951,9 @@ h4 {
   list-style: none;
   color: #4d41c9;
 }
+.filter:hover:not(.active-filter) {
+  border-bottom: 2px solid #4d41c9;
+}
 .active-filter {
   color: var(--cc-base1);
   border-bottom: 2px solid var(--cc-base1);
