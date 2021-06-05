@@ -1536,6 +1536,9 @@ a {
 .show-tablet {
   display: none;
 }
+.nuxt-link-active {
+  color: #4d41c9 !important;
+}
 @media screen and (max-width: 1200px) {
   .footer {
     height: 196px;
