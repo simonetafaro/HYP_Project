@@ -1112,6 +1112,11 @@ export default {
   .button-wrapper-next {
     margin-left: 8px;
   }
+
+  .related-services-title {
+    margin-right: 92px;
+    margin-left: 92px;
+  }
   .service-list-wrapper {
     height: 270px;
     width: 672px;
@@ -1203,6 +1208,8 @@ export default {
   }
   .related-services-title {
     margin-bottom: 0px;
+    margin-right: 35px;
+    margin-left: 35px;
   }
   .casestudy {
     width: 100%;
