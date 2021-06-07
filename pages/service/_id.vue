@@ -9,6 +9,9 @@
           <h2 class="service-title">
             {{ service.title }}
           </h2>
+          <div class="service-image-responsive">
+            <img :src="service.banner" :alt="altBanner" />
+          </div>
           <h3 class="service-subtitle">{{ service.subTitle }}</h3>
           <div class="service-description-text">
             {{ service.description }}
@@ -610,6 +613,9 @@ export default {
   margin-left: 50px;
   width: 100%;
 }
+.service-image-responsive {
+  display: none;
+}
 .service-image > img {
   width: 100%;
   height: auto;
@@ -741,6 +747,32 @@ export default {
     max-width: 60%;
     margin: auto;
   }
+  .go-to-area-title {
+    margin-right: auto;
+    margin-left: auto;
+    border-bottom: 2px solid var(--cc-base1);
+  }
+  .service-image {
+    display: none;
+  }
+
+  .service-image-responsive {
+    display: block;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    margin-bottom: 36px;
+  }
+
+  .service-image-responsive > img {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+  }
   .service-title {
     font-size: 36px;
     line-height: 43px;
@@ -826,6 +858,13 @@ export default {
     max-width: 100%;
     margin-right: 52px;
     margin-left: 52px;
+  }
+  .go-to-area-title {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .service-image-responsive {
+    margin-bottom: 25px;
   }
   .service-title {
     font-size: 24px;
