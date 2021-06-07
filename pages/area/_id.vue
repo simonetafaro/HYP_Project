@@ -51,10 +51,6 @@
             ></service-mini>
           </div>
         </div>
-        <discover-button
-          :buttonLabel="'DISCOVER ALL SERVICES'"
-          :path="'/service'"
-        ></discover-button>
         <div class="mobile-hide">
           <space-divider />
         </div>
@@ -66,7 +62,7 @@
         <div class="section-title">{{ area.title }}</div>
         <double-color-title
           :textp1="'DISCOVER OUR'"
-          :textp2="'CLIENTS CASE STUDIES'"
+          :textp2="'CASE STUDIES'"
         ></double-color-title>
         <h3 class="section-intro-text">
           {{ area.caseStudyDescription }}
