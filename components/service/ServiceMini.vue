@@ -119,7 +119,7 @@ export default {
     padding-top: 10px;
   }
   .service_card_carousel {
-    max-width: 270px;
+    max-width: 220px;
   }
   .service-left {
     margin-right: 0px;
