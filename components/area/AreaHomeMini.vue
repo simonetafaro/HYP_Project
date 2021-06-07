@@ -18,6 +18,8 @@
 </template>
 
 <script>
+import GoToMixins from '~/mixins/goTo-mixins.js'
+
 export default {
   props: {
     image: {
@@ -34,6 +36,7 @@ export default {
       return (index + 1) % 2
     },
   },
+  mixins: [GoToMixins],
 }
 </script>
 

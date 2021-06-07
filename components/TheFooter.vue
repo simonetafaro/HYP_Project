@@ -1521,7 +1521,6 @@ export default {
   line-height: 30px;
   color: #3d3d3d !important;
   mix-blend-mode: normal;
-  opacity: 0.8;
 }
 .group-name-list {
   list-style: none;
@@ -1529,6 +1528,7 @@ export default {
 a {
   color: #3d3d3d !important;
   text-decoration: none;
+  opacity: 0.8;
 }
 .show-mobile {
   display: none;
@@ -1538,6 +1538,7 @@ a {
 }
 .nuxt-link-active {
   color: #4d41c9 !important;
+  opacity: 1;
 }
 @media screen and (max-width: 1200px) {
   .footer {

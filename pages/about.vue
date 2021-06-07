@@ -716,7 +716,7 @@
         </discover-button>
       </section>
     </div>
-    <section class="collaborations">
+    <section id="partners" class="collaborations">
       <space-divider></space-divider>
       <div class="pre_title-3">Testimonials</div>
       <div class="title-3">our latest</div>

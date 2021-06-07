@@ -3,33 +3,19 @@
     <div class="service-header">
       <div class="header-content">
         <div class="header-inner-content">
-          <h1 class="service-title">
-            <div class="back-to-arrow">
-              <svg
-                @click="goTo('/area/' + service.areaID)"
-                width="48"
-                height="49"
-                viewBox="0 0 48 49"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M26.332 45.666L4.99902 24.333L26.332 2.99999"
-                  stroke="#424272"
-                  stroke-width="7"
-                />
-              </svg>
-            </div>
-            {{ service.title }}
+          <h1 class="go-to-area-title" @click="goTo('/area/' + areaData.id)">
+            {{ areaData.title }}
           </h1>
-          <h2 class="service-subtitle">{{ service.subTitle }}</h2>
+          <h2 class="service-title">
+            {{ service.title }}
+          </h2>
+          <h3 class="service-subtitle">{{ service.subTitle }}</h3>
           <div class="service-description-text">
             {{ service.description }}
           </div>
-          <discover-button
-            :buttonLabel="'ALL SERVICES'"
-            :path="'/service/#' + service.areaID"
-          ></discover-button>
+        </div>
+        <div class="service-image">
+          <img :src="service.banner" :alt="altBanner" />
         </div>
       </div>
 
@@ -433,7 +419,7 @@
       </section>
       <discover-button
         :buttonLabel="'DISCOVER MORE'"
-        :path="'/about'"
+        :path="'/about/#partners'"
       ></discover-button>
       <space-divider />
     </div>
@@ -445,7 +431,7 @@
         </div>
         <double-color-title
           :textp1="'DISCOVER OUR'"
-          :textp2="'CLIENTS CASE STUDIES'"
+          :textp2="'CASE STUDIES'"
         ></double-color-title>
         <div class="section-intro-text"></div>
         <section class="casestudies-grid">
@@ -465,10 +451,6 @@
             ></case-study-mini>
           </div>
         </section>
-        <discover-button
-          :buttonLabel="'DISCOVER ALL CASE STUDIES'"
-          :path="'/casestudy'"
-        ></discover-button>
         <space-divider />
       </div>
     </div>
@@ -494,11 +476,6 @@
           ></service-mini>
         </div>
       </section>
-
-      <discover-button
-        :buttonLabel="'DISCOVER ALL SERVICES'"
-        :path="'/service'"
-      ></discover-button>
     </div>
   </section>
 </template>
@@ -520,15 +497,6 @@ export default {
   mounted() {
     this.resizeServiceCard()
     window.addEventListener('resize', this.resizeServiceCard)
-    if (window.innerWidth > 1200) {
-      // set arrow between title and margin left
-      const arrow = document.getElementsByClassName('back-to-arrow')[0]
-      arrow.style.left =
-        '-' +
-        document.getElementsByClassName('service-title')[0].offsetLeft / 2 +
-        'px'
-      arrow.style.display = 'block'
-    }
     this.resizeCaseCard()
     window.addEventListener('resize', this.resizeCaseCard)
   },
@@ -548,6 +516,10 @@ export default {
         message: 'Service not found!',
       })
     }
+    let areaData = await $axios.get(
+      `${process.env.BASE_URL}/api/area/${data.areaID}`
+    )
+    areaData = areaData.data
     const service = data
     let relServices = await $axios.get(
       `${process.env.BASE_URL}/api/relatedServices/${data.areaID}/${id}`
@@ -556,6 +528,7 @@ export default {
     return {
       service,
       relServices,
+      areaData,
     }
   },
 }
@@ -566,6 +539,7 @@ export default {
   max-width: 100%;
   padding-top: 0px;
   margin-top: 0px;
+  padding-bottom: 40px;
 }
 .service-header {
   height: 916px;
@@ -575,13 +549,28 @@ export default {
 .header-content {
   max-width: 1100px;
   margin: auto;
-  display: block;
+  display: inline-flex;
   text-align: left;
   padding-top: 124px;
   padding-bottom: 94px;
 }
 .header-inner-content {
   max-width: 780px;
+}
+.go-to-area-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: var(--cc-base1);
+  margin-bottom: 24px;
+  width: max-content;
+  border-bottom: 2px solid transparent;
+}
+.go-to-area-title:hover {
+  border-bottom: 2px solid var(--cc-base1);
+  cursor: pointer;
 }
 .service-title {
   font-style: normal;
@@ -592,13 +581,6 @@ export default {
   color: var(--cc-base1);
   margin-bottom: 46px;
   position: relative;
-}
-.back-to-arrow {
-  position: absolute;
-  top: 0;
-  left: -10px;
-  cursor: pointer;
-  display: none;
 }
 .service-subtitle {
   font-style: normal;
@@ -621,6 +603,20 @@ export default {
   opacity: 0.8;
   column-count: 2;
   column-gap: 30px;
+}
+
+.service-image {
+  overflow: hidden;
+  margin-left: 50px;
+  width: 100%;
+}
+.service-image > img {
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 30px;
 }
 .header-background {
   text-align: end;
