@@ -518,7 +518,7 @@ export default {
   }
 
   .service-list-wrapper {
-    height: 253px;
+    height: 353px;
     width: 100%;
     min-width: 100%;
   }
@@ -538,7 +538,7 @@ export default {
     margin-right: 20px !important;
   }
   .service-card {
-    min-width: 146px;
+    min-width: 270px;
   }
   .carousel-arrow {
     width: 0;
