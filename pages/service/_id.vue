@@ -458,28 +458,72 @@
       </div>
     </div>
 
-    <div class="inner-container">
+    <section>
       <div class="section-title related-services-title">
         YOU MAY BE INTERESTED IN <span>OUR RELATED SERVICES </span>
       </div>
-      <br />
-      <section class="service-grid">
-        <h4 v-if="relServices === 0">There are no related Services</h4>
-        <div
-          v-for="(service, serviceIndex) of relServices"
-          :key="'service-' + serviceIndex"
-          class="service"
-        >
-          <service-mini
-            :title="service.title"
-            :image="service.banner"
-            :path="service.id"
-            :serviceIndex="serviceIndex + 1"
-            :altBanner="service.altBanner"
-          ></service-mini>
+      <div class="carousel-wrapper">
+        <div class="button-wrapper-prev">
+          <svg
+            id="carousel-arrow-prev"
+            class="carousel-arrow disabled-arrow"
+            @click="scrollLeft()"
+            width="48"
+            height="49"
+            viewBox="0 0 48 49"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M26.332 45.666L4.99902 24.333L26.332 2.99999"
+              stroke="#424272"
+              stroke-width="7"
+            />
+          </svg>
         </div>
-      </section>
-    </div>
+        <div class="service-list-wrapper">
+          <ul
+            id="relServicesCarousel"
+            class="service-carousel"
+            data-target="carousel"
+          >
+            <div
+              v-for="(service, serviceIndex) of relServices"
+              :key="'service-' + serviceIndex"
+              class="service"
+            >
+              <li class="service-card" data-target="card">
+                <service-mini
+                  :title="service.title"
+                  :image="service.banner"
+                  :altBanner="service.altBanner"
+                  :path="service.id"
+                  :carouselCard="true"
+                ></service-mini>
+              </li>
+            </div>
+          </ul>
+        </div>
+        <div class="button-wrapper-next">
+          <svg
+            id="carousel-arrow-next"
+            class="carousel-arrow"
+            @click="scrollRight()"
+            width="48"
+            height="49"
+            viewBox="0 0 48 49"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M21.332 3L42.665 24.333L21.332 45.666"
+              stroke="#424272"
+              stroke-width="7"
+            />
+          </svg>
+        </div>
+      </div>
+    </section>
   </section>
 </template>
 <script>
@@ -497,15 +541,23 @@ export default {
     DoubleColorTitle,
     DiscoverButton,
   },
+  data() {
+    return {
+      carousel: {},
+    }
+  },
   mounted() {
     this.resizeServiceCard()
     window.addEventListener('resize', this.resizeServiceCard)
     this.resizeCaseCard()
     window.addEventListener('resize', this.resizeCaseCard)
+    this.fillCarouselData()
+    window.addEventListener('resize', this.resetCarouselOffset)
   },
   destroyed() {
     window.removeEventListener('resize', this.resizeServiceCard)
     window.removeEventListener('resize', this.resizeCaseCard)
+    window.removeEventListener('resize', this.resetCarouselOffset)
   },
   mixins: [GoToMixins],
   async asyncData({ error, $axios, route }) {
@@ -533,6 +585,121 @@ export default {
       relServices,
       areaData,
     }
+  },
+  methods: {
+    fillCarouselData() {
+      const _this = this
+      Array.from(document.querySelectorAll("[data-target='carousel']")).forEach(
+        function (CurrentCarousel) {
+          const carouselWidth = CurrentCarousel.offsetWidth
+          const cardMarginRight = CurrentCarousel.querySelectorAll(
+            "[data-target='card']"
+          )[0].parentNode.style.marginRight
+          const cardCount = CurrentCarousel.querySelectorAll(
+            "[data-target='card']"
+          ).length
+          const maxX = -(cardCount - 3) * carouselWidth
+          _this.carousel = {
+            offset: 0,
+            carouselWidth,
+            cardMarginRight,
+            maxX,
+          }
+          console.log(_this.carousel)
+        }
+      )
+    },
+    scrollRight() {
+      if (this.carousel.offset > this.carousel.maxX) {
+        // if is the first scroll activate left arrow
+        if (this.carousel.offset === 0) {
+          document
+            .getElementById('carousel-arrow-prev')
+            .classList.remove('disabled-arrow')
+        }
+        this.carousel.offset -= this.carousel.carouselWidth
+        document.getElementById(
+          'relServicesCarousel'
+        ).style.transform = `translateX(${this.carousel.offset / 3}px)`
+      }
+      // check if we are at the end of carousel
+      if (
+        this.carousel.offset <= this.carousel.maxX &&
+        !document
+          .getElementById('carousel-arrow-next')
+          .classList.contains('disabled-arrow')
+      ) {
+        document
+          .getElementById('carousel-arrow-next')
+          .classList.add('disabled-arrow')
+
+        document
+          .getElementById('carousel-arrow-prev')
+          .firstChild.classList.add('arrow-pulsation')
+
+        setTimeout(() => {
+          document
+            .getElementById('carousel-arrow-prev')
+            .firstChild.classList.remove('arrow-pulsation')
+        }, 3000)
+      }
+    },
+
+    scrollLeft() {
+      if (this.carousel.offset !== 0) {
+        this.carousel.offset += this.carousel.carouselWidth
+        document.getElementById(
+          'relServicesCarousel'
+        ).style.transform = `translateX(${this.carousel.offset / 3}px)`
+        if (
+          document
+            .getElementById('carousel-arrow-next')
+            .classList.contains('disabled-arrow')
+        ) {
+          // reset opacity to one
+          document
+            .getElementById('carousel-arrow-next')
+            .classList.remove('disabled-arrow')
+        }
+      }
+      // if we are back at beginning
+      if (
+        this.carousel.offset === 0 &&
+        !document
+          .getElementById('carousel-arrow-prev')
+          .classList.contains('disabled-arrow')
+      ) {
+        document
+          .getElementById('carousel-arrow-prev')
+          .classList.add('disabled-arrow')
+
+        document
+          .getElementById('carousel-arrow-next')
+          .firstChild.classList.add('arrow-pulsation')
+
+        setTimeout(() => {
+          document
+            .getElementById('carousel-arrow-next')
+            .firstChild.classList.remove('arrow-pulsation')
+        }, 3000)
+      }
+    },
+    resetCarouselOffset() {
+      this.fillCarouselData()
+      this.carousel.offset = 0
+      document.getElementById(
+        'relServicesCarousel'
+      ).style.transform = `translateX(0px)`
+      document
+        .getElementById('carousel-arrow-next')
+        .classList.remove('disabled-arrow')
+      document
+        .getElementById('carousel-arrow-prev')
+        .classList.remove('disabled-arrow')
+      document
+        .getElementById('carousel-arrow-prev')
+        .classList.add('disabled-arrow')
+    },
   },
 }
 </script>
@@ -702,11 +869,6 @@ export default {
   grid-gap: 30px;
 }
 
-.service-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 30px;
-}
 .section-intro-text {
   margin: auto;
   margin-bottom: 54px;
@@ -730,7 +892,110 @@ export default {
   text-transform: uppercase;
 }
 .related-services-title {
-  margin-bottom: 73px;
+  margin-bottom: 25px;
+}
+
+.button-wrapper-prev {
+  margin-right: 15px;
+}
+.button-wrapper-next {
+  margin-left: 15px;
+}
+
+.carousel-arrow {
+  cursor: pointer;
+  overflow: visible;
+}
+
+.disabled-arrow {
+  opacity: 0.5;
+}
+
+.carousel-wrapper {
+  max-width: max-content;
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+.arrow-pulsation {
+  animation: pulse-me 2s linear;
+}
+
+.service-list-wrapper {
+  height: 450px;
+  width: 1020px;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+
+.service-carousel {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+  display: flex;
+  position: absolute;
+  left: 0;
+  transition: all 1s ease;
+}
+.service-card {
+  min-width: 310px;
+  display: inline-block;
+}
+
+.service {
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+@keyframes pulse-me {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  10% {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+  20% {
+    transform: scale(1.2);
+    opacity: 0.8;
+  }
+  30% {
+    transform: scale(1.3);
+    opacity: 0.4;
+  }
+
+  40% {
+    transform: scale(1.2);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+  60% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  70% {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+  80% {
+    transform: scale(1.2);
+    opacity: 0.8;
+  }
+  90% {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -823,31 +1088,52 @@ export default {
     margin-right: 92px;
     margin-left: 92px;
   }
-  .casestudies-grid,
-  .service-grid {
+  .casestudies-grid {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 44px;
     margin: auto;
   }
-  .casestudies-grid,
-  .service-grid {
+  .casestudies-grid {
     margin-right: 58px;
     margin-left: 58px;
   }
   .casestudy {
     width: 100%;
   }
-  .casestudy:nth-child(2n + 1),
-  .service:nth-child(2n + 1) {
+  .casestudy:nth-child(2n + 1) {
     margin-left: auto;
   }
-  .casestudy:nth-child(2n + 2),
-  .service:nth-child(2n + 2) {
+  .casestudy:nth-child(2n + 2) {
     margin-right: auto;
+  }
+  .button-wrapper-prev {
+    margin-right: 8px;
+  }
+  .button-wrapper-next {
+    margin-left: 8px;
+  }
+  .service-list-wrapper {
+    height: 270px;
+    width: 672px;
+    min-width: 672px;
+  }
+  .service {
+    margin-right: 12px;
+    margin-left: 12px;
+  }
+  .service-card {
+    min-width: 200px;
+  }
+  .carousel-arrow {
+    width: 21px;
+    height: 21px;
   }
 }
 
 @media screen and (max-width: 768px) {
+  .container {
+    padding-bottom: 0px;
+  }
   .service-header {
     height: auto;
   }
@@ -911,13 +1197,12 @@ export default {
     font-size: 12px;
     line-height: 14px;
   }
-  .casestudies-grid,
-  .service-grid {
+  .casestudies-grid {
     grid-gap: 13px;
     margin: 0;
   }
   .related-services-title {
-    margin-bottom: 45px;
+    margin-bottom: 0px;
   }
   .casestudy {
     width: 100%;
@@ -934,25 +1219,47 @@ export default {
   .partner-name {
     display: none;
   }
-}
-</style>
 
-<style>
-@media screen and (min-width: 769px) and (max-width: 1200px) {
-  .casestudy {
-    max-width: 350px !important;
+  .button-wrapper-prev,
+  .button-wrapper-next {
+    display: none;
   }
-  .case-left {
-    margin-right: 12px !important;
+  .service-carousel {
+    overflow: scroll;
+    padding: 25px 0;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
   }
-  .case-right {
-    margin-left: 12px !important;
-  }
-}
 
-@media screen and (max-width: 768px) {
-  .casestudy {
-    max-width: 270px !important;
+  .service-carousel::-webkit-scrollbar {
+    display: none;
+  }
+
+  .service-list-wrapper {
+    height: 330px;
+    width: 100%;
+    min-width: 100%;
+  }
+  .service {
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+  .service:first-child {
+    margin-left: 20px !important;
+  }
+  .service:last-child {
+    margin-right: 20px !important;
+  }
+  .service-card {
+    min-width: 270px;
+  }
+  .carousel-arrow {
+    width: 0;
+    height: 0;
+  }
+  .carousel-wrapper {
+    width: 100%;
+    max-width: 100%;
   }
 }
 </style>

@@ -639,7 +639,7 @@ async function insertRealData() {
   await IoT.addService(SmartRetail.id)
 
   const Healthcare = await Service.create({
-    title: 'IoT Solutions for Healthcare',
+    title: 'IoT for Healthcare',
     subTitle:
       'Medical IoT facilitates monitoring patient health state and tracking medical staff and assets through the network of smart devices and sensors connected to the cloud. With 9 years in IoT, HexTech provides reliable IoMT solutions to improve patient care, asset use, and staff productivity.',
     description:
@@ -2069,7 +2069,7 @@ async function insertRealData() {
   await SmartRetail.addCasestudy(iotC1.id)
 
   const iotC2 = await CaseStudy.create({
-    title: '7-Eleven - Reliable and user-friendly IT system',
+    title: '7-Eleven - Reliable IT system',
     subTitle:
       'A highly sophisticated IT/store solution that supports the global business model and store management activities of 7-Eleven.',
     banner:
@@ -2156,7 +2156,7 @@ async function insertRealData() {
   await IndustrialManufacturing.addCasestudy(iotC5.id)
 
   const iotC6 = await CaseStudy.create({
-    title: 'Boston Children’s Hospital and smarter healthcare',
+    title: 'Hospital and smarter healthcare',
     subTitle:
       'Healthcare is one of the richest areas of opportunity for the Internet of Things. ',
     banner:
@@ -2267,7 +2267,7 @@ async function insertRealData() {
   await Healthcare.addCasestudy(iotC10.id)
 
   const iotC11 = await CaseStudy.create({
-    title: 'Image analysis software for automated optical inspections',
+    title: 'Automated optical inspections',
     subTitle:
       'HexTech’s team has successfully developed image analysis software for automated optical inspection of printed circuit assemblies. The application offers considerable opportunities for the SMT manufacturing industry, providing a fast and reliable solution for PCA quality control.',
     banner: 'https://geospacemfg.com/wp-content/uploads/GS_Blog_April-1.jpg',
@@ -2289,10 +2289,10 @@ async function insertRealData() {
   await IndustrialManufacturing.addCasestudy(iotC11.id)
 
   const iotC12 = await CaseStudy.create({
-    title: 'Control Unit for Automotive Tier-I Supplier',
+    title: 'Automotive Tier-I Supplier',
     subTitle:
       'We were able to successfully deliver a robust telematics solution within the desired timeframe.he customer was able to deliver the proof of concept (PoC) within 6 months. This helped them initiate demos with the OEMs and Suppliers earlier than expected.',
-    banner: 'Control Unit for Automotive Tier-I Supplier',
+    banner: 'https://images.unsplash.com/photo-1461783818807-74d54914743e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80',
     descriptiveText:
       'Our customer is a leading Tier-I Supplier of Infotainment Systems, Head-up Display (HUD) Solutions, Digital Instrument Clusters and Battery Management Systems (BMS) for Electric Vehicles.',
     challengeTitle:
