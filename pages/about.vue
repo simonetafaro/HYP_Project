@@ -908,7 +908,7 @@ export default {
   text-transform: uppercase;
 
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 20px;
   line-height: 24px;
 
@@ -922,7 +922,7 @@ export default {
   text-align: left;
   font-size: 60px;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 70px;
   line-height: 84px;
   text-transform: uppercase;
@@ -934,7 +934,7 @@ export default {
   text-align: left;
   font-size: 60px;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 70px;
   line-height: 84px;
   text-transform: uppercase;
@@ -1009,7 +1009,7 @@ export default {
   text-transform: uppercase;
 
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   /* identical to box height */
@@ -1022,7 +1022,7 @@ export default {
   text-align: right;
   font-size: 60px;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 70px;
   line-height: 84px;
   text-transform: uppercase;
@@ -1034,7 +1034,7 @@ export default {
   text-align: right;
   font-size: 60px;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 70px;
   line-height: 84px;
   text-transform: uppercase;
@@ -1100,7 +1100,7 @@ export default {
   text-transform: uppercase;
 
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   /* identical to box height */
@@ -1112,7 +1112,7 @@ export default {
 .title-3 {
   font-size: 60px;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 70px;
   line-height: 84px;
   text-transform: uppercase;
@@ -1123,7 +1123,7 @@ export default {
 .subtitle-3 {
   font-size: 60px;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 70px;
   line-height: 84px;
   text-transform: uppercase;
@@ -1205,7 +1205,7 @@ export default {
 .partner-name {
   margin-top: 30px;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
@@ -1227,7 +1227,7 @@ export default {
 
 .partner-website {
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
   line-height: 24px;
   cursor: pointer;
@@ -1327,14 +1327,14 @@ p {
   }
 
   .title {
-    font-weight: bold;
+    font-weight: 700;
     font-size: 36px;
     line-height: 43px;
     text-align: center;
   }
 
   .subtitle {
-    font-weight: bold;
+    font-weight: 700;
     font-size: 36px;
     line-height: 43px;
     text-align: center;
@@ -1449,13 +1449,13 @@ p {
 
   .title-3 {
     margin-top: 17px;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 36px;
     line-height: 43px;
   }
 
   .subtitle-3 {
-    font-weight: bold;
+    font-weight: 700;
     font-size: 36px;
     line-height: 43px;
     margin-bottom: 17px;
@@ -1547,14 +1547,14 @@ p {
   }
 
   .title {
-    font-weight: bold;
+    font-weight: 700;
     font-size: 24px;
     line-height: 29px;
     text-align: center;
   }
 
   .subtitle {
-    font-weight: bold;
+    font-weight: 700;
     font-size: 24px;
     line-height: 29px;
     text-align: center;

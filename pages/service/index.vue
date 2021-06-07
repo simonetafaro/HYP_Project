@@ -279,7 +279,7 @@ export default {
 }
 .service-l1 {
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   color: var(--c-grey1);
@@ -288,7 +288,7 @@ export default {
 
 .service-l2 {
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 70px;
   line-height: 84px;
   text-align: center;

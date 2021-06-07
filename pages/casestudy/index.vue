@@ -1321,7 +1321,7 @@ export default {
 }
 .intro-text {
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   /* identical to box height */

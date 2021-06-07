@@ -1507,7 +1507,7 @@ export default {
 }
 .column-subtitle {
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
   line-height: 22px;
   text-transform: uppercase;

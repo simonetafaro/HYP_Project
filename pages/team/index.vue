@@ -849,7 +849,7 @@ h2 {
   font-size: 25px;
   text-transform: uppercase;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   margin-top: 60px;
@@ -894,7 +894,7 @@ h4 {
   font-size: 60px;
 
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 70px;
   line-height: 84px;
   text-transform: uppercase;
@@ -907,7 +907,7 @@ h4 {
   font-size: 60px;
 
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 70px;
   line-height: 84px;
   text-transform: uppercase;
@@ -1019,7 +1019,7 @@ h4 {
 
   .pre_title {
     text-align: center;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 20px;
     line-height: 24px;
     margin-bottom: 17px;
@@ -1028,14 +1028,14 @@ h4 {
 
   .title {
     text-align: center;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 36px;
     line-height: 43px;
   }
 
   .title-people {
     text-align: center;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 36px;
     line-height: 43px;
     left: 0;

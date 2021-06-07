@@ -731,7 +731,7 @@ header {
 }
 .case-study-intro-text {
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 24px;
   line-height: 29px;
   text-align: center;

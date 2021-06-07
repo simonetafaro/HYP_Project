@@ -811,7 +811,7 @@ export default {
 }
 .page-title {
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   text-transform: uppercase;
@@ -821,7 +821,7 @@ export default {
 
 .page-subtitle {
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 70px;
   line-height: 84px;
   text-transform: uppercase;
@@ -893,7 +893,7 @@ export default {
 }
 .contact-method-title {
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 32px;
   line-height: 38px;
   text-align: center;
@@ -939,7 +939,7 @@ export default {
 }
 .location-office-num {
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
@@ -1015,7 +1015,7 @@ export default {
   box-shadow: 0px 4px 6px rgba(66, 66, 114, 0.16);
   border-radius: 35px;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
   line-height: 19px;
   text-align: center;

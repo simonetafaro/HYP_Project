@@ -23,7 +23,7 @@ export default {
 
 .title {
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 70px;
   line-height: 84px;
   text-align: center;

@@ -59,7 +59,7 @@ export default {
 }
 .service_title {
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 24px;
   line-height: 29px;
   text-align: center;

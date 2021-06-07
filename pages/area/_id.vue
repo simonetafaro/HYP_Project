@@ -211,7 +211,7 @@ export default {
 }
 .area-title {
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 48px;
   line-height: 58px;
   text-transform: uppercase;
@@ -221,7 +221,7 @@ export default {
 }
 .area-subtitle {
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   text-transform: uppercase;
@@ -280,7 +280,7 @@ export default {
 }
 
 .section-title {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   color: var(--cc-base1);

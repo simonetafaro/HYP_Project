@@ -844,13 +844,13 @@
           :key="'area-' + areaIndex"
           class="single-area-section"
           :id="'area-box-' + area.id"
-          @click="goTo(`/area/${area.id}`)"
         >
           <area-home-mini
             :summary="area.subTitle"
             :image="area.evocativeImage"
             :index="areaIndex + 1"
             :altEvocativeImage="area.altEvocativeImage"
+            :path="area.id"
           ></area-home-mini>
           <div class="show-only-tablet-mobile">
             <space-divider></space-divider>
@@ -977,7 +977,7 @@ export default {
 
 .text1 {
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   text-transform: uppercase;
@@ -988,7 +988,7 @@ export default {
 
 .scroll-text-compare {
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   text-transform: uppercase;
@@ -999,7 +999,7 @@ export default {
 
 .section-title {
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 70px;
   line-height: 84px;
   text-align: center;
@@ -1044,7 +1044,7 @@ export default {
   border: 2px solid var(--cc-base2);
   border-radius: 35px;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
   line-height: 19px;
   text-align: center;

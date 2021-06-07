@@ -585,7 +585,7 @@ export default {
 }
 .service-title {
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 48px;
   line-height: 58px;
   text-transform: uppercase;
@@ -602,7 +602,7 @@ export default {
 }
 .service-subtitle {
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   text-transform: uppercase;
@@ -677,7 +677,7 @@ export default {
 }
 .partner-name {
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
@@ -687,7 +687,7 @@ export default {
 
 .solution-name {
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
@@ -720,7 +720,7 @@ export default {
 }
 
 .section-title {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   color: var(--cc-base1);

@@ -663,7 +663,7 @@ h1 {
 }
 .intro-container {
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 22px;
   line-height: 26px;
   color: var(--cc-base1);
@@ -671,7 +671,7 @@ h1 {
 .pre-section {
   text-align: center;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   /* identical to box height */
@@ -723,7 +723,7 @@ h1 {
 }
 .case-button {
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
   text-transform: uppercase;
   color: var(--cc-base1);
@@ -763,7 +763,7 @@ p {
 
 .partner {
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   /* identical to box height */
@@ -827,21 +827,21 @@ p {
 }
 .title-challenge {
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 36px;
   line-height: 43px;
   color: var(--cc-base2);
 }
 .title-case {
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 50px;
   line-height: 60px;
   color: var(--cc-base1);
 }
 .area-title {
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   text-transform: uppercase;
@@ -860,7 +860,7 @@ p {
 }
 .related-case-study-title {
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
   line-height: 22px;
   color: var(--cc-base1);
@@ -917,7 +917,7 @@ p {
   }
   .intro-container {
     font-style: normal;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 20px;
     line-height: 24px;
     text-align: center;
@@ -1060,7 +1060,7 @@ p {
   }
   .intro-container {
     font-style: normal;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 12px;
     line-height: 14px;
   }
