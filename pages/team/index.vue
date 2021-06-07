@@ -643,13 +643,12 @@
         textp2="people"
       ></double-color-title>
       <h2 class="description">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum.
+        Ideate, innovate, change the world, repeat. Meet our team of talented
+        people using design thinking to create experiences that win awards and
+        make headlines. This is our powerful community, come and see how we
+        embrace change to drive innovative solutions for our clients and
+        companies. HexTech is made up of extraordinarily talented individuals
+        who share a passion for achieving the very best in everything they do.
       </h2>
     </header>
     <div class="filter-bar" @click="DropdownArea()">
@@ -850,7 +849,7 @@ h2 {
   font-size: 25px;
   text-transform: uppercase;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   margin-top: 60px;
@@ -895,7 +894,7 @@ h4 {
   font-size: 60px;
 
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 70px;
   line-height: 84px;
   text-transform: uppercase;
@@ -908,7 +907,7 @@ h4 {
   font-size: 60px;
 
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 70px;
   line-height: 84px;
   text-transform: uppercase;
@@ -945,12 +944,15 @@ h4 {
   margin-right: 30px;
   cursor: pointer;
   font-style: normal;
-  font-weight: bold;
-  font-size: 13px;
+  font-weight: 700;
+  font-size: 16px;
   line-height: 24px;
   text-transform: uppercase;
   list-style: none;
   color: #4d41c9;
+}
+.filter:hover:not(.active-filter) {
+  border-bottom: 2px solid #4d41c9;
 }
 .active-filter {
   color: var(--cc-base1);
@@ -1017,7 +1019,7 @@ h4 {
 
   .pre_title {
     text-align: center;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 20px;
     line-height: 24px;
     margin-bottom: 17px;
@@ -1026,14 +1028,14 @@ h4 {
 
   .title {
     text-align: center;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 36px;
     line-height: 43px;
   }
 
   .title-people {
     text-align: center;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 36px;
     line-height: 43px;
     left: 0;

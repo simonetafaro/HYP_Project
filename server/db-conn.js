@@ -639,7 +639,7 @@ async function insertRealData() {
   await IoT.addService(SmartRetail.id)
 
   const Healthcare = await Service.create({
-    title: 'IoT Solutions for Healthcare',
+    title: 'IoT for Healthcare',
     subTitle:
       'Medical IoT facilitates monitoring patient health state and tracking medical staff and assets through the network of smart devices and sensors connected to the cloud. With 9 years in IoT, HexTech provides reliable IoMT solutions to improve patient care, asset use, and staff productivity.',
     description:
@@ -720,7 +720,8 @@ async function insertRealData() {
       'Give users what they are searching just when they land on your page in order to maximize sales.',
     description:
       'In order to grow your enterprise, you need to do more than keep your existing customers happy — you need to find new business. Big data can help you find new audiences and determine which groups are more likely to buy.    ',
-    banner: 'https://i.imgur.com/1ZKpYyo.png',
+    banner:
+      'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80',
     serviceDescription:
       'We put in practise all the experience we gained during all the life of this company in order to give our clients a very good customer experience. Moreover, all our experts are very professional on the service we provide to clients.',
     s1Name: 'Optimize SEO',
@@ -760,7 +761,7 @@ async function insertRealData() {
     description:
       'Health care has a long track record of evidence-based clinical practice and ethical standards in research. However, the extension of this into new technologies such as the use of predictive analytics, the algorithms behind them, and the point where a machine process should be replaced by a human mental process is not clearly regulated or controlled by industry standards. Government health agencies, doctors, and primary health givers need to be aware of the risks emerging and agree on levels of assurance as society continues to move into a new era of decision-making supplemented, and at times replaced, by evidence from digital technologies. More specifically, this paper will look at the various ethical issues and moral hazards that need to be navigated following the adoption and use of predictive analytics in the health care sector with an emphasis on accountable algorithms.',
     banner:
-      'https://images.techhive.com/images/article/2015/07/health-analytics-ts-100599204-large.jpg',
+      'https://images.unsplash.com/photo-1560221328-12fe60f83ab8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1953&q=80',
     serviceDescription:
       'We put in practise all the experience we gained during all the life of this company in order to give our clients a very good customer experience. Moreover, all our experts are very professional on the service we provide to clients.',
     s1Name: 'Efficiencies for operational management',
@@ -799,7 +800,7 @@ async function insertRealData() {
     description:
       'We analyze datasets through classification, clustering, and pattern recognition techniques to move from a historical static description of the past to a forward-looking actionable projection in the future. We implement this solution in predictive maintenance, incident analysis, early-warning, customer satisfaction, churn prediction, production planning, risk assessment, attribution modeling and more.',
     banner:
-      'https://image.shutterstock.com/image-photo/predictive-analytics-big-data-analysis-260nw-1348992500.jpg',
+      'https://images.unsplash.com/photo-1588600878108-578307a3cc9d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1955&q=80',
     serviceDescription:
       'We put in practise all the experience we gained during all the life of this company in order to give our clients a very good customer experience. Moreover, all our experts are very professional on the service we provide to clients.',
     s1Name: 'Real time prediction',
@@ -838,7 +839,8 @@ async function insertRealData() {
       'Automation enables you to manage big data and innovate at the pace of business.',
     description:
       'Big data automation is growing as a need for almost every organization, with the IoT driving the stream velocity of data. While users require fast availability of data for analysis, the true value of data can only be extracted and managed via intelligent and advanced data automation.',
-    banner: 'https://www.sygmatechnology.com/hubfs/shutterstock_1133982038.jpg',
+    banner:
+      'https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1895&q=80',
     serviceDescription:
       'We put in practise all the experience we gained during all the life of this company in order to give our clients a very good customer experience. Moreover, all our experts are very professional on the service we provide to clients.',
     s1Name: 'Automation Expertise',
@@ -878,7 +880,7 @@ async function insertRealData() {
     description:
       'We provide analytics consulting services for our customers to benefit from integrated solutions that rely on the optimal technology stack, allowing companies to save their costs, improve performance and grow their business.',
     banner:
-      'https://www.smartdatacollective.com/wp-content/uploads/2020/11/business-intelligence-future-in-coming-years.jpg',
+      'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80',
     serviceDescription:
       'We put in practise all the experience we gained during all the life of this company in order to give our clients a very good customer experience. Moreover, all our experts are very professional on the service we provide to clients.',
     s1Name: 'Business intelligence consulting',
@@ -918,7 +920,7 @@ async function insertRealData() {
     description:
       "Pricing can boost profits far more than increasing sales or cutting costs. And the results of a smarter pricing strategy can fall to the bottom line very quickly.  Yet at least half of all companies leave money on the table because they don't charge the right price or make sure customers actually pay it.   ",
     banner:
-      'https://associationsnow.com/wp-content/uploads/2018/12/GettyImages-940692576_hrvcc-600x360.jpg',
+      'https://images.unsplash.com/photo-1423666523292-b458da343f6a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1953&q=80',
     serviceDescription:
       'We put in practise all the experience we gained during all the life of this company in order to give our clients a very good customer experience. Moreover, all our experts are very professional on the service we provide to clients.',
     s1Name: 'B2B pricing',
@@ -959,7 +961,7 @@ async function insertRealData() {
     description:
       'In the light of the current national and EU legislation, HexTech e-Invoicing Cloud stands out as a simple and affordable tool that enables global, legally-compliant exchange of invoice documents with business partners and public administration entities. No matter your industry or product, our platform was designed to help you create, process, and store e-invoices, thus significantly improve your business efficiency. Plus, being a cloud-based solution, it does not require a long and cost-intensive implementation process. Instead, it gives you instant access to a virtual environment that is easy to navigate.',
     banner:
-      'https://www.extrasys.it/hs-fs/hubfs/E-invoice%20benefits.png?width=800&name=E-invoice%20benefits.png',
+      'https://images.unsplash.com/photo-1616077167599-cad3639f9cbd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80',
     serviceDescription:
       'Companies active in many countries or worldwide need to support and process a large number of different E-Invoicing standards. With HexTech you are on the safe side. We support E-Invoicing compliance in more than 55 countries. In recent years, E-Invoicing initiatives have been started in many countries to simplify the exchange of invoicing data between companies („B2B“), and between companies and authorities („B2G“), and to increase tax revenues. The defined standards within the scope of these initiatives are already widespread. Some are already regulated by national governments.',
     s1Name: 'Service Variants',
@@ -995,7 +997,8 @@ async function insertRealData() {
       'With cloud application development services, businesses can build applications that are technically and architecturally adapted to being smoothly hosted and maintained by the cloud infrastructure and take advantage of the capabilities and services offered by PaaS (platform-as-a-service) and IaaS (infrastructure-as-a-service) providers.',
     description:
       '94% of companies already use cloud services reducing IT costs, granting their users reliability and availability and refocusing from routine maintenance to more strategic initiatives. Let us help you get cloud applications designed for high security, performance efficiency, and operational excellence while ensuring the optimal resource consumption.',
-    banner: 'https://4.imimg.com/data4/WT/LG/GLADMIN-22150665/0-500x500.jpg',
+    banner:
+      'https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80',
     serviceDescription: '',
     s1Name: 'Cloud consulting',
     s1Description: 'Plan a cloud app to meet your business needs.',
@@ -1029,7 +1032,7 @@ async function insertRealData() {
     description:
       'Live streaming is one of the best ways to connect in a meaningful and authentic way with your community. Every day around the world, in offices, fitness studios, stadiums, houses of worship,and our own houses, moments are made. A livestream platform connects you instantly to your employees, customers, subscribers, or followers when a virtual event or series is your best option.',
     banner:
-      'https://res.cloudinary.com/practicaldev/image/fetch/s--UpbEnajb--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://dev-to-uploads.s3.amazonaws.com/i/ah8zju0kmh6br3w69cgq.jpg',
+      'https://images.pexels.com/photos/668296/pexels-photo-668296.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
     serviceDescription:
       'We put in practise all the experience we gained during all the life of this company in order to give our clients a very good customer experience. Moreover, all our experts are very professional on the service we provide to clients.',
     s1Name: 'Maximise quality video',
@@ -1067,7 +1070,7 @@ async function insertRealData() {
     description:
       'With live streaming you can sell products during a live stream in which the characteristics of the item for sale are recognized. This allows you to share more information, offer product demonstrations, satisfy viewers questions and respond to their reactions. It is an interactive system for both brands and stores, and for viewers who can purchase in real time, during the live broadcast. What is now fast becoming a profitable online sales channel for many luxury brands, actually originated in China as a form of entertainment: singers, comedians and other performers broadcast live for their fans in exchange for virtual gifts. In 2016, Chinese authorities started dozens of these live streaming platforms, sanctioning thousands of artists: this attempt to appease the phenomenon actually turned into an opportunity for more forward-thinking apps, such as Taobao, which they were the first to recognize its potential by investing in this new mode of commercial communication.',
     banner:
-      'https://www.robvanlinda.de/wp-content/uploads/2020/08/Live-stream-banner.jpg',
+      'https://images.unsplash.com/photo-1584839401450-accbe1a8ef7b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80',
     serviceDescription:
       'We put in practise all the experience we gained during all the life of this company in order to give our clients a very good customer experience. Moreover, all our experts are very professional on the service we provide to clients.',
     s1Name: 'Fast shipping',
@@ -1549,7 +1552,7 @@ async function insertRealData() {
     subTitle:
       'The Customer is an American company that offers software to help 200 healthcare centers and retirement homes to process data related to patients and medication as well as build various types of reports.',
     banner:
-      'https://www.scnsoft.com/boss/images/02d65838-eb3a-4d54-b7aa-b6b7aa0c1d47bi_healthcare.png',
+      'https://images.unsplash.com/photo-1589279003513-467d320f47eb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80',
     descriptiveText:
       'The Customer commissioned HexTech to rewrite the software – a Java application used by the healthcare centers for management and reporting of data on medication inventory, clinical services, patient data, marketing activities and others. Within the project, the Customer also wanted the tool to allow its users to enable quality population health analytics with prompt reports.',
     challengeTitle: 'BI IMPLEMENTATION',
@@ -1572,7 +1575,7 @@ async function insertRealData() {
     subTitle:
       'This will be a glimpse of what you can achieve by sharing your sales data with us. We could perform an opportunity summary report in line with this use case, and uncover your own opportunities regarding price optimization. So, fasten your seatbelt and get ready for the take-off.',
     banner:
-      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVZvKJYV5VCsJKlFWEpWjHUZYr41OtCRFE5hilgxFLy8hvGHanrXKtT4VrNXwVeZziANo&usqp=CAU',
+      'https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80pg',
     descriptiveText:
       'We have discussed how a data-driven price optimization is no longer an option for retailers, but a question of how and when to do it. With a world that’s moving towards changing prices more and more dynamically, static pricing strategies can’t keep up, and data-driven approaches have arrived to stay. In this post, we’ll be focusing on how to perform data-driven price optimization, using a case study to showcase what can be done using sales data to predict demand and optimize prices.',
     challengeTitle: 'Analyzing an E-Commerce Sales Data',
@@ -1594,7 +1597,7 @@ async function insertRealData() {
     title: 'Integrated BDA Platform',
     subTitle: 'Big Data automation platform enables new sides of powerful data',
     banner:
-      'https://www.xenonstack.com/images/blog/need-of-modern-big-data-integration-platform.png',
+      'https://images.unsplash.com/photo-1518186233392-c232efbf2373?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1567&q=80',
     descriptiveText:
       'The essential feature of big data automation (BDA) is the realization that doing a lot more with a lot less is the new reality for IT organizations, and that smart IT organizations, in response to that reality, will seek to spend their scarce human talent  building value that their internal customers within the organization perceive to be valuable: new, enabling, differentiating. Today, that ingenuity is trapped, because IT teams are spending most or all of their time performing routine internally focused tasks, many of them invisible to internal business constituents, and most of them either susceptible to automation or acceleration.',
     challengeTitle: 'Replacing Artistry with Automation',
@@ -1617,7 +1620,7 @@ async function insertRealData() {
     title: 'Predictive analytics in healthcare ',
     subTitle: 'Our prediction can help you in everyday life',
     banner:
-      'https://www.clicdata.com/wp-content/uploads/2018/08/predictive-analytics-healthcare.jpg',
+      'https://images.unsplash.com/photo-1486825586573-7131f7991bdd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=934&q=80',
     descriptiveText:
       'Predictive analytics can provide alerts to everyone from clinician and financial experts to administrative staff to inform them when events they are concerned with are likely to happen. As a result, they can make more informed, more timely, and usually better choices at times when small nuance can have big consequences.',
     challengeTitle: 'Moving to the future in healthcare industry',
@@ -1640,7 +1643,7 @@ async function insertRealData() {
     title: 'Optimise digital marketing',
     subTitle: 'Finding the right digital marketing agency isn’t easy.',
     banner:
-      'https://deoriunde.com/wp-content/uploads/2019/11/Digital-marketing.jpg',
+      'https://images.unsplash.com/photo-1557838923-2985c318be48?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2378&q=80',
     descriptiveText:
       'The challenge for us was helping Intuit build visibility and become known for services outside of the main ones for which they are known. Plus there was some concern around their highly-specialized competitors like GoDaddy.',
     challengeTitle: 'A good understanding of your customer’s behavior.',
@@ -1664,7 +1667,7 @@ async function insertRealData() {
     subTitle:
       'Providing drivers and highly automated vehicles with a view of the road ahead that is as comprehensive as possible is the main idea of the project. ',
     banner:
-      'https://www.carhs.de/newsletter-archive/images/news/ipgflottenkommunikationbig.jpg',
+      'https://images.unsplash.com/photo-1461783818807-74d54914743e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80',
     descriptiveText:
       'Driving onto the highway and knowing in advance how slow the rush hour traffic will move or whether the two-hour buildup will clear up that moment, ensuring smooth driving – in the research project “Providentia – Pro-active video-based use of telecommunications technologies in innovative autobahn scenarios”, a real-time view of the highway traffic ahead is tested using corresponding sensors and big data. Via the highly precise localization of traffic objects within the system, driver and self-driving cars are provided with information, increasing the safety, efficiency, and comfort of driving. ',
     challengeTitle: 'Simulation software CarMaker by HEXTECH.',
@@ -2068,7 +2071,7 @@ async function insertRealData() {
   await SmartRetail.addCasestudy(iotC1.id)
 
   const iotC2 = await CaseStudy.create({
-    title: '7-Eleven - Reliable and user-friendly IT system',
+    title: '7-Eleven - Reliable IT system',
     subTitle:
       'A highly sophisticated IT/store solution that supports the global business model and store management activities of 7-Eleven.',
     banner:
@@ -2155,7 +2158,7 @@ async function insertRealData() {
   await IndustrialManufacturing.addCasestudy(iotC5.id)
 
   const iotC6 = await CaseStudy.create({
-    title: 'Boston Children’s Hospital and smarter healthcare',
+    title: 'Hospital and smarter healthcare',
     subTitle:
       'Healthcare is one of the richest areas of opportunity for the Internet of Things. ',
     banner:
@@ -2180,7 +2183,8 @@ async function insertRealData() {
     title: 'Internet of Medical Things',
     subTitle:
       'Ensure that the right people are assigned to the right places to efficiently deliver quality care while improving staff morale and patient satisfaction.',
-    banner: 'https://img.lovepik.com/photo/50056/0961.jpg_wh860.jpg',
+    banner:
+      'https://images.unsplash.com/photo-1571772996211-2f02c9727629?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80',
     descriptiveText:
       'IoT in health care can dramatically optimize workflow and staffing. Even a basic IoT solution can collect and bring together such data as staff location and expertise, patient acuity and location, and availability and location of critical diagnostic and therapeutic equipment. Once modeled, this data can help staffing managers improve workflows and make better staffing and scheduling decisions.',
     challengeTitle: 'Customized therapies and interaztions',
@@ -2266,7 +2270,7 @@ async function insertRealData() {
   await Healthcare.addCasestudy(iotC10.id)
 
   const iotC11 = await CaseStudy.create({
-    title: 'Image analysis software for automated optical inspections',
+    title: 'Automated optical inspections',
     subTitle:
       'HexTech’s team has successfully developed image analysis software for automated optical inspection of printed circuit assemblies. The application offers considerable opportunities for the SMT manufacturing industry, providing a fast and reliable solution for PCA quality control.',
     banner: 'https://geospacemfg.com/wp-content/uploads/GS_Blog_April-1.jpg',
@@ -2288,10 +2292,11 @@ async function insertRealData() {
   await IndustrialManufacturing.addCasestudy(iotC11.id)
 
   const iotC12 = await CaseStudy.create({
-    title: 'Control Unit for Automotive Tier-I Supplier',
+    title: 'Automotive Tier-I Supplier',
     subTitle:
       'We were able to successfully deliver a robust telematics solution within the desired timeframe.he customer was able to deliver the proof of concept (PoC) within 6 months. This helped them initiate demos with the OEMs and Suppliers earlier than expected.',
-    banner: 'Control Unit for Automotive Tier-I Supplier',
+    banner:
+      'https://images.unsplash.com/photo-1461783818807-74d54914743e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80',
     descriptiveText:
       'Our customer is a leading Tier-I Supplier of Infotainment Systems, Head-up Display (HUD) Solutions, Digital Instrument Clusters and Battery Management Systems (BMS) for Electric Vehicles.',
     challengeTitle:

@@ -3,33 +3,22 @@
     <div class="service-header">
       <div class="header-content">
         <div class="header-inner-content">
-          <h1 class="service-title">
-            <div class="back-to-arrow">
-              <svg
-                @click="goTo('/area/' + service.areaID)"
-                width="48"
-                height="49"
-                viewBox="0 0 48 49"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M26.332 45.666L4.99902 24.333L26.332 2.99999"
-                  stroke="#424272"
-                  stroke-width="7"
-                />
-              </svg>
-            </div>
-            {{ service.title }}
+          <h1 class="go-to-area-title" @click="goTo('/area/' + areaData.id)">
+            {{ areaData.title }}
           </h1>
-          <h2 class="service-subtitle">{{ service.subTitle }}</h2>
+          <h2 class="service-title">
+            {{ service.title }}
+          </h2>
+          <div class="service-image-responsive">
+            <img :src="service.banner" :alt="altBanner" />
+          </div>
+          <h3 class="service-subtitle">{{ service.subTitle }}</h3>
           <div class="service-description-text">
             {{ service.description }}
           </div>
-          <discover-button
-            :buttonLabel="'ALL SERVICES'"
-            :path="'/service/#' + service.areaID"
-          ></discover-button>
+        </div>
+        <div class="service-image">
+          <img :src="service.banner" :alt="altBanner" />
         </div>
       </div>
 
@@ -403,7 +392,7 @@
     </div>
 
     <div class="inner-container">
-      <div class="section-title">WE PUT IT INTO PRATICE</div>
+      <div class="section-title">{{ service.title }}</div>
       <double-color-title
         :textp1="'ALLIANCES'"
         :textp2="'AND PARTNERS'"
@@ -433,17 +422,19 @@
       </section>
       <discover-button
         :buttonLabel="'DISCOVER MORE'"
-        :path="'/about'"
+        :path="'/about/#partners'"
       ></discover-button>
       <space-divider />
     </div>
 
-    <div class="case-study-container">
+    <div v-if="service.casestudies !== 0" class="case-study-container">
       <div class="inner-container">
-        <div class="section-title">WHAT WE DO</div>
+        <div class="section-title">
+          {{ service.title }}
+        </div>
         <double-color-title
           :textp1="'DISCOVER OUR'"
-          :textp2="'CLIENTS CASE STUDIES'"
+          :textp2="'CASE STUDIES'"
         ></double-color-title>
         <div class="section-intro-text"></div>
         <section class="casestudies-grid">
@@ -463,41 +454,76 @@
             ></case-study-mini>
           </div>
         </section>
-        <discover-button
-          :buttonLabel="'DISCOVER ALL CASES'"
-          :path="'/casestudy'"
-        ></discover-button>
         <space-divider />
       </div>
     </div>
 
-    <div class="inner-container">
+    <section>
       <div class="section-title related-services-title">
         YOU MAY BE INTERESTED IN <span>OUR RELATED SERVICES </span>
       </div>
-      <br />
-      <section class="service-grid">
-        <h4 v-if="relServices === 0">There are no related Services</h4>
-        <div
-          v-for="(service, serviceIndex) of relServices"
-          :key="'service-' + serviceIndex"
-          class="service"
-        >
-          <service-mini
-            :title="service.title"
-            :image="service.banner"
-            :path="service.id"
-            :serviceIndex="serviceIndex + 1"
-            :altBanner="service.altBanner"
-          ></service-mini>
+      <div class="carousel-wrapper">
+        <div class="button-wrapper-prev">
+          <svg
+            id="carousel-arrow-prev"
+            class="carousel-arrow disabled-arrow"
+            @click="scrollLeft()"
+            width="48"
+            height="49"
+            viewBox="0 0 48 49"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M26.332 45.666L4.99902 24.333L26.332 2.99999"
+              stroke="#424272"
+              stroke-width="7"
+            />
+          </svg>
         </div>
-      </section>
-
-      <discover-button
-        :buttonLabel="'DISCOVER ALL SERVICES'"
-        :path="'/service'"
-      ></discover-button>
-    </div>
+        <div class="service-list-wrapper">
+          <ul
+            id="relServicesCarousel"
+            class="service-carousel"
+            data-target="carousel"
+          >
+            <div
+              v-for="(service, serviceIndex) of relServices"
+              :key="'service-' + serviceIndex"
+              class="service"
+            >
+              <li class="service-card" data-target="card">
+                <service-mini
+                  :title="service.title"
+                  :image="service.banner"
+                  :altBanner="service.altBanner"
+                  :path="service.id"
+                  :carouselCard="true"
+                ></service-mini>
+              </li>
+            </div>
+          </ul>
+        </div>
+        <div class="button-wrapper-next">
+          <svg
+            id="carousel-arrow-next"
+            class="carousel-arrow"
+            @click="scrollRight()"
+            width="48"
+            height="49"
+            viewBox="0 0 48 49"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M21.332 3L42.665 24.333L21.332 45.666"
+              stroke="#424272"
+              stroke-width="7"
+            />
+          </svg>
+        </div>
+      </div>
+    </section>
   </section>
 </template>
 <script>
@@ -515,24 +541,23 @@ export default {
     DoubleColorTitle,
     DiscoverButton,
   },
+  data() {
+    return {
+      carousel: {},
+    }
+  },
   mounted() {
     this.resizeServiceCard()
     window.addEventListener('resize', this.resizeServiceCard)
-    if (window.innerWidth > 1200) {
-      // set arrow between title and margin left
-      const arrow = document.getElementsByClassName('back-to-arrow')[0]
-      arrow.style.left =
-        '-' +
-        document.getElementsByClassName('service-title')[0].offsetLeft / 2 +
-        'px'
-      arrow.style.display = 'block'
-    }
     this.resizeCaseCard()
     window.addEventListener('resize', this.resizeCaseCard)
+    this.fillCarouselData()
+    window.addEventListener('resize', this.resetCarouselOffset)
   },
   destroyed() {
     window.removeEventListener('resize', this.resizeServiceCard)
     window.removeEventListener('resize', this.resizeCaseCard)
+    window.removeEventListener('resize', this.resetCarouselOffset)
   },
   mixins: [GoToMixins],
   async asyncData({ error, $axios, route }) {
@@ -546,6 +571,10 @@ export default {
         message: 'Service not found!',
       })
     }
+    let areaData = await $axios.get(
+      `${process.env.BASE_URL}/api/area/${data.areaID}`
+    )
+    areaData = areaData.data
     const service = data
     let relServices = await $axios.get(
       `${process.env.BASE_URL}/api/relatedServices/${data.areaID}/${id}`
@@ -554,7 +583,123 @@ export default {
     return {
       service,
       relServices,
+      areaData,
     }
+  },
+  methods: {
+    fillCarouselData() {
+      const _this = this
+      Array.from(document.querySelectorAll("[data-target='carousel']")).forEach(
+        function (CurrentCarousel) {
+          const carouselWidth = CurrentCarousel.offsetWidth
+          const cardMarginRight = CurrentCarousel.querySelectorAll(
+            "[data-target='card']"
+          )[0].parentNode.style.marginRight
+          const cardCount = CurrentCarousel.querySelectorAll(
+            "[data-target='card']"
+          ).length
+          const maxX = -(cardCount - 3) * carouselWidth
+          _this.carousel = {
+            offset: 0,
+            carouselWidth,
+            cardMarginRight,
+            maxX,
+          }
+          console.log(_this.carousel)
+        }
+      )
+    },
+    scrollRight() {
+      if (this.carousel.offset > this.carousel.maxX) {
+        // if is the first scroll activate left arrow
+        if (this.carousel.offset === 0) {
+          document
+            .getElementById('carousel-arrow-prev')
+            .classList.remove('disabled-arrow')
+        }
+        this.carousel.offset -= this.carousel.carouselWidth
+        document.getElementById(
+          'relServicesCarousel'
+        ).style.transform = `translateX(${this.carousel.offset / 3}px)`
+      }
+      // check if we are at the end of carousel
+      if (
+        this.carousel.offset <= this.carousel.maxX &&
+        !document
+          .getElementById('carousel-arrow-next')
+          .classList.contains('disabled-arrow')
+      ) {
+        document
+          .getElementById('carousel-arrow-next')
+          .classList.add('disabled-arrow')
+
+        document
+          .getElementById('carousel-arrow-prev')
+          .firstChild.classList.add('arrow-pulsation')
+
+        setTimeout(() => {
+          document
+            .getElementById('carousel-arrow-prev')
+            .firstChild.classList.remove('arrow-pulsation')
+        }, 3000)
+      }
+    },
+
+    scrollLeft() {
+      if (this.carousel.offset !== 0) {
+        this.carousel.offset += this.carousel.carouselWidth
+        document.getElementById(
+          'relServicesCarousel'
+        ).style.transform = `translateX(${this.carousel.offset / 3}px)`
+        if (
+          document
+            .getElementById('carousel-arrow-next')
+            .classList.contains('disabled-arrow')
+        ) {
+          // reset opacity to one
+          document
+            .getElementById('carousel-arrow-next')
+            .classList.remove('disabled-arrow')
+        }
+      }
+      // if we are back at beginning
+      if (
+        this.carousel.offset === 0 &&
+        !document
+          .getElementById('carousel-arrow-prev')
+          .classList.contains('disabled-arrow')
+      ) {
+        document
+          .getElementById('carousel-arrow-prev')
+          .classList.add('disabled-arrow')
+
+        document
+          .getElementById('carousel-arrow-next')
+          .firstChild.classList.add('arrow-pulsation')
+
+        setTimeout(() => {
+          document
+            .getElementById('carousel-arrow-next')
+            .firstChild.classList.remove('arrow-pulsation')
+        }, 3000)
+      }
+    },
+    resetCarouselOffset() {
+      this.fillCarouselData()
+      this.carousel.offset = 0
+      document.getElementById(
+        'relServicesCarousel'
+      ).style.transform = `translateX(0px)`
+      document
+        .getElementById('carousel-arrow-next')
+        .classList.remove('disabled-arrow')
+      document
+        .getElementById('carousel-arrow-prev')
+        .classList.remove('disabled-arrow')
+      document
+        .getElementById('carousel-arrow-prev')
+        .classList.add('disabled-arrow')
+    },
   },
 }
 </script>
@@ -564,6 +709,7 @@ export default {
   max-width: 100%;
   padding-top: 0px;
   margin-top: 0px;
+  padding-bottom: 40px;
 }
 .service-header {
   height: 916px;
@@ -573,7 +719,7 @@ export default {
 .header-content {
   max-width: 1100px;
   margin: auto;
-  display: block;
+  display: inline-flex;
   text-align: left;
   padding-top: 124px;
   padding-bottom: 94px;
@@ -581,9 +727,24 @@ export default {
 .header-inner-content {
   max-width: 780px;
 }
+.go-to-area-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: var(--cc-base1);
+  margin-bottom: 24px;
+  width: max-content;
+  border-bottom: 2px solid transparent;
+}
+.go-to-area-title:hover {
+  border-bottom: 2px solid var(--cc-base1);
+  cursor: pointer;
+}
 .service-title {
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 48px;
   line-height: 58px;
   text-transform: uppercase;
@@ -591,16 +752,9 @@ export default {
   margin-bottom: 46px;
   position: relative;
 }
-.back-to-arrow {
-  position: absolute;
-  top: 0;
-  left: -10px;
-  cursor: pointer;
-  display: none;
-}
 .service-subtitle {
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   text-transform: uppercase;
@@ -619,6 +773,23 @@ export default {
   opacity: 0.8;
   column-count: 2;
   column-gap: 30px;
+}
+
+.service-image {
+  overflow: hidden;
+  margin-left: 50px;
+  width: 100%;
+}
+.service-image-responsive {
+  display: none;
+}
+.service-image > img {
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 30px;
 }
 .header-background {
   text-align: end;
@@ -675,7 +846,7 @@ export default {
 }
 .partner-name {
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
@@ -685,7 +856,7 @@ export default {
 
 .solution-name {
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
@@ -698,11 +869,6 @@ export default {
   grid-gap: 30px;
 }
 
-.service-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 30px;
-}
 .section-intro-text {
   margin: auto;
   margin-bottom: 54px;
@@ -718,14 +884,118 @@ export default {
 }
 
 .section-title {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   color: var(--cc-base1);
   margin-bottom: 0;
+  text-transform: uppercase;
 }
 .related-services-title {
-  margin-bottom: 73px;
+  margin-bottom: 25px;
+}
+
+.button-wrapper-prev {
+  margin-right: 15px;
+}
+.button-wrapper-next {
+  margin-left: 15px;
+}
+
+.carousel-arrow {
+  cursor: pointer;
+  overflow: visible;
+}
+
+.disabled-arrow {
+  opacity: 0.5;
+}
+
+.carousel-wrapper {
+  max-width: max-content;
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+.arrow-pulsation {
+  animation: pulse-me 2s linear;
+}
+
+.service-list-wrapper {
+  height: 450px;
+  width: 1020px;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+
+.service-carousel {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+  display: flex;
+  position: absolute;
+  left: 0;
+  transition: all 1s ease;
+}
+.service-card {
+  min-width: 310px;
+  display: inline-block;
+}
+
+.service {
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+@keyframes pulse-me {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  10% {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+  20% {
+    transform: scale(1.2);
+    opacity: 0.8;
+  }
+  30% {
+    transform: scale(1.3);
+    opacity: 0.4;
+  }
+
+  40% {
+    transform: scale(1.2);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+  60% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  70% {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+  80% {
+    transform: scale(1.2);
+    opacity: 0.8;
+  }
+  90% {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -741,6 +1011,32 @@ export default {
   .header-inner-content {
     max-width: 60%;
     margin: auto;
+  }
+  .go-to-area-title {
+    margin-right: auto;
+    margin-left: auto;
+    border-bottom: 2px solid var(--cc-base1);
+  }
+  .service-image {
+    display: none;
+  }
+
+  .service-image-responsive {
+    display: block;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    margin-bottom: 36px;
+  }
+
+  .service-image-responsive > img {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
   }
   .service-title {
     font-size: 36px;
@@ -792,31 +1088,57 @@ export default {
     margin-right: 92px;
     margin-left: 92px;
   }
-  .casestudies-grid,
-  .service-grid {
+  .casestudies-grid {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 44px;
     margin: auto;
   }
-  .casestudies-grid,
-  .service-grid {
+  .casestudies-grid {
     margin-right: 58px;
     margin-left: 58px;
   }
   .casestudy {
     width: 100%;
   }
-  .casestudy:nth-child(2n + 1),
-  .service:nth-child(2n + 1) {
+  .casestudy:nth-child(2n + 1) {
     margin-left: auto;
   }
-  .casestudy:nth-child(2n + 2),
-  .service:nth-child(2n + 2) {
+  .casestudy:nth-child(2n + 2) {
     margin-right: auto;
+  }
+  .button-wrapper-prev {
+    margin-right: 8px;
+  }
+  .button-wrapper-next {
+    margin-left: 8px;
+  }
+
+  .related-services-title {
+    margin-right: 92px;
+    margin-left: 92px;
+  }
+  .service-list-wrapper {
+    height: 270px;
+    width: 672px;
+    min-width: 672px;
+  }
+  .service {
+    margin-right: 12px;
+    margin-left: 12px;
+  }
+  .service-card {
+    min-width: 200px;
+  }
+  .carousel-arrow {
+    width: 21px;
+    height: 21px;
   }
 }
 
 @media screen and (max-width: 768px) {
+  .container {
+    padding-bottom: 0px;
+  }
   .service-header {
     height: auto;
   }
@@ -827,6 +1149,13 @@ export default {
     max-width: 100%;
     margin-right: 52px;
     margin-left: 52px;
+  }
+  .go-to-area-title {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .service-image-responsive {
+    margin-bottom: 25px;
   }
   .service-title {
     font-size: 24px;
@@ -873,13 +1202,14 @@ export default {
     font-size: 12px;
     line-height: 14px;
   }
-  .casestudies-grid,
-  .service-grid {
+  .casestudies-grid {
     grid-gap: 13px;
     margin: 0;
   }
   .related-services-title {
-    margin-bottom: 45px;
+    margin-bottom: 0px;
+    margin-right: 35px;
+    margin-left: 35px;
   }
   .casestudy {
     width: 100%;
@@ -896,25 +1226,47 @@ export default {
   .partner-name {
     display: none;
   }
-}
-</style>
 
-<style>
-@media screen and (min-width: 769px) and (max-width: 1200px) {
-  .casestudy {
-    max-width: 350px !important;
+  .button-wrapper-prev,
+  .button-wrapper-next {
+    display: none;
   }
-  .case-left {
-    margin-right: 12px !important;
+  .service-carousel {
+    overflow: scroll;
+    padding: 25px 0;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
   }
-  .case-right {
-    margin-left: 12px !important;
-  }
-}
 
-@media screen and (max-width: 768px) {
-  .casestudy {
-    max-width: 270px !important;
+  .service-carousel::-webkit-scrollbar {
+    display: none;
+  }
+
+  .service-list-wrapper {
+    height: 300px;
+    width: 100%;
+    min-width: 100%;
+  }
+  .service {
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+  .service:first-child {
+    margin-left: 20px !important;
+  }
+  .service:last-child {
+    margin-right: 20px !important;
+  }
+  .service-card {
+    min-width: 220px;
+  }
+  .carousel-arrow {
+    width: 0;
+    height: 0;
+  }
+  .carousel-wrapper {
+    width: 100%;
+    max-width: 100%;
   }
 }
 </style>

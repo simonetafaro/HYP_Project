@@ -28,7 +28,7 @@ export default {
   box-shadow: 0px 4px 6px rgba(66, 66, 114, 0.16);
   color: var(--cc-base2);
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
   line-height: 19px;
   text-align: center;

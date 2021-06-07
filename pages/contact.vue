@@ -453,12 +453,11 @@
         GET IN<br /><span class="page-subtitle-light">TOUCH</span>
       </div>
       <div class="page-description">
-        Nulla ante risus, condimentum eu consectetur vel, facilisis ac nulla.
-        Sed blandit nulla diam, in mattis nibh porta quis. Donec accumsan, erat
-        in suscipit viverra, massa purus dignissim sapien, interdum convallis
-        leo magna vel quam. In massa felis, gravida in eros in, ultricies
-        vehicula ex. Praesent luctus non metus ac iaculis. Fusce quis rutrum
-        diam.
+        We hope you will enjoy our products as much as we enjoy offering them to
+        you. If you have any questions or comments, please don't hesitate to
+        contact us. You can reach us by phone or e-mail. If you want to know
+        more specific information about a service, please fill out the contact
+        form for a tailored solution.
       </div>
       <div class="contact-container">
         <div class="contact-method">
@@ -787,7 +786,7 @@ export default {
   right: 0;
   left: 0;
   font-size: 55px;
-  color: #424272;
+  color: #3d3d3d;
   font-weight: 700;
 }
 .container {
@@ -812,7 +811,7 @@ export default {
 }
 .page-title {
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   text-transform: uppercase;
@@ -822,7 +821,7 @@ export default {
 
 .page-subtitle {
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 70px;
   line-height: 84px;
   text-transform: uppercase;
@@ -831,7 +830,7 @@ export default {
   width: max-content;
 }
 .page-subtitle-light {
-  color: #e8e6ff;
+  color: var(--cc-violet);
 }
 .page-description {
   font-style: normal;
@@ -894,7 +893,7 @@ export default {
 }
 .contact-method-title {
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 32px;
   line-height: 38px;
   text-align: center;
@@ -940,7 +939,7 @@ export default {
 }
 .location-office-num {
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
@@ -1016,7 +1015,7 @@ export default {
   box-shadow: 0px 4px 6px rgba(66, 66, 114, 0.16);
   border-radius: 35px;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
   line-height: 19px;
   text-align: center;

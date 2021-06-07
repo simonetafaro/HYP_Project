@@ -76,7 +76,7 @@ export default {
   border-radius: 35px;
   color: white;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
   line-height: 19px;
   text-align: center;
@@ -107,7 +107,7 @@ export default {
 }
 .personName {
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 26px;
   line-height: 38px;
   text-align: center;

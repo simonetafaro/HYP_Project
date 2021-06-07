@@ -75,7 +75,7 @@ export default {
 }
 .casestudytitle {
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 22px;
   line-height: 26px;
   color: var(--cc-base1);
@@ -102,7 +102,7 @@ export default {
 .case-button {
   position: absolute;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
   text-transform: uppercase;
   color: var(--cc-base1);

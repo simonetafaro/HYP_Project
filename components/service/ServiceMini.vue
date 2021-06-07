@@ -59,7 +59,7 @@ export default {
 }
 .service_title {
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 24px;
   line-height: 29px;
   text-align: center;
@@ -119,7 +119,7 @@ export default {
     padding-top: 10px;
   }
   .service_card_carousel {
-    max-width: 146px;
+    max-width: 220px;
   }
   .service-left {
     margin-right: 0px;

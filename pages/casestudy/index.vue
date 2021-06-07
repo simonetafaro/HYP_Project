@@ -1080,12 +1080,11 @@
 
             <div class="container_description">
               <div class="description">
-                Nulla ante risus, condimentum eu consectetur vel, facilisis ac
-                nulla. Sed blandit nulla diam, in mattis nibh porta quis. Donec
-                accumsan, erat in suscipit viverra, massa purus dignissim
-                sapien, interdum convallis leo magna vel quam. In massa felis,
-                gravida in eros in, ultricies vehicula ex. Praesent luctus non
-                metus ac iaculis. Fusce quis rutrum diam.
+                See how we bring the new to life with our clients in every
+                industry, in every country, each and every day. The following
+                case studies demonstrate how HexTech is in the business of
+                creating comprehensive and hyper personalized solutions from
+                start to finish.
               </div>
             </div>
           </header>
@@ -1146,6 +1145,9 @@
               ></case-study-mini>
             </div>
           </section>
+        </div>
+        <div class="casestudies-counter">
+          {{ casestudies.length }} case studies
         </div>
       </div>
     </div>
@@ -1293,6 +1295,15 @@ export default {
   overflow: hidden;
 }
 
+.casestudies-counter {
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+  color: #464a52;
+  margin-top: 20px;
+}
 .inner-container {
   max-width: 1110px;
   margin: auto;
@@ -1300,7 +1311,7 @@ export default {
 .case-container {
   text-align: left;
   max-width: 1110px;
-  margin: 40px 8%;
+  margin: 50px auto;
 }
 .inner-case {
   margin: auto;
@@ -1310,14 +1321,14 @@ export default {
 }
 .intro-text {
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   /* identical to box height */
 
   text-transform: uppercase;
 
-  color: var(--cc-base1);
+  color: #3d3d3d;
   text-align: left;
 }
 .casestudy {
@@ -1345,6 +1356,9 @@ export default {
   text-transform: uppercase;
   color: #4d41c9;
 }
+.filter:hover:not(.active-filter) {
+  border-bottom: 2px solid #4d41c9;
+}
 .active-filter {
   color: var(--cc-base1);
   border-bottom: 2px solid var(--cc-base1);
@@ -1361,7 +1375,7 @@ export default {
   margin: 0;
 }
 .title-section-purple {
-  color: var(--cc-base3);
+  color: var(--cc-violet);
 }
 .description {
   font-style: normal;

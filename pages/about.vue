@@ -628,28 +628,24 @@
       <div class="first-paragraph">
         <h1 class="pre_title">Our mission</h1>
         <double-color-title
-          textp1="our mission"
-          textp2="success business"
+          textp1="our goal:"
+          textp2="create your success"
         ></double-color-title>
         <div class="descriptions">
           <div class="description-1">
-            Nulla ante risus, condimentum eu consectetur vel, facilisis ac
-            nulla. Sed blandit nulla diam, in mattis nibh porta quis. Donec
-            accumsan, erat in suscipit viverra, massa purus dignissim sapien,
-            interdum convallis leo magna vel quam. In massa felis, gravida in
-            eros in, ultricies vehicula ex. Praesent luctus non metus ac
-            iaculis. Fusce quis rutrum diam. Mauris consectetur sodales
-            volutpat. Suspendisse potenti. Sed dapibus est ut magna egestas
-            tincidunt. Vivamus a ligula vitae lacus venenatis mollis vitae vitae
-            augue. Praesent quis nisi malesuada, rutrum ante vitae, tempus quam.
-            Cras egestas urna non egestas vestibulum.
+            We bring deep, functional expertise, but are known for our holistic
+            perspective: we capture value across boundaries and between the
+            silos of any organization. We have proven a multiplier effect from
+            optimizing the sum of the parts, not just the individual pieces. We
+            embrace the power of change to create value on a whole new level for
+            our clients, people and communities.
           </div>
           <space-divider class="description-flower"></space-divider>
 
           <div class="description-2">
-            Donec accumsan, erat in suscipit viverra, massa purus dignissim
-            sapien, interdum convallis leo magna vel quam. In massa felis,
-            gravida in eros in, ultricies vehicula ex.
+            Customer expectations are continuously growing. Our digital age
+            shows no signs of slowing down, and the need for rapid business
+            transformation has never been greater.
           </div>
         </div>
         <img
@@ -666,19 +662,19 @@
         <div class="subtitle-2">path</div>
 
         <div class="description-2-1">
-          Nulla ante risus, condimentum eu consectetur vel, facilisis ac nulla.
-          Sed blandit nulla diam, in mattis nibh porta quis. Donec accumsan,
-          erat in suscipit viverra, massa purus dignissim sapien, interdum
-          convallis leo magna vel quam. In massa felis, gravida in eros in,
-          ultricies vehicula ex. Praesent luctus non metus ac iaculis. Fusce
-          quis rutrum diam.
+          Founded in 2021 by four resourceful students, HexTech has come a long
+          way from its beginnings in Milan. When all of us first started out,
+          our passion for helping companies to grow and bloom drove them to
+          action, putting it into practice, so that HexTech can offer you the
+          best of services you could ever find. And that's just the beginning.
+          We meet clients wherever they are on their paths to improve and
+          partner with them to create lasting value.
         </div>
         <space-divider class="description-flower"> </space-divider>
         <div class="description-2-2">
-          Mauris consectetur sodales volutpat. Suspendisse potenti. Sed dapibus
-          est ut magna egestas tincidunt. Vivamus a ligula vitae lacus venenatis
-          mollis vitae vitae augue. Praesent quis nisi malesuada, rutrum ante
-          vitae, tempus quam. Cras egestas urna non egestas vestibulum.
+          We now serve international customers all over the Italian country, and
+          we are thrilled that we are able to turn our passion into our own
+          website.
         </div>
       </div>
       <img
@@ -720,7 +716,7 @@
         </discover-button>
       </section>
     </div>
-    <section class="collaborations">
+    <section id="partners" class="collaborations">
       <space-divider></space-divider>
       <div class="pre_title-3">Testimonials</div>
       <div class="title-3">our latest</div>
@@ -912,7 +908,7 @@ export default {
   text-transform: uppercase;
 
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 20px;
   line-height: 24px;
 
@@ -926,19 +922,19 @@ export default {
   text-align: left;
   font-size: 60px;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 70px;
   line-height: 84px;
   text-transform: uppercase;
 
-  color: #424272;
+  color: #3d3d3d;
 }
 
 .subtitle {
   text-align: left;
   font-size: 60px;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 70px;
   line-height: 84px;
   text-transform: uppercase;
@@ -1013,7 +1009,7 @@ export default {
   text-transform: uppercase;
 
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   /* identical to box height */
@@ -1026,7 +1022,7 @@ export default {
   text-align: right;
   font-size: 60px;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 70px;
   line-height: 84px;
   text-transform: uppercase;
@@ -1038,7 +1034,7 @@ export default {
   text-align: right;
   font-size: 60px;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 70px;
   line-height: 84px;
   text-transform: uppercase;
@@ -1104,7 +1100,7 @@ export default {
   text-transform: uppercase;
 
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   /* identical to box height */
@@ -1116,7 +1112,7 @@ export default {
 .title-3 {
   font-size: 60px;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 70px;
   line-height: 84px;
   text-transform: uppercase;
@@ -1127,7 +1123,7 @@ export default {
 .subtitle-3 {
   font-size: 60px;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 70px;
   line-height: 84px;
   text-transform: uppercase;
@@ -1209,7 +1205,7 @@ export default {
 .partner-name {
   margin-top: 30px;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
@@ -1231,7 +1227,7 @@ export default {
 
 .partner-website {
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
   line-height: 24px;
   cursor: pointer;
@@ -1331,14 +1327,14 @@ p {
   }
 
   .title {
-    font-weight: bold;
+    font-weight: 700;
     font-size: 36px;
     line-height: 43px;
     text-align: center;
   }
 
   .subtitle {
-    font-weight: bold;
+    font-weight: 700;
     font-size: 36px;
     line-height: 43px;
     text-align: center;
@@ -1453,13 +1449,13 @@ p {
 
   .title-3 {
     margin-top: 17px;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 36px;
     line-height: 43px;
   }
 
   .subtitle-3 {
-    font-weight: bold;
+    font-weight: 700;
     font-size: 36px;
     line-height: 43px;
     margin-bottom: 17px;
@@ -1551,14 +1547,14 @@ p {
   }
 
   .title {
-    font-weight: bold;
+    font-weight: 700;
     font-size: 24px;
     line-height: 29px;
     text-align: center;
   }
 
   .subtitle {
-    font-weight: bold;
+    font-weight: 700;
     font-size: 24px;
     line-height: 29px;
     text-align: center;

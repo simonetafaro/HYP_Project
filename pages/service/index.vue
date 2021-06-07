@@ -7,12 +7,11 @@
         <span class="service-l2-light">SERVICES SELECTION</span>
       </h1>
       <div class="service-l3">
-        Nulla ante risus, condimentum eu consectetur vel, facilisis ac nulla.
-        Sed blandit nulla diam, in mattis nibh porta quis. Donec accumsan, erat
-        in suscipit viverra, massa purus dignissim sapien, interdum convallis
-        leo magna vel quam. In massa felis, gravida in eros in, ultricies
-        vehicula ex. Praesent luctus non metus ac iaculis. Fusce quis rutrum
-        diam.
+        Our services’ selection focus on our clients' most critical needs and
+        opportunities: strategy, marketing, user experience, computing,
+        technology, transformation, digital, advanced analytics, corporate
+        finance and sustainability across all industries and fields of
+        application.
       </div>
     </header>
     <br />
@@ -280,7 +279,7 @@ export default {
 }
 .service-l1 {
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   color: var(--c-grey1);
@@ -289,15 +288,15 @@ export default {
 
 .service-l2 {
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 70px;
   line-height: 84px;
   text-align: center;
-  color: var(--cc-base1);
+  color: #3d3d3d;
   margin-bottom: 70px;
 }
 .service-l2-light {
-  color: var(--cc-base3);
+  color: var(--cc-violet);
 }
 
 .service-l3 {
@@ -519,7 +518,7 @@ export default {
   }
 
   .service-list-wrapper {
-    height: 253px;
+    height: 320px;
     width: 100%;
     min-width: 100%;
   }
@@ -539,7 +538,7 @@ export default {
     margin-right: 20px !important;
   }
   .service-card {
-    min-width: 146px;
+    min-width: 220px;
   }
   .carousel-arrow {
     width: 0;

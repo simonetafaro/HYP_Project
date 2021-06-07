@@ -818,13 +818,14 @@
         OUR WORKING<br /><span class="section-title-2">BUSINESS FIELDS</span>
       </h1>
       <h2 class="section-description">
-        Nulla ante risus, condimentum eu consectetur vel, facilisis ac nulla.
-        Sed blandit nulla diam, in mattis nibh porta quis. Mauris consectetur
-        sodales volutpat. Suspendisse potenti. Sed dapibus est ut magna egestas
-        tincidunt.
+        Welcome to HexTech, your number one source for company development.
+        We're working to turn our passion for taking care of our clients
+        companies into a fine services selection. We are dedicated to provide
+        you the best products, with a focus on security, reliability, and
+        functionality.
       </h2>
       <div class="button-container">
-        <div class="scroll-text-compare">WHAT WE DO</div>
+        <div class="scroll-text-compare">AREAS</div>
         <div class="button-inner-container">
           <button
             v-for="(area, areaIndex) of areas"
@@ -843,13 +844,13 @@
           :key="'area-' + areaIndex"
           class="single-area-section"
           :id="'area-box-' + area.id"
-          @click="goTo(`/area/${area.id}`)"
         >
           <area-home-mini
             :summary="area.subTitle"
             :image="area.evocativeImage"
             :index="areaIndex + 1"
             :altEvocativeImage="area.altEvocativeImage"
+            :path="area.id"
           ></area-home-mini>
           <div class="show-only-tablet-mobile">
             <space-divider></space-divider>
@@ -903,15 +904,14 @@ export default {
     },
     handleScroll() {
       const buttonBar = document.getElementsByClassName('button-container')[0]
-      const hiddenText = document.getElementsByClassName(
-        'scroll-text-compare'
-      )[0]
       this.areas.forEach(function (area) {
         if (
           document.getElementById('area-box-' + area.id).getBoundingClientRect()
-            .top < 180 &&
+            .top <
+            window.innerHeight / 2 &&
           document.getElementById('area-box-' + area.id).getBoundingClientRect()
-            .top > 0
+            .bottom >
+            window.innerHeight / 2
         ) {
           document
             .getElementById('button-area-' + area.id)
@@ -923,13 +923,11 @@ export default {
         }
       })
       if (buttonBar.getBoundingClientRect().top < 90 && !this.isPositionFixed) {
-        hiddenText.style.display = 'block'
         buttonBar.style.position = 'sticky'
         buttonBar.style.top = '90px'
         this.isPositionFixed = true
       }
       if (buttonBar.getBoundingClientRect().top > 90 && this.isPositionFixed) {
-        hiddenText.style.display = 'none'
         buttonBar.style.position = 'static'
         buttonBar.style.top = 0
         this.isPositionFixed = false
@@ -959,7 +957,7 @@ export default {
   font-weight: 800;
   font-size: 96px;
   text-transform: uppercase;
-  color: #000000;
+  color: #3d3d3d;
   margin: auto;
   line-height: 100px;
   width: 100%;
@@ -979,7 +977,7 @@ export default {
 
 .text1 {
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   text-transform: uppercase;
@@ -990,27 +988,26 @@ export default {
 
 .scroll-text-compare {
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   text-transform: uppercase;
   color: var(--cc-base1);
-  display: none;
   margin: auto;
   padding: 25px 15px;
 }
 
 .section-title {
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 70px;
   line-height: 84px;
   text-align: center;
   text-transform: uppercase;
-  color: var(--cc-base1);
+  color: #3d3d3d;
 }
 .section-title-2 {
-  color: #e8e6ff;
+  color: var(--cc-violet);
 }
 .section-description {
   font-style: normal;
@@ -1024,7 +1021,7 @@ export default {
   max-width: 769px;
   margin: auto;
   margin-top: 86px;
-  margin-bottom: 162px;
+  margin-bottom: 86px;
 }
 
 .button-container {
@@ -1047,7 +1044,7 @@ export default {
   border: 2px solid var(--cc-base2);
   border-radius: 35px;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
   line-height: 19px;
   text-align: center;
@@ -1059,7 +1056,7 @@ export default {
 }
 
 .go-to-area-button:hover {
-  background: var(--cc-base1);
+  background: var(--cc-base2);
   color: white;
   cursor: pointer;
   opacity: 1;

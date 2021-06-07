@@ -10,12 +10,16 @@
     </div>
     <div class="area-description-column">
       <div class="area-description-text">{{ summary }}</div>
-      <button class="more_button">learn more</button>
+      <button class="more_button" @click="goTo(`/area/${path}`)">
+        learn more
+      </button>
     </div>
   </div>
 </template>
 
 <script>
+import GoToMixins from '~/mixins/goTo-mixins.js'
+
 export default {
   props: {
     image: {
@@ -25,12 +29,14 @@ export default {
     summary: { type: String, default: () => '' },
     index: { type: Number, default: () => 0 },
     altEvocativeImage: { type: String, default: () => '' },
+    path: { type: Number, default: () => 0 },
   },
   methods: {
     isEven(index) {
       return (index + 1) % 2
     },
   },
+  mixins: [GoToMixins],
 }
 </script>
 
@@ -98,7 +104,7 @@ export default {
   border-radius: 35px;
   color: var(--cc-base2);
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
   line-height: 19px;
   text-align: center;
