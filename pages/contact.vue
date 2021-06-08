@@ -481,7 +481,7 @@
             </svg>
           </div>
           <div class="contact-method-title">Message</div>
-          <div class="contact-method-text">+39 123 456 78</div>
+          <div class="contact-method-text">+39 123 786 54</div>
         </div>
         <div class="contact-method show-mobile">
           <svg
@@ -528,10 +528,7 @@
           </div>
           <div class="contact-method-title">Email</div>
           <div class="contact-method-text">
-            <a href="mailto:info@hextech.com">info@hextech.com</a><br /><a
-              href="mailto:contact@hextech.com"
-              >contact@hextech.com</a
-            >
+            <a href="mailto:info@hextech.com">info@hextech.com</a>
           </div>
         </div>
         <div class="contact-method">
@@ -556,10 +553,7 @@
           </div>
           <div class="contact-method-title">Call</div>
           <div class="contact-method-text">
-            <a href="tel:+00 123 456 78">+00 123 456 78</a><br /><a
-              href="tel:+00 345 678 90"
-              >+00 345 678 90</a
-            >
+            <a href="tel:+00 123 456 78">+00 123 456 78</a>
           </div>
         </div>
       </div>
@@ -908,6 +902,9 @@ export default {
   text-align: center;
   color: #464a52;
 }
+.contact-method-text > a {
+  color: #464a52;
+}
 
 .location-section {
   background: linear-gradient(
@@ -1153,7 +1150,8 @@ export default {
   }
   .contact-method:last-child {
     display: table-caption;
-    width: 100%;
+    width: max-content;
+    margin: auto;
     caption-side: bottom;
   }
   .contact-method-image {
@@ -1195,7 +1193,6 @@ export default {
     margin-right: auto;
     margin-bottom: 17px;
   }
-
   .location-box-image {
     width: 58px;
     height: 58px;
@@ -1213,6 +1210,7 @@ export default {
   .location-info-wrapper > div.contact-method-text {
     font-size: 10px;
     line-height: 12px;
+    text-align: left;
   }
 
   .location-city {
