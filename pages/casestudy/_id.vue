@@ -819,7 +819,6 @@ p {
 }
 
 .person {
-  cursor: pointer;
   margin-bottom: 20px;
   align-content: center;
 }

@@ -302,7 +302,6 @@ export default {
 }
 
 .person {
-  cursor: pointer;
   margin-bottom: 20px;
 }
 .mobile-show {

@@ -33,14 +33,9 @@
             :fill="`url(#team-${index})`"
           />
         </svg>
-        <div class="showInHover">
-          <button @click="goTo(`/team/${id}`)" class="goToPersonPage_button">
-            READ MORE
-          </button>
-        </div>
       </div>
       <p class="occupation">{{ occupation }}</p>
-      <h3 class="personName">{{ personName }}</h3>
+      <h3 class="personName" @click="goTo(`/team/${id}`)">{{ personName }}</h3>
     </div>
   </div>
 </template>
@@ -63,29 +58,6 @@ export default {
 .person-image-container {
   position: relative;
 }
-.showInHover {
-  display: none;
-  position: absolute;
-  top: 50%;
-  text-align: center;
-  width: 100%;
-}
-.goToPersonPage_button {
-  background: var(--cc-base1);
-  box-shadow: 0px 4px 6px rgba(66, 66, 114, 0.16);
-  border-radius: 35px;
-  color: white;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 19px;
-  text-align: center;
-  text-transform: uppercase;
-  padding: 10px 32px;
-  margin: 4px 2px;
-  cursor: pointer;
-  border: none;
-}
 .card {
   display: table;
   margin: 0 auto;
@@ -96,12 +68,8 @@ export default {
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
-  /* identical to box height, or 171% */
-
   text-align: center;
-
   color: #000000;
-
   mix-blend-mode: normal;
   opacity: 0.8;
 }
@@ -112,19 +80,11 @@ export default {
   line-height: 38px;
   text-align: center;
   color: var(--cc-base1);
+  cursor: pointer;
 }
 
 .personPhoto {
   margin-bottom: 10px;
-}
-.personPhoto:hover {
-  filter: blur(2px);
-}
-.personPhoto:hover ~ .showInHover {
-  display: block;
-}
-.showInHover:hover {
-  display: block;
 }
 
 @media screen and (max-width: 1200px) {
@@ -166,11 +126,6 @@ export default {
   .personPhoto {
     height: 110px;
     width: auto;
-  }
-  .goToPersonPage_button {
-    font-size: 8px;
-    line-height: 12px;
-    padding: 5px 12px;
   }
 }
 </style>

@@ -1390,10 +1390,14 @@
         <div class="column-title">CONTACT US</div>
         <div class="column-subtitle">HEADQUARTERS</div>
         <div class="column-text">
-          231 Gotham Square - 89 GM <br />
-          Metropolis city <br />
-          <br />Phone : +00 123 456 78 <br />
-          Mail : info@mail.com
+          <a
+            href="http://maps.google.com/?q=1200 Pennsylvania Ave SE, Washington, District of Columbia, 20003"
+            >231 Gotham Square - 89<br />
+            GM Metropolis city</a
+          >
+          <br />
+          <br />Phone : <a href="tel:+00 123 456 78">+00 123 456 78</a> <br />
+          Mail : <a href="mailto:info@hextech.com">info@hextech.com</a>
         </div>
       </div>
 

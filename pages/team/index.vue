@@ -970,7 +970,6 @@ h4 {
 }
 
 .member {
-  cursor: pointer;
   margin-bottom: 20px;
 }
 
