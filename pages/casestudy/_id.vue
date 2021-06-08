@@ -776,6 +776,12 @@ p {
 }
 .other-cases-container {
   padding-bottom: 20px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 26px;
+
+  color: #464a52;
 }
 .padding {
   padding: 30px 0;
