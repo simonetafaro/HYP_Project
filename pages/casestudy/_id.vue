@@ -64,7 +64,7 @@
                 <div class="other-cases-container">Other Case Studies</div>
                 <div class="relatedCases-grid">
                   <div
-                    v-for="(casestudy, caseStudyIndex) of relCases"
+                    v-for="(casestudy, caseStudyIndex) in relCases.slice(0, 5)"
                     :key="'casestudy-' + caseStudyIndex"
                     class="case-component"
                     @click="goTo(`/casestudy/${casestudy.id}`)"
@@ -566,7 +566,7 @@
             There are no related Services
           </div>
           <div
-            v-for="(service, serviceIndex) of casestudy.services"
+            v-for="(service, serviceIndex) in casestudy.services.slice(0, 3)"
             :key="'service-' + serviceIndex"
             class="service"
           >
@@ -659,7 +659,7 @@ h1 {
   font-size: 16px;
   line-height: 19px;
   color: #464a52;
-  margin-bottom: 15px;
+  margin-bottom: 37px;
 }
 .intro-container {
   font-style: normal;
@@ -769,7 +769,7 @@ p {
   /* identical to box height */
   text-decoration-line: underline;
   text-transform: uppercase;
-  color: var(--cc-base3);
+  color: #4d41c9;
 }
 .partner-container {
   margin: 20px 0;
@@ -843,6 +843,7 @@ p {
   font-size: 50px;
   line-height: 60px;
   color: var(--cc-base1);
+  margin-bottom: 24px;
 }
 .area-title {
   font-style: normal;
@@ -851,6 +852,7 @@ p {
   line-height: 24px;
   text-transform: uppercase;
   color: var(--cc-base1);
+  margin-bottom: 20px;
 }
 
 .related-case-study-info {
