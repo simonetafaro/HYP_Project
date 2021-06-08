@@ -1689,7 +1689,7 @@ async function insertRealData() {
 
   //**CLOUD COMPUTING CASE STUDIES */
   const ccC1 = await CaseStudy.create({
-    title: 'Massive invoice volumes as key driver for e-invoicing',
+    title: 'Massive invoice volumes',
     subTitle:
       '“KPN generates an astonishing 100 million invoices per year. This is more than eight million per month. We are, with the exception of the Tax Administration, the biggest paper factory in the Netherlands.” explains Hans Hodes, Business Consultant at KPN. Customers receive invoices with cost summaries each month, or every other month. With these volumes, it was clear that e-Invoicing could bring big benefits.',
     banner: 'https://einvoice1-trial.nic.in/Images/Einvoice_banner2.jpg',
@@ -1698,11 +1698,11 @@ async function insertRealData() {
     challengeTitle: 'The increasing popularity if e-invoicing',
     challengeDescription:
       'Over the years, electronic invoices became more common and KPN experienced a higher demand for this service. KPN’s German e-Invoicing service provider handled these requests. Hodes explains: “When customers called us, they were serviced by our German service provider after various detours and connections in the chain. In my opinion, this could have been done better.”',
-    solutionTitle: 'QUICK SWITCH OF E-INVOICING PROVIDER',
+    solutionTitle: 'Quick switch of e-invoicing provider',
     solutionDescription:
       'Getting e-Invoicing to take off in amarket requires cooperation amongthe multiple e-Invoicing serviceproviders. The service providersneed to create a stable environmentfor customers, so that customerswill dare to make the switch to ‘true’e-Invoicing. If the e-Invoicing serviceproviders don’t work together,companies in the Netherlandswill stick to invoicing via directconnections or an e-mail with PDF.” In the Netherlands, the e-Invoicingmarket has been stagnant for afew years. For that reason, KPN isworking with Basware to encouragecooperation throughout the entireindustry. Once there is greatertransparency as to which companyis connected to which communityand information can be exchanged,e-Invoicing can be stimulated.',
     createdData: 'January 17, 2021',
-    partnerWebsite: '',
+    partnerWebsite: 'https://www.kpn.com/',
     altBanner:
       'There is a computer with a Invoice write and some papers with a pencil holded from an hand',
   })
@@ -1710,7 +1710,7 @@ async function insertRealData() {
   await EInvoice.addCasestudy(ccC1.id)
 
   const ccC2 = await CaseStudy.create({
-    title: 'JAVA BACKEND DEVELOPMENT FOR AN INNOVATIVE HOTEL SELF-SERVICE APP',
+    title: 'Hotel self-service App',
     subTitle:
       'To date, the demo version of the application has been successfully presented to future end users and received their endorsement. Satisfied with the results, the Customer continues cooperation with HexTech as new features and integrations are continuously added. In the nearest future, the app should be adopted by about 100 hotels around the globe.',
     banner:
@@ -1725,7 +1725,7 @@ async function insertRealData() {
       'Turning to the microservices-based architecture, HexTech’s team managed to ensure quick ongoing Agile development and simplified future scaling and integration processes. The first release of the system consisted of 9 independent services, each being responsible for a set of functions. The implementation of the app’s functionality and expected multitenancy required a number of future integrations with external applications (e.g., applications of door lock providers, internal hotel management systems, etc.). To reduce time of future integration and necessary efforts, HexTech’s team created reliable, secure, and reusable APIs for microservices. As a result, only minor tweaks were needed to introduce new components to the system.',
     teamsTitle: 'Cloud App Development Departement',
     createdData: 'October 1, 2020',
-    partnerWebsite: '',
+    partnerWebsite: 'https://www.nordicchoicehotels.com/',
     altBanner: 'There is a computer with displayed code',
   })
   await CloudComputing.addCasestudy(ccC2.id)
