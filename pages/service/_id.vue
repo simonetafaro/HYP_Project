@@ -10,7 +10,7 @@
             {{ service.title }}
           </h2>
           <div class="service-image-responsive">
-            <img :src="service.banner" :alt="altBanner" />
+            <img :src="service.banner" :alt="service.altBanner" />
           </div>
           <h3 class="service-subtitle">{{ service.subTitle }}</h3>
           <div class="service-description-text">
@@ -18,7 +18,7 @@
           </div>
         </div>
         <div class="service-image">
-          <img :src="service.banner" :alt="altBanner" />
+          <img :src="service.banner" :alt="service.altBanner" />
         </div>
       </div>
 
@@ -450,7 +450,7 @@
               :image="casestudy.banner"
               :area="casestudy.area.title"
               :path="casestudy.id"
-              :caseIndex="caseIndex + 1"
+              :caseIndex="casestudyIndex + 1"
             ></case-study-mini>
           </div>
         </section>
@@ -778,6 +778,7 @@ export default {
 .service-image {
   overflow: hidden;
   margin-left: 50px;
+  margin-top: 50px;
   width: 100%;
 }
 .service-image-responsive {
@@ -785,10 +786,8 @@ export default {
 }
 .service-image > img {
   width: 100%;
-  height: auto;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  height: 400px;
+  object-fit: cover;
   border-radius: 30px;
 }
 .header-background {
