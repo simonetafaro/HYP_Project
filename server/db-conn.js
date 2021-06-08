@@ -721,7 +721,7 @@ async function insertRealData() {
     description:
       'In order to grow your enterprise, you need to do more than keep your existing customers happy — you need to find new business. Big data can help you find new audiences and determine which groups are more likely to buy.    ',
     banner:
-      'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80',
+      'https://www.connectionmodel.com/hs-fs/hubfs/digital-marketing2-79.jpg?width=400&name=digital-marketing2-79.jpg',
     serviceDescription:
       'We put in practise all the experience we gained during all the life of this company in order to give our clients a very good customer experience. Moreover, all our experts are very professional on the service we provide to clients.',
     s1Name: 'Optimize SEO',
@@ -761,7 +761,7 @@ async function insertRealData() {
     description:
       'Health care has a long track record of evidence-based clinical practice and ethical standards in research. However, the extension of this into new technologies such as the use of predictive analytics, the algorithms behind them, and the point where a machine process should be replaced by a human mental process is not clearly regulated or controlled by industry standards. Government health agencies, doctors, and primary health givers need to be aware of the risks emerging and agree on levels of assurance as society continues to move into a new era of decision-making supplemented, and at times replaced, by evidence from digital technologies. More specifically, this paper will look at the various ethical issues and moral hazards that need to be navigated following the adoption and use of predictive analytics in the health care sector with an emphasis on accountable algorithms.',
     banner:
-      'https://images.unsplash.com/photo-1560221328-12fe60f83ab8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1953&q=80',
+      'https://media.gettyimages.com/photos/neurosurgeon-checking-mri-scans-picture-id642595060?k=6&m=642595060&s=612x612&w=0&h=Jqho7nQjrOb7jzq3cUAGkhKEhRZxFuF3R2wmtfLKRV0=',
     serviceDescription:
       'We put in practise all the experience we gained during all the life of this company in order to give our clients a very good customer experience. Moreover, all our experts are very professional on the service we provide to clients.',
     s1Name: 'Efficiencies for operational management',
@@ -800,7 +800,7 @@ async function insertRealData() {
     description:
       'We analyze datasets through classification, clustering, and pattern recognition techniques to move from a historical static description of the past to a forward-looking actionable projection in the future. We implement this solution in predictive maintenance, incident analysis, early-warning, customer satisfaction, churn prediction, production planning, risk assessment, attribution modeling and more.',
     banner:
-      'https://images.unsplash.com/photo-1588600878108-578307a3cc9d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1955&q=80',
+      'https://media.gettyimages.com/photos/here-are-our-latest-reports-picture-id926573648?k=6&m=926573648&s=612x612&w=0&h=uroCltmzIVmXPsCpD8TyN9G4nNuxSUU1LbpS7117JgU=',
     serviceDescription:
       'We put in practise all the experience we gained during all the life of this company in order to give our clients a very good customer experience. Moreover, all our experts are very professional on the service we provide to clients.',
     s1Name: 'Real time prediction',
@@ -840,7 +840,7 @@ async function insertRealData() {
     description:
       'Big data automation is growing as a need for almost every organization, with the IoT driving the stream velocity of data. While users require fast availability of data for analysis, the true value of data can only be extracted and managed via intelligent and advanced data automation.',
     banner:
-      'https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1895&q=80',
+      'https://media.gettyimages.com/photos/creative-puppet-picture-id1143906659?k=6&m=1143906659&s=612x612&w=0&h=TnX_KyOv6lCQrvpgehpZ5vHSnEz-zABuRI9llGk3kGc=',
     serviceDescription:
       'We put in practise all the experience we gained during all the life of this company in order to give our clients a very good customer experience. Moreover, all our experts are very professional on the service we provide to clients.',
     s1Name: 'Automation Expertise',
@@ -880,7 +880,7 @@ async function insertRealData() {
     description:
       'We provide analytics consulting services for our customers to benefit from integrated solutions that rely on the optimal technology stack, allowing companies to save their costs, improve performance and grow their business.',
     banner:
-      'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80',
+      'https://media.gettyimages.com/photos/equipped-for-success-thanks-to-modern-technology-picture-id492197839?k=6&m=492197839&s=612x612&w=0&h=eNkPoaVCH-_PqDVfPdgVmB2g_cvHeIWSnGDb9fkQRsw=',
     serviceDescription:
       'We put in practise all the experience we gained during all the life of this company in order to give our clients a very good customer experience. Moreover, all our experts are very professional on the service we provide to clients.',
     s1Name: 'Business intelligence consulting',
@@ -920,7 +920,7 @@ async function insertRealData() {
     description:
       "Pricing can boost profits far more than increasing sales or cutting costs. And the results of a smarter pricing strategy can fall to the bottom line very quickly.  Yet at least half of all companies leave money on the table because they don't charge the right price or make sure customers actually pay it.   ",
     banner:
-      'https://images.unsplash.com/photo-1423666523292-b458da343f6a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1953&q=80',
+      'https://media.gettyimages.com/photos/stock-exchange-statistics-picture-id926129364?k=6&m=926129364&s=612x612&w=0&h=O-V5HeSQTbXBVvZRnC6vDB15BDBIvyhE_p4viWWNwtc=',
     serviceDescription:
       'We put in practise all the experience we gained during all the life of this company in order to give our clients a very good customer experience. Moreover, all our experts are very professional on the service we provide to clients.',
     s1Name: 'B2B pricing',

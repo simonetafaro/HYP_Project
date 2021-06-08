@@ -440,7 +440,10 @@
         <section class="casestudies-grid">
           <h4 v-if="service.casestudies === 0">There are no cs</h4>
           <div
-            v-for="(casestudy, casestudyIndex) of service.casestudies"
+            v-for="(casestudy, casestudyIndex) in service.casestudies.slice(
+              0,
+              3
+            )"
             :key="'casestudy-' + casestudyIndex"
             class="casestudy"
           >

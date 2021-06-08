@@ -6,7 +6,7 @@
           ? 'case-right casestudycontainer'
           : 'case-left casestudycontainer'
       "
-      v-on:click="goTo('/casestudy/' + path)"
+      @click="clickOnCardOnlyTabletAndMobile(path)"
       :style="{
         'background-image': `url(${image})`,
       }"
@@ -57,6 +57,7 @@ export default {
   text-align: left;
   max-width: 350px;
   margin: auto;
+  height: 350px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -70,7 +71,7 @@ export default {
   bottom: 0;
   width: 100%;
   border-radius: 27px;
-  padding: 30px;
+  padding: 25px;
   opacity: 0.87;
 }
 .casestudytitle {

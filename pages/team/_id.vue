@@ -642,7 +642,6 @@
         v-for="(casestudy, casestudyIndex) of relCasestudies"
         :key="'casestudy-' + casestudyIndex"
         class="casestudy"
-        @click="goTo(`/casestudy/${casestudy.id}`)"
       >
         <case-study-mini
           :title="casestudy.title"
@@ -741,14 +740,13 @@ header {
 }
 .casestudies-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 95px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
   margin-top: 40px;
-  max-width: 795px;
+  max-width: 1110px;
   margin: auto;
 }
 .casestudy {
-  cursor: pointer;
   margin-bottom: 20px;
 }
 .service-grid {
@@ -800,11 +798,13 @@ h3 {
 
 @media screen and (max-width: 1200px) {
   .casestudies-grid {
-    grid-gap: 66px;
-    margin-top: 40px;
-    max-width: 100%;
-    margin-left: 92px;
-    margin-right: 92px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 44px;
+    margin: auto;
+  }
+  .casestudies-grid {
+    margin-right: 58px;
+    margin-left: 58px;
   }
 }
 @media screen and (max-width: 768px) {
