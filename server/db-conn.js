@@ -1708,6 +1708,7 @@ async function insertRealData() {
   })
   await CloudComputing.addCasestudy(ccC1.id)
   await EInvoice.addCasestudy(ccC1.id)
+  await InfraspaceCloud.addCasestudy(ccC1.id)
 
   const ccC2 = await CaseStudy.create({
     title: 'Hotel self-service App',
@@ -1730,6 +1731,7 @@ async function insertRealData() {
   })
   await CloudComputing.addCasestudy(ccC2.id)
   await CloudAppDevelopServices.addCasestudy(ccC2.id)
+  await HybridCloud.addCasestudy(ccC2.id)
 
   const ccC3 = await CaseStudy.create({
     title: 'Live Event Broadcasting Platform',
@@ -2069,6 +2071,8 @@ async function insertRealData() {
   })
   await IoT.addCasestudy(iotC1.id)
   await SmartRetail.addCasestudy(iotC1.id)
+  await IndustrialManufacturing.addCasestudy(iotC1.id)
+  
 
   const iotC2 = await CaseStudy.create({
     title: '7-Eleven - Reliable IT system',
@@ -2091,6 +2095,7 @@ async function insertRealData() {
   })
   await IoT.addCasestudy(iotC2.id)
   await SmartRetail.addCasestudy(iotC2.id)
+  await IndustrialManufacturing.addCasestudy(iotC2.id)
 
   const iotC3 = await CaseStudy.create({
     title: 'Transforming Retail Pain into Smart Gain',
@@ -2112,6 +2117,7 @@ async function insertRealData() {
   })
   await IoT.addCasestudy(iotC3.id)
   await SmartRetail.addCasestudy(iotC3.id)
+  await SmartLighting.addCasestudy(iotC3.id)
 
   const iotC4 = await CaseStudy.create({
     title: 'Building a connected car ecosystem',
@@ -2134,6 +2140,7 @@ async function insertRealData() {
   })
   await IoT.addCasestudy(iotC4.id)
   await Automotive.addCasestudy(iotC4.id)
+  await SmartCities.addCasestudy(iotC4.id)
 
   const iotC5 = await CaseStudy.create({
     title: 'Abnox AG - 4.0 Industry',
@@ -2156,6 +2163,7 @@ async function insertRealData() {
   })
   await IoT.addCasestudy(iotC5.id)
   await IndustrialManufacturing.addCasestudy(iotC5.id)
+  await SmartCities.addCasestudy(iotC5.id)
 
   const iotC6 = await CaseStudy.create({
     title: 'Hospital and smarter healthcare',
@@ -2178,6 +2186,7 @@ async function insertRealData() {
   })
   await IoT.addCasestudy(iotC6.id)
   await Healthcare.addCasestudy(iotC6.id)
+  await IndustrialManufacturing.addCasestudy(iotC6.id)
 
   const iotC7 = await CaseStudy.create({
     title: 'Internet of Medical Things',
@@ -2200,7 +2209,7 @@ async function insertRealData() {
   })
   await IoT.addCasestudy(iotC7.id)
   await Healthcare.addCasestudy(iotC7.id)
-
+  
   const iotC8 = await CaseStudy.create({
     title: 'Innovation to the streets of Jamshedpur',
     subTitle:
@@ -2246,6 +2255,7 @@ async function insertRealData() {
   })
   await IoT.addCasestudy(iotC9.id)
   await SmartCities.addCasestudy(iotC9.id)
+  await IndustrialManufacturing.addCasestudy(iotC9.id)
 
   const iotC10 = await CaseStudy.create({
     title: 'Remote patient monitoring software',
@@ -2260,7 +2270,7 @@ async function insertRealData() {
       'The Customer wanted to deliver a sophisticated remote patient monitoring solution for clinics of North America. The solution should help to improve medical staff performance, avoid routine visits, and increase the quality of care. For that reason, the Customer needed a team of savvy professionals in R&D and healthcare IT.',
     solutionTitle: 'App and Web Dashboard',
     solutionDescription:
-      'The developers reviewed and analyzed available approaches and frameworks and picked WebRTC technology as the best one for platform-independent voice and video communication. Several Android-powered hardware devices were selected to implement central communication module or Sensor Network Appliances (SNAs). The development process was split into 2 major parts: the development of apps for Android and iOS devices and Web dashboard implementation. \n 1) HexTech’s team delivered apps for both patients and medical staff. Gradle flavors were used to build the apps’ variations fully compatible with different screen sizes: wide screen (for doctors), tablet (for nurses) and smartphone (for healthcare services consumers). Patients could smoothly access numerous sensors in order to monitor data and synchronize it with the server. Medical staff members could diagnose and treat patient remotely and receive automated alerts and notifications, when, for example patient state suddenly changes. \n 2) A Web Dashboard assisted medical professionals in monitoring the overall status of patients drilling down on personal medical data. It sent alerts on poor health indicators and maintains the doctor-patient connection. The central communication module was built upon a TV-connected Android-powered device. ',
+      'The developers reviewed and analyzed available approaches and frameworks and picked WebRTC technology as the best one for platform-independent voice and video communication. Several Android-powered hardware devices were selected to implement central communication module or Sensor Network Appliances (SNAs). The development process was split into 2 major parts: the development of apps for Android and iOS devices and Web dashboard implementation. \n1) HexTech’s team delivered apps for both patients and medical staff. Gradle flavors were used to build the apps’ variations fully compatible with different screen sizes: wide screen (for doctors), tablet (for nurses) and smartphone (for healthcare services consumers). Patients could smoothly access numerous sensors in order to monitor data and synchronize it with the server. Medical staff members could diagnose and treat patient remotely and receive automated alerts and notifications, when, for example patient state suddenly changes. \n 2) A Web Dashboard assisted medical professionals in monitoring the overall status of patients drilling down on personal medical data. It sent alerts on poor health indicators and maintains the doctor-patient connection. The central communication module was built upon a TV-connected Android-powered device. ',
     createdData: 'June 17, 2018',
     partnerWebsite: 'https://europe.medtronic.com/xd-en/index.html',
     altBanner:
@@ -2268,7 +2278,7 @@ async function insertRealData() {
   })
   await IoT.addCasestudy(iotC10.id)
   await Healthcare.addCasestudy(iotC10.id)
-
+  
   const iotC11 = await CaseStudy.create({
     title: 'Automated optical inspections',
     subTitle:
@@ -2290,7 +2300,8 @@ async function insertRealData() {
   })
   await IoT.addCasestudy(iotC11.id)
   await IndustrialManufacturing.addCasestudy(iotC11.id)
-
+  await SmartRetail.addCasestudy(iotC11.id)
+  
   const iotC12 = await CaseStudy.create({
     title: 'Automotive Tier-I Supplier',
     subTitle:
@@ -2313,6 +2324,7 @@ async function insertRealData() {
   })
   await IoT.addCasestudy(iotC12.id)
   await Automotive.addCasestudy(iotC12.id)
+  await SmartCities.addCasestudy(iotC12.id)
 
   //**END OF IOT CASE STUDIES */
 
@@ -2422,8 +2434,9 @@ async function insertRealData() {
       'https://media.gettyimages.com/photos/portrait-of-welldressed-mature-businessman-picture-id1141508234?k=6&m=1141508234&s=612x612&w=0&h=8N7A46EwXJh6WmHwPRzNpqzhpN-LOHhp3CuRi_Y6M30=',
   })
   IoT.addTeammember(iotP1)
-  iotC1.addTeammember(iotP1)
-  iotC7.addTeammember(iotP1)
+  iotC2.addTeammember(iotP1)
+  iotC6.addTeammember(iotP1)
+  iotC10.addTeammember(iotP1)
 
   const iotP2 = await TeamMember.create({
     occupation: 'Chief of Smart Cities department ',
@@ -2433,8 +2446,9 @@ async function insertRealData() {
       'https://media.gettyimages.com/photos/closeup-smiling-male-leader-wearing-eyeglasses-picture-id1179627340?k=6&m=1179627340&s=612x612&w=0&h=GTRsydUj5lqB7q3EFvgKHJJS9K2vjjnW_F1jYq7SddU=',
   })
   IoT.addTeammember(iotP2)
-  iotC2.addTeammember(iotP2)
-  iotC3.addTeammember(iotP2)
+  iotC8.addTeammember(iotP2)
+  iotC9.addTeammember(iotP2)
+  iotC12.addTeammember(iotP2)
 
   const iotP3 = await TeamMember.create({
     occupation: 'Expert in Smart Retail',
@@ -2444,9 +2458,9 @@ async function insertRealData() {
       'https://media.gettyimages.com/photos/mature-female-ceo-with-arms-crossed-picture-id1179627362?k=6&m=1179627362&s=612x612&w=0&h=9Z1lhb7r_tmmt7BafB-FLEQyRmt6iJF1vwy1IIYBp4I=',
   })
   IoT.addTeammember(iotP3)
+  iotC1.addTeammember(iotP3)
+  iotC2.addTeammember(iotP3)
   iotC3.addTeammember(iotP3)
-  iotC4.addTeammember(iotP3)
-  iotC5.addTeammember(iotP3)
 
   const iotP4 = await TeamMember.create({
     occupation: 'Automotion Expert',
@@ -2456,8 +2470,9 @@ async function insertRealData() {
       'https://media.gettyimages.com/photos/bearded-businessman-against-gray-background-picture-id1179627332?k=6&m=1179627332&s=612x612&w=0&h=0cOAOyXCNaBay4Q6aCD7xRuWLE32B4aSl0lz2V1MHnw=',
   })
   IoT.addTeammember(iotP4)
-  iotC6.addTeammember(iotP4)
-  iotC7.addTeammember(iotP1)
+  iotC4.addTeammember(iotP4)
+  iotC5.addTeammember(iotP4)
+  iotC12.addTeammember(iotP4)
 
   const iotP5 = await TeamMember.create({
     occupation: 'Industrial Manufacturing Partner',
@@ -2468,8 +2483,9 @@ async function insertRealData() {
   })
 
   IoT.addTeammember(iotP5)
-  iotC8.addTeammember(iotP5)
-  iotC12.addTeammember(iotP5)
+  iotC1.addTeammember(iotP5)
+  iotC5.addTeammember(iotP5)
+  iotC9.addTeammember(iotP5)
 
   const iotP6 = await TeamMember.create({
     occupation: 'Healtcare Analyst',
@@ -2479,7 +2495,8 @@ async function insertRealData() {
       'https://media.gettyimages.com/photos/portrait-of-young-businessman-wearing-blue-shirt-picture-id1065402062?k=6&m=1065402062&s=612x612&w=0&h=zgPNjcxl9l8m_XrH_otqPeD7uRi2BToO3ZiiWn9sCds=',
   })
   IoT.addTeammember(iotP6)
-  iotC9.addTeammember(iotP6)
+  iotC6.addTeammember(iotP6)
+  iotC7.addTeammember(iotP6)
   iotC10.addTeammember(iotP6)
 
   const iotP7 = await TeamMember.create({
@@ -2490,7 +2507,9 @@ async function insertRealData() {
       'https://media.gettyimages.com/photos/welcome-to-my-pub-picture-id488000179?k=6&m=488000179&s=612x612&w=0&h=SD7YLy2SypRZQsaAdGuRQdIp_0mFNoveM0SIOiybNPc=',
   })
   IoT.addTeammember(iotP7)
-  iotC10.addTeammember(iotP7)
+  iotC3.addTeammember(iotP7)
+  iotC8.addTeammember(iotP7)
+  iotC11.addTeammember(iotP7)
 
   const iotP8 = await TeamMember.create({
     occupation: 'Electrical engineer',
@@ -2500,8 +2519,10 @@ async function insertRealData() {
       'https://media.gettyimages.com/photos/young-african-american-female-entrepreneur-with-arms-crossed-picture-id1277527368?k=6&m=1277527368&s=612x612&w=0&h=yPjmntSrk1YJuEYJPnAO26pdBgwg1DnqI6nReyHU7FQ=',
   })
   IoT.addTeammember(iotP8)
+  iotC4.addTeammember(iotP8)
+  iotC7.addTeammember(iotP8)
   iotC11.addTeammember(iotP8)
-
+  
   /** END OF IOT TEAM MEMBER */
 
   /** CLOUD COMPUTING TEAM MEMBER */
@@ -2535,7 +2556,8 @@ async function insertRealData() {
   CloudComputing.addTeammember(ccP3)
   ccC3.addTeammember(ccP3)
   ccC4.addTeammember(ccP3)
-
+  ccC2.addTeammember(ccP3)
+  
   const ccP4 = await TeamMember.create({
     occupation: 'Expert in LVB',
     teamsTitle: 'Live Streaming Departement',
@@ -2568,6 +2590,7 @@ async function insertRealData() {
   CloudComputing.addTeammember(ccP6)
   ccC5.addTeammember(ccP6)
   ccC6.addTeammember(ccP6)
+  ccC1.addTeammember(ccP6)
 
   /** END OF CLOUD COMPUTING TEAM MEMBER */
 
