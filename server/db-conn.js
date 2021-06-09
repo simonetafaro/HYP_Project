@@ -513,15 +513,15 @@ async function insertRealData() {
     s3Logo: 'https://i.ibb.co/b77D3Fm/sol-3.png',
     partnerDescription:
       'Since user apps are an integral part of a smart city, we offer mobile consulting, UI/UX design, native (iOS, Android) and cross-platform (Cordova/PhoneGap, Xamarin, React Native) development, as well as mobile testing.',
-    p1Name: 'Flutter',
-    p1Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
-    p2Name: 'Salesforce',
-    p2Logo: 'https://i.ibb.co/vsSqSdP/Partner.png',
+    p1Name: 'Amazon Web Services',
+    p1Logo: 'https://i.ibb.co/gzDM3yG/amazon-200.png',
+    p2Name: 'Splunk',
+    p2Logo: 'https://i.ibb.co/ByRyq3Z/splunk.png',
     p3Name: 'Google Cloud',
     p3Logo: 'https://i.ibb.co/JqkrKTp/cloud-200.png',
     altBanner: 'Evocative image of Smart Cities service',
-    altP1: 'Evocative image of Flutter partner',
-    altP2: 'Evocative image of Salesforce partner',
+    altP1: 'Evocative image of Amazon Web Services partner',
+    altP2: 'Evocative image of Splunk partner',
     altP3: 'Evocative image of Google Cloud partner',
   })
   await IoT.addService(SmartCities.id)
@@ -587,14 +587,14 @@ async function insertRealData() {
     s3Description:
       'Modern customers must have smarter, ‘connected’ cars, and appreciate innovative marketing as much as they like innovations with their vehicles.',
     s3Logo: 'https://i.ibb.co/b77D3Fm/sol-3.png',
-    p1Name: 'Google Cloud',
-    p1Logo: 'https://i.ibb.co/JqkrKTp/cloud-200.png',
+    p1Name: 'Raspberry Pi',
+    p1Logo: 'https://i.ibb.co/9crJyC7/raspberry.png',
     p2Name: 'Arduino',
     p2Logo: 'https://i.ibb.co/KDcLxdy/arduino.png',
     p3Name: 'Amazon Web Services',
     p3Logo: 'https://i.ibb.co/gzDM3yG/amazon-200.png',
     altBanner: 'Evocative image of Automotive service',
-    altP1: 'Evocative image of Google Cloud partner',
+    altP1: 'Evocative image of Raspberry Pi partner',
     altP2: 'Evocative image of Arduino partner',
     altP3: 'Evocative image of Amazon Web Services partner',
   })
@@ -624,17 +624,16 @@ async function insertRealData() {
     s3Description:
       'In the retail industry, connectivity platforms may take multiple forms: from large marketplaces, such as Amazon and Alibaba, to online payment systems and device communication hubs.',
     s3Logo: 'https://i.ibb.co/b77D3Fm/sol-3.png',
-    p1Name: 'Amazon Web Services',
-    p1Logo: 'https://i.ibb.co/gzDM3yG/amazon-200.png',
+    p1Name: 'CocaCola',
+    p1Logo: 'https://i.ibb.co/pywcrhj/coca-cola-200.png',
     p2Name: 'Arduino',
     p2Logo: 'https://i.ibb.co/KDcLxdy/arduino.png',
-    p3Name: 'Arm Intel',
-    p3Logo:
-      'https://internetofbusiness.com/wp-content/uploads/2018/10/Intel-ARM-Licensing-Deal-640x400.png',
+    p3Name: 'Azure',
+    p3Logo: 'https://i.ibb.co/t80FNMr/azure.png',
     altBanner: 'Evocative image of Smart Retail service',
-    altP1: 'Evocative image of Amazon Web Services partner',
+    altP1: 'Evocative image of CocaCola partner',
     altP2: 'Evocative image of Arduino partner',
-    altP3: 'Evocative image of Arm Intel partner',
+    altP3: 'Evocative image of Azure partner',
   })
   await IoT.addService(SmartRetail.id)
 
@@ -666,12 +665,12 @@ async function insertRealData() {
     p1Logo: 'https://i.ibb.co/JqkrKTp/cloud-200.png',
     p2Name: 'Arduino',
     p2Logo: 'https://i.ibb.co/KDcLxdy/arduino.png',
-    p3Name: 'Amazon Web Services',
-    p3Logo: 'https://i.ibb.co/gzDM3yG/amazon-200.png',
+    p3Name: 'Splunk',
+    p3Logo: 'https://i.ibb.co/ByRyq3Z/splunk.png',
     altBanner: 'Evocative image of IoT Solutions for Healthcare service',
     altP1: 'Evocative image of Google Cloud partner',
     altP2: 'Evocative image of Arduino partner',
-    altP3: 'Evocative image of Amazon Web Services partner',
+    altP3: 'Evocative image of Splunk partner',
   })
   await IoT.addService(Healthcare.id)
 
@@ -701,13 +700,13 @@ async function insertRealData() {
     s3Logo: 'https://i.ibb.co/b77D3Fm/sol-3.png',
     p1Name: 'Google Cloud',
     p1Logo: 'https://i.ibb.co/JqkrKTp/cloud-200.png',
-    p2Name: 'Arduino',
-    p2Logo: 'https://i.ibb.co/KDcLxdy/arduino.png',
+    p2Name: 'Azure',
+    p2Logo: 'https://i.ibb.co/t80FNMr/azure.png',
     p3Name: 'Amazon Web Services',
     p3Logo: 'https://i.ibb.co/gzDM3yG/amazon-200.png',
     altBanner: 'Evocative image of Industrial Manufacturing service',
     altP1: 'Evocative image of Google Cloud partner',
-    altP2: 'Evocative image of Arduino partner',
+    altP2: 'Evocative image of Azure partner',
     altP3: 'Evocative image of Amazon Web Services partner',
   })
   await IoT.addService(IndustrialManufacturing.id)
@@ -2796,53 +2795,71 @@ async function insertRealData() {
   //** ------------------------------------------------------------ PARTNERS --------------------------------------------------------------- */
 
   //**INSERT PARTNERS */
-  const CocaCola = await Partner.create({
+  await Partner.create({
     name: 'CocaCola',
     description: 'Taste the feeling',
     image: 'https://i.ibb.co/pywcrhj/coca-cola-200.png',
     website: 'https://www.coca-cola.com/',
   })
-  const Figma = await Partner.create({
+  await Partner.create({
     name: 'Figma',
     description: 'The collaborative interface design tool',
     image: 'https://i.ibb.co/3W81YKV/figma-200.png',
     website: 'https://www.figma.com/',
   })
-  const Adobe = await Partner.create({
+  await Partner.create({
     name: 'Adobe',
     description: 'Creativity for everyone',
     image: 'https://i.ibb.co/VQSW0Zx/adobe-200.png',
     website: 'https://www.adobe.com/',
   })
-  const Sketch = await Partner.create({
+  await Partner.create({
     name: 'Sketch',
     description: 'It all starts here',
     image: 'https://i.ibb.co/YR24qHc/sketch-200.png',
     website: 'https://www.sketch.com/',
   })
-  const Arduino = await Partner.create({
+  await Partner.create({
     name: 'Arduino',
     description: 'So easy, my granny can use it',
     image: 'https://i.ibb.co/KDcLxdy/arduino.png',
     website: 'https://www.arduino.cc/',
   })
-  const GoogleCloud = await Partner.create({
+  await Partner.create({
     name: 'Google Cloud',
     description: 'Cloud Computing Services',
     image: 'https://i.ibb.co/JqkrKTp/cloud-200.png',
     website: 'https://cloud.google.com/',
   })
-  const Node = await Partner.create({
+  await Partner.create({
     name: 'Node.js',
     description: 'JavaScript everywhere',
     image: 'https://i.ibb.co/VvpxKnR/nodejs-200.png',
     website: 'https://nodejs.org/',
   })
-  const Aws = await Partner.create({
+  await Partner.create({
     name: 'Amazon Web Services',
     description: 'Work Hard. Have Fun.',
     image: 'https://i.ibb.co/gzDM3yG/amazon-200.png',
     website: 'https://aws.amazon.com/',
+  })
+  await Partner.create({
+    name: 'Raspberry Pi',
+    description: 'Pc in your hand',
+    image: 'https://i.ibb.co/9crJyC7/raspberry.png',
+    website: 'https://www.raspberrypi.org/',
+  })
+  await Partner.create({
+    name: 'Azure',
+    description: 'Invent with purpose',
+    image: 'https://i.ibb.co/t80FNMr/azure.png',
+    website: 'https://azure.microsoft.com/en-us/',
+  })
+  await Partner.create({
+    name: 'Splunk',
+    description: 'Turn Data into Doing',
+    image: 'https://i.ibb.co/ByRyq3Z/splunk.png',
+    website: 'https://www.splunk.com/',
   })
 }
 
