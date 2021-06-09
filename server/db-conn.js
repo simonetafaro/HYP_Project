@@ -1414,7 +1414,7 @@ async function insertRealData() {
 
   //**SECURITY CASE STUDIES */
   const OnlineFraudDetection = await CaseStudy.create({
-    title: 'Next generation online fraud detection for banks',
+    title: 'Online fraud detection for banks',
     subTitle: 'A new generation bank',
     banner:
       'https://img.etimg.com/thumb/msid-77849867,width-640,resizemode-4,imgsize-584328/know-from-the-experts.jpg',
@@ -1436,7 +1436,7 @@ async function insertRealData() {
   await ModernFraudProtection.addCasestudy(OnlineFraudDetection.id)
 
   const cs1 = await CaseStudy.create({
-    title: 'Network protection for worldwide companies',
+    title: 'Network protection for companies',
     subTitle: 'A secure connection',
     banner:
       'https://previews.123rf.com/images/arthead/arthead1907/arthead190700026/128279197-data-security-system-information-or-network-protection-cyber-security-and-data-protection-shield-ico.jpg',
@@ -1457,7 +1457,7 @@ async function insertRealData() {
   await NetworkProtection.addCasestudy(cs1.id)
 
   const cs2 = await CaseStudy.create({
-    title: 'Company access with secure credentials',
+    title: 'Secure company access',
     subTitle: 'Access guaranteed only to the ones you trust',
     banner:
       'https://www.ecmag.com/sites/default/files/Security-shutterstock_794406721.jpg',
@@ -1479,7 +1479,7 @@ async function insertRealData() {
   await IdentityAccessManagement.addCasestudy(cs2.id)
 
   const cs3 = await CaseStudy.create({
-    title: 'Factoring data migration from Raiffeisen to BNP',
+    title: 'Factoring data migration',
     subTitle: 'Avoid data losses',
     banner:
       'https://www.octivdigital.com/wp-content/uploads/2019/08/migrate-wordpress-blog-new-host.png',

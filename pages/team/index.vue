@@ -1085,6 +1085,16 @@ h4 {
     list-style: none;
   }
 
+  .active-filter {
+    color: #4d41c9 !important;
+    border-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .filter:hover:not(.active-filter) {
+    border-bottom: 0;
+  }
+
   .filter-bar:first-child {
     border-top: solid 1px rgb(209, 207, 207);
   }
@@ -1118,7 +1128,9 @@ h4 {
     min-width: 160px;
     padding: 12px 16px;
     display: none;
+    text-transform: initial;
     margin-right: 0;
+    color: #63639f;
   }
 }
 
