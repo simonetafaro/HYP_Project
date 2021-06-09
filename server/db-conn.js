@@ -743,7 +743,7 @@ async function insertRealData() {
       'https://s3-ap-southeast-1.amazonaws.com/p2swebsite/images/smeKhabar/news/IndiaCanCreateoverOne-TrillionDollarsWorthofDigitalEconomyby2025SaysMEITMcKinseyReport_1550744301446_48.jpg',
     p2Name: 'Optimize',
     p2Logo:
-      'https://lh3.googleusercontent.com/proxy/OtxMsmSjRgs_qllMxOpqrUYDYYF8sMgPU1oJBJp-0MxK8DA8ZEdaoZeAfeMdyi7A9Fpog4l1P8vqL1FP2PdDeUjVkA',
+      'https://www.optimize360.fr/wp-content/uploads/2018/06/OPTIMIZE-360-HD-JPEG-2000x2000-1-1110x630.jpg',
     p3Name: 'Eclincher',
     p3Logo:
       'https://media-exp1.licdn.com/dms/image/C4E0BAQE_8uje7Spe1g/company-logo_200_200/0/1578120960890?e=2159024400&v=beta&t=0pLs4HfyleatwiUUZHOGsVSLhyOEVMuQ4qgEdUeEtWs',
@@ -862,7 +862,7 @@ async function insertRealData() {
       'https://mms.businesswire.com/media/20210415005484/it/809563/23/Reply_-_LOGO_300dpi.jpg',
     p2Name: 'Siemens',
     p2Logo:
-      'https://pbs.twimg.com/profile_images/1311596912706023429/aFWLoMhS.png',
+      'https://campoelettrico.it/809192-large_default/relecontattore-corrattfatpot-x-io-link-siemens-3ug4841-1ca40.jpg',
     p3Name: 'LuTech',
     p3Logo:
       'https://abieventi-statics-external.s3-eu-west-1.amazonaws.com/url_59edc98ae011a96693a21dec.jpg',
@@ -900,7 +900,7 @@ async function insertRealData() {
     p1Name: 'Microsoft',
     p1Logo:
       'https://www.staynerd.com/wp-content/uploads/Microsoft-Logo-2012.jpg',
-    p2Name: 'Intelligence partner',
+    p2Name: 'Intelligence ',
     p2Logo:
       'https://www.intelligencepartner.com/wp-content/themes/intelligencepartner/img/intelligencepartner_logo.svg',
     p3Name: 'SB Italia',
@@ -941,10 +941,11 @@ async function insertRealData() {
     p1Logo:
       'https://media-exp1.licdn.com/dms/image/C4E0BAQHNWjH2RvlaTA/company-logo_200_200/0/1596201887751?e=2159024400&v=beta&t=DgJhJ5fpwQgFhYZB0TMe1tU-mEwyGOxIav8W2gdixSk',
     p2Name: 'Accenture',
-    p2Logo: 'https://www.wecanjob.it/moduli/output_immagine.php?id=5288',
+    p2Logo:
+      'https://a.mktgcdn.com/p/10wXkuT6srqcGrdIKPpIu2Z4tmTPmW426btNA_fi7a8/2000x2000.png',
     p3Name: 'Price Fx',
     p3Logo:
-      'https://www.pricefx.com/wp-content/uploads/2020/04/Pricefx_logo_2019_White.png',
+      'https://mms.businesswire.com/media/20201207005048/it/795165/23/Pricefx_logo_2019_Black.jpg',
     altBanner: 'Evocative image of Pricing optimization service',
     altP1: 'Evocative image of Simon Kucker partner',
     altP2: 'Evocative image of Accenture partner',
@@ -1050,13 +1051,13 @@ async function insertRealData() {
     partnerDescription:
       'On all the case studies we worked on we had gained experience from our partners. Although some of them are very big companies, we had an equal exchange of expertise since we have really professional experts wprking on many industries.',
     p1Name: 'Tencent',
-    p1Logo:
-      'https://www.thegamesmachine.it/wp-content/uploads/2020/05/tencent-logo-min.jpg',
+    p1Logo: 'https://www.esportsmag.it/wp-content/uploads/2020/03/Tencent.jpg',
     p2Name: 'Twich',
-    p2Logo: 'https://www.oiesports.it/wp-content/uploads/2020/05/twitch.png',
+    p2Logo:
+      'https://www.internetmatters.org/wp-content/uploads/2021/04/twitch_large.png',
     p3Name: 'Netflix',
     p3Logo:
-      'https://www.mediagol.it/wp-content/uploads/sites/27/2020/07/maxresdefault.jpg',
+      'https://store-images.s-microsoft.com/image/apps.46851.9007199266246365.1f6d0339-ecce-4fe5-840a-652cd84111ad.ddef6be7-6304-41c0-a347-1d571b66dfb2',
     altBanner: 'Evocative image of Live Video Broadcasting service',
     altP1: 'Evocative image of Tencent partner',
     altP2: 'Evocative image of Twich partner',
@@ -1074,7 +1075,8 @@ async function insertRealData() {
     serviceDescription:
       'We put in practise all the experience we gained during all the life of this company in order to give our clients a very good customer experience. Moreover, all our experts are very professional on the service we provide to clients.',
     s1Name: 'Fast shipping',
-    s1Description: 'Our delivery service is very well organized.',
+    s1Description:
+      'Our delivery service is very efficent and guarantees a 24h delivery.',
     s1Logo: 'https://i.ibb.co/Rczq8Pv/sol-1.png',
     s2Name: 'New buying experience',
     s2Description:
@@ -1087,8 +1089,7 @@ async function insertRealData() {
     partnerDescription:
       'On all the case studies we worked on we had gained experience from our partners. Although some of them are very big companies, we had an equal exchange of expertise since we have really professional experts wprking on many industries.',
     p1Name: 'Tencent',
-    p1Logo:
-      'https://www.thegamesmachine.it/wp-content/uploads/2020/05/tencent-logo-min.jpg',
+    p1Logo: 'https://www.esportsmag.it/wp-content/uploads/2020/03/Tencent.jpg',
     p2Name: 'TaoBao',
     p2Logo:
       'https://img.alicdn.com/tfs/TB1giluwEY1gK0jSZFMXXaWcVXa-1280-1280.png',
@@ -1734,7 +1735,7 @@ async function insertRealData() {
   await HybridCloud.addCasestudy(ccC2.id)
 
   const ccC3 = await CaseStudy.create({
-    title: 'Live Event Broadcasting Platform',
+    title: 'Live Event Platform',
     subTitle:
       'Present Communications provides audio-visuals, video conferencing equipments, webcasting, video productions, and other technical services to the live event industry.',
     banner:
@@ -1757,7 +1758,7 @@ async function insertRealData() {
   await LiveECommerce.addCasestudy(ccC3.id)
 
   const ccC4 = await CaseStudy.create({
-    title: 'Sintony between E-Commerce and Live-Streaming',
+    title: ' Live Streaming E-Commerce',
     subTitle:
       'Maybelline New York faces the same challenge as many other brands: building an authentic connection with young women that drives sales. ',
     banner:
@@ -2072,7 +2073,6 @@ async function insertRealData() {
   await IoT.addCasestudy(iotC1.id)
   await SmartRetail.addCasestudy(iotC1.id)
   await IndustrialManufacturing.addCasestudy(iotC1.id)
-  
 
   const iotC2 = await CaseStudy.create({
     title: '7-Eleven - Reliable IT system',
@@ -2209,7 +2209,7 @@ async function insertRealData() {
   })
   await IoT.addCasestudy(iotC7.id)
   await Healthcare.addCasestudy(iotC7.id)
-  
+
   const iotC8 = await CaseStudy.create({
     title: 'Innovation to the streets of Jamshedpur',
     subTitle:
@@ -2278,7 +2278,7 @@ async function insertRealData() {
   })
   await IoT.addCasestudy(iotC10.id)
   await Healthcare.addCasestudy(iotC10.id)
-  
+
   const iotC11 = await CaseStudy.create({
     title: 'Automated optical inspections',
     subTitle:
@@ -2301,7 +2301,7 @@ async function insertRealData() {
   await IoT.addCasestudy(iotC11.id)
   await IndustrialManufacturing.addCasestudy(iotC11.id)
   await SmartRetail.addCasestudy(iotC11.id)
-  
+
   const iotC12 = await CaseStudy.create({
     title: 'Automotive Tier-I Supplier',
     subTitle:
@@ -2522,7 +2522,7 @@ async function insertRealData() {
   iotC4.addTeammember(iotP8)
   iotC7.addTeammember(iotP8)
   iotC11.addTeammember(iotP8)
-  
+
   /** END OF IOT TEAM MEMBER */
 
   /** CLOUD COMPUTING TEAM MEMBER */
@@ -2557,7 +2557,7 @@ async function insertRealData() {
   ccC3.addTeammember(ccP3)
   ccC4.addTeammember(ccP3)
   ccC2.addTeammember(ccP3)
-  
+
   const ccP4 = await TeamMember.create({
     occupation: 'Expert in LVB',
     teamsTitle: 'Live Streaming Departement',
