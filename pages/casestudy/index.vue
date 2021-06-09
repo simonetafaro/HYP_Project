@@ -1399,6 +1399,12 @@ export default {
     text-align: center;
     padding-bottom: 20px;
   }
+
+  .container {
+    max-width: 100%;
+    margin: 0;
+  }
+
   .svg-lateral {
     display: none;
   }
