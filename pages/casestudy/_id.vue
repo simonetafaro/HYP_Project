@@ -64,7 +64,7 @@
                 <div class="other-cases-container">Other Case Studies</div>
                 <div class="relatedCases-grid">
                   <div
-                    v-for="(casestudy, caseStudyIndex) in relCases.slice(0, 5)"
+                    v-for="(casestudy, caseStudyIndex) in relCases.slice(0, 4)"
                     :key="'casestudy-' + caseStudyIndex"
                     class="case-component"
                     @click="goTo(`/casestudy/${casestudy.id}`)"
@@ -911,10 +911,16 @@ p {
     font-size: 20px;
     line-height: 24px;
     text-align: left;
+    margin-bottom: 14px;
   }
   .title-case {
     font-size: 36px;
     line-height: 43px;
+  }
+  .sub-title {
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 0px;
   }
   .description {
     font-size: 18px;
@@ -1008,6 +1014,7 @@ p {
   .title-challenge {
     font-size: 28px;
     line-height: 29px;
+    text-align: center;
   }
   .other-cases-container {
     text-align: center;
@@ -1058,6 +1065,12 @@ p {
   .title-case {
     font-size: 24px;
     line-height: 29px;
+    margin-bottom: 14px;
+  }
+  .sub-title {
+    font-size: 10px;
+    line-height: 12px;
+    margin-bottom: 21px;
   }
   .description {
     font-size: 12px;
