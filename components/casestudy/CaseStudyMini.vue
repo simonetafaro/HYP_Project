@@ -14,7 +14,9 @@
       <div class="casestudycontent">
         <p class="referenceArea">{{ area }}</p>
         <div class="case-info">
-          <h2 class="casestudytitle">{{ title }}</h2>
+          <h2 class="casestudytitle" v-on:click="goTo('/casestudy/' + path)">
+            {{ title }}
+          </h2>
           <p class="casestudydescription">{{ description }}</p>
         </div>
 
@@ -81,6 +83,7 @@ export default {
   line-height: 26px;
   color: var(--cc-base1);
   padding-bottom: 11px;
+  cursor: pointer;
 }
 
 .referenceArea {
