@@ -628,7 +628,7 @@
       <div class="first-paragraph">
         <h1 class="pre_title">Our mission</h1>
         <double-color-title
-          textp1="our goal:"
+          textp1="our goal"
           textp2="create your success"
         ></double-color-title>
         <div class="descriptions">
