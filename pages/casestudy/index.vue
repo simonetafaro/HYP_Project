@@ -1235,7 +1235,6 @@ export default {
           areaArrow[0].style.transform = 'rotate(-90deg)'
           this.areaMenuHidden = true
         }
-        console.log(this.areaMenuHidden)
       }
     },
   },

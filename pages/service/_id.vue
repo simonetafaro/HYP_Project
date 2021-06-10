@@ -607,7 +607,6 @@ export default {
             cardMarginRight,
             maxX,
           }
-          console.log(_this.carousel)
         }
       )
     },
