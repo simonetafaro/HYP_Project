@@ -392,7 +392,6 @@
     </div>
 
     <div class="inner-container">
-      <div class="section-title">{{ service.title }}</div>
       <double-color-title
         :textp1="'ALLIANCES'"
         :textp2="'AND PARTNERS'"
@@ -608,7 +607,6 @@ export default {
             cardMarginRight,
             maxX,
           }
-          console.log(_this.carousel)
         }
       )
     },

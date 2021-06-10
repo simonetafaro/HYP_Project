@@ -1392,6 +1392,7 @@
         <div class="column-text">
           <a
             href="http://maps.google.com/?q=1200 Pennsylvania Ave SE, Washington, District of Columbia, 20003"
+            target="_blank"
             >231 Gotham Square - 89<br />
             GM Metropolis city</a
           >
