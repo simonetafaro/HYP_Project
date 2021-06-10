@@ -1795,7 +1795,7 @@ async function insertRealData() {
     solutionDescription:
       'ProDeploy Plus is a comprehensive service providing seamless deployment of new technology. You get a single point of contact for project management including up-front planning, configuration, data migration and knowledge transfer. You will even  be able to use system management software3 such as Microsoft Endpoint Manager or MDT to control configuration of new systems. ',
     createdData: 'August 21, 2018',
-    partnerWebsite: 'www.ibm.com',
+    partnerWebsite: 'https://www.ibm.com',
     altBanner: 'There is a pc with some clouds on the screen',
   })
   await CloudComputing.addCasestudy(ccC5.id)
