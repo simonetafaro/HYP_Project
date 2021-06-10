@@ -1427,7 +1427,7 @@ async function insertRealData() {
     solutionDescription:
       'Our application-transparent approach does not require instrumenting or even touching applications. HexTech passive and dynamic delivery of controls allows security to be decoupled from application development & deployment, and is a critical functionality that can be independently delivered and managed by the security team.',
     createdData: 'April 2, 2021',
-    partnerWebsite: '',
+    partnerWebsite: 'https://www.bancamediolanum.it/',
     altBanner:
       'There is a table of the judge in the tribunal with a white paper with written Bank fraud',
   })
@@ -1436,19 +1436,20 @@ async function insertRealData() {
   await ModernFraudProtection.addCasestudy(OnlineFraudDetection.id)
 
   const cs1 = await CaseStudy.create({
-    title: 'Network protection for companies',
-    subTitle: 'A secure connection',
+    title: 'Cyber Security for industries',
+    subTitle: 'A secure production',
     banner:
       'https://previews.123rf.com/images/arthead/arthead1907/arthead190700026/128279197-data-security-system-information-or-network-protection-cyber-security-and-data-protection-shield-ico.jpg',
     descriptiveText:
-      "The Customer asked HexTech to protect it's network against undesired connection or network attacks",
-    challengeTitle: 'Smart and transparent network protection',
-    challengeDescription: 'A zero time loss solution',
+      'We helped our client, which operates in the renewable energy production sector, to address the remedial actions identified by an internal audit.',
+    challengeTitle: 'Smart and transparent industry protection',
+    challengeDescription:
+      'We defined an "ICS Security Programme" to identify measures to improve the security level in the industrial environment, starting by analysing both organisational and technological components through site visits to wind and photovoltaic plants. We needed to define security processes, policies and procedures specific to the industrial world, in order to ensure both the continuity of services provided and the sustainability of adopting a best-in-class security management model in line with sector standards. The Programme included designing and implementing a complex centralised infrastructure to monitor and manage cyber security for the entire industrial area (from plant components distributed throughout the country to control and monitoring components in the Data Centre and Control Rooms).',
     solutionTitle: 'Implented system',
     solutionDescription:
-      'To develop a syestem as transparent as possible our team implemented a network protection layer that features AI capabilities to detect undesired connections',
+      "We also planned a cyber risk training campaign, where basic cyber security doctrines and security policies were shared with all the organisation's personnel, to illustrate and share roles, responsibilities and management processes for IT incidents. Finally, we conducted workshops and gaming activities with all of our client's personnel to raise awareness of threats and emerging vulnerabilities in the ICS context.",
     createdData: 'March 22, 2021',
-    partnerWebsite: '',
+    partnerWebsite: 'https://www.coca-cola.com/',
     altBanner:
       'There is a shield from with lines enter from an insecure spot and exit in a secure one',
   })
@@ -1462,15 +1463,15 @@ async function insertRealData() {
     banner:
       'https://www.ecmag.com/sites/default/files/Security-shutterstock_794406721.jpg',
     descriptiveText:
-      'The Customer commissioned HexTech to develop a system to ensure that certain sections of the company could be accessed only to qualified people.',
-    challengeTitle: 'important data have to be secured',
+      'The customer is a leading U.S based supply chain and logistics company that facilitates the storage and sale of goods from third-party vendors.',
+    challengeTitle: 'Important data have to be secured',
     challengeDescription:
-      'The Customer commissioned HexTech implement a system that guarantees access only to the allowed personnel',
+      'The supply chain and logistics company needed the ability to ingest, analyze, and report on large volumes of new and updated data from various sources. They needed the ability to quickly process complex data in a timely and efficient manner. Because supply chains are technologically and logistically complicated, it was getting hard for the firm to oversee the process. Their primary issue was to develop a solution that allowed them to capture and organize extensive data in such a way that it could be analyzed and developed into consolidated reports. Are you unsure what BI service would best suit your business? Feel free to get in touch with us and our BI experts will guide you through.',
     solutionTitle: 'Implented system',
     solutionDescription:
-      '"To ensure scalability and short query response time, HexTech’s BI implementation team built an analytical Microsoft SQL Server data warehouse which would use a Transact-SQL script to load data from the relational database. The latter was consolidated from 200 databases during the application development process and totaled 12GB."',
+      'At HexTech, we don’t just talk the talk, but walk the walk and understand the complexities of modern-day business processes. Given the firm’s rapid customer growth, we built a scalable and cost-effective BI reporting system without incurring additional licensing or hardware. To ensure scalability and short query response time, our BI implementation team built a robust solution to suit the client’s unique requirements. We planned, developed, documented, and deployed new ETL processes, data marts, and dashboards to ease data access for the end-users. We used SAP reporting tools to standardize, automate, and consolidate their data and merged them with their existing CRM to enable them to do structured reporting based on various parameters. Our BI experts performed a complete audit of the supply chain company’s existing reports and consumer data to thoroughly understand their requirements. Added to that, we helped them move to a BI system that restricted free and complete access to data and provided a relevant training course to their employees.',
     createdData: 'January 24, 2021',
-    partnerWebsite: '',
+    partnerWebsite: 'https://www.reply.com/',
     altBanner:
       'Two hands handling a watch and a smartphone that are communuicating using NFC tag',
   })
@@ -1493,7 +1494,7 @@ async function insertRealData() {
     solutionDescription:
       'We have identified various discrepancies and workarounds in the ex Raiffeisen’s platform, which had to be taken into account to avoid shaking up BNP’s operations and preventing customer churn. For this purpose, we came up with a mechanism which detected potentially erroneous data. ',
     createdData: 'January 2, 2021',
-    partnerWebsite: '',
+    partnerWebsite: 'https://aws.amazon.com/it/',
     altBanner:
       'There are two computers linked with a line whitch represents their exchange of data',
   })
@@ -1515,8 +1516,8 @@ async function insertRealData() {
     solutionDescription:
       'The project was started in November 2014. Thanks to the strong cooperation and flexibility of HexTech project team, the implementation went as Livelo expected and finished according to schedule. Project was finished within nine months. HexTech ensured integration with existing client systems including: campaign management system (HexTech UNIQA), e-commerce (ORACLE ATG), third-party Mobile App, SAP Finance, Livelo Taxa Online, Fast Shop S.A. The HexTech team also migrated over 16 million customer accounts. HexTech provided on-site support and maintenance services, dedicated program manager and on-site trainings.',
     createdData: 'December 2, 2020',
-    partnerWebsite: '',
-    altBanner: '',
+    partnerWebsite: 'https://www.livelo.com.br/',
+    altBanner: 'there is the logo of the livelo company',
   })
   await Security.addCasestudy(cs4.id)
   await IdentityAccessManagement.addCasestudy(cs4.id)
@@ -1535,10 +1536,10 @@ async function insertRealData() {
       'Eurobits migrated to VMware vSphere on HexTech Cloud in two data centers. The company uses HexTech API Connect® to industrialize API management, and HexTech Cloud Kubernetes Service to containerize applications.',
     solutionTitle: 'Implented system',
     solutionDescription:
-      'Running on the HexTech Cloud gives Eurobits the performance, availability, scalability, flexibility and security it needs to stay ahead of competitors in the fast growing and increasingly international market for open banking services. VMware vSphere on HexTech Cloud bare metal servers gives Eurobits dedicated computing power to speed through transactions without the potential security risks inherent in a multi-tenant landscape. What’s more, the company can rapidly extend its core systems onto new bare metal servers, enabling it to meet emerging client demand “One of our major clients is about to run a big marketing campaign that will multiply their user numbers by a factor of 10 or 20 within the space of a month or two,” says Arturo Gonzalez. “VMware vSphere on HexTech Cloud gives us the extreme flexibility we need for this kind of scenario. Running on the HexTech Cloud also supports our ongoing international expansion, enabling us to scale seamlessly in size and geography.” Highly secure and compliant Where local regulations require personal and financial data to remain in-country, HexTech’s global network of cloud data centers will make it easier for Eurobits to comply by simply firing up local instances of the required services. Both VMware virtualization and Kubernetes containerization are ideally suited to support the rapid redeployment of existing functionality in new locations. Architecting applications as microservices and deploying them on HexTech Cloud Kubernetes Service also improves horizontal scalability and overall application uptime. Finally, there is a security benefit in the isolation of services. In summary, Eurobits clients are mostly banks and FinTechs that require compliant, security-rich, high-performance solutions with proven recovery capabilities to support business continuity. By meeting these requirements, HexTech Cloud enables Eurobits and its clients to comply with stringent regulations in multiple geographies. In particular, the use of bare metal servers keeps data and transactions physically isolated from other environments on the cloud, giving confidence to Eurobits’ risk-averse clients. Always open for business The use of VMware High Availability technology within the production cloud center helps keep vital account information and payment services available at all times. And with a full DR solution on the HexTech Cloud, Eurobits can rapidly and reliably restore services in the event of an unexpected outage, and at lower cost of ownership than in its previous hosted landscape. “If a service goes down, it is now much easier to automatically bring it back up,” says Arturo Gonzalez. “In practice, this means less downtime and faster recovery, and we expect these metrics to improve once we complete our migration to a reactive architecture with Kubernetes – the biggest benefits are yet to come.” He concludes: “The fact that Eurobits works with HexTech gives our clients in the financial services industry a high level of comfort and trust. We needed to accomplish this migration in order to succeed in a market that is growing extremely fast, and that places heavy regulatory challenges and restrictions on us. With the backing of the HexTech Cloud, we face these challenges with confidence.”',
+      'Running on the HexTech Cloud gives Eurobits the performance, availability, scalability, flexibility and security it needs to stay ahead of competitors in the fast growing and increasingly international market for open banking services. VMware vSphere on HexTech Cloud bare metal servers gives Eurobits dedicated computing power to speed through transactions without the potential security risks inherent in a multi-tenant landscape. What’s more, the company can rapidly extend its core systems onto new bare metal servers, enabling it to meet emerging client demand “One of our major clients is about to run a big marketing campaign that will multiply their user numbers by a factor of 10 or 20 within the space of a month or two,” says Arturo Gonzalez. “VMware vSphere on HexTech Cloud gives us the extreme flexibility we need for this kind of scenario. Running on the HexTech Cloud also supports our ongoing international expansion, enabling us to scale seamlessly in size and geography.” Highly secure and compliant Where local regulations require personal and financial data to remain in-country, HexTech’s global network of cloud data centers will make it easier for Eurobits to comply by simply firing up local instances of the required services. Both VMware virtualization and Kubernetes containerization are ideally suited to support the rapid redeployment of existing functionality in new locations. Architecting applications as microservices and deploying them on HexTech Cloud Kubernetes Service also improves horizontal scalability and overall application uptime. Finally, there is a security benefit in the isolation of services. In summary, Eurobits clients are mostly banks and FinTechs that require compliant, security-rich, high-performance solutions with proven recovery capabilities to support business continuity.”',
     createdData: 'December 2, 2020',
     partnerWebsite: 'https://tink.com/',
-    altBanner: '',
+    altBanner: 'there is the logo of the eurobits company',
   })
   await Security.addCasestudy(cs5.id)
   await IdentityAccessManagement.addCasestudy(cs5.id)
