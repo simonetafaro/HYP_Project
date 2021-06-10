@@ -587,7 +587,7 @@
             <div class="location-city">Milano</div>
             <div class="location-office-num">FIRST OFFICE</div>
             <div class="contact-method-text">
-              <a href="https://goo.gl/maps/ZNVvMCPcd7dSE1WF7"
+              <a href="https://goo.gl/maps/ZNVvMCPcd7dSE1WF7" target="_blank"
                 >Via Camillo Golgi, 20 -<br />20133 Milano IT</a
               >
             </div>
@@ -618,6 +618,7 @@
             <div class="contact-method-text">
               <a
                 href="http://maps.google.com/?q=1200 Pennsylvania Ave SE, Washington, District of Columbia, 20003"
+                target="_blank"
                 >231 Gotham Square -<br />89 GM Metropolis city</a
               >
             </div>
@@ -646,7 +647,7 @@
             <div class="location-city">London</div>
             <div class="location-office-num">THIRD OFFICE</div>
             <div class="contact-method-text">
-              <a href="https://goo.gl/maps/CacosxM7FVzTmwoy9"
+              <a href="https://goo.gl/maps/CacosxM7FVzTmwoy9" target="_blank"
                 >42-49 St Martin's Ln -<br />London WC2N 4EJ, UK</a
               >
             </div>
