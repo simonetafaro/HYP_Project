@@ -137,10 +137,10 @@ export default {
     max-height: 80%;
   }
   .case-left {
-    margin-right: 0;
+    margin-right: 12px;
   }
   .case-right {
-    margin-left: 0;
+    margin-left: 12px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -170,6 +170,12 @@ export default {
   }
   .case-info {
     max-height: 88%;
+  }
+  .case-left {
+    margin-right: 0px;
+  }
+  .case-right {
+    margin-left: 0px;
   }
 }
 </style>
