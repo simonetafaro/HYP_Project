@@ -1098,7 +1098,6 @@
               selectedArea
             }}</span>
             <svg
-              @click="DropdownArea()"
               class="area-dropdown-arrow"
               width="12"
               height="8"
@@ -1499,10 +1498,17 @@ export default {
   }
 
   .filter {
+    color: var(--cc-base1);
     min-width: 160px;
     padding: 12px 16px;
     display: none;
     margin-right: 0;
+  }
+
+  .active-filter {
+    color: #4d41c9;
+    border-bottom: 0;
+    padding-bottom: 0;
   }
 }
 @media screen and (max-width: 768px) {
