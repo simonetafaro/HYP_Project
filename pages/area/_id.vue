@@ -81,6 +81,7 @@
               :image="casestudy.banner"
               :path="casestudy.id"
               :area="area.title"
+              :caseIndex="casestudyIndex + 1"
             ></case-study-mini>
           </div>
         </section>

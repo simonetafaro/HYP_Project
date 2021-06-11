@@ -921,7 +921,7 @@ h4 {
   display: grid;
   position: relative;
   width: 1110px;
-  grid-template-columns: repeat(3, calc(100% / 3));
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
   margin: auto;
   margin-top: 50px;
@@ -1063,12 +1063,14 @@ h4 {
 
   .member-grid {
     width: 580px;
-    grid-template-columns: repeat(2, calc(100% / 2));
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 25px;
     margin: auto;
     margin-top: 50px;
   }
-
+  .member-mini {
+    margin-bottom: 30px;
+  }
   .filter-bar {
     cursor: pointer;
     width: 100%;
@@ -1201,7 +1203,9 @@ h4 {
     margin: auto;
     margin-top: 50px;
   }
-
+  .member-mini {
+    margin-bottom: 20px;
+  }
   .filter-bar {
     cursor: pointer;
     max-width: 100%;

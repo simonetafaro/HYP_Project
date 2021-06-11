@@ -1,6 +1,6 @@
 <template>
   <div class="member-mini">
-    <div class="card">
+    <div :class="(index + 1) % 2 === 0 ? 'card-right card' : 'card-left card'">
       <div class="person-image-container">
         <svg
           class="personPhoto"
@@ -89,7 +89,6 @@ export default {
 
 @media screen and (max-width: 1200px) {
   .card {
-    height: 400px;
     width: 200px;
   }
   .occupation {
@@ -106,11 +105,17 @@ export default {
     height: 200px;
     width: auto;
   }
+
+  .card-left {
+    margin-right: 25px;
+  }
+  .card-right {
+    margin-left: 25px;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .card {
-    height: 200px;
     width: 100px;
   }
   .occupation {
@@ -126,6 +131,12 @@ export default {
   .personPhoto {
     height: 110px;
     width: auto;
+  }
+  .card-left {
+    margin-right: 10px;
+  }
+  .card-right {
+    margin-left: 10px;
   }
 }
 </style>

@@ -751,7 +751,7 @@ header {
 }
 .service-grid {
   display: grid;
-  grid-template-columns: repeat(3, calc(100% / 3));
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
   margin-top: 40px;
 }

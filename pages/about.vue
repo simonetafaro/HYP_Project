@@ -1158,7 +1158,7 @@ export default {
   display: grid;
   position: relative;
   width: 1110px;
-  grid-template-columns: repeat(4, calc(100% / 4));
+  grid-template-columns: repeat(4, 1fr);
   margin: auto;
   margin-top: 50px;
 }
@@ -1187,7 +1187,7 @@ export default {
   position: relative;
   height: 350px;
   width: 1110px;
-  grid-template-columns: repeat(4, calc(100% / 4));
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 10px;
   margin: auto;
   margin-top: 50px;
@@ -1477,14 +1477,18 @@ p {
     display: grid;
     position: relative;
     width: 646px;
-    grid-template-columns: repeat(2, calc(100% / 2));
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
+  }
+
+  .member-mini {
+    margin-bottom: 30px;
   }
 
   .partner-grid {
     width: 100%;
     height: max-content;
-    grid-template-columns: repeat(3, calc(100% / 3));
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .partner-carousel {
@@ -1681,12 +1685,15 @@ p {
     display: grid;
     position: relative;
     width: 375px;
-    grid-template-columns: repeat(2, calc(100% / 2));
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
     -ms-overflow-style: none;
     scrollbar-width: none;
   }
 
+  .member-mini {
+    margin-bottom: 20px;
+  }
   .partner-carousel {
     overflow: scroll;
     padding: 15px 0;
