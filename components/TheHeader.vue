@@ -909,7 +909,7 @@ nav li {
   line-height: 19px;
   text-transform: uppercase;
   color: #3d3d3d;
-  margin-left: 45px;
+  margin-left: 42px;
   display: inline-flex;
 }
 a {
