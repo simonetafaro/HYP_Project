@@ -1469,10 +1469,6 @@ export default {
     padding: 0;
   }
 
-  .filter-bar:first-child {
-    border-top: 0.5px solid #cdc9ff;
-  }
-
   .area-dropdown-arrow {
     display: initial;
     margin-left: 10px;
@@ -1497,6 +1493,7 @@ export default {
     text-transform: uppercase;
     padding: 15px;
     border-bottom: 0.5px solid #cdc9ff;
+    border-top: 0.5px solid #cdc9ff;
     box-shadow: 0px 4px 10px rgba(66, 66, 114, 0.06);
   }
 
@@ -1545,42 +1542,9 @@ export default {
     width: 100%;
   }
 
-  .filter-bar {
-    cursor: pointer;
-    max-width: 100%;
-    min-height: 49px;
-    margin-top: 50px;
-    padding: 15px;
-    background: #fbfbff;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 50px;
-    z-index: 1;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    list-style: none;
-  }
-
   .area-dropdown-arrow {
     display: initial;
     transform: rotate(-90deg);
-  }
-
-  .filter-title {
-    display: initial;
-    min-width: 160px;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 17px;
-    text-transform: uppercase;
-    margin: 15px;
-  }
-
-  .filter {
-    min-width: 160px;
-    padding: 12px 16px;
-    display: none;
-    margin-right: 0;
   }
 }
 </style>
