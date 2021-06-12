@@ -1098,10 +1098,6 @@ h4 {
     border-bottom: 0;
   }
 
-  .filter-bar:first-child {
-    border-top: 0.5px solid #cdc9ff;
-  }
-
   .area-dropdown-arrow {
     display: initial;
     margin-left: 10px;
@@ -1126,6 +1122,7 @@ h4 {
     text-transform: uppercase;
     padding: 15px;
     border-bottom: 0.5px solid #cdc9ff;
+    border-top: 0.5px solid #cdc9ff;
     box-shadow: 0px 4px 10px rgba(66, 66, 114, 0.06);
   }
 
