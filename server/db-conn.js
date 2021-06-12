@@ -310,7 +310,7 @@ async function insertRealData() {
     subTitle:
       "Explore the latest managed security services for today's hybrid cloud world",
     description:
-      'Providing superior monitored and managed security services to your expanding network perimeter 24x7',
+      'HexTech now delivers threat hunting, detection and response as a managed service designed for MSPs. This helps Managed Service Providers lacking in-house security experts to offer the highest level of protection for sensitive customers and stop advanced persistent threats (APTs). HexTech Managed Detection and Response for MSPs pairs award-winning detection and prevention engines with a modern 24x7 security operation staffed by world class expertise to hunt, identify and eradicate adversaries. Managed Detection and Response for Managed Service Providers will have two engagement options – Expert Advice and Expert Response. With the Expert Advice option the HexTech MDR team provides monitoring and recommends actions needed to stop or mitigate attacks. With the Expert Response option, the HexTech MDR team will also affect real-time changes in the customer’s environment when security incidents are identified, based on a set of pre-approved actions agreed on with the MSP.',
     banner:
       'https://dnewpydm90vfx.cloudfront.net/wp-content/uploads/2018/11/Cyber-security-e-managed-services.jpg',
     serviceDescription:
@@ -346,7 +346,7 @@ async function insertRealData() {
     title: 'Network Protection',
     subTitle: 'Keep online fraudsters at bay.',
     description:
-      'Cyber Network Protection is a powerful monitoring solution designed to guard firms and institutions against online frauds. The solution tracks both user and device activity to calculate a unique scoring for authentication, authorization, and more.',
+      'Network security is a critical element for any security program. Often, the management of network security devices is left to general networking specialists who don’t have the security specialisation required to maintain the right security posture. Organisations that rely on their networks to keep the business running need assurance that the network is configured securely. HexTech can help, by blocking malicious attacks on your network through combining multiple layers of defenses at the perimeter, and within the network, to stop them from entering or spreading through your network. Our Network Protection Service provides ongoing monitoring, maintenance and tuning to improve the security, configuration and visibility of networking infrastructure deployed throughout your IT environment.',
     banner:
       'https://www.cellusys.com/wp-content/uploads/2019/12/roaming-steering-of-roaming-logo-blue.svg',
     serviceDescription:
@@ -380,7 +380,7 @@ async function insertRealData() {
     subTitle:
       'Comprehensive data protection for the most critical enterprise data',
     description:
-      'Workload migration to hybrid cloud environments increases the attack surface, which can result in a host of new data security and compliance challenges.',
+      'Data security and privacy risks are constantly increasing within the business fabric of many organizations. We can help your organization protect critical business data from undesired access and mishandling, and secure data from deletion, ransomware and theft. Our data security services will help you standardize and automate security within your processes by assessing proper data authorization, authentication, encryption methods, password management, backup and recovery process review and by optimizing internal training programs.',
     banner:
       'https://bestarion.com/wp-content/uploads/2020/08/what-is-data-security-pillar-top-illustration-featured.png',
     serviceDescription:
@@ -454,7 +454,7 @@ async function insertRealData() {
     subTitle:
       'Making your organization the best it can be starts with a plan; security is no different. ',
     description:
-      'HexTech uses our proven assessment and planning tools to clearly identify your security risks and plan for the appropriate short and long term actions designed to keep your organization secure.',
+      'While many consultants view security strictly from the electronic system perspective, our security planning philosophy is grounded in our experience designing comprehensive security programs for clients across a multitude of industries. In our approach, we balance the three basic elements of security: architecture, operations and electronic systems. Under this philosophy we use proven industry best practices to design a security program based on three recognized security principles: Crime Prevention through Environmental Design (CPTED), Concentric Circles of Protection and Integrated Design Philosophy.',
     banner: 'http://jwhightech.com/asset/images/assesment.jpg',
     serviceDescription:
       'Risk is a compilation of threats and vulnerabilities as they relate to specific assets. Sentinel’s unique risk assessment methodology uses information collected in the field and through our data partners to identify threats, vulnerabilities and security concerns, so that appropriate and cost effective mitigation efforts can be designed and deployed.',
@@ -1478,6 +1478,7 @@ async function insertRealData() {
   await Security.addCasestudy(cs2.id)
   await NetworkProtection.addCasestudy(cs2.id)
   await IdentityAccessManagement.addCasestudy(cs2.id)
+  await SecurityAssessmentAndPlanning.addCasestudy(cs2.id)
 
   const cs3 = await CaseStudy.create({
     title: 'Factoring data migration',
@@ -1544,6 +1545,7 @@ async function insertRealData() {
   await Security.addCasestudy(cs5.id)
   await IdentityAccessManagement.addCasestudy(cs5.id)
   await ManagedSecurity.addCasestudy(cs5.id)
+  await SecurityAssessmentAndPlanning.addCasestudy(cs5.id)
 
   //**END OF SECURITY CASE STUDIES */
 
