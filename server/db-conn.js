@@ -1828,7 +1828,7 @@ async function insertRealData() {
   //**CUSTOMER EXPERIENCE CASE STUDIES - isi*/
   //1
   const ceC1 = await CaseStudy.create({
-    title: 'Reimagining guest experiences on the high seas',
+    title: 'Reimagining guest experiences',
     subTitle:
       'Carnival Corporation connects high-touch technology and the human touch to create hyper-relevant experiences for thousands of guests at a time.',
     banner:
@@ -1854,7 +1854,7 @@ async function insertRealData() {
 
   //2
   const ceC2 = await CaseStudy.create({
-    title: 'Finding the perfect blend for the digital customer experience',
+    title: 'Digital customer experience',
     subTitle:
       'illycaffè, the premium Italian coffee brand, offers a unique taste and aroma that’s recognized by coffee lovers around the world, the company sells its products and services to consumers and trade customers in 140 different countries.',
     banner:
@@ -1879,7 +1879,7 @@ async function insertRealData() {
 
   //3
   const ceC3 = await CaseStudy.create({
-    title: 'A data-driven recipe for delighting customers',
+    title: 'Recipe for delighting customers',
     subTitle:
       'Reinventing experiences: Subway CDO on personalization. Delivering meaningful insights that are helping them delight customers every day.',
     banner:
@@ -1905,7 +1905,7 @@ async function insertRealData() {
 
   //4
   const ceC4 = await CaseStudy.create({
-    title: 'Bouquet of innovation, personalization and service',
+    title: 'Bouquet of innovation',
     subTitle:
       'A digital platform with exceptional, personalized customer experience so business continues to bloom.',
     banner:
@@ -1931,7 +1931,7 @@ async function insertRealData() {
 
   //5
   const ceC5 = await CaseStudy.create({
-    title: 'Building the in-store experience that everyone desires',
+    title: 'Desired in-store experience',
     subTitle:
       'How to provide a custom and tailored experience each time a customer walks into their store.',
     banner:
@@ -1980,7 +1980,7 @@ async function insertRealData() {
 
   //7
   const ceC7 = await CaseStudy.create({
-    title: 'Bringing clothing to life directly in-store',
+    title: 'Bringing clothing to life',
     subTitle: 'How Zara is now leading the mid-market tech fashion pack.',
     banner: 'https://www.mind-mag.com/wp-content/uploads/2018/04/IMG2645.jpg',
     descriptiveText:
@@ -2213,7 +2213,7 @@ async function insertRealData() {
   await Healthcare.addCasestudy(iotC7.id)
 
   const iotC8 = await CaseStudy.create({
-    title: 'Innovation to the streets of Jamshedpur',
+    title: 'Jamshedpur streets innovation',
     subTitle:
       'Optimise infrastructure services in Jamshedpur. Specific areas that involved safety and additional manual effort due to scale, took priority',
     banner:
