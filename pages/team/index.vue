@@ -653,7 +653,7 @@
     </header>
     <div class="filter-bar" @click="DropdownArea()">
       <div class="filter-title">
-        Filter by Area
+        <span v-if="selectedArea == null"> Filter by Area </span>
         <span v-if="selectedArea" class="area-name">{{ selectedArea }}</span>
         <svg
           class="area-dropdown-arrow"
@@ -1091,7 +1091,6 @@ h4 {
   .active-filter {
     color: #4d41c9 !important;
     border-bottom: 0;
-    padding-bottom: 0;
   }
 
   .filter:hover:not(.active-filter) {
