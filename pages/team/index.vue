@@ -1085,6 +1085,7 @@ h4 {
     z-index: 1;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     list-style: none;
+    padding: 0;
   }
 
   .active-filter {
@@ -1098,7 +1099,7 @@ h4 {
   }
 
   .filter-bar:first-child {
-    border-top: solid 1px rgb(209, 207, 207);
+    border-top: 0.5px solid #cdc9ff;
   }
 
   .area-dropdown-arrow {
@@ -1116,7 +1117,7 @@ h4 {
   .filter-title {
     display: list-item;
     margin: auto;
-    width: fit-content;
+    width: 100%;
     font-style: normal;
     font-weight: 600;
     height: 49px;
@@ -1124,6 +1125,8 @@ h4 {
     line-height: 17px;
     text-transform: uppercase;
     padding: 15px;
+    border-bottom: 0.5px solid #cdc9ff;
+    box-shadow: 0px 4px 10px rgba(66, 66, 114, 0.06);
   }
 
   .filter {
