@@ -920,6 +920,7 @@ export default {
   width: 162px;
   height: 162px;
   background: #e8e6ff;
+  margin: auto;
   margin-bottom: 35px;
   display: flex;
   justify-content: center;
@@ -1183,14 +1184,15 @@ export default {
   .location-container {
     padding-top: 46px;
     max-width: 80%;
-    width: 100%;
+    width: max-content;
+    margin: auto;
     display: block;
   }
   .location-box:first-child,
   .location-box:last-child,
   .location-box {
     display: flex;
-    margin-left: auto;
+    margin-left: 0;
     margin-right: auto;
     margin-bottom: 17px;
   }
