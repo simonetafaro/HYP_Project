@@ -625,6 +625,9 @@
         </defs>
       </svg>
       <div class="header-inner-container">
+        <div class="go-to-area-title" @click="goTo('/area/' + person.areaID)">
+          {{ person.area.title }}
+        </div>
         <div class="photo-column">
           <img :src="person.personPhoto" :alt="person.occupation" />
         </div>
@@ -795,8 +798,27 @@ h3 {
   text-align: center;
   color: var(--c-grey1);
 }
+.go-to-area-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: var(--cc-base1);
+  width: max-content;
+  margin: auto;
+  margin-bottom: 40px;
+  border-bottom: 2px solid transparent;
+}
+.go-to-area-title:hover {
+  border-bottom: 2px solid var(--cc-base1);
+  cursor: pointer;
+}
 
 @media screen and (max-width: 1200px) {
+  header {
+    padding-top: 120px;
+  }
   .casestudies-grid {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 44px;
@@ -806,14 +828,27 @@ h3 {
     margin-right: 58px;
     margin-left: 58px;
   }
+
+  .go-to-area-title {
+    margin-right: auto;
+    margin-left: auto;
+    border-bottom: 2px solid var(--cc-base1);
+  }
 }
 @media screen and (max-width: 768px) {
+  header {
+    padding-top: 100px;
+  }
   .casestudies-grid {
     grid-gap: 13px;
     margin-top: 40px;
     max-width: 100%;
     margin-left: 35px;
     margin-right: 35px;
+  }
+  .go-to-area-title {
+    font-size: 12px;
+    line-height: 14px;
   }
 }
 </style>

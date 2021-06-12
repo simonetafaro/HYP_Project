@@ -142,6 +142,9 @@ async function init() {
     const { id } = req.params
     const person = await TeamMember.findOne({
       where: { id },
+      include: {
+        model: Area,
+      }
     })
     return res.json(person)
   })
