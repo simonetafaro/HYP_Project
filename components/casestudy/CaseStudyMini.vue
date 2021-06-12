@@ -162,6 +162,7 @@ export default {
   }
   .casestudycontent {
     padding: 13px;
+    border-radius: 0 0 27px 27px;
   }
   .casestudydescription {
     font-size: 12px;
