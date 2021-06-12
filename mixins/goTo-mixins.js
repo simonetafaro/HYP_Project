@@ -69,7 +69,6 @@ export default {
       let caseCardTitleMaxHeight = 0
       Array.from(document.getElementsByClassName('casestudytitle')).forEach(
         function (card) {
-          console.log(caseCardTitleMaxHeight)
           card.style.height = ''
           if (card.clientHeight > caseCardTitleMaxHeight)
             caseCardTitleMaxHeight = card.clientHeight
@@ -77,7 +76,6 @@ export default {
       )
       Array.from(document.getElementsByClassName('casestudycontent')).forEach(
         function (card) {
-          console.log(caseCardTitleMaxHeight)
           if (window.innerWidth < 768) {
             card.style.height = caseCardTitleMaxHeight + 20 + 'px'
           }
