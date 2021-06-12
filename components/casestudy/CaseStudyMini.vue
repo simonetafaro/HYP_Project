@@ -63,6 +63,7 @@ export default {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  overflow: hidden;
 }
 
 .casestudycontent {
@@ -72,7 +73,9 @@ export default {
   height: 75%;
   bottom: 0;
   width: 100%;
-  border-radius: 27px;
+  border-radius: 0 0 27px 27px;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 15px 0 #dedede;
   padding: 25px;
   opacity: 0.87;
 }
@@ -162,7 +165,6 @@ export default {
   }
   .casestudycontent {
     padding: 13px;
-    border-radius: 0 0 27px 27px;
   }
   .casestudydescription {
     font-size: 12px;
