@@ -898,7 +898,7 @@ export default {
   position: relative;
   margin: auto;
   margin-top: 133px;
-  height: 1015px;
+  height: 1085px;
   width: 1110px;
 }
 
@@ -994,7 +994,7 @@ export default {
   right: 0%;
   margin: auto;
   margin-top: 133px;
-  height: 1117px;
+  height: 927px;
   width: 1110px;
 }
 
@@ -1315,7 +1315,7 @@ p {
     position: relative;
     margin: auto;
     margin-top: 28px;
-    height: 1216px;
+    height: max-content;
     width: 550px;
   }
 
@@ -1342,14 +1342,14 @@ p {
   }
 
   .descriptions {
-    height: 439px;
+    height: max-content;
     width: 550px;
   }
 
   .description-1 {
     font-size: 18px;
     line-height: 22px;
-    height: 210px;
+    height: max-content;
     width: 550px;
     text-align: center;
   }
@@ -1362,17 +1362,20 @@ p {
     font-size: 18px;
     line-height: 22px;
     width: 550px;
+    height: max-content;
     position: initial;
     margin-top: 14px;
     text-align: center;
   }
 
   .omino {
+    margin-top: 40px;
+    position: initial;
     width: 100%;
   }
 
   .second-paragraph {
-    height: 517px;
+    height: max-content;
     width: 550px;
     margin-top: 36px;
   }
@@ -1413,7 +1416,7 @@ p {
     text-align: center;
     color: #464a52;
     width: 550px;
-    height: 123px;
+    height: max-content;
     mix-blend-mode: normal;
     opacity: 0.8;
   }
@@ -1428,7 +1431,7 @@ p {
     text-align: center;
     color: #464a52;
     width: 550px;
-    height: 123px;
+    height: max-content;
     mix-blend-mode: normal;
     opacity: 0.8;
   }
@@ -1466,6 +1469,7 @@ p {
     font-size: 18px;
     line-height: 22px;
     width: 550px;
+    height: max-content;
   }
 
   .flower {
@@ -1540,7 +1544,7 @@ p {
     position: relative;
     margin: auto;
     margin-top: 28px;
-    height: 816px;
+    height: max-content;
     width: 272px;
   }
 
@@ -1566,14 +1570,14 @@ p {
   }
 
   .descriptions {
-    height: 239px;
+    height: max-content;
     width: 272px;
   }
 
   .description-1 {
     font-size: 12px;
     line-height: 14px;
-    height: 210px;
+    height: max-content;
     width: 272px;
   }
 
@@ -1590,11 +1594,12 @@ p {
   }
 
   .omino {
+    position: initial;
     width: 100%;
   }
 
   .second-paragraph {
-    height: 517px;
+    height: max-content;
     width: 272px;
     margin-top: 36px;
   }
@@ -1631,7 +1636,7 @@ p {
     line-height: 14px;
     color: #464a52;
     width: 272px;
-    height: 123px;
+    height: max-content;
     mix-blend-mode: normal;
     opacity: 0.8;
   }
@@ -1645,7 +1650,7 @@ p {
     line-height: 14px;
     color: #464a52;
     width: 272px;
-    height: 123px;
+    height: max-content;
     mix-blend-mode: normal;
     opacity: 0.8;
   }
@@ -1655,7 +1660,7 @@ p {
   }
 
   .background-3 {
-    margin-top: 0px;
+    margin-top: 50px;
   }
 
   .title-3 {
