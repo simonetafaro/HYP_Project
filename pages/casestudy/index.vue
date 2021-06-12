@@ -1401,6 +1401,7 @@ export default {
   .container {
     max-width: 100%;
     margin: 0;
+    margin-bottom: 25px;
   }
 
   .svg-lateral {
