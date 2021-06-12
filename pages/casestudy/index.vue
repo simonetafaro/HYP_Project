@@ -1508,7 +1508,6 @@ export default {
   .active-filter {
     color: #4d41c9;
     border-bottom: 0;
-    padding-bottom: 0;
   }
 }
 @media screen and (max-width: 768px) {
