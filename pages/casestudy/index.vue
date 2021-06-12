@@ -1093,7 +1093,7 @@
       <div class="container">
         <div class="filter-bar" @click="DropdownArea()">
           <div class="filter-title">
-            Filter by Area
+            <span v-if="selectedArea == null"> Filter by Area </span>
             <span v-if="selectedArea" class="area-name">{{
               selectedArea
             }}</span>
