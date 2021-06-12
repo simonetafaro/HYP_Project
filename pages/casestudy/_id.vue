@@ -23,9 +23,7 @@
                   >
                 </div>
                 <space-divider class="space-divider" />
-                <h2 class="padding">
-                  <h2 class="intro-container">CHALLENGE</h2>
-                </h2>
+                <h2 class="padding intro-container">CHALLENGE</h2>
                 <h3 class="title-challenge">{{ casestudy.challengeTitle }}</h3>
 
                 <div class="padding">
@@ -37,9 +35,7 @@
                     </div>
                   </div>
                 </div>
-                <h2 class="padding">
-                  <h2 class="intro-container">SOLUTION</h2>
-                </h2>
+                <h2 class="padding intro-container">SOLUTION</h2>
                 <h3 class="title-challenge">{{ casestudy.solutionTitle }}</h3>
                 <div class="padding">
                   <p class="description">
