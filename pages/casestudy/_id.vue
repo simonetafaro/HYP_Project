@@ -46,13 +46,13 @@
                     {{ casestudy.solutionDescription }}
                   </p>
                 </div>
-                <div v-show="nextCaseStudy != null" class="button">
+                <div v-if="nextCaseStudy != null" class="button">
                   <discover-button
                     :buttonLabel="'NEXT CASE STUDY'"
                     :path="'/casestudy/' + (casestudy.id + 1)"
                   ></discover-button>
                 </div>
-                <div v-show="nextCaseStudy == null" class="button">
+                <div v-else>
                   <discover-button
                     :buttonLabel="'GO BACK TO FIRST CASE STUDY'"
                     :path="'/casestudy/1'"
@@ -562,7 +562,7 @@
 
       <div class="service-box">
         <section class="service-grid">
-          <div v-show="casestudy.services === 0">
+          <div v-if="casestudy.services === 0">
             There are no related Services
           </div>
           <div
@@ -580,13 +580,13 @@
           </div>
         </section>
       </div>
-      <div v-show="nextCaseStudy != null" class="button1">
+      <div v-if="nextCaseStudy != null" class="button1">
         <discover-button
           :buttonLabel="'NEXT CASE STUDY'"
           :path="'/casestudy/' + (casestudy.id + 1)"
         ></discover-button>
       </div>
-      <div v-show="nextCaseStudy == null" class="button1">
+      <div v-else>
         <discover-button
           :buttonLabel="'GO BACK TO FIRST CASE STUDY'"
           :path="'/casestudy/1'"
