@@ -1956,7 +1956,7 @@ async function insertRealData() {
 
   //6
   const ceC6 = await CaseStudy.create({
-    title: 'A magical experience deserves a magical app',
+    title: 'Magical Disney App',
     subTitle:
       'A personalized experience comes from valuing each customer and taking the time to make their visit amazing.',
     banner:
