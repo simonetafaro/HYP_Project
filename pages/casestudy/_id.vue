@@ -18,7 +18,10 @@
                 </p>
 
                 <div class="partner-container">
-                  <a class="partner" :href="casestudy.partnerWebsite"
+                  <a
+                    class="partner"
+                    :href="casestudy.partnerWebsite"
+                    target="_blank"
                     >PARTNER WEBSITE</a
                   >
                 </div>
