@@ -186,7 +186,7 @@ async function insertRealData() {
       'Wherever your business goes, whoever it works with, you need cybersecurity that covers it all.',
     description:
       'Anytime. Anywhere. We create cybersecurity tailored to your specific business needs. We defend against cyberattacks with proactive, focused,  industry-relevant threat intelligence to give you the confidence that  comes from knowing your business is secure.',
-    banner: 'https://i.ibb.co/X5FrLTP/Frame-6.png',
+    banner: 'https://i.ibb.co/6g9zGtV/ooo.png',
     evocativeImage: 'https://i.ibb.co/Ny7F40s/security.png',
     servicesDescription:
       'We are unique among IT security consulting firms. We combine security technology engineering, intelligence expertise and our data science DNA to help companies manage digital risk end-to-end.',
@@ -203,7 +203,7 @@ async function insertRealData() {
       'Acting as the bridge between the physical and the digital world, IoT offers a huge opportunity for companies.',
     description:
       'We help clients effectively capitalize on IoT technology and solutions, linking technology, vendors and customers through a holistic business model. IoT describes the connection of devices to the internet using embedded software and sensors to communicate, collect and exchange data with one another. IoT combines connectivity with sensors, devices and people, enabling a form of free-flowing conversation between man and machine, software and hardware. With IoT, the world is wide open, offering a virtually endless array of opportunities and connections at home, at work or at play.',
-    banner: 'https://i.ibb.co/Pwt4Z5J/Frame-5.png',
+    banner: 'https://i.ibb.co/3BmVQfL/oo.png',
     evocativeImage: 'https://i.ibb.co/zRPbmf1/iot.png',
     servicesDescription:
       'The growth of IoT is paving the path for new business avenues. The pertinent question for enterprises is no longer if their business benefits from IoT adoption - but rather what IoT functionalities can be best used to their advantage.',
@@ -219,7 +219,7 @@ async function insertRealData() {
     subTitle: 'Modernize your IT environment and improve business efficiency',
     description:
       'Having been a major driving force of the ongoing digital revolution, the Cloud has completely changed the way enterprises run their operations - from IT infrastructure management, through financial administration, to data exchange. At HexTech, we can move your existing IT environment to the Cloud, as well as provide a wide range of cloud-driven applications to help your company gain a competitive advantage. Scroll through this space to learn more.',
-    banner: 'https://i.ibb.co/crjyD7n/Frame-7.png',
+    banner: 'https://i.ibb.co/R9S0shq/Risorsa-1.png',
     evocativeImage: 'https://i.ibb.co/hf3LHBb/cloud.png',
     servicesDescription:
       "As a result of the on-going digital revolution, the Cloud and business environment have become inseparable. Providing a foundation strong enough to support millions of operations at the same time, cloud computing has played a major role in the development of today's information-driven enterprises. Join them to: - Accelerate your company's digital transformation - Reduce workload and operational costs - Improve the performance of your systems and applications",
@@ -237,7 +237,7 @@ async function insertRealData() {
       'Understanding what customer experience is and why it’s no longer enough. We are reinventing business through this.',
     description:
       'The way we interact with brands and companies has changed. We typically associate the customer experience with a traditional and interaction directly found inside a store with a specific aesthetic. he world has changed, and so has the business model: digitalisation had an huge impact on our existence, leading companies to shape a whole new entrepreneurial perspective. But it’s not just because of this. Many customer behaviour patterns have evolved and the company must be able to understand their needs and needs, possibly anticipating and surprising them.',
-    banner: 'https://i.ibb.co/XpSgKYj/ce-grande.png',
+    banner: 'https://i.ibb.co/vLsSsqv/o.png',
     evocativeImage: 'https://i.ibb.co/pxH7fJ1/customer-experience.png',
     servicesDescription:
       'Hear how businesses have transformed how they work: Great experiences are no longer only a business accessory, they are of vital importance.',
@@ -254,7 +254,7 @@ async function insertRealData() {
       'Analyze data from your database with a data driven approach to take important decisions inside your company.',
     description:
       'The science of analyzing raw data in order to make conclusions about that information, revealing reveal trends and metrics. Through our specialist your company will be more efficient in taking decisions. This process of analysis allows to operate a predictive analysis, that is, it allows to know in advance what will happen: this becomes possible because if we have a model and we have enough historical data we can determine what will happen in the near future with bases or statistical foundations.',
-    banner: 'https://i.ibb.co/F3W2W73/Frame-8.png',
+    banner: 'https://i.ibb.co/FHkVrkj/Risorsa-2.png',
     evocativeImage: 'https://i.ibb.co/KDhJdh0/data.png',
     servicesDescription:
       'AI is only as smart as the insights that fuel it. We can help you unlock powerful analytics insights by tapping into data you did not even know you had.',
