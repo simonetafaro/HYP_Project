@@ -2,8 +2,7 @@ export default {
   ssr: true,
   target: 'server',
   env: {
-    //BASE_URL: 'https://test-polimi.herokuapp.com', // Production URL
-    BASE_URL: '', // Development URL
+    BASE_URL: 'https://hyp4luppoli.herokuapp.com', // Production URL
     configurationId: '8dafe0a8-0b63-4092-a916-776dbea11c90'
   },
   serverMiddleware: [
