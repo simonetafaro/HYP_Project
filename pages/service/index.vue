@@ -499,7 +499,7 @@ export default {
 
   .service-l3 {
     font-size: 16px;
-    line-height: 14px;
+    line-height: 18px;
     max-width: 270px;
   }
   .button-wrapper-prev,

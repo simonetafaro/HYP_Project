@@ -1091,7 +1091,7 @@ export default {
     height: 250px;
   }
   .home-header-text {
-    font-size: 24px;
+    font-size: 48px;
   }
   .text1 {
     font-size: 20px;
@@ -1135,6 +1135,9 @@ export default {
   .background-image-header {
     bottom: -20px;
   }
+  .home-header-text {
+    font-size: 24px;
+  }
   .text1 {
     font-size: 12px;
     line-height: 14px;
@@ -1145,8 +1148,8 @@ export default {
     line-height: 29px;
   }
   .section-description {
-    font-size: 12px;
-    line-height: 14px;
+    font-size: 16px;
+    line-height: 18px;
     margin-top: 17px;
     margin-bottom: 39px;
   }

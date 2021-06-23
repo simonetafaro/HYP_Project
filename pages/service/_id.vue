@@ -1163,13 +1163,13 @@ export default {
     margin-bottom: 25px;
   }
   .service-subtitle {
-    font-size: 12px;
-    line-height: 14px;
+    font-size: 18px;
+    line-height: 20px;
     margin-bottom: 25px;
   }
   .service-description-text {
-    font-size: 12px;
-    line-height: 14px;
+    font-size: 16px;
+    line-height: 18px;
   }
   .header-background {
     display: none;
@@ -1192,8 +1192,8 @@ export default {
     margin-bottom: 10px;
   }
   .section-intro-text {
-    font-size: 12px;
-    line-height: 14px;
+    font-size: 16px;
+    line-height: 18px;
   }
   .solution:first-child {
     margin-bottom: 25px;
