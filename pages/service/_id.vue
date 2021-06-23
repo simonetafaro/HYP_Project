@@ -397,7 +397,7 @@
         :textp2="'AND PARTNERS'"
       ></double-color-title>
       <div class="section-intro-text">
-        Partner description{{ service.partnerDescription }}
+        {{ service.partnerDescription }}
       </div>
       <section class="partner-section">
         <div class="partner">
