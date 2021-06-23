@@ -1180,7 +1180,7 @@ h4 {
     text-align: center;
     height: auto;
     width: 272px;
-    font-size: 12px;
+    font-size: 16px;
     line-height: 14px;
     margin: auto;
     margin-top: 17px;

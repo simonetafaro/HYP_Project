@@ -1575,7 +1575,7 @@ p {
   }
 
   .description-1 {
-    font-size: 12px;
+    font-size: 16px;
     line-height: 14px;
     height: max-content;
     width: 272px;
@@ -1586,7 +1586,7 @@ p {
   }
 
   .description-2 {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 14px;
     width: 272px;
     position: initial;
@@ -1632,7 +1632,7 @@ p {
     text-transform: none;
     font-style: normal;
     font-weight: normal;
-    font-size: 12px;
+    font-size: 16px;
     line-height: 14px;
     color: #464a52;
     width: 272px;
@@ -1646,7 +1646,7 @@ p {
     text-transform: none;
     font-style: normal;
     font-weight: normal;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 14px;
     color: #464a52;
     width: 272px;
