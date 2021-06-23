@@ -32,7 +32,6 @@ export default {
 
 <style>
 html {
-  /**font-family: 'Roboto', sans-serif;*/
   font-family: 'Barlow', sans-serif;
   box-sizing: border-box;
   scroll-behavior: smooth;

@@ -37,7 +37,7 @@ export default {
       { rel: 'preconnect', href: 'https://fonts.gstatic.com' },
       {
         href:
-          'https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap',
+          'https://fonts.googleapis.com/css2?family=Barlow:wght@500;700&display=swap',
         rel: 'stylesheet',
       },
     ],
