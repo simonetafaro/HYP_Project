@@ -498,7 +498,7 @@ export default {
   }
 
   .service-l3 {
-    font-size: 12px;
+    font-size: 16px;
     line-height: 14px;
     max-width: 270px;
   }

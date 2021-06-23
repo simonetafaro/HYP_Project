@@ -142,8 +142,8 @@ export default {
     margin-left: 25px;
   }
   .area-description-text {
-    font-size: 14px;
-    line-height: 17px;
+    font-size: 18px;
+    line-height: 20px;
     margin-bottom: 18px;
   }
 
@@ -173,6 +173,10 @@ export default {
     margin-bottom: 26px;
     max-width: 100%;
     text-align: center;
+  }
+  .area-description-text {
+    font-size: 16px;
+    line-height: 18px;
   }
 }
 </style>
