@@ -1067,13 +1067,13 @@ p {
     margin-bottom: 14px;
   }
   .sub-title {
-    font-size: 10px;
-    line-height: 12px;
+    font-size: 14px;
+    line-height: 14px;
     margin-bottom: 21px;
   }
   .description {
-    font-size: 12px;
-    line-height: 12px;
+    font-size: 16px;
+    line-height: 16px;
     color: #464a52;
     padding-bottom: 0px;
   }

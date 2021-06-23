@@ -1529,8 +1529,8 @@ export default {
     text-align: center;
   }
   .description {
-    font-size: 12px;
-    line-height: 14px;
+    font-size: 16px;
+    line-height: 16px;
     padding: 0px 8%;
   }
   .casestudies-grid {
