@@ -637,11 +637,13 @@
       </defs>
     </svg>
     <header class="upper-section">
-      <h1 class="pre_title">Who we are</h1>
-      <double-color-title
-        textp1="Meet our"
-        textp2="people"
-      ></double-color-title>
+      <div class="pre_title">Who we are</div>
+      <h1 class="title_case">
+        MEET OUR
+        <br />
+        <span class="title-section-purple">TEAM</span>
+      </h1>
+
       <h2 class="description">
         Ideate, innovate, change the world, repeat. Meet our team of talented
         people using design thinking to create experiences that win awards and
@@ -713,12 +715,10 @@
 // import axios from 'axios'
 import MemberMini from '~/components/team/MemberMini.vue'
 import GoToMixins from '~/mixins/goTo-mixins.js'
-import DoubleColorTitle from '~/components/utils/DoubleColorTitle.vue'
 
 export default {
   components: {
     MemberMini,
-    DoubleColorTitle,
   },
 
   mixins: [GoToMixins],
@@ -841,6 +841,20 @@ export default {
   margin: auto;
 }
 
+.title_case {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 84px;
+  text-transform: uppercase;
+  text-align: left;
+  color: var(--cc-base1);
+  margin: 0;
+}
+
+.title-section-purple {
+  color: var(--cc-violet);
+}
 h2 {
   margin-bottom: 30px;
 }
@@ -998,6 +1012,11 @@ h4 {
     margin-top: 0;
   }
 
+  .title_case {
+    font-size: 36px;
+    line-height: 43px;
+    text-align: center;
+  }
   .top-image {
     width: 100%;
     display: initial;
@@ -1149,6 +1168,11 @@ h4 {
     display: none;
   }
 
+  .title_case {
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+  }
   .upper-section {
     width: 100%;
     margin-top: 0px;
