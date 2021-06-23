@@ -412,12 +412,12 @@ export default {
     padding-bottom: 0;
   }
   .area-subtitle {
-    font-size: 12px;
-    line-height: 14px;
+    font-size: 18px;
+    line-height: 20px;
   }
   .area-description-text {
-    font-size: 12px;
-    line-height: 14px;
+    font-size: 16px;
+    line-height: 18px;
     column-gap: 20px;
     column-count: 1;
     column-gap: 0;
@@ -454,12 +454,12 @@ export default {
     display: block;
   }
   .section-title {
-    font-size: 12px;
-    line-height: 14px;
+    font-size: 24px;
+    line-height: 29px;
   }
   .section-intro-text {
-    font-size: 12px;
-    line-height: 14px;
+    font-size: 16px;
+    line-height: 18px;
   }
   .services-container {
     padding-bottom: 65px;

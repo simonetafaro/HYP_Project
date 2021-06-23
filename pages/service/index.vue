@@ -498,8 +498,8 @@ export default {
   }
 
   .service-l3 {
-    font-size: 12px;
-    line-height: 14px;
+    font-size: 16px;
+    line-height: 18px;
     max-width: 270px;
   }
   .button-wrapper-prev,
