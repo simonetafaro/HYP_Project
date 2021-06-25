@@ -1,5 +1,5 @@
 <template>
-  <footer class="footer" id="footer-element">
+  <footer id="footer-element" class="footer">
     <div class="footer-left-column">
       <span class="show-desktop">
         <svg

@@ -19,8 +19,8 @@
     <div
       v-for="(area, areaIndex) of areas"
       :key="'area-' + areaIndex"
-      class="row"
       :id="'service-box-' + area.id"
+      class="row"
       v-bind:class="isOddRow(areaIndex)"
     >
       <div class="carousel-wrapper">
@@ -31,12 +31,12 @@
           <svg
             :id="'carousel-arrow-prev-' + area.id"
             class="carousel-arrow disabled-arrow"
-            @click="scrollLeft(area.id)"
             width="48"
             height="49"
             viewBox="0 0 48 49"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
+            @click="scrollLeft(area.id)"
           >
             <path
               d="M26.332 45.666L4.99902 24.333L26.332 2.99999"
@@ -77,12 +77,12 @@
           <svg
             :id="'carousel-arrow-next-' + area.id"
             class="carousel-arrow"
-            @click="scrollRight(area.id)"
             width="48"
             height="49"
             viewBox="0 0 48 49"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
+            @click="scrollRight(area.id)"
           >
             <path
               d="M21.332 3L42.665 24.333L21.332 45.666"
@@ -101,14 +101,10 @@
 import ServiceMini from '~/components/service/ServiceMini.vue'
 import GeneralMixins from '~/mixins/general-mixins.js'
 export default {
-  data() {
-    return {
-      carouselList: [],
-    }
-  },
   components: {
     ServiceMini,
   },
+  mixins: [GeneralMixins],
   async asyncData({ $axios }) {
     const areasData = await $axios.get(`${process.env.BASE_URL}/api/areas`)
     const { data } = await $axios.get(`${process.env.BASE_URL}/api/services`)
@@ -119,7 +115,11 @@ export default {
       areas,
     }
   },
-  mixins: [GeneralMixins],
+  data() {
+    return {
+      carouselList: [],
+    }
+  },
   mounted() {
     if (this.$router.history.current.hash !== '') {
       setTimeout(() => {

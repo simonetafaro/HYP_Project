@@ -682,8 +682,8 @@
       </div>
       <div
         v-for="(area, areaIndex) of areas"
-        :key="'area-' + areaIndex"
         v-bind:id="area.id"
+        :key="'area-' + areaIndex"
         class="filter"
         @click="filterTeamMemberByArea($event, area.id)"
       >
@@ -700,8 +700,8 @@
           <member-mini
             :personName="person.personName"
             :occupation="person.occupation"
-            :image="person.personPhoto"
             :id="person.id"
+            :image="person.personPhoto"
             :index="personIndex"
           ></member-mini>
         </div>
@@ -712,7 +712,6 @@
 </template>
 
 <script>
-// import axios from 'axios'
 import MemberMini from '~/components/team/MemberMini.vue'
 import GeneralMixins from '~/mixins/general-mixins.js'
 
@@ -742,6 +741,14 @@ export default {
       carouselList: [],
       areaMenuHidden: true,
     }
+  },
+  mounted() {
+    this.resizeCaseCard()
+    window.addEventListener('resize', this.resizeCaseCard)
+  },
+  destroyed() {
+    window.removeEventListener('resize', this.resizeServiceCard)
+    window.removeEventListener('resize', this.resizeCaseCard)
   },
   methods: {
     async filterTeamMemberByArea(e, areaID) {
@@ -803,14 +810,6 @@ export default {
         }
       }
     },
-  },
-  mounted() {
-    this.resizeCaseCard()
-    window.addEventListener('resize', this.resizeCaseCard)
-  },
-  destroyed() {
-    window.removeEventListener('resize', this.resizeServiceCard)
-    window.removeEventListener('resize', this.resizeCaseCard)
   },
 }
 </script>

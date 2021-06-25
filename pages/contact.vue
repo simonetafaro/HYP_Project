@@ -686,11 +686,11 @@
           <input type="text" placeholder="Name" required aria-label="Name" />
           <input
             aria-label="Email"
-            @focusout="valiadateEmail()"
             v-model="emailValue"
             type="email"
             placeholder="Email"
             required
+            @focusout="valiadateEmail()"
           />
           <p v-if="validatedEmail">
             Please insert a valid e-mail: name@example.com
@@ -718,14 +718,14 @@
 <script>
 import SpaceDivider from '~/components/utils/SpaceDivider.vue'
 export default {
+  components: {
+    SpaceDivider,
+  },
   data() {
     return {
       validatedEmail: false,
       emailValue: '',
     }
-  },
-  components: {
-    SpaceDivider,
   },
   head() {
     return {

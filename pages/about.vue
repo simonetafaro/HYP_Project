@@ -706,8 +706,8 @@
                 :personName="person.personName"
                 :summary="person.workField"
                 :image="person.personPhoto"
-                :index="personIndex"
                 :id="person.id"
+                :index="personIndex"
               ></member-mini>
             </div>
           </section>
@@ -725,12 +725,12 @@
     <div class="partner-grid">
       <svg
         class="carousel-arrow-left"
-        @click="scrollLeft()"
         width="48"
         height="49"
         viewBox="0 0 48 49"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
+        @click="scrollLeft()"
       >
         <path
           d="M26.332 45.666L4.99902 24.333L26.332 2.99999"
@@ -774,12 +774,12 @@
       </div>
       <svg
         class="carousel-arrow-right"
-        @click="scrollRight()"
         width="48"
         height="49"
         viewBox="0 0 48 49"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
+        @click="scrollRight()"
       >
         <path
           d="M21.332 3L42.665 24.333L21.332 45.666"

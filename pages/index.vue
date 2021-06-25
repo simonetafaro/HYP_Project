@@ -830,8 +830,8 @@
           <button
             v-for="(area, areaIndex) of areas"
             :key="'area-' + areaIndex"
-            class="go-to-area-button"
             :id="'button-area-' + area.id"
+            class="go-to-area-button"
             @click="moveTo(`area-box-` + area.id)"
           >
             {{ area.title }}
@@ -842,8 +842,8 @@
         <div
           v-for="(area, areaIndex) of areas"
           :key="'area-' + areaIndex"
-          class="single-area-section"
           :id="'area-box-' + area.id"
+          class="single-area-section"
         >
           <area-home-mini
             :summary="area.subTitle"
@@ -866,16 +866,11 @@ import AreaHomeMini from '~/components/area/AreaHomeMini.vue'
 import GeneralMixins from '~/mixins/general-mixins.js'
 import SpaceDivider from '~/components/utils/SpaceDivider.vue'
 export default {
-  data() {
-    return {
-      isPositionFixed: false,
-      areas: [],
-    }
-  },
   components: {
     AreaHomeMini,
     SpaceDivider,
   },
+  mixins: [GeneralMixins],
   async asyncData({ $axios }) {
     const { data } = await $axios.get(`${process.env.BASE_URL}/api/areas`)
     const areas = data
@@ -883,7 +878,12 @@ export default {
       areas,
     }
   },
-  mixins: [GeneralMixins],
+  data() {
+    return {
+      isPositionFixed: false,
+      areas: [],
+    }
+  },
   created() {
     this.$router.push('/home')
   },

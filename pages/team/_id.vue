@@ -659,14 +659,11 @@
   </section>
 </template>
 <script>
-import MemberMini from '~/components/team/MemberMini.vue'
 import GeneralMixins from '~/mixins/general-mixins.js'
 import CaseStudyMini from '~/components/casestudy/CaseStudyMini.vue'
 
 export default {
   components: {
-    // eslint-disable-next-line vue/no-unused-components
-    MemberMini,
     CaseStudyMini,
   },
 

@@ -188,27 +188,27 @@
       <ul id="menu-list">
         <li
           v-for="(item, itemIndex) of menuOptions"
-          :key="'menu-item-' + itemIndex"
           :id="item.name === 'Areas' ? 'area-menu-element' : ''"
+          :key="'menu-item-' + itemIndex"
           @mouseover="item.name === 'Areas' ? (areasList = true) : ''"
           @mouseleave="item.name === 'Areas' ? (areasList = false) : ''"
         >
           <nuxt-link
             v-if="item.name !== 'Areas'"
             :to="item.path"
-            @click.native="closeMobileMenu()"
             class="menu-item headerContent"
+            @click.native="closeMobileMenu()"
           >
             {{ item.name }}
           </nuxt-link>
           <div
-            @click="openAreaDropdownMobile()"
             v-if="item.name === 'Areas'"
             :class="
               isAreaPageOpened()
                 ? 'menu-item headerContent area-arrow-after title-purple'
                 : 'menu-item headerContent area-arrow-after'
             "
+            @click="openAreaDropdownMobile()"
           >
             {{ item.name }}
           </div>

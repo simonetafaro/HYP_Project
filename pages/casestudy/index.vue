@@ -1160,6 +1160,7 @@ export default {
   components: {
     CaseStudyMini,
   },
+  mixins: [GeneralMixins],
   async asyncData({ $axios }) {
     const { data } = await $axios.get(`${process.env.BASE_URL}/api/casestudies`)
     const casestudies = data
@@ -1178,7 +1179,13 @@ export default {
       areaMenuHidden: true,
     }
   },
-  mixins: [GeneralMixins],
+  mounted() {
+    this.resizeCaseCard()
+    window.addEventListener('resize', this.resizeCaseCard)
+  },
+  destroyed() {
+    window.removeEventListener('resize', this.resizeCaseCard)
+  },
   methods: {
     async filterCaseStudyByArea(e, areaID) {
       this.casestudies = await this.$axios.$get(
@@ -1236,13 +1243,6 @@ export default {
         }
       }
     },
-  },
-  mounted() {
-    this.resizeCaseCard()
-    window.addEventListener('resize', this.resizeCaseCard)
-  },
-  destroyed() {
-    window.removeEventListener('resize', this.resizeCaseCard)
   },
 }
 </script>
