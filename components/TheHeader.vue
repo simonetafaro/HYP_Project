@@ -1003,8 +1003,8 @@ div #icon {
 }
 @media screen and (max-width: 1200px) {
   .logo-style {
-    width: 27px;
-    height: 27px;
+    width: 45px;
+    height: 45px;
   }
   .title-header {
     font-size: 24px;
@@ -1106,8 +1106,8 @@ div #icon {
 
 @media screen and (max-width: 768px) {
   .logo-style {
-    width: 21px;
-    height: 21px;
+    width: 30px;
+    height: 30px;
   }
   .title-header {
     font-size: 18px;

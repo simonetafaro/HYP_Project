@@ -46,8 +46,8 @@ export default {
     padding-bottom: 27px;
   }
   .title {
-    font-size: 18px;
-    line-height: 22px;
+    font-size: 24px;
+    line-height: 28px;
   }
 }
 </style>

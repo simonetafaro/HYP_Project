@@ -128,7 +128,7 @@ export default {
     margin-left: 0px;
   }
   .service_title {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 14px;
   }
   .more_button {

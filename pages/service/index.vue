@@ -486,8 +486,8 @@ export default {
 
 @media screen and (max-width: 768px) {
   .service-l1 {
-    font-size: 12px;
-    line-height: 14px;
+    font-size: 14px;
+    line-height: 16px;
     margin-bottom: 17px;
   }
 
@@ -523,8 +523,8 @@ export default {
     min-width: 100%;
   }
   .service-section-title {
-    font-size: 14px;
-    line-height: 17px;
+    font-size: 18px;
+    line-height: 18px;
     margin: 16px auto 21px 20px;
   }
   .service {
