@@ -863,7 +863,7 @@
 
 <script>
 import AreaHomeMini from '~/components/area/AreaHomeMini.vue'
-import GoToMixins from '~/mixins/goTo-mixins.js'
+import GeneralMixins from '~/mixins/general-mixins.js'
 import SpaceDivider from '~/components/utils/SpaceDivider.vue'
 export default {
   data() {
@@ -883,7 +883,7 @@ export default {
       areas,
     }
   },
-  mixins: [GoToMixins],
+  mixins: [GeneralMixins],
   created() {
     this.$router.push('/home')
   },

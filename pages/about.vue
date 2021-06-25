@@ -793,7 +793,7 @@
 
 <script>
 import MemberMini from '~/components/team/MemberMini.vue'
-import GoToMixins from '~/mixins/goTo-mixins.js'
+import GeneralMixins from '~/mixins/general-mixins.js'
 import DoubleColorTitle from '~/components/utils/DoubleColorTitle.vue'
 import SpaceDivider from '~/components/utils/SpaceDivider.vue'
 import DiscoverButton from '~/components/utils/DiscoverButton.vue'
@@ -806,7 +806,7 @@ export default {
     DiscoverButton,
   },
 
-  mixins: [GoToMixins],
+  mixins: [GeneralMixins],
   async asyncData({ $axios }) {
     const { data } = await $axios.get(`${process.env.BASE_URL}/api/teammembers`)
     const people = data

@@ -24,7 +24,7 @@
 </template>
 
 <script>
-import GoToMixins from '~/mixins/goTo-mixins.js'
+import GeneralMixins from '~/mixins/general-mixins.js'
 
 export default {
   props: {
@@ -35,7 +35,7 @@ export default {
     altBanner: { type: String, default: () => '' },
     carouselCard: { type: Boolean, default: () => false },
   },
-  mixins: [GoToMixins],
+  mixins: [GeneralMixins],
   methods: {
     clickOnCardOnlyTabletAndMobile(path) {
       if (window.innerWidth < 1200) {

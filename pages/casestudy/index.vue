@@ -1155,7 +1155,7 @@
 
 <script>
 import CaseStudyMini from '~/components/casestudy/CaseStudyMini.vue'
-import GoToMixins from '~/mixins/goTo-mixins.js'
+import GeneralMixins from '~/mixins/general-mixins.js'
 export default {
   components: {
     CaseStudyMini,
@@ -1178,7 +1178,7 @@ export default {
       areaMenuHidden: true,
     }
   },
-  mixins: [GoToMixins],
+  mixins: [GeneralMixins],
   methods: {
     async filterCaseStudyByArea(e, areaID) {
       this.casestudies = await this.$axios.$get(

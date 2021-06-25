@@ -595,7 +595,7 @@
   </section>
 </template>
 <script>
-import GoToMixins from '~/mixins/goTo-mixins.js'
+import GeneralMixins from '~/mixins/general-mixins.js'
 import ServiceMini from '~/components/service/ServiceMini.vue'
 import MemberMini from '~/components/team/MemberMini.vue'
 import SpaceDivider from '~/components/utils/SpaceDivider.vue'
@@ -640,7 +640,7 @@ export default {
   destroyed() {
     window.removeEventListener('resize', this.resizeServiceCard)
   },
-  mixins: [GoToMixins],
+  mixins: [GeneralMixins],
 }
 </script>
 

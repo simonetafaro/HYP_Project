@@ -714,14 +714,14 @@
 <script>
 // import axios from 'axios'
 import MemberMini from '~/components/team/MemberMini.vue'
-import GoToMixins from '~/mixins/goTo-mixins.js'
+import GeneralMixins from '~/mixins/general-mixins.js'
 
 export default {
   components: {
     MemberMini,
   },
 
-  mixins: [GoToMixins],
+  mixins: [GeneralMixins],
   async asyncData({ $axios }) {
     const { data } = await $axios.get(`${process.env.BASE_URL}/api/teammembers`)
     const people = data

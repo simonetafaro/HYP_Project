@@ -99,7 +99,7 @@
 <script>
 // import axios from 'axios'
 import ServiceMini from '~/components/service/ServiceMini.vue'
-import GoToMixins from '~/mixins/goTo-mixins.js'
+import GeneralMixins from '~/mixins/general-mixins.js'
 export default {
   data() {
     return {
@@ -119,7 +119,7 @@ export default {
       areas,
     }
   },
-  mixins: [GoToMixins],
+  mixins: [GeneralMixins],
   mounted() {
     if (this.$router.history.current.hash !== '') {
       setTimeout(() => {

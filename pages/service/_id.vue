@@ -529,7 +529,7 @@
   </section>
 </template>
 <script>
-import GoToMixins from '~/mixins/goTo-mixins.js'
+import GeneralMixins from '~/mixins/general-mixins.js'
 import CaseStudyMini from '~/components/casestudy/CaseStudyMini.vue'
 import ServiceMini from '~/components/service/ServiceMini.vue'
 import SpaceDivider from '~/components/utils/SpaceDivider.vue'
@@ -561,7 +561,7 @@ export default {
     window.removeEventListener('resize', this.resizeCaseCard)
     window.removeEventListener('resize', this.resetCarouselOffset)
   },
-  mixins: [GoToMixins],
+  mixins: [GeneralMixins],
   async asyncData({ error, $axios, route }) {
     const { id } = route.params
     const { data } = await $axios.get(

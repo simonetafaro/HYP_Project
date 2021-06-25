@@ -41,7 +41,7 @@
 </template>
 
 <script>
-import GoToMixins from '~/mixins/goTo-mixins.js'
+import GeneralMixins from '~/mixins/general-mixins.js'
 export default {
   props: {
     personName: { type: String, default: () => '' },
@@ -50,7 +50,7 @@ export default {
     index: { type: Number, default: () => 0 },
     id: { type: Number, default: () => 0 },
   },
-  mixins: [GoToMixins],
+  mixins: [GeneralMixins],
 }
 </script>
 
