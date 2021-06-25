@@ -292,7 +292,7 @@ export default {
   font-size: 70px;
   line-height: 84px;
   text-align: center;
-  color: #3d3d3d;
+  color: var(--cc-grey3);
   margin-bottom: 70px;
 }
 .service-l2-light {

@@ -884,12 +884,12 @@ nav {
   font-size: 40px;
   line-height: 60px;
   display: inline-flex;
-  color: #3d3d3d;
+  color: var(--cc-grey3);
   align-items: center;
 }
 .title-purple,
 .nuxt-link-active {
-  color: #4d41c9 !important;
+  color: var(--cc-violet) !important;
 }
 nav ul {
   float: right;
@@ -908,12 +908,12 @@ nav li {
   font-size: 16px;
   line-height: 19px;
   text-transform: uppercase;
-  color: #3d3d3d;
+  color: var(--cc-grey3);
   margin-left: 39px;
   display: inline-flex;
 }
 a {
-  color: #3d3d3d !important;
+  color: var(--cc-grey3) !important;
   text-decoration: none;
 }
 div #icon {
@@ -990,7 +990,7 @@ div #icon {
 }
 
 .area-element-text:hover {
-  color: #4d41c9 !important;
+  color: var(--cc-violet) !important;
 }
 .hidden-dropdown-areas {
   display: none;
@@ -1066,7 +1066,7 @@ div #icon {
     font-size: 14px;
     line-height: 17px;
     text-transform: capitalize;
-    color: #4d41c9 !important;
+    color: var(--cc-violet) !important;
     margin-left: 30px;
   }
   .menu-area-item-mobile {

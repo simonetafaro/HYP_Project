@@ -881,7 +881,7 @@ h2 {
   height: 337px;
   width: 730px;
   margin-top: 22px;
-  color: #464a52;
+  color: var(--cc-grey1);
 }
 
 .team-counter {
@@ -890,7 +890,7 @@ h2 {
   font-weight: 600;
   font-size: 14px;
   text-align: center;
-  color: #464a52;
+  color: var(--cc-grey1);
 }
 h4 {
   font-style: normal;
@@ -913,7 +913,7 @@ h4 {
   line-height: 84px;
   text-transform: uppercase;
 
-  color: #424272;
+  color: var(--cc-base1);
 }
 
 .title-people {
@@ -928,7 +928,7 @@ h4 {
   position: relative;
   left: -38.5%;
 
-  color: #cdc9ff;
+  color: var(--cc-base3);
 }
 
 .member-grid {
@@ -963,7 +963,7 @@ h4 {
   line-height: 24px;
   text-transform: uppercase;
   list-style: none;
-  color: #4d41c9;
+  color: var(--cc-violet);
 }
 .filter:hover:not(.active-filter) {
   border-bottom: 2px solid #4d41c9;
@@ -1069,7 +1069,7 @@ h4 {
     margin: auto;
     margin-top: 17px;
 
-    color: #464a52;
+    color: var(--cc-grey1);
 
     mix-blend-mode: normal;
     opacity: 0.8;
@@ -1108,7 +1108,7 @@ h4 {
   }
 
   .active-filter {
-    color: #4d41c9 !important;
+    color: var(--cc-violet) !important;
     border-bottom: 0;
   }
 
@@ -1150,7 +1150,7 @@ h4 {
     display: none;
     text-transform: initial;
     margin-right: 0;
-    color: #63639f;
+    color: var(--cc-base2);
   }
 }
 
@@ -1209,7 +1209,7 @@ h4 {
     margin: auto;
     margin-top: 17px;
 
-    color: #464a52;
+    color: var(--cc-grey1);
 
     mix-blend-mode: normal;
     opacity: 0.8;

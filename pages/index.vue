@@ -957,7 +957,7 @@ export default {
   font-weight: 800;
   font-size: 96px;
   text-transform: uppercase;
-  color: #3d3d3d;
+  color: var(--cc-grey3);
   margin: auto;
   line-height: 100px;
   width: 100%;
@@ -972,7 +972,7 @@ export default {
   bottom: 0;
 }
 .title-purple {
-  color: #4d41c9;
+  color: var(--cc-violet);
 }
 
 .text1 {
@@ -1004,7 +1004,7 @@ export default {
   line-height: 84px;
   text-align: center;
   text-transform: uppercase;
-  color: #3d3d3d;
+  color: var(--cc-grey3);
 }
 .section-title-2 {
   color: var(--cc-violet);

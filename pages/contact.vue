@@ -781,7 +781,7 @@ export default {
   right: 0;
   left: 0;
   font-size: 55px;
-  color: #3d3d3d;
+  color: var(--cc-grey3);
   font-weight: 700;
 }
 .container {
@@ -810,7 +810,7 @@ export default {
   font-size: 20px;
   line-height: 24px;
   text-transform: uppercase;
-  color: #424272;
+  color: var(--cc-base1);
   margin-bottom: 20px;
 }
 
@@ -820,7 +820,7 @@ export default {
   font-size: 70px;
   line-height: 84px;
   text-transform: uppercase;
-  color: #424272;
+  color: var(--cc-base1);
   margin: auto;
   width: max-content;
 }
@@ -892,7 +892,7 @@ export default {
   font-size: 32px;
   line-height: 38px;
   text-align: center;
-  color: #424272;
+  color: var(--cc-base1);
   margin-bottom: 28px;
 }
 .contact-method-text {
@@ -901,10 +901,10 @@ export default {
   font-size: 18px;
   line-height: 24px;
   text-align: center;
-  color: #464a52;
+  color: var(--cc-grey1);
 }
 .contact-method-text > a {
-  color: #464a52;
+  color: var(--cc-grey1);
 }
 
 .location-section {
@@ -931,7 +931,7 @@ export default {
   font-weight: normal;
   font-size: 18px;
   line-height: 24px;
-  color: #464a52;
+  color: var(--cc-grey1);
   mix-blend-mode: normal;
   opacity: 0.8;
   margin-bottom: 11px;
@@ -942,7 +942,7 @@ export default {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
-  color: #424272;
+  color: var(--cc-base1);
   margin-bottom: 30px;
 }
 .location-info-wrapper > .contact-method-text {
@@ -992,7 +992,7 @@ export default {
   font-weight: normal;
   font-size: 16px;
   line-height: 19px;
-  color: #464a52;
+  color: var(--cc-grey1);
 }
 .contact-form input:last-child {
   margin-bottom: 0px;
@@ -1019,7 +1019,7 @@ export default {
   line-height: 19px;
   text-align: center;
   text-transform: uppercase;
-  color: #63639f;
+  color: var(--cc-base2);
   padding: 15px;
   width: 50%;
   min-width: max-content;

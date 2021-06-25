@@ -28,7 +28,7 @@ export default {
   line-height: 84px;
   text-align: center;
   text-transform: uppercase;
-  color: #3d3d3d;
+  color: var(--cc-grey3);
 }
 
 .title-color {
