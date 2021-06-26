@@ -1550,8 +1550,8 @@ p {
 
   .pre_title {
     text-align: center;
-    font-size: 12px;
-    line-height: 14px;
+    font-size: 20px;
+    line-height: 22px;
   }
 
   .title {
@@ -1586,7 +1586,7 @@ p {
   }
 
   .description-2 {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 18px;
     width: 272px;
     position: initial;
