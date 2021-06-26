@@ -1,31 +1,15 @@
 :root {
   /**GENERAL PALETTE**/
-  --cc-purple: #9a43e3;
-  --cc-blue: #58cfef;
   --cc-red: #ff4266;
-  --cc-yellow: #ffbd31;
-  --cc-orange: #ff6533;
 
   /**AREAS PALETTE**/
-  --cc-purple: #9a43e3;
-  --cc-blue: #58cfef;
-  --cc-red: #ff4266;
-  --cc-yellow: #ffbd31;
-  --cc-orange: #ff6533;
-
   --cc-base1: #424272;
   --cc-base2: #63639f;
   --cc-base3: #cdc9ff;
-  --cc-base4: #e6e3ff;
   --cc-base5: #f3f2ff;
   --cc-base6: #fbfbff;
   --cc-violet: #4d41c9;
   /**GREY TEXT**/
   --cc-grey1: #464a52;
-  --cc-grey2: #909297;
   --cc-grey3: #3d3d3d;
-
-  /**TEXT SIZE*/
-
-  /**FONT FAMILY*/
 }

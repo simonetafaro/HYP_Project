@@ -26,9 +26,9 @@
 </template>
 
 <script>
-import GoToMixins from '~/mixins/goTo-mixins.js'
+import GeneralMixins from '~/mixins/general-mixins.js'
 export default {
-  mixins: [GoToMixins],
+  mixins: [GeneralMixins],
   props: {
     buttonLabel: { type: String, default: () => '' },
     path: { type: String, default: () => '' },

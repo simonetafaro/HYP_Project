@@ -233,7 +233,7 @@ export default {
   font-size: 18px;
   line-height: 18px;
   letter-spacing: 0.75px;
-  color: #424272;
+  color: var(--cc-base1);
 }
 .bot-online {
   font-style: normal;
@@ -299,7 +299,7 @@ export default {
   font-weight: normal;
   font-size: 14px;
   line-height: 20px;
-  color: #424272;
+  color: var(--cc-base1);
   max-width: calc(100% - 64px);
   overflow-wrap: anywhere;
 }

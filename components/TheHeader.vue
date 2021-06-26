@@ -188,27 +188,27 @@
       <ul id="menu-list">
         <li
           v-for="(item, itemIndex) of menuOptions"
-          :key="'menu-item-' + itemIndex"
           :id="item.name === 'Areas' ? 'area-menu-element' : ''"
+          :key="'menu-item-' + itemIndex"
           @mouseover="item.name === 'Areas' ? (areasList = true) : ''"
           @mouseleave="item.name === 'Areas' ? (areasList = false) : ''"
         >
           <nuxt-link
             v-if="item.name !== 'Areas'"
             :to="item.path"
-            @click.native="closeMobileMenu()"
             class="menu-item headerContent"
+            @click.native="closeMobileMenu()"
           >
             {{ item.name }}
           </nuxt-link>
           <div
-            @click="openAreaDropdownMobile()"
             v-if="item.name === 'Areas'"
             :class="
               isAreaPageOpened()
                 ? 'menu-item headerContent area-arrow-after title-purple'
                 : 'menu-item headerContent area-arrow-after'
             "
+            @click="openAreaDropdownMobile()"
           >
             {{ item.name }}
           </div>
@@ -712,10 +712,10 @@
 </template>
 
 <script>
-import GoToMixins from '~/mixins/goTo-mixins.js'
+import GeneralMixins from '~/mixins/general-mixins.js'
 
 export default {
-  mixins: [GoToMixins],
+  mixins: [GeneralMixins],
   data() {
     return {
       areas: [],
@@ -884,12 +884,12 @@ nav {
   font-size: 40px;
   line-height: 60px;
   display: inline-flex;
-  color: #3d3d3d;
+  color: var(--cc-grey3);
   align-items: center;
 }
 .title-purple,
 .nuxt-link-active {
-  color: #4d41c9 !important;
+  color: var(--cc-violet) !important;
 }
 nav ul {
   float: right;
@@ -908,12 +908,12 @@ nav li {
   font-size: 16px;
   line-height: 19px;
   text-transform: uppercase;
-  color: #3d3d3d;
+  color: var(--cc-grey3);
   margin-left: 39px;
   display: inline-flex;
 }
 a {
-  color: #3d3d3d !important;
+  color: var(--cc-grey3) !important;
   text-decoration: none;
 }
 div #icon {
@@ -990,7 +990,7 @@ div #icon {
 }
 
 .area-element-text:hover {
-  color: #4d41c9 !important;
+  color: var(--cc-violet) !important;
 }
 .hidden-dropdown-areas {
   display: none;
@@ -1003,8 +1003,8 @@ div #icon {
 }
 @media screen and (max-width: 1200px) {
   .logo-style {
-    width: 27px;
-    height: 27px;
+    width: 45px;
+    height: 45px;
   }
   .title-header {
     font-size: 24px;
@@ -1066,7 +1066,7 @@ div #icon {
     font-size: 14px;
     line-height: 17px;
     text-transform: capitalize;
-    color: #4d41c9 !important;
+    color: var(--cc-violet) !important;
     margin-left: 30px;
   }
   .menu-area-item-mobile {
@@ -1106,8 +1106,8 @@ div #icon {
 
 @media screen and (max-width: 768px) {
   .logo-style {
-    width: 21px;
-    height: 21px;
+    width: 30px;
+    height: 30px;
   }
   .title-header {
     font-size: 18px;

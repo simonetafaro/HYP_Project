@@ -12,7 +12,7 @@
 import TheHeader from '~/components/TheHeader.vue'
 import TheFooter from '~/components/TheFooter.vue'
 import GoUp from '~/components/utils/GoUp.vue'
-import GoToMixins from '~/mixins/goTo-mixins.js'
+import GeneralMixins from '~/mixins/general-mixins.js'
 import Chat from '~/components/Chat'
 import MMCCMixin from '~/mixins/mmcc-mixins.js'
 
@@ -23,7 +23,7 @@ export default {
     GoUp,
     Chat,
   },
-  mixins: [GoToMixins, MMCCMixin],
+  mixins: [GeneralMixins, MMCCMixin],
   mounted() {
     window.addEventListener('scroll', this.showGoUpButton)
   },

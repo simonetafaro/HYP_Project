@@ -29,10 +29,10 @@
 </template>
 
 <script>
-import GoToMixins from '~/mixins/goTo-mixins.js'
+import GeneralMixins from '~/mixins/general-mixins.js'
 
 export default {
-  mixins: [GoToMixins],
+  mixins: [GeneralMixins],
   props: {
     title: { type: String, default: () => '' },
     image: { type: String, default: () => '' },

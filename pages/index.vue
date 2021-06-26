@@ -830,8 +830,8 @@
           <button
             v-for="(area, areaIndex) of areas"
             :key="'area-' + areaIndex"
-            class="go-to-area-button"
             :id="'button-area-' + area.id"
+            class="go-to-area-button"
             @click="moveTo(`area-box-` + area.id)"
           >
             {{ area.title }}
@@ -842,8 +842,8 @@
         <div
           v-for="(area, areaIndex) of areas"
           :key="'area-' + areaIndex"
-          class="single-area-section"
           :id="'area-box-' + area.id"
+          class="single-area-section"
         >
           <area-home-mini
             :summary="area.subTitle"
@@ -863,19 +863,14 @@
 
 <script>
 import AreaHomeMini from '~/components/area/AreaHomeMini.vue'
-import GoToMixins from '~/mixins/goTo-mixins.js'
+import GeneralMixins from '~/mixins/general-mixins.js'
 import SpaceDivider from '~/components/utils/SpaceDivider.vue'
 export default {
-  data() {
-    return {
-      isPositionFixed: false,
-      areas: [],
-    }
-  },
   components: {
     AreaHomeMini,
     SpaceDivider,
   },
+  mixins: [GeneralMixins],
   async asyncData({ $axios }) {
     const { data } = await $axios.get(`${process.env.BASE_URL}/api/areas`)
     const areas = data
@@ -883,7 +878,12 @@ export default {
       areas,
     }
   },
-  mixins: [GoToMixins],
+  data() {
+    return {
+      isPositionFixed: false,
+      areas: [],
+    }
+  },
   created() {
     this.$router.push('/home')
   },
@@ -957,7 +957,7 @@ export default {
   font-weight: 800;
   font-size: 96px;
   text-transform: uppercase;
-  color: #3d3d3d;
+  color: var(--cc-grey3);
   margin: auto;
   line-height: 100px;
   width: 100%;
@@ -972,7 +972,7 @@ export default {
   bottom: 0;
 }
 .title-purple {
-  color: #4d41c9;
+  color: var(--cc-violet);
 }
 
 .text1 {
@@ -1004,7 +1004,7 @@ export default {
   line-height: 84px;
   text-align: center;
   text-transform: uppercase;
-  color: #3d3d3d;
+  color: var(--cc-grey3);
 }
 .section-title-2 {
   color: var(--cc-violet);

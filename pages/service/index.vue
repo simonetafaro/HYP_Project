@@ -19,8 +19,8 @@
     <div
       v-for="(area, areaIndex) of areas"
       :key="'area-' + areaIndex"
-      class="row"
       :id="'service-box-' + area.id"
+      class="row"
       v-bind:class="isOddRow(areaIndex)"
     >
       <div class="carousel-wrapper">
@@ -31,12 +31,12 @@
           <svg
             :id="'carousel-arrow-prev-' + area.id"
             class="carousel-arrow disabled-arrow"
-            @click="scrollLeft(area.id)"
             width="48"
             height="49"
             viewBox="0 0 48 49"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
+            @click="scrollLeft(area.id)"
           >
             <path
               d="M26.332 45.666L4.99902 24.333L26.332 2.99999"
@@ -77,12 +77,12 @@
           <svg
             :id="'carousel-arrow-next-' + area.id"
             class="carousel-arrow"
-            @click="scrollRight(area.id)"
             width="48"
             height="49"
             viewBox="0 0 48 49"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
+            @click="scrollRight(area.id)"
           >
             <path
               d="M21.332 3L42.665 24.333L21.332 45.666"
@@ -99,16 +99,12 @@
 <script>
 // import axios from 'axios'
 import ServiceMini from '~/components/service/ServiceMini.vue'
-import GoToMixins from '~/mixins/goTo-mixins.js'
+import GeneralMixins from '~/mixins/general-mixins.js'
 export default {
-  data() {
-    return {
-      carouselList: [],
-    }
-  },
   components: {
     ServiceMini,
   },
+  mixins: [GeneralMixins],
   async asyncData({ $axios }) {
     const areasData = await $axios.get(`${process.env.BASE_URL}/api/areas`)
     const { data } = await $axios.get(`${process.env.BASE_URL}/api/services`)
@@ -119,7 +115,11 @@ export default {
       areas,
     }
   },
-  mixins: [GoToMixins],
+  data() {
+    return {
+      carouselList: [],
+    }
+  },
   mounted() {
     if (this.$router.history.current.hash !== '') {
       setTimeout(() => {
@@ -292,7 +292,7 @@ export default {
   font-size: 70px;
   line-height: 84px;
   text-align: center;
-  color: #3d3d3d;
+  color: var(--cc-grey3);
   margin-bottom: 70px;
 }
 .service-l2-light {
@@ -486,8 +486,8 @@ export default {
 
 @media screen and (max-width: 768px) {
   .service-l1 {
-    font-size: 12px;
-    line-height: 14px;
+    font-size: 14px;
+    line-height: 16px;
     margin-bottom: 17px;
   }
 
@@ -523,8 +523,8 @@ export default {
     min-width: 100%;
   }
   .service-section-title {
-    font-size: 14px;
-    line-height: 17px;
+    font-size: 18px;
+    line-height: 18px;
     margin: 16px auto 21px 20px;
   }
   .service {

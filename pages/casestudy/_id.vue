@@ -595,7 +595,7 @@
   </section>
 </template>
 <script>
-import GoToMixins from '~/mixins/goTo-mixins.js'
+import GeneralMixins from '~/mixins/general-mixins.js'
 import ServiceMini from '~/components/service/ServiceMini.vue'
 import MemberMini from '~/components/team/MemberMini.vue'
 import SpaceDivider from '~/components/utils/SpaceDivider.vue'
@@ -640,7 +640,7 @@ export default {
   destroyed() {
     window.removeEventListener('resize', this.resizeServiceCard)
   },
-  mixins: [GoToMixins],
+  mixins: [GeneralMixins],
 }
 </script>
 
@@ -657,7 +657,7 @@ h1 {
   font-weight: normal;
   font-size: 16px;
   line-height: 19px;
-  color: #464a52;
+  color: var(--cc-grey1);
   margin-bottom: 37px;
 }
 .intro-container {
@@ -768,7 +768,7 @@ p {
   /* identical to box height */
   text-decoration-line: underline;
   text-transform: uppercase;
-  color: #4d41c9;
+  color: var(--cc-violet);
 }
 .partner-container {
   margin: 20px 0;
@@ -780,7 +780,7 @@ p {
   font-size: 22px;
   line-height: 26px;
 
-  color: #464a52;
+  color: var(--cc-grey1);
 }
 .padding {
   padding: 30px 0;
@@ -889,7 +889,7 @@ p {
   line-height: 17px;
   text-align: center;
 
-  color: #464a52;
+  color: var(--cc-grey1);
 }
 .description-container {
   display: none;
@@ -924,7 +924,7 @@ p {
   .description {
     font-size: 18px;
     line-height: 22px;
-    color: #464a52;
+    color: var(--cc-grey1);
     padding-bottom: 0px;
   }
   .intro-container {
@@ -1074,7 +1074,7 @@ p {
   .description {
     font-size: 16px;
     line-height: 16px;
-    color: #464a52;
+    color: var(--cc-grey1);
     padding-bottom: 0px;
   }
   .intro-container {

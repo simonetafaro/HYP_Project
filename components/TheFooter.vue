@@ -1,5 +1,5 @@
 <template>
-  <footer class="footer" id="footer-element">
+  <footer id="footer-element" class="footer">
     <div class="footer-left-column">
       <span class="show-desktop">
         <svg
@@ -1437,10 +1437,10 @@
 </template>
 
 <script>
-import GoToMixins from '~/mixins/goTo-mixins.js'
+import GeneralMixins from '~/mixins/general-mixins.js'
 
 export default {
-  mixins: [GoToMixins],
+  mixins: [GeneralMixins],
   data() {
     return {
       menuOptions: [
@@ -1507,7 +1507,7 @@ export default {
   font-size: 14px;
   line-height: 17px;
   text-transform: uppercase;
-  color: #3d3d3d;
+  color: var(--cc-grey3);
   margin-bottom: 6px;
 }
 .column-subtitle {
@@ -1516,7 +1516,7 @@ export default {
   font-size: 18px;
   line-height: 22px;
   text-transform: uppercase;
-  color: #4d41c9;
+  color: var(--cc-violet);
   margin-bottom: 18px;
 }
 .column-text {
@@ -1524,14 +1524,14 @@ export default {
   font-weight: normal;
   font-size: 18px;
   line-height: 30px;
-  color: #3d3d3d !important;
+  color: var(--cc-grey3) !important;
   mix-blend-mode: normal;
 }
 .group-name-list {
   list-style: none;
 }
 a {
-  color: #3d3d3d !important;
+  color: var(--cc-grey3) !important;
   text-decoration: none;
   opacity: 0.8;
 }
@@ -1542,7 +1542,7 @@ a {
   display: none;
 }
 .nuxt-link-active {
-  color: #4d41c9 !important;
+  color: var(--cc-violet) !important;
   opacity: 1;
 }
 @media screen and (max-width: 1200px) {

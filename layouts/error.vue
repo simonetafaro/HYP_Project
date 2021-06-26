@@ -21,10 +21,10 @@
 </template>
 
 <script>
-import GoToMixins from '~/mixins/goTo-mixins.js'
+import GeneralMixins from '~/mixins/general-mixins.js'
 export default {
   props: ['error'],
-  mixins: [GoToMixins],
+  mixins: [GeneralMixins],
 }
 </script>
 

@@ -134,7 +134,7 @@ import SpaceDivider from '~/components/utils/SpaceDivider.vue'
 import DoubleColorTitle from '~/components/utils/DoubleColorTitle.vue'
 import DiscoverButton from '~/components/utils/DiscoverButton.vue'
 import CaseStudyMini from '~/components/casestudy/CaseStudyMini.vue'
-import GoToMixins from '~/mixins/goTo-mixins.js'
+import GeneralMixins from '~/mixins/general-mixins.js'
 export default {
   components: {
     ServiceMini,
@@ -144,7 +144,7 @@ export default {
     CaseStudyMini,
     MemberMini,
   },
-  mixins: [GoToMixins],
+  mixins: [GeneralMixins],
   async asyncData({ error, $axios, route }) {
     const { id } = route.params
     const { data } = await $axios.get(`${process.env.BASE_URL}/api/area/${id}`)

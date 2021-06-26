@@ -1155,11 +1155,12 @@
 
 <script>
 import CaseStudyMini from '~/components/casestudy/CaseStudyMini.vue'
-import GoToMixins from '~/mixins/goTo-mixins.js'
+import GeneralMixins from '~/mixins/general-mixins.js'
 export default {
   components: {
     CaseStudyMini,
   },
+  mixins: [GeneralMixins],
   async asyncData({ $axios }) {
     const { data } = await $axios.get(`${process.env.BASE_URL}/api/casestudies`)
     const casestudies = data
@@ -1178,7 +1179,13 @@ export default {
       areaMenuHidden: true,
     }
   },
-  mixins: [GoToMixins],
+  mounted() {
+    this.resizeCaseCard()
+    window.addEventListener('resize', this.resizeCaseCard)
+  },
+  destroyed() {
+    window.removeEventListener('resize', this.resizeCaseCard)
+  },
   methods: {
     async filterCaseStudyByArea(e, areaID) {
       this.casestudies = await this.$axios.$get(
@@ -1237,13 +1244,6 @@ export default {
       }
     },
   },
-  mounted() {
-    this.resizeCaseCard()
-    window.addEventListener('resize', this.resizeCaseCard)
-  },
-  destroyed() {
-    window.removeEventListener('resize', this.resizeCaseCard)
-  },
 }
 </script>
 
@@ -1299,7 +1299,7 @@ export default {
   font-weight: 600;
   font-size: 14px;
   text-align: center;
-  color: #464a52;
+  color: var(--cc-grey1);
   margin-top: 20px;
 }
 .inner-container {
@@ -1326,7 +1326,7 @@ export default {
 
   text-transform: uppercase;
 
-  color: #3d3d3d;
+  color: var(--cc-grey3);
   text-align: left;
 }
 .casestudy {
@@ -1352,7 +1352,7 @@ export default {
   font-size: 16px;
   line-height: 24px;
   text-transform: uppercase;
-  color: #4d41c9;
+  color: var(--cc-violet);
 }
 .filter:hover:not(.active-filter) {
   border-bottom: 2px solid #4d41c9;
@@ -1507,7 +1507,7 @@ export default {
   }
 
   .active-filter {
-    color: #4d41c9;
+    color: var(--cc-violet);
     border-bottom: 0;
   }
 }

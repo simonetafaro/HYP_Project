@@ -706,8 +706,8 @@
                 :personName="person.personName"
                 :summary="person.workField"
                 :image="person.personPhoto"
-                :index="personIndex"
                 :id="person.id"
+                :index="personIndex"
               ></member-mini>
             </div>
           </section>
@@ -725,12 +725,12 @@
     <div class="partner-grid">
       <svg
         class="carousel-arrow-left"
-        @click="scrollLeft()"
         width="48"
         height="49"
         viewBox="0 0 48 49"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
+        @click="scrollLeft()"
       >
         <path
           d="M26.332 45.666L4.99902 24.333L26.332 2.99999"
@@ -774,12 +774,12 @@
       </div>
       <svg
         class="carousel-arrow-right"
-        @click="scrollRight()"
         width="48"
         height="49"
         viewBox="0 0 48 49"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
+        @click="scrollRight()"
       >
         <path
           d="M21.332 3L42.665 24.333L21.332 45.666"
@@ -793,7 +793,7 @@
 
 <script>
 import MemberMini from '~/components/team/MemberMini.vue'
-import GoToMixins from '~/mixins/goTo-mixins.js'
+import GeneralMixins from '~/mixins/general-mixins.js'
 import DoubleColorTitle from '~/components/utils/DoubleColorTitle.vue'
 import SpaceDivider from '~/components/utils/SpaceDivider.vue'
 import DiscoverButton from '~/components/utils/DiscoverButton.vue'
@@ -806,7 +806,7 @@ export default {
     DiscoverButton,
   },
 
-  mixins: [GoToMixins],
+  mixins: [GeneralMixins],
   async asyncData({ $axios }) {
     const { data } = await $axios.get(`${process.env.BASE_URL}/api/teammembers`)
     const people = data
@@ -915,7 +915,7 @@ export default {
   /* identical to box height */
   text-transform: uppercase;
 
-  color: #424272;
+  color: var(--cc-base1);
 }
 
 .title {
@@ -927,7 +927,7 @@ export default {
   line-height: 84px;
   text-transform: uppercase;
 
-  color: #3d3d3d;
+  color: var(--cc-grey3);
 }
 
 .subtitle {
@@ -939,7 +939,7 @@ export default {
   line-height: 84px;
   text-transform: uppercase;
   margin-bottom: 88px;
-  color: #cdc9ff;
+  color: var(--cc-base3);
 }
 
 .descriptions {
@@ -955,7 +955,7 @@ export default {
   text-align: left;
   height: 610px;
   width: 350px;
-  color: #464a52;
+  color: var(--cc-grey1);
 
   mix-blend-mode: normal;
   opacity: 0.8;
@@ -974,7 +974,7 @@ export default {
   text-align: left;
   height: 168px;
   width: 350px;
-  color: #464a52;
+  color: var(--cc-grey1);
   position: absolute;
   top: 0;
   left: 40%;
@@ -1015,7 +1015,7 @@ export default {
   /* identical to box height */
   text-transform: uppercase;
 
-  color: #424272;
+  color: var(--cc-base1);
 }
 
 .title-2 {
@@ -1027,7 +1027,7 @@ export default {
   line-height: 84px;
   text-transform: uppercase;
 
-  color: #424272;
+  color: var(--cc-base1);
 }
 
 .subtitle-2 {
@@ -1039,7 +1039,7 @@ export default {
   line-height: 84px;
   text-transform: uppercase;
   margin-bottom: 88px;
-  color: #cdc9ff;
+  color: var(--cc-base3);
 }
 
 .description-2-1 {
@@ -1051,7 +1051,7 @@ export default {
   font-size: 20px;
   line-height: 32px;
   text-align: right;
-  color: #464a52;
+  color: var(--cc-grey1);
   width: 350px;
   height: 610px;
   mix-blend-mode: normal;
@@ -1068,7 +1068,7 @@ export default {
   font-size: 20px;
   line-height: 32px;
   text-align: right;
-  color: #464a52;
+  color: var(--cc-grey1);
   width: 350px;
   height: 610px;
   mix-blend-mode: normal;
@@ -1106,7 +1106,7 @@ export default {
   /* identical to box height */
   text-transform: uppercase;
 
-  color: #424272;
+  color: var(--cc-base1);
 }
 
 .title-3 {
@@ -1117,7 +1117,7 @@ export default {
   line-height: 84px;
   text-transform: uppercase;
 
-  color: #424272;
+  color: var(--cc-base1);
 }
 
 .subtitle-3 {
@@ -1128,7 +1128,7 @@ export default {
   line-height: 84px;
   text-transform: uppercase;
   margin-bottom: 88px;
-  color: #cdc9ff;
+  color: var(--cc-base3);
 }
 
 .description-3 {
@@ -1138,7 +1138,7 @@ export default {
   font-weight: normal;
   font-size: 20px;
   line-height: 32px;
-  color: #464a52;
+  color: var(--cc-grey1);
   width: 769px;
   height: 123px;
   mix-blend-mode: normal;
@@ -1210,7 +1210,7 @@ export default {
   line-height: 26px;
   text-align: center;
 
-  color: #424272;
+  color: var(--cc-base1);
 }
 
 .partner-description {
@@ -1222,7 +1222,7 @@ export default {
   margin-bottom: 26px;
   text-align: center;
 
-  color: #464a52;
+  color: var(--cc-grey1);
 }
 
 .partner-website {
@@ -1233,7 +1233,7 @@ export default {
   cursor: pointer;
   text-align: center;
   text-decoration-line: underline;
-  color: #4d41c9 !important;
+  color: var(--cc-violet) !important;
   mix-blend-mode: normal;
   opacity: 0.8;
 }
@@ -1414,7 +1414,7 @@ p {
     font-size: 18px;
     line-height: 22px;
     text-align: center;
-    color: #464a52;
+    color: var(--cc-grey1);
     width: 550px;
     height: max-content;
     mix-blend-mode: normal;
@@ -1429,7 +1429,7 @@ p {
     font-size: 18px;
     line-height: 22px;
     text-align: center;
-    color: #464a52;
+    color: var(--cc-grey1);
     width: 550px;
     height: max-content;
     mix-blend-mode: normal;
@@ -1634,7 +1634,7 @@ p {
     font-weight: normal;
     font-size: 16px;
     line-height: 14px;
-    color: #464a52;
+    color: var(--cc-grey1);
     width: 272px;
     height: max-content;
     mix-blend-mode: normal;
@@ -1648,7 +1648,7 @@ p {
     font-weight: normal;
     font-size: 14px;
     line-height: 14px;
-    color: #464a52;
+    color: var(--cc-grey1);
     width: 272px;
     height: max-content;
     mix-blend-mode: normal;

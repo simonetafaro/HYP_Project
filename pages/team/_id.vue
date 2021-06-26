@@ -659,18 +659,15 @@
   </section>
 </template>
 <script>
-import MemberMini from '~/components/team/MemberMini.vue'
-import GoToMixins from '~/mixins/goTo-mixins.js'
+import GeneralMixins from '~/mixins/general-mixins.js'
 import CaseStudyMini from '~/components/casestudy/CaseStudyMini.vue'
 
 export default {
   components: {
-    // eslint-disable-next-line vue/no-unused-components
-    MemberMini,
     CaseStudyMini,
   },
 
-  mixins: [GoToMixins],
+  mixins: [GeneralMixins],
 
   async asyncData({ error, $axios, route }) {
     const { id } = route.params
@@ -738,7 +735,7 @@ header {
   line-height: 29px;
   text-align: center;
   text-transform: uppercase;
-  color: #424272;
+  color: var(--cc-base1);
   margin-bottom: 58px;
 }
 .casestudies-grid {
@@ -777,7 +774,7 @@ h1 {
   font-size: 24px;
   line-height: 29px;
   text-align: center;
-  color: #424272;
+  color: var(--cc-base1);
 }
 
 h2 {
@@ -787,7 +784,7 @@ h2 {
   font-size: 18px;
   line-height: 22px;
   text-align: center;
-  color: #424272;
+  color: var(--cc-base1);
 }
 h3 {
   margin-bottom: 20px;

@@ -18,7 +18,7 @@
 </template>
 
 <script>
-import GoToMixins from '~/mixins/goTo-mixins.js'
+import GeneralMixins from '~/mixins/general-mixins.js'
 
 export default {
   props: {
@@ -36,7 +36,7 @@ export default {
       return (index + 1) % 2
     },
   },
-  mixins: [GoToMixins],
+  mixins: [GeneralMixins],
 }
 </script>
 
