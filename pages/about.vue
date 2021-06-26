@@ -1576,7 +1576,7 @@ p {
 
   .description-1 {
     font-size: 16px;
-    line-height: 14px;
+    line-height: 18px;
     height: max-content;
     width: 272px;
   }
@@ -1586,8 +1586,8 @@ p {
   }
 
   .description-2 {
-    font-size: 14px;
-    line-height: 14px;
+    font-size: 18px;
+    line-height: 18px;
     width: 272px;
     position: initial;
     margin-top: 14px;
@@ -1633,7 +1633,7 @@ p {
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
-    line-height: 14px;
+    line-height: 18px;
     color: var(--cc-grey1);
     width: 272px;
     height: max-content;
@@ -1646,8 +1646,8 @@ p {
     text-transform: none;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 14px;
+    font-size: 16px;
+    line-height: 18px;
     color: var(--cc-grey1);
     width: 272px;
     height: max-content;
@@ -1676,8 +1676,8 @@ p {
   }
 
   .description-3 {
-    font-size: 12px;
-    line-height: 14px;
+    font-size: 14px;
+    line-height: 16px;
     width: 272px;
   }
 

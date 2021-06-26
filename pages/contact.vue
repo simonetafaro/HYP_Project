@@ -1129,8 +1129,8 @@ export default {
     line-height: 29px;
   }
   .page-description {
-    font-size: 12px;
-    line-height: 14px;
+    font-size: 16px;
+    line-height: 18px;
     max-width: 80%;
     margin: auto;
     margin-top: 17px;
@@ -1211,18 +1211,16 @@ export default {
     display: grid;
   }
   .location-info-wrapper > div.contact-method-text {
-    font-size: 10px;
-    line-height: 12px;
+    font-size: 14px;
+    line-height: 16px;
     text-align: left;
   }
 
   .location-city {
-    font-size: 10px;
-    line-height: 12px;
+    font-size: 16px;
+    line-height: 18px;
     margin-bottom: 0px;
     order: 2;
-    font-size: 10px;
-    line-height: 12px;
     opacity: 1;
     text-align: left;
   }
