@@ -1372,7 +1372,7 @@
 
     <div class="footer-right-column">
       <div class="single-column">
-        <div class="column-title">GET IN TOUCH</div>
+        <div class="column-title">EXPLORE</div>
         <div class="column-subtitle">LINKS</div>
 
         <div
