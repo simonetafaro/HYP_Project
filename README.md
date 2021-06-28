@@ -52,9 +52,19 @@ Illustrations: composition of figures to complete the graphic identity of the pr
 
 > ###### Marco Acquati
 
-Development of team page: I developed the team page following the directions that our designer Isabella provided us.
-Development of about us page: I developed the about us page following the directions that our designer Isabella provided us.
-Chatbot json implementation: I wrote the json file to implement the chatbot interaction.
+My work was focused mainly on the development of the team page, the about us page and the implementation of the chatbot.
+The team page is used to display every member of the company grouped by the area they work in, accessible through a filter bar. 
+The filter bar adapts its design based on the display that the user is using, becoming a dropdown if the site is accessed via tablet or smartphone.
+The development of the team page has been achieved using html, css and javascript to obtain a fully resizable page without code redundancy.
+To show the team members I used the MemberMini component developed by my teammate Andrea in order to attain a layout as consistent as possible.
+Initially I developed an overlay to highlight a single member, however in the end we decided to discard it since its design wasn't efficiently adaptable to the variety of component that a dynamic website require. Nevertheless I am pretty enthusiastic with the things i learned diring its development.
+
+The second page that took my efforts is the about us page. 
+This page is used to show different aspects about the composition of our company.
+The aspect that I found more difficult during its development was to position every element in the right spot on the page using CSS. I am happy with the result achieved thanks to the wireframe that I followed during the development process.
+
+The third element that was under my responsibility is the json used to implement the chatbot's logic.
+It required a few days to fully understand how the framework actually worked in order to correctly express the functioning I had in mind. Once I understood the right way to develop the json it has been quite natural to implement new activities to implement the features required by the sepcifications.
 
 <pre>
     |-- pages
