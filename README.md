@@ -9,10 +9,10 @@ We had to satisfy some minimum requirements: at least 3 Areas, 30 Services and 2
 
 We are three computer science engineers and one communication designer working together on this project.
 
-- [Andrea Manglaviti](######andrea-manglaviti) | 10610431 | andrea.manglaviti@mail.polimi.it
-- [Isabella Possaghi](######isabella-possaghi) | 10570418 | isabella.possaghi@mail.polimi.it
-- [Marco Acquati](######marco-acquati) | 10583134 | marco2.acquati@mail.polimi.it
-- [Simone Tafaro](######simone-tafaro) | 10639032 | simone.tafaro@mail.polimi.it
+- [Andrea Manglaviti](#andrea-manglaviti) | 10610431 | andrea.manglaviti@mail.polimi.it
+- [Isabella Possaghi](#isabella-possaghi) | 10570418 | isabella.possaghi@mail.polimi.it
+- [Marco Acquati](#marco-acquati) | 10583134 | marco2.acquati@mail.polimi.it
+- [Simone Tafaro](#simone-tafaro) | 10639032 | simone.tafaro@mail.polimi.it
 
 ### Work division
 
