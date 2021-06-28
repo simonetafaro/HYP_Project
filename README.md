@@ -52,7 +52,7 @@ Illustrations: composition of figures to complete the graphic identity of the pr
 
 > ###### Marco Acquati
 
-My work was focused mainly on the development of the team page, the about us page and the implementation of the chatbot.
+My work was focused mainly on the development of the team page, the about us page and the implementation of the chatbot's logic (json).
 The team page is used to display every member of the company grouped by the area they work in, accessible through a filter bar. 
 The filter bar adapts its design based on the display that the user is using, becoming a dropdown if the site is accessed via tablet or smartphone.
 The development of the team page has been achieved using html, css and javascript to obtain a fully resizable page without code redundancy.
