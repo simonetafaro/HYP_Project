@@ -16,11 +16,10 @@ We are three computer science engineers and one communication designer working t
 
 ### Work division
 
-Here you can find a short description of the contribution that each of us gave to this project.
+Here you can find a short description of the contribution that each of us gave to this project. Andrea, Marco and Simone worked on the technical implementation, both frontend and backend, while Isabella worked on the design part of the project.
 
 > ###### Andrea Manglaviti
 
-I worked both on the backend and frontend part of the project.
 I worked mainly on the section regarding case studies, both from components point of view and pages view).
 Indeed, I developed the CaseStudyMini component that consist of a preview of the case study. Going more in depth, this component contains the area to which it belongs, meaning that these are not cross-area. Moreover, it contains the Title, a descriptiveText and an image which represents the topic.
 Then, i developed the MemberMini component which consists in the representation of a person working at the company. Indeed, this component has the image of the person, their name and occupation inside the company.
@@ -66,7 +65,6 @@ Chatbot json implementation: I wrote the json file to implement the chatbot inte
 
 > ###### Simone Tafaro
 
-I worked both on the backend and frontend part of the project.
 Let's begin from the layouts present in the project (default and error). "default.vue" is the main layout of the Website that contains some components reused in every page such as TheHeader, TheFooter and Chat. This feature offered by nuxt allowed us to avoid code duplication and have cleaner code in every page.
 We also have another usefull layout, that as written in the nuxt documentation it should be treated as a page, displayed when a 404, 500, ... error occurs.
 
