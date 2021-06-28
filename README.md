@@ -20,6 +20,7 @@ Here you can find a short description of the contribution that each of us gave t
 
 > ###### Andrea Manglaviti
 
+I worked both on the backend and frontend part of the project.
 I worked mainly on the section regarding case studies, both from components point of view and pages view).
 Indeed, I developed the CaseStudyMini component that consist of a preview of the case study. Going more in depth, this component contains the area to which it belongs, meaning that these are not cross-area. Moreover, it contains the Title, a descriptiveText and an image which represents the topic.
 Then, i developed the MemberMini component which consists in the representation of a person working at the company. Indeed, this component has the image of the person, their name and occupation inside the company.
@@ -27,6 +28,7 @@ Finally, I developed the footer which contains the name and logo of the company 
 Then, going to the pages section I developed casestudy_id and casestudy_index.
 The casestudy_index page is the page containing all case studies of the company and has a filter bar to let the user filter case studies by area.
 The casestudy_id page is the page of the single case study and contains all the information regarding the case study ( e.g. title, subTitle, descriptiveText, Author etc.) but also related ones. Indeed, there are also related case studies which are the ones from the same area, there are related services and the people that worked on that project.
+Finally i have managed the accessibility of the whole website addressing alternative text to images and performed the maximum points on all pages.
 
 <pre>
     |-- components
