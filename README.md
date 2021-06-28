@@ -168,7 +168,7 @@ We implemented a MySql Database to store the contents of the site. The queries t
 
 #### Server
 
-In this application we use SSR (Server side rendering) rather than static sites option. Server-side rendering means that our page is rendered on the server when it is requested by the user. When the user opens a page in a browser the browser sends a request to the server requesting that page. The page is rendered on the server and sent back to the browser with all its content. Furthermore, every request sends to the server is handled by a specific API that retrieves the correct informations from the database and redirects the user to the correct page dynamically generated.
+In this application we use SSR (Server side rendering) rather than CSR. Server-side rendering means that our page is rendered on the server when it is requested by the user. When the user opens a page in a browser the browser sends a request to the server requesting that page. The page is rendered on the server and sent back to the browser with all its content. Furthermore, every request sends to the server is handled by a specific API that retrieves the correct informations from the database and redirects the user to the correct page dynamically generated.
 
 #### Routing
 
