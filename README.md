@@ -66,26 +66,24 @@ Chatbot json implementation: I wrote the json file to implement the chatbot inte
 
 I worked both on the backend and frontend part of the project.
 Let's begin from the layouts present in the project (default and error). "default.vue" is the main layout of the Website that contains some components reused in every page such as TheHeader, TheFooter and Chat. This feature offered by nuxt allowed us to avoid code duplication and have cleaner code in every page.
-We also have a funny layout, that as written in the nuxt documentation it should be treated as a page, displayed when a 404, 500, ... error occurs.
+We also have another usefull layout, that as written in the nuxt documentation it should be treated as a page, displayed when a 404, 500, ... error occurs.
 
 The header has been developed using html and css together in order to have a completely responsive component without code duplication.
 Since we have several place where information are displayed using the same style I made a component also for Service and Area.
 In ServiceMini some props are used to print information in page (title, image, ...) but others like serviceIndex and carouselCard are used to conditionally bind classes in order to display this component differenly based on some logic.
 
 Let's now dive into pages.
-The main page, index.vue contains an brief overview on the area of the company. In the desktop version there is a sticky bar that provide a navigation shortcut that allow user to quickly scroll to the desired area. Those buttons also dynamically highlight based on the actual displayed area. This has been developed using javascript.
-Each of these areas has a dedicated page area/\_id.vue in which there areadynamic information retrieved from DB such as services, case studies and team members of the selected area.
+The main page, index.vue contains an brief overview on the areas of the company. In the desktop version there is a sticky bar that provide a navigation shortcut that allow user to quickly scroll to the desired area. Those buttons also dynamically highlight based on the actual displayed area. This has been developed using javascript.
+Each of these areas has a dedicated page area/\_id.vue in which there are dynamic information retrieved from DB such as services, case studies and team members of the selected area.
 The page service/index.vue contains all the services of the company grouped by area. Each row, that represents an area, has a carousel developed by me using javascript. Two function handle the click on arrow that allow users to scroll left and right and look to all the services available. Opening the page service/\_id.vue we can navigate through single service\'s details.
 
-Beside the main components mentioned above, spread into various pages we can find others components. They are less important that the others since they do not represent crucial information but they still allow us to have more readable page and reuser same funcitonality and look in several page.
+Beside the main components mentioned above, spread into various pages we can find others components. They are less important then the others since they do not represent crucial information but they still allow us to have more readable page and reuse same functionality and look in several page.
 Here it is a list with a short description about them:
 
-- DiscoverButton.vue: used to rapresent a button with a props that customize the path of the link
-- DoubleColorTitle.vue: used to rapresent the title on two lines of different color. I made this component in order to avoid to rewrite the same code html + css in multiple page
-- SpaceDivider.vue: this components has no props, is just used to conceptually divide sections in page
+- DiscoverButton.vue: used to represent a button with props that customize the path of the link and label.
+- DoubleColorTitle.vue: used to represent the title on two lines of different color. I made this component in order to avoid to rewrite the same code html + css in multiple page where this style is present.
+- SpaceDivider.vue: this components has no props, is just used to conceptually divide sections in page.
 - GoUp.vue: this component shows up while scrolling down in the page in Mobile & Tablet and it's used for a fast scroll to top
-
-In addition to the basic componenent I developed also the backend and frontend part of the Chatbot.
 
 <pre>
 	|-- components
@@ -119,7 +117,58 @@ In addition to the basic componenent I developed also the backend and frontend p
     	|-- index.js
 </pre>
 
+\*CHATBOT IMPLEMENTATION - EXTRA \*
+
+In addition to the basic componenent I developed also the backend and frontend part of the Chatbot.
+We can find the Chat.vue component in the default layout since we want to offer the possibility to talk with the chatbot in every page of the website.
+Every single time the user sends a message to the chatbot, this message will be pushed in store.state.messages using the mutation addMessage() called in the Chat.vue component.
+
+```javascript
+    this.$store.commit('addMessage', {
+          sender: false,
+          content: this.messageToSend,
+    })
+    ....
+    addMessage(state, message) {
+        const messages = state.messages
+        messages.push(message)
+        vue.set(state, 'messages', messages)
+    },
+```
+
+Since we are talking with the chatbot we also expect a response from it. When the chatbot send to us a response this message will be pushed in in store.state.messages using the same mutation we saw above with the difference that the value sender is true. This value will be used for the render parte in page.
+
+```javascript
+this.$store.commit('addMessage', {
+  sender: true,
+  content: message.utterance,
+})
+```
+
+In the default layout, at line 6, we call the Chat component binding the props chatList with list. "list" is a data() from the mmcc-mixins.js included in the default layout.
+We use the watch option to update the list of messages every time a new message is pushed into store.state.messages both from user and chatbot.
+
+```javascript
+    data() {
+        const list = []
+    }
+    ....
+    watch: {
+    '$store.state.messages'() {
+      this.list = this.$store.state.messages
+    },
+  },
+```
+
 ## Technical documentation
+
+#### Database
+
+We implemented a MySql Database to store the contents of the site. The queries to handle the user requests are executed trough sequelize in order to prevent dangerous SQL injections and other potential vulnerabilities.
+
+#### Server
+
+In this application we use SSR (Server side rendering) rather than static sites option. Server-side rendering means that our page is rendered on the server when it is requested by the user. When the user opens a page in a browser the browser sends a request to the server requesting that page. The page is rendered on the server and sent back to the browser with all its content. Furthermore, every request sends to the server is handled by a specific API that retrieves the correct informations from the database and redirects the user to the correct page dynamically generated.
 
 #### Routing
 
